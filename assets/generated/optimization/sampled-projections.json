@@ -89,13 +89,13 @@
     }
   },
   "source_provenance": {
-    "source_commit_at_generation": "c7692214802ecac04f7fd714869a1a206605e1a5",
+    "source_commit_at_generation": "76033515484638fb9fb047bb4329719be895baf5",
     "source_content_sha256": {
       "optimization_source": "677dd8a1e49bb188f4314fb3729d86ae554a71ef7041671c53d620d740b31cb7",
       "resource_adapter_source": "bead57b3225ca19650ada888aea5a8b201ae17b533ab4db29c0971150043bfa2",
       "projection_generator": "49d12fc3dcc1501694fe848ff5a5d8084a68135a90618e1c6911526be26bbd0b",
       "environment_lock": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
-      "sampled_runs": "f0a0f7a8920e1a3c481d7265747f88f3d906f8477bd40319964f10c730de7607"
+      "sampled_runs": "8599235d00fccaccd8be291b238ea2c08d69891d74a48cb3efa955f5c919f7e4"
     },
     "revision_note": "Commit identifies the checkout at generation; content hashes identify actual executed/input bytes.",
     "python": "3.12.16",
@@ -170,7 +170,7 @@
       },
       "modeled_executions": 4096,
       "qasm_artifact": "projections/qaoa-all-z-frozen-p-1e-3.qasm",
-      "projection_wall_seconds": 0.2836087750000047,
+      "projection_wall_seconds": 0.30235508600003413,
       "report": {
         "schema_version": 1,
         "status": "computed_conditional_model",
@@ -274,7 +274,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 81673,
+              "EVALUATION_TIME": 91147,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 18735,
@@ -303,7 +303,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 81673,
+              "EVALUATION_TIME": 91147,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 15855,
@@ -332,7 +332,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 81673,
+              "EVALUATION_TIME": 91147,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 10815,
@@ -361,7 +361,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 81673,
+              "EVALUATION_TIME": 91147,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 8655,
@@ -394,7 +394,7 @@
       },
       "modeled_executions": 4096,
       "qasm_artifact": "projections/vqe-all-z-frozen-p-1e-3.qasm",
-      "projection_wall_seconds": 0.010541912999997294,
+      "projection_wall_seconds": 0.010664167000015823,
       "report": {
         "schema_version": 1,
         "status": "computed_conditional_model",
@@ -494,7 +494,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 42645,
+              "EVALUATION_TIME": 38618,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -523,7 +523,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 42645,
+              "EVALUATION_TIME": 38618,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 4041,
@@ -556,7 +556,7 @@
       },
       "modeled_executions": 4096,
       "qasm_artifact": "projections/vqe-all-x-frozen-p-1e-3.qasm",
-      "projection_wall_seconds": 0.007817676999991363,
+      "projection_wall_seconds": 0.007879838999997446,
       "report": {
         "schema_version": 1,
         "status": "computed_conditional_model",
@@ -658,7 +658,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 40090,
+              "EVALUATION_TIME": 37456,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -687,7 +687,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 40090,
+              "EVALUATION_TIME": 37456,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 4041,
@@ -721,7 +721,7 @@
       },
       "modeled_executions": 4096,
       "qasm_artifact": "projections/qaoa-all-z-frozen-p-1e-4.qasm",
-      "projection_wall_seconds": 0.04134242100002439,
+      "projection_wall_seconds": 0.0478212029999554,
       "report": {
         "schema_version": 1,
         "status": "computed_conditional_model",
@@ -825,7 +825,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 74257,
+              "EVALUATION_TIME": 78849,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 13215,
@@ -854,7 +854,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 74257,
+              "EVALUATION_TIME": 78849,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 8655,
@@ -883,7 +883,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 74257,
+              "EVALUATION_TIME": 78849,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 6735,
@@ -912,7 +912,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 74257,
+              "EVALUATION_TIME": 78849,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 5055,
@@ -941,7 +941,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 74257,
+              "EVALUATION_TIME": 78849,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 3615,
@@ -970,7 +970,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 74257,
+              "EVALUATION_TIME": 78849,
               "NUM_TS_PER_ROTATION": 16,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 2415,
@@ -1003,7 +1003,7 @@
       },
       "modeled_executions": 4096,
       "qasm_artifact": "projections/vqe-all-z-frozen-p-1e-4.qasm",
-      "projection_wall_seconds": 0.010714768000013919,
+      "projection_wall_seconds": 0.009864150999987942,
       "report": {
         "schema_version": 1,
         "status": "computed_conditional_model",
@@ -1103,7 +1103,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 33590,
+              "EVALUATION_TIME": 36555,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -1132,7 +1132,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 33590,
+              "EVALUATION_TIME": 36555,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 2169,
@@ -1161,7 +1161,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 33590,
+              "EVALUATION_TIME": 36555,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 873,
@@ -1194,7 +1194,7 @@
       },
       "modeled_executions": 4096,
       "qasm_artifact": "projections/vqe-all-x-frozen-p-1e-4.qasm",
-      "projection_wall_seconds": 0.008454761999985294,
+      "projection_wall_seconds": 0.008236887999998999,
       "report": {
         "schema_version": 1,
         "status": "computed_conditional_model",
@@ -1296,7 +1296,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 38725,
+              "EVALUATION_TIME": 36365,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -1325,7 +1325,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 38725,
+              "EVALUATION_TIME": 36365,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 2169,
@@ -1354,7 +1354,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 38725,
+              "EVALUATION_TIME": 36365,
               "NUM_TS_PER_ROTATION": 14,
               "ALGORITHM_COMPUTE_QUBITS": 2,
               "PHYSICAL_COMPUTE_QUBITS": 873,
@@ -1397,7 +1397,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 81673,
+            "EVALUATION_TIME": 91147,
             "NUM_TS_PER_ROTATION": 16,
             "ALGORITHM_COMPUTE_QUBITS": 4,
             "PHYSICAL_COMPUTE_QUBITS": 18735,
@@ -1446,7 +1446,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 81673,
+            "EVALUATION_TIME": 91147,
             "NUM_TS_PER_ROTATION": 16,
             "ALGORITHM_COMPUTE_QUBITS": 4,
             "PHYSICAL_COMPUTE_QUBITS": 8655,
@@ -1496,7 +1496,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 42645,
+            "EVALUATION_TIME": 38618,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -1525,7 +1525,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 40090,
+            "EVALUATION_TIME": 37456,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -1575,7 +1575,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 42645,
+            "EVALUATION_TIME": 38618,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 4041,
@@ -1604,7 +1604,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 40090,
+            "EVALUATION_TIME": 37456,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 4041,
@@ -1653,7 +1653,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 74257,
+            "EVALUATION_TIME": 78849,
             "NUM_TS_PER_ROTATION": 16,
             "ALGORITHM_COMPUTE_QUBITS": 4,
             "PHYSICAL_COMPUTE_QUBITS": 13215,
@@ -1702,7 +1702,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 74257,
+            "EVALUATION_TIME": 78849,
             "NUM_TS_PER_ROTATION": 16,
             "ALGORITHM_COMPUTE_QUBITS": 4,
             "PHYSICAL_COMPUTE_QUBITS": 2415,
@@ -1752,7 +1752,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 33590,
+            "EVALUATION_TIME": 36555,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -1781,7 +1781,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 38725,
+            "EVALUATION_TIME": 36365,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 5193,
@@ -1831,7 +1831,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 33590,
+            "EVALUATION_TIME": 36555,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 873,
@@ -1860,7 +1860,7 @@
           },
           "model_properties": {
             "LOGICAL_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 38725,
+            "EVALUATION_TIME": 36365,
             "NUM_TS_PER_ROTATION": 14,
             "ALGORITHM_COMPUTE_QUBITS": 2,
             "PHYSICAL_COMPUTE_QUBITS": 873,
@@ -1884,7 +1884,7 @@
   ],
   "full_finite_shot_optimizer_physical_projection": null,
   "full_trajectory_status": "pending explicit changing-parameter and whole-run physical/synthesis allocation",
-  "projection_wall_seconds": 0.3683507800000143,
+  "projection_wall_seconds": 0.3926021880000121,
   "independent_task_comparison": "Do not compare these different tasks with Grover as an algorithm advantage claim.",
   "excluded": [
     "all optimizer training circuits/shots/classical control",

@@ -1,0 +1,267 @@
+{
+  "status": "checked bounded diagonal purification and retained/sample schedules",
+  "instance": {
+    "system_qubits": 2,
+    "reference_qubits": 2,
+    "J": 0.6,
+    "fields_q0_first": [
+      0.35,
+      -0.2
+    ],
+    "boundary": "open",
+    "Hamiltonian": "J sum Z_i Z_(i+1) + sum h_i Z_i",
+    "energy_units": "stated arbitrary energy unit",
+    "k_B": 1,
+    "beta": 1.25,
+    "temperature": 0.8,
+    "temperature_status": "finite temperature in the stated energy unit with k_B=1",
+    "energies_bit_order_qn_minus_1_to_q0": [
+      0.75,
+      -1.15,
+      -0.04999999999999993,
+      0.45
+    ],
+    "probabilities": [
+      0.06279716233747444,
+      0.6751331203383653,
+      0.17070038526074952,
+      0.0913693320634108
+    ],
+    "log_partition_function": 1.8303453922378947,
+    "initial_state": "all system and reference wires zero"
+  },
+  "classical_preprocessing": {
+    "energies_and_boltzmann_wall_seconds": 0.00017110800001773896,
+    "circuit_materialization_and_lowering_wall_seconds": 0.020533114999977897,
+    "energy_entries": 4,
+    "complexity": "O(n*2**n) energy enumeration and prefix-mass/angle loading; O(2**n) normalization/storage",
+    "normalization": "Boltzmann weights normalized classically using the exact stated diagonal energies",
+    "no_diagonalization": true,
+    "quantum_advantage_claim": false
+  },
+  "output_contracts": {
+    "purification": "unmeasured pure system-reference state; all-zero input assumed",
+    "retained_mixed_state": "initial resets and irreversible unconditioned reference resets; system remains unmeasured",
+    "thermal_sample": "system Z readout; reference discarded without conditioning",
+    "thermal_trial": "all 2n initial resets, purification, system Z readout, reference discard; one measured trial"
+  },
+  "ideal_success_probability": 1.0,
+  "postselection": "none",
+  "amplification": "not required",
+  "input_overlap": "not required for this exhaustive coefficient-loading construction",
+  "logical_qubits": 4,
+  "source_purification_counts": {
+    "x": 2,
+    "cry": 2,
+    "cx": 2,
+    "ry": 1
+  },
+  "primitive_purification_counts": {
+    "cx": 6,
+    "ry": 5,
+    "x": 2
+  },
+  "primitive_purification_depth": 10,
+  "primitive_retained_mixed_state_counts": {
+    "reset": 6,
+    "cx": 6,
+    "ry": 5,
+    "x": 2
+  },
+  "primitive_measured_trial_counts": {
+    "cx": 6,
+    "ry": 5,
+    "reset": 4,
+    "x": 2,
+    "measure": 2
+  },
+  "primitive_measured_trial_depth": 12,
+  "initial_resets_per_measured_trial": 4,
+  "reference_wires_discarded_per_measured_trial": 2,
+  "system_measurements_per_measured_trial": 2,
+  "arbitrary_rotations_per_measured_trial": 5,
+  "synthesis_complete": false,
+  "measurement_workload_proposals": {
+    "Z0_mean": {
+      "statistical_absolute_error": 0.03,
+      "statistical_failure_probability": 0.005,
+      "independent_measured_trials": 13315,
+      "outcome_range": [
+        -1,
+        1
+      ],
+      "coherent_synthesis_operator_allowance_per_trial_proposal": 0.005,
+      "observable_synthesis_bias_allowance_proposal": 0.01,
+      "physical_failure_probability_all_trials_proposal": 0.005,
+      "physical_failure_probability_per_trial_proposal": 3.755163349605708e-07
+    },
+    "diagonal_energy_mean": {
+      "statistical_absolute_error": 0.03,
+      "statistical_failure_probability": 0.005,
+      "independent_measured_trials": 12017,
+      "outcome_range": [
+        -1.15,
+        0.75
+      ],
+      "status": "proposed independent iid scalar-mean workload",
+      "coherent_synthesis_operator_allowance_per_trial_proposal": 0.005,
+      "observable_synthesis_bias_allowance_proposal": 0.0095,
+      "physical_failure_probability_all_trials_proposal": 0.005,
+      "physical_failure_probability_per_trial_proposal": 4.1607722393276194e-07
+    },
+    "scope": "each proposal covers one fixed iid scalar mean separately; joint simultaneous means require confidence reallocation",
+    "sampling_performed": false
+  },
+  "error_contract": {
+    "Hamiltonian_model": "exact stated diagonal coefficients; floating arithmetic and energy/weight loading",
+    "ideal_preparation": "tested actual reduced state vs normalized matrix exponential; no asymptotic filtering approximation",
+    "coherent_synthesis": "pending; no Clifford+T sequence or certificate; not a stochastic fault probability",
+    "statistical": "separate unexecuted Hoeffding budgets for individual means",
+    "physical_faults": "pending; no physical resource or confidence estimate"
+  },
+  "physical_resource_estimate": null,
+  "prominent_exclusions": [
+    "coherent rotation synthesis",
+    "physical reset/discard/readout time",
+    "routing and physical scheduling",
+    "physical error correction/factories",
+    "measured thermal samples/observable experiment",
+    "scalable Gibbs filtering or mixing"
+  ],
+  "scope_limits": {
+    "explicit_energy_list_system_qubits": 8,
+    "dense_validation_system_qubits": 6,
+    "beta_times_energy_span_maximum": 700.0,
+    "decomposed_artifact_operations": 250000,
+    "scalable_filtering": "planned; not implemented by explicit exponential coefficient loading"
+  },
+  "validation": {
+    "performed": true,
+    "checks": [
+      {
+        "beta": 0.0,
+        "system_qubits": 2,
+        "trace_distance": 1.1102230246251565e-16,
+        "max_entry_error": 1.1102230246251565e-16,
+        "trace_real": 1.0,
+        "minimum_eigenvalue": 0.2499999999999999,
+        "purification_success_probability": 1.0,
+        "actual_observables": {
+          "energy": 5.551115123125783e-17,
+          "Z0": 2.220446049250313e-16,
+          "Z1": 2.220446049250313e-16,
+          "Z0Z1": 0.0
+        },
+        "reference_observables": {
+          "energy": 2.7755575615628914e-17,
+          "Z0": 0.0,
+          "Z1": 0.0,
+          "Z0Z1": 0.0
+        }
+      },
+      {
+        "beta": 0.25,
+        "system_qubits": 2,
+        "trace_distance": 6.938893903907228e-17,
+        "max_entry_error": 5.551115123125783e-17,
+        "trace_real": 1.0,
+        "minimum_eigenvalue": 0.20377799900422058,
+        "purification_success_probability": 1.0,
+        "actual_observables": {
+          "energy": -0.13759877017124025,
+          "Z0": -0.09465398191932817,
+          "Z1": 0.06291182907650214,
+          "Z0Z1": -0.15314585114029172
+        },
+        "reference_observables": {
+          "energy": -0.13759877017124011,
+          "Z0": -0.09465398191932811,
+          "Z1": 0.06291182907650206,
+          "Z0Z1": -0.15314585114029156
+        }
+      },
+      {
+        "beta": 1.25,
+        "system_qubits": 2,
+        "trace_distance": 9.71445146547012e-17,
+        "max_entry_error": 1.1102230246251565e-16,
+        "trace_real": 1.0,
+        "minimum_eigenvalue": 0.06279716233747447,
+        "purification_success_probability": 1.0,
+        "actual_observables": {
+          "energy": -0.6967240364705168,
+          "Z0": -0.5330049048035522,
+          "Z1": 0.47586056535167953,
+          "Z0Z1": -0.6916670111982296
+        },
+        "reference_observables": {
+          "energy": -0.6967240364705167,
+          "Z0": -0.5330049048035521,
+          "Z1": 0.47586056535167937,
+          "Z0Z1": -0.6916670111982295
+        }
+      },
+      {
+        "beta": 5.0,
+        "system_qubits": 2,
+        "trace_distance": 1.1232334506949826e-16,
+        "max_entry_error": 2.220446049250313e-16,
+        "trace_real": 1.0,
+        "minimum_eigenvalue": 7.451672178910922e-05,
+        "purification_success_probability": 1.0,
+        "actual_observables": {
+          "energy": -1.1448487583125995,
+          "Z0": -0.9917140162439821,
+          "Z1": 0.9911951281323612,
+          "Z0Z1": -0.9991830450012225
+        },
+        "reference_observables": {
+          "energy": -1.1448487583125997,
+          "Z0": -0.9917140162439824,
+          "Z1": 0.9911951281323614,
+          "Z0Z1": -0.9991830450012227
+        }
+      }
+    ],
+    "actual_reference_reset_retained_state_max_entry_error": 1.1102230246251565e-16,
+    "method": "Qiskit actual circuit Statevector/DensityMatrix; partial trace; SciPy diagonal matrix exponential"
+  },
+  "provenance": {
+    "source_revision_at_generation": "76033515484638fb9fb047bb4329719be895baf5",
+    "source_hashes": {
+      "gibbs.py": "0185ec83ab1fb6f00446bd35038b82e9500de7951c1870cf85c3624578c94dcf",
+      "generate_simulation_gibbs.py": "7d06c084baf2eaef85cb74cdee3770b504c564e0a1ecccfe3f519f0e0a603655"
+    },
+    "qasm_hashes": {
+      "purification.qasm": "66743f98cbfdd93973bf7a8ae746e0db556dc0c7febab55671a5538893ce7529",
+      "thermal-sample.qasm": "67ff584c9959c6bac3301c613bf611aaaae39560209d69663b69a99fb6b03763",
+      "retained-mixed-state.qasm": "52ab2b8ea822251a0865a39da2e3836a64861d686fac93039b6486f19c678901",
+      "thermal-trial.qasm": "a3905bb83cff7026e08ed32adbf1c0fb37738caac7791ba6646a59d9b34737ee"
+    },
+    "revision_note": "source hashes identify working-tree files if generation precedes their commit",
+    "python": "3.12.16",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU",
+    "randomness": "none; exact ideal checks",
+    "transpiler_seed": 7,
+    "count_basis": [
+      "h",
+      "x",
+      "z",
+      "s",
+      "sdg",
+      "t",
+      "tdg",
+      "rx",
+      "ry",
+      "rz",
+      "cx"
+    ],
+    "optimization_level": 1
+  }
+}

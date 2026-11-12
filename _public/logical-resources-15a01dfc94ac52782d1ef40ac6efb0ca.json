@@ -1,0 +1,140 @@
+{
+  "method": "order-2 product formula",
+  "system_qubits": 3,
+  "logical_qubits": 3,
+  "ancillas": 0,
+  "time": 1,
+  "hbar": 1,
+  "J": 1,
+  "h": 0.7,
+  "steps": 32,
+  "boundary": "open",
+  "initial_state": "000",
+  "observable": "Z(q0)",
+  "hamiltonian_terms_qiskit_order": [
+    [
+      1.0,
+      "IZZ"
+    ],
+    [
+      1.0,
+      "ZZI"
+    ],
+    [
+      0.7,
+      "IIX"
+    ],
+    [
+      0.7,
+      "IXI"
+    ],
+    [
+      0.7,
+      "XII"
+    ]
+  ],
+  "input_preparation": "reset to |0...0>; no preparation gates for chosen basis state",
+  "hamiltonian_access": "explicit per-term CX-RZ-CX and RX; no oracle or data loading",
+  "source_gate_counts": {
+    "cx": 256,
+    "rz": 128,
+    "rx": 96
+  },
+  "source_depth": 416,
+  "decomposed_gate_counts_per_shot": {
+    "cx": 256,
+    "rz": 128,
+    "rx": 96,
+    "measure": 3,
+    "barrier": 1
+  },
+  "decomposed_depth_per_shot": 417,
+  "count_basis": [
+    "h",
+    "x",
+    "z",
+    "s",
+    "sdg",
+    "t",
+    "tdg",
+    "rx",
+    "ry",
+    "rz",
+    "cx"
+  ],
+  "arbitrary_rotation_count_per_shot": 224,
+  "transpilation": {
+    "optimization_level": 1,
+    "seed_transpiler": 7
+  },
+  "resource_kind": "logical counts before coherent rotation synthesis and error correction",
+  "physical_resource_estimate": null,
+  "error_contract_proposal": {
+    "requested_observable_absolute_error": 0.05,
+    "hamiltonian_operator_error_allowance": 0.005,
+    "hamiltonian_observable_bias_allowance": 0.01,
+    "coherent_synthesis_operator_error_allowance": 0.005,
+    "synthesis_observable_bias_allowance": 0.01,
+    "statistical_absolute_error": 0.03,
+    "statistical_failure_probability": 0.005,
+    "physical_failure_probability_across_all_shots": 0.005,
+    "serial_shots": 13315,
+    "per_rotation_operator_error_allowance": 2.232142857142857e-05,
+    "physical_failure_union_bound_per_shot": 3.755163349605708e-07,
+    "status": "proposal; synthesis and physical adapter pending; unsynthesized circuit is checked"
+  },
+  "measurement": "measure every system wire in Z; estimator uses bit 0 as +/-1",
+  "decomposed_gate_counts_all_shots_proposal": {
+    "cx": 3408640,
+    "rz": 1704320,
+    "rx": 1278240,
+    "measure": 39945,
+    "barrier": 13315
+  },
+  "exclusions": [
+    "classical coefficient handling wall time",
+    "classical readout/postprocessing wall time",
+    "initial reset time",
+    "physical gate scheduling, factories and error correction",
+    "coherent rotation synthesis gates and errors"
+  ],
+  "provenance": {
+    "source_revision_at_generation": "76033515484638fb9fb047bb4329719be895baf5",
+    "implementation_sha256": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+    "qasm_sha256": "315d0b409850e5af83b1d9cd12311b583134ac693d9982eeabc5034d2a1f9cfd",
+    "source_note": "revision plus implementation hash identifies working-tree code; generation may precede commit",
+    "command": "python scripts/generate_hamiltonian_simulation.py ",
+    "python": "3.12.16",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "seed": 7,
+    "device": "CPU",
+    "backend": "Qiskit Statevector/Operator; SciPy expm reference"
+  },
+  "validation": {
+    "performed": true,
+    "order": 2,
+    "steps": 32,
+    "operator_error": 0.0005026074427307787,
+    "state_vector_error": 0.0004054485449831451,
+    "state_infidelity": 1.3776271690080222e-07,
+    "observable": "Z(q0)",
+    "exact_observable": 0.4042558572873547,
+    "circuit_observable": 0.404096737236539,
+    "observable_error": 0.00015912005081569758,
+    "hamiltonian_operator_allowance_met": true
+  },
+  "illustrative_sampling": {
+    "performed": true,
+    "kind": "seeded classical sampling from ideal circuit probabilities",
+    "seed": 7,
+    "shots": 13315,
+    "q0_zero_count": 9355,
+    "estimated_z": 0.4051821254224559,
+    "note": "one illustrative draw; Hoeffding bound is analytic, not validated by one sample"
+  }
+}

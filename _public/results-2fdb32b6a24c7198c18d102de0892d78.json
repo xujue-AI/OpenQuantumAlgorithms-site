@@ -1,0 +1,862 @@
+{
+  "status": "checked one-qubit Lindblad Lie/Strang circuits",
+  "instance": {
+    "time": 1.0,
+    "rate": 0.8,
+    "hx": 0.7,
+    "hz": 0.3,
+    "steps": 32,
+    "order": 2,
+    "initial_state": "plus_i",
+    "units": "hbar=1; Hamiltonian coefficients in inverse time, rate in inverse time",
+    "generator": "-i[H,rho]+LrhoLdagger-0.5{LdaggerL,rho}, H=hxX+hzZ, L=sqrt(rate)|0><1|"
+  },
+  "validation": {
+    "performed": true,
+    "selected": {
+      "order": 2,
+      "steps": 32,
+      "time": 1.0,
+      "rate": 0.8,
+      "hx": 0.7,
+      "hz": 0.3,
+      "input": "plus_i",
+      "trace_distance": 1.3572578377843867e-05,
+      "superoperator_spectral_error": 4.231981258692221e-05,
+      "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+      "trace_real": 0.9999999999999976,
+      "trace_imag": 1.0545475490021314e-16,
+      "minimum_eigenvalue": 0.019731942896667878,
+      "circuit_observables": {
+        "X": -0.20632505866029233,
+        "Y": -0.22264158444349397,
+        "Z": 0.9113124171987073
+      },
+      "exact_observables": {
+        "X": -0.20630950942119075,
+        "Y": -0.22262616877448055,
+        "Z": 0.9112963723288878
+      },
+      "observable_errors": {
+        "X": 1.5549239101575463e-05,
+        "Y": 1.5415669013418842e-05,
+        "Z": 1.604486981943154e-05
+      },
+      "actual_density_real": [
+        [
+          0.9556562085993524,
+          -0.10316252933014614
+        ],
+        [
+          -0.10316252933014619,
+          0.04434379140064518
+        ]
+      ],
+      "actual_density_imag": [
+        [
+          4.994360366895531e-17,
+          0.11132079222174686
+        ],
+        [
+          -0.11132079222174712,
+          5.551115123125783e-17
+        ]
+      ],
+      "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+    },
+    "convergence_records": [
+      {
+        "order": 1,
+        "steps": 1,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.13303110732999882,
+        "superoperator_spectral_error": 0.3776425515280863,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999998,
+        "trace_imag": 0.0,
+        "minimum_eigenvalue": 0.0004150708828479059,
+        "circuit_observables": {
+          "X": -0.2637523953784754,
+          "Y": 0.031923110955588106,
+          "Z": 0.9632009107777009
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.05744288595728464,
+          "Y": 0.25454927973006863,
+          "Z": 0.05190453844881304
+        },
+        "actual_density_real": [
+          [
+            0.9816004553888503,
+            -0.13187619768923772
+          ],
+          [
+            -0.1318761976892377,
+            0.018399544611149416
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            -0.015961555477794053
+          ],
+          [
+            0.015961555477794053,
+            0.0
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 1,
+        "steps": 2,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.07213656276786566,
+        "superoperator_spectral_error": 0.1859893134520353,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999999,
+        "trace_imag": 7.28583859910259e-17,
+        "minimum_eigenvalue": 0.005234571176912714,
+        "circuit_observables": {
+          "X": -0.24446311949970917,
+          "Y": -0.09039570378786663,
+          "Z": 0.9545877215715383
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.03815361007851842,
+          "Y": 0.13223046498661392,
+          "Z": 0.043291349242650434
+        },
+        "actual_density_real": [
+          [
+            0.9772938607857691,
+            -0.12223155974985454
+          ],
+          [
+            -0.12223155974985464,
+            0.022706139214230786
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            7.053274615047415e-17,
+            0.04519785189393328
+          ],
+          [
+            -0.04519785189393334,
+            2.325639840551755e-18
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 1,
+        "steps": 4,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.037208724203876636,
+        "superoperator_spectral_error": 0.0931189980535232,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999999,
+        "trace_imag": -5.377642775528102e-17,
+        "minimum_eigenvalue": 0.011464838872884256,
+        "circuit_observables": {
+          "X": -0.22772017755484805,
+          "Y": -0.15624075508078067,
+          "Z": 0.9372293005535858
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.0214106681336573,
+          "Y": 0.06638541369369988,
+          "Z": 0.02593292822469795
+        },
+        "actual_density_real": [
+          [
+            0.9686146502767928,
+            -0.11386008877742401
+          ],
+          [
+            -0.11386008877742404,
+            0.0313853497232071
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            -2.5282231631793323e-17,
+            0.07812037754039032
+          ],
+          [
+            -0.07812037754039033,
+            -2.8494196123487694e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 1,
+        "steps": 8,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.018879211241177862,
+        "superoperator_spectral_error": 0.046664854742029915,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 1.0000000000000002,
+        "trace_imag": 2.0147186870211886e-16,
+        "minimum_eigenvalue": 0.015359251648356078,
+        "circuit_observables": {
+          "X": -0.21760343864731135,
+          "Y": -0.18944843268530634,
+          "Z": 0.9253456946964809
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.011293929226120603,
+          "Y": 0.03317773608917421,
+          "Z": 0.014049322367593042
+        },
+        "actual_density_real": [
+          [
+            0.9626728473482405,
+            -0.10880171932365569
+          ],
+          [
+            -0.10880171932365566,
+            0.03732715265175965
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            1.3866163459439057e-16,
+            0.09472421634265318
+          ],
+          [
+            -0.09472421634265316,
+            6.281023410772828e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 1,
+        "steps": 16,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.009507715046981911,
+        "superoperator_spectral_error": 0.02336702954095022,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999971,
+        "trace_imag": 2.614756826856135e-16,
+        "minimum_eigenvalue": 0.017491197870955575,
+        "circuit_observables": {
+          "X": -0.21210442399653445,
+          "Y": -0.2060503416752164,
+          "Z": 0.9185934609742445
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.0057949145753437015,
+          "Y": 0.01657582709926414,
+          "Z": 0.00729708864535672
+        },
+        "actual_density_real": [
+          [
+            0.9592967304871208,
+            -0.10605221199826732
+          ],
+          [
+            -0.10605221199826714,
+            0.04070326951287632
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            1.690625161359173e-16,
+            0.10302517083760822
+          ],
+          [
+            -0.10302517083760818,
+            9.241316654969619e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 1,
+        "steps": 32,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.004770838878867238,
+        "superoperator_spectral_error": 0.01169314445158858,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999969,
+        "trace_imag": 1.6786498948685724e-17,
+        "minimum_eigenvalue": 0.018602278038293323,
+        "circuit_observables": {
+          "X": -0.20924405609127011,
+          "Y": -0.21434263367488654,
+          "Z": 0.9150132388219656
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.002934546670079363,
+          "Y": 0.008283535099594008,
+          "Z": 0.003716866493077786
+        },
+        "actual_density_real": [
+          [
+            0.9575066194109813,
+            -0.1046220280456351
+          ],
+          [
+            -0.10462202804563502,
+            0.04249338058901561
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            -8.472708109621967e-17,
+            0.10717131683744344
+          ],
+          [
+            -0.10717131683744309,
+            1.015135800449054e-16
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 1,
+        "steps": 64,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.002389660527740242,
+        "superoperator_spectral_error": 0.005849098859831457,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999974,
+        "trace_imag": -2.4001610296692585e-16,
+        "minimum_eigenvalue": 0.019168958060568043,
+        "circuit_observables": {
+          "X": -0.20778606769223212,
+          "Y": -0.21848563322720896,
+          "Z": 0.9131719124658507
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.0014765582710413727,
+          "Y": 0.00414053554727159,
+          "Z": 0.0018755401369628943
+        },
+        "actual_density_real": [
+          [
+            0.9565859562329241,
+            -0.10389303384611645
+          ],
+          [
+            -0.10389303384611566,
+            0.04341404376707339
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            -4.730086571802183e-16,
+            0.10924281661360456
+          ],
+          [
+            -0.1092428166136044,
+            2.3299255421329244e-16
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 2,
+        "steps": 1,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.012812412904164554,
+        "superoperator_spectral_error": 0.04588021622815209,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999996,
+        "trace_imag": 5.898059818321144e-17,
+        "minimum_eigenvalue": 0.008343716646110323,
+        "circuit_observables": {
+          "X": -0.22269299130357645,
+          "Y": -0.22844631255620115,
+          "Z": 0.9301202705828853
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.016383481882385698,
+          "Y": 0.005820143781720605,
+          "Z": 0.01882389825399744
+        },
+        "actual_density_real": [
+          [
+            0.9650601352914424,
+            -0.11134649565178822
+          ],
+          [
+            -0.11134649565178821,
+            0.03493986470855712
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            1.0581813203458523e-16,
+            0.11422315627810053
+          ],
+          [
+            -0.11422315627810062,
+            -4.683753385137379e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 2,
+        "steps": 2,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.003388643720932951,
+        "superoperator_spectral_error": 0.010948802639446783,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999999,
+        "trace_imag": -2.6454533008646308e-17,
+        "minimum_eigenvalue": 0.016909978958297624,
+        "circuit_observables": {
+          "X": -0.21031696709133385,
+          "Y": -0.22611875977686863,
+          "Z": 0.9155003842439188
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.0040074576701431,
+          "Y": 0.003492591002388079,
+          "Z": 0.004204011915030947
+        },
+        "actual_density_real": [
+          [
+            0.9577501921219593,
+            -0.10515848354566695
+          ],
+          [
+            -0.1051584835456669,
+            0.042249807878040516
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            -1.9081958235744878e-17,
+            0.1130593798884343
+          ],
+          [
+            -0.11305937988843431,
+            -7.37257477290143e-18
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 2,
+        "steps": 4,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.0008633971110995834,
+        "superoperator_spectral_error": 0.002715324493531105,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999999,
+        "trace_imag": 1.986258379993444e-16,
+        "minimum_eigenvalue": 0.019034693610547913,
+        "circuit_observables": {
+          "X": -0.20730631466319455,
+          "Y": -0.22358667185408426,
+          "Z": 0.91232866658413
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.0009968052420037954,
+          "Y": 0.000960503079603714,
+          "Z": 0.0010322942552422054
+        },
+        "actual_density_real": [
+          [
+            0.956164333292065,
+            -0.10365315733159734
+          ],
+          [
+            -0.10365315733159722,
+            0.04383566670793496
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            1.430604766594623e-16,
+            0.11179333592704215
+          ],
+          [
+            -0.1117933359270421,
+            5.55653613398821e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 2,
+        "steps": 8,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 0.0002168503692909632,
+        "superoperator_spectral_error": 0.000677522160333366,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999983,
+        "trace_imag": -1.3891340334970526e-17,
+        "minimum_eigenvalue": 0.019565926624284562,
+        "circuit_observables": {
+          "X": -0.2065583956756705,
+          "Y": -0.22287129284290175,
+          "Z": 0.9115534057003752
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 0.00024888625447974655,
+          "Y": 0.0002451240684211986,
+          "Z": 0.000257033371487414
+        },
+        "actual_density_real": [
+          [
+            0.9557767028501868,
+            -0.10327919783783529
+          ],
+          [
+            -0.10327919783783521,
+            0.044223297149811526
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            -1.3552527156068805e-20,
+            0.11143564642145089
+          ],
+          [
+            -0.11143564642145086,
+            -1.3877787807814457e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 2,
+        "steps": 16,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 5.427478946193697e-05,
+        "superoperator_spectral_error": 0.0001692994729314407,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999964,
+        "trace_imag": -1.4977236573350539e-16,
+        "minimum_eigenvalue": 0.01969873942750587,
+        "circuit_observables": {
+          "X": -0.20637171129892,
+          "Y": -0.22268775544996153,
+          "Z": 0.9113605674914369
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 6.220187772926211e-05,
+          "Y": 6.158667548097907e-05,
+          "Z": 6.419516254907442e-05
+        },
+        "actual_density_real": [
+          [
+            0.9556802837457167,
+            -0.10318585564946002
+          ],
+          [
+            -0.10318585564945999,
+            0.04431971625427974
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            -7.344792092231489e-17,
+            0.11134387772498076
+          ],
+          [
+            -0.11134387772498076,
+            -7.63244448111905e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 2,
+        "steps": 32,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 1.3572578377843867e-05,
+        "superoperator_spectral_error": 4.231981258692221e-05,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.9999999999999976,
+        "trace_imag": 1.0545475490021314e-16,
+        "minimum_eigenvalue": 0.019731942896667878,
+        "circuit_observables": {
+          "X": -0.20632505866029233,
+          "Y": -0.22264158444349397,
+          "Z": 0.9113124171987073
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 1.5549239101575463e-05,
+          "Y": 1.5415669013418842e-05,
+          "Z": 1.604486981943154e-05
+        },
+        "actual_density_real": [
+          [
+            0.9556562085993524,
+            -0.10316252933014614
+          ],
+          [
+            -0.10316252933014619,
+            0.04434379140064518
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            4.994360366895531e-17,
+            0.11132079222174686
+          ],
+          [
+            -0.11132079222174712,
+            5.551115123125783e-17
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      },
+      {
+        "order": 2,
+        "steps": 64,
+        "time": 1.0,
+        "rate": 0.8,
+        "hx": 0.7,
+        "hz": 0.3,
+        "input": "plus_i",
+        "trace_distance": 3.393387053360293e-06,
+        "superoperator_spectral_error": 1.0579637338608875e-05,
+        "superoperator_metric": "column-vectorized2->2 induced Hilbert-Schmidt norm; not diamond norm",
+        "trace_real": 0.999999999999988,
+        "trace_imag": 6.343694439783472e-16,
+        "minimum_eigenvalue": 0.01974024378036557,
+        "circuit_observables": {
+          "X": -0.2063133966540695,
+          "Y": -0.22263002387763042,
+          "Z": 0.9113003833017157
+        },
+        "exact_observables": {
+          "X": -0.20630950942119075,
+          "Y": -0.22262616877448055,
+          "Z": 0.9112963723288878
+        },
+        "observable_errors": {
+          "X": 3.887232878752034e-06,
+          "Y": 3.855103149874584e-06,
+          "Z": 4.01097282787255e-06
+        },
+        "actual_density_real": [
+          [
+            0.9556501916508519,
+            -0.10315669832703483
+          ],
+          [
+            -0.10315669832703467,
+            0.04434980834913614
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            4.0538573339117187e-16,
+            0.11131501193881509
+          ],
+          [
+            -0.11131501193881532,
+            2.2898371058717535e-16
+          ]
+        ],
+        "inner_hamiltonian_approximation": "zero for the analytic exact-angle substep; no inner Trotter product"
+      }
+    ],
+    "input_checks_at_selected_steps": [
+      {
+        "input": "zero",
+        "trace_distance": 1.9082861516567468e-05,
+        "trace_real": 0.9999999999999991,
+        "trace_imag": -3.08055718521022e-16,
+        "minimum_eigenvalue": 0.01374656856954895,
+        "observable_errors": {
+          "X": 4.994813670194942e-06,
+          "Y": 3.540923107359095e-05,
+          "Z": 1.3336439023181601e-05
+        }
+      },
+      {
+        "input": "one",
+        "trace_distance": 2.772655030309574e-05,
+        "trace_real": 0.9999999999999987,
+        "trace_imag": -2.0660827649426894e-17,
+        "minimum_eigenvalue": 0.2819847708789396,
+        "observable_errors": {
+          "X": 1.9271171551552002e-05,
+          "Y": 3.1416096857320164e-05,
+          "Z": 4.1433044446703704e-05
+        }
+      },
+      {
+        "input": "plus",
+        "trace_distance": 1.9306590201735786e-05,
+        "trace_real": 0.9999999999999982,
+        "trace_imag": -3.995962631966887e-17,
+        "minimum_eigenvalue": 0.05775426321232377,
+        "observable_errors": {
+          "X": 1.1930030790807677e-05,
+          "Y": 2.999641747580134e-05,
+          "Z": 2.1186481652668565e-05
+        }
+      },
+      {
+        "input": "plus_i",
+        "trace_distance": 1.3572578377843867e-05,
+        "trace_real": 0.9999999999999976,
+        "trace_imag": 1.0545475490021314e-16,
+        "minimum_eigenvalue": 0.019731942896667878,
+        "observable_errors": {
+          "X": 1.5549239101575463e-05,
+          "Y": 1.5415669013418842e-05,
+          "Z": 1.6044869819403784e-05
+        }
+      }
+    ],
+    "reference": "independent4x4 column-vectorized Liouvillian exponential; never a quantum circuit gate",
+    "metric_scope": "selected-input trace distance and2->2 Hilbert-Schmidt superoperator norm; no diamond certificate"
+  },
+  "illustrative_sampling": {
+    "performed": true,
+    "kind": "seeded classical draw from actual split-circuit probabilities",
+    "seed": 43,
+    "shots": 13315,
+    "zero_count": 12683,
+    "estimated_Z": 0.9050694705219677,
+    "scope": "one illustrative iid draw; it does not establish the confidence bound"
+  },
+  "environment": {
+    "python": "3.12.16",
+    "backend": "CPU Qiskit DensityMatrix gate/reset evolution; SciPy expm reference",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "source_revision_at_generation": "76033515484638fb9fb047bb4329719be895baf5",
+  "source_sha256": {
+    "lindblad.py": "069ee82b310defbaba395b74111072553fc830487a09a81a1a44d782d593698f",
+    "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+    "generate_simulation_lindblad.py": "67070056599b254c54030a49ea13a70e2af351cf68ce5277aeff483372e9b13d"
+  },
+  "source_note": "working-tree source hashes identify code created before commit; revision is generation parent"
+}
