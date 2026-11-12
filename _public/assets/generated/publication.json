@@ -1,0 +1,14 @@
+{
+  "source_commit": "d67e660adf9887a3242aa7054cdc90db8d1eef34",
+  "python": "3.12.16",
+  "packages": {
+    "qiskit": "2.6.2",
+    "qdk": "1.34.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "jupyter-book": "2.1.7",
+    "ipywidgets": "8.1.9"
+  },
+  "book_theme_commit": "08951401cf4aa6710f040fe34dcf0c1351a08639",
+  "checks": "workflow tests, generated artifacts, notebook execution, Jupyter Book HTML build and internal-link validation"
+}

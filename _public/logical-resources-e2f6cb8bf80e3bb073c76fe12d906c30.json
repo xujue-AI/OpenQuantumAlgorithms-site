@@ -1,0 +1,64 @@
+{
+  "algorithm": "Grover search with one marked state",
+  "input_qubits": 3,
+  "marked_integer": 5,
+  "marked_bitstring": "101",
+  "iterations": 2,
+  "oracle_calls": 2,
+  "ancillas": 0,
+  "ideal_success_probability": 0.9453124999999999,
+  "source_gate_counts": {
+    "h": 23,
+    "x": 16,
+    "ccx": 4
+  },
+  "source_depth": 21,
+  "decomposed_gate_counts": {
+    "cx": 24,
+    "ry": 13,
+    "tdg": 12,
+    "t": 12,
+    "rz": 7,
+    "h": 2
+  },
+  "decomposed_depth": 48,
+  "decomposed_unitary_gates": 70,
+  "count_basis": [
+    "h",
+    "x",
+    "z",
+    "s",
+    "sdg",
+    "t",
+    "tdg",
+    "rx",
+    "ry",
+    "rz",
+    "cx"
+  ],
+  "resource_kind": "logical circuit counts before rotation synthesis and error correction",
+  "physical_resource_estimate": null,
+  "oracle_model": "explicit equality predicate against a known integer; pedagogical",
+  "transpilation": {
+    "optimization_level": 1,
+    "seed_transpiler": 7
+  },
+  "implementation": {
+    "source_path": "src/openquantum/grover.py",
+    "sha256": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21"
+  },
+  "qasm_sha256": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+  "simulation": {
+    "performed": true,
+    "method": "exact ideal statevector",
+    "success_probability": 0.945312499999996
+  },
+  "environment": {
+    "python": "3.12.16",
+    "packages": {
+      "qiskit": "2.6.2",
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4"
+    }
+  }
+}
