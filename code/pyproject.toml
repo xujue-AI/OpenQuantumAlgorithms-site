@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openquantum-examples"
+version = "0.2.0"
+requires-python = ">=3.12"
+license = "MIT"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["openquantum*"]
+namespaces = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

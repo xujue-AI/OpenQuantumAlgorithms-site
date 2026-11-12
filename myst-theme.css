@@ -33,6 +33,44 @@ a {
   text-underline-offset: 0.2em;
 }
 
+.myst-top-nav {
+  border-bottom: 1px solid var(--oq-line);
+  box-shadow: none;
+}
+
+.myst-home-link {
+  margin-left: 0.4rem;
+}
+
+.myst-home-link-logo {
+  margin-right: 0.7rem;
+}
+
+.myst-home-link-logo img {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.myst-home-link > span {
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+}
+
+.myst-toc {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.myst-primary-sidebar-footer {
+  border-top: 1px solid var(--oq-line);
+  padding: 0.9rem 0.75rem;
+  color: var(--oq-muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
 .hero {
   margin: 1.3rem 0 2rem;
   padding: 2rem 2.15rem 1.9rem;
@@ -186,6 +224,20 @@ pre.sourceCode {
 }
 
 @media (max-width: 640px) {
+  .myst-home-link-logo {
+    margin-right: 0.45rem;
+  }
+
+  .myst-home-link-logo img {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .myst-home-link > span {
+    font-size: 0.85rem;
+    letter-spacing: -0.025em;
+  }
+
   .hero {
     padding: 1.5rem 1.25rem;
   }

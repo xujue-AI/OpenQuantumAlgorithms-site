@@ -2,8 +2,8 @@
 
 This Binder recipe is published beside the generated website in the public
 `xujue-AI/OpenQuantumAlgorithms-site` repository's `gh-pages` branch. It uses
-Python 3.12 and pins the scientific libraries used by the Grover notebook.
-`postBuild` places the standalone implementation beside the notebook, so a
+Python 3.12 and pins the scientific demo libraries used by the notebooks.
+`postBuild` installs the public example package and retains the standalone Grover download, so a
 public reader needs no access to the private development repository.
 
 Launch:
@@ -20,4 +20,7 @@ This is a demo environment. It excludes the QDK resource estimator, and the
 Conda/JupyterLab and repo2docker base dependencies are not a full environment
 lock. Surface-code resource reports use the separate locked build environment
 and scripts in the development project. A configured recipe is not evidence of
-a successful live Binder build.
+a successful live Binder build. Hamiltonian and optimization notebooks are
+also published and import the same installed public package. Quantum-resource
+estimation requires the separate full environment, which is included in the
+public code download.

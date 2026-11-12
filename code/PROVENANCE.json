@@ -1,0 +1,25 @@
+{
+  "source_commit": "addea533ae5235f0f3db149bcaf62fc30b17ab2e",
+  "source_sha256": {
+    "src/openquantum/__init__.py": "af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663",
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "src/openquantum/hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+    "src/openquantum/optimization.py": "b35f7af2eccacf86bf7de3f669eead419baab909b6592915700f7324a0e0a15f",
+    "src/openquantum/resource_estimation.py": "bead57b3225ca19650ada888aea5a8b201ae17b533ab4db29c0971150043bfa2",
+    "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+    "tests/test_general_resource_estimation.py": "ec066ceedecb950911b7ae3ec6e9d9b55906810f7daf29e68c2e4c11dce02c09",
+    "tests/test_grover.py": "ce0b1de4079959a7ee6e6f3bb18dd89812398011af7c7042a667e6ef99b3c46a",
+    "tests/test_hamiltonian_simulation.py": "14de57f2bfca6fd14928196f7a04e6ed3a7a1333b44385a4757b18ce8e87e1a7",
+    "tests/test_optimization.py": "3ab1a0ffa451da82b1c35aaf6b8838e898dba85c77cf687515f79d6472190d46",
+    "tests/test_resource_contract.py": "4576836c90aecac50636fd97019c2b903835854de5387eec711771920b6007af",
+    "tests/test_simulation_lcu.py": "0661343bc31228ffa3db5ecb0fb8a17ddbc92f5ec109c4e63a189599ddbddf69",
+    "tests/test_simulation_qsp.py": "b1bc5ad8aa6bbd67307725a19b67a967e19371e4e05a78579bf8b3decf6b52e8",
+    "scripts/generate_grover.py": "f1e58e851facabcba12cb2f177060423b53eb9418aea7e4404431272ee744818",
+    "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+    "scripts/generate_hamiltonian_simulation.py": "599daf506ffb0fe572cfee92e580aada94b92b4e34306e0426f78b3ed756fd3d",
+    "scripts/generate_simulation_lcu.py": "c5ce04ffe7ae1c5cff52bc5156e33071905a11745a60315bb4111f02e82673ae",
+    "scripts/generate_simulation_qsp.py": "499c99a33f4135d8f880aa23874fe3e65ee7feec86e8482d4243ae48fa28f817",
+    "scripts/generate_optimization.py": "f175f45357233d122d67b81564144e84f3dc40c91a8e8c1dc3e864d924226eaa"
+  }
+}
