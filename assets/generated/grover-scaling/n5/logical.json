@@ -1,0 +1,61 @@
+{
+  "algorithm_qubits": 5,
+  "canonical_application_trace": "@compute_qubits(5)\n{\n  repeat 48 {\n    RZ(0)\n    RZ(1)\n  }\n  repeat 72 {\n    RZ(0)\n  }\n  repeat 162 {\n    T(0)\n  }\n  repeat 5 {\n    MEAS_Z(0)\n  }\n}\n",
+  "canonical_gate_counts": {
+    "MEAS_Z": 5,
+    "RZ": 168,
+    "T": 162
+  },
+  "classical_control_and_external_loading_time_s": null,
+  "classical_generation_lowering_reference_check_time_s": 0.05932187899998098,
+  "classical_verification_time_s": null,
+  "compiled_qubits": 5,
+  "decomposed_depth": 595,
+  "decomposed_gate_counts": {
+    "barrier": 1,
+    "cx": 288,
+    "h": 59,
+    "measure": 5,
+    "ry": 41,
+    "rz": 224,
+    "t": 64,
+    "tdg": 56
+  },
+  "decomposed_unitary_gate_count": 732,
+  "diffusion_calls_per_trial": 4,
+  "ideal_success_probability": 0.9991823155432941,
+  "included_quantum_work": [
+    "initial preparation",
+    "explicit equality oracle",
+    "diffusion",
+    "ancillas if compiler introduces them",
+    "final readout"
+  ],
+  "input_sha256": "fddae96b968c561ea67fda0440afaed51b759746ad3a76202d8377167820f344",
+  "lowered_state_checked_up_to_global_phase": true,
+  "matches_frozen_n3_qasm": null,
+  "oracle": "Explicit equality phase predicate with X masks and a decomposed multi-controlled phase",
+  "oracle_calls_per_trial": 4,
+  "output_measurements_per_trial": 5,
+  "preparation": "Explicit uniform-superposition Hadamards on all n input qubits",
+  "problem": {
+    "algorithm": "Grover single-target equality search",
+    "iterations": 4,
+    "marked": 21,
+    "marked_bitstring": "10101",
+    "n_qubits": 5,
+    "number_of_items": 32,
+    "number_of_marked_states": 1,
+    "target_family": "Alternating q[even]=1, q[odd]=0; n=3 is the original target 101"
+  },
+  "qasm_sha256": "7638da4178ecc3366de77bb9b8f59aee3132aa2068cc356c3487b211f3404980",
+  "source_gate_counts": {
+    "barrier": 1,
+    "h": 61,
+    "mcx": 8,
+    "measure": 5,
+    "x": 56
+  },
+  "statevector_checked": true,
+  "statevector_success_probability": 0.9991823155432346
+}

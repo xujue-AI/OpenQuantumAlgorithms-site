@@ -1,0 +1,745 @@
+{
+  "algorithm": "Order finding with explicit Fourier modular additions and compute-swap-uncompute multiplication",
+  "modulus": 21,
+  "base": 2,
+  "integer_bits": 5,
+  "phase_bits": 6,
+  "total_logical_qubits": 18,
+  "work_qubits": 7,
+  "controlled_power_slots": 6,
+  "controlled_modular_multiplications": 6,
+  "nonidentity_modular_multiplications": 6,
+  "classically_computed_multiplier_constants": [
+    2,
+    4,
+    16,
+    4,
+    16,
+    4
+  ],
+  "modular_additions_per_nonidentity_multiplication": 10,
+  "source_gate_counts": {
+    "h": 6,
+    "cM4": 3,
+    "cM16": 2,
+    "x": 1,
+    "cM2": 1,
+    "QFT6_dg": 1
+  },
+  "decomposed_gate_counts": {
+    "rz": 23100,
+    "cx": 19845,
+    "h": 1994,
+    "ry": 120,
+    "t": 120,
+    "tdg": 90,
+    "measure": 6,
+    "x": 1
+  },
+  "decomposed_dependency_depth": 23665,
+  "primitive_unitary_gates": 45270,
+  "continuous_rotations": 23220,
+  "logical_resource_status": "computed explicit-circuit counts before synthesis and error correction",
+  "generation_wall_seconds": 0.049248802999983354,
+  "compilation_wall_seconds": 0.3227361620000124,
+  "workload_contract": {
+    "fixed_modulus": 21,
+    "fixed_base": 2,
+    "phase_bits": 6,
+    "reference_order": 6,
+    "ideal_factoring_success_probability_per_trial": 0.28798913703656037,
+    "ideal_sampling_failure_allowance": 0.005,
+    "serial_trials": 16,
+    "records": [
+      {
+        "outcome": 0,
+        "probability": 0.1669921875,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 1,
+        "probability": 0.00033188419243776766,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 2,
+        "probability": 0.00035208946661423047,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 3,
+        "probability": 0.0003899325042145146,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 4,
+        "probability": 0.00045358016998756166,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 5,
+        "probability": 0.0005599556145734875,
+        "recovered_order": 12,
+        "factors": []
+      },
+      {
+        "outcome": 6,
+        "probability": 0.0007466145459259859,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 7,
+        "probability": 0.001109200262234903,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 8,
+        "probability": 0.0019531249999999993,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 9,
+        "probability": 0.004739724591109129,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 10,
+        "probability": 0.02868906477412355,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 11,
+        "probability": 0.11419630348192165,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 12,
+        "probability": 0.007358919830012433,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 13,
+        "probability": 0.0025965256794894262,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 14,
+        "probability": 0.001462231213336014,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 15,
+        "probability": 0.001076473674019152,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 16,
+        "probability": 0.0009765625,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 17,
+        "probability": 0.0010764736740191527,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 18,
+        "probability": 0.0014622312133360164,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 19,
+        "probability": 0.002596525679489426,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 20,
+        "probability": 0.007358919830012444,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 21,
+        "probability": 0.11419630348192153,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 22,
+        "probability": 0.02868906477412378,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 23,
+        "probability": 0.004739724591109153,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 24,
+        "probability": 0.0019531250000000026,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 25,
+        "probability": 0.0011092002622349047,
+        "recovered_order": 18,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 26,
+        "probability": 0.000746614545925985,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 27,
+        "probability": 0.0005599556145734879,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 28,
+        "probability": 0.0004535801699875606,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 29,
+        "probability": 0.00038993250421451514,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 30,
+        "probability": 0.00035208946661422744,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 31,
+        "probability": 0.0003318841924377726,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 32,
+        "probability": 0.1669921875,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 33,
+        "probability": 0.00033188419243776766,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 34,
+        "probability": 0.00035208946661423047,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 35,
+        "probability": 0.0003899325042145146,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 36,
+        "probability": 0.00045358016998756166,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 37,
+        "probability": 0.0005599556145734875,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 38,
+        "probability": 0.0007466145459259859,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 39,
+        "probability": 0.001109200262234903,
+        "recovered_order": 18,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 40,
+        "probability": 0.0019531249999999993,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 41,
+        "probability": 0.004739724591109129,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 42,
+        "probability": 0.02868906477412355,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 43,
+        "probability": 0.11419630348192165,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 44,
+        "probability": 0.007358919830012433,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 45,
+        "probability": 0.0025965256794894262,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 46,
+        "probability": 0.001462231213336014,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 47,
+        "probability": 0.001076473674019152,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 48,
+        "probability": 0.0009765625,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 49,
+        "probability": 0.0010764736740191527,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 50,
+        "probability": 0.0014622312133360164,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 51,
+        "probability": 0.002596525679489426,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 52,
+        "probability": 0.007358919830012444,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 53,
+        "probability": 0.11419630348192153,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 54,
+        "probability": 0.02868906477412378,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 55,
+        "probability": 0.004739724591109153,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 56,
+        "probability": 0.0019531250000000026,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 57,
+        "probability": 0.0011092002622349047,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 58,
+        "probability": 0.000746614545925985,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 59,
+        "probability": 0.0005599556145734879,
+        "recovered_order": 12,
+        "factors": []
+      },
+      {
+        "outcome": 60,
+        "probability": 0.0004535801699875606,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 61,
+        "probability": 0.00038993250421451514,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 62,
+        "probability": 0.00035208946661422744,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 63,
+        "probability": 0.0003318841924377726,
+        "recovered_order": null,
+        "factors": []
+      }
+    ],
+    "scope": "fixed chosen base; no random-base or generic factoring guarantee",
+    "classical_reference_used_only_for_validation_and_sampling_contract": true
+  },
+  "physical_resource_estimate": null,
+  "included": [
+    "prepare exponent plus state and x=1",
+    "all defined controlled modular-add gates",
+    "compute/swap/inverse-multiplier uncomputation",
+    "inverse QFT",
+    "final exponent measurement",
+    "all full circuits in fixed-base retry contract"
+  ],
+  "excluded": [
+    "random base selection/rejection and generic factoring success",
+    "classical preprocessing/postprocessing from physical runtime",
+    "certified rotation synthesis",
+    "exact physical Clifford schedule",
+    "external input loading beyond classically specified N,a"
+  ],
+  "valid_domain": "x<N, n+1 accumulator initially zero, borrow flag zero; outside-domain circuit extension unspecified",
+  "preparation_model": "all qubits begin in the circuit model's |0>; no explicit reset instruction",
+  "precision_model": "all generated rotations are exact analytic angles represented numerically; no certified compiled angle approximation",
+  "compiled_global_phase_radians": 1.288543861823948,
+  "qasm_global_phase_policy": "Pinned QASM exporter omits overall global phase; exported complete measured trials preserve probabilities, not phase-preserving coherently controlled oracle specifications",
+  "limits": {
+    "input_integer_bits": 12,
+    "phase_bits": 24,
+    "statevector_total_qubits": 18,
+    "primitive_export_gates": 500000,
+    "materialization_guard": "100*n*t*(n+1)^2 <= 500000 conservative source-work preflight plus actual post-compilation cap"
+  },
+  "asymptotic_implemented_cost": "logical width t+2n+2; exact QFT modular addition O(n^2), multiplication O(n^3), t powers O(t*n^3)+O(t^2); for t=2n O(n^4)",
+  "qasm_sha256": "ec6cf87d1001b8f78068676c3749a0ee27153a40382a6d5a7d80041e136fc963",
+  "implementation_sha256": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3",
+  "environment": {
+    "python": "3.12.16",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU",
+    "seed": 20261112
+  },
+  "source_commit": "c7692214802ecac04f7fd714869a1a206605e1a5",
+  "source_commit_scope": "base checkout at generation; source hash above identifies working implementation",
+  "simulation": {
+    "probabilities": [
+      0.16699218749993003,
+      0.00033188419243762807,
+      0.0003520894666140845,
+      0.0003899325042143498,
+      0.0004535801699873701,
+      0.0005599556145732534,
+      0.0007466145459256686,
+      0.001109200262234438,
+      0.001953124999999184,
+      0.0047397245911071665,
+      0.028689064774111747,
+      0.11419630348187373,
+      0.007358919830009347,
+      0.002596525679488342,
+      0.0014622312133353954,
+      0.0010764736740187023,
+      0.0009765624999995917,
+      0.0010764736740186988,
+      0.0014622312133354,
+      0.0025965256794883407,
+      0.007358919830009353,
+      0.11419630348187376,
+      0.028689064774111758,
+      0.004739724591107162,
+      0.0019531249999991838,
+      0.001109200262234432,
+      0.0007466145459256716,
+      0.0005599556145732532,
+      0.0004535801699873711,
+      0.0003899325042143503,
+      0.0003520894666140831,
+      0.00033188419243762726,
+      0.16699218749993003,
+      0.00033188419243762807,
+      0.0003520894666140845,
+      0.0003899325042143498,
+      0.0004535801699873701,
+      0.0005599556145732534,
+      0.0007466145459256686,
+      0.001109200262234438,
+      0.001953124999999184,
+      0.0047397245911071665,
+      0.028689064774111747,
+      0.11419630348187373,
+      0.007358919830009347,
+      0.002596525679488342,
+      0.0014622312133353954,
+      0.0010764736740187023,
+      0.0009765624999995917,
+      0.0010764736740186988,
+      0.0014622312133354,
+      0.0025965256794883407,
+      0.007358919830009353,
+      0.11419630348187376,
+      0.028689064774111758,
+      0.004739724591107162,
+      0.0019531249999991838,
+      0.001109200262234432,
+      0.0007466145459256716,
+      0.0005599556145732532,
+      0.0004535801699873711,
+      0.0003899325042143503,
+      0.0003520894666140831,
+      0.00033188419243762726
+    ],
+    "reference_probabilities": [
+      0.1669921875,
+      0.00033188419243776766,
+      0.00035208946661423047,
+      0.0003899325042145146,
+      0.00045358016998756166,
+      0.0005599556145734875,
+      0.0007466145459259859,
+      0.001109200262234903,
+      0.0019531249999999993,
+      0.004739724591109129,
+      0.02868906477412355,
+      0.11419630348192165,
+      0.007358919830012433,
+      0.0025965256794894262,
+      0.001462231213336014,
+      0.001076473674019152,
+      0.0009765625,
+      0.0010764736740191527,
+      0.0014622312133360164,
+      0.002596525679489426,
+      0.007358919830012444,
+      0.11419630348192153,
+      0.02868906477412378,
+      0.004739724591109153,
+      0.0019531250000000026,
+      0.0011092002622349047,
+      0.000746614545925985,
+      0.0005599556145734879,
+      0.0004535801699875606,
+      0.00038993250421451514,
+      0.00035208946661422744,
+      0.0003318841924377726,
+      0.1669921875,
+      0.00033188419243776766,
+      0.00035208946661423047,
+      0.0003899325042145146,
+      0.00045358016998756166,
+      0.0005599556145734875,
+      0.0007466145459259859,
+      0.001109200262234903,
+      0.0019531249999999993,
+      0.004739724591109129,
+      0.02868906477412355,
+      0.11419630348192165,
+      0.007358919830012433,
+      0.0025965256794894262,
+      0.001462231213336014,
+      0.001076473674019152,
+      0.0009765625,
+      0.0010764736740191527,
+      0.0014622312133360164,
+      0.002596525679489426,
+      0.007358919830012444,
+      0.11419630348192153,
+      0.02868906477412378,
+      0.004739724591109153,
+      0.0019531250000000026,
+      0.0011092002622349047,
+      0.000746614545925985,
+      0.0005599556145734879,
+      0.0004535801699875606,
+      0.00038993250421451514,
+      0.00035208946661422744,
+      0.0003318841924377726
+    ],
+    "max_probability_error": 6.997180612700049e-14,
+    "work_register_zero_probability": 0.999999999999581,
+    "classical_reference_order": 6,
+    "total_qubits": 18,
+    "performed": true,
+    "method": "Qiskit ideal statevector of actual arithmetic circuit vs independent Fourier residue-class sum",
+    "wall_seconds": 37.374883595
+  },
+  "executed_ideal_sampling": {
+    "performed": true,
+    "seed": 20261112,
+    "trial_count": 16,
+    "samples": [
+      {
+        "outcome": 53,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 0,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 20,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 53,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 0,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 13,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 12,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 32,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 0,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 11,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 0,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 21,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 0,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 21,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 53,
+        "recovered_order": 6,
+        "factors": [
+          3,
+          7
+        ]
+      },
+      {
+        "outcome": 0,
+        "recovered_order": null,
+        "factors": []
+      }
+    ],
+    "classical_sampling_and_reconstruction_seconds": 0.00021412600000303428,
+    "scope": "draws from validated exact circuit distribution; no hardware execution"
+  }
+}

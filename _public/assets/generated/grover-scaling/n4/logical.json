@@ -1,0 +1,58 @@
+{
+  "algorithm_qubits": 4,
+  "canonical_application_trace": "@compute_qubits(4)\n{\n  repeat 18 {\n    RZ(0)\n    RZ(1)\n  }\n  repeat 54 {\n    RZ(0)\n  }\n  repeat 4 {\n    MEAS_Z(0)\n  }\n}\n",
+  "canonical_gate_counts": {
+    "MEAS_Z": 4,
+    "RZ": 90
+  },
+  "classical_control_and_external_loading_time_s": null,
+  "classical_generation_lowering_reference_check_time_s": 0.05263540499998953,
+  "classical_verification_time_s": null,
+  "compiled_qubits": 4,
+  "decomposed_depth": 164,
+  "decomposed_gate_counts": {
+    "barrier": 1,
+    "cx": 84,
+    "h": 2,
+    "measure": 4,
+    "ry": 26,
+    "rz": 90
+  },
+  "decomposed_unitary_gate_count": 202,
+  "diffusion_calls_per_trial": 3,
+  "ideal_success_probability": 0.9613189697265625,
+  "included_quantum_work": [
+    "initial preparation",
+    "explicit equality oracle",
+    "diffusion",
+    "ancillas if compiler introduces them",
+    "final readout"
+  ],
+  "input_sha256": "62fdb7176238dec940cedfab7273cde1e2029fab6d02a7932129a7c1dbb81196",
+  "lowered_state_checked_up_to_global_phase": true,
+  "matches_frozen_n3_qasm": null,
+  "oracle": "Explicit equality phase predicate with X masks and a decomposed multi-controlled phase",
+  "oracle_calls_per_trial": 3,
+  "output_measurements_per_trial": 4,
+  "preparation": "Explicit uniform-superposition Hadamards on all n input qubits",
+  "problem": {
+    "algorithm": "Grover single-target equality search",
+    "iterations": 3,
+    "marked": 5,
+    "marked_bitstring": "0101",
+    "n_qubits": 4,
+    "number_of_items": 16,
+    "number_of_marked_states": 1,
+    "target_family": "Alternating q[even]=1, q[odd]=0; n=3 is the original target 101"
+  },
+  "qasm_sha256": "3cbd68ac43a189068b9d43258a968e22533b3792fcaaa868900ca8f30280308a",
+  "source_gate_counts": {
+    "barrier": 1,
+    "h": 40,
+    "mcx": 6,
+    "measure": 4,
+    "x": 36
+  },
+  "statevector_checked": true,
+  "statevector_success_probability": 0.9613189697265532
+}

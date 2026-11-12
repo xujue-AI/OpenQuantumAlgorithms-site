@@ -7,7 +7,10 @@ Use Python 3.12. Install the included requirements lock for the full checked
 environment, then `python -m pip install --no-deps .`. Binder uses the separately
 documented smaller demo environment and installs this package without dependencies.
 
-Examples cover Grover, product formulas, Taylor-LCU/QSP components and QAOA/VQE
+Examples cover Grover, QFT/QPE, amplitude estimation, reversible-arithmetic
+order finding, HHL and QSVT,
+product formulas, Taylor-LCU/QSP, amplification,
+dissipative channels, thermal preparation and exact/finite-shot QAOA/VQE
 toy workflows. Scope and limitations are documented at
 https://xujue-ai.github.io/OpenQuantumAlgorithms-site/ . Arbitrary-rotation
 resource projections remain conditional; no synthesis certificate is supplied.

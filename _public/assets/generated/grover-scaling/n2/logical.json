@@ -1,0 +1,57 @@
+{
+  "algorithm_qubits": 2,
+  "canonical_application_trace": "@compute_qubits(2)\n{\n  repeat 2 {\n    MEAS_Z(0)\n  }\n}\n",
+  "canonical_gate_counts": {
+    "MEAS_Z": 2
+  },
+  "classical_control_and_external_loading_time_s": null,
+  "classical_generation_lowering_reference_check_time_s": 0.06259775500001297,
+  "classical_verification_time_s": null,
+  "compiled_qubits": 2,
+  "decomposed_depth": 7,
+  "decomposed_gate_counts": {
+    "barrier": 1,
+    "cx": 2,
+    "h": 1,
+    "measure": 2,
+    "ry": 3,
+    "rz": 3
+  },
+  "decomposed_unitary_gate_count": 9,
+  "diffusion_calls_per_trial": 1,
+  "ideal_success_probability": 1.0,
+  "included_quantum_work": [
+    "initial preparation",
+    "explicit equality oracle",
+    "diffusion",
+    "ancillas if compiler introduces them",
+    "final readout"
+  ],
+  "input_sha256": "6f5cd62bcb71de8eed30c7ead29968bcf9dde732623a285c2a841606c7dbe9ec",
+  "lowered_state_checked_up_to_global_phase": true,
+  "matches_frozen_n3_qasm": null,
+  "oracle": "Explicit equality phase predicate with X masks and a decomposed multi-controlled phase",
+  "oracle_calls_per_trial": 1,
+  "output_measurements_per_trial": 2,
+  "preparation": "Explicit uniform-superposition Hadamards on all n input qubits",
+  "problem": {
+    "algorithm": "Grover single-target equality search",
+    "iterations": 1,
+    "marked": 1,
+    "marked_bitstring": "01",
+    "n_qubits": 2,
+    "number_of_items": 4,
+    "number_of_marked_states": 1,
+    "target_family": "Alternating q[even]=1, q[odd]=0; n=3 is the original target 101"
+  },
+  "qasm_sha256": "40f1f8cd7e206c3894db9a050d3b8e6ac513eac0db52d72aaf6be3be92c5c5f3",
+  "source_gate_counts": {
+    "barrier": 1,
+    "cx": 2,
+    "h": 10,
+    "measure": 2,
+    "x": 6
+  },
+  "statevector_checked": true,
+  "statevector_success_probability": 0.9999999999999984
+}

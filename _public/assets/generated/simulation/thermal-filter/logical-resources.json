@@ -1,0 +1,257 @@
+{
+  "resource_kind": "logical full-attempt counts before rotation synthesis and error correction",
+  "physical_resource_estimate": null,
+  "source_gate_counts_coherent_preparation": {
+    "x": 12,
+    "h": 3,
+    "ry": 2,
+    "cry": 2,
+    "mcphase": 2,
+    "ccx": 2,
+    "cx": 1
+  },
+  "primitive_gate_counts_coherent_preparation": {
+    "cx": 21,
+    "rz": 8,
+    "ry": 7,
+    "x": 6,
+    "tdg": 6,
+    "t": 6,
+    "h": 2
+  },
+  "primitive_coherent_preparation_depth": 43,
+  "system_qubits": 1,
+  "reference_qubits": 1,
+  "label_qubits": 2,
+  "logical_qubits": 4,
+  "access_calls_per_attempt": {
+    "PREPARE": 1,
+    "SELECT": 1,
+    "PREPARE_inverse": 1
+  },
+  "per_measurement_axis": {
+    "X": {
+      "primitive_gate_counts_per_full_attempt": {
+        "cx": 21,
+        "ry": 7,
+        "rz": 7,
+        "t": 7,
+        "x": 6,
+        "tdg": 6,
+        "reset": 5,
+        "h": 3,
+        "measure": 3
+      },
+      "dependency_depth_per_full_attempt": 45,
+      "logical_qubits": 4,
+      "classical_bits": 3,
+      "reset_instructions_per_full_attempt": 5,
+      "measurement_instructions_per_full_attempt": 3,
+      "arbitrary_rotations_per_full_attempt": 14,
+      "rotation_count_scope": "RX/RY/RZ gate-class count, including any exact Clifford angles left by lowering; no synthesis certificate",
+      "classical_bit_mapping": "labels occupy bits 0..n_index-1; system outcomes occupy the following bits; accept only zero labels",
+      "schedule": "full initial reset, Bell preparation, access/uncompute, label measurement, unconditioned reference reset, basis change and system readout; failed attempts charged in full",
+      "ideal_workload_worst_case_gate_counts": {
+        "cx": 7798875,
+        "ry": 2599625,
+        "rz": 2599625,
+        "t": 2599625,
+        "x": 2228250,
+        "tdg": 2228250,
+        "reset": 1856875,
+        "h": 1114125,
+        "measure": 1114125
+      },
+      "hypothetical_synthesis_workload_worst_case_gate_counts": {
+        "cx": 7798875,
+        "ry": 2599625,
+        "rz": 2599625,
+        "t": 2599625,
+        "x": 2228250,
+        "tdg": 2228250,
+        "reset": 1856875,
+        "h": 1114125,
+        "measure": 1114125
+      }
+    },
+    "Z": {
+      "primitive_gate_counts_per_full_attempt": {
+        "cx": 21,
+        "rz": 8,
+        "ry": 7,
+        "x": 6,
+        "tdg": 6,
+        "t": 6,
+        "reset": 5,
+        "measure": 3,
+        "h": 2
+      },
+      "dependency_depth_per_full_attempt": 45,
+      "logical_qubits": 4,
+      "classical_bits": 3,
+      "reset_instructions_per_full_attempt": 5,
+      "measurement_instructions_per_full_attempt": 3,
+      "arbitrary_rotations_per_full_attempt": 15,
+      "rotation_count_scope": "RX/RY/RZ gate-class count, including any exact Clifford angles left by lowering; no synthesis certificate",
+      "classical_bit_mapping": "labels occupy bits 0..n_index-1; system outcomes occupy the following bits; accept only zero labels",
+      "schedule": "full initial reset, Bell preparation, access/uncompute, label measurement, unconditioned reference reset, basis change and system readout; failed attempts charged in full",
+      "ideal_workload_worst_case_gate_counts": {
+        "cx": 7798875,
+        "rz": 2971000,
+        "ry": 2599625,
+        "x": 2228250,
+        "tdg": 2228250,
+        "t": 2228250,
+        "reset": 1856875,
+        "measure": 1114125,
+        "h": 742750
+      },
+      "hypothetical_synthesis_workload_worst_case_gate_counts": {
+        "cx": 7798875,
+        "rz": 2971000,
+        "ry": 2599625,
+        "x": 2228250,
+        "tdg": 2228250,
+        "t": 2228250,
+        "reset": 1856875,
+        "measure": 1114125,
+        "h": 742750
+      }
+    }
+  },
+  "output_contracts": {
+    "coherent_filter": "conditional pre-readout system-reference purification upon label0",
+    "measured_trial": "accept label0 and retain measured system outcome; reference reset without conditioning",
+    "reference": "reference is discarded/reset without conditioning; no eigenstate or diagonal Boltzmann input loading"
+  },
+  "workload_proposal": {
+    "status": "unexecuted grouped noncommuting energy-mean workload proposal",
+    "identity_offset": 0.0,
+    "groups": [
+      {
+        "axis": "X",
+        "coefficient": 0.4,
+        "accepted_shots": 14855,
+        "pauli_statistical_error": 0.03,
+        "statistical_failure": 0.0025,
+        "complete_trial_cap_per_accepted_shot": 25,
+        "worst_case_complete_trials": 371375,
+        "expected_complete_trials": 31701.47128978712
+      },
+      {
+        "axis": "Z",
+        "coefficient": 0.6,
+        "accepted_shots": 14855,
+        "pauli_statistical_error": 0.03,
+        "statistical_failure": 0.0025,
+        "complete_trial_cap_per_accepted_shot": 25,
+        "worst_case_complete_trials": 371375,
+        "expected_complete_trials": 31701.47128978712
+      }
+    ],
+    "total_accepted_shots": 29710,
+    "statistical_energy_error_allowance": 0.03,
+    "statistical_failure_probability": 0.005,
+    "acceptance_failure_probability": 0.005,
+    "physical_failure_probability": 0.005,
+    "worst_case_complete_trials": 742750,
+    "expected_complete_trials": 63402.94257957424,
+    "physical_failure_per_complete_trial_proposal": 6.731740154830024e-09,
+    "sampling_performed": false,
+    "scope": "separate Pauli-basis accepted iid samples; every complete retry re-prepares Bell input/access and runs final readout"
+  },
+  "hypothetical_synthesis_workload_proposal": {
+    "status": "unexecuted grouped noncommuting energy-mean workload proposal",
+    "identity_offset": 0.0,
+    "groups": [
+      {
+        "axis": "X",
+        "coefficient": 0.4,
+        "accepted_shots": 14855,
+        "pauli_statistical_error": 0.03,
+        "statistical_failure": 0.0025,
+        "complete_trial_cap_per_accepted_shot": 25,
+        "worst_case_complete_trials": 371375,
+        "expected_complete_trials": 31710.735490784944
+      },
+      {
+        "axis": "Z",
+        "coefficient": 0.6,
+        "accepted_shots": 14855,
+        "pauli_statistical_error": 0.03,
+        "statistical_failure": 0.0025,
+        "complete_trial_cap_per_accepted_shot": 25,
+        "worst_case_complete_trials": 371375,
+        "expected_complete_trials": 31710.735490784944
+      }
+    ],
+    "total_accepted_shots": 29710,
+    "statistical_energy_error_allowance": 0.03,
+    "statistical_failure_probability": 0.005,
+    "acceptance_failure_probability": 0.005,
+    "physical_failure_probability": 0.005,
+    "worst_case_complete_trials": 742750,
+    "expected_complete_trials": 63421.47098156989,
+    "physical_failure_per_complete_trial_proposal": 6.731740154830024e-09,
+    "sampling_performed": false,
+    "scope": "separate Pauli-basis accepted iid samples; every complete retry re-prepares Bell input/access and runs final readout"
+  },
+  "error_contract": {
+    "Hamiltonian_representation": "stated real Pauli coefficients; floating coefficient arithmetic",
+    "polynomial_approximation": "actual block and conditional state checked separately against matrix Taylor and normalized exponential",
+    "coherent_synthesis": {
+      "full_circuit_operator_error_allowance": 0.0001,
+      "conditional_state_trace_distance_bound": 0.0002921684905999626,
+      "single_pauli_mean_bias_bound": 0.0005843369811999252,
+      "perturbed_acceptance_lower_bound": 0.4684533414343803,
+      "status": "hypothetical only; no certified synthesis implemented",
+      "assumption": "certified coherent Bell+LCU operator-norm bound, projected branch then normalized",
+      "bound_scope": "coherent unitary only; irreversible initialization, reference reset and readout faults are separate"
+    },
+    "coherent_operator_bound_scope": "coherent Bell+LCU unitary; no operator norm assigned to irreversible reset/readout",
+    "statistical": "separate accepted X and Z means; noncommuting energy sum is not one energy-per-bitstring sample",
+    "physical_faults": "pending; distinct from polynomial/synthesis norm error and sampling confidence"
+  },
+  "prominent_exclusions": [
+    "coherent rotation synthesis and certificates",
+    "physical gate/reset/discard/readout timing",
+    "error correction and factory costs",
+    "executed accepted-shot experiment",
+    "OAA and scalable thermal filtering"
+  ],
+  "scale_limits": {
+    "artifact_cli_system_qubits": 1,
+    "reusable_generation_system_qubits": 4,
+    "maximum_degree": 12,
+    "maximum_aggregated_pauli_terms": 256,
+    "beta_times_alpha_over_two_maximum": 10,
+    "statevector_total_qubits": 12,
+    "decomposed_artifact_operation_limit": 250000,
+    "validation_cases": 64
+  },
+  "provenance": {
+    "source_revision_at_generation": "c7692214802ecac04f7fd714869a1a206605e1a5",
+    "source_hashes": {
+      "thermal_filter.py": "ebdce0cc992e09e4e0105f40a5e7c0fa972e0be92030771c85341b0b1fd29fb2",
+      "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "generate_simulation_thermal_filter.py": "b0312b50f54efbf9545eff9cc4b367073597e28c29c30e6477328cddd085b15e"
+    },
+    "qasm_hashes": {
+      "thermal-filter.qasm": "b30704341ea2c4d5f25c4b692b12bca3bf97947c388ac81023d507da2e44b448",
+      "thermal-trial-X.qasm": "b618afab85fc319210b8d1f4fd17916816de77e565527d3ede0dfcb6c0534d09",
+      "thermal-trial-Z.qasm": "22a75480bda887c4dea59f9ca06d6bc7b05875834a2b4c0a2963e103367104ac"
+    },
+    "revision_note": "source hashes identify working-tree files if generation precedes their commit",
+    "python": "3.12.16",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU",
+    "randomness": "none; exact ideal checks",
+    "transpiler_seed": 7,
+    "optimization_level": 1
+  }
+}

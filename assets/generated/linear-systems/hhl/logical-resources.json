@@ -1,0 +1,358 @@
+{
+  "method": "HHL on explicit dyadic commuting X-projector family",
+  "system_qubits": 1,
+  "matrix_dimension": 2,
+  "phase_qubits": 2,
+  "logical_qubits": 4,
+  "matrix_definition": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+  "weights_little_endian": [
+    1
+  ],
+  "offset": 1,
+  "D": 4,
+  "lambda_min": 0.25,
+  "lambda_max": 0.5,
+  "kappa": 2.0,
+  "phase_spacing": 0.25,
+  "phase_approximation": "none for this exact-grid family",
+  "right_hand_side": {
+    "angles": [
+      0.0
+    ],
+    "construction": "product RY state, from clean zero input"
+  },
+  "C": 0.25,
+  "phase_lookup_labels": [
+    1,
+    2
+  ],
+  "source_gate_counts": {
+    "h": 8,
+    "p": 4,
+    "crx": 4,
+    "x": 4,
+    "swap": 2,
+    "cp": 2,
+    "ccry": 2
+  },
+  "source_dependency_depth": 20,
+  "primitive_gate_counts_per_complete_attempt": {
+    "cx": 34,
+    "ry": 21,
+    "rz": 10,
+    "h": 7,
+    "measure": 4,
+    "x": 2,
+    "s": 1,
+    "rx": 1,
+    "sdg": 1,
+    "barrier": 1
+  },
+  "primitive_dependency_depth": 59,
+  "primitive_basis": [
+    "h",
+    "x",
+    "z",
+    "s",
+    "sdg",
+    "t",
+    "tdg",
+    "rx",
+    "ry",
+    "rz",
+    "cx"
+  ],
+  "seed_transpiler": 7,
+  "optimization_level": 1,
+  "arbitrary_rotations_per_attempt": 32,
+  "output": "one conditional Z(q0) mean, after clock=0 and flag=1; not every classical solution entry",
+  "analytic_family_success_probability": 0.625,
+  "success_lower_bound_from_kappa": 0.25,
+  "retry_and_sampling_proposal": {
+    "status": "unexecuted numerical-ideal workload proposal",
+    "accepted_samples": 13315,
+    "statistical_error": 0.03,
+    "statistical_failure": 0.005,
+    "acceptance_failure": 0.005,
+    "success_probability_used": 0.625,
+    "attempt_cap_per_accepted_slot": 16,
+    "total_capped_attempts": 213040,
+    "numerical_expected_attempts_until_success_without_cap": 21304.0,
+    "assumptions": [
+      "IID fresh prepared inputs",
+      "ideal numerical acceptance remains applicable",
+      "one fixed Pauli mean",
+      "all failures pay full attempt schedule"
+    ],
+    "certified_synthesis_or_physical_success_guarantee": false
+  },
+  "capped_primitive_gate_counts_proposal": {
+    "cx": 7243360,
+    "ry": 4473840,
+    "rz": 2130400,
+    "h": 1491280,
+    "measure": 852160,
+    "x": 426080,
+    "s": 213040,
+    "rx": 213040,
+    "sdg": 213040,
+    "barrier": 213040
+  },
+  "initialization": "each attempt assumes all logical inputs initialized to clean zero; reset timing/faults not modeled",
+  "included_in_attempt": [
+    "product RY input preparation",
+    "controlled P/RX evolution including identity phase",
+    "forward QPE",
+    "all reachable reciprocal lookup rotations",
+    "inverse QPE",
+    "all final measurements"
+  ],
+  "excluded": [
+    "clean-state initialization timing/faults",
+    "classical parameter loading and lookup construction time",
+    "classical compilation/reference solve/readout postprocessing time",
+    "state amplification",
+    "concrete coherent Clifford+T synthesis certificate"
+  ],
+  "algorithm_family_limitations": [
+    "known commuting terms permit efficient classical diagonalization and fast-forwarding",
+    "reciprocal lookup can grow exponentially with clock precision",
+    "no general sparse-matrix oracle or arbitrary vector loader is implemented",
+    "no quantum advantage is established"
+  ],
+  "synthesis_conditioning_note": "QDK mean-fit scalar is not an operator-norm certificate and cannot certify postselected observable bias/acceptance",
+  "hypothetical_certified_unitary_error_conditioning": {
+    "assumption": "complete coherent pre-readout unitary operator norm error <= eta, same prepared input",
+    "acceptance_lower": "(sqrt(p)-eta)**2 when eta<sqrt(p)",
+    "conditional_state_trace_distance_upper": "min(1,2*eta/sqrt(p))",
+    "conditional_Pauli_bias_upper": "min(2,4*eta/sqrt(p))",
+    "actual_eta_certificate_available": false
+  },
+  "physical_estimate": {
+    "status": "conditional_mean_fit_resource_projection",
+    "report": "surface-code.json",
+    "pareto_points": 6,
+    "profile": {
+      "name": "illustrative-p-1e-4",
+      "physical_error_rate": 0.0001,
+      "gate_time_ns": 100,
+      "measurement_time_ns": 500
+    },
+    "budget": {
+      "synthesis_model_error_per_execution": 1e-06,
+      "physical_failure_probability": 0.005,
+      "executions": 213040
+    }
+  },
+  "qasm_export_policy": {
+    "scope": "complete measured trials; not coherently controlled oracle specification",
+    "compiled_global_phase_radians": 1.5707963267948988,
+    "pinned_exporter_global_phase": "may omit global phase; measurement probabilities unaffected"
+  },
+  "provenance": {
+    "source_revision_at_generation": "c7692214802ecac04f7fd714869a1a206605e1a5",
+    "implementation_sha256": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+    "qasm_sha256": "fee90077d8793c9de187535316035090220e69c6db0c9dc8d19d8f739c891406",
+    "source_note": "commit plus canonical source hash identify working tree code; generation can precede commit",
+    "python": "3.12.16",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "seed": 7,
+    "device": "CPU",
+    "command": "python scripts/generate_linear_systems.py "
+  },
+  "validation": {
+    "performed": true,
+    "method": "Qiskit Statevector versus NumPy solve of independently assembled A",
+    "target_state_real": [
+      0.9486832980505138,
+      0.31622776601683794
+    ],
+    "target_state_imag": [
+      0.0,
+      0.0
+    ],
+    "accepted_state_real": [
+      0.9486832980505138,
+      0.31622776601683794
+    ],
+    "accepted_state_imag": [
+      -3.4925372883905365e-18,
+      2.7223929123065126e-18
+    ],
+    "success_probability": 0.6249999999999991,
+    "analytic_success_probability": 0.6250000000000001,
+    "clock_leakage_given_flag_probability": 0.0,
+    "trace_distance_to_normalized_classical_solution": 3.68712595107453e-18,
+    "state_fidelity": 0.9999999999999998,
+    "classical_solution_norm": 3.1622776601683795,
+    "classical_residual_norm": 0.0,
+    "observable": "Z(q0)",
+    "quantum_observable": 0.7999999999999999,
+    "classical_observable": 0.7999999999999999,
+    "algorithm_precision_scope": "exact dyadic eigenphases analytically; reported discrepancies are floating numerical checks"
+  },
+  "scaling_family": {
+    "definition": "offset1, all weights1, m=ceil(log2(n+2)), b=|0**n>",
+    "rows": [
+      {
+        "system_qubits": 1,
+        "dimension": 2,
+        "clock_qubits": 2,
+        "logical_qubits": 4,
+        "kappa": 2.0,
+        "lookup_rotations": 2,
+        "primitive_operations": 81,
+        "dependency_depth": 59,
+        "cx": 34,
+        "continuous_rotations": 32,
+        "final_measurements": 4,
+        "analytic_success_probability": 0.625,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 16,
+        "total_attempts_proposal": 213040,
+        "simulation_performed": true,
+        "state_trace_distance": 3.68712595107453e-18
+      },
+      {
+        "system_qubits": 2,
+        "dimension": 4,
+        "clock_qubits": 2,
+        "logical_qubits": 5,
+        "kappa": 3.0,
+        "lookup_rotations": 3,
+        "primitive_operations": 110,
+        "dependency_depth": 75,
+        "cx": 50,
+        "continuous_rotations": 44,
+        "final_measurements": 5,
+        "analytic_success_probability": 0.4027777777777778,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 29,
+        "total_attempts_proposal": 386135,
+        "simulation_performed": true,
+        "state_trace_distance": 4.651075967426645e-16
+      },
+      {
+        "system_qubits": 3,
+        "dimension": 8,
+        "clock_qubits": 3,
+        "logical_qubits": 7,
+        "kappa": 4.0,
+        "lookup_rotations": 4,
+        "primitive_operations": 284,
+        "dependency_depth": 181,
+        "cx": 134,
+        "continuous_rotations": 118,
+        "final_measurements": 7,
+        "analytic_success_probability": 0.2682291666666667,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 48,
+        "total_attempts_proposal": 639120,
+        "simulation_performed": true,
+        "state_trace_distance": 1.6437028202267237e-16
+      },
+      {
+        "system_qubits": 4,
+        "dimension": 16,
+        "clock_qubits": 3,
+        "logical_qubits": 8,
+        "kappa": 5.0,
+        "lookup_rotations": 5,
+        "primitive_operations": 343,
+        "dependency_depth": 215,
+        "cx": 166,
+        "continuous_rotations": 144,
+        "final_measurements": 8,
+        "analytic_success_probability": 0.18479166666666666,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 73,
+        "total_attempts_proposal": 971995,
+        "simulation_performed": true,
+        "state_trace_distance": 1.9911211938175732e-16
+      },
+      {
+        "system_qubits": 6,
+        "dimension": 64,
+        "clock_qubits": 3,
+        "logical_qubits": 10,
+        "kappa": 7.0,
+        "lookup_rotations": 7,
+        "primitive_operations": 463,
+        "dependency_depth": 282,
+        "cx": 230,
+        "continuous_rotations": 192,
+        "final_measurements": 10,
+        "analytic_success_probability": 0.09693346088435374,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 146,
+        "total_attempts_proposal": 1943990,
+        "simulation_performed": true,
+        "state_trace_distance": 2.2854780144748333e-16
+      },
+      {
+        "system_qubits": 8,
+        "dimension": 256,
+        "clock_qubits": 4,
+        "logical_qubits": 13,
+        "kappa": 9.0,
+        "lookup_rotations": 9,
+        "primitive_operations": 903,
+        "dependency_depth": 449,
+        "cx": 380,
+        "continuous_rotations": 245,
+        "final_measurements": 13,
+        "analytic_success_probability": 0.0573259410824515,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 251,
+        "total_attempts_proposal": 3342065,
+        "simulation_performed": false,
+        "state_trace_distance": null
+      },
+      {
+        "system_qubits": 12,
+        "dimension": 4096,
+        "clock_qubits": 4,
+        "logical_qubits": 17,
+        "kappa": 13.0,
+        "lookup_rotations": 13,
+        "primitive_operations": 1273,
+        "dependency_depth": 617,
+        "cx": 540,
+        "continuous_rotations": 341,
+        "final_measurements": 17,
+        "analytic_success_probability": 0.026138010825229124,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 559,
+        "total_attempts_proposal": 7443085,
+        "simulation_performed": false,
+        "state_trace_distance": null
+      },
+      {
+        "system_qubits": 24,
+        "dimension": 16777216,
+        "clock_qubits": 5,
+        "logical_qubits": 30,
+        "kappa": 25.0,
+        "lookup_rotations": 25,
+        "primitive_operations": 3427,
+        "dependency_depth": 1575,
+        "cx": 1532,
+        "continuous_rotations": 1450,
+        "final_measurements": 30,
+        "analytic_success_probability": 0.006693847548683028,
+        "accepted_samples_proposal": 13315,
+        "attempts_per_slot_proposal": 2203,
+        "total_attempts_proposal": 29332945,
+        "simulation_performed": false,
+        "state_trace_distance": null
+      }
+    ],
+    "physical_scaling_computed": false,
+    "scope": "actual generated primitive counts and analytic ideal retry proposal; only identified small rows simulated"
+  }
+}
