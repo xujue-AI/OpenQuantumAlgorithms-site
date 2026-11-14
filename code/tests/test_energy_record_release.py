@@ -214,6 +214,28 @@ def test_ci_pins_recorded_energy_check_and_keeps_neighboring_commands():
     assert commands[index - 1] == "python scripts/generate_quantum_walks.py --estimate"
     assert commands[index + 1] == "python scripts/generate_energy_estimation_pauli.py --estimate --compare-controls"
     assert "python scripts/generate_energy_estimation.py" not in commands
+    degree_two = 'python scripts/verify_dqi_degree_two_public_saved.py --artifact-root . --source-root . --notebook-path notebooks/optimization_dqi_degree_two.ipynb --expected-manifest-sha256 ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c --archive assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip --time-limit-seconds 10'
+    assert len(commands) == 86 and commands.count(degree_two) == 1
+    assert commands.index(degree_two) == commands.index("python scripts/verify_dqi_saved.py assets/generated/optimization/dqi") + 1
+    commands = [value for value in commands if value != degree_two]
+    correction = 'python scripts/verify_detailed_balance_correction_saved.py --bundle assets/generated/simulation/detailed-balance-correction --source-root . --download assets/generated/simulation/detailed-balance-correction-download.zip'
+    assert len(commands) == 85 and commands.count(correction) == 1
+    assert commands.index(correction) == commands.index("python scripts/verify_detailed_balance_decay.py") + 1
+    commands = [value for value in commands if value != correction]
+    hamiltonian_saved = (
+        "python scripts/verify_simulation_cpf_public.py --bundle assets/generated/simulation/corrected-formula",
+        "python scripts/verify_simulation_gqsp_public.py --bundle assets/generated/simulation/gqsp",
+    )
+    assert len(commands) == 84
+    assert all(commands.count(value) == 1 for value in hamiltonian_saved)
+    assert commands.index(hamiltonian_saved[0]) == commands.index(
+        "python scripts/verify_simulation_multiproduct_saved.py") + 1
+    assert commands.index(hamiltonian_saved[1]) == commands.index(hamiltonian_saved[0]) + 1
+    commands = [value for value in commands if value not in hamiltonian_saved]
+    decay = "python scripts/verify_detailed_balance_decay.py"
+    assert len(commands) == 82 and commands.count(decay) == 1
+    assert commands.index(decay) == commands.index("python scripts/verify_detailed_balance_channel.py") + 1
+    commands = [value for value in commands if value != decay]
     measured_and = "python scripts/verify_shor_measured_and_saved.py"
     assert len(commands) == 81 and commands.count(measured_and) == 1
     assert commands.index(measured_and) == commands.index("python scripts/generate_shor_recovery.py") + 1

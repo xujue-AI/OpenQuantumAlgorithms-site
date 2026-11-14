@@ -1,0 +1,405 @@
+{
+  "complete_import_tree_attested": false,
+  "editable_source_path_required_for_archive": false,
+  "fresh_platform_runtime_readiness_claim": false,
+  "include_system_site_packages": false,
+  "new_public_wrapper_dependency": "Python standard library only",
+  "notebook_kernel": "ordinary Python 3.12.14 with unchanged source projection",
+  "original_project_code": {
+    "algorithm_source_reused_from_upstream": false,
+    "implementation": "original project standard-library primitive generator and independent scalar verifier",
+    "license": "MIT",
+    "source_commit": "c69733230b09e25ae514a63e47cbcb1c3d01c130"
+  },
+  "packages": {
+    "ipykernel": {
+      "license": "BSD-3-Clause",
+      "metadata_sha256": "39f6a0cbe6a0d0b404880684902f085c1c6c93947d218b317b0d8a9c3ee1a137",
+      "project_urls": [
+        "Homepage, https://ipython.org",
+        "Documentation, https://ipykernel.readthedocs.io",
+        "Source, https://github.com/ipython/ipykernel",
+        "Tracker, https://github.com/ipython/ipykernel/issues"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "7.4.0"
+    },
+    "ipython": {
+      "license": "BSD-3-Clause",
+      "metadata_sha256": "9192cb8710ed83351e7ae0d3a7fb12af52e3c4518fec2dca25a9b2bcb9ad2b1c",
+      "project_urls": [
+        "Homepage, https://ipython.org",
+        "Documentation, https://ipython.readthedocs.io/",
+        "Funding, https://jupyter.org/about#donate",
+        "Source, https://github.com/ipython/ipython",
+        "Tracker, https://github.com/ipython/ipython/issues"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "9.18.1"
+    },
+    "jupyter_client": {
+      "license": "BSD License",
+      "metadata_sha256": "95ec04e32a2decceb7325efa691e6e160201e4e8184db1b1e36a239f9170f560",
+      "project_urls": [
+        "Homepage, https://jupyter.org",
+        "Documentation, https://jupyter-client.readthedocs.io/",
+        "Source, https://github.com/jupyter/jupyter_client"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "8.10.0"
+    },
+    "jupyter_core": {
+      "license": "BSD-3-Clause",
+      "metadata_sha256": "68a656d7e2ebe45d40becf6032998192790d8a7536942f72167d79b8559e5ded",
+      "project_urls": [
+        "Homepage, https://jupyter.org",
+        "Documentation, https://jupyter-core.readthedocs.io/",
+        "Source, https://github.com/jupyter/jupyter_core",
+        "Tracker, https://github.com/jupyter/jupyter_core/issues"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "5.9.1"
+    },
+    "nbclient": {
+      "license": "BSD License",
+      "metadata_sha256": "97b199c27c838caf67939deb40ea5432a3cc0ce2b68deb5bb20043dd7e295191",
+      "project_urls": [
+        "Documentation, https://nbclient.readthedocs.io",
+        "Homepage, https://jupyter.org",
+        "Source, https://github.com/jupyter/nbclient",
+        "Tracker, https://github.com/jupyter/nbclient/issues"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "0.11.0"
+    },
+    "nbformat": {
+      "license": "BSD License",
+      "metadata_sha256": "6a25a2f961025655ed80a66f794ac6b8ded4e4ea4c0600ad1801876c0bec6c74",
+      "project_urls": [
+        "Homepage, https://jupyter.org",
+        "Changelog, https://github.com/jupyter/nbformat/blob/main/CHANGELOG.md",
+        "Documentation, https://nbformat.readthedocs.io/",
+        "Repository, https://github.com/jupyter/nbformat.git"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "5.11.1"
+    },
+    "psutil": {
+      "license": "BSD-3-Clause",
+      "metadata_sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f",
+      "project_urls": [],
+      "role": "process monitoring for the original private controls",
+      "version": "7.2.2"
+    },
+    "pytest": {
+      "license": "MIT",
+      "metadata_sha256": "006823d1759e40b4546ff4296945eda3f0692e799f724bb235edd0512d42eead",
+      "project_urls": [
+        "Changelog, https://docs.pytest.org/en/stable/changelog.html",
+        "Contact, https://docs.pytest.org/en/stable/contact.html",
+        "Funding, https://docs.pytest.org/en/stable/sponsor.html",
+        "Homepage, https://docs.pytest.org/en/latest/",
+        "Source, https://github.com/pytest-dev/pytest",
+        "Tracker, https://github.com/pytest-dev/pytest/issues"
+      ],
+      "role": "pure tests",
+      "version": "9.2.0"
+    },
+    "pyzmq": {
+      "license": "BSD-3-Clause",
+      "metadata_sha256": "212193497ae55f0771da25fa455a63e63eca73e78990b4654ad7b30c7ee08139",
+      "project_urls": [
+        "Homepage, https://pyzmq.readthedocs.org",
+        "Documentation, https://pyzmq.readthedocs.org",
+        "Source, https://github.com/zeromq/pyzmq",
+        "Tracker, https://github.com/zeromq/pyzmq/issues"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "27.3.0"
+    },
+    "traitlets": {
+      "license": "BSD License",
+      "metadata_sha256": "e42b503240c058625ffb30c390818d72933117840cb25060614cb24f0be9e587",
+      "project_urls": [
+        "Homepage, https://github.com/ipython/traitlets",
+        "Documentation, https://traitlets.readthedocs.io",
+        "Source, https://github.com/ipython/traitlets",
+        "Tracker, https://github.com/ipython/traitlets/issues"
+      ],
+      "role": "ordinary saved-notebook kernel or notebook data support",
+      "version": "5.16.1"
+    }
+  },
+  "path_file_contents_exported": false,
+  "platform": "Darwin CPU",
+  "project_license": {
+    "file_sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "spdx": "MIT"
+  },
+  "publication_complete": false,
+  "python_license": "PSF-2.0",
+  "python_source": "https://github.com/python/cpython/tree/v3.12.14",
+  "python_version": "3.12.14",
+  "recorded_date": "2026-11-14",
+  "requirements_lock": {
+    "bytes": 1974,
+    "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "rotation_synthesis_or_native_estimation_executed": false,
+  "runtime_validation_scope": "the recorded original CPU components and separate four-cell companion; package extraction context remains unexecuted",
+  "schema": "openquantum.dqi.degree_two_public_environment.v1",
+  "scientific_package_context_executed": false,
+  "selected_file_identity_scope": "selected interpreter, configuration, package metadata, notebook/kernel/IPC/monitor and startup file bytes; not a complete imported-file attestation",
+  "selected_runtime_file_hashes": {
+    "runtime/bin/python3.12": {
+      "bytes": 18058560,
+      "sha256": "2a8addce917415c8f1c7bd70518a2c802ea2d92c6f0de50c6909a35cca4fc109"
+    },
+    "runtime/lib/libpython3.12.dylib": {
+      "bytes": 18058384,
+      "sha256": "4213481457ca697ab18048f1e95ee774b832812dcfe043447cf33e676632c78f"
+    },
+    "runtime/lib/python3.12/_sysconfigdata__darwin_darwin.py": {
+      "bytes": 49609,
+      "sha256": "8fd53ca557926873b7d519cd5cbd3d06b00c0983768901ac45f0c192d2ae05a7"
+    },
+    "runtime/lib/python3.12/site-packages/distutils-precedence.pth": {
+      "bytes": 151,
+      "sha256": "2638ce9e2500e572a5e0de7faed6661eb569d1b696fcba07b0dd223da5f5d224"
+    },
+    "runtime/lib/python3.12/site.py": {
+      "bytes": 23198,
+      "sha256": "b39ab288cc7a6d0cb3bb2655179221411340b22418e4efdee4c20175537a5fa2"
+    },
+    "runtime/venv-configuration": {
+      "bytes": 426,
+      "sha256": "fa55a69891f8b0b8117685892b240b371081f56f98abf5bff4c5d1b4069c1736"
+    },
+    "site-packages/IPython/__init__.py": {
+      "bytes": 8324,
+      "sha256": "5fc67e18c59d2966e00b0bb3b1f71211d73dcf98c58b18c4d36a9006ed412a84"
+    },
+    "site-packages/IPython/core/application.py": {
+      "bytes": 19274,
+      "sha256": "52cb56eb4880ff58e8c1987338a33ce4dfff96ec12ebfa05560406b00837cfca"
+    },
+    "site-packages/IPython/core/history.py": {
+      "bytes": 47796,
+      "sha256": "14825027d23446804201e6cb4404574be250b56517221c8c4cf4bea7760feb87"
+    },
+    "site-packages/IPython/core/interactiveshell.py": {
+      "bytes": 165042,
+      "sha256": "47bb9bf682b0de7501da6424852994b1de8339dd40e7cdc7f6321c3bacf6ae4b"
+    },
+    "site-packages/_pytest/config/__init__.py": {
+      "bytes": 92054,
+      "sha256": "d297eaeba8f6ecfeb73acaa8eef2092203aa49343eb7c77ffedb8ef95b5717ab"
+    },
+    "site-packages/_pytest/main.py": {
+      "bytes": 44147,
+      "sha256": "e30aebb8ee741d2cc085012dee508c1a592697d4282acd00d161a01ba8e8c308"
+    },
+    "site-packages/ipykernel-7.4.0.dist-info/METADATA": {
+      "bytes": 3381,
+      "sha256": "39f6a0cbe6a0d0b404880684902f085c1c6c93947d218b317b0d8a9c3ee1a137"
+    },
+    "site-packages/ipykernel/__main__.py": {
+      "bytes": 143,
+      "sha256": "f470eacf84793e413c387ce020ca7eef185e35a5a5f23ee34ed8ca10e595b9e9"
+    },
+    "site-packages/ipykernel/ipkernel.py": {
+      "bytes": 26241,
+      "sha256": "d7e0695b9247882f2ffae9c10b92ae9a650334af4632c1f25aa2ce82e6a6b7d2"
+    },
+    "site-packages/ipykernel/kernelapp.py": {
+      "bytes": 30858,
+      "sha256": "4d2988562cc4849811f40d95cb8c0d0cea2492ccd6ed5bd3dabc0251e4fc454b"
+    },
+    "site-packages/ipykernel/kernelbase.py": {
+      "bytes": 61802,
+      "sha256": "21f86dbc9490083a1b95609b0594af40641aa8f1155b351d5608ff1ff1c36bac"
+    },
+    "site-packages/ipykernel_launcher.py": {
+      "bytes": 512,
+      "sha256": "f9eeb75198c3798367830dcc7fec31fb913244e3341a1b963960f6df7a4985a0"
+    },
+    "site-packages/ipython-9.18.1.dist-info/METADATA": {
+      "bytes": 4592,
+      "sha256": "9192cb8710ed83351e7ae0d3a7fb12af52e3c4518fec2dca25a9b2bcb9ad2b1c"
+    },
+    "site-packages/jupyter_client-8.10.0.dist-info/METADATA": {
+      "bytes": 8464,
+      "sha256": "95ec04e32a2decceb7325efa691e6e160201e4e8184db1b1e36a239f9170f560"
+    },
+    "site-packages/jupyter_client/__init__.py": {
+      "bytes": 540,
+      "sha256": "1b2722f7e4165154e9d9b62f465a3161c2007c467f2599271b27f3ad346b013b"
+    },
+    "site-packages/jupyter_client/asynchronous/client.py": {
+      "bytes": 2883,
+      "sha256": "78163ddcef0b45ef8999bdd5f540455336f6624b2e5119ff487c1b11c0c26b69"
+    },
+    "site-packages/jupyter_client/blocking/client.py": {
+      "bytes": 2753,
+      "sha256": "d05e70522170f37e28544bbc6c099f65d63e18b1bbf1f17f5dca64dc8d45a105"
+    },
+    "site-packages/jupyter_client/channels.py": {
+      "bytes": 11621,
+      "sha256": "92e5782a03620122f6052f77939a71393194231ab1bbd73720ff208d2be9ddaf"
+    },
+    "site-packages/jupyter_client/client.py": {
+      "bytes": 31835,
+      "sha256": "639fd2a059b4ed6304394462d09d624d08beb0e1180dab15040ac19daa56a16f"
+    },
+    "site-packages/jupyter_client/connect.py": {
+      "bytes": 27780,
+      "sha256": "d598f33986c6e3de05455052723b00fdb2898835460fc7904dce952fedec0ab1"
+    },
+    "site-packages/jupyter_client/kernelspec.py": {
+      "bytes": 15998,
+      "sha256": "d12870c3a2055603e7f9cb7f38173ea58cff5933566d8a2746339a7f733cd4cf"
+    },
+    "site-packages/jupyter_client/launcher.py": {
+      "bytes": 6441,
+      "sha256": "b25c25081899088dacd4604bdcc88ee4d0a84e10356fd74a7421d9cc9484d5f2"
+    },
+    "site-packages/jupyter_client/manager.py": {
+      "bytes": 34213,
+      "sha256": "7052be8e4d44513a21d3df0c55cd68c0acf8788b5e3893d07444d63968926d4b"
+    },
+    "site-packages/jupyter_client/provisioning/factory.py": {
+      "bytes": 9565,
+      "sha256": "a9d9c6855d56bd4a12ad9a9ebe64d8bc4f11a30d80b1f74bf6db29413a86b048"
+    },
+    "site-packages/jupyter_client/provisioning/local_provisioner.py": {
+      "bytes": 12900,
+      "sha256": "bb0f0503d44b607a52c81346fdc680e7a9b16ceafac12924354814ba4ea0a967"
+    },
+    "site-packages/jupyter_client/provisioning/provisioner_base.py": {
+      "bytes": 10593,
+      "sha256": "2f78a5497b32ae6ead588f1c0351349efdae758cfd900d6eeca789ea8294ab50"
+    },
+    "site-packages/jupyter_core-5.9.1.dist-info/METADATA": {
+      "bytes": 1520,
+      "sha256": "68a656d7e2ebe45d40becf6032998192790d8a7536942f72167d79b8559e5ded"
+    },
+    "site-packages/jupyter_core/application.py": {
+      "bytes": 10416,
+      "sha256": "416e01781664bf3a03f79c19968b3124892042ae60e99a266a0dc40c9b47ac84"
+    },
+    "site-packages/jupyter_core/paths.py": {
+      "bytes": 39127,
+      "sha256": "3733405f1334be6b34ead25e4bc4744c2c47b4d1c69c4a96df5c437f21663d2a"
+    },
+    "site-packages/nbclient-0.11.0.dist-info/METADATA": {
+      "bytes": 7262,
+      "sha256": "97b199c27c838caf67939deb40ea5432a3cc0ce2b68deb5bb20043dd7e295191"
+    },
+    "site-packages/nbclient/__init__.py": {
+      "bytes": 164,
+      "sha256": "90e928c78ae2103d36dd5eb68810c930a6c8d55707dcb33a54445a5fd97abfa7"
+    },
+    "site-packages/nbclient/client.py": {
+      "bytes": 49883,
+      "sha256": "5a61fded74a94fd0851c8a85d55d12a9e9fb44be34324a44583efe48e874da8a"
+    },
+    "site-packages/nbformat-5.11.1.dist-info/METADATA": {
+      "bytes": 3686,
+      "sha256": "6a25a2f961025655ed80a66f794ac6b8ded4e4ea4c0600ad1801876c0bec6c74"
+    },
+    "site-packages/nbformat/__init__.py": {
+      "bytes": 6230,
+      "sha256": "e4afe87976b229354971db0bb3c69b7eb775b2c7f0f13486ed910489f59f1509"
+    },
+    "site-packages/nbformat/notebooknode.py": {
+      "bytes": 3193,
+      "sha256": "c2028aec0519f09f04aeaaa89c0664d45da6e71f0de64b7fe9b87ba0116e891a"
+    },
+    "site-packages/nbformat/v4/nbbase.py": {
+      "bytes": 4568,
+      "sha256": "d4a936a22f63bebd93252c918d206b7bc9a16ac8f1ce16aa677fd97afbbb50f4"
+    },
+    "site-packages/nbformat/validator.py": {
+      "bytes": 22349,
+      "sha256": "3db1fe48de1060981b13bcf828b8a5779ae30dd082ec06f712f066e90fbbfd46"
+    },
+    "site-packages/psutil-7.2.2.dist-info/METADATA": {
+      "bytes": 22187,
+      "sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f"
+    },
+    "site-packages/psutil/__init__.py": {
+      "bytes": 89878,
+      "sha256": "d138a5786b163b56ba86ea0b2d5589dfca37e1bcdf8de1057fe1e933d6ab808a"
+    },
+    "site-packages/psutil/_common.py": {
+      "bytes": 25254,
+      "sha256": "1bbce9fd97e6f5439a0d385f28401f527c5a9d978d9d062593d7ef6fe215fc75"
+    },
+    "site-packages/psutil/_psosx.py": {
+      "bytes": 15913,
+      "sha256": "89f0ea0e9c1fe38f224b612792bf31d07c8880d79281806e5379c00514f6b3f2"
+    },
+    "site-packages/psutil/_psposix.py": {
+      "bytes": 11575,
+      "sha256": "288887b58f5939e3b00e021f6e7b490c2f7f4852804a359918ab7d9c6fb39839"
+    },
+    "site-packages/psutil/_psutil_osx.abi3.so": {
+      "bytes": 105920,
+      "sha256": "ff4568b9187ca7b37c5134aaf614ffb061e7fedccebd84158343afb05991b8e2"
+    },
+    "site-packages/pytest-9.2.0.dist-info/METADATA": {
+      "bytes": 7869,
+      "sha256": "006823d1759e40b4546ff4296945eda3f0692e799f724bb235edd0512d42eead"
+    },
+    "site-packages/pytest/__init__.py": {
+      "bytes": 5859,
+      "sha256": "df9445a69f8fa85f8f0569c3b166fcd681117cf23ea0924752b1bb314c5d7326"
+    },
+    "site-packages/pytest/__main__.py": {
+      "bytes": 175,
+      "sha256": "37f8b6a3df1aef71336bce85e366db968ede153dd72ad4e60bebff79e279dc40"
+    },
+    "site-packages/pyzmq-27.3.0.dist-info/METADATA": {
+      "bytes": 3805,
+      "sha256": "212193497ae55f0771da25fa455a63e63eca73e78990b4654ad7b30c7ee08139"
+    },
+    "site-packages/traitlets-5.16.1.dist-info/METADATA": {
+      "bytes": 10832,
+      "sha256": "e42b503240c058625ffb30c390818d72933117840cb25060614cb24f0be9e587"
+    },
+    "site-packages/traitlets/config/application.py": {
+      "bytes": 42967,
+      "sha256": "8ec65c79f468bf419691e1d605482dedaef7470673a2b65e143f71b2592cc6b3"
+    },
+    "site-packages/traitlets/config/loader.py": {
+      "bytes": 40121,
+      "sha256": "f1d0711256f22973da8c69431df644fe2a73063265eb2c81aebc60c591cfad27"
+    },
+    "site-packages/traitlets/traitlets.py": {
+      "bytes": 153897,
+      "sha256": "57ac69a338f896cfad90fdfc74e43e9c09bc831c4647bb5f3f430cb059fa8dfc"
+    },
+    "site-packages/zmq/__init__.py": {
+      "bytes": 2414,
+      "sha256": "5ae09a220d7d50b33fcae501ccc3efa936252e69fa79315025c5c474c034d628"
+    },
+    "site-packages/zmq/backend/__init__.py": {
+      "bytes": 940,
+      "sha256": "e4f7dc21fa48cf11887a039a1db3b77418a50736f2de5d32282d28fd07f59b70"
+    },
+    "site-packages/zmq/backend/cython/__init__.py": {
+      "bytes": 322,
+      "sha256": "48cb84f0602db2610c58d1abbfe66541972e4c3dc4554f37f04d558911cb0cd2"
+    },
+    "site-packages/zmq/backend/cython/_zmq.abi3.so": {
+      "bytes": 462928,
+      "sha256": "2502b21a95200d76aea1370541e77a221668746bc026bffd9d63839a746b1e70"
+    },
+    "startup/editable-source-path-entry": {
+      "bytes": 57,
+      "sha256": "bb9c406efc9cdfc6485299169440a6a2fc07555c626bb7447891474042ddab78"
+    }
+  },
+  "selected_runtime_files": 62,
+  "standard_library_saved_reader": true
+}

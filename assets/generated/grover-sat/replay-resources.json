@@ -6,10 +6,10 @@
       "qdk": "1.34.0",
       "qiskit": "2.6.2"
     },
-    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "platform": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
     "python": "3.12.14",
     "simulator": "Bounded ideal CPU Statevector; no hardware outcomes",
-    "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_commit": "899761f7fc918b466aea32df2543ea7c9b0535be",
     "source_sha256": {
       "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
       "scripts/generate_grover_sat.py": "252401dcb4ddc8712867a4bb46beaaab45d3aed6eb70b281405532ed2df25cb0",
@@ -139,7 +139,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 9,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 48080,
+                  "EVALUATION_TIME": 32344,
                   "LOGICAL_COMPUTE_QUBITS": 28,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -211,7 +211,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 479424124,
+          "estimator_cpu_wall_ns": 332255827,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -267,7 +267,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 9,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 50343,
+                  "EVALUATION_TIME": 27834,
                   "LOGICAL_COMPUTE_QUBITS": 28,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -339,7 +339,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 64705504,
+          "estimator_cpu_wall_ns": 42588912,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -350,7 +350,7 @@
         }
       ],
       "recorded_attempts": 1,
-      "recorded_classical_verification_cpu_ns": 4308,
+      "recorded_classical_verification_cpu_ns": 3935,
       "recorded_oracle_calls": 0,
       "scope": "Fixed recorded quantum-prefix replay cost; not a global adaptive runtime or unknown-M success bound",
       "search_failure_confidence": null,
@@ -477,7 +477,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 18,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 208118,
+                  "EVALUATION_TIME": 166546,
                   "LOGICAL_COMPUTE_QUBITS": 49,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -507,7 +507,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 18,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 208118,
+                  "EVALUATION_TIME": 166546,
                   "LOGICAL_COMPUTE_QUBITS": 49,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -582,7 +582,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 17128258,
+          "estimator_cpu_wall_ns": 13719540,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -650,7 +650,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 18,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 207897,
+                  "EVALUATION_TIME": 150818,
                   "LOGICAL_COMPUTE_QUBITS": 49,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -725,7 +725,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 19114475,
+          "estimator_cpu_wall_ns": 14125399,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -736,7 +736,7 @@
         }
       ],
       "recorded_attempts": 2,
-      "recorded_classical_verification_cpu_ns": 6432,
+      "recorded_classical_verification_cpu_ns": 4841,
       "recorded_oracle_calls": 1,
       "scope": "Fixed recorded quantum-prefix replay cost; not a global adaptive runtime or unknown-M success bound",
       "search_failure_confidence": null,
@@ -863,7 +863,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 18,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 213367,
+                  "EVALUATION_TIME": 174731,
                   "LOGICAL_COMPUTE_QUBITS": 49,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -893,7 +893,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 18,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 213367,
+                  "EVALUATION_TIME": 174731,
                   "LOGICAL_COMPUTE_QUBITS": 49,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -968,7 +968,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 21131875,
+          "estimator_cpu_wall_ns": 15094646,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -1036,7 +1036,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 18,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 212465,
+                  "EVALUATION_TIME": 149583,
                   "LOGICAL_COMPUTE_QUBITS": 49,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -1111,7 +1111,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 49032224,
+          "estimator_cpu_wall_ns": 46726067,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -1122,7 +1122,7 @@
         }
       ],
       "recorded_attempts": 2,
-      "recorded_classical_verification_cpu_ns": 6151,
+      "recorded_classical_verification_cpu_ns": 3809,
       "recorded_oracle_calls": 1,
       "scope": "Fixed recorded quantum-prefix replay cost; not a global adaptive runtime or unknown-M success bound",
       "search_failure_confidence": null,
@@ -1242,7 +1242,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 32,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 112059,
+                  "EVALUATION_TIME": 71813,
                   "LOGICAL_COMPUTE_QUBITS": 81,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -1316,7 +1316,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 18717346,
+          "estimator_cpu_wall_ns": 14356276,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -1374,7 +1374,7 @@
                 "model_properties": {
                   "ALGORITHM_COMPUTE_QUBITS": 32,
                   "ALGORITHM_MEMORY_QUBITS": 0,
-                  "EVALUATION_TIME": 118931,
+                  "EVALUATION_TIME": 81880,
                   "LOGICAL_COMPUTE_QUBITS": 81,
                   "LOGICAL_MEMORY_QUBITS": 0,
                   "NUM_TS_PER_ROTATION": 5,
@@ -1448,7 +1448,7 @@
               "seed_transpiler": 7
             }
           },
-          "estimator_cpu_wall_ns": 21098820,
+          "estimator_cpu_wall_ns": 15846144,
           "physical_profile": {
             "gate_time_ns": 100,
             "measurement_time_ns": 500,
@@ -1459,7 +1459,7 @@
         }
       ],
       "recorded_attempts": 8,
-      "recorded_classical_verification_cpu_ns": 16558,
+      "recorded_classical_verification_cpu_ns": 12377,
       "recorded_oracle_calls": 2,
       "scope": "Fixed recorded quantum-prefix replay cost; not a global adaptive runtime or unknown-M success bound",
       "search_failure_confidence": null,
@@ -1485,7 +1485,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 9,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 48080,
+        "EVALUATION_TIME": 32344,
         "LOGICAL_COMPUTE_QUBITS": 28,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1511,7 +1511,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 9,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 48080,
+        "EVALUATION_TIME": 32344,
         "LOGICAL_COMPUTE_QUBITS": 28,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1537,7 +1537,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 9,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 50343,
+        "EVALUATION_TIME": 27834,
         "LOGICAL_COMPUTE_QUBITS": 28,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1563,7 +1563,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 9,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 50343,
+        "EVALUATION_TIME": 27834,
         "LOGICAL_COMPUTE_QUBITS": 28,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1596,7 +1596,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 208118,
+        "EVALUATION_TIME": 166546,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1629,7 +1629,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 208118,
+        "EVALUATION_TIME": 166546,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1662,7 +1662,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 207897,
+        "EVALUATION_TIME": 150818,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1695,7 +1695,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 207897,
+        "EVALUATION_TIME": 150818,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1728,7 +1728,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 213367,
+        "EVALUATION_TIME": 174731,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1761,7 +1761,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 213367,
+        "EVALUATION_TIME": 174731,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1794,7 +1794,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 212465,
+        "EVALUATION_TIME": 149583,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1827,7 +1827,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 18,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 212465,
+        "EVALUATION_TIME": 149583,
         "LOGICAL_COMPUTE_QUBITS": 49,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1853,7 +1853,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 32,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 112059,
+        "EVALUATION_TIME": 71813,
         "LOGICAL_COMPUTE_QUBITS": 81,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1879,7 +1879,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 32,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 112059,
+        "EVALUATION_TIME": 71813,
         "LOGICAL_COMPUTE_QUBITS": 81,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1905,7 +1905,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 32,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 118931,
+        "EVALUATION_TIME": 81880,
         "LOGICAL_COMPUTE_QUBITS": 81,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,
@@ -1931,7 +1931,7 @@
       "model_properties": {
         "ALGORITHM_COMPUTE_QUBITS": 32,
         "ALGORITHM_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 118931,
+        "EVALUATION_TIME": 81880,
         "LOGICAL_COMPUTE_QUBITS": 81,
         "LOGICAL_MEMORY_QUBITS": 0,
         "NUM_TS_PER_ROTATION": 5,

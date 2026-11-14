@@ -1,0 +1,348 @@
+{
+  "case_index": 25,
+  "model": {
+    "pairs": 1,
+    "qubits": 2,
+    "a_exact": [
+      "1"
+    ],
+    "b_exact": [
+      "1"
+    ],
+    "alpha_exact": "1/5",
+    "A_norm_exact": "1",
+    "B0_norm_exact": "1",
+    "perturbation_norm_ratio_exact": "1/5",
+    "Hamiltonian": "sum_j a_j Z_(2j)Z_(2j+1) + alpha*b_j X_(2j)",
+    "SDK_pair_label": "ZY means Y on first q[2j], Z on partner q[2j+1]",
+    "scope": "Noninteracting disjoint pairs; classically factorized toy, not an application advantage."
+  },
+  "time": "-1",
+  "repetitions": 4,
+  "simulation_performed": true,
+  "ledgers": {
+    "strang": {
+      "method": "strang",
+      "model": {
+        "pairs": 1,
+        "qubits": 2,
+        "a_exact": [
+          "1"
+        ],
+        "b_exact": [
+          "1"
+        ],
+        "alpha_exact": "1/5",
+        "A_norm_exact": "1",
+        "B0_norm_exact": "1",
+        "perturbation_norm_ratio_exact": "1/5",
+        "Hamiltonian": "sum_j a_j Z_(2j)Z_(2j+1) + alpha*b_j X_(2j)",
+        "SDK_pair_label": "ZY means Y on first q[2j], Z on partner q[2j+1]",
+        "scope": "Noninteracting disjoint pairs; classically factorized toy, not an application advantage."
+      },
+      "time_exact": "-1",
+      "repetitions": 4,
+      "delta_exact": "-1/4",
+      "source_operations": 35,
+      "predicted_source_operations": 35,
+      "primitive_counts": {
+        "cx": 16,
+        "rz": 8,
+        "rx": 4,
+        "reset": 2,
+        "h": 2,
+        "measure": 2,
+        "s": 1
+      },
+      "continuous_rotation_calls": 12,
+      "dependency_depth": 32,
+      "global_phase": 0.0,
+      "angle_conversion_ideal_gate_norm_bound_exact": "1/90071992547409920",
+      "bound_scope": "Angle conversion only; splitting, SDK arithmetic, synthesis and physical errors are separate.",
+      "included": [
+        "all initial resets",
+        "H/S known-input preparation",
+        "both corrector boundaries for cpf2",
+        "all Strang steps",
+        "all Z readout bits"
+      ],
+      "excluded": [
+        "Clifford+T synthesis",
+        "physical code/factory/routing",
+        "hardware calibration",
+        "finite-shot sampling",
+        "classical postprocessing latency"
+      ],
+      "physical_estimate": null,
+      "formal_proof": null,
+      "generator_bounds": {
+        "pairs": 32,
+        "repetitions": 1024,
+        "source_operations": 100000
+      },
+      "dense_bounds": {
+        "pairs": 2,
+        "qubits": 4,
+        "repetitions": 16,
+        "source_operations": 2000
+      }
+    },
+    "cpf2": {
+      "method": "cpf2",
+      "model": {
+        "pairs": 1,
+        "qubits": 2,
+        "a_exact": [
+          "1"
+        ],
+        "b_exact": [
+          "1"
+        ],
+        "alpha_exact": "1/5",
+        "A_norm_exact": "1",
+        "B0_norm_exact": "1",
+        "perturbation_norm_ratio_exact": "1/5",
+        "Hamiltonian": "sum_j a_j Z_(2j)Z_(2j+1) + alpha*b_j X_(2j)",
+        "SDK_pair_label": "ZY means Y on first q[2j], Z on partner q[2j+1]",
+        "scope": "Noninteracting disjoint pairs; classically factorized toy, not an application advantage."
+      },
+      "time_exact": "-1",
+      "repetitions": 4,
+      "delta_exact": "-1/4",
+      "source_operations": 49,
+      "predicted_source_operations": 49,
+      "primitive_counts": {
+        "cx": 20,
+        "rz": 10,
+        "h": 6,
+        "rx": 4,
+        "s": 3,
+        "reset": 2,
+        "sdg": 2,
+        "measure": 2
+      },
+      "continuous_rotation_calls": 14,
+      "dependency_depth": 46,
+      "global_phase": 0.0,
+      "angle_conversion_ideal_gate_norm_bound_exact": "77/6917529027641081856",
+      "bound_scope": "Angle conversion only; splitting, SDK arithmetic, synthesis and physical errors are separate.",
+      "included": [
+        "all initial resets",
+        "H/S known-input preparation",
+        "both corrector boundaries for cpf2",
+        "all Strang steps",
+        "all Z readout bits"
+      ],
+      "excluded": [
+        "Clifford+T synthesis",
+        "physical code/factory/routing",
+        "hardware calibration",
+        "finite-shot sampling",
+        "classical postprocessing latency"
+      ],
+      "physical_estimate": null,
+      "formal_proof": null,
+      "generator_bounds": {
+        "pairs": 32,
+        "repetitions": 1024,
+        "source_operations": 100000
+      },
+      "dense_bounds": {
+        "pairs": 2,
+        "qubits": 4,
+        "repetitions": 16,
+        "source_operations": 2000
+      }
+    }
+  },
+  "comparison": {
+    "model": {
+      "pairs": 1,
+      "qubits": 2,
+      "a_exact": [
+        "1"
+      ],
+      "b_exact": [
+        "1"
+      ],
+      "alpha_exact": "1/5",
+      "A_norm_exact": "1",
+      "B0_norm_exact": "1",
+      "perturbation_norm_ratio_exact": "1/5",
+      "Hamiltonian": "sum_j a_j Z_(2j)Z_(2j+1) + alpha*b_j X_(2j)",
+      "SDK_pair_label": "ZY means Y on first q[2j], Z on partner q[2j+1]",
+      "scope": "Noninteracting disjoint pairs; classically factorized toy, not an application advantage."
+    },
+    "time_exact": "-1",
+    "repetitions": 4,
+    "independent_expm_max_entry_discrepancy": 1.5700924586837752e-16,
+    "methods": {
+      "strang": {
+        "operator_formula_max_entry_discrepancy": 1.5700924586837752e-16,
+        "operator_exact_dynamics_error": 0.0019011650531075715,
+        "state_preparation_max_entry_discrepancy": 2.355138688025663e-16,
+        "reset_density_max_entry_discrepancy": 2.2301825219878386e-16,
+        "state_vector_error": 0.0019011650531073796,
+        "state_infidelity": 3.6144252943959287e-06,
+        "Z0_mean": -0.17693561778924988,
+        "Z0_bias": 0.001979251961223061,
+        "probabilities": [
+          0.2057660955526873,
+          0.29423390444731223,
+          0.2057660955526873,
+          0.29423390444731223
+        ],
+        "ledger": {
+          "method": "strang",
+          "model": {
+            "pairs": 1,
+            "qubits": 2,
+            "a_exact": [
+              "1"
+            ],
+            "b_exact": [
+              "1"
+            ],
+            "alpha_exact": "1/5",
+            "A_norm_exact": "1",
+            "B0_norm_exact": "1",
+            "perturbation_norm_ratio_exact": "1/5",
+            "Hamiltonian": "sum_j a_j Z_(2j)Z_(2j+1) + alpha*b_j X_(2j)",
+            "SDK_pair_label": "ZY means Y on first q[2j], Z on partner q[2j+1]",
+            "scope": "Noninteracting disjoint pairs; classically factorized toy, not an application advantage."
+          },
+          "time_exact": "-1",
+          "repetitions": 4,
+          "delta_exact": "-1/4",
+          "source_operations": 35,
+          "predicted_source_operations": 35,
+          "primitive_counts": {
+            "cx": 16,
+            "rz": 8,
+            "rx": 4,
+            "reset": 2,
+            "h": 2,
+            "measure": 2,
+            "s": 1
+          },
+          "continuous_rotation_calls": 12,
+          "dependency_depth": 32,
+          "global_phase": 0.0,
+          "angle_conversion_ideal_gate_norm_bound_exact": "1/90071992547409920",
+          "bound_scope": "Angle conversion only; splitting, SDK arithmetic, synthesis and physical errors are separate.",
+          "included": [
+            "all initial resets",
+            "H/S known-input preparation",
+            "both corrector boundaries for cpf2",
+            "all Strang steps",
+            "all Z readout bits"
+          ],
+          "excluded": [
+            "Clifford+T synthesis",
+            "physical code/factory/routing",
+            "hardware calibration",
+            "finite-shot sampling",
+            "classical postprocessing latency"
+          ],
+          "physical_estimate": null,
+          "formal_proof": null,
+          "generator_bounds": {
+            "pairs": 32,
+            "repetitions": 1024,
+            "source_operations": 100000
+          },
+          "dense_bounds": {
+            "pairs": 2,
+            "qubits": 4,
+            "repetitions": 16,
+            "source_operations": 2000
+          }
+        }
+      },
+      "cpf2": {
+        "operator_formula_max_entry_discrepancy": 4.965068306494546e-16,
+        "operator_exact_dynamics_error": 0.0004184600238522288,
+        "state_preparation_max_entry_discrepancy": 1.6653345369377348e-16,
+        "reset_density_max_entry_discrepancy": 1.7554167342883506e-16,
+        "state_vector_error": 0.00041846002385235976,
+        "state_infidelity": 1.75108785804845e-07,
+        "Z0_mean": -0.17511281482104823,
+        "Z0_bias": 0.00015644899302141857,
+        "probabilities": [
+          0.20622179629473752,
+          0.29377820370526164,
+          0.20622179629473752,
+          0.29377820370526164
+        ],
+        "ledger": {
+          "method": "cpf2",
+          "model": {
+            "pairs": 1,
+            "qubits": 2,
+            "a_exact": [
+              "1"
+            ],
+            "b_exact": [
+              "1"
+            ],
+            "alpha_exact": "1/5",
+            "A_norm_exact": "1",
+            "B0_norm_exact": "1",
+            "perturbation_norm_ratio_exact": "1/5",
+            "Hamiltonian": "sum_j a_j Z_(2j)Z_(2j+1) + alpha*b_j X_(2j)",
+            "SDK_pair_label": "ZY means Y on first q[2j], Z on partner q[2j+1]",
+            "scope": "Noninteracting disjoint pairs; classically factorized toy, not an application advantage."
+          },
+          "time_exact": "-1",
+          "repetitions": 4,
+          "delta_exact": "-1/4",
+          "source_operations": 49,
+          "predicted_source_operations": 49,
+          "primitive_counts": {
+            "cx": 20,
+            "rz": 10,
+            "h": 6,
+            "rx": 4,
+            "s": 3,
+            "reset": 2,
+            "sdg": 2,
+            "measure": 2
+          },
+          "continuous_rotation_calls": 14,
+          "dependency_depth": 46,
+          "global_phase": 0.0,
+          "angle_conversion_ideal_gate_norm_bound_exact": "77/6917529027641081856",
+          "bound_scope": "Angle conversion only; splitting, SDK arithmetic, synthesis and physical errors are separate.",
+          "included": [
+            "all initial resets",
+            "H/S known-input preparation",
+            "both corrector boundaries for cpf2",
+            "all Strang steps",
+            "all Z readout bits"
+          ],
+          "excluded": [
+            "Clifford+T synthesis",
+            "physical code/factory/routing",
+            "hardware calibration",
+            "finite-shot sampling",
+            "classical postprocessing latency"
+          ],
+          "physical_estimate": null,
+          "formal_proof": null,
+          "generator_bounds": {
+            "pairs": 32,
+            "repetitions": 1024,
+            "source_operations": 100000
+          },
+          "dense_bounds": {
+            "pairs": 2,
+            "qubits": 4,
+            "repetitions": 16,
+            "source_operations": 2000
+          }
+        }
+      }
+    },
+    "scope": "Ideal full complex operators and reset/readout laws, no phase alignment, hardware, shots or formal certificate."
+  }
+}

@@ -153,6 +153,11 @@ def synthetic_site(tmp_path):
 
 @pytest.mark.parametrize("change", ["changed", "missing", "unrecorded", "invalid-provenance"])
 def test_complete_manifest_failure_precedes_every_tail_dispatch(tmp_path, checked, monkeypatch, change):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     package = (tmp_path / "package").resolve()
     write_package(package, {HELPER: saved_core_source(), "record.json": b'{"saved":true}\n'})
     if change == "changed":
@@ -171,7 +176,7 @@ def test_complete_manifest_failure_precedes_every_tail_dispatch(tmp_path, checke
 
     for name in (
         "verify_formal_record", "_load_energy_record_gate", "_load_dynamics_record_gate",
-        "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate",
+        "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate", "_load_decay_record_gate",
         "_load_tail_record_gate",
     ):
         monkeypatch.setattr(checked, name, forbidden)
@@ -248,6 +253,11 @@ def test_tail_loader_ignores_process_module_and_poisoned_bytecache(tmp_path, che
 
 
 def test_package_tail_dispatch_keeps_all_prerequisites_and_independent_pins(tmp_path, checked, monkeypatch):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     package = (tmp_path / "package").resolve()
     provenance = write_package(package, {HELPER: saved_core_source(stop_after_complete=True)})
     order, loaded = [], []
@@ -295,7 +305,7 @@ def test_package_tail_dispatch_keeps_all_prerequisites_and_independent_pins(tmp_
         return load
 
     prerequisites = ["manifest", "formal", "energy-load", "energy-check", "dynamics-load", "dynamics-check",
-                     "word-load", "word-check", "suzuki-load", "suzuki-check", "gibbs-load", "gibbs-check"]
+                     "word-load", "word-check", "suzuki-load", "suzuki-check", "gibbs-load", "gibbs-check", "decay-load", "decay-check"]
 
     def tail(path, identity):
         assert path == package and identity == provenance and order == prerequisites
@@ -318,6 +328,7 @@ def test_package_tail_dispatch_keeps_all_prerequisites_and_independent_pins(tmp_
     monkeypatch.setattr(checked, "_load_word_record_gate", word)
     monkeypatch.setattr(checked, "_load_suzuki_record_gate", bundle_loader("suzuki"))
     monkeypatch.setattr(checked, "_load_gibbs_channel_record_gate", bundle_loader("gibbs"))
+    monkeypatch.setattr(checked, "_load_decay_record_gate", bundle_loader("decay"))
     monkeypatch.setattr(checked, "_load_tail_record_gate", tail)
     with pytest.raises(RuntimeError, match="tail dispatch stopped before later gates"):
         checked.verify_package(package, run_tests=False)
@@ -337,12 +348,13 @@ def configure_main(checker, root, monkeypatch):
     for name in (
         "N3_EMBED_LABELS", "N4_EMBED_LABELS", "PORT_EMBED_LABELS", "QDRIFT_EMBED_LABELS",
         "SUZUKI_EMBED_LABELS", "SHOR_RECOVERY_EMBED_LABELS", "HADAMARD_EMBED_LABELS", "BAYESIAN_EMBED_LABELS", "ROBUST_EMBED_LABELS", "QPE_FEEDBACK_EMBED_LABELS",
-        "OPT8_EMBED_LABELS", "GIBBS_CHANNEL_ARTICLE_LABELS",
+        "OPT8_EMBED_LABELS", "GIBBS_CHANNEL_ARTICLE_LABELS", "DECAY_ARTICLE_LABELS", "CORRECTION_ARTICLE_LABELS",
     ):
         monkeypatch.setattr(checker, name, frozenset())
     monkeypatch.setattr(checker, "site_word_record_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_suzuki_record_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_gibbs_channel_record_errors", lambda *_, **__: [])
+    monkeypatch.setattr(checker, "site_decay_record_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_dqi_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_bath_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_multiproduct_saved_errors", lambda *_, **__: [])
@@ -354,11 +366,14 @@ def configure_main(checker, root, monkeypatch):
     monkeypatch.setattr(checker, "site_local_spin_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_local_spin_reproduction_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_measured_and_saved_errors", lambda *_, **__: [])
+    monkeypatch.setattr(checker, "site_hamiltonian_packet_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(checker.sys, "argv", ["check_site.py", str(root)])
 
 
 def test_failed_complete_preview_never_dispatches_tail(synthetic_site, site_checker, monkeypatch):
+    monkeypatch.setattr(site_checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(site_checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, _ = synthetic_site
     configure_main(site_checker, root, monkeypatch)
     order = []
@@ -432,6 +447,8 @@ def test_site_authenticates_one_provenance_snapshot_and_exact_root_map(synthetic
 
 
 def test_site_main_retains_preview_word_suzuki_gibbs_then_actual_tail(synthetic_site, site_checker, monkeypatch):
+    monkeypatch.setattr(site_checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(site_checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, identity = synthetic_site
     configure_main(site_checker, root, monkeypatch)
     order, loaded = [], []
@@ -450,7 +467,7 @@ def test_site_main_retains_preview_word_suzuki_gibbs_then_actual_tail(synthetic_
         return verify
 
     def tail(package, provenance):
-        assert package == root / "code" and order == ["preview", "word", "suzuki", "gibbs"]
+        assert package == root / "code" and order == ["preview", "word", "suzuki", "gibbs", "decay"]
         gate = actual_loader(package, provenance)
         loaded.append(gate)
         order.append("tail-load")
@@ -460,9 +477,10 @@ def test_site_main_retains_preview_word_suzuki_gibbs_then_actual_tail(synthetic_
     monkeypatch.setattr(site_checker, "site_word_record_errors", existing("word"))
     monkeypatch.setattr(site_checker, "site_suzuki_record_errors", existing("suzuki"))
     monkeypatch.setattr(site_checker, "site_gibbs_channel_record_errors", existing("gibbs"))
+    monkeypatch.setattr(site_checker, "site_decay_record_errors", existing("decay"))
     monkeypatch.setattr(site_checker, "_load_tail_record_gate", tail)
     site_checker.main()
-    assert order == ["preview", "word", "suzuki", "gibbs", "tail-load"]
+    assert order == ["preview", "word", "suzuki", "gibbs", "decay", "tail-load"]
     assert loaded[0].CALLS == [
         (str(root / directory), str(root / "code"), kind, pin, False, str(root))
         for kind, directory, pin in BUNDLES
@@ -525,6 +543,28 @@ def test_tail_ci_replacements_keep_exact_positions_and_final75_vector():
         pytest.skip("Publication workflow is outside the public example package")
     commands = [line.strip().removeprefix("run ") for line in workflow.read_text().splitlines()
                 if line.startswith("          run python ")]
+    degree_two = 'python scripts/verify_dqi_degree_two_public_saved.py --artifact-root . --source-root . --notebook-path notebooks/optimization_dqi_degree_two.ipynb --expected-manifest-sha256 ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c --archive assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip --time-limit-seconds 10'
+    assert len(commands) == 86 and commands.count(degree_two) == 1
+    assert commands.index(degree_two) == commands.index("python scripts/verify_dqi_saved.py assets/generated/optimization/dqi") + 1
+    commands = [value for value in commands if value != degree_two]
+    correction = 'python scripts/verify_detailed_balance_correction_saved.py --bundle assets/generated/simulation/detailed-balance-correction --source-root . --download assets/generated/simulation/detailed-balance-correction-download.zip'
+    assert len(commands) == 85 and commands.count(correction) == 1
+    assert commands.index(correction) == commands.index("python scripts/verify_detailed_balance_decay.py") + 1
+    commands = [value for value in commands if value != correction]
+    hamiltonian_saved = (
+        "python scripts/verify_simulation_cpf_public.py --bundle assets/generated/simulation/corrected-formula",
+        "python scripts/verify_simulation_gqsp_public.py --bundle assets/generated/simulation/gqsp",
+    )
+    assert len(commands) == 84
+    assert all(commands.count(value) == 1 for value in hamiltonian_saved)
+    assert commands.index(hamiltonian_saved[0]) == commands.index(
+        "python scripts/verify_simulation_multiproduct_saved.py") + 1
+    assert commands.index(hamiltonian_saved[1]) == commands.index(hamiltonian_saved[0]) + 1
+    commands = [value for value in commands if value not in hamiltonian_saved]
+    decay = "python scripts/verify_detailed_balance_decay.py"
+    assert len(commands) == 82 and commands.count(decay) == 1
+    assert commands.index(decay) == commands.index("python scripts/verify_detailed_balance_channel.py") + 1
+    commands = [value for value in commands if value != decay]
     measured_and = "python scripts/verify_shor_measured_and_saved.py"
     assert len(commands) == 81 and commands.count(measured_and) == 1
     assert commands.index(measured_and) == commands.index("python scripts/generate_shor_recovery.py") + 1

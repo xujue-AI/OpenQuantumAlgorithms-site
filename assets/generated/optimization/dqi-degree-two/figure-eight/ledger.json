@@ -1,0 +1,733 @@
+{
+  "N": 9,
+  "accepted_degree_one_producer_rerun": false,
+  "angle_scope": "integer ratios prepared; binary RY evaluation occurs only during emission; synthesis/error certificates absent",
+  "assignment_bit_order": "integer bit j is x_(j+1); fixed reference x_0=0",
+  "classical_preprocessing_scope": "explicit input/check/lookup/ratio counts; sorting comparisons, bit costs and time/RSS are not measured",
+  "cycle_space_dimension": 2,
+  "decoder_promise": "all weight<=2 errors; arbitrary clause target with initially clean scratch",
+  "degree": 2,
+  "dirty_workspace_target_law": "not promised",
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      0
+    ]
+  ],
+  "formal_interval_certificate": false,
+  "incidence_masks": [
+    1,
+    3,
+    6,
+    12,
+    8,
+    16,
+    48,
+    96,
+    192,
+    128
+  ],
+  "input": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        0
+      ]
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "vertices": 9
+  },
+  "lookup_entries": [
+    {
+      "edge_indices": [
+        0
+      ],
+      "syndrome_mask": 1
+    },
+    {
+      "edge_indices": [
+        0,
+        1
+      ],
+      "syndrome_mask": 2
+    },
+    {
+      "edge_indices": [
+        1
+      ],
+      "syndrome_mask": 3
+    },
+    {
+      "edge_indices": [
+        3,
+        4
+      ],
+      "syndrome_mask": 4
+    },
+    {
+      "edge_indices": [
+        1,
+        2
+      ],
+      "syndrome_mask": 5
+    },
+    {
+      "edge_indices": [
+        2
+      ],
+      "syndrome_mask": 6
+    },
+    {
+      "edge_indices": [
+        0,
+        2
+      ],
+      "syndrome_mask": 7
+    },
+    {
+      "edge_indices": [
+        4
+      ],
+      "syndrome_mask": 8
+    },
+    {
+      "edge_indices": [
+        0,
+        4
+      ],
+      "syndrome_mask": 9
+    },
+    {
+      "edge_indices": [
+        2,
+        3
+      ],
+      "syndrome_mask": 10
+    },
+    {
+      "edge_indices": [
+        1,
+        4
+      ],
+      "syndrome_mask": 11
+    },
+    {
+      "edge_indices": [
+        3
+      ],
+      "syndrome_mask": 12
+    },
+    {
+      "edge_indices": [
+        0,
+        3
+      ],
+      "syndrome_mask": 13
+    },
+    {
+      "edge_indices": [
+        2,
+        4
+      ],
+      "syndrome_mask": 14
+    },
+    {
+      "edge_indices": [
+        1,
+        3
+      ],
+      "syndrome_mask": 15
+    },
+    {
+      "edge_indices": [
+        5
+      ],
+      "syndrome_mask": 16
+    },
+    {
+      "edge_indices": [
+        0,
+        5
+      ],
+      "syndrome_mask": 17
+    },
+    {
+      "edge_indices": [
+        1,
+        5
+      ],
+      "syndrome_mask": 19
+    },
+    {
+      "edge_indices": [
+        2,
+        5
+      ],
+      "syndrome_mask": 22
+    },
+    {
+      "edge_indices": [
+        4,
+        5
+      ],
+      "syndrome_mask": 24
+    },
+    {
+      "edge_indices": [
+        3,
+        5
+      ],
+      "syndrome_mask": 28
+    },
+    {
+      "edge_indices": [
+        5,
+        6
+      ],
+      "syndrome_mask": 32
+    },
+    {
+      "edge_indices": [
+        6
+      ],
+      "syndrome_mask": 48
+    },
+    {
+      "edge_indices": [
+        0,
+        6
+      ],
+      "syndrome_mask": 49
+    },
+    {
+      "edge_indices": [
+        1,
+        6
+      ],
+      "syndrome_mask": 51
+    },
+    {
+      "edge_indices": [
+        2,
+        6
+      ],
+      "syndrome_mask": 54
+    },
+    {
+      "edge_indices": [
+        4,
+        6
+      ],
+      "syndrome_mask": 56
+    },
+    {
+      "edge_indices": [
+        3,
+        6
+      ],
+      "syndrome_mask": 60
+    },
+    {
+      "edge_indices": [
+        8,
+        9
+      ],
+      "syndrome_mask": 64
+    },
+    {
+      "edge_indices": [
+        6,
+        7
+      ],
+      "syndrome_mask": 80
+    },
+    {
+      "edge_indices": [
+        7
+      ],
+      "syndrome_mask": 96
+    },
+    {
+      "edge_indices": [
+        0,
+        7
+      ],
+      "syndrome_mask": 97
+    },
+    {
+      "edge_indices": [
+        1,
+        7
+      ],
+      "syndrome_mask": 99
+    },
+    {
+      "edge_indices": [
+        2,
+        7
+      ],
+      "syndrome_mask": 102
+    },
+    {
+      "edge_indices": [
+        4,
+        7
+      ],
+      "syndrome_mask": 104
+    },
+    {
+      "edge_indices": [
+        3,
+        7
+      ],
+      "syndrome_mask": 108
+    },
+    {
+      "edge_indices": [
+        5,
+        7
+      ],
+      "syndrome_mask": 112
+    },
+    {
+      "edge_indices": [
+        9
+      ],
+      "syndrome_mask": 128
+    },
+    {
+      "edge_indices": [
+        0,
+        9
+      ],
+      "syndrome_mask": 129
+    },
+    {
+      "edge_indices": [
+        1,
+        9
+      ],
+      "syndrome_mask": 131
+    },
+    {
+      "edge_indices": [
+        2,
+        9
+      ],
+      "syndrome_mask": 134
+    },
+    {
+      "edge_indices": [
+        4,
+        9
+      ],
+      "syndrome_mask": 136
+    },
+    {
+      "edge_indices": [
+        3,
+        9
+      ],
+      "syndrome_mask": 140
+    },
+    {
+      "edge_indices": [
+        5,
+        9
+      ],
+      "syndrome_mask": 144
+    },
+    {
+      "edge_indices": [
+        7,
+        8
+      ],
+      "syndrome_mask": 160
+    },
+    {
+      "edge_indices": [
+        6,
+        9
+      ],
+      "syndrome_mask": 176
+    },
+    {
+      "edge_indices": [
+        8
+      ],
+      "syndrome_mask": 192
+    },
+    {
+      "edge_indices": [
+        0,
+        8
+      ],
+      "syndrome_mask": 193
+    },
+    {
+      "edge_indices": [
+        1,
+        8
+      ],
+      "syndrome_mask": 195
+    },
+    {
+      "edge_indices": [
+        2,
+        8
+      ],
+      "syndrome_mask": 198
+    },
+    {
+      "edge_indices": [
+        4,
+        8
+      ],
+      "syndrome_mask": 200
+    },
+    {
+      "edge_indices": [
+        3,
+        8
+      ],
+      "syndrome_mask": 204
+    },
+    {
+      "edge_indices": [
+        5,
+        8
+      ],
+      "syndrome_mask": 208
+    },
+    {
+      "edge_indices": [
+        7,
+        9
+      ],
+      "syndrome_mask": 224
+    },
+    {
+      "edge_indices": [
+        6,
+        8
+      ],
+      "syndrome_mask": 240
+    }
+  ],
+  "lookup_storage_scope": "n-bit mask plus one/two edge indices; no dense syndrome table or free coherent lookup",
+  "m": 10,
+  "minimum_distance_lower_bound": 5,
+  "n": 8,
+  "normalization_squared": 1280,
+  "observed_source_counts": {
+    "barrier": 7,
+    "cx": 4954,
+    "h": 1636,
+    "measure": 8,
+    "reset": 24,
+    "ry": 37,
+    "t": 3256,
+    "tdg": 2442,
+    "x": 646,
+    "z": 10
+  },
+  "observed_source_operations": 13020,
+  "off_promise_extension": "zero for unmatched syndromes",
+  "optimization_advantage_claim": false,
+  "per_pattern_coefficients": [
+    10,
+    10,
+    2
+  ],
+  "physical_resources_computed": false,
+  "plan_integrity_sha256": "598113044a3bcceb8c2a83caa2ed1645a737b402eff5c06cd2dbfcecf000acdb",
+  "prepared_support_size": 56,
+  "preprocessing_counts": {
+    "D2_masks_including_vacuum": 56,
+    "adjacent_D2_collision_checks": 55,
+    "adjacent_edge_duplicate_checks": 9,
+    "adjacent_wedge_endpoint_checks": 13,
+    "connectivity_adjacency_entries": 20,
+    "connectivity_vertices_visited": 9,
+    "edge_endpoint_records": 20,
+    "graph_vertices": 9,
+    "incidence_masks": 10,
+    "integer_rotation_ratios": 19,
+    "lookup_entries": 55,
+    "ordered_edges": 10,
+    "sign_records": 10,
+    "sorted_edge_entries": 10,
+    "triangle_membership_queries": 14,
+    "wedge_entries": 14
+  },
+  "promise_checks": {
+    "independent_D2_collisions": true,
+    "simple_connected_cyclic": true,
+    "triangle_four_cycle_wedges": true
+  },
+  "quality_scope": "no generic or figure-eight optimum-probability/repetition bound",
+  "reference_vertex": 0,
+  "requires_observed_cli_exit_zero": true,
+  "rotation_sine_squared": [
+    {
+      "counter": 0,
+      "fraction": "17/160",
+      "position": 0
+    },
+    {
+      "counter": 0,
+      "fraction": "3/26",
+      "position": 1
+    },
+    {
+      "counter": 1,
+      "fraction": "1/34",
+      "position": 1
+    },
+    {
+      "counter": 0,
+      "fraction": "32/253",
+      "position": 2
+    },
+    {
+      "counter": 1,
+      "fraction": "1/33",
+      "position": 2
+    },
+    {
+      "counter": 0,
+      "fraction": "31/221",
+      "position": 3
+    },
+    {
+      "counter": 1,
+      "fraction": "1/32",
+      "position": 3
+    },
+    {
+      "counter": 0,
+      "fraction": "3/19",
+      "position": 4
+    },
+    {
+      "counter": 1,
+      "fraction": "1/31",
+      "position": 4
+    },
+    {
+      "counter": 0,
+      "fraction": "29/160",
+      "position": 5
+    },
+    {
+      "counter": 1,
+      "fraction": "1/30",
+      "position": 5
+    },
+    {
+      "counter": 0,
+      "fraction": "28/131",
+      "position": 6
+    },
+    {
+      "counter": 1,
+      "fraction": "1/29",
+      "position": 6
+    },
+    {
+      "counter": 0,
+      "fraction": "27/103",
+      "position": 7
+    },
+    {
+      "counter": 1,
+      "fraction": "1/28",
+      "position": 7
+    },
+    {
+      "counter": 0,
+      "fraction": "13/38",
+      "position": 8
+    },
+    {
+      "counter": 1,
+      "fraction": "1/27",
+      "position": 8
+    },
+    {
+      "counter": 0,
+      "fraction": "1/2",
+      "position": 9
+    },
+    {
+      "counter": 1,
+      "fraction": "1/26",
+      "position": 9
+    }
+  ],
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.degree_two_generation_ledger.v1",
+  "semicircle_theorem_applied": false,
+  "shared_clean_workspace": 6,
+  "signs": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "simulation_performed": false,
+  "source_counts": {
+    "barrier": 7,
+    "cx": 4954,
+    "h": 1636,
+    "measure": 8,
+    "reset": 24,
+    "ry": 37,
+    "t": 3256,
+    "tdg": 2442,
+    "x": 646,
+    "z": 10
+  },
+  "source_materialized_operations": 13020,
+  "source_unitary_primitives": 12981,
+  "source_wires": 24,
+  "sources": {
+    "module": {
+      "bytes": 32756,
+      "path": "src/openquantum/optimization_dqi_degree_two.py",
+      "sha256": "44e2838d4b9482c04992580e8a5000885e035b08989b23d1b67b92b234c9dfb4"
+    },
+    "script": {
+      "bytes": 20087,
+      "path": "scripts/generate_optimization_dqi_degree_two.py",
+      "sha256": "a31c596a53f4cecde73a6f57a52a466ba37a18296c46f7a5cf8a139d5b32236d"
+    }
+  },
+  "stage_ranges": {
+    "decoder": {
+      "barrier": 13001,
+      "start": 1009,
+      "stop": 13001
+    },
+    "hadamard": {
+      "barrier": 13010,
+      "start": 13002,
+      "stop": 13010
+    },
+    "preparation": {
+      "barrier": 980,
+      "start": 25,
+      "stop": 980
+    },
+    "readout": {
+      "barrier": 13019,
+      "start": 13011,
+      "stop": 13019
+    },
+    "reset": {
+      "barrier": 24,
+      "start": 0,
+      "stop": 24
+    },
+    "sign": {
+      "barrier": 991,
+      "start": 981,
+      "stop": 991
+    },
+    "syndrome": {
+      "barrier": 1008,
+      "start": 992,
+      "stop": 1008
+    }
+  },
+  "status": "generation_only_pending_invocation_acceptance"
+}

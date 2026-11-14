@@ -2,7 +2,9 @@
 """Export deliberate public examples without private project files."""
 from pathlib import Path
 import hashlib
+import io
 import json
+import stat
 import sys
 import zipfile
 
@@ -10,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from source_provenance import git_revision
 from verify_simulation_lindblad_port import BUNDLE_FILES as LINDBLAD_PORT_FILES
+from verify_public_package import _read_bounded_public_member
 
 
 PUBLIC_SCRIPTS = (
@@ -33,6 +36,8 @@ PUBLIC_SCRIPTS = (
     "generate_simulation_suzuki.py", "verify_simulation_suzuki.py",
     "generate_detailed_balance_access.py", "generate_detailed_balance_channel.py",
     "verify_detailed_balance_channel.py",
+    "generate_detailed_balance_decay.py", "verify_detailed_balance_decay.py",
+    "generate_detailed_balance_correction.py", "verify_detailed_balance_correction_saved.py",
     "generate_simulation_qsp_evolution.py", "generate_simulation_qsp_scaling.py",
     "generate_simulation_retargetable_qsp.py", "generate_simulation_thermal_spectral.py",
     "generate_simulation_complete_resources.py",
@@ -79,9 +84,13 @@ PUBLIC_SCRIPTS = (
     "generate_optimization_dqi.py", "verify_dqi_saved.py",
     "generate_optimization_dqi_structured.py", "validate_optimization_dqi_structured.py",
     "verify_dqi_structured_saved.py",
+    "generate_optimization_dqi_degree_two.py", "validate_optimization_dqi_degree_two.py",
+    "verify_dqi_degree_two_saved.py", "verify_dqi_degree_two_public_saved.py",
     "generate_optimization_dqi_resources.py", "verify_dqi_structured_resource_saved.py",
     "generate_simulation_multiproduct.py", "verify_simulation_multiproduct_saved.py",
     "render_reusable_bath_local_spin.py", "verify_reusable_bath_local_spin_saved.py",
+    "generate_simulation_corrected_formula.py", "generate_cpf2_public.py", "verify_simulation_cpf_public.py",
+    "generate_simulation_gqsp.py", "verify_simulation_gqsp_public.py",
 )
 
 # These algorithm output trees contain the reviewed data and source snapshots
@@ -102,7 +111,10 @@ PUBLIC_ARCHIVES = frozenset({"assets/generated/shor/measured-and-artifacts.zip",
                              "assets/generated/simulation/reusable-bath-evidence.zip",
                              "assets/generated/simulation/reusable-bath-local-spin-evidence.zip",
                              "assets/generated/simulation/multiproduct-bundle.zip",
-                             "assets/generated/simulation/multiproduct-large-bundle.zip"})
+                             "assets/generated/simulation/multiproduct-large-bundle.zip",
+                             "assets/generated/simulation/gqsp-reproduce.zip",
+                             "assets/generated/simulation/detailed-balance-correction-download.zip",
+                             "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip"})
 PUBLIC_DEPENDENCY_FILES = frozenset({
     "assets/generated/optimization/dqi-structured-resources/LICENSE.txt",
     "assets/generated/optimization/dqi-structured-resources/requirements-lock.txt",
@@ -459,6 +471,68 @@ PUBLIC_SUZUKI_FILES = frozenset(
     for name in ("record.json", "measured-trial.qasm")
 )
 
+PUBLIC_DECAY_FILES = frozenset({
+    'assets/generated/simulation/detailed-balance-decay/artifact-manifest.json',
+    'assets/generated/simulation/detailed-balance-decay/artifact-manifest.sha256',
+    'assets/generated/simulation/detailed-balance-decay/completion.json',
+    'assets/generated/simulation/detailed-balance-decay/grid/LICENSE.txt',
+    'assets/generated/simulation/detailed-balance-decay/grid/complex-decay-block.qasm',
+    'assets/generated/simulation/detailed-balance-decay/grid/detailed_balance_access.py',
+    'assets/generated/simulation/detailed-balance-decay/grid/detailed_balance_decay.py',
+    'assets/generated/simulation/detailed-balance-decay/grid/detailed_balance_decay_reference.py',
+    'assets/generated/simulation/detailed-balance-decay/grid/diagonal-decay-block.qasm',
+    'assets/generated/simulation/detailed-balance-decay/grid/generate_detailed_balance_decay.py',
+    'assets/generated/simulation/detailed-balance-decay/grid/manifest.json',
+    'assets/generated/simulation/detailed-balance-decay/grid/manifest.sha256',
+    'assets/generated/simulation/detailed-balance-decay/grid/requirements-lock.txt',
+    'assets/generated/simulation/detailed-balance-decay/grid/results.json',
+    'assets/generated/simulation/detailed-balance-decay/grid/tilted-decay-block.qasm',
+    'assets/generated/simulation/detailed-balance-decay/n12/LICENSE.txt',
+    'assets/generated/simulation/detailed-balance-decay/n12/chain-n12-decay-block.qasm',
+    'assets/generated/simulation/detailed-balance-decay/n12/detailed_balance_access.py',
+    'assets/generated/simulation/detailed-balance-decay/n12/detailed_balance_decay.py',
+    'assets/generated/simulation/detailed-balance-decay/n12/detailed_balance_decay_reference.py',
+    'assets/generated/simulation/detailed-balance-decay/n12/generate_detailed_balance_decay.py',
+    'assets/generated/simulation/detailed-balance-decay/n12/manifest.json',
+    'assets/generated/simulation/detailed-balance-decay/n12/manifest.sha256',
+    'assets/generated/simulation/detailed-balance-decay/n12/requirements-lock.txt',
+    'assets/generated/simulation/detailed-balance-decay/n12/results.json',
+    'assets/generated/simulation/detailed-balance-decay/notebook/executed-original.ipynb',
+    'assets/generated/simulation/detailed-balance-decay/notebook/executed.ipynb',
+    'assets/generated/simulation/detailed-balance-decay/notebook/source.ipynb',
+})
+
+
+PUBLIC_CORRECTION_FILES = frozenset({
+    "assets/generated/simulation/detailed-balance-correction-download.zip",
+    "assets/generated/simulation/detailed-balance-correction/README.md",
+    "assets/generated/simulation/detailed-balance-correction/UPSTREAM-LICENSES.md",
+    "assets/generated/simulation/detailed-balance-correction/artifact-manifest.json",
+    "assets/generated/simulation/detailed-balance-correction/artifact-manifest.sha256",
+    "assets/generated/simulation/detailed-balance-correction/completion.json",
+    "assets/generated/simulation/detailed-balance-correction/v1/centered_decay.qasm",
+    "assets/generated/simulation/detailed-balance-correction/v1/failure.json",
+    "assets/generated/simulation/detailed-balance-correction/v2/LICENSE.txt",
+    "assets/generated/simulation/detailed-balance-correction/v2/centered_decay.qasm",
+    "assets/generated/simulation/detailed-balance-correction/v2/controlled_correction.qasm",
+    "assets/generated/simulation/detailed-balance-correction/v2/correction_block.qasm",
+    "assets/generated/simulation/detailed-balance-correction/v2/detailed_balance_access.py",
+    "assets/generated/simulation/detailed-balance-correction/v2/detailed_balance_channel.py",
+    "assets/generated/simulation/detailed-balance-correction/v2/detailed_balance_correction.py",
+    "assets/generated/simulation/detailed-balance-correction/v2/detailed_balance_correction_reference.py",
+    "assets/generated/simulation/detailed-balance-correction/v2/detailed_balance_decay.py",
+    "assets/generated/simulation/detailed-balance-correction/v2/detailed_balance_decay_reference.py",
+    "assets/generated/simulation/detailed-balance-correction/v2/generate_detailed_balance_correction.py",
+    "assets/generated/simulation/detailed-balance-correction/v2/heralded_step.qasm",
+    "assets/generated/simulation/detailed-balance-correction/v2/known_plus_prefix.qasm",
+    "assets/generated/simulation/detailed-balance-correction/v2/known_plus_trial.qasm",
+    "assets/generated/simulation/detailed-balance-correction/v2/manifest.json",
+    "assets/generated/simulation/detailed-balance-correction/v2/manifest.sha256",
+    "assets/generated/simulation/detailed-balance-correction/v2/requirements-lock.txt",
+    "assets/generated/simulation/detailed-balance-correction/v2/results.json",
+})
+
+
 PUBLIC_GIBBS_CHANNEL_FILES = frozenset({
     'assets/generated/simulation/detailed-balance-channel/LICENSE.txt',
     'assets/generated/simulation/detailed-balance-channel/detailed_balance_access.py',
@@ -762,6 +836,210 @@ PUBLIC_DQI_RESOURCE_FILES = frozenset("assets/generated/optimization/dqi-structu
 ))
 
 
+
+PUBLIC_CORRECTED_FORMULA_FILES = frozenset(
+    "assets/generated/simulation/corrected-formula/" + name for name in (
+    "LICENSE.txt",
+    "README.md",
+    "case-summary.csv",
+    "cases/case-00/cpf2.qasm",
+    "cases/case-00/record.json",
+    "cases/case-00/strang.qasm",
+    "cases/case-01/cpf2.qasm",
+    "cases/case-01/record.json",
+    "cases/case-01/strang.qasm",
+    "cases/case-02/cpf2.qasm",
+    "cases/case-02/record.json",
+    "cases/case-02/strang.qasm",
+    "cases/case-03/cpf2.qasm",
+    "cases/case-03/record.json",
+    "cases/case-03/strang.qasm",
+    "cases/case-04/cpf2.qasm",
+    "cases/case-04/record.json",
+    "cases/case-04/strang.qasm",
+    "cases/case-05/cpf2.qasm",
+    "cases/case-05/record.json",
+    "cases/case-05/strang.qasm",
+    "cases/case-06/cpf2.qasm",
+    "cases/case-06/record.json",
+    "cases/case-06/strang.qasm",
+    "cases/case-07/cpf2.qasm",
+    "cases/case-07/record.json",
+    "cases/case-07/strang.qasm",
+    "cases/case-08/cpf2.qasm",
+    "cases/case-08/record.json",
+    "cases/case-08/strang.qasm",
+    "cases/case-09/cpf2.qasm",
+    "cases/case-09/record.json",
+    "cases/case-09/strang.qasm",
+    "cases/case-10/cpf2.qasm",
+    "cases/case-10/record.json",
+    "cases/case-10/strang.qasm",
+    "cases/case-11/cpf2.qasm",
+    "cases/case-11/record.json",
+    "cases/case-11/strang.qasm",
+    "cases/case-12/cpf2.qasm",
+    "cases/case-12/record.json",
+    "cases/case-12/strang.qasm",
+    "cases/case-13/cpf2.qasm",
+    "cases/case-13/record.json",
+    "cases/case-13/strang.qasm",
+    "cases/case-14/cpf2.qasm",
+    "cases/case-14/record.json",
+    "cases/case-14/strang.qasm",
+    "cases/case-15/cpf2.qasm",
+    "cases/case-15/record.json",
+    "cases/case-15/strang.qasm",
+    "cases/case-16/cpf2.qasm",
+    "cases/case-16/record.json",
+    "cases/case-16/strang.qasm",
+    "cases/case-17/cpf2.qasm",
+    "cases/case-17/record.json",
+    "cases/case-17/strang.qasm",
+    "cases/case-18/cpf2.qasm",
+    "cases/case-18/record.json",
+    "cases/case-18/strang.qasm",
+    "cases/case-19/cpf2.qasm",
+    "cases/case-19/record.json",
+    "cases/case-19/strang.qasm",
+    "cases/case-20/cpf2.qasm",
+    "cases/case-20/record.json",
+    "cases/case-20/strang.qasm",
+    "cases/case-21/cpf2.qasm",
+    "cases/case-21/record.json",
+    "cases/case-21/strang.qasm",
+    "cases/case-22/cpf2.qasm",
+    "cases/case-22/record.json",
+    "cases/case-22/strang.qasm",
+    "cases/case-23/cpf2.qasm",
+    "cases/case-23/record.json",
+    "cases/case-23/strang.qasm",
+    "cases/case-24/cpf2.qasm",
+    "cases/case-24/record.json",
+    "cases/case-24/strang.qasm",
+    "cases/case-25/cpf2.qasm",
+    "cases/case-25/record.json",
+    "cases/case-25/strang.qasm",
+    "cases/case-26/cpf2.qasm",
+    "cases/case-26/record.json",
+    "cases/case-26/strang.qasm",
+    "cases/case-27/cpf2.qasm",
+    "cases/case-27/record.json",
+    "cases/case-27/strang.qasm",
+    "cases/case-28/cpf2.qasm",
+    "cases/case-28/record.json",
+    "cases/case-28/strang.qasm",
+    "cases/case-29/cpf2.qasm",
+    "cases/case-29/record.json",
+    "cases/case-29/strang.qasm",
+    "cases/case-30/cpf2.qasm",
+    "cases/case-30/record.json",
+    "cases/case-30/strang.qasm",
+    "cases/case-31/cpf2.qasm",
+    "cases/case-31/record.json",
+    "cases/case-31/strang.qasm",
+    "corrected_product_formula.py",
+    "cpf2-public-packet.zip",
+    "generate_cpf2_public.py",
+    "generation/m16/cpf2.qasm",
+    "generation/m16/record.json",
+    "generation/m16/strang.qasm",
+    "generation/m32/cpf2.qasm",
+    "generation/m32/record.json",
+    "generation/m32/strang.qasm",
+    "generation/m4/cpf2.qasm",
+    "generation/m4/record.json",
+    "generation/m4/strang.qasm",
+    "manifest.json",
+    "negative-controls.json",
+    "one-pair-complete-trial.png",
+    "original-executed.ipynb",
+    "original_repo_producer.py",
+    "portable_demo.ipynb",
+    "references.bib",
+    "requirements-lock.txt",
+    "saved-generation.json",
+    "saved-study.json",
+    "source-provenance.json",
+))
+
+PUBLIC_GQSP_FILES = frozenset(
+    "assets/generated/simulation/gqsp/" + name for name in (
+        "LICENSE.txt", "README.md", "checks-summary.json", "circuit.png",
+        "complex-degree1.qasm", "coupled-n2-degree3.qasm", "coupled-n3-degree2.qasm",
+        "degree0.qasm", "generate_simulation_gqsp.py", "generation-n64.qasm",
+        "generation-n8.qasm", "generation-scaling.csv", "gqsp.py", "identity-signal.qasm",
+        "manifest.json", "noncommuting-degree2.qasm", "public-manifest.json",
+        "requirements-lock.txt", "scaling.csv", "simulation_gqsp.ipynb",
+        "source-notebook.ipynb", "study.json", "test-case-outcomes.json", "verify_saved.py",
+)) | frozenset({"assets/generated/simulation/gqsp-reproduce.zip"})
+
+PUBLIC_DQI_DEGREE_TWO_FILES = frozenset({
+    "assets/generated/optimization/dqi-degree-two/LICENSE.txt",
+    "assets/generated/optimization/dqi-degree-two/bundle.json",
+    "assets/generated/optimization/dqi-degree-two/c5/circuit.qasm",
+    "assets/generated/optimization/dqi-degree-two/c5/ledger.json",
+    "assets/generated/optimization/dqi-degree-two/c5/manifest.json",
+    "assets/generated/optimization/dqi-degree-two/c5/operations.ndjson",
+    "assets/generated/optimization/dqi-degree-two/figure-eight/circuit.qasm",
+    "assets/generated/optimization/dqi-degree-two/figure-eight/ledger.json",
+    "assets/generated/optimization/dqi-degree-two/figure-eight/manifest.json",
+    "assets/generated/optimization/dqi-degree-two/figure-eight/operations.ndjson",
+    "assets/generated/optimization/dqi-degree-two/generate_optimization_dqi_degree_two.py",
+    "assets/generated/optimization/dqi-degree-two/input-c5.json",
+    "assets/generated/optimization/dqi-degree-two/input-figure-eight.json",
+    "assets/generated/optimization/dqi-degree-two/invocation-acceptance.json",
+    "assets/generated/optimization/dqi-degree-two/optimization_dqi_degree_two.ipynb",
+    "assets/generated/optimization/dqi-degree-two/optimization_dqi_degree_two.py",
+    "assets/generated/optimization/dqi-degree-two/optimization_dqi_degree_two_verify.py",
+    "assets/generated/optimization/dqi-degree-two/requirements-lock.txt",
+    "assets/generated/optimization/dqi-degree-two/validate_optimization_dqi_degree_two.py",
+    "assets/generated/optimization/dqi-degree-two/validation/manifest.json",
+    "assets/generated/optimization/dqi-degree-two/validation/validation.json",
+    "assets/generated/optimization/dqi-degree-two/verify_dqi_degree_two_saved.py",
+})
+PUBLIC_DQI_DEGREE_TWO_PUBLIC_FILES = frozenset({
+    "assets/generated/optimization/dqi-degree-two-public/README.md",
+    "assets/generated/optimization/dqi-degree-two-public/accepted-components.json",
+    "assets/generated/optimization/dqi-degree-two-public/download.json",
+    "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip",
+    "assets/generated/optimization/dqi-degree-two-public/environment.json",
+    "assets/generated/optimization/dqi-degree-two-public/projection-manifest.json",
+})
+DQI_DEGREE_TWO_SOURCE_CONFIG = "source-config/dqi-degree-two/pyproject.toml"
+DQI_DEGREE_TWO_CONFIG_SHA256 = "fb96cdbcbb8c032581d62d8d04f261e988fced3e66a0f560ea79d7e9c2d72404"
+DQI_DEGREE_TWO_ARCHIVE = "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip"
+DQI_DEGREE_TWO_ARCHIVE_SHA256 = "af0c1eae2fe34d8947d20330fe7b6cb47a5852b216145033bffecda07bbf29ae"
+
+
+def _dqi_degree_two_source_config(root, archive_raw):
+    """Keep the original DQI configuration separate from the package bootstrap."""
+    if (not isinstance(archive_raw, bytes) or len(archive_raw) != 233048
+            or hashlib.sha256(archive_raw).hexdigest() != DQI_DEGREE_TWO_ARCHIVE_SHA256):
+        raise ValueError("Degree-two DQI configuration archive identity changed")
+    role = root / DQI_DEGREE_TWO_SOURCE_CONFIG
+    if role.exists() or role.is_symlink():
+        raw = _read_bounded_public_member(root, DQI_DEGREE_TWO_SOURCE_CONFIG, 1024)
+    else:
+        with zipfile.ZipFile(io.BytesIO(archive_raw)) as archive:
+            members = archive.infolist()
+            selected = [member for member in members if member.filename == "pyproject.toml"]
+            if len(members) != 38 or len(selected) != 1:
+                raise ValueError("Degree-two DQI configuration archive membership changed")
+            member = selected[0]
+            if (member.is_dir() or member.file_size != 705 or member.flag_bits & 1
+                    or member.compress_type != zipfile.ZIP_DEFLATED
+                    or not stat.S_ISREG(member.external_attr >> 16)):
+                raise ValueError("Degree-two DQI configuration archive member changed")
+            with archive.open(member) as stream:
+                raw = stream.read(706)
+                if stream.read(1):
+                    raise ValueError("Degree-two DQI configuration exceeded its byte bound")
+    if len(raw) != 705 or hashlib.sha256(raw).hexdigest() != DQI_DEGREE_TWO_CONFIG_SHA256:
+        raise ValueError("Original degree-two DQI source configuration changed")
+    return raw
+
+
 def include_generated_file(relative):
     """Select a generated file from a registered tree and deliberate formats."""
     path = Path(relative)
@@ -791,10 +1069,23 @@ def include_generated_file(relative):
         return str(relative) in PUBLIC_DQI_RESOURCE_FILES
     if generated.parts[:2] == ("optimization", "dqi-structured"):
         return str(relative) in PUBLIC_DQI_STRUCTURED_FILES
+    if generated.parts[:2] == ("optimization", "dqi-degree-two"):
+        return str(relative) in PUBLIC_DQI_DEGREE_TWO_FILES
+    if generated.parts[:2] == ("optimization", "dqi-degree-two-public"):
+        return str(relative) in PUBLIC_DQI_DEGREE_TWO_PUBLIC_FILES
     if generated.parts[:2] == ("simulation", "suzuki"):
         return str(relative) in PUBLIC_SUZUKI_FILES
+    if generated.parts[:2] == ("simulation", "corrected-formula"):
+        return str(relative) in PUBLIC_CORRECTED_FORMULA_FILES
+    if generated.parts[:2] == ("simulation", "gqsp"):
+        return str(relative) in PUBLIC_GQSP_FILES
     if generated.parts[:2] == ("simulation", "detailed-balance-channel"):
         return str(relative) in PUBLIC_GIBBS_CHANNEL_FILES
+    if generated.parts[:2] == ("simulation", "detailed-balance-decay"):
+        return str(relative) in PUBLIC_DECAY_FILES
+    if (generated.parts[:2] == ("simulation", "detailed-balance-correction")
+            or str(relative) == "assets/generated/simulation/detailed-balance-correction-download.zip"):
+        return str(relative) in PUBLIC_CORRECTION_FILES
     if generated.parts[:2] == ("simulation", "reusable-bath"):
         return str(relative) in PUBLIC_BATH_FILES
     if generated.parts[:2] == ("simulation", "reusable-bath-local-spin"):
@@ -856,6 +1147,8 @@ def package_files(root=None):
     for name in FORMAL_FILES:
         relative = "algorithms/optimization/formal/" + name
         files[relative] = (root / relative).read_bytes()
+    if DQI_DEGREE_TWO_ARCHIVE in files:
+        files[DQI_DEGREE_TWO_SOURCE_CONFIG] = _dqi_degree_two_source_config(root, files[DQI_DEGREE_TWO_ARCHIVE])
     files["pyproject.toml"] = b'''[build-system]
 requires = ["setuptools>=75"]
 build-backend = "setuptools.build_meta"

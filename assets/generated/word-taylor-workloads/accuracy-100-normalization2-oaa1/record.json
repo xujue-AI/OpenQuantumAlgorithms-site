@@ -274,15 +274,15 @@
   },
   "numerical_validation": {
     "performed": true,
-    "source_block_residual_vs_independent_polynomial": 3.591529680420191e-14,
+    "source_block_residual_vs_independent_polynomial": 3.6374416801707316e-14,
     "complete_measured_branch_probability_residual": 9.4002583495012e-13,
-    "coherent_lowering_random_full_register_residual": 1.6288313248694927e-13,
-    "independent_expm_eigh_residual": 7.930878485573286e-16,
-    "actual_known_input_acceptance": 0.9999993973313119,
-    "actual_known_input_Z_mean": 0.7913951184043666,
+    "coherent_lowering_random_full_register_residual": 1.626380709068975e-13,
+    "independent_expm_eigh_residual": 7.986586999940588e-16,
+    "actual_known_input_acceptance": 0.9999993973313126,
+    "actual_known_input_Z_mean": 0.7913951184043664,
     "independent_target_Z_mean": 0.7915104805838215,
-    "actual_known_input_Z_bias": 0.00011536217945484761,
-    "actual_full_map_minimum_acceptance": 0.9999988336049632,
+    "actual_known_input_Z_bias": 0.00011536217945506966,
+    "actual_full_map_minimum_acceptance": 0.9999988336049601,
     "numerical_probability_guard": 5e-10,
     "seed": 20261112,
     "uniform_hardware_certificate": false,
@@ -432,5 +432,5 @@
       "executed sampling"
     ]
   },
-  "cpu_generation_and_check_seconds": 4.163236475999838
+  "cpu_generation_and_check_seconds": 2.1908553539999502
 }

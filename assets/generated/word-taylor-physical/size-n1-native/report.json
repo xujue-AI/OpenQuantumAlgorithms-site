@@ -574,7 +574,7 @@
         "gate": "rz",
         "angle_hex": "0x1.2d97c7f3321d2p+1",
         "epsilon_requested": 2.3118118162246766e-05,
-        "guarded_frobenius_error": 1.2896791179905565e-05,
+        "guarded_frobenius_error": 1.2896791179905563e-05,
         "gate_counts": {
           "h": 104,
           "t": 100,
@@ -599,7 +599,7 @@
     "compiled_global_phase": 1.5707963267948957,
     "qasm_export_scope": "complete measured trials; exporter omits the overall phase, so not a phase-preserving controlled-oracle specification"
   },
-  "synthesis_cpu_seconds": 1.0349336369999946,
+  "synthesis_cpu_seconds": 0.6339137830000254,
   "logical_clifford_t_gate_counts": {
     "h": 1152,
     "t": 1114,
@@ -690,8 +690,8 @@
         "2": 2
       }
     },
-    "source_routed_semantic_operator_residual": 3.5101813464903806e-15,
-    "full_coherent_synthesis_operator_residual": 8.273713482990378e-05,
+    "source_routed_semantic_operator_residual": 3.5101813464903787e-15,
+    "full_coherent_synthesis_operator_residual": 8.273713482990377e-05,
     "source_accepted_block_residual_vs_ideal": 1.2949339969947004e-16,
     "routed_accepted_block_residual_vs_ideal": 1.9681052232999452e-15,
     "full_joint_law_total_variation_after_synthesis": 1.0544720676042632e-05,
@@ -949,7 +949,7 @@
             "gate": "rz",
             "angle_hex": "0x1.2d97c7f3321d2p+1",
             "epsilon_requested": 2.3118118162246766e-05,
-            "guarded_frobenius_error": 1.2896791179905565e-05,
+            "guarded_frobenius_error": 1.2896791179905563e-05,
             "gate_counts": {
               "h": 104,
               "t": 100,
@@ -1492,7 +1492,7 @@
         "resource_rsgridsynth_022",
         "resource_qdk_134"
       ],
-      "bounded_search_cpu_seconds": 1.5650342640001327
+      "bounded_search_cpu_seconds": 0.9867592119999244
     },
     {
       "schema_version": 1,
@@ -1734,7 +1734,7 @@
             "gate": "rz",
             "angle_hex": "0x1.2d97c7f3321d2p+1",
             "epsilon_requested": 2.3118118162246766e-05,
-            "guarded_frobenius_error": 1.2896791179905565e-05,
+            "guarded_frobenius_error": 1.2896791179905563e-05,
             "gate_counts": {
               "h": 104,
               "t": 100,
@@ -2277,7 +2277,7 @@
         "resource_rsgridsynth_022",
         "resource_qdk_134"
       ],
-      "bounded_search_cpu_seconds": 1.5378503729998556
+      "bounded_search_cpu_seconds": 0.9083378540001377
     }
   ],
   "physical_estimation_performed": true,

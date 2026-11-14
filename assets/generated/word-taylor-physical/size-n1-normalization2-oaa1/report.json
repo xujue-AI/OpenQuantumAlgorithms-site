@@ -656,7 +656,7 @@
     "compiled_global_phase": 1.5707963267948832,
     "qasm_export_scope": "complete measured trials; exporter omits the overall phase, so not a phase-preserving controlled-oracle specification"
   },
-  "synthesis_cpu_seconds": 1.3758085679996839,
+  "synthesis_cpu_seconds": 0.878623220999998,
   "logical_clifford_t_gate_counts": {
     "h": 36932,
     "t": 35736,
@@ -826,7 +826,7 @@
       }
     },
     "source_routed_semantic_operator_residual": 1.3725454971773992e-14,
-    "full_coherent_synthesis_operator_residual": 0.00016256350013050185,
+    "full_coherent_synthesis_operator_residual": 0.00016256350013050183,
     "source_accepted_block_residual_vs_ideal": 6.14690250145286e-15,
     "routed_accepted_block_residual_vs_ideal": 1.674629738011154e-14,
     "full_joint_law_total_variation_after_synthesis": 7.4611563427351815e-06,
@@ -1765,7 +1765,7 @@
         "resource_rsgridsynth_022",
         "resource_qdk_134"
       ],
-      "bounded_search_cpu_seconds": 1.9059406370001852
+      "bounded_search_cpu_seconds": 1.2641084710000996
     },
     {
       "schema_version": 1,
@@ -2688,7 +2688,7 @@
         "resource_rsgridsynth_022",
         "resource_qdk_134"
       ],
-      "bounded_search_cpu_seconds": 1.902250537999862
+      "bounded_search_cpu_seconds": 1.201485319999847
     }
   ],
   "physical_estimation_performed": true,

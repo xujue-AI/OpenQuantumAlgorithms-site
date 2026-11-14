@@ -1,0 +1,88 @@
+{
+  "all_components_verified": false,
+  "coherent_correction_evolution_implemented": false,
+  "coherent_correction_implemented": false,
+  "exact_finite_kms": false,
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "centered_decay.qasm": {
+      "bytes": 4141,
+      "sha256": "b5cf7fc96d22dc5ca2521774ffc3b3c492ae3991042b85a15afe54d25af322aa"
+    },
+    "controlled_correction.qasm": {
+      "bytes": 28675,
+      "sha256": "721e02ed8c1534f54b774cd1cf9166add0543eee76faa1f0704230192c658945"
+    },
+    "correction_block.qasm": {
+      "bytes": 4381,
+      "sha256": "41cfd2fc6e81de46e81bc95916b5e90e097b1705258585a493e121c20955f3c3"
+    },
+    "detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "detailed_balance_channel.py": {
+      "bytes": 24362,
+      "sha256": "99ac8dbfacf6ee484caeb6ad328fe145f150871e4272538dd279f67cc2573a8b"
+    },
+    "detailed_balance_correction.py": {
+      "bytes": 24902,
+      "sha256": "62ede4bbafe79a15e7c66068f0dc2b54a32322bbbff4015f00e7a0ba64e3eb48"
+    },
+    "detailed_balance_correction_reference.py": {
+      "bytes": 33840,
+      "sha256": "103393d232861867dc5e70da04fa4ec26f892b3cfc92dfed06cd1ea5cc1f413c"
+    },
+    "detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "detailed_balance_decay_reference.py": {
+      "bytes": 26002,
+      "sha256": "71ac5f486ad04cb532a86bf1c4dec4e175d0cfb377a7de26f206cd3f5c5daf53"
+    },
+    "generate_detailed_balance_correction.py": {
+      "bytes": 29098,
+      "sha256": "c01e01c380d2b6fc7f581ba9f7f5504887b824448f097d1a81672d9307d27b34"
+    },
+    "heralded_step.qasm": {
+      "bytes": 28765,
+      "sha256": "ef799261d2152586a4e6031a028c1ffdeb41dc89813174958a97b1f796274dd4"
+    },
+    "known_plus_prefix.qasm": {
+      "bytes": 28773,
+      "sha256": "7ca10bb76fcaef0b3eb1a46ce2973c66c8d10c25cdcb52c0d1cf88108cb5ca0f"
+    },
+    "known_plus_trial.qasm": {
+      "bytes": 28981,
+      "sha256": "54c7a838e706f9ec0fbe39ee081ccb5853525a62c19f341dd57931c2670798cb"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "results.json": {
+      "bytes": 128483,
+      "sha256": "2e31bafecc802aab01568fc888d6d420c5b9683caea04c9d65ab75612305df9e"
+    }
+  },
+  "finite_toy_checks_passed": true,
+  "floating_point_error_certified": false,
+  "formal_proof_reproduced": false,
+  "general_channel_implemented": false,
+  "hardware_error_certified": false,
+  "manifest_and_sidecar_are_separate": true,
+  "mixing_certificate": false,
+  "new_algorithm_result": false,
+  "physical_resources_computed": false,
+  "random_sampling_performed": false,
+  "rotations_synthesized": false,
+  "sampler_implemented": false,
+  "schema_version": 1,
+  "status": "checked_fixed_finite_correction_step",
+  "total_payload_bytes": 431155,
+  "whole_invocation_validated": false
+}

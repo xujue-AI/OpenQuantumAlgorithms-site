@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "checked_small_finite_decay_block",
+  "files": {
+    "diagonal-decay-block.qasm": {
+      "bytes": 2549,
+      "sha256": "94f063c06242cac81b2c5a9ff994d6b7aea288cfea45643718764bf09439fc92"
+    },
+    "tilted-decay-block.qasm": {
+      "bytes": 4089,
+      "sha256": "3733789ebe85984d617310dae7ebe0e5d36b6c7142dd49183fc12b7f20e4ba3c"
+    },
+    "complex-decay-block.qasm": {
+      "bytes": 11985,
+      "sha256": "859dd5d7541ca2ab2c96011865e3549120a42ce95b603bb817a767a3ef4e4acb"
+    },
+    "detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "detailed_balance_decay_reference.py": {
+      "bytes": 26002,
+      "sha256": "71ac5f486ad04cb532a86bf1c4dec4e175d0cfb377a7de26f206cd3f5c5daf53"
+    },
+    "detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "generate_detailed_balance_decay.py": {
+      "bytes": 16294,
+      "sha256": "e5b0be192e7e1bb48fd7bc8d9148f4c41e19e448edb26a023b78d972b46e7cad"
+    },
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "results.json": {
+      "bytes": 79004,
+      "sha256": "dab75172b425b99c8b0e0fb3d015018c2d3dc2e7e111d15c5060bb005dc1d3dd"
+    }
+  },
+  "total_payload_bytes": 180675,
+  "manifest_and_sidecar_are_separate": true,
+  "all_components_verified": false,
+  "new_algorithm_result": false,
+  "coherent_correction_implemented": false,
+  "coherent_correction_evolution_implemented": false,
+  "general_channel_implemented": false,
+  "sampler_implemented": false,
+  "exact_finite_kms": false,
+  "mixing_certificate": false,
+  "rotations_synthesized": false,
+  "physical_resources_computed": false,
+  "formal_proof_reproduced": false,
+  "random_sampling_performed": false
+}

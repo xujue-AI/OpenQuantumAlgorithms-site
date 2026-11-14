@@ -287,6 +287,11 @@ def test_zip_member_structure_and_bytes_are_checked_after_the_real_zip_pin(packe
 
 
 def test_package_complete_manifest_failure_never_dispatches_bath(packet, checked, monkeypatch):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root, _ = packet
     (root / NOTEBOOK).write_bytes(b"changed notebook before complete-manifest authentication")
     calls = []
@@ -296,7 +301,7 @@ def test_package_complete_manifest_failure_never_dispatches_bath(packet, checked
         pytest.fail("Failed complete manifest reached a prerequisite or bath dispatch")
 
     for name in ("verify_formal_record", "_load_energy_record_gate", "_load_dynamics_record_gate",
-                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate",
+                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate", "_load_decay_record_gate",
                  "_load_tail_record_gate", "_load_dqi_saved_gate", "_verify_dqi_saved_identity", "_verify_bath_saved_identity", "_load_local_spin_saved_gate"):
         monkeypatch.setattr(checked, name, forbidden)
     with pytest.raises(ValueError, match="digest mismatch"):
@@ -305,6 +310,11 @@ def test_package_complete_manifest_failure_never_dispatches_bath(packet, checked
 
 
 def test_package_bath_dispatch_follows_complete_identity_and_dqi(packet, checked, monkeypatch):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root, provenance = packet
     expected_provenance = provenance
     order, results = [], []
@@ -345,13 +355,14 @@ def test_package_bath_dispatch_follows_complete_identity_and_dqi(packet, checked
     monkeypatch.setattr(checked, "_load_word_record_gate", lambda *args: SimpleNamespace(verify_public_word_transport=lambda *args, **kwargs: order.append("word")))
     monkeypatch.setattr(checked, "_load_suzuki_record_gate", bundle("suzuki"))
     monkeypatch.setattr(checked, "_load_gibbs_channel_record_gate", bundle("gibbs"))
+    monkeypatch.setattr(checked, "_load_decay_record_gate", bundle("decay"))
     monkeypatch.setattr(checked, "_load_tail_record_gate", tail)
     monkeypatch.setattr(checked, "_load_dqi_saved_gate", lambda *args: order.append("dqi-load"))
     monkeypatch.setattr(checked, "_verify_dqi_saved_identity", lambda *args, **kwargs: order.append("dqi-check"))
     monkeypatch.setattr(checked, "_verify_bath_saved_identity", bath)
     with pytest.raises(RuntimeError, match="before downstream jobs"):
         checked.verify_package(root, run_tests=False)
-    assert order == ["manifest", "formal", "energy", "dynamics", "word", "suzuki", "gibbs", "tail-instrument", "tail-complete",
+    assert order == ["manifest", "formal", "energy", "dynamics", "word", "suzuki", "gibbs", "decay", "tail-instrument", "tail-complete",
                      "dqi-load", "dqi-check", "bath"]
     assert results[0]["all_components_verified"] is results[0]["new_quantum_execution"] is False
 
@@ -376,6 +387,8 @@ def test_site_bath_uses_verified_provenance_and_canonical_assets_without_code_as
 
 
 def test_failed_complete_preview_never_calls_actual_bath_dispatch(site_packet, site_checker, monkeypatch):
+    monkeypatch.setattr(site_checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(site_checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, _, _, _ = site_packet
     (root / "index.html").write_text("<html><body>Saved bath preview fixture</body></html>")
     monkeypatch.setattr(site_checker, "required_artifacts", lambda: [])
@@ -384,10 +397,10 @@ def test_failed_complete_preview_never_calls_actual_bath_dispatch(site_packet, s
     monkeypatch.setattr(site_checker, "current_quality_resource_errors", lambda *args: [])
     for name in ("N3_EMBED_LABELS", "N4_EMBED_LABELS", "PORT_EMBED_LABELS", "QDRIFT_EMBED_LABELS",
                  "SUZUKI_EMBED_LABELS", "SHOR_RECOVERY_EMBED_LABELS", "HADAMARD_EMBED_LABELS", "BAYESIAN_EMBED_LABELS", "ROBUST_EMBED_LABELS", "QPE_FEEDBACK_EMBED_LABELS",
-                 "OPT8_EMBED_LABELS", "GIBBS_CHANNEL_ARTICLE_LABELS", "MEASURED_AND_FIGURE_LABELS"):
+                 "OPT8_EMBED_LABELS", "GIBBS_CHANNEL_ARTICLE_LABELS", "DECAY_ARTICLE_LABELS", "CORRECTION_ARTICLE_LABELS", "MEASURED_AND_FIGURE_LABELS"):
         monkeypatch.setattr(site_checker, name, frozenset())
-    for name in ("site_word_record_errors", "site_suzuki_record_errors", "site_gibbs_channel_record_errors",
-                 "site_tail_record_errors", "site_dqi_saved_errors", "site_local_spin_saved_errors", "site_local_spin_reproduction_errors", "site_measured_and_saved_errors"):
+    for name in ("site_word_record_errors", "site_suzuki_record_errors", "site_gibbs_channel_record_errors", "site_decay_record_errors",
+                 "site_tail_record_errors", "site_dqi_saved_errors", "site_local_spin_saved_errors", "site_local_spin_reproduction_errors", "site_measured_and_saved_errors", "site_hamiltonian_packet_errors"):
         monkeypatch.setattr(site_checker, name, lambda *args, **kwargs: [])
     calls = []
     actual = site_checker.site_bath_saved_errors

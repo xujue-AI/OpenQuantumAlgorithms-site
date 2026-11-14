@@ -1,0 +1,927 @@
+{
+  "status": "bounded_given_angle_component",
+  "cases": [
+    {
+      "case": {
+        "id": "degree0",
+        "n": 1,
+        "y_pi": [
+          "1/8"
+        ],
+        "z_pi": [
+          "1/9"
+        ],
+        "chi_pi": "1/6",
+        "rotations_pi": [
+          [
+            "1/7",
+            "1/3",
+            "-1/5"
+          ]
+        ],
+        "input": "zero",
+        "simulate": true
+      },
+      "data_qubits": 1,
+      "total_qubits": 2,
+      "degree_upper_bound": 0,
+      "signal_calls": 0,
+      "core_source_operations": 3,
+      "complete_trial_operations": 7,
+      "counts": {
+        "reset": 2,
+        "rz": 2,
+        "measure": 2,
+        "ry": 1
+      },
+      "dependency_depth": 5,
+      "coefficients_ascending": {
+        "p": [
+          [
+            0.8812805364746044,
+            -0.18732196069975438
+          ]
+        ],
+        "q": [
+          [
+            0.2903248894449803,
+            0.322438455583997
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "numerical_small_checks_passed",
+        "evidence": "bounded floating-point comparison; no interval or formal certificate",
+        "p_block_error": 1.2412670766236366e-16,
+        "q_block_error": 5.551115123125783e-17,
+        "unitarity_error": 1.1102230246251565e-16,
+        "scalar_product_error": 5.551115123125783e-17,
+        "17_point_circle_identity_residual": 0.0,
+        "prepared_vector_error": 5.551115123125783e-17,
+        "actual_reset_program_error": 1.1443916996305594e-16,
+        "accepted_probability": 0.8117449009293668,
+        "joint_readout_probabilities_lsb_ancilla": [
+          0.8117449009293668,
+          0.18825509907063323,
+          0.0,
+          0.0
+        ],
+        "conditional_state_available": true,
+        "measurements": 2,
+        "resets": 2,
+        "literal_finite_shot_sampling_performed": false,
+        "simulation_performed": true
+      }
+    },
+    {
+      "case": {
+        "id": "complex-degree1",
+        "n": 1,
+        "y_pi": [
+          "0"
+        ],
+        "z_pi": [
+          "1/4"
+        ],
+        "chi_pi": "1/4",
+        "rotations_pi": [
+          [
+            "1/4",
+            "0",
+            "0"
+          ],
+          [
+            "1/4",
+            "0",
+            "1/2"
+          ]
+        ],
+        "input": "plus_i",
+        "simulate": true
+      },
+      "data_qubits": 1,
+      "total_qubits": 2,
+      "degree_upper_bound": 1,
+      "signal_calls": 1,
+      "core_source_operations": 17,
+      "complete_trial_operations": 23,
+      "counts": {
+        "rz": 6,
+        "ry": 4,
+        "cx": 4,
+        "reset": 2,
+        "x": 2,
+        "measure": 2,
+        "h": 1,
+        "s": 1,
+        "p": 1
+      },
+      "dependency_depth": 18,
+      "coefficients_ascending": {
+        "p": [
+          [
+            -0.35355339059327373,
+            -0.3535533905932737
+          ],
+          [
+            0.35355339059327384,
+            -0.3535533905932738
+          ]
+        ],
+        "q": [
+          [
+            0.3535533905932738,
+            0.35355339059327373
+          ],
+          [
+            0.3535533905932738,
+            -0.35355339059327373
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "numerical_small_checks_passed",
+        "evidence": "bounded floating-point comparison; no interval or formal certificate",
+        "p_block_error": 1.2412670766236366e-16,
+        "q_block_error": 1.2412670766236366e-16,
+        "unitarity_error": 2.220446049250313e-16,
+        "scalar_product_error": 1.5700924586837752e-16,
+        "17_point_circle_identity_residual": 2.220446049250313e-16,
+        "prepared_vector_error": 7.850462293418876e-17,
+        "actual_reset_program_error": 1.1443916996305594e-16,
+        "accepted_probability": 0.2499999999999999,
+        "joint_readout_probabilities_lsb_ancilla": [
+          0.2499999999999999,
+          0.25,
+          1.232595164407831e-32,
+          0.4999999999999999
+        ],
+        "conditional_state_available": true,
+        "measurements": 2,
+        "resets": 2,
+        "literal_finite_shot_sampling_performed": false,
+        "simulation_performed": true
+      }
+    },
+    {
+      "case": {
+        "id": "noncommuting-degree2",
+        "n": 1,
+        "y_pi": [
+          "-1/9"
+        ],
+        "z_pi": [
+          "1/7"
+        ],
+        "chi_pi": "-1/5",
+        "rotations_pi": [
+          [
+            "1/6",
+            "-1/7",
+            "1/9"
+          ],
+          [
+            "1/5",
+            "1/3",
+            "-1/6"
+          ],
+          [
+            "-1/4",
+            "1/8",
+            "1/11"
+          ]
+        ],
+        "input": "one",
+        "simulate": true
+      },
+      "data_qubits": 1,
+      "total_qubits": 2,
+      "degree_upper_bound": 2,
+      "signal_calls": 2,
+      "core_source_operations": 31,
+      "complete_trial_operations": 36,
+      "counts": {
+        "rz": 10,
+        "cx": 8,
+        "ry": 7,
+        "x": 5,
+        "reset": 2,
+        "p": 2,
+        "measure": 2
+      },
+      "dependency_depth": 31,
+      "coefficients_ascending": {
+        "p": [
+          [
+            0.28084640546875306,
+            -0.054211241303948415
+          ],
+          [
+            0.24562487687484508,
+            0.4611601616513142
+          ],
+          [
+            0.42207700705912227,
+            -0.25940641194333736
+          ]
+        ],
+        "q": [
+          [
+            0.280213989686914,
+            0.05739061013943173
+          ],
+          [
+            0.22748723880646687,
+            0.14401661070406693
+          ],
+          [
+            -0.48921884406553356,
+            0.07813839681287166
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "numerical_small_checks_passed",
+        "evidence": "bounded floating-point comparison; no interval or formal certificate",
+        "p_block_error": 3.376611507232129e-16,
+        "q_block_error": 1.7554167342883506e-16,
+        "unitarity_error": 4.440892098500626e-16,
+        "scalar_product_error": 2.9893669801409083e-16,
+        "17_point_circle_identity_residual": 4.440892098500626e-16,
+        "prepared_vector_error": 2.7755575615628914e-16,
+        "actual_reset_program_error": 3.340929554008683e-16,
+        "accepted_probability": 0.8030832617126822,
+        "joint_readout_probabilities_lsb_ancilla": [
+          0.04898089324884031,
+          0.07928246662763679,
+          0.7541023684638419,
+          0.11763427165968106
+        ],
+        "conditional_state_available": true,
+        "measurements": 2,
+        "resets": 2,
+        "literal_finite_shot_sampling_performed": false,
+        "simulation_performed": true
+      }
+    },
+    {
+      "case": {
+        "id": "coupled-n2-degree3",
+        "n": 2,
+        "y_pi": [
+          "1/8",
+          "-1/9"
+        ],
+        "z_pi": [
+          "-1/7",
+          "1/11"
+        ],
+        "chi_pi": "1/13",
+        "rotations_pi": [
+          [
+            "1/7",
+            "1/3",
+            "-1/11"
+          ],
+          [
+            "-1/5",
+            "1/8",
+            "1/12"
+          ],
+          [
+            "1/4",
+            "-1/9",
+            "1/5"
+          ],
+          [
+            "1/6",
+            "1/10",
+            "-1/7"
+          ]
+        ],
+        "input": "plus_i_x",
+        "simulate": true
+      },
+      "data_qubits": 2,
+      "total_qubits": 3,
+      "degree_upper_bound": 3,
+      "signal_calls": 3,
+      "core_source_operations": 120,
+      "complete_trial_operations": 129,
+      "counts": {
+        "cx": 54,
+        "rz": 20,
+        "ry": 16,
+        "t": 12,
+        "tdg": 9,
+        "x": 7,
+        "reset": 3,
+        "p": 3,
+        "measure": 3,
+        "h": 1,
+        "s": 1
+      },
+      "dependency_depth": 110,
+      "coefficients_ascending": {
+        "p": [
+          [
+            -0.09065358181534926,
+            -0.08475699588601918
+          ],
+          [
+            0.06745020259342184,
+            -0.28993534193741277
+          ],
+          [
+            0.45171948032706305,
+            0.41376079907291463
+          ],
+          [
+            0.3172103452260265,
+            -0.31402678641186516
+          ]
+        ],
+        "q": [
+          [
+            0.10396691712690884,
+            0.18813915298483505
+          ],
+          [
+            -0.12290372423617132,
+            -0.03375403268940365
+          ],
+          [
+            0.35391915017807596,
+            -0.2595800575909226
+          ],
+          [
+            0.2302037433378293,
+            -0.11583599809260567
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "numerical_small_checks_passed",
+        "evidence": "bounded floating-point comparison; no interval or formal certificate",
+        "p_block_error": 1.5895974606912446e-15,
+        "q_block_error": 1.1157603309187458e-15,
+        "unitarity_error": 3.774758283725532e-15,
+        "scalar_product_error": 3.510833468576701e-16,
+        "17_point_circle_identity_residual": 5.551115123125783e-16,
+        "prepared_vector_error": 9.226380847435024e-16,
+        "actual_reset_program_error": 8.427828685313985e-16,
+        "accepted_probability": 0.7122134584126607,
+        "joint_readout_probabilities_lsb_ancilla": [
+          0.12895692886671054,
+          0.04415868926577107,
+          0.12752504188209446,
+          0.0359665997725499,
+          0.23126947169017725,
+          0.18727785220475934,
+          0.22446201597367849,
+          0.02038340034425883
+        ],
+        "conditional_state_available": true,
+        "measurements": 3,
+        "resets": 3,
+        "literal_finite_shot_sampling_performed": false,
+        "simulation_performed": true
+      }
+    },
+    {
+      "case": {
+        "id": "coupled-n3-degree2",
+        "n": 3,
+        "y_pi": [
+          "1/8",
+          "-1/9",
+          "1/10"
+        ],
+        "z_pi": [
+          "-1/7",
+          "1/11",
+          "-1/12"
+        ],
+        "chi_pi": "-1/13",
+        "rotations_pi": [
+          [
+            "1/6",
+            "1/7",
+            "-1/9"
+          ],
+          [
+            "-1/5",
+            "1/8",
+            "1/6"
+          ],
+          [
+            "1/4",
+            "-1/11",
+            "1/12"
+          ]
+        ],
+        "input": "plus_i_x",
+        "simulate": true
+      },
+      "data_qubits": 3,
+      "total_qubits": 4,
+      "degree_upper_bound": 2,
+      "signal_calls": 2,
+      "core_source_operations": 131,
+      "complete_trial_operations": 142,
+      "counts": {
+        "cx": 64,
+        "rz": 18,
+        "t": 16,
+        "ry": 15,
+        "tdg": 12,
+        "x": 5,
+        "reset": 4,
+        "measure": 4,
+        "p": 2,
+        "h": 1,
+        "s": 1
+      },
+      "dependency_depth": 119,
+      "coefficients_ascending": {
+        "p": [
+          [
+            -0.12183581077008257,
+            -0.2587848476291276
+          ],
+          [
+            0.5401232856219801,
+            0.15204884248677542
+          ],
+          [
+            0.43569104617706234,
+            -0.23582620449483493
+          ]
+        ],
+        "q": [
+          [
+            0.1898087211628937,
+            0.21397712849494235
+          ],
+          [
+            -0.15298789177747235,
+            0.08505406286215444
+          ],
+          [
+            0.35160257791110106,
+            -0.3490219386393508
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "numerical_small_checks_passed",
+        "evidence": "bounded floating-point comparison; no interval or formal certificate",
+        "p_block_error": 1.4946834900704542e-15,
+        "q_block_error": 1.6662025759491966e-15,
+        "unitarity_error": 4.884981308350689e-15,
+        "scalar_product_error": 4.163336342344337e-16,
+        "17_point_circle_identity_residual": 3.3306690738754696e-16,
+        "prepared_vector_error": 8.688869536365456e-16,
+        "actual_reset_program_error": 8.617648093045562e-16,
+        "accepted_probability": 0.6125932360610087,
+        "joint_readout_probabilities_lsb_ancilla": [
+          0.09420611005255698,
+          0.01999337007914284,
+          0.009238543633325547,
+          0.013472166529086676,
+          0.2927974594564737,
+          0.24378323236849003,
+          0.17666428856810976,
+          0.09026169872673832,
+          0.003796872939357655,
+          0.00018519421302876522,
+          0.006781862202673198,
+          0.008123868635359296,
+          0.0185006842973892,
+          0.009148997181336353,
+          0.010607414911122725,
+          0.0024382362058083143
+        ],
+        "conditional_state_available": true,
+        "measurements": 4,
+        "resets": 4,
+        "literal_finite_shot_sampling_performed": false,
+        "simulation_performed": true
+      }
+    },
+    {
+      "case": {
+        "id": "identity-signal",
+        "n": 1,
+        "y_pi": [
+          "0"
+        ],
+        "z_pi": [
+          "0"
+        ],
+        "chi_pi": "0",
+        "rotations_pi": [
+          [
+            "1/6",
+            "1/7",
+            "1/8"
+          ],
+          [
+            "1/5",
+            "-1/9",
+            "1/11"
+          ],
+          [
+            "1/4",
+            "1/12",
+            "-1/13"
+          ]
+        ],
+        "input": "plus_i",
+        "simulate": true
+      },
+      "data_qubits": 1,
+      "total_qubits": 2,
+      "degree_upper_bound": 2,
+      "signal_calls": 2,
+      "core_source_operations": 31,
+      "complete_trial_operations": 37,
+      "counts": {
+        "rz": 10,
+        "cx": 8,
+        "ry": 7,
+        "x": 4,
+        "reset": 2,
+        "p": 2,
+        "measure": 2,
+        "h": 1,
+        "s": 1
+      },
+      "dependency_depth": 31,
+      "coefficients_ascending": {
+        "p": [
+          [
+            -0.2767515531526289,
+            0.07226437556667743
+          ],
+          [
+            -0.3937937412687622,
+            0.23250077837633243
+          ],
+          [
+            0.45648811081485274,
+            -0.1925078988768757
+          ]
+        ],
+        "q": [
+          [
+            0.28602486933483345,
+            0.0018265460370964631
+          ],
+          [
+            0.09684329898783686,
+            -0.35634639839014726
+          ],
+          [
+            0.49075836619197793,
+            -0.0678005343480647
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "numerical_small_checks_passed",
+        "evidence": "bounded floating-point comparison; no interval or formal certificate",
+        "p_block_error": 1.4946834900704541e-16,
+        "q_block_error": 2.0014830212433607e-16,
+        "unitarity_error": 2.220446049250313e-16,
+        "scalar_product_error": 3.554447978966673e-16,
+        "17_point_circle_identity_residual": 2.220446049250313e-16,
+        "prepared_vector_error": 2.0014830212433607e-16,
+        "actual_reset_program_error": 1.666426046817195e-16,
+        "accepted_probability": 0.058422169168546374,
+        "joint_readout_probabilities_lsb_ancilla": [
+          0.029211084584273187,
+          0.47078891541572676,
+          0.029211084584273187,
+          0.47078891541572676
+        ],
+        "conditional_state_available": true,
+        "measurements": 2,
+        "resets": 2,
+        "literal_finite_shot_sampling_performed": false,
+        "simulation_performed": true
+      }
+    },
+    {
+      "case": {
+        "id": "generation-n8",
+        "n": 8,
+        "y_pi": "1/8",
+        "z_pi": "-1/9",
+        "chi_pi": "1/6",
+        "rotations_pi": [
+          [
+            "1/7",
+            "1/3",
+            "-1/11"
+          ],
+          [
+            "-1/5",
+            "1/8",
+            "1/12"
+          ],
+          [
+            "1/4",
+            "-1/9",
+            "1/5"
+          ],
+          [
+            "1/6",
+            "1/10",
+            "-1/7"
+          ],
+          [
+            "-1/8",
+            "1/9",
+            "1/10"
+          ],
+          [
+            "1/9",
+            "-1/11",
+            "1/12"
+          ],
+          [
+            "1/10",
+            "1/12",
+            "-1/13"
+          ]
+        ],
+        "input": "plus_i_x",
+        "simulate": false
+      },
+      "data_qubits": 8,
+      "total_qubits": 9,
+      "degree_upper_bound": 6,
+      "signal_calls": 6,
+      "core_source_operations": 1137,
+      "complete_trial_operations": 1158,
+      "counts": {
+        "cx": 612,
+        "t": 168,
+        "tdg": 126,
+        "rz": 110,
+        "ry": 103,
+        "x": 13,
+        "reset": 9,
+        "measure": 9,
+        "p": 6,
+        "h": 1,
+        "s": 1
+      },
+      "dependency_depth": 1007,
+      "coefficients_ascending": {
+        "p": [
+          [
+            -0.024398848225115802,
+            -0.052251529026014105
+          ],
+          [
+            0.01851582525251844,
+            -0.06408269393103827
+          ],
+          [
+            -0.029491402355778205,
+            0.10690586792889556
+          ],
+          [
+            -0.2429999231294147,
+            0.018818838656093836
+          ],
+          [
+            0.01845627790824867,
+            -0.30678989470289036
+          ],
+          [
+            0.593289029923585,
+            0.1784831191824712
+          ],
+          [
+            0.163832683636415,
+            -0.3301276812771538
+          ]
+        ],
+        "q": [
+          [
+            0.03091159723812934,
+            0.17476930025147147
+          ],
+          [
+            -0.03026639392374801,
+            -0.03055263296297421
+          ],
+          [
+            0.2786699697819322,
+            0.014524272837943032
+          ],
+          [
+            -0.011696707067537594,
+            -0.3457773746762918
+          ],
+          [
+            0.13717779995875914,
+            0.02768611133263041
+          ],
+          [
+            0.19995782807853377,
+            -0.0395750215692091
+          ],
+          [
+            0.07918083474182916,
+            -0.08983244418850242
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "generation_only",
+        "simulation_performed": false
+      }
+    },
+    {
+      "case": {
+        "id": "generation-n64",
+        "n": 64,
+        "y_pi": "1/8",
+        "z_pi": "-1/9",
+        "chi_pi": "1/6",
+        "rotations_pi": [
+          [
+            "1/7",
+            "1/3",
+            "-1/11"
+          ],
+          [
+            "-1/5",
+            "1/8",
+            "1/12"
+          ],
+          [
+            "1/4",
+            "-1/9",
+            "1/5"
+          ],
+          [
+            "1/6",
+            "1/10",
+            "-1/7"
+          ],
+          [
+            "-1/8",
+            "1/9",
+            "1/10"
+          ],
+          [
+            "1/9",
+            "-1/11",
+            "1/12"
+          ],
+          [
+            "1/10",
+            "1/12",
+            "-1/13"
+          ]
+        ],
+        "input": "plus_i_x",
+        "simulate": false
+      },
+      "data_qubits": 64,
+      "total_qubits": 65,
+      "degree_upper_bound": 6,
+      "signal_calls": 6,
+      "core_source_operations": 9537,
+      "complete_trial_operations": 9670,
+      "counts": {
+        "cx": 5316,
+        "t": 1512,
+        "tdg": 1134,
+        "rz": 782,
+        "ry": 775,
+        "reset": 65,
+        "measure": 65,
+        "x": 13,
+        "p": 6,
+        "h": 1,
+        "s": 1
+      },
+      "dependency_depth": 8399,
+      "coefficients_ascending": {
+        "p": [
+          [
+            -0.024398848225115802,
+            -0.052251529026014105
+          ],
+          [
+            0.01851582525251844,
+            -0.06408269393103827
+          ],
+          [
+            -0.029491402355778205,
+            0.10690586792889556
+          ],
+          [
+            -0.2429999231294147,
+            0.018818838656093836
+          ],
+          [
+            0.01845627790824867,
+            -0.30678989470289036
+          ],
+          [
+            0.593289029923585,
+            0.1784831191824712
+          ],
+          [
+            0.163832683636415,
+            -0.3301276812771538
+          ]
+        ],
+        "q": [
+          [
+            0.03091159723812934,
+            0.17476930025147147
+          ],
+          [
+            -0.03026639392374801,
+            -0.03055263296297421
+          ],
+          [
+            0.2786699697819322,
+            0.014524272837943032
+          ],
+          [
+            -0.011696707067537594,
+            -0.3457773746762918
+          ],
+          [
+            0.13717779995875914,
+            0.02768611133263041
+          ],
+          [
+            0.19995782807853377,
+            -0.0395750215692091
+          ],
+          [
+            0.07918083474182916,
+            -0.08983244418850242
+          ]
+        ]
+      },
+      "qasm_global_phase": "zero; conditional chi retained by literal p gate",
+      "physical_resources": "uncomputed",
+      "inverse_phase_compiler": false,
+      "hamiltonian_simulation_complete": false,
+      "validation": {
+        "status": "generation_only",
+        "simulation_performed": false
+      }
+    }
+  ],
+  "python": "3.12.14",
+  "qiskit": "2.6.2",
+  "source_sha256": "a013aeae83968d071f76093647d0c9f68498718a035c215998c8c85d325a68d2",
+  "numpy": "2.5.4",
+  "lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+  "producer_sha256": "11db399ea75b755187656625bac227f73a0463e7a44d0c275ab7bd26775689b8",
+  "case_vector_sha256": "c1670d667cdb4dde9ff070dbdc29fb10526fba7b3efa9220ae31ab1dd68af080",
+  "source_commit": "8b518a1f736a49692c63438b4df25827a2ff5f6f",
+  "source_commit_binding": "repository inputs equal captured Git blobs; detached reproduction binds content hashes",
+  "error_scope": "Numerical primitive/reference checks only; no coherent synthesis, hardware or application certificate",
+  "algorithm_scope": "given-angle polynomial of explicit unitary; no inverse compiler or full Hamiltonian simulation"
+}

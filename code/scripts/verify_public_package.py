@@ -218,6 +218,91 @@ def _load_gibbs_channel_record_gate(package: Path, provenance: dict):
     return gate
 
 
+def _load_decay_record_gate(package: Path, provenance: dict):
+    """Compile the saved decay helper from authenticated bounded bytes."""
+    package = checked_directory(package)
+    name = "scripts/verify_detailed_balance_decay.py"
+    source_bytes = _read_bounded_public_member(package, name, 2 * 1024 * 1024)
+    manifest = provenance.get("file_sha256") if isinstance(provenance, dict) else None
+    if (not isinstance(provenance, dict) or provenance.get("schema") != "openquantum-public-package-v2"
+            or not isinstance(manifest, dict)
+            or manifest.get(name) != hashlib.sha256(source_bytes).hexdigest()):
+        raise ValueError("Public-package decay helper differs from the complete manifest")
+    source = checked_path(package, name)
+    spec = importlib.util.spec_from_file_location("_openquantum_verified_decay_record_gate", source)
+    if spec is None or spec.loader is None:
+        raise ValueError("Cannot load the authenticated public-package decay helper")
+    gate = importlib.util.module_from_spec(spec)
+    exec(compile(source_bytes, str(source), "exec"), gate.__dict__)
+    return gate
+
+
+CORRECTION_SAVED_HELPER_SHA256 = "e04bd5c9dec44319a25fba0ac8778d06b62785304fa335b37aadf878fb521871"
+CORRECTION_SAVED_HELPER_BYTES = 33005
+CORRECTION_DOWNLOAD_RELATIVE = "assets/generated/simulation/detailed-balance-correction-download.zip"
+CORRECTION_DOWNLOAD_SHA256 = "79ffc7f1184dd04c3f9a7227b973826dff0095d3ab286b2bd8d1cfb57f64f891"
+CORRECTION_DOWNLOAD_BYTES = 100053
+
+
+def _load_correction_record_gate(package: Path, provenance: dict):
+    """Compile the pinned saved reader and bind its closed download result."""
+    package = checked_directory(package)
+    name = "scripts/verify_detailed_balance_correction_saved.py"
+    source_bytes = _read_bounded_public_member(package, name, 64 * 1024)
+    manifest = provenance.get("file_sha256") if isinstance(provenance, dict) else None
+    if (not isinstance(provenance, dict) or provenance.get("schema") != "openquantum-public-package-v2"
+            or not isinstance(manifest, dict) or len(source_bytes) != CORRECTION_SAVED_HELPER_BYTES
+            or hashlib.sha256(source_bytes).hexdigest() != CORRECTION_SAVED_HELPER_SHA256
+            or manifest.get(name) != CORRECTION_SAVED_HELPER_SHA256):
+        raise ValueError("Public-package correction helper differs from its pinned complete manifest")
+    if manifest.get(CORRECTION_DOWNLOAD_RELATIVE) != CORRECTION_DOWNLOAD_SHA256:
+        raise ValueError("Public-package correction archive differs from its pinned complete manifest")
+    source = checked_path(package, name)
+    spec = importlib.util.spec_from_file_location("_openquantum_verified_correction_record_gate", source)
+    if spec is None or spec.loader is None:
+        raise ValueError("Cannot load the authenticated public-package correction helper")
+    gate = importlib.util.module_from_spec(spec)
+    exec(compile(source_bytes, str(source), "exec"), gate.__dict__)
+    saved_zipfile = gate.zipfile
+
+    def admitted_zip_file(stream, *args, **kwargs):
+        if type(stream) is not io.BytesIO:
+            raise ValueError("Correction ZIP decoder requires a captured byte stream")
+        decoder_bytes = stream.getvalue()
+        decoder_sha256 = hashlib.sha256(decoder_bytes).hexdigest()
+        if (len(decoder_bytes) != CORRECTION_DOWNLOAD_BYTES or decoder_sha256 != CORRECTION_DOWNLOAD_SHA256
+                or manifest.get(CORRECTION_DOWNLOAD_RELATIVE) != decoder_sha256):
+            raise ValueError("Saved correction ZIP decoder input identity changed")
+        # Decode only a fresh snapshot of the bytes admitted here.
+        return saved_zipfile.ZipFile(io.BytesIO(decoder_bytes), *args, **kwargs)
+
+    class CorrectionZipAdmission:
+        ZipFile = staticmethod(admitted_zip_file)
+        ZIP_STORED = saved_zipfile.ZIP_STORED
+        ZIP_DEFLATED = saved_zipfile.ZIP_DEFLATED
+        BadZipFile = saved_zipfile.BadZipFile
+
+    gate.zipfile = CorrectionZipAdmission()
+    saved_download = gate.verify_download
+
+    def verify_download(archive, bundle):
+        archive_path = Path(archive).absolute()
+        archive_raw = _read_bounded_public_member(archive_path.parent, archive_path.name, 128 * 1024)
+        archive_sha256 = hashlib.sha256(archive_raw).hexdigest()
+        if (len(archive_raw) != CORRECTION_DOWNLOAD_BYTES or archive_sha256 != CORRECTION_DOWNLOAD_SHA256
+                or manifest.get(CORRECTION_DOWNLOAD_RELATIVE) != archive_sha256):
+            raise ValueError("Saved correction download container identity changed")
+        result = saved_download(archive, bundle)
+        if (not isinstance(result, dict) or result.get("download_verified") is not True
+                or result.get("download_files") != 26 or result.get("download_bytes") != CORRECTION_DOWNLOAD_BYTES
+                or result.get("download_sha256") != CORRECTION_DOWNLOAD_SHA256):
+            raise ValueError("Saved correction download container identity changed")
+        return result
+
+    gate.verify_download = verify_download
+    return gate
+
+
 def _load_tail_record_gate(package: Path, provenance: dict):
     """Compile the saved tail core from one authenticated source snapshot."""
     package = checked_directory(package)
@@ -299,6 +384,154 @@ def _verify_dqi_saved_identity(gate, bundle: Path, provenance: dict, *, notebook
             or verification.get("checked_files") != 9
             or verification.get("new_quantum_execution") is not False):
         raise ValueError("Public DQI saved event or notebook source identity changed")
+    return result
+
+
+DQI_DEGREE_TWO_HELPER = "scripts/verify_dqi_degree_two_public_saved.py"
+DQI_DEGREE_TWO_HELPER_SHA256 = "fde3babe65a1fa8b7ade3249c1b8251407760295363d563c5c56a1cb0acc9fe5"
+DQI_DEGREE_TWO_MANIFEST = "assets/generated/optimization/dqi-degree-two-public/projection-manifest.json"
+DQI_DEGREE_TWO_MANIFEST_SHA256 = "ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c"
+DQI_DEGREE_TWO_ARCHIVE = "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip"
+DQI_DEGREE_TWO_SOURCE_CONFIG = "source-config/dqi-degree-two/pyproject.toml"
+DQI_DEGREE_TWO_CONFIG_SHA256 = "fb96cdbcbb8c032581d62d8d04f261e988fced3e66a0f560ea79d7e9c2d72404"
+DQI_DEGREE_TWO_NOTEBOOK = "notebooks/optimization_dqi_degree_two.ipynb"
+DQI_DEGREE_TWO_NOTEBOOK_SHA256 = "e0685b2eaf4db5f0b6dab5bd873eb5c86d52870db8a6ad7eb2bae71d00e19cd9"
+DQI_DEGREE_TWO_SOURCE_FILES = (
+    "src/openquantum/optimization_dqi_degree_two.py",
+    "src/openquantum/optimization_dqi_degree_two_verify.py",
+    "scripts/generate_optimization_dqi_degree_two.py",
+    "scripts/validate_optimization_dqi_degree_two.py",
+    "scripts/verify_dqi_degree_two_saved.py",
+    "scripts/verify_dqi_degree_two_public_saved.py",
+    "tests/test_optimization_dqi_degree_two.py",
+    "tests/test_optimization_dqi_degree_two_boundaries.py",
+)
+DQI_DEGREE_TWO_EXTERNAL_BINDINGS = {
+    DQI_DEGREE_TWO_MANIFEST: {"bytes": 7766, "sha256": DQI_DEGREE_TWO_MANIFEST_SHA256},
+    "assets/generated/optimization/dqi-degree-two-public/download.json": {
+        "bytes": 554, "sha256": "62ae7f37396d7d915ba66bfcaf4295cb2d47ea11caf71609ffa14fd913a5d8b8"},
+    DQI_DEGREE_TWO_ARCHIVE: {
+        "bytes": 233048, "sha256": "af0c1eae2fe34d8947d20330fe7b6cb47a5852b216145033bffecda07bbf29ae"},
+}
+
+
+def _load_dqi_degree_two_saved_gate(package: Path, provenance: dict):
+    """Compile the pinned reader and guard its external metadata and ZIP bytes."""
+    package = checked_directory(package)
+    raw = _read_bounded_public_member(package, DQI_DEGREE_TWO_HELPER, 64 * 1024)
+    hashes = provenance.get("file_sha256") if isinstance(provenance, dict) else None
+    if (not isinstance(provenance, dict) or provenance.get("schema") != "openquantum-public-package-v2"
+            or not isinstance(hashes, dict) or len(raw) != 30011
+            or hashlib.sha256(raw).hexdigest() != DQI_DEGREE_TWO_HELPER_SHA256
+            or hashes.get(DQI_DEGREE_TWO_HELPER) != DQI_DEGREE_TWO_HELPER_SHA256):
+        raise ValueError("Degree-two DQI reader differs from its pinned complete manifest")
+    if any(hashes.get(name) != pin["sha256"] for name, pin in DQI_DEGREE_TWO_EXTERNAL_BINDINGS.items()):
+        raise ValueError("Degree-two DQI external metadata differs from the complete manifest")
+    source = checked_path(package, DQI_DEGREE_TWO_HELPER)
+    spec = importlib.util.spec_from_file_location("_verified_dqi_degree_two_public_saved", source)
+    if spec is None or spec.loader is None:
+        raise ValueError("Cannot load the authenticated degree-two DQI saved reader")
+    gate = importlib.util.module_from_spec(spec)
+    exec(compile(raw, str(source), "exec"), gate.__dict__)
+    saved_read, saved_zipfile = gate._read, gate.zipfile
+    external_names = {Path(name).name: (name, pin) for name, pin in DQI_DEGREE_TWO_EXTERNAL_BINDINGS.items()}
+
+    def admitted_read(path, cap, check):
+        data = saved_read(path, cap, check)
+        path = Path(path)
+        if path.parent.name == "dqi-degree-two-public" and path.name in external_names:
+            name, pin = external_names[path.name]
+            if ({"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()} != pin
+                    or hashes.get(name) != pin["sha256"]):
+                raise ValueError("Degree-two DQI external metadata changed before dispatch")
+        return data
+
+    def admitted_zip_file(stream, *args, **kwargs):
+        if type(stream) is not io.BytesIO:
+            raise ValueError("Degree-two DQI ZIP decoder requires a captured byte stream")
+        data = stream.getvalue()
+        pin = DQI_DEGREE_TWO_EXTERNAL_BINDINGS[DQI_DEGREE_TWO_ARCHIVE]
+        if ({"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()} != pin
+                or hashes.get(DQI_DEGREE_TWO_ARCHIVE) != pin["sha256"]):
+            raise ValueError("Degree-two DQI ZIP decoder input identity changed")
+        return saved_zipfile.ZipFile(io.BytesIO(data), *args, **kwargs)
+
+    class DegreeTwoZipAdmission:
+        ZipFile = staticmethod(admitted_zip_file)
+        ZIP_DEFLATED = saved_zipfile.ZIP_DEFLATED
+
+    gate._read = admitted_read
+    gate.zipfile = DegreeTwoZipAdmission()
+    return gate
+
+
+def _verify_dqi_degree_two_public_identity(gate, artifact_root: Path, *, source_root=None,
+                                         provenance=None, notebook_roots=()):
+    """Authenticate separate roots and provide only this reader its source overlay."""
+    artifact_root = checked_directory(artifact_root)
+    source_root = checked_directory(artifact_root if source_root is None else source_root)
+    hashes = provenance.get("file_sha256") if isinstance(provenance, dict) else None
+    if (not isinstance(provenance, dict) or provenance.get("schema") != "openquantum-public-package-v2"
+            or not isinstance(hashes, dict) or not isinstance(notebook_roots, tuple)
+            or len(notebook_roots) not in (0, 1, 2)):
+        raise ValueError("Degree-two DQI requires authenticated artifact, source and notebook roots")
+    notebook_roots = notebook_roots or (source_root,)
+    external = {}
+    for name, pin in DQI_DEGREE_TWO_EXTERNAL_BINDINGS.items():
+        raw = _read_bounded_public_member(artifact_root, name, 256 * 1024)
+        if ({"bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()} != pin
+                or hashes.get(name) != pin["sha256"]):
+            raise ValueError("Frozen degree-two DQI external member changed: " + name)
+        external[name] = raw
+    manifest = json.loads(external[DQI_DEGREE_TWO_MANIFEST])
+    config = _read_bounded_public_member(source_root, DQI_DEGREE_TWO_SOURCE_CONFIG, 1024)
+    config_pin = {"bytes": len(config), "sha256": hashlib.sha256(config).hexdigest()}
+    if (config_pin != {"bytes": 705, "sha256": DQI_DEGREE_TWO_CONFIG_SHA256}
+            or manifest["files"]["pyproject.toml"] != config_pin
+            or hashes.get(DQI_DEGREE_TWO_SOURCE_CONFIG) != config_pin["sha256"]):
+        raise ValueError("Original degree-two DQI source-configuration role changed")
+    sources, total = {"pyproject.toml": config}, len(config)
+    for name in DQI_DEGREE_TWO_SOURCE_FILES:
+        raw = _read_bounded_public_member(source_root, name, 128 * 1024)
+        pin = {"bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()}
+        if pin != manifest["files"][name] or hashes.get(name) != pin["sha256"]:
+            raise ValueError("Frozen degree-two DQI source changed: " + name)
+        total += len(raw)
+        if total > 512 * 1024:
+            raise ValueError("Degree-two DQI source overlay exceeds its byte bound")
+        sources[name] = raw
+    for name in ("LICENSE", "requirements-lock.txt"):
+        raw = _read_bounded_public_member(source_root, name, 64 * 1024)
+        pin = {"bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()}
+        if pin != manifest["files"][name] or hashes.get(name) != pin["sha256"]:
+            raise ValueError("Degree-two DQI original dependency changed: " + name)
+    checked_notebooks = []
+    for root in notebook_roots:
+        root = checked_directory(root)
+        raw = _read_bounded_public_member(root, DQI_DEGREE_TWO_NOTEBOOK, 64 * 1024)
+        if len(raw) != 19950 or hashlib.sha256(raw).hexdigest() != DQI_DEGREE_TWO_NOTEBOOK_SHA256:
+            raise ValueError("Degree-two DQI genuine notebook bytes changed")
+        if root == source_root and hashes.get(DQI_DEGREE_TWO_NOTEBOOK) != DQI_DEGREE_TWO_NOTEBOOK_SHA256:
+            raise ValueError("Degree-two DQI notebook changed after package admission")
+        checked_notebooks.append(root / DQI_DEGREE_TWO_NOTEBOOK)
+    with tempfile.TemporaryDirectory(prefix="openquantum-dqi-degree-two-source-") as temporary:
+        overlay = Path(temporary).resolve()
+        for name, raw in sources.items():
+            destination = overlay / name
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(raw)
+        result = gate.verify_public_packet(
+            artifact_root, source_root=overlay, notebook_path=checked_notebooks[-1],
+            expected_manifest_sha256=DQI_DEGREE_TWO_MANIFEST_SHA256,
+            archive_path=artifact_root / DQI_DEGREE_TWO_ARCHIVE, time_limit_seconds=10.0)
+    if (not isinstance(result, dict) or result.get("status") != "passed_saved_public_degree_two_packet"
+            or result.get("public_manifest_sha256") != DQI_DEGREE_TWO_MANIFEST_SHA256
+            or result.get("scoped_files") != 38 or result.get("archive_members") != 38
+            or result.get("archive_checked") is not True or result.get("archive_bytes") != 233048
+            or result.get("original_bundle_files") != 22 or result.get("genuine_companion_code_cells") != 4
+            or any(result.get(name) is not False for name in (
+                "scientific_work_reexecuted", "notebook_executed", "portable_scientific_replay_validated", "publication_complete"))):
+        raise ValueError("Degree-two DQI reader changed its saved-only scope")
     return result
 
 
@@ -863,6 +1096,210 @@ def _verify_dqi_resource_saved_identity(gate, root: Path, *, source_root=None, p
     return result
 
 
+HAMILTONIAN_SOURCE_HASHES = {
+    "src/openquantum/simulation/corrected_product_formula.py": "63fffc29105a2162ba5d0b37f8638738dad00161065734099b43654089839540",
+    "scripts/generate_simulation_corrected_formula.py": "c360f90abd24d78507173677e19b887a33f78f2f29a5e1e09ce6a175339a5576",
+    "tests/test_simulation_corrected_formula.py": "84ec744686482238e3282bff5b545fa82833a899da32d7927917d3a8e32b0c38",
+    "scripts/generate_cpf2_public.py": "51bf0ead5b6fa14b2f8fe5e3365866e073507bd3c6e85d8fda33ce31d4ad88ec",
+    "src/openquantum/simulation/gqsp.py": "a013aeae83968d071f76093647d0c9f68498718a035c215998c8c85d325a68d2",
+    "scripts/generate_simulation_gqsp.py": "11db399ea75b755187656625bac227f73a0463e7a44d0c275ab7bd26775689b8",
+    "tests/test_simulation_gqsp.py": "1a90e976ac59e75f53b5035e07210aba9dc1b5fbc2903c0bf5fd6445f1dcf8f5",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "LICENSE": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+}
+HAMILTONIAN_PACKETS = {
+    "cpf": {
+        "directory": "assets/generated/simulation/corrected-formula",
+        "manifest": "manifest.json",
+        "manifest_sha256": "0e4136c0a60da714fb6bb3a7dbd76fe8acfbef2d0c96a2b9c53142d9a303979f",
+        "schema": "openquantum.cpf2.public-packet.v1",
+        "archive": "assets/generated/simulation/corrected-formula/cpf2-public-packet.zip",
+        "archive_sha256": "a5b718436503880cee05da0d841e747566b684292f998d8a6cee82fd9f369176",
+        "helper": "scripts/verify_simulation_cpf_public.py",
+        "helper_sha256": "0a44da634cc6f98f2b2fa64323e79c475856419b7c030e236f5e426fd60e3604",
+        "notebook": "notebooks/simulation_corrected_formula.ipynb",
+        "original_notebook": "original-executed.ipynb",
+    },
+    "gqsp": {
+        "directory": "assets/generated/simulation/gqsp",
+        "manifest": "public-manifest.json",
+        "manifest_sha256": "ae635da61217082b4116553478a2c285d897b500ae2d0250f65c1a8a53cec262",
+        "schema": "openquantum.gqsp.public-manifest.v1",
+        "archive": "assets/generated/simulation/gqsp-reproduce.zip",
+        "archive_sha256": "3fd6b3d458fec2c336b508a90e3b51babfd57ab8e4cb275312675110384b47a9",
+        "helper": "scripts/verify_simulation_gqsp_public.py",
+        "helper_sha256": "8598030b01cba7308403d5c1a088795cbc6f510309a7a0547c007de94476c197",
+        "notebook": "notebooks/simulation_gqsp.ipynb",
+        "original_notebook": "simulation_gqsp.ipynb",
+    },
+}
+
+
+def _hamiltonian_provenance(provenance):
+    hashes = provenance.get("file_sha256") if isinstance(provenance, dict) else None
+    if (not isinstance(provenance, dict) or provenance.get("schema") != "openquantum-public-package-v2"
+            or not isinstance(hashes, dict)):
+        raise ValueError("Complete Hamiltonian packet provenance is required")
+    return hashes
+
+
+def _load_hamiltonian_saved_gate(package: Path, provenance: dict, kind: str):
+    """Compile one saved reader from authenticated bytes, without science imports."""
+    package = checked_directory(package)
+    hashes = _hamiltonian_provenance(provenance)
+    for name, expected in HAMILTONIAN_SOURCE_HASHES.items():
+        raw = _read_bounded_public_member(package, name, 128 * 1024)
+        if hashlib.sha256(raw).hexdigest() != expected or hashes.get(name) != expected:
+            raise ValueError("Original Hamiltonian source or dependency changed: " + name)
+    packet = HAMILTONIAN_PACKETS[kind]
+    name = packet["helper"]
+    raw = _read_bounded_public_member(package, name, 64 * 1024)
+    actual = hashlib.sha256(raw).hexdigest()
+    if actual != packet["helper_sha256"] or hashes.get(name) != actual:
+        raise ValueError("Hamiltonian saved reader identity changed: " + kind)
+    source = checked_path(package, name)
+    spec = importlib.util.spec_from_file_location("_verified_hamiltonian_saved_" + kind, source)
+    if spec is None or spec.loader is None:
+        raise ValueError("Cannot load authenticated Hamiltonian saved reader")
+    gate = importlib.util.module_from_spec(spec)
+    exec(compile(raw, str(source), "exec"), gate.__dict__)
+    return gate
+
+
+def _hamiltonian_packet_tree(directory: Path, expected: set[str]):
+    """Inspect a bounded closed tree before a saved reader sees it."""
+    directory = checked_directory(directory)
+    expected_dirs = {parent.as_posix() for name in expected for parent in PurePosixPath(name).parents
+                     if parent.as_posix() != "."}
+    files, directories, pending, entries = set(), set(), [directory], 0
+    while pending:
+        current = pending.pop()
+        with os.scandir(current) as children:
+            for child in children:
+                entries += 1
+                if entries > 256:
+                    raise ValueError("Hamiltonian packet exceeds its closed tree bound")
+                name = (Path(child.path).relative_to(directory)).as_posix()
+                info = child.stat(follow_symlinks=False)
+                if stat.S_ISDIR(info.st_mode):
+                    if name not in expected_dirs or name in directories:
+                        raise ValueError("Unlisted or duplicate Hamiltonian packet directory")
+                    directories.add(name)
+                    pending.append(Path(child.path))
+                elif stat.S_ISREG(info.st_mode) and info.st_nlink == 1:
+                    if name not in expected or name in files or info.st_size > 4 * 1024 * 1024:
+                        raise ValueError("Unlisted, duplicate or oversized Hamiltonian packet file")
+                    files.add(name)
+                else:
+                    raise ValueError("Unsafe linked or nonregular Hamiltonian packet entry")
+    if files != expected or directories != expected_dirs:
+        raise ValueError("Hamiltonian packet tree is incomplete")
+
+
+def _hamiltonian_notebook(raw: bytes, original: dict):
+    book = json.loads(raw)
+    def projection(document):
+        def source(cell):
+            value = cell["source"]
+            if isinstance(value, str):
+                return value
+            if isinstance(value, list) and all(isinstance(item, str) for item in value):
+                return "".join(value)
+            raise ValueError("Hamiltonian notebook source must be text or a list of text")
+        return [(cell["id"], cell["cell_type"], source(cell)) for cell in document["cells"]]
+    codes = [cell for cell in book["cells"] if cell["cell_type"] == "code"]
+    outputs = [output for cell in codes for output in cell.get("outputs", [])]
+    if (projection(book) != projection(original) or len(codes) != 5
+            or [cell.get("execution_count") for cell in codes] != [1, 2, 3, 4, 5]
+            or any(output.get("output_type") == "error" for output in outputs)
+            or not any("image/png" in output.get("data", {}) or "image/svg+xml" in output.get("data", {})
+                       for output in outputs)):
+        raise ValueError("Hamiltonian notebook lacks unchanged sources and genuine five-cell outputs")
+
+
+def _verify_hamiltonian_saved_identity(gate, root: Path, *, kind: str, source_root=None,
+                                       provenance=None, notebook_roots=()):
+    """Bind immutable packet, source mirrors and fresh book sources before dispatch."""
+    root = checked_directory(root)
+    source_root = checked_directory(root if source_root is None else source_root)
+    hashes = _hamiltonian_provenance(provenance)
+    packet = HAMILTONIAN_PACKETS[kind]
+    prefix = packet["directory"] + "/"
+    manifest_name = prefix + packet["manifest"]
+    raw = _read_bounded_public_member(root, manifest_name, 256 * 1024)
+    if hashlib.sha256(raw).hexdigest() != packet["manifest_sha256"] or hashes.get(manifest_name) != packet["manifest_sha256"]:
+        raise ValueError("Frozen Hamiltonian packet manifest changed")
+    manifest = json.loads(raw)
+    if manifest["schema"] != packet["schema"]:
+        raise ValueError("Hamiltonian packet manifest schema changed")
+    if kind == "cpf":
+        records = {record["path"]: {"bytes": record["bytes"], "sha256": record["sha256"]}
+                   for record in manifest["files"]}
+        if len(manifest["files"]) != 120 or len(records) != 120:
+            raise ValueError("CPF payload closure changed")
+    else:
+        records = manifest["files"]
+        if not isinstance(records, dict) or len(records) != 23:
+            raise ValueError("GQSP payload closure changed")
+    for name in records:
+        relative = PurePosixPath(name)
+        if (not name or relative.is_absolute() or ".." in relative.parts or "\\" in name
+                or relative.as_posix() != name or len(name) > 256):
+            raise ValueError("Unsafe Hamiltonian packet member name")
+    expected = set(records) | {packet["manifest"]}
+    if kind == "cpf":
+        expected.add("cpf2-public-packet.zip")
+    _hamiltonian_packet_tree(root / packet["directory"], expected)
+    blobs, total = {}, 0
+    for name, record in records.items():
+        payload = _read_bounded_public_member(root, prefix + name, 4 * 1024 * 1024)
+        total += len(payload)
+        if (total > 8 * 1024 * 1024 or {"bytes": len(payload), "sha256": hashlib.sha256(payload).hexdigest()} != record
+                or hashes.get(prefix + name) != record["sha256"]):
+            raise ValueError("Frozen Hamiltonian payload changed: " + name)
+        blobs[name] = payload
+    archive = _read_bounded_public_member(root, packet["archive"], 1024 * 1024)
+    if hashlib.sha256(archive).hexdigest() != packet["archive_sha256"] or hashes.get(packet["archive"]) != packet["archive_sha256"]:
+        raise ValueError("Frozen Hamiltonian archive changed")
+    if kind == "gqsp":
+        blobs[packet["manifest"]] = raw
+        with zipfile.ZipFile(io.BytesIO(archive)) as zipped:
+            members = zipped.infolist()
+            if (len(members) != 24 or {item.filename for item in members} != {"gqsp/" + name for name in blobs}
+                    or sum(item.file_size for item in members) > 4 * 1024 * 1024):
+                raise ValueError("GQSP archive closure changed")
+            for item in members:
+                if (item.is_dir() or not stat.S_ISREG(item.external_attr >> 16) or item.flag_bits & 1
+                        or item.file_size > 4 * 1024 * 1024 or zipped.read(item) != blobs[item.filename[5:]]):
+                    raise ValueError("GQSP archive member differs from served bytes")
+    original = json.loads(blobs[packet["original_notebook"]])
+    for notebook_root in notebook_roots or (source_root,):
+        notebook_root = checked_directory(notebook_root)
+        book_raw = _read_bounded_public_member(notebook_root, packet["notebook"], 4 * 1024 * 1024)
+        if notebook_root == source_root and hashes.get(packet["notebook"]) != hashlib.sha256(book_raw).hexdigest():
+            raise ValueError("Hamiltonian book changed after package admission")
+        _hamiltonian_notebook(book_raw, original)
+    portable = source_root / "notebooks/simulation_corrected_formula_portable.ipynb"
+    if portable.exists() or portable.is_symlink():
+        raise ValueError("CPF portable companion must remain download-only")
+    result = gate.verify(root / packet["directory"])
+    if kind == "cpf":
+        if (result.get("status") != "passed" or result.get("scientific_imports_or_calls") != 0
+                or result.get("portable_execution_performed") is not False or result.get("payload_files") != 120
+                or result.get("archive_entries") != 121 or result.get("paired_small_cases") != 32
+                or result.get("genuine_notebook_code_cells") != 5):
+            raise ValueError("CPF reader changed its saved-only scope")
+    elif (result.get("status") != "saved_integrity_passed" or result.get("new_scientific_execution") is not False
+          or result.get("public_files") != 24 or result.get("saved_suite_cases") != 8
+          or result.get("small_numerical_cases") != 6 or result.get("generation_only_cases") != 2
+          or result.get("genuine_notebook_cells") != 5):
+        raise ValueError("GQSP reader changed its saved-only scope")
+    helper = _read_bounded_public_member(source_root, packet["helper"], 64 * 1024)
+    if hashlib.sha256(helper).hexdigest() != packet["helper_sha256"]:
+        raise ValueError("Hamiltonian saved reader changed during verification")
+    return result
+
+
 def _load_dynamics_record_gate(package: Path, provenance: dict):
     """Load the dynamics gate only from the complete authenticated package.
 
@@ -905,6 +1342,13 @@ def verify_package(package: Path, *, run_tests: bool = True) -> None:
     suzuki_gate.verify_bundle(package / suzuki_gate.BUNDLE_RELATIVE, source_root=package)
     gibbs_gate = _load_gibbs_channel_record_gate(package, provenance)
     gibbs_gate.verify_bundle(package / gibbs_gate.BUNDLE_RELATIVE, source_root=package)
+    decay_gate = _load_decay_record_gate(package, provenance)
+    decay_gate.verify_bundle(package / decay_gate.BUNDLE_RELATIVE, source_root=package)
+    correction_gate = _load_correction_record_gate(package, provenance)
+    correction_gate.verify_bundle(package / correction_gate.BUNDLE_RELATIVE, source_root=package)
+    correction_gate.verify_download(
+        package / "assets/generated/simulation/detailed-balance-correction-download.zip",
+        package / correction_gate.BUNDLE_RELATIVE)
     tail_gate = _load_tail_record_gate(package, provenance)
     tail_gate.verify_bundle(
         package / "assets/generated/instrument-resources", package, kind="instrument",
@@ -931,6 +1375,9 @@ def verify_package(package: Path, *, run_tests: bool = True) -> None:
         structured_dqi_gate, package / DQI_STRUCTURED_BUNDLE_DIRECTORY, provenance,
         source_root=package, notebook_roots=(package,),
     )
+    degree_two_gate = _load_dqi_degree_two_saved_gate(package, provenance)
+    _verify_dqi_degree_two_public_identity(
+        degree_two_gate, package, source_root=package, provenance=provenance, notebook_roots=(package,))
     dqi_resource_gate = _load_dqi_resource_saved_gate(package, provenance)
     _verify_dqi_resource_saved_identity(dqi_resource_gate, package, source_root=package, provenance=provenance)
     feedback_gate = _load_qpe_feedback_public_gate(package, provenance)
@@ -940,6 +1387,10 @@ def verify_package(package: Path, *, run_tests: bool = True) -> None:
     _verify_local_spin_reproduction_identity(package, provenance=provenance)
     measured_and_gate = _load_measured_and_saved_gate(package, provenance)
     measured_and_gate.verify_saved(package, provenance=provenance, notebook_roots=(package,))
+    for kind in HAMILTONIAN_PACKETS:
+        hamiltonian_gate = _load_hamiltonian_saved_gate(package, provenance, kind)
+        _verify_hamiltonian_saved_identity(hamiltonian_gate, package, kind=kind,
+                                          provenance=provenance, notebook_roots=(package,))
     environment = os.environ.copy()
     environment["PYTHONPATH"] = str(package / "src")
     environment["PYTHONDONTWRITEBYTECODE"] = "1"

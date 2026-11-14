@@ -170,6 +170,7 @@ def checker(checked, exporter):
         pytest.skip("Rendered-site tooling is outside the complete public examples package")
     values = {name: value for name, value in vars(exporter).items() if name.startswith("PUBLIC_")}
     values.update(ALGORITHMS=[], REDIRECTS={}, _site_redirects=SimpleNamespace(REDIRECT_FRAGMENTS={}),
+                  HAMILTONIAN_SOURCE_HASHES={}, HAMILTONIAN_PACKETS={},
                   checked_directory=checked.checked_directory,
                   is_runtime_artifact=lambda _: False, verify_preview=lambda _: {},
                   _load_dqi_saved_gate=checked._load_dqi_saved_gate,
@@ -223,7 +224,14 @@ def test_promoted_sources_and_flat_copies_keep_exact_three_pins(checked):
 def test_export_uses_closed_ten_files_three_dependencies_and_two_scripts(exporter):
     assert exporter.PUBLIC_DQI_FILES == PUBLIC_FILES
     assert {name for name in exporter.PUBLIC_DEPENDENCY_FILES if name.startswith(BUNDLE + "/")} == DEPENDENCIES
-    assert tuple(name for name in exporter.PUBLIC_SCRIPTS if "dqi" in name and "structured" not in name and name != "generate_optimization_dqi_resources.py") == PUBLIC_SCRIPTS
+    degree_two_scripts = (
+        "generate_optimization_dqi_degree_two.py", "validate_optimization_dqi_degree_two.py",
+        "verify_dqi_degree_two_saved.py", "verify_dqi_degree_two_public_saved.py",
+    )
+    selected_scripts = tuple(name for name in exporter.PUBLIC_SCRIPTS if "dqi" in name and "structured" not in name and name != "generate_optimization_dqi_resources.py")
+    assert tuple(name for name in selected_scripts if name in degree_two_scripts) == degree_two_scripts
+    assert all(exporter.PUBLIC_SCRIPTS.count(name) == 1 for name in degree_two_scripts)
+    assert tuple(name for name in selected_scripts if name not in degree_two_scripts) == PUBLIC_SCRIPTS
     assert all(exporter.PUBLIC_SCRIPTS.count(name) == 1 for name in PUBLIC_SCRIPTS)
     assert ".ipynb" not in exporter.ARTIFACT_SUFFIXES and ".txt" not in exporter.ARTIFACT_SUFFIXES
     assert all(exporter.include_generated_file(Path(name)) for name in PUBLIC_FILES)
@@ -501,30 +509,35 @@ def configure_site_main(checker, root, monkeypatch):
     monkeypatch.setattr(checker, "site_local_spin_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_local_spin_reproduction_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_measured_and_saved_errors", lambda *_, **__: [])
+    monkeypatch.setattr(checker, "site_hamiltonian_packet_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "MEASURED_AND_FIGURE_LABELS", frozenset())
     for name in vars(checker):
-        if name.endswith("_EMBED_LABELS") or name == "GIBBS_CHANNEL_ARTICLE_LABELS":
+        if name.endswith("_EMBED_LABELS") or name in {"GIBBS_CHANNEL_ARTICLE_LABELS", "DECAY_ARTICLE_LABELS", "CORRECTION_ARTICLE_LABELS"}:
             monkeypatch.setattr(checker, name, frozenset())
     monkeypatch.setattr(checker.sys, "argv", ["check_site.py", str(root)])
 
 
 def test_failed_complete_preview_never_dispatches_any_saved_dqi_gate(site, checker, monkeypatch):
+    monkeypatch.setattr(checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, _, _ = site
     configure_site_main(checker, root, monkeypatch)
     def rejected(*_): raise ValueError("complete archive rejected")
     monkeypatch.setattr(checker, "verify_preview", rejected)
-    for name in ("site_word_record_errors", "site_suzuki_record_errors", "site_gibbs_channel_record_errors",
+    for name in ("site_word_record_errors", "site_suzuki_record_errors", "site_gibbs_channel_record_errors", "site_decay_record_errors",
                  "site_tail_record_errors", "site_dqi_saved_errors"):
         monkeypatch.setattr(checker, name, lambda *_: pytest.fail("Failed complete preview dispatched saved gate"))
     with pytest.raises(SystemExit, match="complete archive rejected"): checker.main()
 
 
 def test_site_late_dqi_dispatch_preserves_prior_saved_chain(site, checker, monkeypatch):
+    monkeypatch.setattr(checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, identity, _ = site
     configure_site_main(checker, root, monkeypatch)
     order = []
     monkeypatch.setattr(checker, "verify_preview", lambda path: order.append("preview") or identity)
-    for label in ("word", "suzuki", "gibbs_channel", "tail"):
+    for label in ("word", "suzuki", "gibbs_channel", "decay", "tail"):
         def prior(path, retained, stage=label):
             assert path == root and retained is identity
             order.append(stage)
@@ -532,16 +545,21 @@ def test_site_late_dqi_dispatch_preserves_prior_saved_chain(site, checker, monke
         monkeypatch.setattr(checker, "site_" + label + "_record_errors", prior)
     actual = checker.site_dqi_saved_errors
     def dqi(path, retained):
-        assert order == ["preview", "word", "suzuki", "gibbs_channel", "tail"]
+        assert order == ["preview", "word", "suzuki", "gibbs_channel", "decay", "tail"]
         order.append("dqi")
         return actual(path, retained)
     monkeypatch.setattr(checker, "site_dqi_saved_errors", dqi)
     checker.main()
-    assert order == ["preview", "word", "suzuki", "gibbs_channel", "tail", "dqi"]
+    assert order == ["preview", "word", "suzuki", "gibbs_channel", "decay", "tail", "dqi"]
 
 
 @pytest.mark.parametrize("change", ["changed", "missing", "unrecorded", "wrong-provenance"])
 def test_complete_package_failure_precedes_every_saved_gate(package, checked, monkeypatch, change):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root, _ = package
     if change == "changed": (root / HELPER).write_bytes(b"raise AssertionError('unbound source')\n")
     elif change == "missing": (root / HELPER).unlink()
@@ -552,7 +570,7 @@ def test_complete_package_failure_precedes_every_saved_gate(package, checked, mo
         calls.append((args, kwargs))
         pytest.fail("Failed complete package authentication dispatched a saved prerequisite")
     for name in ("verify_formal_record", "_load_energy_record_gate", "_load_dynamics_record_gate",
-                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate",
+                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate", "_load_decay_record_gate",
                  "_load_tail_record_gate", "_load_dqi_saved_gate", "_verify_bath_saved_identity", "_load_local_spin_saved_gate"):
         monkeypatch.setattr(checked, name, forbidden)
     with pytest.raises(ValueError): checked.verify_package(root, run_tests=False)
@@ -560,6 +578,11 @@ def test_complete_package_failure_precedes_every_saved_gate(package, checked, mo
 
 
 def test_package_late_dqi_dispatch_preserves_chain_and_exact_normal_root(package, checked, monkeypatch):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root, provenance = package
     order, loaded = [], []
     real_manifest, real_dqi = checked.verify_manifest, checked._load_dqi_saved_gate
@@ -607,7 +630,7 @@ def test_package_late_dqi_dispatch_preserves_chain_and_exact_normal_root(package
             order.append("tail-" + kind)
         return SimpleNamespace(verify_bundle=verify)
     prerequisites = ["manifest", "formal", "energy-load", "energy-check", "dynamics-load", "dynamics-check",
-                     "word-load", "word-check", "suzuki-load", "suzuki-check", "gibbs-load", "gibbs-check",
+                     "word-load", "word-check", "suzuki-load", "suzuki-check", "gibbs-load", "gibbs-check", "decay-load", "decay-check",
                      "tail-load", "tail-instrument", "tail-complete"]
     def dqi(path, authenticated):
         assert path == root and authenticated == provenance and order == prerequisites
@@ -635,6 +658,7 @@ def test_package_late_dqi_dispatch_preserves_chain_and_exact_normal_root(package
     monkeypatch.setattr(checked, "_load_word_record_gate", word)
     monkeypatch.setattr(checked, "_load_suzuki_record_gate", bundle_loader("suzuki"))
     monkeypatch.setattr(checked, "_load_gibbs_channel_record_gate", bundle_loader("gibbs"))
+    monkeypatch.setattr(checked, "_load_decay_record_gate", bundle_loader("decay"))
     monkeypatch.setattr(checked, "_load_tail_record_gate", tail)
     monkeypatch.setattr(checked, "_load_dqi_saved_gate", dqi)
     monkeypatch.setattr(checked, "_verify_bath_saved_identity", later_bath)
@@ -669,6 +693,28 @@ def test_ci_has_one_saved_dqi_insertion_and_exact_prior_projection():
     if not workflow.is_file(): pytest.skip("Publication workflow is outside the public examples package")
     commands = [line.strip().removeprefix("run ") for line in workflow.read_text().splitlines()
                 if line.startswith("          run python ")]
+    degree_two = 'python scripts/verify_dqi_degree_two_public_saved.py --artifact-root . --source-root . --notebook-path notebooks/optimization_dqi_degree_two.ipynb --expected-manifest-sha256 ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c --archive assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip --time-limit-seconds 10'
+    assert len(commands) == 86 and commands.count(degree_two) == 1
+    assert commands.index(degree_two) == commands.index("python scripts/verify_dqi_saved.py assets/generated/optimization/dqi") + 1
+    commands = [value for value in commands if value != degree_two]
+    correction = 'python scripts/verify_detailed_balance_correction_saved.py --bundle assets/generated/simulation/detailed-balance-correction --source-root . --download assets/generated/simulation/detailed-balance-correction-download.zip'
+    assert len(commands) == 85 and commands.count(correction) == 1
+    assert commands.index(correction) == commands.index("python scripts/verify_detailed_balance_decay.py") + 1
+    commands = [value for value in commands if value != correction]
+    hamiltonian_saved = (
+        "python scripts/verify_simulation_cpf_public.py --bundle assets/generated/simulation/corrected-formula",
+        "python scripts/verify_simulation_gqsp_public.py --bundle assets/generated/simulation/gqsp",
+    )
+    assert len(commands) == 84
+    assert all(commands.count(value) == 1 for value in hamiltonian_saved)
+    assert commands.index(hamiltonian_saved[0]) == commands.index(
+        "python scripts/verify_simulation_multiproduct_saved.py") + 1
+    assert commands.index(hamiltonian_saved[1]) == commands.index(hamiltonian_saved[0]) + 1
+    commands = [value for value in commands if value not in hamiltonian_saved]
+    decay = "python scripts/verify_detailed_balance_decay.py"
+    assert len(commands) == 82 and commands.count(decay) == 1
+    assert commands.index(decay) == commands.index("python scripts/verify_detailed_balance_channel.py") + 1
+    commands = [value for value in commands if value != decay]
     measured_and = "python scripts/verify_shor_measured_and_saved.py"
     assert len(commands) == 81 and commands.count(measured_and) == 1
     assert commands.index(measured_and) == commands.index("python scripts/generate_shor_recovery.py") + 1

@@ -1,6 +1,8 @@
 """Outer saved-record trust boundaries, using only synthetic public fixtures."""
 from __future__ import annotations
 
+from types import SimpleNamespace
+
 import builtins
 import hashlib
 import importlib.util
@@ -85,10 +87,11 @@ def checker(monkeypatch, checked):
         "public_code_preview": {"verify_preview": lambda *_: {}},
         "export_code": {"PUBLIC_COMPRESSED_JSON_FILES": frozenset(),
                         "PUBLIC_OPTIMIZATION_WORD_FILES": frozenset(),
-                        "PUBLIC_SUZUKI_FILES": frozenset(), "PUBLIC_GIBBS_CHANNEL_FILES": frozenset(),
+                        "PUBLIC_SUZUKI_FILES": frozenset(), "PUBLIC_GIBBS_CHANNEL_FILES": frozenset(), "PUBLIC_DECAY_FILES": frozenset(), "PUBLIC_CORRECTION_FILES": frozenset(), "PUBLIC_DQI_DEGREE_TWO_FILES": frozenset(), "PUBLIC_DQI_DEGREE_TWO_PUBLIC_FILES": frozenset(),
                         "PUBLIC_DQI_FILES": frozenset(), "PUBLIC_BATH_FILES": frozenset(),
                         "PUBLIC_MULTIPRODUCT_FILES": frozenset(), "PUBLIC_BAYESIAN_FILES": frozenset(), "PUBLIC_ROBUST_FILES": frozenset(), "PUBLIC_DQI_STRUCTURED_FILES": frozenset(), "PUBLIC_QPE_FEEDBACK_FILES": frozenset(),
-                        "PUBLIC_LOCAL_SPIN_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_PRESENTATION_FILES": frozenset(), "PUBLIC_MEASURED_AND_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_REPRODUCTION_FILES": frozenset(), "PUBLIC_DQI_RESOURCE_FILES": frozenset()},
+                        "PUBLIC_LOCAL_SPIN_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_PRESENTATION_FILES": frozenset(), "PUBLIC_MEASURED_AND_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_REPRODUCTION_FILES": frozenset(), "PUBLIC_DQI_RESOURCE_FILES": frozenset(),
+                        "PUBLIC_CORRECTED_FORMULA_FILES": frozenset(), "PUBLIC_GQSP_FILES": frozenset()},
         "energy_record_release": {
             "CORE_FILES": frozenset(), "MANIFEST_NAME": "unused.json", "RECORD_DIRECTORY": "unused",
             "SOURCE_FILES": (), "VERIFIER_FILES": (), "checked_directory": checked.checked_directory,
@@ -116,6 +119,7 @@ def checker(monkeypatch, checked):
     caller = load_source(path, "word_registration_site_caller")
     monkeypatch.setattr(caller, "site_suzuki_record_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_gibbs_channel_record_errors", lambda *_, **__: [])
+    monkeypatch.setattr(caller, "site_decay_record_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_tail_record_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_dqi_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_bath_saved_errors", lambda *_, **__: [])
@@ -128,8 +132,11 @@ def checker(monkeypatch, checked):
     monkeypatch.setattr(caller, "site_local_spin_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_local_spin_reproduction_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_measured_and_saved_errors", lambda *_, **__: [])
+    monkeypatch.setattr(caller, "site_hamiltonian_packet_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(caller, "GIBBS_CHANNEL_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(caller, "DECAY_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(caller, "CORRECTION_ARTICLE_LABELS", frozenset())
     return caller
 
 
@@ -180,6 +187,11 @@ def test_bootstrap_verifier_import_does_not_load_word_dependencies(monkeypatch):
 
 @pytest.mark.parametrize("change", ["changed", "missing", "unrecorded", "provenance_missing", "provenance_invalid"])
 def test_package_manifest_failure_precedes_all_downstream_dispatch(package, checked, monkeypatch, tmp_path, change):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root, _ = package
     marker = tmp_path / "manifest-marker.txt"
     if change == "changed":
@@ -197,7 +209,7 @@ def test_package_manifest_failure_precedes_all_downstream_dispatch(package, chec
         pytest.fail("A failed complete manifest reached a downstream gate")
 
     for name in ("verify_formal_record", "_load_energy_record_gate", "_load_dynamics_record_gate",
-                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate",
+                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate", "_load_decay_record_gate",
                  "_load_tail_record_gate", "_load_dqi_saved_gate", "_verify_bath_saved_identity",
                  "_load_multiproduct_saved_gate", "_load_local_spin_saved_gate"):
         monkeypatch.setattr(checked, name, forbidden)
@@ -207,6 +219,11 @@ def test_package_manifest_failure_precedes_all_downstream_dispatch(package, chec
 
 
 def test_package_dispatch_follows_manifest_formal_and_energy_checks(tmp_path, checked, monkeypatch):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root = (tmp_path / "package").resolve()
     helper = (
         b"def verify_public_word_transport(root, *, replay=True):\n"
@@ -521,6 +538,8 @@ def test_site_hashes_and_parses_the_same_provenance_snapshot(site, checker, monk
 
 
 def test_site_preview_failure_cannot_dispatch_the_word_helper(tmp_path, checker, monkeypatch):
+    monkeypatch.setattr(checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root = (tmp_path / "site").resolve()
     root.mkdir()
     (root / "index.html").write_text("<html><body>Structural fixture</body></html>")
@@ -543,6 +562,8 @@ def test_site_preview_failure_cannot_dispatch_the_word_helper(tmp_path, checker,
 
 
 def test_site_main_dispatches_only_after_successful_preview(site, checker, monkeypatch):
+    monkeypatch.setattr(checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, identity = site
     (root / "index.html").write_text("<html><body>Structural fixture</body></html>")
     monkeypatch.setattr(checker, "required_artifacts", lambda: [])

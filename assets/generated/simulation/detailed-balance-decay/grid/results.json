@@ -1,0 +1,2418 @@
+{
+  "status": "checked_small_finite_decay_block",
+  "paper": {
+    "doi": "10.1038/s41586-025-09583-x",
+    "weighted_decay_equation": 8,
+    "classical_spectral_correction_equation": 19,
+    "construction": "original finite weighted-access reflection; no correction time-integral circuit"
+  },
+  "source_commit": "b1a05ef76a47d8e7ef893cd6bf0ffb66772d4ce1",
+  "source_dirty": false,
+  "source_revision_is_exact": true,
+  "adjacent_snapshot_selected": false,
+  "source_files": {
+    "detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "detailed_balance_decay_reference.py": {
+      "bytes": 26002,
+      "sha256": "71ac5f486ad04cb532a86bf1c4dec4e175d0cfb377a7de26f206cd3f5c5daf53"
+    },
+    "detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "generate_detailed_balance_decay.py": {
+      "bytes": 16294,
+      "sha256": "e5b0be192e7e1bb48fd7bc8d9148f4c41e19e448edb26a023b78d972b46e7cad"
+    }
+  },
+  "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+  "environment": {
+    "python": "3.12.14",
+    "qiskit": "2.6.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "device": "CPU",
+    "seed": null,
+    "random_sampling_performed": false
+  },
+  "caps": {
+    "primitive_operations_each_source": 100000,
+    "dense_system_wires": 2,
+    "actual_recovery_total_wires": 8,
+    "output_bytes_total_including_manifest": 67108864,
+    "source_input_bytes_each": 2097152
+  },
+  "acceptance": {
+    "fixed_circuit_reference_tolerance": 1e-10,
+    "exact_hamiltonian_finite_error_is_acceptance_target": false,
+    "negative_roundoff_clipped": false
+  },
+  "cases": [
+    {
+      "name": "diagonal",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "beta": 1.0,
+      "clock_bits": 2,
+      "product_steps": 1,
+      "metadata": {
+        "terms": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_bits": 1,
+        "proposal_count": 2,
+        "product_steps": 1,
+        "beta": 1.0,
+        "M": 4,
+        "access_width": 4,
+        "system_wires": [
+          0
+        ],
+        "clock_wires": [
+          1,
+          2
+        ],
+        "proposal_wires": [
+          3
+        ],
+        "weight_wire": 4,
+        "selector_wire": 5,
+        "auxiliary_wires": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "total_wires": 6,
+        "selected_auxiliary_state": "all_zero",
+        "access_source_sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77",
+        "access_preflight_upper_bound": 372,
+        "preflight_upper_bound": 766,
+        "dt": 0.6266570686577501,
+        "dw": 2.5066282746310002,
+        "time_mesh": [
+          0.0,
+          0.6266570686577501,
+          -1.2533141373155001,
+          -0.6266570686577501
+        ],
+        "frequency_mesh": [
+          0.0,
+          2.5066282746310002,
+          -5.0132565492620005,
+          -2.5066282746310002
+        ],
+        "physical_squared_sum": 1.5599362646490316,
+        "eta": 0.9775450868978823,
+        "gamma": [
+          0.6065306597126334,
+          0.04945815726640235,
+          1.0,
+          1.0
+        ],
+        "gamma_max": 1.0,
+        "alpha": 0.9775450868978823,
+        "normalized_rates": [
+          0.6065306597126334,
+          0.04945815726640235,
+          1.0,
+          1.0
+        ],
+        "weight_angles": [
+          1.7855034847842373,
+          0.4485342502728719,
+          3.141592653589793,
+          3.141592653589793
+        ],
+        "milestone": "primitive_weighted_decay_block_only",
+        "stage_slices": {
+          "selector_open": [
+            0,
+            1
+          ],
+          "access_forward": [
+            1,
+            55
+          ],
+          "weight_forward": [
+            55,
+            63
+          ],
+          "cz_primitives": [
+            63,
+            66
+          ],
+          "selector_negative_phase": [
+            66,
+            67
+          ],
+          "weight_inverse": [
+            67,
+            75
+          ],
+          "access_inverse": [
+            75,
+            129
+          ],
+          "selector_close": [
+            129,
+            130
+          ]
+        },
+        "source_operations": 130,
+        "access_source_operations_each_copy": 54,
+        "expected_source_operations": 130,
+        "primitive_counts": {
+          "cx": 59,
+          "rz": 32,
+          "h": 14,
+          "ry": 14,
+          "p": 7,
+          "x": 4
+        },
+        "resource_ledger": {
+          "access_copies": 2,
+          "access_instructions_each_copy": 54,
+          "access_instructions_total": 108,
+          "proposal_prepare_h_instructions_total": 2,
+          "gaussian_prepare_instructions_total": 10,
+          "pauli_select_instructions_total": 12,
+          "signed_evolution_instructions_total": 64,
+          "dft_instructions_total": 20,
+          "requested_signed_interval_magnitude_all_access_directions": 7.519884823893001,
+          "weight_multiplexor_copies": 2,
+          "weight_ry_instructions_total": 8,
+          "weight_cx_instructions_total": 8,
+          "selector_and_reflection_instructions_total": 6,
+          "source_operations_total": 130,
+          "classical_preprocessing": "explicit Gaussian/prefix masses and naive Gray-Walsh angle transform: O(M^2) time, O(M) storage; wall time is not quantum runtime",
+          "input_access": "explicit real Pauli list and normalized Pauli proposals; Gaussian loading, signed product-formula evolution and Pauli SELECT included in both access streams",
+          "initialization": "unknown system input and every auxiliary zero are caller supplied; preparation/reset gates and time are excluded",
+          "readout": "no measurement, discard/reset, repetition or amplification is emitted by this block oracle",
+          "exclusions": [
+            "external input preparation and zero-auxiliary initialization/reset",
+            "measurement and classical readout processing",
+            "repetitions or coherent amplification",
+            "arbitrary-angle rotation synthesis",
+            "physical code/factory/routing/controller/fault model",
+            "general coherent correction and its evolution",
+            "uniform mesh/Trotter/mixing/output certificates"
+          ]
+        },
+        "pauli_label_order": "character i acts on qi; q0 is least significant",
+        "proposal_normalization": "A_a=P_a/sqrt(J); sum A_a^dagger A_a=I",
+        "decay_definition": "D_fin=eta*sum_(a,l) gamma_l*B_(a,l)^dagger*B_(a,l), with actual finite-Trotter access blocks",
+        "selected_block": "D_fin/alpha with every auxiliary compressed to zero; alpha=eta*gamma_max",
+        "selection_probability": "norm(D_fin*psi)^2/alpha^2 for normalized caller input psi; input dependent",
+        "selector_zero_only_is_output_contract": false,
+        "phase_convention": "P(pi) supplies the branch minus sign; both complete access/weight inverses are unconditional, preserving source phases",
+        "numerical_checks_performed": false,
+        "all_components_verified": false,
+        "new_algorithm_result": false,
+        "coherent_correction_implemented": false,
+        "channel_implemented": false,
+        "sampler_implemented": false,
+        "finite_mesh_exact_kms": false,
+        "mixing_certificate": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "primitive_counts": {
+        "cx": 59,
+        "rz": 32,
+        "h": 14,
+        "ry": 14,
+        "p": 7,
+        "x": 4
+      },
+      "source_depth": 109,
+      "numerical_checks_performed": true,
+      "selected_auxiliary_state": "all_zero",
+      "output_contract": "all-zero clock/proposal/weight/selector block equals D_fin/alpha",
+      "standalone_initialization_performed": false,
+      "measurement_or_sampling_performed": false,
+      "logical_resource_scope": "one complete unitary oracle, including both realized access copies and inverses; caller supplies system input and zero auxiliaries; no readout or amplification",
+      "all_components_verified": false,
+      "new_algorithm_result": false,
+      "coherent_correction_implemented": false,
+      "coherent_correction_evolution_implemented": false,
+      "general_channel_implemented": false,
+      "sampler_implemented": false,
+      "exact_finite_kms": false,
+      "mixing_certificate": false,
+      "rotations_synthesized": false,
+      "physical_resources_computed": false,
+      "formal_proof_reproduced": false,
+      "random_sampling_performed": false,
+      "check": {
+        "status": "checked_small_finite_weighted_decay_block",
+        "checks_passed": true,
+        "acceptance_tolerance": 1e-10,
+        "acceptance_predicates": {
+          "actual_matches_independent_finite_trotter": true,
+          "independent_access_isometry": true,
+          "independent_eta_matches": true,
+          "independent_gamma_max_matches": true,
+          "independent_alpha_matches": true,
+          "builder_alpha_product_matches": true,
+          "mesh_time_frequency_product": true,
+          "finite_decay_hermitian": true,
+          "finite_decay_positive": true,
+          "finite_decay_bounded_by_alpha": true,
+          "actual_block_hermitian": true,
+          "actual_block_positive": true,
+          "actual_block_contractive": true,
+          "actual_eigenvalues_real": true,
+          "classical_spectral_correction_hermitian": true
+        },
+        "failed_checks": [],
+        "actual_vs_finite_trotter_max_entry_error": 1.1103068243156721e-15,
+        "actual_vs_finite_trotter_frobenius_error": 1.176590116471956e-15,
+        "actual_vs_exact_finite_max_entry_error": 1.3323374634308674e-15,
+        "actual_vs_exact_finite_frobenius_error": 1.4231351965542707e-15,
+        "finite_trotter_vs_exact_finite_frobenius_error": 2.482534153247273e-16,
+        "normalization": {
+          "independent_eta": 0.9775450868978823,
+          "independent_gamma_max": 1.0,
+          "independent_alpha": 0.9775450868978823,
+          "builder_eta": 0.9775450868978823,
+          "builder_gamma_max": 1.0,
+          "builder_alpha": 0.9775450868978823,
+          "eta_absolute_error": 0.0,
+          "gamma_max_absolute_error": 0.0,
+          "alpha_absolute_error": 0.0,
+          "builder_alpha_product_residual": 0.0,
+          "dt_dw_residual": 2.220446049250313e-16,
+          "physical_squared_sum": 1.5599362646490316,
+          "normalized_gamma": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "scope": "eta=dt*sum(f_j**2) independently; eta does not disappear from physical alpha"
+        },
+        "finite_diagnostics": {
+          "isometry_max_entry_error": 4.440892098500626e-16,
+          "decay_hermiticity_residual": 0.0,
+          "minimum_decay_eigenvalue": 0.38265095024390056,
+          "maximum_decay_eigenvalue": 0.7385564144987554,
+          "alpha_upper_bound_excess": -0.2389886723991269,
+          "decay_commutator": 0.0,
+          "correction_norm": 0.0,
+          "correction_hermiticity_residual": 0.0,
+          "coherent_correction_is_classical_only": true
+        },
+        "actual_diagnostics": {
+          "hermiticity_residual": 5.201539440164953e-17,
+          "spectral_norm": 0.7555215860605173,
+          "eigenvalues": {
+            "real": [
+              0.7555215860605173,
+              0.3914407175409119
+            ],
+            "imag": [
+              1.3641103845432365e-17,
+              0.0
+            ]
+          },
+          "minimum_eigenvalue_real_part": 0.3914407175409119,
+          "maximum_eigenvalue_real_part": 0.7555215860605173,
+          "maximum_eigenvalue_imaginary_part": 1.3641103845432365e-17,
+          "basis_input_all_auxiliary_zero_probabilities": [
+            0.5708128670033997,
+            0.153225835348944
+          ]
+        },
+        "matrices": {
+          "actual_selected_block": {
+            "real": [
+              [
+                0.7555215860605173,
+                -2.0184708564598297e-17
+              ],
+              [
+                6.359451388740919e-18,
+                0.3914407175409119
+              ]
+            ],
+            "imag": [
+              [
+                1.3641103845432365e-17,
+                -1.0566547347998616e-18
+              ],
+              [
+                1.8625746228983084e-18,
+                -1.1734548662844842e-17
+              ]
+            ]
+          },
+          "finite_trotter_decay": {
+            "real": [
+              [
+                0.7385564144987554,
+                0.0
+              ],
+              [
+                0.0,
+                0.38265095024390056
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "finite_trotter_normalized_decay": {
+            "real": [
+              [
+                0.7555215860605184,
+                0.0
+              ],
+              [
+                0.0,
+                0.3914407175409123
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "exact_finite_decay": {
+            "real": [
+              [
+                0.7385564144987556,
+                0.0
+              ],
+              [
+                0.0,
+                0.38265095024390067
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "exact_finite_normalized_decay": {
+            "real": [
+              [
+                0.7555215860605187,
+                0.0
+              ],
+              [
+                0.0,
+                0.3914407175409124
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "hamiltonian": {
+            "real": [
+              [
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                -1.0
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "classical_spectral_correction": {
+            "real": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          }
+        },
+        "counters": {
+          "actual_basis_column_statevector_evolutions": 2,
+          "actual_statevector_dimension": 64,
+          "actual_primitive_instruction_visits": 260,
+          "finite_trotter_reference": {
+            "system_dimension": 2,
+            "proposal_frequency_blocks": 8,
+            "hamiltonian_term_pauli_matrices": 1,
+            "proposal_pauli_matrices": 2,
+            "finite_trotter_pauli_expm_evaluations": 4,
+            "finite_trotter_interval_matrix_power_calls": 2,
+            "finite_trotter_clock_interval_matrix_products": 4,
+            "exact_hamiltonian_expm_evaluations": 0,
+            "proposal_conjugations": 8,
+            "fourier_matrix_summands": 32,
+            "b_dagger_b_matrix_products": 8
+          },
+          "exact_hamiltonian_finite_reference": {
+            "system_dimension": 2,
+            "proposal_frequency_blocks": 8,
+            "hamiltonian_term_pauli_matrices": 1,
+            "proposal_pauli_matrices": 2,
+            "finite_trotter_pauli_expm_evaluations": 0,
+            "finite_trotter_interval_matrix_power_calls": 0,
+            "finite_trotter_clock_interval_matrix_products": 0,
+            "exact_hamiltonian_expm_evaluations": 4,
+            "proposal_conjugations": 8,
+            "fourier_matrix_summands": 32,
+            "b_dagger_b_matrix_products": 8
+          },
+          "classical_spectral_correction_eigendecompositions": 1
+        },
+        "actual_circuit_metadata": {
+          "terms": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "n_system": 1,
+          "clock_bits": 2,
+          "proposal_bits": 1,
+          "proposal_count": 2,
+          "product_steps": 1,
+          "beta": 1.0,
+          "M": 4,
+          "access_width": 4,
+          "system_wires": [
+            0
+          ],
+          "clock_wires": [
+            1,
+            2
+          ],
+          "proposal_wires": [
+            3
+          ],
+          "weight_wire": 4,
+          "selector_wire": 5,
+          "auxiliary_wires": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "total_wires": 6,
+          "selected_auxiliary_state": "all_zero",
+          "access_source_sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77",
+          "access_preflight_upper_bound": 372,
+          "preflight_upper_bound": 766,
+          "dt": 0.6266570686577501,
+          "dw": 2.5066282746310002,
+          "time_mesh": [
+            0.0,
+            0.6266570686577501,
+            -1.2533141373155001,
+            -0.6266570686577501
+          ],
+          "frequency_mesh": [
+            0.0,
+            2.5066282746310002,
+            -5.0132565492620005,
+            -2.5066282746310002
+          ],
+          "physical_squared_sum": 1.5599362646490316,
+          "eta": 0.9775450868978823,
+          "gamma": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "gamma_max": 1.0,
+          "alpha": 0.9775450868978823,
+          "normalized_rates": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "weight_angles": [
+            1.7855034847842373,
+            0.4485342502728719,
+            3.141592653589793,
+            3.141592653589793
+          ],
+          "milestone": "primitive_weighted_decay_block_only",
+          "stage_slices": {
+            "selector_open": [
+              0,
+              1
+            ],
+            "access_forward": [
+              1,
+              55
+            ],
+            "weight_forward": [
+              55,
+              63
+            ],
+            "cz_primitives": [
+              63,
+              66
+            ],
+            "selector_negative_phase": [
+              66,
+              67
+            ],
+            "weight_inverse": [
+              67,
+              75
+            ],
+            "access_inverse": [
+              75,
+              129
+            ],
+            "selector_close": [
+              129,
+              130
+            ]
+          },
+          "source_operations": 130,
+          "access_source_operations_each_copy": 54,
+          "expected_source_operations": 130,
+          "primitive_counts": {
+            "cx": 59,
+            "rz": 32,
+            "h": 14,
+            "ry": 14,
+            "p": 7,
+            "x": 4
+          },
+          "resource_ledger": {
+            "access_copies": 2,
+            "access_instructions_each_copy": 54,
+            "access_instructions_total": 108,
+            "proposal_prepare_h_instructions_total": 2,
+            "gaussian_prepare_instructions_total": 10,
+            "pauli_select_instructions_total": 12,
+            "signed_evolution_instructions_total": 64,
+            "dft_instructions_total": 20,
+            "requested_signed_interval_magnitude_all_access_directions": 7.519884823893001,
+            "weight_multiplexor_copies": 2,
+            "weight_ry_instructions_total": 8,
+            "weight_cx_instructions_total": 8,
+            "selector_and_reflection_instructions_total": 6,
+            "source_operations_total": 130,
+            "classical_preprocessing": "explicit Gaussian/prefix masses and naive Gray-Walsh angle transform: O(M^2) time, O(M) storage; wall time is not quantum runtime",
+            "input_access": "explicit real Pauli list and normalized Pauli proposals; Gaussian loading, signed product-formula evolution and Pauli SELECT included in both access streams",
+            "initialization": "unknown system input and every auxiliary zero are caller supplied; preparation/reset gates and time are excluded",
+            "readout": "no measurement, discard/reset, repetition or amplification is emitted by this block oracle",
+            "exclusions": [
+              "external input preparation and zero-auxiliary initialization/reset",
+              "measurement and classical readout processing",
+              "repetitions or coherent amplification",
+              "arbitrary-angle rotation synthesis",
+              "physical code/factory/routing/controller/fault model",
+              "general coherent correction and its evolution",
+              "uniform mesh/Trotter/mixing/output certificates"
+            ]
+          },
+          "pauli_label_order": "character i acts on qi; q0 is least significant",
+          "proposal_normalization": "A_a=P_a/sqrt(J); sum A_a^dagger A_a=I",
+          "decay_definition": "D_fin=eta*sum_(a,l) gamma_l*B_(a,l)^dagger*B_(a,l), with actual finite-Trotter access blocks",
+          "selected_block": "D_fin/alpha with every auxiliary compressed to zero; alpha=eta*gamma_max",
+          "selection_probability": "norm(D_fin*psi)^2/alpha^2 for normalized caller input psi; input dependent",
+          "selector_zero_only_is_output_contract": false,
+          "phase_convention": "P(pi) supplies the branch minus sign; both complete access/weight inverses are unconditional, preserving source phases",
+          "numerical_checks_performed": false,
+          "all_components_verified": false,
+          "new_algorithm_result": false,
+          "coherent_correction_implemented": false,
+          "channel_implemented": false,
+          "sampler_implemented": false,
+          "finite_mesh_exact_kms": false,
+          "mixing_certificate": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "numerical_checks_performed": true,
+        "all_components_verified": false,
+        "new_algorithm_result": false,
+        "coherent_correction_implemented": false,
+        "channel_implemented": false,
+        "sampler_implemented": false,
+        "finite_mesh_exact_kms": false,
+        "mixing_certificate": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "scope": "actual all-auxiliary-zero block against independent finite-Trotter decay; exact-H finite error separately retained",
+        "remaining": [
+          "actual coherent correction access/evolution",
+          "noncommuting weak channel",
+          "uniform finite mesh/Trotter/continuum error bounds",
+          "mixing/output guarantees",
+          "external initialization/readout/repetition/amplification resources",
+          "rotation synthesis and physical resources",
+          "mechanized proof"
+        ]
+      }
+    },
+    {
+      "name": "tilted",
+      "terms": [
+        [
+          0.6,
+          "Z"
+        ],
+        [
+          0.8,
+          "X"
+        ]
+      ],
+      "proposals": [
+        "Z"
+      ],
+      "beta": 1.0,
+      "clock_bits": 2,
+      "product_steps": 1,
+      "metadata": {
+        "terms": [
+          [
+            0.6,
+            "Z"
+          ],
+          [
+            0.8,
+            "X"
+          ]
+        ],
+        "proposals": [
+          "Z"
+        ],
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_bits": 0,
+        "proposal_count": 1,
+        "product_steps": 1,
+        "beta": 1.0,
+        "M": 4,
+        "access_width": 3,
+        "system_wires": [
+          0
+        ],
+        "clock_wires": [
+          1,
+          2
+        ],
+        "proposal_wires": [],
+        "weight_wire": 3,
+        "selector_wire": 4,
+        "auxiliary_wires": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_wires": 5,
+        "selected_auxiliary_state": "all_zero",
+        "access_source_sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77",
+        "access_preflight_upper_bound": 348,
+        "preflight_upper_bound": 718,
+        "dt": 0.6266570686577501,
+        "dw": 2.5066282746310002,
+        "time_mesh": [
+          0.0,
+          0.6266570686577501,
+          -1.2533141373155001,
+          -0.6266570686577501
+        ],
+        "frequency_mesh": [
+          0.0,
+          2.5066282746310002,
+          -5.0132565492620005,
+          -2.5066282746310002
+        ],
+        "physical_squared_sum": 1.5599362646490316,
+        "eta": 0.9775450868978823,
+        "gamma": [
+          0.6065306597126334,
+          0.04945815726640235,
+          1.0,
+          1.0
+        ],
+        "gamma_max": 1.0,
+        "alpha": 0.9775450868978823,
+        "normalized_rates": [
+          0.6065306597126334,
+          0.04945815726640235,
+          1.0,
+          1.0
+        ],
+        "weight_angles": [
+          1.7855034847842373,
+          0.4485342502728719,
+          3.141592653589793,
+          3.141592653589793
+        ],
+        "milestone": "primitive_weighted_decay_block_only",
+        "stage_slices": {
+          "selector_open": [
+            0,
+            1
+          ],
+          "access_forward": [
+            1,
+            99
+          ],
+          "weight_forward": [
+            99,
+            107
+          ],
+          "cz_primitives": [
+            107,
+            110
+          ],
+          "selector_negative_phase": [
+            110,
+            111
+          ],
+          "weight_inverse": [
+            111,
+            119
+          ],
+          "access_inverse": [
+            119,
+            217
+          ],
+          "selector_close": [
+            217,
+            218
+          ]
+        },
+        "source_operations": 218,
+        "access_source_operations_each_copy": 98,
+        "expected_source_operations": 218,
+        "primitive_counts": {
+          "cx": 87,
+          "rz": 64,
+          "h": 44,
+          "ry": 14,
+          "p": 7,
+          "x": 2
+        },
+        "resource_ledger": {
+          "access_copies": 2,
+          "access_instructions_each_copy": 98,
+          "access_instructions_total": 196,
+          "proposal_prepare_h_instructions_total": 0,
+          "gaussian_prepare_instructions_total": 10,
+          "pauli_select_instructions_total": 6,
+          "signed_evolution_instructions_total": 160,
+          "dft_instructions_total": 20,
+          "requested_signed_interval_magnitude_all_access_directions": 7.519884823893001,
+          "weight_multiplexor_copies": 2,
+          "weight_ry_instructions_total": 8,
+          "weight_cx_instructions_total": 8,
+          "selector_and_reflection_instructions_total": 6,
+          "source_operations_total": 218,
+          "classical_preprocessing": "explicit Gaussian/prefix masses and naive Gray-Walsh angle transform: O(M^2) time, O(M) storage; wall time is not quantum runtime",
+          "input_access": "explicit real Pauli list and normalized Pauli proposals; Gaussian loading, signed product-formula evolution and Pauli SELECT included in both access streams",
+          "initialization": "unknown system input and every auxiliary zero are caller supplied; preparation/reset gates and time are excluded",
+          "readout": "no measurement, discard/reset, repetition or amplification is emitted by this block oracle",
+          "exclusions": [
+            "external input preparation and zero-auxiliary initialization/reset",
+            "measurement and classical readout processing",
+            "repetitions or coherent amplification",
+            "arbitrary-angle rotation synthesis",
+            "physical code/factory/routing/controller/fault model",
+            "general coherent correction and its evolution",
+            "uniform mesh/Trotter/mixing/output certificates"
+          ]
+        },
+        "pauli_label_order": "character i acts on qi; q0 is least significant",
+        "proposal_normalization": "A_a=P_a/sqrt(J); sum A_a^dagger A_a=I",
+        "decay_definition": "D_fin=eta*sum_(a,l) gamma_l*B_(a,l)^dagger*B_(a,l), with actual finite-Trotter access blocks",
+        "selected_block": "D_fin/alpha with every auxiliary compressed to zero; alpha=eta*gamma_max",
+        "selection_probability": "norm(D_fin*psi)^2/alpha^2 for normalized caller input psi; input dependent",
+        "selector_zero_only_is_output_contract": false,
+        "phase_convention": "P(pi) supplies the branch minus sign; both complete access/weight inverses are unconditional, preserving source phases",
+        "numerical_checks_performed": false,
+        "all_components_verified": false,
+        "new_algorithm_result": false,
+        "coherent_correction_implemented": false,
+        "channel_implemented": false,
+        "sampler_implemented": false,
+        "finite_mesh_exact_kms": false,
+        "mixing_certificate": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "primitive_counts": {
+        "cx": 87,
+        "rz": 64,
+        "h": 44,
+        "ry": 14,
+        "p": 7,
+        "x": 2
+      },
+      "source_depth": 203,
+      "numerical_checks_performed": true,
+      "selected_auxiliary_state": "all_zero",
+      "output_contract": "all-zero clock/proposal/weight/selector block equals D_fin/alpha",
+      "standalone_initialization_performed": false,
+      "measurement_or_sampling_performed": false,
+      "logical_resource_scope": "one complete unitary oracle, including both realized access copies and inverses; caller supplies system input and zero auxiliaries; no readout or amplification",
+      "all_components_verified": false,
+      "new_algorithm_result": false,
+      "coherent_correction_implemented": false,
+      "coherent_correction_evolution_implemented": false,
+      "general_channel_implemented": false,
+      "sampler_implemented": false,
+      "exact_finite_kms": false,
+      "mixing_certificate": false,
+      "rotations_synthesized": false,
+      "physical_resources_computed": false,
+      "formal_proof_reproduced": false,
+      "random_sampling_performed": false,
+      "check": {
+        "status": "checked_small_finite_weighted_decay_block",
+        "checks_passed": true,
+        "acceptance_tolerance": 1e-10,
+        "acceptance_predicates": {
+          "actual_matches_independent_finite_trotter": true,
+          "independent_access_isometry": true,
+          "independent_eta_matches": true,
+          "independent_gamma_max_matches": true,
+          "independent_alpha_matches": true,
+          "builder_alpha_product_matches": true,
+          "mesh_time_frequency_product": true,
+          "finite_decay_hermitian": true,
+          "finite_decay_positive": true,
+          "finite_decay_bounded_by_alpha": true,
+          "actual_block_hermitian": true,
+          "actual_block_positive": true,
+          "actual_block_contractive": true,
+          "actual_eigenvalues_real": true,
+          "classical_spectral_correction_hermitian": true
+        },
+        "failed_checks": [],
+        "actual_vs_finite_trotter_max_entry_error": 1.555016039069838e-15,
+        "actual_vs_finite_trotter_frobenius_error": 2.095234133848968e-15,
+        "actual_vs_exact_finite_max_entry_error": 0.0657129789904345,
+        "actual_vs_exact_finite_frobenius_error": 0.09421942439042362,
+        "finite_trotter_vs_exact_finite_frobenius_error": 0.09421942439042409,
+        "normalization": {
+          "independent_eta": 0.9775450868978823,
+          "independent_gamma_max": 1.0,
+          "independent_alpha": 0.9775450868978823,
+          "builder_eta": 0.9775450868978823,
+          "builder_gamma_max": 1.0,
+          "builder_alpha": 0.9775450868978823,
+          "eta_absolute_error": 0.0,
+          "gamma_max_absolute_error": 0.0,
+          "alpha_absolute_error": 0.0,
+          "builder_alpha_product_residual": 0.0,
+          "dt_dw_residual": 2.220446049250313e-16,
+          "physical_squared_sum": 1.5599362646490316,
+          "normalized_gamma": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "scope": "eta=dt*sum(f_j**2) independently; eta does not disappear from physical alpha"
+        },
+        "finite_diagnostics": {
+          "isometry_max_entry_error": 4.440892098500626e-16,
+          "decay_hermiticity_residual": 0.0,
+          "minimum_decay_eigenvalue": 0.24870485951260804,
+          "maximum_decay_eigenvalue": 0.8404905025969474,
+          "alpha_upper_bound_excess": -0.13705458430093498,
+          "decay_commutator": 0.4240271535380577,
+          "correction_norm": 0.04898755569851521,
+          "correction_hermiticity_residual": 2.069151922961367e-17,
+          "coherent_correction_is_classical_only": true
+        },
+        "actual_diagnostics": {
+          "hermiticity_residual": 2.9385507763114557e-16,
+          "spectral_norm": 0.8597971734113432,
+          "eigenvalues": {
+            "real": [
+              0.8597971734113437,
+              0.2544177888529331
+            ],
+            "imag": [
+              -3.765062587686405e-17,
+              1.5041591979840714e-17
+            ]
+          },
+          "minimum_eigenvalue_real_part": 0.2544177888529331,
+          "maximum_eigenvalue_real_part": 0.8597971734113437,
+          "maximum_eigenvalue_imaginary_part": 3.765062587686405e-17,
+          "basis_input_all_auxiliary_zero_probabilities": [
+            0.4485359487230303,
+            0.3554436419679211
+          ]
+        },
+        "matrices": {
+          "actual_selected_block": {
+            "real": [
+              [
+                0.598882322571141,
+                0.2948728510073279
+              ],
+              [
+                0.29487285100732774,
+                0.5153326396931355
+              ]
+            ],
+            "imag": [
+              [
+                4.677990514204895e-17,
+                0.054091720009963845
+              ],
+              [
+                -0.05409172000996391,
+                -5.985517913282339e-17
+              ]
+            ]
+          },
+          "finite_trotter_decay": {
+            "real": [
+              [
+                0.5854344720594132,
+                0.28825150676178535
+              ],
+              [
+                0.28825150676178535,
+                0.5037608900501421
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0528770951375962
+              ],
+              [
+                -0.0528770951375962,
+                0.0
+              ]
+            ]
+          },
+          "finite_trotter_normalized_decay": {
+            "real": [
+              [
+                0.5988823225711426,
+                0.2948728510073286
+              ],
+              [
+                0.2948728510073286,
+                0.5153326396931364
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.05409172000996402
+              ],
+              [
+                -0.05409172000996402,
+                0.0
+              ]
+            ]
+          },
+          "exact_finite_decay": {
+            "real": [
+              [
+                0.5988015610341059,
+                0.25177608575780674
+              ],
+              [
+                0.25177608575780674,
+                0.5109394659778999
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                -2.1572215832694985e-17
+              ],
+              [
+                2.1572215832694985e-17,
+                0.0
+              ]
+            ]
+          },
+          "exact_finite_normalized_decay": {
+            "real": [
+              [
+                0.6125564631850671,
+                0.2575595633719431
+              ],
+              [
+                0.2575595633719431,
+                0.522676112668422
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                -2.206774513199358e-17
+              ],
+              [
+                2.206774513199358e-17,
+                0.0
+              ]
+            ]
+          },
+          "hamiltonian": {
+            "real": [
+              [
+                0.6,
+                0.8
+              ],
+              [
+                0.8,
+                -0.6
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0
+              ]
+            ]
+          },
+          "classical_spectral_correction": {
+            "real": [
+              [
+                0.009774165155661214,
+                -0.007330623866745911
+              ],
+              [
+                -0.00733062386674591,
+                -0.009774165155661214
+              ]
+            ],
+            "imag": [
+              [
+                6.4259030303243955e-18,
+                0.032413237355927875
+              ],
+              [
+                -0.03241323735592788,
+                -6.4259030303243955e-18
+              ]
+            ]
+          }
+        },
+        "counters": {
+          "actual_basis_column_statevector_evolutions": 2,
+          "actual_statevector_dimension": 32,
+          "actual_primitive_instruction_visits": 436,
+          "finite_trotter_reference": {
+            "system_dimension": 2,
+            "proposal_frequency_blocks": 4,
+            "hamiltonian_term_pauli_matrices": 2,
+            "proposal_pauli_matrices": 1,
+            "finite_trotter_pauli_expm_evaluations": 8,
+            "finite_trotter_interval_matrix_power_calls": 2,
+            "finite_trotter_clock_interval_matrix_products": 4,
+            "exact_hamiltonian_expm_evaluations": 0,
+            "proposal_conjugations": 4,
+            "fourier_matrix_summands": 16,
+            "b_dagger_b_matrix_products": 4
+          },
+          "exact_hamiltonian_finite_reference": {
+            "system_dimension": 2,
+            "proposal_frequency_blocks": 4,
+            "hamiltonian_term_pauli_matrices": 2,
+            "proposal_pauli_matrices": 1,
+            "finite_trotter_pauli_expm_evaluations": 0,
+            "finite_trotter_interval_matrix_power_calls": 0,
+            "finite_trotter_clock_interval_matrix_products": 0,
+            "exact_hamiltonian_expm_evaluations": 4,
+            "proposal_conjugations": 4,
+            "fourier_matrix_summands": 16,
+            "b_dagger_b_matrix_products": 4
+          },
+          "classical_spectral_correction_eigendecompositions": 1
+        },
+        "actual_circuit_metadata": {
+          "terms": [
+            [
+              0.6,
+              "Z"
+            ],
+            [
+              0.8,
+              "X"
+            ]
+          ],
+          "proposals": [
+            "Z"
+          ],
+          "n_system": 1,
+          "clock_bits": 2,
+          "proposal_bits": 0,
+          "proposal_count": 1,
+          "product_steps": 1,
+          "beta": 1.0,
+          "M": 4,
+          "access_width": 3,
+          "system_wires": [
+            0
+          ],
+          "clock_wires": [
+            1,
+            2
+          ],
+          "proposal_wires": [],
+          "weight_wire": 3,
+          "selector_wire": 4,
+          "auxiliary_wires": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "total_wires": 5,
+          "selected_auxiliary_state": "all_zero",
+          "access_source_sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77",
+          "access_preflight_upper_bound": 348,
+          "preflight_upper_bound": 718,
+          "dt": 0.6266570686577501,
+          "dw": 2.5066282746310002,
+          "time_mesh": [
+            0.0,
+            0.6266570686577501,
+            -1.2533141373155001,
+            -0.6266570686577501
+          ],
+          "frequency_mesh": [
+            0.0,
+            2.5066282746310002,
+            -5.0132565492620005,
+            -2.5066282746310002
+          ],
+          "physical_squared_sum": 1.5599362646490316,
+          "eta": 0.9775450868978823,
+          "gamma": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "gamma_max": 1.0,
+          "alpha": 0.9775450868978823,
+          "normalized_rates": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "weight_angles": [
+            1.7855034847842373,
+            0.4485342502728719,
+            3.141592653589793,
+            3.141592653589793
+          ],
+          "milestone": "primitive_weighted_decay_block_only",
+          "stage_slices": {
+            "selector_open": [
+              0,
+              1
+            ],
+            "access_forward": [
+              1,
+              99
+            ],
+            "weight_forward": [
+              99,
+              107
+            ],
+            "cz_primitives": [
+              107,
+              110
+            ],
+            "selector_negative_phase": [
+              110,
+              111
+            ],
+            "weight_inverse": [
+              111,
+              119
+            ],
+            "access_inverse": [
+              119,
+              217
+            ],
+            "selector_close": [
+              217,
+              218
+            ]
+          },
+          "source_operations": 218,
+          "access_source_operations_each_copy": 98,
+          "expected_source_operations": 218,
+          "primitive_counts": {
+            "cx": 87,
+            "rz": 64,
+            "h": 44,
+            "ry": 14,
+            "p": 7,
+            "x": 2
+          },
+          "resource_ledger": {
+            "access_copies": 2,
+            "access_instructions_each_copy": 98,
+            "access_instructions_total": 196,
+            "proposal_prepare_h_instructions_total": 0,
+            "gaussian_prepare_instructions_total": 10,
+            "pauli_select_instructions_total": 6,
+            "signed_evolution_instructions_total": 160,
+            "dft_instructions_total": 20,
+            "requested_signed_interval_magnitude_all_access_directions": 7.519884823893001,
+            "weight_multiplexor_copies": 2,
+            "weight_ry_instructions_total": 8,
+            "weight_cx_instructions_total": 8,
+            "selector_and_reflection_instructions_total": 6,
+            "source_operations_total": 218,
+            "classical_preprocessing": "explicit Gaussian/prefix masses and naive Gray-Walsh angle transform: O(M^2) time, O(M) storage; wall time is not quantum runtime",
+            "input_access": "explicit real Pauli list and normalized Pauli proposals; Gaussian loading, signed product-formula evolution and Pauli SELECT included in both access streams",
+            "initialization": "unknown system input and every auxiliary zero are caller supplied; preparation/reset gates and time are excluded",
+            "readout": "no measurement, discard/reset, repetition or amplification is emitted by this block oracle",
+            "exclusions": [
+              "external input preparation and zero-auxiliary initialization/reset",
+              "measurement and classical readout processing",
+              "repetitions or coherent amplification",
+              "arbitrary-angle rotation synthesis",
+              "physical code/factory/routing/controller/fault model",
+              "general coherent correction and its evolution",
+              "uniform mesh/Trotter/mixing/output certificates"
+            ]
+          },
+          "pauli_label_order": "character i acts on qi; q0 is least significant",
+          "proposal_normalization": "A_a=P_a/sqrt(J); sum A_a^dagger A_a=I",
+          "decay_definition": "D_fin=eta*sum_(a,l) gamma_l*B_(a,l)^dagger*B_(a,l), with actual finite-Trotter access blocks",
+          "selected_block": "D_fin/alpha with every auxiliary compressed to zero; alpha=eta*gamma_max",
+          "selection_probability": "norm(D_fin*psi)^2/alpha^2 for normalized caller input psi; input dependent",
+          "selector_zero_only_is_output_contract": false,
+          "phase_convention": "P(pi) supplies the branch minus sign; both complete access/weight inverses are unconditional, preserving source phases",
+          "numerical_checks_performed": false,
+          "all_components_verified": false,
+          "new_algorithm_result": false,
+          "coherent_correction_implemented": false,
+          "channel_implemented": false,
+          "sampler_implemented": false,
+          "finite_mesh_exact_kms": false,
+          "mixing_certificate": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "numerical_checks_performed": true,
+        "all_components_verified": false,
+        "new_algorithm_result": false,
+        "coherent_correction_implemented": false,
+        "channel_implemented": false,
+        "sampler_implemented": false,
+        "finite_mesh_exact_kms": false,
+        "mixing_certificate": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "scope": "actual all-auxiliary-zero block against independent finite-Trotter decay; exact-H finite error separately retained",
+        "remaining": [
+          "actual coherent correction access/evolution",
+          "noncommuting weak channel",
+          "uniform finite mesh/Trotter/continuum error bounds",
+          "mixing/output guarantees",
+          "external initialization/readout/repetition/amplification resources",
+          "rotation synthesis and physical resources",
+          "mechanized proof"
+        ]
+      }
+    },
+    {
+      "name": "complex",
+      "terms": [
+        [
+          0.7,
+          "ZI"
+        ],
+        [
+          0.4,
+          "XX"
+        ],
+        [
+          0.3,
+          "IX"
+        ],
+        [
+          0.19,
+          "YZ"
+        ],
+        [
+          0.23,
+          "IZ"
+        ]
+      ],
+      "proposals": [
+        "XI",
+        "ZI",
+        "IX",
+        "IZ"
+      ],
+      "beta": 1.0,
+      "clock_bits": 2,
+      "product_steps": 1,
+      "metadata": {
+        "terms": [
+          [
+            0.7,
+            "ZI"
+          ],
+          [
+            0.4,
+            "XX"
+          ],
+          [
+            0.3,
+            "IX"
+          ],
+          [
+            0.19,
+            "YZ"
+          ],
+          [
+            0.23,
+            "IZ"
+          ]
+        ],
+        "proposals": [
+          "XI",
+          "ZI",
+          "IX",
+          "IZ"
+        ],
+        "n_system": 2,
+        "clock_bits": 2,
+        "proposal_bits": 2,
+        "proposal_count": 4,
+        "product_steps": 1,
+        "beta": 1.0,
+        "M": 4,
+        "access_width": 6,
+        "system_wires": [
+          0,
+          1
+        ],
+        "clock_wires": [
+          2,
+          3
+        ],
+        "proposal_wires": [
+          4,
+          5
+        ],
+        "weight_wire": 6,
+        "selector_wire": 7,
+        "auxiliary_wires": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_wires": 8,
+        "selected_auxiliary_state": "all_zero",
+        "access_source_sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77",
+        "access_preflight_upper_bound": 1716,
+        "preflight_upper_bound": 3454,
+        "dt": 0.6266570686577501,
+        "dw": 2.5066282746310002,
+        "time_mesh": [
+          0.0,
+          0.6266570686577501,
+          -1.2533141373155001,
+          -0.6266570686577501
+        ],
+        "frequency_mesh": [
+          0.0,
+          2.5066282746310002,
+          -5.0132565492620005,
+          -2.5066282746310002
+        ],
+        "physical_squared_sum": 1.5599362646490316,
+        "eta": 0.9775450868978823,
+        "gamma": [
+          0.6065306597126334,
+          0.04945815726640235,
+          1.0,
+          1.0
+        ],
+        "gamma_max": 1.0,
+        "alpha": 0.9775450868978823,
+        "normalized_rates": [
+          0.6065306597126334,
+          0.04945815726640235,
+          1.0,
+          1.0
+        ],
+        "weight_angles": [
+          1.7855034847842373,
+          0.4485342502728719,
+          3.141592653589793,
+          3.141592653589793
+        ],
+        "milestone": "primitive_weighted_decay_block_only",
+        "stage_slices": {
+          "selector_open": [
+            0,
+            1
+          ],
+          "access_forward": [
+            1,
+            362
+          ],
+          "weight_forward": [
+            362,
+            370
+          ],
+          "cz_primitives": [
+            370,
+            373
+          ],
+          "selector_negative_phase": [
+            373,
+            374
+          ],
+          "weight_inverse": [
+            374,
+            382
+          ],
+          "access_inverse": [
+            382,
+            743
+          ],
+          "selector_close": [
+            743,
+            744
+          ]
+        },
+        "source_operations": 744,
+        "access_source_operations_each_copy": 361,
+        "expected_source_operations": 744,
+        "primitive_counts": {
+          "cx": 295,
+          "h": 164,
+          "rz": 160,
+          "tdg": 28,
+          "t": 28,
+          "sdg": 16,
+          "s": 16,
+          "x": 16,
+          "ry": 14,
+          "p": 7
+        },
+        "resource_ledger": {
+          "access_copies": 2,
+          "access_instructions_each_copy": 361,
+          "access_instructions_total": 722,
+          "proposal_prepare_h_instructions_total": 4,
+          "gaussian_prepare_instructions_total": 10,
+          "pauli_select_instructions_total": 144,
+          "signed_evolution_instructions_total": 544,
+          "dft_instructions_total": 20,
+          "requested_signed_interval_magnitude_all_access_directions": 7.519884823893001,
+          "weight_multiplexor_copies": 2,
+          "weight_ry_instructions_total": 8,
+          "weight_cx_instructions_total": 8,
+          "selector_and_reflection_instructions_total": 6,
+          "source_operations_total": 744,
+          "classical_preprocessing": "explicit Gaussian/prefix masses and naive Gray-Walsh angle transform: O(M^2) time, O(M) storage; wall time is not quantum runtime",
+          "input_access": "explicit real Pauli list and normalized Pauli proposals; Gaussian loading, signed product-formula evolution and Pauli SELECT included in both access streams",
+          "initialization": "unknown system input and every auxiliary zero are caller supplied; preparation/reset gates and time are excluded",
+          "readout": "no measurement, discard/reset, repetition or amplification is emitted by this block oracle",
+          "exclusions": [
+            "external input preparation and zero-auxiliary initialization/reset",
+            "measurement and classical readout processing",
+            "repetitions or coherent amplification",
+            "arbitrary-angle rotation synthesis",
+            "physical code/factory/routing/controller/fault model",
+            "general coherent correction and its evolution",
+            "uniform mesh/Trotter/mixing/output certificates"
+          ]
+        },
+        "pauli_label_order": "character i acts on qi; q0 is least significant",
+        "proposal_normalization": "A_a=P_a/sqrt(J); sum A_a^dagger A_a=I",
+        "decay_definition": "D_fin=eta*sum_(a,l) gamma_l*B_(a,l)^dagger*B_(a,l), with actual finite-Trotter access blocks",
+        "selected_block": "D_fin/alpha with every auxiliary compressed to zero; alpha=eta*gamma_max",
+        "selection_probability": "norm(D_fin*psi)^2/alpha^2 for normalized caller input psi; input dependent",
+        "selector_zero_only_is_output_contract": false,
+        "phase_convention": "P(pi) supplies the branch minus sign; both complete access/weight inverses are unconditional, preserving source phases",
+        "numerical_checks_performed": false,
+        "all_components_verified": false,
+        "new_algorithm_result": false,
+        "coherent_correction_implemented": false,
+        "channel_implemented": false,
+        "sampler_implemented": false,
+        "finite_mesh_exact_kms": false,
+        "mixing_certificate": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "primitive_counts": {
+        "cx": 295,
+        "h": 164,
+        "rz": 160,
+        "tdg": 28,
+        "t": 28,
+        "sdg": 16,
+        "s": 16,
+        "x": 16,
+        "ry": 14,
+        "p": 7
+      },
+      "source_depth": 567,
+      "numerical_checks_performed": true,
+      "selected_auxiliary_state": "all_zero",
+      "output_contract": "all-zero clock/proposal/weight/selector block equals D_fin/alpha",
+      "standalone_initialization_performed": false,
+      "measurement_or_sampling_performed": false,
+      "logical_resource_scope": "one complete unitary oracle, including both realized access copies and inverses; caller supplies system input and zero auxiliaries; no readout or amplification",
+      "all_components_verified": false,
+      "new_algorithm_result": false,
+      "coherent_correction_implemented": false,
+      "coherent_correction_evolution_implemented": false,
+      "general_channel_implemented": false,
+      "sampler_implemented": false,
+      "exact_finite_kms": false,
+      "mixing_certificate": false,
+      "rotations_synthesized": false,
+      "physical_resources_computed": false,
+      "formal_proof_reproduced": false,
+      "random_sampling_performed": false,
+      "check": {
+        "status": "checked_small_finite_weighted_decay_block",
+        "checks_passed": true,
+        "acceptance_tolerance": 1e-10,
+        "acceptance_predicates": {
+          "actual_matches_independent_finite_trotter": true,
+          "independent_access_isometry": true,
+          "independent_eta_matches": true,
+          "independent_gamma_max_matches": true,
+          "independent_alpha_matches": true,
+          "builder_alpha_product_matches": true,
+          "mesh_time_frequency_product": true,
+          "finite_decay_hermitian": true,
+          "finite_decay_positive": true,
+          "finite_decay_bounded_by_alpha": true,
+          "actual_block_hermitian": true,
+          "actual_block_positive": true,
+          "actual_block_contractive": true,
+          "actual_eigenvalues_real": true,
+          "classical_spectral_correction_hermitian": true
+        },
+        "failed_checks": [],
+        "actual_vs_finite_trotter_max_entry_error": 9.32587623891176e-15,
+        "actual_vs_finite_trotter_frobenius_error": 1.784311350329354e-14,
+        "actual_vs_exact_finite_max_entry_error": 0.020831572913894706,
+        "actual_vs_exact_finite_frobenius_error": 0.038374474372646225,
+        "finite_trotter_vs_exact_finite_frobenius_error": 0.0383744743726475,
+        "normalization": {
+          "independent_eta": 0.9775450868978823,
+          "independent_gamma_max": 1.0,
+          "independent_alpha": 0.9775450868978823,
+          "builder_eta": 0.9775450868978823,
+          "builder_gamma_max": 1.0,
+          "builder_alpha": 0.9775450868978823,
+          "eta_absolute_error": 0.0,
+          "gamma_max_absolute_error": 0.0,
+          "alpha_absolute_error": 0.0,
+          "builder_alpha_product_residual": 0.0,
+          "dt_dw_residual": 2.220446049250313e-16,
+          "physical_squared_sum": 1.5599362646490316,
+          "normalized_gamma": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "scope": "eta=dt*sum(f_j**2) independently; eta does not disappear from physical alpha"
+        },
+        "finite_diagnostics": {
+          "isometry_max_entry_error": 4.440892098500626e-16,
+          "decay_hermiticity_residual": 0.0,
+          "minimum_decay_eigenvalue": 0.4163864228829426,
+          "maximum_decay_eigenvalue": 0.7133864335776527,
+          "alpha_upper_bound_excess": -0.2641586533202296,
+          "decay_commutator": 0.16015616650424816,
+          "correction_norm": 0.01834162676160092,
+          "correction_hermiticity_residual": 1.6677735380198846e-17,
+          "coherent_correction_is_classical_only": true
+        },
+        "actual_diagnostics": {
+          "hermiticity_residual": 5.504301633474183e-16,
+          "spectral_norm": 0.7297734325907006,
+          "eigenvalues": {
+            "real": [
+              0.7297734325907007,
+              0.4259511182285071,
+              0.6440713540613042,
+              0.5222240201344395
+            ],
+            "imag": [
+              -1.5716160164571482e-16,
+              -2.49200627186478e-17,
+              1.0271405628394203e-16,
+              -1.3085356485312783e-17
+            ]
+          },
+          "minimum_eigenvalue_real_part": 0.4259511182285071,
+          "maximum_eigenvalue_real_part": 0.7297734325907007,
+          "maximum_eigenvalue_imaginary_part": 1.5716160164571482e-16,
+          "basis_input_all_auxiliary_zero_probabilities": [
+            0.4538956084658583,
+            0.29694869066190893,
+            0.39586129053661434,
+            0.254843864698685
+          ]
+        },
+        "matrices": {
+          "actual_selected_block": {
+            "real": [
+              [
+                0.666671498620384,
+                0.004615765008766425,
+                0.026115049201447454,
+                0.07939819450572656
+              ],
+              [
+                0.004615765008766602,
+                0.5378321389526223,
+                0.06786082778243932,
+                0.02450076967484842
+              ],
+              [
+                0.02611504920144752,
+                0.06786082778243917,
+                0.6225424983269489,
+                -0.00929380735255052
+              ],
+              [
+                0.07939819450572663,
+                0.024500769674848318,
+                -0.009293807352550651,
+                0.4949737891149962
+              ]
+            ],
+            "imag": [
+              [
+                -3.694181333447491e-17,
+                -0.048685873761400315,
+                0.005237659877194128,
+                0.00629282416964892
+              ],
+              [
+                0.048685873761400364,
+                -6.688358621334291e-17,
+                -0.009355133965806457,
+                0.0008736060513580461
+              ],
+              [
+                -0.005237659877194266,
+                0.009355133965806393,
+                7.26793522399226e-18,
+                0.05304445403366565
+              ],
+              [
+                -0.0062928241696489475,
+                -0.0008736060513580971,
+                -0.05304445403366579,
+                5.62069169631249e-18
+              ]
+            ]
+          },
+          "finite_trotter_decay": {
+            "real": [
+              [
+                0.6517014480512135,
+                0.004512118406594937,
+                0.025528638040971798,
+                0.07761531494763665
+              ],
+              [
+                0.004512118406594937,
+                0.5257551650089237,
+                0.0663370187915479,
+                0.02395060702086501
+              ],
+              [
+                0.025528638040971798,
+                0.0663370187915479,
+                0.6085633606246511,
+                -0.009085115716061413
+              ],
+              [
+                0.07761531494763665,
+                0.02395060702086501,
+                -0.009085115716061413,
+                0.4838591956926008
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                -0.04759263669678811,
+                0.005120048679793471,
+                0.006151519349752638
+              ],
+              [
+                0.04759263669678811,
+                0.0,
+                -0.009145065245545689,
+                0.000853989303389314
+              ],
+              [
+                -0.005120048679793471,
+                0.009145065245545689,
+                0.0,
+                0.051853345427791325
+              ],
+              [
+                -0.006151519349752638,
+                -0.000853989303389314,
+                -0.051853345427791325,
+                0.0
+              ]
+            ]
+          },
+          "finite_trotter_normalized_decay": {
+            "real": [
+              [
+                0.666671498620393,
+                0.004615765008766586,
+                0.026115049201447835,
+                0.07939819450572781
+              ],
+              [
+                0.004615765008766586,
+                0.5378321389526312,
+                0.06786082778244036,
+                0.024500769674848738
+              ],
+              [
+                0.026115049201447835,
+                0.06786082778244036,
+                0.6225424983269582,
+                -0.009293807352550762
+              ],
+              [
+                0.07939819450572781,
+                0.024500769674848738,
+                -0.009293807352550762,
+                0.4949737891150041
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                -0.04868587376140104,
+                0.005237659877194318,
+                0.006292824169649012
+              ],
+              [
+                0.04868587376140104,
+                0.0,
+                -0.009355133965806544,
+                0.000873606051358043
+              ],
+              [
+                -0.005237659877194318,
+                0.009355133965806544,
+                0.0,
+                0.05304445403366658
+              ],
+              [
+                -0.006292824169649012,
+                -0.000873606051358043,
+                -0.05304445403366658,
+                0.0
+              ]
+            ]
+          },
+          "exact_finite_decay": {
+            "real": [
+              [
+                0.6551105368934127,
+                -0.0014984861474357687,
+                0.026471637858703507,
+                0.06260003751395435
+              ],
+              [
+                -0.0014984861474357687,
+                0.5183856614119982,
+                0.06827771432886216,
+                0.023764900562143282
+              ],
+              [
+                0.026471637858703507,
+                0.06827771432886216,
+                0.6142139645629373,
+                -0.002584206686537773
+              ],
+              [
+                0.06260003751395435,
+                0.023764900562143282,
+                -0.002584206686537773,
+                0.4823894684387369
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                -0.04300743058245007,
+                -0.0016237112199177098,
+                -0.007604419930403897
+              ],
+              [
+                0.04300743058245007,
+                0.0,
+                -0.002700548100734985,
+                -0.0042786857884745885
+              ],
+              [
+                0.0016237112199177098,
+                0.002700548100734985,
+                0.0,
+                0.04722175457030248
+              ],
+              [
+                0.007604419930403897,
+                0.0042786857884745885,
+                -0.04722175457030248,
+                0.0
+              ]
+            ]
+          },
+          "exact_finite_normalized_decay": {
+            "real": [
+              [
+                0.6701588966830414,
+                -0.0015329074510425172,
+                0.02707971040262496,
+                0.06403800535953566
+              ],
+              [
+                -0.0015329074510425172,
+                0.5302933525624178,
+                0.06984610249081502,
+                0.024310797405322996
+              ],
+              [
+                0.02707971040262496,
+                0.06984610249081502,
+                0.6283229006981855,
+                -0.002643567771117782
+              ],
+              [
+                0.06403800535953566,
+                0.024310797405322996,
+                -0.002643567771117782,
+                0.49347030116998475
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                -0.043995342167724244,
+                -0.001661009033425103,
+                -0.007779098920680555
+              ],
+              [
+                0.043995342167724244,
+                0.0,
+                -0.0027625816312011127,
+                -0.0043769702756652025
+              ],
+              [
+                0.001661009033425103,
+                0.0027625816312011127,
+                0.0,
+                0.0483064722059571
+              ],
+              [
+                0.007779098920680555,
+                0.0043769702756652025,
+                -0.0483064722059571,
+                0.0
+              ]
+            ]
+          },
+          "hamiltonian": {
+            "real": [
+              [
+                0.9299999999999999,
+                0.0,
+                0.3,
+                0.4
+              ],
+              [
+                0.0,
+                -0.47,
+                0.4,
+                0.3
+              ],
+              [
+                0.3,
+                0.4,
+                0.47,
+                0.0
+              ],
+              [
+                0.4,
+                0.3,
+                0.0,
+                -0.9299999999999999
+              ]
+            ],
+            "imag": [
+              [
+                0.0,
+                -0.19,
+                0.0,
+                0.0
+              ],
+              [
+                0.19,
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                0.19
+              ],
+              [
+                0.0,
+                0.0,
+                -0.19,
+                0.0
+              ]
+            ]
+          },
+          "classical_spectral_correction": {
+            "real": [
+              [
+                0.0009508896402784765,
+                0.005034359861351387,
+                -0.0002513709668545139,
+                -0.003455134889701842
+              ],
+              [
+                0.005034359861351387,
+                -0.0011937283413926626,
+                0.0012995037501219026,
+                -0.000412912665332595
+              ],
+              [
+                -0.0002513709668545152,
+                0.0012995037501219047,
+                0.001081302889729575,
+                -0.005773880578500435
+              ],
+              [
+                -0.0034551348897018425,
+                -0.0004129126653325914,
+                -0.005773880578500437,
+                -0.0008384641886153916
+              ]
+            ],
+            "imag": [
+              [
+                -3.2163171978720934e-18,
+                0.0003478851094834772,
+                -0.0011458886923360419,
+                0.008524078787173633
+              ],
+              [
+                -0.000347885109483482,
+                4.336808689942018e-19,
+                -0.004059585666627302,
+                -0.0011861492759084455
+              ],
+              [
+                0.0011458886923360456,
+                0.0040595856666273,
+                3.2526065174565133e-18,
+                -0.0012581376497863403
+              ],
+              [
+                -0.008524078787173628,
+                0.001186149275908444,
+                0.0012581376497863427,
+                1.0842021724855044e-19
+              ]
+            ]
+          }
+        },
+        "counters": {
+          "actual_basis_column_statevector_evolutions": 4,
+          "actual_statevector_dimension": 256,
+          "actual_primitive_instruction_visits": 2976,
+          "finite_trotter_reference": {
+            "system_dimension": 4,
+            "proposal_frequency_blocks": 16,
+            "hamiltonian_term_pauli_matrices": 5,
+            "proposal_pauli_matrices": 4,
+            "finite_trotter_pauli_expm_evaluations": 20,
+            "finite_trotter_interval_matrix_power_calls": 2,
+            "finite_trotter_clock_interval_matrix_products": 4,
+            "exact_hamiltonian_expm_evaluations": 0,
+            "proposal_conjugations": 16,
+            "fourier_matrix_summands": 64,
+            "b_dagger_b_matrix_products": 16
+          },
+          "exact_hamiltonian_finite_reference": {
+            "system_dimension": 4,
+            "proposal_frequency_blocks": 16,
+            "hamiltonian_term_pauli_matrices": 5,
+            "proposal_pauli_matrices": 4,
+            "finite_trotter_pauli_expm_evaluations": 0,
+            "finite_trotter_interval_matrix_power_calls": 0,
+            "finite_trotter_clock_interval_matrix_products": 0,
+            "exact_hamiltonian_expm_evaluations": 4,
+            "proposal_conjugations": 16,
+            "fourier_matrix_summands": 64,
+            "b_dagger_b_matrix_products": 16
+          },
+          "classical_spectral_correction_eigendecompositions": 1
+        },
+        "actual_circuit_metadata": {
+          "terms": [
+            [
+              0.7,
+              "ZI"
+            ],
+            [
+              0.4,
+              "XX"
+            ],
+            [
+              0.3,
+              "IX"
+            ],
+            [
+              0.19,
+              "YZ"
+            ],
+            [
+              0.23,
+              "IZ"
+            ]
+          ],
+          "proposals": [
+            "XI",
+            "ZI",
+            "IX",
+            "IZ"
+          ],
+          "n_system": 2,
+          "clock_bits": 2,
+          "proposal_bits": 2,
+          "proposal_count": 4,
+          "product_steps": 1,
+          "beta": 1.0,
+          "M": 4,
+          "access_width": 6,
+          "system_wires": [
+            0,
+            1
+          ],
+          "clock_wires": [
+            2,
+            3
+          ],
+          "proposal_wires": [
+            4,
+            5
+          ],
+          "weight_wire": 6,
+          "selector_wire": 7,
+          "auxiliary_wires": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "total_wires": 8,
+          "selected_auxiliary_state": "all_zero",
+          "access_source_sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77",
+          "access_preflight_upper_bound": 1716,
+          "preflight_upper_bound": 3454,
+          "dt": 0.6266570686577501,
+          "dw": 2.5066282746310002,
+          "time_mesh": [
+            0.0,
+            0.6266570686577501,
+            -1.2533141373155001,
+            -0.6266570686577501
+          ],
+          "frequency_mesh": [
+            0.0,
+            2.5066282746310002,
+            -5.0132565492620005,
+            -2.5066282746310002
+          ],
+          "physical_squared_sum": 1.5599362646490316,
+          "eta": 0.9775450868978823,
+          "gamma": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "gamma_max": 1.0,
+          "alpha": 0.9775450868978823,
+          "normalized_rates": [
+            0.6065306597126334,
+            0.04945815726640235,
+            1.0,
+            1.0
+          ],
+          "weight_angles": [
+            1.7855034847842373,
+            0.4485342502728719,
+            3.141592653589793,
+            3.141592653589793
+          ],
+          "milestone": "primitive_weighted_decay_block_only",
+          "stage_slices": {
+            "selector_open": [
+              0,
+              1
+            ],
+            "access_forward": [
+              1,
+              362
+            ],
+            "weight_forward": [
+              362,
+              370
+            ],
+            "cz_primitives": [
+              370,
+              373
+            ],
+            "selector_negative_phase": [
+              373,
+              374
+            ],
+            "weight_inverse": [
+              374,
+              382
+            ],
+            "access_inverse": [
+              382,
+              743
+            ],
+            "selector_close": [
+              743,
+              744
+            ]
+          },
+          "source_operations": 744,
+          "access_source_operations_each_copy": 361,
+          "expected_source_operations": 744,
+          "primitive_counts": {
+            "cx": 295,
+            "h": 164,
+            "rz": 160,
+            "tdg": 28,
+            "t": 28,
+            "sdg": 16,
+            "s": 16,
+            "x": 16,
+            "ry": 14,
+            "p": 7
+          },
+          "resource_ledger": {
+            "access_copies": 2,
+            "access_instructions_each_copy": 361,
+            "access_instructions_total": 722,
+            "proposal_prepare_h_instructions_total": 4,
+            "gaussian_prepare_instructions_total": 10,
+            "pauli_select_instructions_total": 144,
+            "signed_evolution_instructions_total": 544,
+            "dft_instructions_total": 20,
+            "requested_signed_interval_magnitude_all_access_directions": 7.519884823893001,
+            "weight_multiplexor_copies": 2,
+            "weight_ry_instructions_total": 8,
+            "weight_cx_instructions_total": 8,
+            "selector_and_reflection_instructions_total": 6,
+            "source_operations_total": 744,
+            "classical_preprocessing": "explicit Gaussian/prefix masses and naive Gray-Walsh angle transform: O(M^2) time, O(M) storage; wall time is not quantum runtime",
+            "input_access": "explicit real Pauli list and normalized Pauli proposals; Gaussian loading, signed product-formula evolution and Pauli SELECT included in both access streams",
+            "initialization": "unknown system input and every auxiliary zero are caller supplied; preparation/reset gates and time are excluded",
+            "readout": "no measurement, discard/reset, repetition or amplification is emitted by this block oracle",
+            "exclusions": [
+              "external input preparation and zero-auxiliary initialization/reset",
+              "measurement and classical readout processing",
+              "repetitions or coherent amplification",
+              "arbitrary-angle rotation synthesis",
+              "physical code/factory/routing/controller/fault model",
+              "general coherent correction and its evolution",
+              "uniform mesh/Trotter/mixing/output certificates"
+            ]
+          },
+          "pauli_label_order": "character i acts on qi; q0 is least significant",
+          "proposal_normalization": "A_a=P_a/sqrt(J); sum A_a^dagger A_a=I",
+          "decay_definition": "D_fin=eta*sum_(a,l) gamma_l*B_(a,l)^dagger*B_(a,l), with actual finite-Trotter access blocks",
+          "selected_block": "D_fin/alpha with every auxiliary compressed to zero; alpha=eta*gamma_max",
+          "selection_probability": "norm(D_fin*psi)^2/alpha^2 for normalized caller input psi; input dependent",
+          "selector_zero_only_is_output_contract": false,
+          "phase_convention": "P(pi) supplies the branch minus sign; both complete access/weight inverses are unconditional, preserving source phases",
+          "numerical_checks_performed": false,
+          "all_components_verified": false,
+          "new_algorithm_result": false,
+          "coherent_correction_implemented": false,
+          "channel_implemented": false,
+          "sampler_implemented": false,
+          "finite_mesh_exact_kms": false,
+          "mixing_certificate": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "numerical_checks_performed": true,
+        "all_components_verified": false,
+        "new_algorithm_result": false,
+        "coherent_correction_implemented": false,
+        "channel_implemented": false,
+        "sampler_implemented": false,
+        "finite_mesh_exact_kms": false,
+        "mixing_certificate": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "scope": "actual all-auxiliary-zero block against independent finite-Trotter decay; exact-H finite error separately retained",
+        "remaining": [
+          "actual coherent correction access/evolution",
+          "noncommuting weak channel",
+          "uniform finite mesh/Trotter/continuum error bounds",
+          "mixing/output guarantees",
+          "external initialization/readout/repetition/amplification resources",
+          "rotation synthesis and physical resources",
+          "mechanized proof"
+        ]
+      }
+    }
+  ],
+  "wall_seconds": 1.5689627499959897,
+  "scope": "finite-Trotter weighted-decay block access; every selected auxiliary wire is zero",
+  "remaining": [
+    "actual coherent correction and its evolution",
+    "noncommuting full channel and Gibbs preparation",
+    "continuum/KMS/mesh and mixing/output certificates",
+    "standalone input preparation, readout, repetitions/amplification and processing costs",
+    "rotation synthesis and physical fault/resource models"
+  ],
+  "all_components_verified": false,
+  "new_algorithm_result": false,
+  "coherent_correction_implemented": false,
+  "coherent_correction_evolution_implemented": false,
+  "general_channel_implemented": false,
+  "sampler_implemented": false,
+  "exact_finite_kms": false,
+  "mixing_certificate": false,
+  "rotations_synthesized": false,
+  "physical_resources_computed": false,
+  "formal_proof_reproduced": false,
+  "random_sampling_performed": false
+}

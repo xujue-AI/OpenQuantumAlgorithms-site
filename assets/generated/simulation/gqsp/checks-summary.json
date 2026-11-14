@@ -1,0 +1,77 @@
+{
+  "schema": "openquantum.gqsp.public-evidence.v1",
+  "status": "checked bounded supplied-angle component",
+  "recorded_local_date": "2026-11-14",
+  "scope": {
+    "given_angles_forward_constructor": true,
+    "explicit_primitive_signal": true,
+    "inverse_phase_compiler": false,
+    "complete_hamiltonian_simulation": false,
+    "physical_resource_estimation": false,
+    "certified_rotation_synthesis": false,
+    "formal_proof": false,
+    "literal_finite_shot_sampling": false
+  },
+  "versions": {
+    "python": "3.12.14",
+    "qiskit": "2.6.2",
+    "numpy": "2.5.4"
+  },
+  "dedicated_tests": {
+    "executed_cases": 37,
+    "failures_errors_skips": 0,
+    "source_test_sha256": "1a90e976ac59e75f53b5035e07210aba9dc1b5fbc2903c0bf5fd6445f1dcf8f5",
+    "evidence": "Sanitized outcome summary; private JUnit machine/timing attributes excluded.",
+    "public_case_records": "test-case-outcomes.json",
+    "public_case_records_sha256": "3eb9ce4aa4409483467975ac84c9faf1638fd3b21b933a052a0af2aad5e47ec3",
+    "original_junit_sha256": "48b96d3c14ce854203ee819a4406a2fc47ca6407de14a7b5c3794a61ea995106"
+  },
+  "suite": {
+    "case_count": 8,
+    "numerical_cases": 6,
+    "generation_only_cases": [
+      "generation-n8",
+      "generation-n64"
+    ],
+    "original_study_sha256": "e46f3ca9b6d0e496cdc509930a5440bf02402f7488558d9204588ec49e845390",
+    "original_manifest_sha256": "116cc8933398ee5de89b3f429048af1b79b89be3577a1b6d663632b2e92cd683",
+    "source_content_commit": "8b518a1f736a49692c63438b4df25827a2ff5f6f"
+  },
+  "original_notebook": {
+    "genuine_code_cells_executed": 5,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "image_outputs": 1,
+    "source_sha256": "c978f54e3612c27d5656a54a273acf60c7edf13678c6735d59d6519b65347a70",
+    "executed_sha256": "b900503b6b422af7948e7d2aec991f351046977fec3fb14fea5464ada0a49d6e",
+    "circuit_png_sha256": "1e2c5e4d05b1bdcffb2d246844587e6e95322fbd47d12e52eefe39251df5a2b7",
+    "source_content_commit": "189ad1f299a3749523746d6e2b4d81d344057bc1",
+    "ids_types_normalized_sources_preserved": true
+  },
+  "validation_history": {
+    "initial_full_run_status": "failed after passing tests and suite during notebook readiness/process observation",
+    "later_notebook_only_continuation_status": "passed with unchanged scientific module, generator, case vector and notebook source",
+    "initial_failure_not_reclassified": true
+  },
+  "provenance": {
+    "module_sha256": "a013aeae83968d071f76093647d0c9f68498718a035c215998c8c85d325a68d2",
+    "generator_sha256": "11db399ea75b755187656625bac227f73a0463e7a44d0c275ab7bd26775689b8",
+    "case_vector_sha256": "c1670d667cdb4dde9ff070dbdc29fb10526fba7b3efa9220ae31ab1dd68af080",
+    "lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "license_sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "original_code_license": "MIT",
+    "qiskit_license": "Apache-2.0",
+    "primary_reference_doi": "10.1103/PRXQuantum.5.020368"
+  },
+  "public_packet_portability": {
+    "layout": "exact original generator, module, lock and license as siblings",
+    "adapted_scientific_source": false,
+    "adapted_companion_with_copied_outputs": false,
+    "fresh_final_bundle_portability_check_performed": false
+  }
+}

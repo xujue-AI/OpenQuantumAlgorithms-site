@@ -31,8 +31,8 @@
     "initial_state": "all system and reference wires zero"
   },
   "classical_preprocessing": {
-    "energies_and_boltzmann_wall_seconds": 0.00018394399967291974,
-    "circuit_materialization_and_lowering_wall_seconds": 0.023979162000159704,
+    "energies_and_boltzmann_wall_seconds": 0.00019265799983259058,
+    "circuit_materialization_and_lowering_wall_seconds": 0.017523076000088622,
     "energy_entries": 4,
     "complexity": "O(n*2**n) energy enumeration and prefix-mass/angle loading; O(2**n) normalization/storage",
     "normalization": "Boltzmann weights normalized classically using the exact stated diagonal energies",
@@ -168,13 +168,13 @@
         "minimum_eigenvalue": 0.20377799900422058,
         "purification_success_probability": 1.0,
         "actual_observables": {
-          "energy": -0.13759877017124023,
+          "energy": -0.13759877017124025,
           "Z0": -0.09465398191932817,
           "Z1": 0.06291182907650214,
           "Z0Z1": -0.15314585114029172
         },
         "reference_observables": {
-          "energy": -0.13759877017124014,
+          "energy": -0.13759877017124011,
           "Z0": -0.09465398191932811,
           "Z1": 0.06291182907650206,
           "Z0Z1": -0.15314585114029156
@@ -227,7 +227,7 @@
     "method": "Qiskit actual circuit Statevector/DensityMatrix; partial trace; SciPy diagonal matrix exponential"
   },
   "provenance": {
-    "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_revision_at_generation": "899761f7fc918b466aea32df2543ea7c9b0535be",
     "source_hashes": {
       "gibbs.py": "0185ec83ab1fb6f00446bd35038b82e9500de7951c1870cf85c3624578c94dcf",
       "generate_simulation_gibbs.py": "c5d8b9f8ffcb9cdcb75c4765128501d8fe5e45415f89752995f94ea9b3641e9c"

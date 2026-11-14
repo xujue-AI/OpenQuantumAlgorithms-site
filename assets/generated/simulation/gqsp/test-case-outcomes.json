@@ -1,0 +1,193 @@
+{
+  "schema": "openquantum.gqsp.public-tests.v1",
+  "source_test_sha256": "1a90e976ac59e75f53b5035e07210aba9dc1b5fbc2903c0bf5fd6445f1dcf8f5",
+  "original_junit_sha256": "48b96d3c14ce854203ee819a4406a2fc47ca6407de14a7b5c3794a61ea995106",
+  "cases": [
+    {
+      "name": "test_explicit_signal_and_full_complex_gqsp_against_independent_matrices[degree0]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_explicit_signal_and_full_complex_gqsp_against_independent_matrices[complex-degree1]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_explicit_signal_and_full_complex_gqsp_against_independent_matrices[noncommuting-degree2]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_explicit_signal_and_full_complex_gqsp_against_independent_matrices[coupled-n2-degree3]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_explicit_signal_and_full_complex_gqsp_against_independent_matrices[coupled-n3-degree2]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_explicit_signal_and_full_complex_gqsp_against_independent_matrices[identity-signal]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_forward_polynomial_against_independent_scalar_products[degree0]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_forward_polynomial_against_independent_scalar_products[complex-degree1]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_forward_polynomial_against_independent_scalar_products[noncommuting-degree2]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_forward_polynomial_against_independent_scalar_products[coupled-n2-degree3]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_forward_polynomial_against_independent_scalar_products[coupled-n3-degree2]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_forward_polynomial_against_independent_scalar_products[identity-signal]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_complex_mixed_parity_degree_one_has_literal_closed_form_and_readout_law",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_wrong_control_order_and_dropped_signal_phase_change_exact_case",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_actual_reset_readout_chronology_and_complete_primitive_counts[degree0]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_actual_reset_readout_chronology_and_complete_primitive_counts[complex-degree1]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_actual_reset_readout_chronology_and_complete_primitive_counts[noncommuting-degree2]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_actual_reset_readout_chronology_and_complete_primitive_counts[coupled-n2-degree3]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_actual_reset_readout_chronology_and_complete_primitive_counts[coupled-n3-degree2]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_actual_reset_readout_chronology_and_complete_primitive_counts[identity-signal]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_large_request_has_explicit_generation_scope_and_no_implicit_simulation[8-6]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_large_request_has_explicit_generation_scope_and_no_implicit_simulation[64-6]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_large_request_has_explicit_generation_scope_and_no_implicit_simulation[64-64]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_width_rejected_before_circuit_creation[True]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_width_rejected_before_circuit_creation[0]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_width_rejected_before_circuit_creation[65]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_width_rejected_before_circuit_creation[1.0]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_angles_rejected[nan]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_angles_rejected[inf]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_angles_rejected[317.3008580125691]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_angles_rejected[True]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_invalid_angles_rejected[1j]",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_empty_oversized_or_invalid_rotation_and_preparation_contracts_rejected",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_detached_producer_selects_shipped_source_beneath_an_unrelated_checkout",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_output_gate_protects_sources_assets_existing_paths_and_symlink_ancestors",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_payload_writer_rejects_escape_duplicate_and_existing_siblings",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    },
+    {
+      "name": "test_nonfinite_reference_cannot_produce_a_success_record",
+      "class": "tests.test_simulation_gqsp",
+      "status": "passed"
+    }
+  ],
+  "scope": "Sanitized original outcome records; host/timestamp/duration fields and private paths omitted. No new test execution."
+}

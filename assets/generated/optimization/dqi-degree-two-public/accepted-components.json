@@ -1,0 +1,179 @@
+{
+  "c5": {
+    "absolute_tolerance": 2e-10,
+    "classical_baseline": "alternating displayed assignment 0101 scores four in linear time; all-zero scores zero",
+    "final_auxiliary_leakage_probability": 2.0446701231881683e-30,
+    "final_max_state_entry_discrepancy": 3.695133394558133e-15,
+    "graph": {
+      "edge_clauses": 5,
+      "gauge_variables": 4,
+      "vertices": 5
+    },
+    "independent_expected_objective": "74/19",
+    "independent_optimum_probability": "18/19",
+    "observed_expected_objective": 3.89473684210532,
+    "observed_optimum_probability": 0.9473684210526452,
+    "relative_tolerance": 0.0,
+    "repetition_scope": "analytic independent complete draws, not sampled",
+    "scope": "one ideal floating signed-amplitude component check, not a hardware or interval certificate",
+    "source_counts": {
+      "barrier": 7,
+      "cx": 686,
+      "h": 222,
+      "measure": 4,
+      "reset": 12,
+      "ry": 17,
+      "t": 436,
+      "tdg": 327,
+      "x": 80,
+      "z": 5
+    },
+    "source_materialized_operations": 1796,
+    "source_unitary_primitives": 1773,
+    "source_wires": 12,
+    "three_draw_ideal_miss": "1/6859",
+    "two_draw_ideal_miss": "1/361",
+    "unsynthesized_ry": 17
+  },
+  "figure_eight": {
+    "generation_only": true,
+    "graph": {
+      "edge_clauses": 10,
+      "gauge_variables": 8,
+      "vertices": 9
+    },
+    "quality_or_repetition_law_attached": false,
+    "simulation_performed": false,
+    "source_counts": {
+      "barrier": 7,
+      "cx": 4954,
+      "h": 1636,
+      "measure": 8,
+      "reset": 24,
+      "ry": 37,
+      "t": 3256,
+      "tdg": 2442,
+      "x": 646,
+      "z": 10
+    },
+    "source_materialized_operations": 13020,
+    "source_unitary_primitives": 12981,
+    "source_wires": 24
+  },
+  "formal_interval_certificate": false,
+  "formal_theorem_reproduced": false,
+  "general_graph_quality_claim": false,
+  "old_degree_one_evidence_reexecuted": false,
+  "optimization_advantage_claim": false,
+  "original_attempt": {
+    "failed_notebook_receipt_sha256": "209db2710a67f10b5073fe2e3b7645f5d52343f079e0fe506992079fd95f7d87",
+    "outer_exit": 1,
+    "outer_receipt_sha256": "0b89d7ed433701a206acb7525c620c8c41c3c57ea9394995d0790d9ecdd80c79",
+    "recorded_elapsed_seconds": 5.630906457998208,
+    "saved_notebook_failure": {
+      "error": "AttributeError: 'list' object has no attribute 'strip'",
+      "kernel_invocation_attempts": 1,
+      "successful_completion_recorded": false
+    },
+    "spent": true,
+    "stage_exits": [
+      {
+        "exit": 0,
+        "invocations": 1,
+        "stage": "pure-tests"
+      },
+      {
+        "exit": 0,
+        "invocations": 1,
+        "stage": "generator-c5"
+      },
+      {
+        "exit": 0,
+        "invocations": 1,
+        "stage": "validator-c5"
+      },
+      {
+        "exit": 0,
+        "invocations": 1,
+        "stage": "generator-figure-eight"
+      },
+      {
+        "exit": 1,
+        "invocations": 1,
+        "stage": "saved-notebook"
+      }
+    ],
+    "timing_scope": "local CPU validation and process control, not quantum hardware time",
+    "whole_sequence_accepted": false,
+    "whole_sequence_status": "failed_private_sequence"
+  },
+  "original_bundle_manifest_sha256": "6981e4dba5502925dc4cd3ccc9d709e5be43adba7a9673b78ce22d54e9019395",
+  "original_component_acceptance_sha256": "158edceadd0ca586cd6da85b7e38c3420566a0c8c2c5b8f941210bacb6a29db1",
+  "parent_acceptance": {
+    "finite_c5_component": true,
+    "original_whole_attempt_reclassified": false,
+    "scope": "finite floating component checks and saved-file companion only",
+    "separate_genuine_saved_companion": true
+  },
+  "passed_pure_test_cases": 170,
+  "physical_resources_computed": false,
+  "portable_scientific_replay_validated": false,
+  "public_projection_is_saved_evidence_only": true,
+  "publication_complete": false,
+  "qpu_execution": false,
+  "recorded_date": "2026-11-14",
+  "rotation_synthesis_executed": false,
+  "sampled_outcomes": false,
+  "saved_companion_continuation": {
+    "child_exit": 0,
+    "code_cell_execution_counts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "continuation_receipt_sha256": "84734a4b9890fd5225997726fae113e9b9a9ab9821fe7ba7e936f0781331c0ba",
+    "executed_notebook_bytes": 19950,
+    "executed_notebook_sha256": "e0685b2eaf4db5f0b6dab5bd873eb5c86d52870db8a6ad7eb2bae71d00e19cd9",
+    "kernel_autorestart": false,
+    "kernel_invocations": 1,
+    "new_scientific_work": {
+      "boolean_decoder_mappings": 0,
+      "build_invocations": 0,
+      "complete_statevector_evolutions": 0,
+      "direct_native_estimator_calls": 0,
+      "generator_invocations": 0,
+      "gpu_jobs": 0,
+      "native_synthesis_calls": 0,
+      "phase_reference_cases": 0,
+      "primitive_unitary_applications": 0,
+      "producer_invocations": 0,
+      "publication_invocations": 0,
+      "pure_test_invocations": 0,
+      "remote_jobs": 0,
+      "sampled_outcomes": 0,
+      "small_ccx_reference_cases": 0,
+      "validator_invocations": 0
+    },
+    "notebook_receipt_sha256": "94b5ef29e415a61610e306713b36b2128f64400e0bb65d7bbe1f1a42c1e6c6d9",
+    "ordered_cell_ids_and_types_preserved": true,
+    "original_template_sha256": "18ac25e51a13e6bf74b188c75ba4f58f2c699e0c734c9c6872dc9f9a7e062c66",
+    "outer_exit": 0,
+    "recorded_elapsed_seconds": 4.899330000000191,
+    "source_array_normalization": "exact concatenation in private runner memory after authentication; original raw template unchanged",
+    "source_projection_sha256": "3cc9682dded7381b2895cbca21f68fdc4581a94aac33ae36cad57c333577928f",
+    "timing_scope": "ordinary Python saved-data companion and process control, not quantum hardware time"
+  },
+  "schema": "openquantum.dqi.degree_two_public_acceptance.v1",
+  "scientific_component_counters": {
+    "boolean_decoder_mappings": 512,
+    "complete_statevector_evolutions": 1,
+    "primitive_unitary_applications": 1773,
+    "small_ccx_matrix_dimension": 8,
+    "small_ccx_reference_cases": 1,
+    "state_amplitudes": 4096,
+    "verification_invocations": 1
+  },
+  "scientific_source_commit": "c69733230b09e25ae514a63e47cbcb1c3d01c130",
+  "status": "accepted_finite_components_and_separate_saved_companion"
+}

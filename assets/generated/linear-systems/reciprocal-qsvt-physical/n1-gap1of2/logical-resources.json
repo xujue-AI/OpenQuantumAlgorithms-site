@@ -176,15 +176,15 @@
       1.0
     ],
     "actual_condition_number": 2.0,
-    "success_observed_ideal_numeric": 0.09880180886824076,
-    "branch_error_vs_independent_spectral_polynomial": 3.8808272717755414e-15,
+    "success_observed_ideal_numeric": 0.0988018088682409,
+    "branch_error_vs_independent_spectral_polynomial": 3.634867893677199e-15,
     "solve_residual": 0.0,
-    "solution_trace_distance": 0.003024955715699466,
-    "z_actual": 0.5951491125699733,
+    "solution_trace_distance": 0.0030249557156990163,
+    "z_actual": 0.5951491125699737,
     "z_classical_solution": 0.6000000000000001,
-    "z_bias": 0.004850887430026818,
-    "qasm_state_error_modulo_global_phase": 8.325144669198162e-15,
-    "qasm_full_measured_probability_error": 7.882583474838611e-15,
+    "z_bias": 0.004850887430026374,
+    "qasm_state_error_modulo_global_phase": 8.273261311246319e-15,
+    "qasm_full_measured_probability_error": 8.049116928532385e-15,
     "scope": "deterministic declared input; independent Kronecker matrix/solve and restricted NumPy QASM vector replay; no uniform numeric-loading/compiler certificate"
   },
   "qasm_sha256": "fba138410dba938fd610acef1c604d88fd25271bcd7dfb11a7e72599c1d37599",
@@ -196,9 +196,9 @@
     "primitive_operations": 25000,
     "timeout_seconds": 60
   },
-  "classical_generation_validation_seconds_CPU": 0.24756527500039738,
+  "classical_generation_validation_seconds_CPU": 0.18576621500005785,
   "source_provenance": {
-    "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_revision_at_generation": "899761f7fc918b466aea32df2543ea7c9b0535be",
     "source_hashes_sha256": {
       "src/openquantum/reciprocal_physical_sweep.py": "f6cfe9c30fba956753b85496cc577030419cf25fd86ec812c11c6fc777fe0f3b",
       "scripts/generate_reciprocal_physical_sweep.py": "737b35d188730a5ab495e7f6945c8bdbb5d1ed609d39e6bb55ee2fd590010466",

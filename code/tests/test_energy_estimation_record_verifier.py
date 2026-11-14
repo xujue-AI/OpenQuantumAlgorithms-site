@@ -14,6 +14,7 @@ import shutil
 import signal
 import subprocess
 import sys
+import time
 
 import pytest
 
@@ -199,18 +200,50 @@ def test_wall_cap_is_positive_finite_and_at_most_six_hundred_seconds(value, tmp_
         verifier.verify_record(tmp_path, tmp_path / "missing", "0" * 64, max_wall_seconds=value)
 
 
-def test_child_timeout_reaps_owned_process_and_preserves_other_jobs(tmp_path):
+def test_child_timeout_reaps_owned_process_and_preserves_other_jobs(tmp_path, monkeypatch):
     source = tmp_path / "source"; (source / "scripts").mkdir(parents=True)
     script = source / "scripts" / verifier.PRODUCER
     pid_file = tmp_path / "owned-child.pid"
     script.write_text("import os,time,signal\nfrom pathlib import Path\n"
                       "signal.signal(signal.SIGTERM,signal.SIG_IGN)\n"
-                      f"Path({str(pid_file)!r}).write_text(str(os.getpid()))\n"
+                      f"ready=Path({str(pid_file)!r})\n"
+                      "pending=ready.with_suffix('.tmp')\n"
+                      "pending.write_text(str(os.getpid()))\npending.replace(ready)\n"
                       "time.sleep(30)\n")
-    with pytest.raises(subprocess.TimeoutExpired):
-        verifier.run_producer(source, tmp_path / "output", tmp_path, .2, cleanup_grace=.05)
-    pid = int(pid_file.read_text())
-    with pytest.raises(ProcessLookupError): os.kill(pid, 0)
+    real_popen = subprocess.Popen
+    def ready_popen(*args, **kwargs):
+        child = real_popen(*args, **kwargs)
+        try:
+            # Constructor startup has its own bound; the production timeout
+            # starts only after the producer has installed SIGTERM-ignore.
+            deadline = time.monotonic() + 10
+            while not pid_file.is_file():
+                assert child.poll() is None, "Owned child exited before readiness"
+                assert time.monotonic() < deadline, "Owned child startup exceeded ten seconds"
+                time.sleep(.01)
+            assert int(pid_file.read_text()) == child.pid
+            assert child.poll() is None
+            assert time.monotonic() < deadline, "Owned child startup exceeded ten seconds"
+            return child
+        except BaseException:
+            # run_producer has not received this handle yet, so we own cleanup.
+            child.kill()
+            child.wait(timeout=2)
+            raise
+    sentinel = real_popen([sys.executable, "-I", "-B", "-c", "import time; time.sleep(30)"],
+                          stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
+    try:
+        assert sentinel.poll() is None
+        with monkeypatch.context() as patch:
+            patch.setattr(verifier.subprocess, "Popen", ready_popen)
+            with pytest.raises(subprocess.TimeoutExpired):
+                verifier.run_producer(source, tmp_path / "output", tmp_path, .2, cleanup_grace=.05)
+        pid = int(pid_file.read_text())
+        with pytest.raises(ProcessLookupError): os.kill(pid, 0)
+        assert sentinel.poll() is None
+    finally:
+        sentinel.kill()
+        sentinel.wait(timeout=2)
 
 
 @pytest.mark.parametrize("leader_exited", [False, True])

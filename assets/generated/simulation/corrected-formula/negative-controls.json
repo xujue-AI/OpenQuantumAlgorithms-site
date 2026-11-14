@@ -1,0 +1,25 @@
+{
+  "model": {
+    "pairs": 1,
+    "qubits": 2,
+    "a_exact": [
+      "1"
+    ],
+    "b_exact": [
+      "1"
+    ],
+    "alpha_exact": "1/5",
+    "A_norm_exact": "1",
+    "B0_norm_exact": "1",
+    "perturbation_norm_ratio_exact": "1/5",
+    "Hamiltonian": "sum_j a_j Z_(2j)Z_(2j+1) + alpha*b_j X_(2j)",
+    "SDK_pair_label": "ZY means Y on first q[2j], Z on partner q[2j+1]",
+    "scope": "Noninteracting disjoint pairs; classically factorized toy, not an application advantage."
+  },
+  "time_exact": "1",
+  "repetitions": 1,
+  "correct_formula_max_entry_discrepancy": 3.510833468576701e-16,
+  "missing_boundaries_max_entry_contrast": 0.027595190802606334,
+  "wrong_sign_boundaries_max_entry_contrast": 0.05496965834280376,
+  "scope": "Numerical full complex operator contrasts; no sampled or hardware measurements."
+}

@@ -1,0 +1,118 @@
+{
+  "all_components_verified": false,
+  "component": "saved one-spin finite correction block and one heralded known-input step",
+  "exact_finite_kms": false,
+  "files": {
+    "README.md": {
+      "bytes": 5061,
+      "sha256": "c5e010aea9f1b8513386e88b9c8499bc9fb16cade534f2fe97898bf120144290"
+    },
+    "UPSTREAM-LICENSES.md": {
+      "bytes": 1989,
+      "sha256": "1b65b80e38c82600a8366ae97164656efc9b85252f2289fc6ecc3db244c7cdb1"
+    },
+    "completion.json": {
+      "bytes": 4001,
+      "sha256": "064e98f0bb89fbe34fb9572b8bb3682c7c2992efa76f547a0057b862f5a2e7ea"
+    },
+    "v1/centered_decay.qasm": {
+      "bytes": 4141,
+      "sha256": "b5cf7fc96d22dc5ca2521774ffc3b3c492ae3991042b85a15afe54d25af322aa"
+    },
+    "v1/failure.json": {
+      "bytes": 1708,
+      "sha256": "7289ff567c1c163b163326343e304b70bcf9e43d115cdb8fe1c8f638cd1b3281"
+    },
+    "v2/LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "v2/centered_decay.qasm": {
+      "bytes": 4141,
+      "sha256": "b5cf7fc96d22dc5ca2521774ffc3b3c492ae3991042b85a15afe54d25af322aa"
+    },
+    "v2/controlled_correction.qasm": {
+      "bytes": 28675,
+      "sha256": "721e02ed8c1534f54b774cd1cf9166add0543eee76faa1f0704230192c658945"
+    },
+    "v2/correction_block.qasm": {
+      "bytes": 4381,
+      "sha256": "41cfd2fc6e81de46e81bc95916b5e90e097b1705258585a493e121c20955f3c3"
+    },
+    "v2/detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "v2/detailed_balance_channel.py": {
+      "bytes": 24362,
+      "sha256": "99ac8dbfacf6ee484caeb6ad328fe145f150871e4272538dd279f67cc2573a8b"
+    },
+    "v2/detailed_balance_correction.py": {
+      "bytes": 24902,
+      "sha256": "62ede4bbafe79a15e7c66068f0dc2b54a32322bbbff4015f00e7a0ba64e3eb48"
+    },
+    "v2/detailed_balance_correction_reference.py": {
+      "bytes": 33840,
+      "sha256": "103393d232861867dc5e70da04fa4ec26f892b3cfc92dfed06cd1ea5cc1f413c"
+    },
+    "v2/detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "v2/detailed_balance_decay_reference.py": {
+      "bytes": 26002,
+      "sha256": "71ac5f486ad04cb532a86bf1c4dec4e175d0cfb377a7de26f206cd3f5c5daf53"
+    },
+    "v2/generate_detailed_balance_correction.py": {
+      "bytes": 29098,
+      "sha256": "c01e01c380d2b6fc7f581ba9f7f5504887b824448f097d1a81672d9307d27b34"
+    },
+    "v2/heralded_step.qasm": {
+      "bytes": 28765,
+      "sha256": "ef799261d2152586a4e6031a028c1ffdeb41dc89813174958a97b1f796274dd4"
+    },
+    "v2/known_plus_prefix.qasm": {
+      "bytes": 28773,
+      "sha256": "7ca10bb76fcaef0b3eb1a46ce2973c66c8d10c25cdcb52c0d1cf88108cb5ca0f"
+    },
+    "v2/known_plus_trial.qasm": {
+      "bytes": 28981,
+      "sha256": "54c7a838e706f9ec0fbe39ee081ccb5853525a62c19f341dd57931c2670798cb"
+    },
+    "v2/manifest.json": {
+      "bytes": 3117,
+      "sha256": "1127038ca780bb63315e6f867dbe87e3da963cabc4c667a2aa6a62deac6be02f"
+    },
+    "v2/manifest.sha256": {
+      "bytes": 80,
+      "sha256": "d56d26361b3adcced8d6572427de83372e3b4f051dc089335e16a439d91dc5de"
+    },
+    "v2/requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "v2/results.json": {
+      "bytes": 128483,
+      "sha256": "2e31bafecc802aab01568fc888d6d420c5b9683caea04c9d65ab75612305df9e"
+    }
+  },
+  "floating_point_bounds_certified": false,
+  "formal_proof_reproduced": false,
+  "general_channel_implemented": false,
+  "general_correction_evolution_implemented": false,
+  "general_hamiltonian_correction_implemented": false,
+  "hardware_error_certified": false,
+  "mixing_certificate": false,
+  "new_algorithm_result": false,
+  "original_v2_files": 18,
+  "original_v2_manifest_sha256": "1127038ca780bb63315e6f867dbe87e3da963cabc4c667a2aa6a62deac6be02f",
+  "original_v2_payload_bytes": 434352,
+  "physical_resources_computed": false,
+  "rotations_synthesized": false,
+  "sampler_implemented": false,
+  "schema_version": 1,
+  "source_commit": "a66724abb777298917655e76ec0556e1d5a2fb81",
+  "total_payload_bytes": 451252,
+  "v1_is_failed_and_distinct": true,
+  "v2_historical_fixed_toy_pass": true
+}

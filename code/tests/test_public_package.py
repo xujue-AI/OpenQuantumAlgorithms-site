@@ -1,6 +1,8 @@
 """Public downloads must retain reproducible inputs and fail on identity changes."""
 from __future__ import annotations
 
+from types import SimpleNamespace
+
 import hashlib
 import importlib.util
 import json
@@ -39,6 +41,10 @@ WORKLOAD_SCRIPTS = {
     "generate_simulation_qdrift.py", "verify_simulation_qdrift.py",
     "generate_simulation_suzuki.py", "verify_simulation_suzuki.py",
     "generate_detailed_balance_access.py", "generate_detailed_balance_channel.py", "verify_detailed_balance_channel.py",
+    "generate_detailed_balance_decay.py", "verify_detailed_balance_decay.py",
+    "generate_detailed_balance_correction.py", "verify_detailed_balance_correction_saved.py",
+    "generate_optimization_dqi_degree_two.py", "validate_optimization_dqi_degree_two.py",
+    "verify_dqi_degree_two_saved.py", "verify_dqi_degree_two_public_saved.py",
     "generate_shor_recovery.py", "generate_hadamard_qpe.py", "verify_hadamard_qpe.py",
     "generate_bayesian_qpe.py", "verify_bayesian_qpe_saved.py",
     "generate_robust_qpe.py", "verify_robust_qpe_saved.py",
@@ -88,6 +94,7 @@ SUZUKI_CI_COMMANDS = (
 # Reviewed bundles use saved verification in CI; original producers remain exported.
 CI_WORKLOAD_SCRIPTS = WORKLOAD_SCRIPTS - {
     "generate_detailed_balance_access.py", "generate_detailed_balance_channel.py",
+    "generate_detailed_balance_decay.py",
     "generate_simulation_lindblad_three.py", "generate_simulation_lindblad_physical.py",
     "generate_simulation_lindblad_four.py", "generate_optimization_compiled.py", "complete_optimization_compiled.py",
     "run_simulation_lindblad_port.py",
@@ -98,6 +105,9 @@ CI_WORKLOAD_SCRIPTS = WORKLOAD_SCRIPTS - {
     "optimization_word_record_schema.py", "optimization_word_records.py",
     "optimization_word_record_release.py", "generate_optimization_word_report.py",
     "generate_dynamics_resources.py", "generate_instrument_resources.py", "generate_simulation_complete_resources.py",
+    "generate_detailed_balance_correction.py",
+    "generate_optimization_dqi_degree_two.py", "validate_optimization_dqi_degree_two.py",
+    "verify_dqi_degree_two_saved.py",
 } | {
     "verify_dynamics_resources.py", "verify_instrument_resource_records.py", "verify_simulation_complete_resource_records.py",
     "verify_dqi_saved.py",
@@ -189,6 +199,9 @@ WORKLOAD_SENTINELS |= {
     )
 }
 WORKLOAD_SENTINELS |= export.PUBLIC_GIBBS_CHANNEL_FILES
+WORKLOAD_SENTINELS |= export.PUBLIC_DECAY_FILES
+WORKLOAD_SENTINELS |= export.PUBLIC_CORRECTION_FILES
+WORKLOAD_SENTINELS |= export.PUBLIC_DQI_DEGREE_TWO_FILES | export.PUBLIC_DQI_DEGREE_TWO_PUBLIC_FILES
 WORKLOAD_SENTINELS |= export.PUBLIC_COMPRESSED_JSON_FILES
 WORKLOAD_SENTINELS |= export.PUBLIC_LINDBLAD_PORT_FILES
 WORKLOAD_SENTINELS |= {f"assets/generated/shor/recovery/{name}" for name in SHOR_RECOVERY_BUNDLE_FILES}
@@ -205,6 +218,19 @@ WORKLOAD_SENTINELS |= {
     for name in ("source-instrument.qasm", "routed-instrument.qasm", "clifford-t-instrument.qasm", "report.json")
 }
 STANDALONE_WORKLOAD_FILES = {
+    "simulation/detailed-balance-correction/v2": (
+        'detailed_balance_access.py',
+        'detailed_balance_channel.py',
+        'detailed_balance_decay.py',
+        'detailed_balance_decay_reference.py',
+        'detailed_balance_correction.py',
+        'detailed_balance_correction_reference.py',
+        'generate_detailed_balance_correction.py',
+        'requirements-lock.txt',
+        'LICENSE.txt',
+    ),
+    'simulation/detailed-balance-decay/grid': ('detailed_balance_access.py', 'detailed_balance_decay.py', 'detailed_balance_decay_reference.py', 'generate_detailed_balance_decay.py', 'requirements-lock.txt', 'LICENSE.txt'),
+    'simulation/detailed-balance-decay/n12': ('detailed_balance_access.py', 'detailed_balance_decay.py', 'detailed_balance_decay_reference.py', 'generate_detailed_balance_decay.py', 'requirements-lock.txt', 'LICENSE.txt'),
     "simulation/detailed-balance-channel": ("detailed_balance_access.py", "detailed_balance_channel.py",
         "generate_detailed_balance_channel.py", "requirements-lock.txt", "LICENSE.txt"),
     "simulation/qdrift": ("qdrift.py", "generate_simulation_qdrift.py", "LICENSE.txt"),
@@ -277,12 +303,47 @@ def test_gibbs_channel_export_contract_is_exact():
     assert not {"generate_detailed_balance_access.py", "generate_detailed_balance_channel.py"} & CI_WORKLOAD_SCRIPTS
 
 
+def test_decay_export_contract_is_exact_and_keeps_generators_out_of_ci():
+    gate = load_script("verify_detailed_balance_decay")
+    expected = {gate.BUNDLE_RELATIVE + "/" + name for name in gate.BUNDLE_FILES}
+    assert export.PUBLIC_DECAY_FILES == expected and len(expected) == 28
+    for name in expected:
+        assert export.include_generated_file(name)
+    for name in ("private.json", "unreviewed.md", "log.txt", "extra.ipynb", "extra.sha256", "grid/verifier.py", "grid/subdir/results.json"):
+        assert not export.include_generated_file(gate.BUNDLE_RELATIVE + "/" + name)
+    assert {"generate_detailed_balance_decay.py", "verify_detailed_balance_decay.py"} <= set(export.PUBLIC_SCRIPTS)
+    assert "verify_detailed_balance_decay.py" in CI_WORKLOAD_SCRIPTS
+    assert "generate_detailed_balance_decay.py" not in CI_WORKLOAD_SCRIPTS
+
+
 def test_gibbs_channel_ci_preserves_current74_command_vector():
     workflow = ROOT / ".github/workflows/publish.yml"
     if not workflow.is_file():
         pytest.skip("Publication workflow is outside the downloaded code package")
     commands = [line.strip().removeprefix("run ") for line in workflow.read_text().splitlines()
                 if line.strip().startswith("run python ")]
+    degree_two = 'python scripts/verify_dqi_degree_two_public_saved.py --artifact-root . --source-root . --notebook-path notebooks/optimization_dqi_degree_two.ipynb --expected-manifest-sha256 ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c --archive assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip --time-limit-seconds 10'
+    assert len(commands) == 86 and commands.count(degree_two) == 1
+    assert commands.index(degree_two) == commands.index("python scripts/verify_dqi_saved.py assets/generated/optimization/dqi") + 1
+    commands = [value for value in commands if value != degree_two]
+    correction = 'python scripts/verify_detailed_balance_correction_saved.py --bundle assets/generated/simulation/detailed-balance-correction --source-root . --download assets/generated/simulation/detailed-balance-correction-download.zip'
+    assert len(commands) == 85 and commands.count(correction) == 1
+    assert commands.index(correction) == commands.index("python scripts/verify_detailed_balance_decay.py") + 1
+    commands = [value for value in commands if value != correction]
+    hamiltonian_saved = (
+        "python scripts/verify_simulation_cpf_public.py --bundle assets/generated/simulation/corrected-formula",
+        "python scripts/verify_simulation_gqsp_public.py --bundle assets/generated/simulation/gqsp",
+    )
+    assert len(commands) == 84
+    assert all(commands.count(value) == 1 for value in hamiltonian_saved)
+    assert commands.index(hamiltonian_saved[0]) == commands.index(
+        "python scripts/verify_simulation_multiproduct_saved.py") + 1
+    assert commands.index(hamiltonian_saved[1]) == commands.index(hamiltonian_saved[0]) + 1
+    commands = [value for value in commands if value not in hamiltonian_saved]
+    decay = "python scripts/verify_detailed_balance_decay.py"
+    assert len(commands) == 82 and commands.count(decay) == 1
+    assert commands.index(decay) == commands.index("python scripts/verify_detailed_balance_channel.py") + 1
+    commands = [value for value in commands if value != decay]
     measured_and = "python scripts/verify_shor_measured_and_saved.py"
     assert len(commands) == 81 and commands.count(measured_and) == 1
     assert commands.index(measured_and) == commands.index("python scripts/generate_shor_recovery.py") + 1
@@ -350,6 +411,11 @@ def test_gibbs_helper_loads_bound_bytes_and_ignores_module_cache(tmp_path, monke
 
 
 def test_gibbs_package_dispatch_starts_after_complete_manifest(monkeypatch, tmp_path):
+    monkeypatch.setattr(verify, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(verify, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(verify, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     calls = []
     monkeypatch.setattr(verify, "verify_manifest", lambda *args: (_ for _ in ()).throw(ValueError("bad complete manifest")))
     monkeypatch.setattr(verify, "_load_gibbs_channel_record_gate", lambda *args: calls.append(args))
@@ -448,7 +514,10 @@ def test_public_bundle_retains_required_scientific_inputs_and_excludes_operation
     for directory, names in STANDALONE_WORKLOAD_FILES.items():
         required |= {f"assets/generated/{directory}/{name}" for name in names}
     assert required <= files.keys()
-    assert {name for name in files if name.endswith(".zip")} == export.PUBLIC_ARCHIVES
+    cpf_archive = "assets/generated/simulation/corrected-formula/cpf2-public-packet.zip"
+    archive_names = {name for name in files if name.endswith(".zip")}
+    assert cpf_archive in archive_names and cpf_archive in export.PUBLIC_CORRECTED_FORMULA_FILES
+    assert archive_names - {cpf_archive} == export.PUBLIC_ARCHIVES
     assert all(not name.endswith(".log") for name in files)
     assert "assets/generated/publication.json" not in files
     assert all(not name.startswith(("docs/", ".git/", ".cache/")) for name in files)
@@ -562,6 +631,61 @@ def test_workload_ci_replays_the_checkpoint_before_bounded_resources():
     commands = [command.removeprefix("run ") for command in commands]
     python_commands = [command for command in commands if command.startswith("python ")]
     all_python_commands = python_commands
+    added_notebooks = {
+        "notebooks/simulation_corrected_formula.ipynb",
+        "notebooks/simulation_gqsp.ipynb",
+        "notebooks/simulation_detailed_balance_decay.ipynb",
+    }
+    notebook_paths = sorted(path.relative_to(ROOT).as_posix()
+                            for path in (ROOT / "notebooks").glob("*.ipynb"))
+    preserved_notebooks = {"notebooks/optimization_dqi_degree_two.ipynb"}
+    assert len(notebook_paths) == 61 and added_notebooks | preserved_notebooks <= set(notebook_paths)
+    refreshed_notebooks = [name for name in notebook_paths if name not in preserved_notebooks]
+    assert len(refreshed_notebooks) == 60
+    preserved_raw = (ROOT / "notebooks/optimization_dqi_degree_two.ipynb").read_bytes()
+    assert len(preserved_raw) == 19950
+    assert hashlib.sha256(preserved_raw).hexdigest() == "e0685b2eaf4db5f0b6dab5bd873eb5c86d52870db8a6ad7eb2bae71d00e19cd9"
+    assert "notebooks/simulation_corrected_formula_portable.ipynb" not in notebook_paths
+    prior_notebooks = [name for name in refreshed_notebooks if name not in added_notebooks]
+    assert len(prior_notebooks) == 57
+    assert hashlib.sha256(("\n".join(prior_notebooks) + "\n").encode()).hexdigest() == (
+        "c0534b35c3c2fdca0ed8961dbc340ef22d2134b53021b1441ec20583f008a896")
+    toc_notebooks = []
+    def collect_toc_notebooks(entries):
+        for entry in entries:
+            name = entry.get("file", "")
+            if name.endswith(".ipynb"):
+                toc_notebooks.append(name)
+            collect_toc_notebooks(entry.get("children", []))
+    collect_toc_notebooks(yaml.safe_load((ROOT / "myst.yml").read_text())["project"]["toc"])
+    assert len(toc_notebooks) == len(set(toc_notebooks)) == 60
+    assert preserved_notebooks <= set(toc_notebooks)
+    assert set(notebook_paths) - set(toc_notebooks) == {
+        "notebooks/simulation_detailed_balance_decay.ipynb"
+    }
+    assert sorted(name for name in toc_notebooks if name not in added_notebooks | preserved_notebooks) == prior_notebooks
+    degree_two = 'python scripts/verify_dqi_degree_two_public_saved.py --artifact-root . --source-root . --notebook-path notebooks/optimization_dqi_degree_two.ipynb --expected-manifest-sha256 ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c --archive assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip --time-limit-seconds 10'
+    assert len(python_commands) == 86 and python_commands.count(degree_two) == 1
+    assert python_commands.index(degree_two) == python_commands.index("python scripts/verify_dqi_saved.py assets/generated/optimization/dqi") + 1
+    python_commands = [value for value in python_commands if value != degree_two]
+    correction = 'python scripts/verify_detailed_balance_correction_saved.py --bundle assets/generated/simulation/detailed-balance-correction --source-root . --download assets/generated/simulation/detailed-balance-correction-download.zip'
+    assert len(python_commands) == 85 and python_commands.count(correction) == 1
+    assert python_commands.index(correction) == python_commands.index("python scripts/verify_detailed_balance_decay.py") + 1
+    python_commands = [value for value in python_commands if value != correction]
+    hamiltonian_saved = (
+        "python scripts/verify_simulation_cpf_public.py --bundle assets/generated/simulation/corrected-formula",
+        "python scripts/verify_simulation_gqsp_public.py --bundle assets/generated/simulation/gqsp",
+    )
+    assert len(python_commands) == 84
+    assert all(python_commands.count(value) == 1 for value in hamiltonian_saved)
+    assert python_commands.index(hamiltonian_saved[0]) == python_commands.index(
+        "python scripts/verify_simulation_multiproduct_saved.py") + 1
+    assert python_commands.index(hamiltonian_saved[1]) == python_commands.index(hamiltonian_saved[0]) + 1
+    python_commands = [value for value in python_commands if value not in hamiltonian_saved]
+    decay = "python scripts/verify_detailed_balance_decay.py"
+    assert len(python_commands) == 82 and python_commands.count(decay) == 1
+    assert python_commands.index(decay) == python_commands.index("python scripts/verify_detailed_balance_channel.py") + 1
+    python_commands = [value for value in python_commands if value != decay]
     measured_and = "python scripts/verify_shor_measured_and_saved.py"
     assert len(python_commands) == 81 and python_commands.count(measured_and) == 1
     assert python_commands.index(measured_and) == python_commands.index("python scripts/generate_shor_recovery.py") + 1
@@ -751,6 +875,8 @@ def test_site_contract_requires_new_records_and_standalone_dependencies(tmp_path
     if not (ROOT / "scripts/check_site.py").is_file():
         pytest.skip("Rendered-site checker is deliberately outside the public example package")
     checker = load_script("check_site")
+    monkeypatch.setattr(checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     required = set(checker.required_artifacts())
     assert WORKLOAD_SENTINELS <= required
     assert {"code/scripts/" + name for name in WORKLOAD_SCRIPTS} <= required
@@ -1005,6 +1131,7 @@ def test_site_contract_requires_new_records_and_standalone_dependencies(tmp_path
     monkeypatch.setattr(checker, "site_word_record_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "site_suzuki_record_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "site_gibbs_channel_record_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_decay_record_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "site_tail_record_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "site_dqi_saved_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "site_bath_saved_errors", lambda *args, **kwargs: [])
@@ -1017,6 +1144,7 @@ def test_site_contract_requires_new_records_and_standalone_dependencies(tmp_path
     monkeypatch.setattr(checker, "site_local_spin_saved_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "site_local_spin_reproduction_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "site_measured_and_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_hamiltonian_packet_errors", lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(checker, "verify_n3_bundle", lambda *args, **kwargs: {})
     monkeypatch.setattr(checker, "verify_n2_bundle", lambda *args, **kwargs: {})
@@ -1041,6 +1169,8 @@ def test_site_contract_requires_new_records_and_standalone_dependencies(tmp_path
     monkeypatch.setattr(checker, "OPT8_EMBED_LABELS", frozenset())
     monkeypatch.setattr(checker, "SUZUKI_EMBED_LABELS", frozenset())
     monkeypatch.setattr(checker, "GIBBS_CHANNEL_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(checker, "DECAY_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(checker, "CORRECTION_ARTICLE_LABELS", frozenset())
     monkeypatch.setattr(checker, "site_energy_record_errors", lambda root: [])
     monkeypatch.setattr(checker, "site_dynamics_record_errors", lambda root: [])
     monkeypatch.setattr(checker.sys, "argv", ["check_site.py", str(tmp_path)])

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "generated_decay_block_without_simulation",
+  "files": {
+    "chain-n12-decay-block.qasm": {
+      "bytes": 45013,
+      "sha256": "642c8b66a22458e03c188fd27b62988dc8a55e25c732a084783c35ccea37567f"
+    },
+    "detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "detailed_balance_decay_reference.py": {
+      "bytes": 26002,
+      "sha256": "71ac5f486ad04cb532a86bf1c4dec4e175d0cfb377a7de26f206cd3f5c5daf53"
+    },
+    "detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "generate_detailed_balance_decay.py": {
+      "bytes": 16294,
+      "sha256": "e5b0be192e7e1bb48fd7bc8d9148f4c41e19e448edb26a023b78d972b46e7cad"
+    },
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "results.json": {
+      "bytes": 13258,
+      "sha256": "ff418a00eb7888ca8badf985eca76c2833b30ebae7deea822346602a1a46e718"
+    }
+  },
+  "total_payload_bytes": 141319,
+  "manifest_and_sidecar_are_separate": true,
+  "all_components_verified": false,
+  "new_algorithm_result": false,
+  "coherent_correction_implemented": false,
+  "coherent_correction_evolution_implemented": false,
+  "general_channel_implemented": false,
+  "sampler_implemented": false,
+  "exact_finite_kms": false,
+  "mixing_certificate": false,
+  "rotations_synthesized": false,
+  "physical_resources_computed": false,
+  "formal_proof_reproduced": false,
+  "random_sampling_performed": false
+}

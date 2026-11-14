@@ -112,7 +112,7 @@ def configure_saved_site(checker, tmp_path, monkeypatch, *, omit_label=None, rej
     monkeypatch.setattr(checker, "N3_EMBED_LABELS", frozenset())
     monkeypatch.setattr(checker, "N4_EMBED_LABELS", frozenset())
     for name in ("QDRIFT_EMBED_LABELS", "SHOR_RECOVERY_EMBED_LABELS", "HADAMARD_EMBED_LABELS", "BAYESIAN_EMBED_LABELS", "ROBUST_EMBED_LABELS", "QPE_FEEDBACK_EMBED_LABELS",
-                 "OPT8_EMBED_LABELS", "SUZUKI_EMBED_LABELS", "GIBBS_CHANNEL_ARTICLE_LABELS"):
+                 "OPT8_EMBED_LABELS", "SUZUKI_EMBED_LABELS", "GIBBS_CHANNEL_ARTICLE_LABELS", "DECAY_ARTICLE_LABELS", "CORRECTION_ARTICLE_LABELS"):
         monkeypatch.setattr(checker, name, frozenset())
     monkeypatch.setattr(checker, "verify_n4_bundle", old_n4)
     monkeypatch.setattr(checker, "verify_port_bundle", port)
@@ -122,9 +122,9 @@ def configure_saved_site(checker, tmp_path, monkeypatch, *, omit_label=None, rej
     monkeypatch.setattr(checker, "current_quality_resource_errors", lambda root: [])
     monkeypatch.setattr(checker, "site_energy_record_errors", lambda root: [])
     for name in ("site_dynamics_record_errors", "site_word_record_errors", "site_suzuki_record_errors",
-                 "site_gibbs_channel_record_errors", "site_tail_record_errors",
+                 "site_gibbs_channel_record_errors", "site_decay_record_errors", "site_tail_record_errors",
                  "site_dqi_saved_errors", "site_bath_saved_errors", "site_multiproduct_saved_errors",
-                 "site_bayesian_saved_errors", "site_robust_saved_errors", "site_dqi_structured_saved_errors", "site_dqi_resource_saved_errors", "site_qpe_feedback_saved_errors", "site_local_spin_saved_errors", "site_local_spin_reproduction_errors", "site_measured_and_saved_errors"):
+                 "site_bayesian_saved_errors", "site_robust_saved_errors", "site_dqi_structured_saved_errors", "site_dqi_resource_saved_errors", "site_qpe_feedback_saved_errors", "site_local_spin_saved_errors", "site_local_spin_reproduction_errors", "site_measured_and_saved_errors", "site_hamiltonian_packet_errors"):
         monkeypatch.setattr(checker, name, lambda *args, **kwargs: [])
     monkeypatch.setattr(checker, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(checker.sys, "argv", ["check_site.py", str(root)])
@@ -132,6 +132,8 @@ def configure_saved_site(checker, tmp_path, monkeypatch, *, omit_label=None, rej
 
 
 def test_site_dispatch_retains_old_n4_gate_and_uses_preview_source_maps(site_checker, tmp_path, monkeypatch):
+    monkeypatch.setattr(site_checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(site_checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, calls = configure_saved_site(site_checker, tmp_path, monkeypatch)
     site_checker.main()
     assert [name for name, _, _ in calls] == ["n4", "port"]
@@ -140,6 +142,8 @@ def test_site_dispatch_retains_old_n4_gate_and_uses_preview_source_maps(site_che
 
 
 def test_site_dispatch_propagates_port_gate_rejection(site_checker, tmp_path, monkeypatch):
+    monkeypatch.setattr(site_checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(site_checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     configure_saved_site(site_checker, tmp_path, monkeypatch, reject_gate=True)
     with pytest.raises(SystemExit, match="Lindblad port artifact verification failed: saved port binding rejected"):
         site_checker.main()
@@ -147,6 +151,8 @@ def test_site_dispatch_propagates_port_gate_rejection(site_checker, tmp_path, mo
 
 @pytest.mark.parametrize("suffix", ["words", "recipe", "density", "budget", "controller", "resources"])
 def test_site_dispatch_requires_each_saved_embed(site_checker, tmp_path, monkeypatch, suffix):
+    monkeypatch.setattr(site_checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(site_checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     label = "simulation-lindblad-port-" + suffix
     configure_saved_site(site_checker, tmp_path, monkeypatch, omit_label=label)
     with pytest.raises(SystemExit, match="Missing Lindblad port notebook/embed label: " + label):
@@ -155,6 +161,11 @@ def test_site_dispatch_requires_each_saved_embed(site_checker, tmp_path, monkeyp
 
 @pytest.mark.parametrize("reject_port", [False, True])
 def test_package_dispatch_calls_saved_port_gate_without_producer_or_native_execution(tmp_path, monkeypatch, reject_port):
+    monkeypatch.setattr(package_verify, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(package_verify, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(package_verify, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root = tmp_path.resolve()
     calls = []
     monkeypatch.setattr(package_verify, "verify_manifest", lambda package: {})
@@ -165,7 +176,7 @@ def test_package_dispatch_calls_saved_port_gate_without_producer_or_native_execu
         RECORD_DIRECTORY="unused", verify_dynamics_record_identity=lambda *args: None))
     monkeypatch.setattr(package_verify, "_load_word_record_gate", lambda *args: SimpleNamespace(
         verify_public_word_transport=lambda *args, **kwargs: None))
-    for name in ("_load_suzuki_record_gate", "_load_gibbs_channel_record_gate"):
+    for name in ("_load_suzuki_record_gate", "_load_gibbs_channel_record_gate", "_load_decay_record_gate"):
         monkeypatch.setattr(package_verify, name, lambda *args: SimpleNamespace(
             BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None))
     monkeypatch.setattr(package_verify, "_load_tail_record_gate", lambda *args: SimpleNamespace(
@@ -190,6 +201,8 @@ def test_package_dispatch_calls_saved_port_gate_without_producer_or_native_execu
     monkeypatch.setattr(package_verify, "_load_dqi_resource_saved_gate", lambda *args: SimpleNamespace())
     monkeypatch.setattr(package_verify, "_verify_dqi_resource_saved_identity", lambda *args, **kwargs: None)
     monkeypatch.setattr(package_verify, "_verify_dqi_structured_saved_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(package_verify, "_load_hamiltonian_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(package_verify, "_verify_hamiltonian_saved_identity", lambda *args, **kwargs: None)
     monkeypatch.setattr(package_verify, "checked_path", lambda root, name: root / name)
     class Loader:
         def exec_module(self, module):

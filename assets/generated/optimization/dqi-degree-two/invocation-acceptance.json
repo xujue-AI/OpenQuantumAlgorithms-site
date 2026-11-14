@@ -1,0 +1,59 @@
+{
+  "auxiliary_postselection_performed": false,
+  "contract_sha256": "aa7babb8a9dc86c87d5bb1af0fb4f898c15098a2401232f006e89833267daa17",
+  "counters": {
+    "boolean_decoder_mappings": 512,
+    "complete_statevector_evolutions": 1,
+    "small_ccx_reference_cases": 1
+  },
+  "formal_interval_certificate": false,
+  "native_synthesis_executed": false,
+  "old_degree_one_evidence_reexecuted": false,
+  "optimization_advantage_claim": false,
+  "phase_normalization_performed": false,
+  "physical_resources_computed": false,
+  "publication_complete": false,
+  "qpu_execution": false,
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.degree_two_component_invocations.v1",
+  "source_pins": {
+    "generate_optimization_dqi_degree_two.py": {
+      "bytes": 20087,
+      "sha256": "a31c596a53f4cecde73a6f57a52a466ba37a18296c46f7a5cf8a139d5b32236d"
+    },
+    "optimization_dqi_degree_two.py": {
+      "bytes": 32756,
+      "sha256": "44e2838d4b9482c04992580e8a5000885e035b08989b23d1b67b92b234c9dfb4"
+    },
+    "optimization_dqi_degree_two_verify.py": {
+      "bytes": 40312,
+      "sha256": "c69eb9b8251df3340893456e1d24bfcb61ef185d67a8703b47cf27e1b7816dc2"
+    },
+    "validate_optimization_dqi_degree_two.py": {
+      "bytes": 23609,
+      "sha256": "9afcdb43ca44e4014ec418ef7de595a01ae2a8cdbe37614eb56928f42013eea4"
+    },
+    "verify_dqi_degree_two_saved.py": {
+      "bytes": 34976,
+      "sha256": "803ea2b04d1d5c141361cdebb98f7996b973e268625df340210d1d61042fed56"
+    }
+  },
+  "stages": [
+    {
+      "invocations": 1,
+      "returncode": 0,
+      "stage": "generator-c5"
+    },
+    {
+      "invocations": 1,
+      "returncode": 0,
+      "stage": "validator-c5"
+    },
+    {
+      "invocations": 1,
+      "returncode": 0,
+      "stage": "generator-figure-eight"
+    }
+  ],
+  "status": "passed_component_invocations_pending_notebook"
+}

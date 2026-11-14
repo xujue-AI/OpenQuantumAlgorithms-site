@@ -1,0 +1,28 @@
+{
+  "files": {
+    "validation.json": {
+      "bytes": 315222,
+      "sha256": "4953a594cdc4f1e5af34f09668144c30f6490fb9729a14af5b1a91880bf6e4cd"
+    }
+  },
+  "formal_interval_certificate": false,
+  "input_manifest_sha256": "59379c7690155ae788251380c513efdc1ac270a815880dea1fc7f4d87214863d",
+  "physical_resources_computed": false,
+  "publication_complete": false,
+  "requires_observed_cli_exit_zero": true,
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.degree_two_validation_manifest.v1",
+  "sources": {
+    "module": {
+      "bytes": 40312,
+      "path": "src/openquantum/optimization_dqi_degree_two_verify.py",
+      "sha256": "c69eb9b8251df3340893456e1d24bfcb61ef185d67a8703b47cf27e1b7816dc2"
+    },
+    "script": {
+      "bytes": 23609,
+      "path": "scripts/validate_optimization_dqi_degree_two.py",
+      "sha256": "9afcdb43ca44e4014ec418ef7de595a01ae2a8cdbe37614eb56928f42013eea4"
+    }
+  },
+  "status": "complete_validation_component_pending_invocation_acceptance"
+}

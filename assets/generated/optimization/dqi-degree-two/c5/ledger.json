@@ -1,0 +1,353 @@
+{
+  "N": 5,
+  "accepted_degree_one_producer_rerun": false,
+  "angle_scope": "integer ratios prepared; binary RY evaluation occurs only during emission; synthesis/error certificates absent",
+  "assignment_bit_order": "integer bit j is x_(j+1); fixed reference x_0=0",
+  "classical_preprocessing_scope": "explicit input/check/lookup/ratio counts; sorting comparisons, bit costs and time/RSS are not measured",
+  "cycle_space_dimension": 1,
+  "decoder_promise": "all weight<=2 errors; arbitrary clause target with initially clean scratch",
+  "degree": 2,
+  "dirty_workspace_target_law": "not promised",
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      0
+    ]
+  ],
+  "formal_interval_certificate": false,
+  "incidence_masks": [
+    1,
+    3,
+    6,
+    12,
+    8
+  ],
+  "input": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "vertices": 5
+  },
+  "lookup_entries": [
+    {
+      "edge_indices": [
+        0
+      ],
+      "syndrome_mask": 1
+    },
+    {
+      "edge_indices": [
+        0,
+        1
+      ],
+      "syndrome_mask": 2
+    },
+    {
+      "edge_indices": [
+        1
+      ],
+      "syndrome_mask": 3
+    },
+    {
+      "edge_indices": [
+        3,
+        4
+      ],
+      "syndrome_mask": 4
+    },
+    {
+      "edge_indices": [
+        1,
+        2
+      ],
+      "syndrome_mask": 5
+    },
+    {
+      "edge_indices": [
+        2
+      ],
+      "syndrome_mask": 6
+    },
+    {
+      "edge_indices": [
+        0,
+        2
+      ],
+      "syndrome_mask": 7
+    },
+    {
+      "edge_indices": [
+        4
+      ],
+      "syndrome_mask": 8
+    },
+    {
+      "edge_indices": [
+        0,
+        4
+      ],
+      "syndrome_mask": 9
+    },
+    {
+      "edge_indices": [
+        2,
+        3
+      ],
+      "syndrome_mask": 10
+    },
+    {
+      "edge_indices": [
+        1,
+        4
+      ],
+      "syndrome_mask": 11
+    },
+    {
+      "edge_indices": [
+        3
+      ],
+      "syndrome_mask": 12
+    },
+    {
+      "edge_indices": [
+        0,
+        3
+      ],
+      "syndrome_mask": 13
+    },
+    {
+      "edge_indices": [
+        2,
+        4
+      ],
+      "syndrome_mask": 14
+    },
+    {
+      "edge_indices": [
+        1,
+        3
+      ],
+      "syndrome_mask": 15
+    }
+  ],
+  "lookup_storage_scope": "n-bit mask plus one/two edge indices; no dense syndrome table or free coherent lookup",
+  "m": 5,
+  "minimum_distance_lower_bound": 5,
+  "n": 4,
+  "normalization_squared": 190,
+  "observed_source_counts": {
+    "barrier": 7,
+    "cx": 686,
+    "h": 222,
+    "measure": 4,
+    "reset": 12,
+    "ry": 17,
+    "t": 436,
+    "tdg": 327,
+    "x": 80,
+    "z": 5
+  },
+  "observed_source_operations": 1796,
+  "off_promise_extension": "zero for unmatched syndromes",
+  "optimization_advantage_claim": false,
+  "per_pattern_coefficients": [
+    5,
+    5,
+    2
+  ],
+  "physical_resources_computed": false,
+  "plan_integrity_sha256": "6a54be87ee3661385f90e7e3812e633afa232f3e14d6f6aefe292448ccbbf434",
+  "prepared_support_size": 16,
+  "preprocessing_counts": {
+    "D2_masks_including_vacuum": 16,
+    "adjacent_D2_collision_checks": 15,
+    "adjacent_edge_duplicate_checks": 4,
+    "adjacent_wedge_endpoint_checks": 4,
+    "connectivity_adjacency_entries": 10,
+    "connectivity_vertices_visited": 5,
+    "edge_endpoint_records": 10,
+    "graph_vertices": 5,
+    "incidence_masks": 5,
+    "integer_rotation_ratios": 9,
+    "lookup_entries": 15,
+    "ordered_edges": 5,
+    "sign_records": 5,
+    "sorted_edge_entries": 5,
+    "triangle_membership_queries": 5,
+    "wedge_entries": 5
+  },
+  "promise_checks": {
+    "independent_D2_collisions": true,
+    "simple_connected_cyclic": true,
+    "triangle_four_cycle_wedges": true
+  },
+  "quality_scope": "no generic or figure-eight optimum-probability/repetition bound",
+  "reference_vertex": 0,
+  "requires_observed_cli_exit_zero": true,
+  "rotation_sine_squared": [
+    {
+      "counter": 0,
+      "fraction": "41/190",
+      "position": 0
+    },
+    {
+      "counter": 0,
+      "fraction": "37/149",
+      "position": 1
+    },
+    {
+      "counter": 1,
+      "fraction": "4/41",
+      "position": 1
+    },
+    {
+      "counter": 0,
+      "fraction": "33/112",
+      "position": 2
+    },
+    {
+      "counter": 1,
+      "fraction": "4/37",
+      "position": 2
+    },
+    {
+      "counter": 0,
+      "fraction": "29/79",
+      "position": 3
+    },
+    {
+      "counter": 1,
+      "fraction": "4/33",
+      "position": 3
+    },
+    {
+      "counter": 0,
+      "fraction": "1/2",
+      "position": 4
+    },
+    {
+      "counter": 1,
+      "fraction": "4/29",
+      "position": 4
+    }
+  ],
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.degree_two_generation_ledger.v1",
+  "semicircle_theorem_applied": false,
+  "shared_clean_workspace": 3,
+  "signs": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "simulation_performed": false,
+  "source_counts": {
+    "barrier": 7,
+    "cx": 686,
+    "h": 222,
+    "measure": 4,
+    "reset": 12,
+    "ry": 17,
+    "t": 436,
+    "tdg": 327,
+    "x": 80,
+    "z": 5
+  },
+  "source_materialized_operations": 1796,
+  "source_unitary_primitives": 1773,
+  "source_wires": 12,
+  "sources": {
+    "module": {
+      "bytes": 32756,
+      "path": "src/openquantum/optimization_dqi_degree_two.py",
+      "sha256": "44e2838d4b9482c04992580e8a5000885e035b08989b23d1b67b92b234c9dfb4"
+    },
+    "script": {
+      "bytes": 20087,
+      "path": "scripts/generate_optimization_dqi_degree_two.py",
+      "sha256": "a31c596a53f4cecde73a6f57a52a466ba37a18296c46f7a5cf8a139d5b32236d"
+    }
+  },
+  "stage_ranges": {
+    "decoder": {
+      "barrier": 1785,
+      "start": 454,
+      "stop": 1785
+    },
+    "hadamard": {
+      "barrier": 1790,
+      "start": 1786,
+      "stop": 1790
+    },
+    "preparation": {
+      "barrier": 438,
+      "start": 13,
+      "stop": 438
+    },
+    "readout": {
+      "barrier": 1795,
+      "start": 1791,
+      "stop": 1795
+    },
+    "reset": {
+      "barrier": 12,
+      "start": 0,
+      "stop": 12
+    },
+    "sign": {
+      "barrier": 444,
+      "start": 439,
+      "stop": 444
+    },
+    "syndrome": {
+      "barrier": 453,
+      "start": 445,
+      "stop": 453
+    }
+  },
+  "status": "generation_only_pending_invocation_acceptance"
+}

@@ -66,7 +66,7 @@
     "reference_overlap_squared": 0.9999999999999938,
     "observed_global_phase_real": 1.0,
     "observed_global_phase_imag": 0.0,
-    "statevector_seconds": 0.011203901999579102,
+    "statevector_seconds": 0.005779207999921709,
     "validation": "all workspace outcomes retained; zero-work leakage is a check, not postselection"
   },
   "scan": [
@@ -76,7 +76,7 @@
       "reference_marked_probability": 0.0625,
       "reference_max_amplitude_error": 5.551115123125783e-17,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.0015770079999128939
+      "statevector_seconds": 0.0009080950001134624
     },
     {
       "steps": 1,
@@ -84,7 +84,7 @@
       "reference_marked_probability": 0.0625,
       "reference_max_amplitude_error": 1.3877787807814457e-16,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.004653358999803459
+      "statevector_seconds": 0.0023641340001177014
     },
     {
       "steps": 2,
@@ -92,7 +92,7 @@
       "reference_marked_probability": 0.25,
       "reference_max_amplitude_error": 4.440892098500626e-16,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.007365650000338064
+      "statevector_seconds": 0.003579080999998041
     },
     {
       "steps": 3,
@@ -100,7 +100,7 @@
       "reference_marked_probability": 0.25,
       "reference_max_amplitude_error": 5.828670879282072e-16,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.010321024999939254
+      "statevector_seconds": 0.005070708999937779
     },
     {
       "steps": 4,
@@ -108,7 +108,7 @@
       "reference_marked_probability": 0.390625,
       "reference_max_amplitude_error": 9.43689570931383e-16,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.013247396000224398
+      "statevector_seconds": 0.006334266999829197
     },
     {
       "steps": 5,
@@ -116,7 +116,7 @@
       "reference_marked_probability": 0.390625,
       "reference_max_amplitude_error": 1.1657341758564144e-15,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.01619839199975104
+      "statevector_seconds": 0.007611293999843838
     },
     {
       "steps": 6,
@@ -124,7 +124,7 @@
       "reference_marked_probability": 0.25,
       "reference_max_amplitude_error": 1.3877787807814457e-15,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.019374347999928432
+      "statevector_seconds": 0.009316584000089279
     },
     {
       "steps": 7,
@@ -132,7 +132,7 @@
       "reference_marked_probability": 0.25,
       "reference_max_amplitude_error": 1.3600232051658168e-15,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.02231829199990898
+      "statevector_seconds": 0.010334778000014921
     },
     {
       "steps": 8,
@@ -140,7 +140,7 @@
       "reference_marked_probability": 0.00390625,
       "reference_max_amplitude_error": 1.4710455076283324e-15,
       "workspace_leakage": 0.0,
-      "statevector_seconds": 0.025236847999622114
+      "statevector_seconds": 0.011699119000013525
     }
   ],
   "readout": [
@@ -233,8 +233,8 @@
       "coin_calls": 16384,
       "shift_calls": 16384,
       "individual_qubit_measurements": 45056,
-      "sampling_seconds": 0.0005344050000530842,
-      "statevector_seconds": 0.009842432999903394,
+      "sampling_seconds": 0.00035950500000581087,
+      "statevector_seconds": 0.006371602000172061,
       "method": "ideal Statevector probabilities followed by multinomial measurement draws; no device noise"
     },
     {
@@ -326,8 +326,8 @@
       "coin_calls": 16384,
       "shift_calls": 16384,
       "individual_qubit_measurements": 45056,
-      "sampling_seconds": 0.000487498999973468,
-      "statevector_seconds": 0.013396964000094158,
+      "sampling_seconds": 0.00026614399985191994,
+      "statevector_seconds": 0.0063266139998177096,
       "method": "ideal Statevector probabilities followed by multinomial measurement draws; no device noise"
     },
     {
@@ -419,8 +419,8 @@
       "coin_calls": 16384,
       "shift_calls": 16384,
       "individual_qubit_measurements": 45056,
-      "sampling_seconds": 0.0004831800001738884,
-      "statevector_seconds": 0.0143447489999744,
+      "sampling_seconds": 0.00023061000001689536,
+      "statevector_seconds": 0.006511314000135826,
       "method": "ideal Statevector probabilities followed by multinomial measurement draws; no device noise"
     }
   ],
@@ -469,7 +469,7 @@
     "reference_overlap_squared": 0.9999999999999969,
     "observed_global_phase_real": 1.0,
     "observed_global_phase_imag": 0.0,
-    "statevector_seconds": 0.003802031999839528,
+    "statevector_seconds": 0.0021283490000314487,
     "validation": "all workspace outcomes retained; zero-work leakage is a check, not postselection"
   },
   "fixed_state_repetition": {
@@ -659,7 +659,7 @@
     "workflow_wall_seconds": "complete CPU checks, circuit exports, copies and figures before final summary/JSON serialization"
   },
   "provenance": {
-    "generated_at_utc": "2026-11-14T06:56:16.047202+00:00",
+    "generated_at_utc": "2026-11-14T10:43:29.321476+00:00",
     "python": "3.12.14",
     "packages": {
       "qiskit": "2.6.2",
@@ -676,7 +676,7 @@
     "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
     "generator_sha256": "c315442288b8280a920dac96b7d510ac9bbfe6a315db67de1ebc871f51ef9ffa",
     "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
-    "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_commit": "899761f7fc918b466aea32df2543ea7c9b0535be",
     "dirty_owned_source": false,
     "invocation": "python scripts/generate_optimization_walk.py",
     "upstream": [
@@ -709,5 +709,5 @@
     },
     "revision_note": "source_commit identifies the checkout base at generation; content hashes identify the implementation and generator actually executed"
   },
-  "workflow_wall_seconds": 1.1966602299999067
+  "workflow_wall_seconds": 0.6816656810001405
 }

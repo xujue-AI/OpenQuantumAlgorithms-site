@@ -1,0 +1,107 @@
+{
+  "files": {
+    "circuit.qasm": {
+      "bytes": 156632,
+      "sha256": "fcd15107c21d7edacdcac4809bb11a2d14b11bc7c188c01d60dbcf3de6255ac1"
+    },
+    "ledger.json": {
+      "bytes": 11481,
+      "sha256": "4e3bfd6ce1f8c5f830f4161eb6b483e08decf359bbd25adc485cb08297062f9f"
+    },
+    "operations.ndjson": {
+      "bytes": 377359,
+      "sha256": "5329083ef68173a1826ea5532a4c12de81958aa35be13e2b9408e963302795a1"
+    }
+  },
+  "formal_interval_certificate": false,
+  "input": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        0
+      ]
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "vertices": 9
+  },
+  "input_file_pin": {
+    "bytes": 207,
+    "sha256": "7c83af33b61d23b26a8cd3a2c2cde4809f808ce372f9ac334adec370ed537c20"
+  },
+  "limits": {
+    "max_m": 10,
+    "max_n": 8,
+    "max_operations": 14000,
+    "max_output_bytes": 1048576,
+    "max_qubits": 24,
+    "time_limit_seconds": 10.0
+  },
+  "optimization_advantage_claim": false,
+  "physical_resources_computed": false,
+  "publication_complete": false,
+  "requires_observed_cli_exit_zero": true,
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.degree_two_source_manifest.v1",
+  "scope": "generation_only",
+  "simulation_performed": false,
+  "sources": {
+    "module": {
+      "bytes": 32756,
+      "path": "src/openquantum/optimization_dqi_degree_two.py",
+      "sha256": "44e2838d4b9482c04992580e8a5000885e035b08989b23d1b67b92b234c9dfb4"
+    },
+    "script": {
+      "bytes": 20087,
+      "path": "scripts/generate_optimization_dqi_degree_two.py",
+      "sha256": "a31c596a53f4cecde73a6f57a52a466ba37a18296c46f7a5cf8a139d5b32236d"
+    }
+  },
+  "status": "complete_generation_component_pending_invocation_acceptance"
+}

@@ -1,6 +1,8 @@
 """Suzuki release registration and outer trust boundaries; no scientific replay."""
 from __future__ import annotations
 
+from types import SimpleNamespace
+
 import ast
 import builtins
 import hashlib
@@ -107,9 +109,10 @@ def checker(monkeypatch, checked):
         "export_code": {"PUBLIC_COMPRESSED_JSON_FILES": frozenset(),
                         "PUBLIC_OPTIMIZATION_WORD_FILES": frozenset(),
                         "PUBLIC_SUZUKI_FILES": frozenset(BUNDLE + "/" + p for p in ARTIFACTS),
-                        "PUBLIC_GIBBS_CHANNEL_FILES": frozenset(), "PUBLIC_DQI_FILES": frozenset(),
+                        "PUBLIC_GIBBS_CHANNEL_FILES": frozenset(), "PUBLIC_DECAY_FILES": frozenset(), "PUBLIC_CORRECTION_FILES": frozenset(), "PUBLIC_DQI_DEGREE_TWO_FILES": frozenset(), "PUBLIC_DQI_DEGREE_TWO_PUBLIC_FILES": frozenset(), "PUBLIC_DQI_FILES": frozenset(),
                         "PUBLIC_BATH_FILES": frozenset(), "PUBLIC_MULTIPRODUCT_FILES": frozenset(), "PUBLIC_BAYESIAN_FILES": frozenset(), "PUBLIC_ROBUST_FILES": frozenset(), "PUBLIC_DQI_STRUCTURED_FILES": frozenset(), "PUBLIC_QPE_FEEDBACK_FILES": frozenset(),
-                        "PUBLIC_LOCAL_SPIN_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_PRESENTATION_FILES": frozenset(), "PUBLIC_MEASURED_AND_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_REPRODUCTION_FILES": frozenset(), "PUBLIC_DQI_RESOURCE_FILES": frozenset()},
+                        "PUBLIC_LOCAL_SPIN_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_PRESENTATION_FILES": frozenset(), "PUBLIC_MEASURED_AND_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_REPRODUCTION_FILES": frozenset(), "PUBLIC_DQI_RESOURCE_FILES": frozenset(),
+                        "PUBLIC_CORRECTED_FORMULA_FILES": frozenset(), "PUBLIC_GQSP_FILES": frozenset()},
         "energy_record_release": {
             "CORE_FILES": frozenset(), "MANIFEST_NAME": "unused.json", "RECORD_DIRECTORY": "unused",
             "SOURCE_FILES": (), "VERIFIER_FILES": (), "checked_directory": checked.checked_directory,
@@ -137,6 +140,7 @@ def checker(monkeypatch, checked):
     module = load_source(path, "suzuki_registration_site_caller")
     monkeypatch.setattr(module, "site_word_record_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_gibbs_channel_record_errors", lambda *_: [])
+    monkeypatch.setattr(module, "site_decay_record_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_tail_record_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_dqi_saved_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_bath_saved_errors", lambda *_: [])
@@ -149,8 +153,11 @@ def checker(monkeypatch, checked):
     monkeypatch.setattr(module, "site_local_spin_saved_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_local_spin_reproduction_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_measured_and_saved_errors", lambda *_: [])
+    monkeypatch.setattr(module, "site_hamiltonian_packet_errors", lambda *_: [])
     monkeypatch.setattr(module, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(module, "GIBBS_CHANNEL_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(module, "DECAY_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(module, "CORRECTION_ARTICLE_LABELS", frozenset())
     return module
 
 
@@ -201,6 +208,11 @@ def test_bootstrap_verifier_import_does_not_load_suzuki_dependencies(monkeypatch
 
 @pytest.mark.parametrize("change", ["changed", "missing", "unrecorded", "provenance_missing", "provenance_invalid"])
 def test_package_manifest_failure_precedes_all_downstream_dispatch(package, checked, monkeypatch, tmp_path, change):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root, _ = package
     marker = tmp_path / "manifest-marker.txt"
     if change == "changed":
@@ -218,7 +230,7 @@ def test_package_manifest_failure_precedes_all_downstream_dispatch(package, chec
         pytest.fail("A failed complete manifest reached a downstream gate")
 
     for name in ("verify_formal_record", "_load_energy_record_gate", "_load_dynamics_record_gate",
-                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate",
+                 "_load_word_record_gate", "_load_suzuki_record_gate", "_load_gibbs_channel_record_gate", "_load_decay_record_gate",
                  "_load_tail_record_gate", "_load_dqi_saved_gate", "_verify_bath_saved_identity",
                  "_load_multiproduct_saved_gate", "_load_local_spin_saved_gate"):
         monkeypatch.setattr(checked, name, forbidden)
@@ -228,6 +240,11 @@ def test_package_manifest_failure_precedes_all_downstream_dispatch(package, chec
 
 
 def test_package_dispatch_follows_manifest_formal_energy_and_word_checks(tmp_path, checked, monkeypatch):
+    monkeypatch.setattr(checked, "_load_dqi_degree_two_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(checked, "_verify_dqi_degree_two_public_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(checked, "_load_correction_record_gate", lambda *args: SimpleNamespace(
+        BUNDLE_RELATIVE="unused", verify_bundle=lambda *args, **kwargs: None,
+        verify_download=lambda *args, **kwargs: None))
     root = (tmp_path / 'package').resolve()
     helper = (
         b"BUNDLE_RELATIVE = 'assets/generated/simulation/suzuki'\n"
@@ -558,6 +575,8 @@ def test_site_hashes_and_parses_the_same_provenance_snapshot(site, checker, monk
 
 
 def test_site_preview_failure_cannot_dispatch_the_suzuki_helper(tmp_path, checker, monkeypatch):
+    monkeypatch.setattr(checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root = (tmp_path / "site").resolve()
     root.mkdir()
     (root / "index.html").write_text("<html><body>Structural fixture</body></html>")
@@ -580,6 +599,8 @@ def test_site_preview_failure_cannot_dispatch_the_suzuki_helper(tmp_path, checke
 
 
 def test_site_main_dispatches_only_after_successful_preview(site, checker, monkeypatch):
+    monkeypatch.setattr(checker, "site_dqi_degree_two_saved_errors", lambda *args, **kwargs: [])
+    monkeypatch.setattr(checker, "site_correction_record_errors", lambda *args, **kwargs: [])
     root, identity = site
     (root / "index.html").write_text("<html><body>Structural fixture</body></html>")
     monkeypatch.setattr(checker, "required_artifacts", lambda: [])
@@ -808,6 +829,28 @@ def test_suzuki_ci_pair_restores_exact_latest_72_commands():
         "python scripts/generate_simulation_suzuki.py --output-dir .cache/suzuki-ci-replay",
         "python scripts/verify_simulation_suzuki.py --replay-dir .cache/suzuki-ci-replay",
     )
+    degree_two = 'python scripts/verify_dqi_degree_two_public_saved.py --artifact-root . --source-root . --notebook-path notebooks/optimization_dqi_degree_two.ipynb --expected-manifest-sha256 ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c --archive assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip --time-limit-seconds 10'
+    assert len(commands) == 86 and commands.count(degree_two) == 1
+    assert commands.index(degree_two) == commands.index("python scripts/verify_dqi_saved.py assets/generated/optimization/dqi") + 1
+    commands = [value for value in commands if value != degree_two]
+    correction = 'python scripts/verify_detailed_balance_correction_saved.py --bundle assets/generated/simulation/detailed-balance-correction --source-root . --download assets/generated/simulation/detailed-balance-correction-download.zip'
+    assert len(commands) == 85 and commands.count(correction) == 1
+    assert commands.index(correction) == commands.index("python scripts/verify_detailed_balance_decay.py") + 1
+    commands = [value for value in commands if value != correction]
+    hamiltonian_saved = (
+        "python scripts/verify_simulation_cpf_public.py --bundle assets/generated/simulation/corrected-formula",
+        "python scripts/verify_simulation_gqsp_public.py --bundle assets/generated/simulation/gqsp",
+    )
+    assert len(commands) == 84
+    assert all(commands.count(value) == 1 for value in hamiltonian_saved)
+    assert commands.index(hamiltonian_saved[0]) == commands.index(
+        "python scripts/verify_simulation_multiproduct_saved.py") + 1
+    assert commands.index(hamiltonian_saved[1]) == commands.index(hamiltonian_saved[0]) + 1
+    commands = [value for value in commands if value not in hamiltonian_saved]
+    decay = "python scripts/verify_detailed_balance_decay.py"
+    assert len(commands) == 82 and commands.count(decay) == 1
+    assert commands.index(decay) == commands.index("python scripts/verify_detailed_balance_channel.py") + 1
+    commands = [value for value in commands if value != decay]
     measured_and = "python scripts/verify_shor_measured_and_saved.py"
     assert len(commands) == 81 and commands.count(measured_and) == 1
     assert commands.index(measured_and) == commands.index("python scripts/generate_shor_recovery.py") + 1

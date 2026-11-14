@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "component": "finite weighted-decay block access",
+  "files": {
+    "completion.json": {
+      "bytes": 3347,
+      "sha256": "38438d02427f1ac4368d24b850f3cee7cfb0e8d1dbb9363b6ea10d564b949ad6"
+    },
+    "grid/LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "grid/complex-decay-block.qasm": {
+      "bytes": 11985,
+      "sha256": "859dd5d7541ca2ab2c96011865e3549120a42ce95b603bb817a767a3ef4e4acb"
+    },
+    "grid/detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "grid/detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "grid/detailed_balance_decay_reference.py": {
+      "bytes": 26002,
+      "sha256": "71ac5f486ad04cb532a86bf1c4dec4e175d0cfb377a7de26f206cd3f5c5daf53"
+    },
+    "grid/diagonal-decay-block.qasm": {
+      "bytes": 2549,
+      "sha256": "94f063c06242cac81b2c5a9ff994d6b7aea288cfea45643718764bf09439fc92"
+    },
+    "grid/generate_detailed_balance_decay.py": {
+      "bytes": 16294,
+      "sha256": "e5b0be192e7e1bb48fd7bc8d9148f4c41e19e448edb26a023b78d972b46e7cad"
+    },
+    "grid/manifest.json": {
+      "bytes": 2068,
+      "sha256": "a77996282baad56fc8d15d44635d204dd21764fc09b57d557057c62783fb89de"
+    },
+    "grid/manifest.sha256": {
+      "bytes": 80,
+      "sha256": "86d911efff450b9c096f136663392eb16d1c0b691048ac5af53865c3e837e2af"
+    },
+    "grid/requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "grid/results.json": {
+      "bytes": 79004,
+      "sha256": "dab75172b425b99c8b0e0fb3d015018c2d3dc2e7e111d15c5060bb005dc1d3dd"
+    },
+    "grid/tilted-decay-block.qasm": {
+      "bytes": 4089,
+      "sha256": "3733789ebe85984d617310dae7ebe0e5d36b6c7142dd49183fc12b7f20e4ba3c"
+    },
+    "n12/LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "n12/chain-n12-decay-block.qasm": {
+      "bytes": 45013,
+      "sha256": "642c8b66a22458e03c188fd27b62988dc8a55e25c732a084783c35ccea37567f"
+    },
+    "n12/detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "n12/detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "n12/detailed_balance_decay_reference.py": {
+      "bytes": 26002,
+      "sha256": "71ac5f486ad04cb532a86bf1c4dec4e175d0cfb377a7de26f206cd3f5c5daf53"
+    },
+    "n12/generate_detailed_balance_decay.py": {
+      "bytes": 16294,
+      "sha256": "e5b0be192e7e1bb48fd7bc8d9148f4c41e19e448edb26a023b78d972b46e7cad"
+    },
+    "n12/manifest.json": {
+      "bytes": 1788,
+      "sha256": "13f5f577a2cb419a140f3a5c7122eae769c1498eb7395a582be9b431ed7070a2"
+    },
+    "n12/manifest.sha256": {
+      "bytes": 80,
+      "sha256": "acb40d57faff7356a9795cc06cd4fc7b781eb54d6f3e8c5091ad7be0e99a3915"
+    },
+    "n12/requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "n12/results.json": {
+      "bytes": 13258,
+      "sha256": "ff418a00eb7888ca8badf985eca76c2833b30ebae7deea822346602a1a46e718"
+    },
+    "notebook/executed-original.ipynb": {
+      "bytes": 67042,
+      "sha256": "75b3e78a8bab913164cd7a9497b653c3806b1b9a760fb3970474c7708d7f97a4"
+    },
+    "notebook/executed.ipynb": {
+      "bytes": 67325,
+      "sha256": "681fce3c1cc2c322761af3096ce1e4e425a3ce8fee75f9d63413efdb382d1d43"
+    },
+    "notebook/source.ipynb": {
+      "bytes": 15872,
+      "sha256": "bf40152ca9d7ae93362594ebc5f36d206aa8d08a9c978cb664229b35d1709021"
+    }
+  },
+  "total_payload_bytes": 479596,
+  "source_commit": "b1a05ef76a47d8e7ef893cd6bf0ffb66772d4ce1",
+  "all_components_verified": false,
+  "new_algorithm_result": false,
+  "general_coherent_correction_implemented": false,
+  "channel_or_sampler_implemented": false,
+  "physical_resources_computed": false
+}

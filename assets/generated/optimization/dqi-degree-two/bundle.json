@@ -1,0 +1,134 @@
+{
+  "contract_sha256": "aa7babb8a9dc86c87d5bb1af0fb4f898c15098a2401232f006e89833267daa17",
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "kind": "file",
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "c5/circuit.qasm": {
+      "bytes": 20497,
+      "kind": "file",
+      "sha256": "77dc4be3077117d57c4d0f41352fd37753dea4ee8270f4a3645a7e1db5cd6826"
+    },
+    "c5/ledger.json": {
+      "bytes": 6498,
+      "kind": "file",
+      "sha256": "c3fc0643520c09cd41274fa7ea0bad41bd30b207c102be3fdfb1a3137f4183b6"
+    },
+    "c5/manifest.json": {
+      "bytes": 1857,
+      "kind": "file",
+      "sha256": "59379c7690155ae788251380c513efdc1ac270a815880dea1fc7f4d87214863d"
+    },
+    "c5/operations.ndjson": {
+      "bytes": 51288,
+      "kind": "file",
+      "sha256": "1768a462cf13e6345caadbe47a4b1675b713716d6d013a5b6e28063032d9c3e5"
+    },
+    "figure-eight/circuit.qasm": {
+      "bytes": 156632,
+      "kind": "file",
+      "sha256": "fcd15107c21d7edacdcac4809bb11a2d14b11bc7c188c01d60dbcf3de6255ac1"
+    },
+    "figure-eight/ledger.json": {
+      "bytes": 11481,
+      "kind": "file",
+      "sha256": "4e3bfd6ce1f8c5f830f4161eb6b483e08decf359bbd25adc485cb08297062f9f"
+    },
+    "figure-eight/manifest.json": {
+      "bytes": 2098,
+      "kind": "file",
+      "sha256": "31b0e3cad1ff754aef3dbde3ee40e806791bda4a13e680edd38c45618fe15420"
+    },
+    "figure-eight/operations.ndjson": {
+      "bytes": 377359,
+      "kind": "file",
+      "sha256": "5329083ef68173a1826ea5532a4c12de81958aa35be13e2b9408e963302795a1"
+    },
+    "generate_optimization_dqi_degree_two.py": {
+      "bytes": 20087,
+      "kind": "file",
+      "sha256": "a31c596a53f4cecde73a6f57a52a466ba37a18296c46f7a5cf8a139d5b32236d"
+    },
+    "input-c5.json": {
+      "bytes": 152,
+      "kind": "file",
+      "sha256": "74aefe6e15fe47ae52c5b1d234ce7fc7a7fa16ba6b6c4f36e16d2adbdfd33066"
+    },
+    "input-figure-eight.json": {
+      "bytes": 207,
+      "kind": "file",
+      "sha256": "7c83af33b61d23b26a8cd3a2c2cde4809f808ce372f9ac334adec370ed537c20"
+    },
+    "invocation-acceptance.json": {
+      "bytes": 1843,
+      "kind": "file",
+      "sha256": "158edceadd0ca586cd6da85b7e38c3420566a0c8c2c5b8f941210bacb6a29db1"
+    },
+    "optimization_dqi_degree_two.py": {
+      "bytes": 32756,
+      "kind": "file",
+      "sha256": "44e2838d4b9482c04992580e8a5000885e035b08989b23d1b67b92b234c9dfb4"
+    },
+    "optimization_dqi_degree_two_verify.py": {
+      "bytes": 40312,
+      "kind": "file",
+      "sha256": "c69eb9b8251df3340893456e1d24bfcb61ef185d67a8703b47cf27e1b7816dc2"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "kind": "file",
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "validate_optimization_dqi_degree_two.py": {
+      "bytes": 23609,
+      "kind": "file",
+      "sha256": "9afcdb43ca44e4014ec418ef7de595a01ae2a8cdbe37614eb56928f42013eea4"
+    },
+    "validation/manifest.json": {
+      "bytes": 989,
+      "kind": "file",
+      "sha256": "e597dd0f4e8d5d5cc626d1295894296277ceaa5aa243ecc1478dd39c6ab6ee69"
+    },
+    "validation/validation.json": {
+      "bytes": 315222,
+      "kind": "file",
+      "sha256": "4953a594cdc4f1e5af34f09668144c30f6490fb9729a14af5b1a91880bf6e4cd"
+    },
+    "verify_dqi_degree_two_saved.py": {
+      "bytes": 34976,
+      "kind": "file",
+      "sha256": "803ea2b04d1d5c141361cdebb98f7996b973e268625df340210d1d61042fed56"
+    }
+  },
+  "notebook": {
+    "code_cells": 4,
+    "path": "optimization_dqi_degree_two.ipynb",
+    "source_projection_sha256": "3cc9682dded7381b2895cbca21f68fdc4581a94aac33ae36cad57c333577928f",
+    "source_template_sha256": "18ac25e51a13e6bf74b188c75ba4f58f2c699e0c734c9c6872dc9f9a7e062c66"
+  },
+  "schema": "openquantum.dqi.degree_two_saved_bundle.v1",
+  "source_pins": {
+    "generate_optimization_dqi_degree_two.py": {
+      "bytes": 20087,
+      "sha256": "a31c596a53f4cecde73a6f57a52a466ba37a18296c46f7a5cf8a139d5b32236d"
+    },
+    "optimization_dqi_degree_two.py": {
+      "bytes": 32756,
+      "sha256": "44e2838d4b9482c04992580e8a5000885e035b08989b23d1b67b92b234c9dfb4"
+    },
+    "optimization_dqi_degree_two_verify.py": {
+      "bytes": 40312,
+      "sha256": "c69eb9b8251df3340893456e1d24bfcb61ef185d67a8703b47cf27e1b7816dc2"
+    },
+    "validate_optimization_dqi_degree_two.py": {
+      "bytes": 23609,
+      "sha256": "9afcdb43ca44e4014ec418ef7de595a01ae2a8cdbe37614eb56928f42013eea4"
+    },
+    "verify_dqi_degree_two_saved.py": {
+      "bytes": 34976,
+      "sha256": "803ea2b04d1d5c141361cdebb98f7996b973e268625df340210d1d61042fed56"
+    }
+  }
+}

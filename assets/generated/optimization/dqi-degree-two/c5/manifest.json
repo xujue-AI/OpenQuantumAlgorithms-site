@@ -1,0 +1,82 @@
+{
+  "files": {
+    "circuit.qasm": {
+      "bytes": 20497,
+      "sha256": "77dc4be3077117d57c4d0f41352fd37753dea4ee8270f4a3645a7e1db5cd6826"
+    },
+    "ledger.json": {
+      "bytes": 6498,
+      "sha256": "c3fc0643520c09cd41274fa7ea0bad41bd30b207c102be3fdfb1a3137f4183b6"
+    },
+    "operations.ndjson": {
+      "bytes": 51288,
+      "sha256": "1768a462cf13e6345caadbe47a4b1675b713716d6d013a5b6e28063032d9c3e5"
+    }
+  },
+  "formal_interval_certificate": false,
+  "input": {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        0
+      ]
+    ],
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "vertices": 5
+  },
+  "input_file_pin": {
+    "bytes": 152,
+    "sha256": "74aefe6e15fe47ae52c5b1d234ce7fc7a7fa16ba6b6c4f36e16d2adbdfd33066"
+  },
+  "limits": {
+    "max_m": 5,
+    "max_n": 4,
+    "max_operations": 2000,
+    "max_output_bytes": 262144,
+    "max_qubits": 12,
+    "time_limit_seconds": 10.0
+  },
+  "optimization_advantage_claim": false,
+  "physical_resources_computed": false,
+  "publication_complete": false,
+  "requires_observed_cli_exit_zero": true,
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.degree_two_source_manifest.v1",
+  "scope": "generation_only",
+  "simulation_performed": false,
+  "sources": {
+    "module": {
+      "bytes": 32756,
+      "path": "src/openquantum/optimization_dqi_degree_two.py",
+      "sha256": "44e2838d4b9482c04992580e8a5000885e035b08989b23d1b67b92b234c9dfb4"
+    },
+    "script": {
+      "bytes": 20087,
+      "path": "scripts/generate_optimization_dqi_degree_two.py",
+      "sha256": "a31c596a53f4cecde73a6f57a52a466ba37a18296c46f7a5cf8a139d5b32236d"
+    }
+  },
+  "status": "complete_generation_component_pending_invocation_acceptance"
+}

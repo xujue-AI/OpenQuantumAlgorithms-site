@@ -1,0 +1,92 @@
+{
+  "status": "verified_small_finite_decay_block",
+  "component": "finite weighted-decay block access",
+  "source_commit": "b1a05ef76a47d8e7ef893cd6bf0ffb66772d4ce1",
+  "paper_doi": "10.1038/s41586-025-09583-x",
+  "client_date": "2026-11-14",
+  "client_timezone": "Asia/Shanghai",
+  "completed_cli_exit": 0,
+  "completed_stage_exits": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "focused_tests_passed": 70,
+  "focused_test_seconds": 3.47,
+  "tiny_grid_cases": 3,
+  "tiny_grid_total_wires": [
+    6,
+    5,
+    8
+  ],
+  "tiny_source_operations": [
+    130,
+    218,
+    744
+  ],
+  "source_n12_wires": 18,
+  "source_n12_operations": 2408,
+  "source_n12_simulated": false,
+  "notebook_code_cells": 5,
+  "notebook_execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "notebook_numerical_replay_performed": false,
+  "maximum_actual_finite_trotter_entry_error": 9.32587623891176e-15,
+  "maximum_actual_finite_trotter_frobenius_error": 1.784311350329354e-14,
+  "exact_hamiltonian_finite_target_errors_retained": true,
+  "physical_eta_independently_checked": true,
+  "alpha_definition": "eta*gamma_max",
+  "all_selected_auxiliaries": "zero: clock, proposal, weight and selector",
+  "whole_cli_wall_seconds": 13.696762540988857,
+  "observed_cpu_seconds": 11.979934,
+  "sampled_tree_rss_bytes": 286179328,
+  "timing_scope": "classical source/tests/references/saved-reader workflow including CLI startup; not physical quantum runtime",
+  "work_inventory": {
+    "basis_column_statevector_evolutions": 29,
+    "tiny_scipy_expm_evaluations": 92,
+    "successful_decay_source_materializations": 9,
+    "accounting_scope": "frozen source-loop inventory with 70 passing tests and retained generator counters"
+  },
+  "notebook_presentation": {
+    "markdown_updated_after_execution": true,
+    "code_text_outputs_execution_counts_unchanged": true,
+    "source_sha256": "bf40152ca9d7ae93362594ebc5f36d206aa8d08a9c978cb664229b35d1709021",
+    "executed_original_sha256": "75b3e78a8bab913164cd7a9497b653c3806b1b9a760fb3970474c7708d7f97a4",
+    "presentation_sha256": "681fce3c1cc2c322761af3096ce1e4e425a3ce8fee75f9d63413efdb382d1d43"
+  },
+  "prior_collection_failure": {
+    "source_commit": "e955aa1794fd99132fa53bd3e16145ac8139f114",
+    "cli_exit": 1,
+    "pytest_exit": 2,
+    "executed_intended_cases": 0,
+    "declared_scientific_calls": 0,
+    "retained_separately": true
+  },
+  "resource_exclusions": [
+    "caller system/zero-auxiliary initialization and reset",
+    "readout and classical processing",
+    "selection repetitions or amplitude amplification",
+    "rotation synthesis",
+    "physical code/factory/routing/controller/fault model",
+    "general coherent-correction access/evolution",
+    "channel/Gibbs preparation, uniform mesh/continuum/KMS accuracy and mixing/output guarantees"
+  ],
+  "scope": "actual all-auxiliary-zero D_fin/alpha block against independent finite-Trotter Fourier references; no sampler/channel or physical estimate",
+  "all_components_verified": false,
+  "new_algorithm_result": false,
+  "coherent_correction_implemented": false,
+  "channel_implemented": false,
+  "sampler_implemented": false,
+  "exact_finite_kms": false,
+  "mixing_certificate": false,
+  "rotations_synthesized": false,
+  "physical_resources_computed": false,
+  "formal_proof_reproduced": false,
+  "complete_descendant_lifetime_cleanup_proven": false
+}

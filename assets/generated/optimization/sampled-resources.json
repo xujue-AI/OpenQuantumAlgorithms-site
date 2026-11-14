@@ -19945,11 +19945,11 @@
           "circuit_depth": 15
         }
       ],
-      "optimizer_wall_seconds": 0.9351080420005928,
-      "training_evaluation_wall_seconds": 0.9210508040077912,
-      "validation_evaluation_wall_seconds": 0.005589138999766874,
-      "evaluation_wall_seconds": 0.926639943007558,
-      "classical_control_seconds": 0.014057237992801674,
+      "optimizer_wall_seconds": 0.541496792000089,
+      "training_evaluation_wall_seconds": 0.5318217880017073,
+      "validation_evaluation_wall_seconds": 0.0033376190001490613,
+      "evaluation_wall_seconds": 0.5351594070018564,
+      "classical_control_seconds": 0.009675003998381726,
       "accepted_proposals": 10,
       "rejected_proposals": 374
     },
@@ -42607,17 +42607,17 @@
           "circuit_depth": 4
         }
       ],
-      "optimizer_wall_seconds": 0.4036120040004789,
-      "training_evaluation_wall_seconds": 0.3968452599960983,
-      "validation_evaluation_wall_seconds": 0.004059227999732684,
-      "evaluation_wall_seconds": 0.400904487995831,
-      "classical_control_seconds": 0.006766744004380598,
+      "optimizer_wall_seconds": 0.241329118999829,
+      "training_evaluation_wall_seconds": 0.2367890800001078,
+      "validation_evaluation_wall_seconds": 0.002441910999777974,
+      "evaluation_wall_seconds": 0.23923099099988576,
+      "classical_control_seconds": 0.004540038999721219,
       "accepted_proposals": 13,
       "rejected_proposals": 179
     }
   },
   "total_shots": 1052928,
-  "workflow_wall_seconds": 1.3533304659999885,
+  "workflow_wall_seconds": 0.7916847559999951,
   "physical_resource_estimate": null,
   "whole_trajectory_physical_status": "pending",
   "preparation": "fresh all-zero input assumed per modeled shot; H or RY/CX preparation counted",
@@ -42635,7 +42635,7 @@
     "physical initialization time, routing, synthesis certificates and QEC runtime excluded"
   ],
   "provenance": {
-    "generated_at_utc": "2026-11-14T06:55:51.209407+00:00",
+    "generated_at_utc": "2026-11-14T10:43:14.501739+00:00",
     "python": "3.12.14",
     "packages": {
       "qiskit": "2.6.2",
@@ -42652,7 +42652,7 @@
     "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
     "generator_sha256": "f658b1346e8436633eef60392712f72fea0f304374438c5f46817bbc8205cd76",
     "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
-    "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_commit": "899761f7fc918b466aea32df2543ea7c9b0535be",
     "dirty_owned_source": false,
     "invocation": "python scripts/generate_optimization_sampled.py",
     "revision_note": "source_commit identifies the checkout base at generation; content hashes identify the implementation and generator actually executed"
