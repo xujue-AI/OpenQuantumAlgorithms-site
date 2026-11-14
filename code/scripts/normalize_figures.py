@@ -21,6 +21,8 @@ IMMUTABLE_SVGS = frozenset({
     "assets/generated/bayesian-qpe-validation/replay/posterior.svg",
     "assets/generated/robust-qpe/circuit.svg",
     "assets/generated/robust-qpe/recovery.svg",
+    "assets/generated/simulation/detailed-balance-two-round/two-round-circuit.svg",
+    "assets/generated/optimization/dqi-path-majority/component-circuit.svg",
 })
 IMMUTABLE_CSVS = frozenset({
     "assets/generated/shor/measured-and/scaling.csv",

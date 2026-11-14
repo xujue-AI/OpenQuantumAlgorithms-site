@@ -117,8 +117,8 @@
   "primitive_dependency_depth": 269,
   "arbitrary_rotations_per_attempt": 156,
   "classical_work_measured": {
-    "exact_coefficient_preprocessing_seconds": 0.0009477239998432196,
-    "source_generation_and_primitive_lowering_seconds": 0.020434101000091687,
+    "exact_coefficient_preprocessing_seconds": 0.0016134970001075999,
+    "source_generation_and_primitive_lowering_seconds": 0.030021566999948845,
     "scope": "one CPU run; generation recomputes coefficients internally, so these are separately measured activities rather than disjoint total-time components",
     "excluded_from_physical_runtime": true
   },
@@ -141,29 +141,29 @@
     ],
     "actual_condition_number": 1.787085605640206,
     "unamplified_success_probability": 0.8009422555701236,
-    "success_probability": 0.8009422555701202,
+    "success_probability": 0.8009422555701203,
     "amplification_prediction": 0.8009422555701236,
     "amplification_rounds": 0,
-    "conditional_state_trace_distance_to_classical_solution": 1.4601083531867905e-05,
-    "conditional_state_trace_distance_to_unamplified_polynomial": 3.7516062773049505e-16,
-    "z_quantum": 0.6403780032369316,
+    "conditional_state_trace_distance_to_classical_solution": 1.4601083531898247e-05,
+    "conditional_state_trace_distance_to_unamplified_polynomial": 3.388125485427988e-16,
+    "z_quantum": 0.6403780032369315,
     "z_classical_solution": 0.6403572985864838,
-    "z_absolute_bias": 2.070465044778924e-05,
+    "z_absolute_bias": 2.070465044767822e-05,
     "scaled_inverse_operator_error": 4.036190711547322e-05,
     "analytic_operator_error_bound": 0.0001220703125,
     "analytic_conditional_trace_distance_bound": 6.103888176768603e-05,
     "analytic_conditional_Pauli_bias_bound": 0.00012207776353537206,
     "solution_state_real": [
-      0.8773536972057631,
-      0.4093381421664072,
-      0.15204045122318782,
-      0.10708450838896381
+      0.877353697205763,
+      0.40933814216640707,
+      0.1520404512231878,
+      0.1070845083889638
     ],
     "solution_state_imag": [
-      -0.16370486457016406,
-      0.02767470541711553,
-      -0.022889083113086864,
-      -0.004505828720477986
+      -0.16370486457016403,
+      0.027674705417115524,
+      -0.022889083113086857,
+      -0.004505828720477985
     ],
     "classical_solution_state_real": [
       0.8773482708383487,
@@ -194,10 +194,10 @@
     "statistical_error": 0.03,
     "statistical_failure": 0.005,
     "acceptance_failure": 0.005,
-    "success_probability_used": 0.8009422555701202,
+    "success_probability_used": 0.8009422555701203,
     "attempt_cap_per_accepted_slot": 10,
     "total_capped_attempts": 133150,
-    "numerical_expected_attempts_until_success_without_cap": 16624.16972934238,
+    "numerical_expected_attempts_until_success_without_cap": 16624.169729342375,
     "assumptions": [
       "IID fresh prepared inputs",
       "ideal numerical acceptance remains applicable",
@@ -247,7 +247,7 @@
     }
   },
   "provenance": {
-    "source_revision_at_generation": "899761f7fc918b466aea32df2543ea7c9b0535be",
+    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
     "implementation_sha256": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
     "qasm_sha256": "c41aed067c55f52dbe7cf17b35ce08f3c327f487b1b738b52f6bcc1242618966",
     "source_note": "commit plus exact module hash identifies working-tree code; generation can precede commit",

@@ -1,0 +1,21 @@
+{
+  "schema": "openquantum.dqi.path_majority_signed_input.v1",
+  "state_wires": 12,
+  "state_amplitudes": 4096,
+  "syndrome_wires": [0, 1, 2, 3],
+  "target_wires": [4, 5, 6, 7, 8],
+  "scratch_wires": [9, 10, 11],
+  "initial_scratch": "000",
+  "support_size": 512,
+  "index_formula": "ell=s+16*t",
+  "s_range": [0, 15],
+  "t_range": [0, 31],
+  "signed_numerator_formula": "(-1)^((popcount(s)+popcount(t)) mod 2)*(ell+1)",
+  "normalization_squared_integer_formula": "512*513*1025//6",
+  "amplitude_formula": "signed_numerator/sqrt(normalization_squared)",
+  "all_support_magnitudes_distinct": true,
+  "uniform_target_plus": false,
+  "independent_output_index_formula": "s+16*(t XOR direct_majority_decode(s))",
+  "scratch_zero_required": true,
+  "executed_by_metadata_function": false
+}

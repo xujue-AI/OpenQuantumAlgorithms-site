@@ -35,20 +35,20 @@
       "0x1.922b74d9dca21p+0",
       "0x1.9186c146fe13ap+0",
       "0x1.95c2262b22229p+0",
-      "0x1.8460c6775685bp+0",
-      "0x1.b644689fb16e5p+0",
+      "0x1.8460c6775685ap+0",
+      "0x1.b644689fb16e4p+0",
       "0x1.4d24ed9881fafp+0",
       "0x1.4d24ed9881fafp+0",
-      "0x1.b644689fb16e5p+0",
-      "0x1.8460c6775685bp+0",
+      "0x1.b644689fb16e4p+0",
+      "0x1.8460c6775685ap+0",
       "0x1.95c2262b22229p+0",
       "0x1.9186c146fe13ap+0",
       "-0x1.9219d57975e98p+1"
     ],
     "target_coefficient_count": 12,
     "coefficient_l1_error_upper": {
-      "numerator": "242578268223591763726703414762699",
-      "denominator": "365375409332725729550921208179070754913983135744",
+      "numerator": "799221058583659920409171638402451",
+      "denominator": "730750818665451459101842416358141509827966271488",
       "rounding": "upwards on a 2^-160 lattice"
     },
     "phase_exponential_error_upper": {
@@ -57,11 +57,11 @@
       "rounding": "upwards on a 2^-160 lattice"
     },
     "uniform_realization_error_upper": {
-      "numerator": "242578268223591763726703414762703",
-      "denominator": "365375409332725729550921208179070754913983135744",
+      "numerator": "1598442117167319840818343276804917",
+      "denominator": "1461501637330902918203684832716283019655932542976",
       "rounding": "upwards on a 2^-160 lattice"
     },
-    "uniform_realization_error_float_upper": 6.639151459771343e-16,
+    "uniform_realization_error_float_upper": 1.0936984785638062e-15,
     "float_conversion": "math.nextafter towards +infinity; null means overflow",
     "trig_precision_bits": 160,
     "maximum_phase_magnitude": 32,
@@ -81,10 +81,10 @@
     ]
   },
   "phase_adjusted_contract": {
-    "uniform_ideal_phase_error_bound": 6.639151459771343e-16,
-    "phase_adjusted_trace_bound": 0.003518550214596507,
-    "phase_adjusted_Pauli_bias_bound": 0.007037100429193014,
-    "phase_adjusted_success_lower_bound": 0.11111111111111066,
+    "uniform_ideal_phase_error_bound": 1.0936984785638062e-15,
+    "phase_adjusted_trace_bound": 0.003518550214597801,
+    "phase_adjusted_Pauli_bias_bound": 0.007037100429195602,
+    "phase_adjusted_success_lower_bound": 0.11111111111111037,
     "retry_success_lower_bound_exact": "15637498706147/140737488355328",
     "retry_success_rounding": "downwards to2^-48 dyadic; exact target plus certified ideal stored phases",
     "scope": "promised exact matrix/access and exact binary phase gates; numerical access/loading, compiler and physical synthesis require separate certificates"
@@ -165,18 +165,18 @@
       0.9681694990624912
     ],
     "actual_condition_number": 1.2383368235206218,
-    "success_observed_ideal_numeric": 0.14940947049213144,
-    "branch_error_vs_independent_spectral_polynomial": 1.5535153351999742e-15,
+    "success_observed_ideal_numeric": 0.1494094704921313,
+    "branch_error_vs_independent_spectral_polynomial": 1.4693957770002175e-15,
     "solve_residual": 3.179800655392251e-17,
-    "solution_trace_distance": 0.0016893067787255188,
-    "z_actual": 0.17925482896951572,
+    "solution_trace_distance": 0.0016893067787270726,
+    "z_actual": 0.1792548289695134,
     "z_classical_solution": 0.18213385736842452,
-    "z_bias": 0.0028790283989088006,
-    "qasm_state_error_modulo_global_phase": 3.1305378892104695e-15,
-    "qasm_full_measured_probability_error": 1.2212453270876722e-15,
+    "z_bias": 0.002879028398911132,
+    "qasm_state_error_modulo_global_phase": 3.529964300768651e-15,
+    "qasm_full_measured_probability_error": 1.7208456881689926e-15,
     "scope": "deterministic declared input; independent Kronecker matrix/solve and restricted NumPy QASM vector replay; no uniform numeric-loading/compiler certificate"
   },
-  "qasm_sha256": "248d7df0793b8f9f6ec4d5081fdce8a70af32cfe4adfa70d46522c9321d64662",
+  "qasm_sha256": "d14ee696f3497cc92ae8daa8cad7b5289b76b2a09300d5e6c5919246af9b6bb0",
   "qasm_global_phase_radians": 4.7123889803846595,
   "qasm_scope": "complete measured trial; pinned export may omit overall phase",
   "qasm_literal_policy": "official Qiskit disable_constants=True; preserve stored numeric angles instead of approximate symbolic-pi recognition",
@@ -185,9 +185,9 @@
     "primitive_operations": 25000,
     "timeout_seconds": 60
   },
-  "classical_generation_validation_seconds_CPU": 0.10526767599981213,
+  "classical_generation_validation_seconds_CPU": 0.16832198100019014,
   "source_provenance": {
-    "source_revision_at_generation": "899761f7fc918b466aea32df2543ea7c9b0535be",
+    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
     "source_hashes_sha256": {
       "src/openquantum/reciprocal_physical_sweep.py": "f6cfe9c30fba956753b85496cc577030419cf25fd86ec812c11c6fc777fe0f3b",
       "scripts/generate_reciprocal_physical_sweep.py": "737b35d188730a5ab495e7f6945c8bdbb5d1ed609d39e6bb55ee2fd590010466",

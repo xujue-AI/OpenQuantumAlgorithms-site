@@ -71,14 +71,14 @@
     "analytic_return_probability": 0.11710479508965414,
     "probability_sum": 1.0000000000000004,
     "dense_operator_check_performed": true,
-    "operator_max_absolute_error": 2.220446049250313e-16,
-    "state_max_absolute_error": 8.326672684688674e-17,
+    "operator_max_absolute_error": 2.7755575615628914e-16,
+    "state_max_absolute_error": 2.7755575615628914e-16,
     "scope": "bounded numerical circuit checks; not formal proof or angle-synthesis certificate",
     "numerical_tolerance": 1e-12,
     "numerical_checks_passed": true
   },
   "provenance": {
-    "source_commit_at_generation": "899761f7fc918b466aea32df2543ea7c9b0535be",
+    "source_commit_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
     "source_commit_scope": "source hashes identify code if generation precedes a commit",
     "sha256": {
       "src/openquantum/quantum_walks.py": "8dcd4a28ebe982e48f3360a1e9c17fc8ea94f84cc4c0b1b0cedebd40e98ba0f6",

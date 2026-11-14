@@ -1,0 +1,84 @@
+{
+  "component_numerically_validated": false,
+  "files": {
+    "component-ledger.json": {
+      "bytes": 638,
+      "sha256": "eae3ccf4c2259bfb8c367619b5d895e4e00e66de5a1a0700a5bfb114b99c77e4"
+    },
+    "component.ndjson": {
+      "bytes": 14666,
+      "sha256": "3cbb0866a388adf23a5b27594d90a92db99cfbab4ad901d597eef39ae9a6f562"
+    },
+    "component.qasm": {
+      "bytes": 5921,
+      "sha256": "7c4359771fd9274d9217cb60ce4066384b8aa2eaeffe219927e1c3bf0bb18091"
+    },
+    "program-ledger.json": {
+      "bytes": 6199,
+      "sha256": "26f240f45234477a0e739004ccec8921c6c6581b1c631ee10ed0f786ed3324fc"
+    },
+    "program.ndjson": {
+      "bytes": 94905,
+      "sha256": "b1a422a454fd13ece43c21e83bce17cffa919174a1741544ee9445e6c9e1c22b"
+    },
+    "program.qasm": {
+      "bytes": 39912,
+      "sha256": "a43c9d0ae35facdf0f19d68053bff42488db092ca9ba96f24eac787ab52fc1bd"
+    }
+  },
+  "formal_interval_certificate": false,
+  "full_program_validated": false,
+  "input": {
+    "k": 3,
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "input_file_pin": {
+    "bytes": 71,
+    "sha256": "3ffac5f985d06910bd5c194a5e56b15beffaa3535d7b76b9e05743717faeab30"
+  },
+  "limits": {
+    "max_k": 3,
+    "max_operations": 3165,
+    "max_output_bytes": 1048576,
+    "max_qubits": 31,
+    "time_limit_seconds": 20.0
+  },
+  "old_degree_two_evidence_reexecuted": false,
+  "optimization_advantage_claim": false,
+  "physical_resources_computed": false,
+  "publication_complete": false,
+  "requires_observed_cli_exit_zero": true,
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.path_majority_source_manifest.v1",
+  "scope": "full_program_and_local_component_generation_only",
+  "simulation_performed": false,
+  "sources": {
+    "module": {
+      "bytes": 36874,
+      "path": "src/openquantum/optimization_dqi_path_majority.py",
+      "sha256": "ba3015dbdf35fe3ccec6a79503f2e911b735c2ea716969f690eb5fbc5e3c61bf"
+    },
+    "script": {
+      "bytes": 23690,
+      "path": "scripts/generate_optimization_dqi_path_majority.py",
+      "sha256": "01bafe43a205a2b04441ceb8c3aac99f4285b383899a57ed4296c3a6e64c8305"
+    }
+  },
+  "status": "complete_generation_component_pending_invocation_acceptance"
+}

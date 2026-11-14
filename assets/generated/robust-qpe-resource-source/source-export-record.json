@@ -1,0 +1,119 @@
+{
+  "complete_end_to_end_cost": false,
+  "environment": {
+    "architecture": "arm64",
+    "device": "local CPU; no quantum hardware or GPU",
+    "packages": {
+      "numpy": "2.5.4",
+      "qiskit": "2.6.2"
+    },
+    "python": "3.12.14",
+    "system": "Darwin"
+  },
+  "evidence_scope": "Curated invocation observations from original receipts; raw private paths, arguments, logs, grants and operational plans are excluded. Raw producer manifests were written before their final guards; the failed manifest is not a successful invocation receipt.",
+  "formal_proof": false,
+  "hardware": false,
+  "limits": {
+    "capture_bytes": 262144,
+    "outer_wall_seconds": 180,
+    "output_bytes": 8388608,
+    "output_files": 40,
+    "per_macrocycle_source_operations_maximum": 200000,
+    "self_RSS_bytes": 268435456,
+    "source_only_levels": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "source_only_target_qubits": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "numerical_validation": false,
+  "phase_output": false,
+  "physical_and_numerical_followup": "planned; held prepared physical code was not invoked",
+  "physical_estimation": false,
+  "runs": [
+    {
+      "captured_stderr_bytes": 751,
+      "captured_stderr_sha256": "c2d5a307fecee19d2243090cb7dfbaa7b717cad20cd87aaaa0b0b211330a8fb8",
+      "captured_stdout_bytes": 0,
+      "captured_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "exit_code": 1,
+      "failure": "MemoryError at final self-RSS guard after export",
+      "final_self_RSS_guard_passed": false,
+      "id": "initial",
+      "original_receipt_sha256": "25a00c52ae338cfdd6818a22bd05bd5b5c526e3acb39dab22ccce716fcf0bc45",
+      "outer_wall_seconds": 11.66489499999443,
+      "producer_sha256": "f466be1d1ce7f022905103bb2f53dd2feb9e7cacb122835d52de4a196d1e2cfe",
+      "raw_manifest_path": "evidence/initial-source-manifest.json",
+      "recorded_peak_rss_bytes": 301023232,
+      "recorded_peak_scope": "reported before the final self-RSS check",
+      "source_commit": "182fb7e33ae98c0de0a12084eff1d85efa49e06f",
+      "whole_invocation_completed": false
+    },
+    {
+      "captured_stderr_bytes": 0,
+      "captured_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "captured_stdout_bytes": 264,
+      "captured_stdout_sha256": "8821104f3620f31278ab3f477a7a231da27c9250239ba299cd1eea22c3939dd0",
+      "exit_code": 0,
+      "failure": null,
+      "final_self_RSS_guard_passed": true,
+      "id": "repaired",
+      "original_receipt_sha256": "4b3b6939c675f1acd8cd4510144611668627907fa1ffefd2b6f51dfae322a67e",
+      "outer_wall_seconds": 9.968715666997014,
+      "producer_sha256": "5c5b34f3041a33d319232d60c5bd06067893f328a6645d1c38ed51860631e393",
+      "raw_manifest_path": "evidence/repaired-source-manifest.json",
+      "recorded_peak_rss_bytes": 106037248,
+      "recorded_peak_scope": "reported before the final self-RSS check",
+      "source_commit": "57d0c3c6ff732b7118ec37f6cf9b626443309ec7",
+      "whole_invocation_completed": true
+    }
+  ],
+  "sampling": false,
+  "schema": "openquantum.robust_qpe_resource_source_execution_summary.v1",
+  "scope": "source_export_only",
+  "task": {
+    "actual_macrocycle_counts": {
+      "cx": 2016,
+      "h": 24,
+      "measure": 12,
+      "p": 3024,
+      "reset": 108,
+      "sdg": 6,
+      "x": 96
+    },
+    "actual_macrocycle_primitives": 5286,
+    "fringe_count": 12,
+    "levels": 6,
+    "macrocycle_wires": 9,
+    "maximum_power": 32,
+    "n": 8,
+    "phase_nominal": 0.3,
+    "repeated_protocol_counts_status": "design_only_not_executed_shots",
+    "shots_per_fringe": 400
+  },
+  "test_evidence": {
+    "collected": 79,
+    "not_rerun_after_buffer_repair": true,
+    "original_receipt_sha256": "67041b3dce1fc2a5beff631bc8818291dc662cb60fe14cea8e0fcf89d09140f0",
+    "outer_wall_seconds": 4.0608122080157045,
+    "passed": 79,
+    "post_repair_static_review": true,
+    "pytest_seconds": 3.74,
+    "tested_producer_sha256": "f466be1d1ce7f022905103bb2f53dd2feb9e7cacb122835d52de4a196d1e2cfe",
+    "tested_source_commit": "815955f2f7dfdd23623268b6784fceb949bc2e26",
+    "tests_sha256": {
+      "tests/test_robust_qpe_resources.py": "a77daf938d716bae17f4fe30dfc85e5b82e8f8971dcdc80ae09e2a84f3adcf77",
+      "tests/test_robust_qpe_resources_producer.py": "384cd1ae4c837e893ac5d4f58558a58237008372640bf2682103309086cee1e8"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "openquantum.dqi.path_majority_saved_companion_spec.v1",
+  "status": "specification_only_unexecuted",
+  "execution_authorized": false,
+  "notebook_created": false,
+  "notebook_executed": false,
+  "scientific_work_reexecuted": false,
+  "source": "scripts/display_dqi_path_majority_saved.py",
+  "callable": "display_saved_component",
+  "manifest": "assets/generated/optimization/dqi-path-majority/public-manifest.json",
+  "expected_manifest_sha256": null,
+  "manifest_digest_is_external_argument": true,
+  "source_digest_is_read_from_authenticated_manifest": true,
+  "source_loaded_only_from_same_authenticated_bytes": true,
+  "source_roots_require_complete_provenance_before_loading": true,
+  "time_limit_seconds": 5,
+  "artifact_modes": {
+    "repository": {"artifact_root": ".", "source_root": "."},
+    "site": {"artifact_root": "_build/html", "source_root": "_build/html/code"}
+  },
+  "future_code_cells": [
+    {
+      "order": 1,
+      "purpose": "Authenticate the external expected manifest digest and the saved-display script pin before loading the same script bytes.",
+      "stdlib_imports": ["hashlib", "json", "pathlib"],
+      "source_loading": "Compile the authenticated display source bytes in a fresh namespace whose __name__ is not __main__; do not use a producer, verifier, package loader or bytecode cache.",
+      "file_bounds": "Use the display source and manifest bounds and ordinary nonredirecting files from the accepted public projection."
+    },
+    {
+      "order": 2,
+      "purpose": "Call display_saved_component with explicit artifact/source roots, the external expected manifest digest and a five-second limit, then render only its selected saved summary.",
+      "reconstruction": false,
+      "numerical_validation": false,
+      "output_scope": "Parent-accepted twelve-wire local decoder only; thirty-one-wire full program remains generation-only."
+    }
+  ],
+  "cli_argv_template": [
+    "python", "-I", "-S", "-B", "scripts/display_dqi_path_majority_saved.py",
+    "--display", "--artifact-root", ".", "--source-root", ".",
+    "--manifest-sha256", "@externally-approved-manifest-sha256@",
+    "--time-limit-seconds", "5"
+  ],
+  "future_authority": "A separately reviewed source/static handoff and explicit bounded saved-display or notebook authorization are required; this specification is not an executed companion.",
+  "forbidden_actions": [
+    "scientific source imports", "generator or numerical verifier invocation",
+    "component rerun", "new numerical target", "input/reference vector construction",
+    "diagnostic recomputation", "full-program evolution", "kernel execution without separate authority",
+    "physical estimation", "publication without coordinator release checks"
+  ],
+  "publication_complete": false
+}

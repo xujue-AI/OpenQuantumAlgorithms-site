@@ -2,14 +2,14 @@ All objective calls below used exact ideal statevectors and **zero shots**. Thre
 
 | Algorithm / start | Final parameters (radians) | Exact value | Quality check | Sweeps / calls | Stop | Optimizer wall (s) | Classical control (s) |
 |---|---|---:|---|---:|---|---:|---:|
-| QAOA / 1 | 0.785397339, 0.392698669 | 3.0000000000 | ratio 0.750000000; target met True | 42 / 169 | step_tolerance | 0.087971 | 0.000986 |
-| QAOA / 2 | 0.785397339, 0.392698669 | 3.0000000000 | ratio 0.750000000; target met True | 38 / 153 | step_tolerance | 0.079962 | 0.000921 |
-| QAOA / 3 | -0.785397339, -0.392698669 | 3.0000000000 | ratio 0.750000000; target met True | 43 / 173 | step_tolerance | 0.087699 | 0.000997 |
-| VQE / 1 | -0.244978333 | -2.0615528128 | ground gap 1.13e-13; target met True | 31 / 63 | step_tolerance | 0.011196 | 0.000386 |
-| VQE / 2 | -0.244978333 | -2.0615528128 | ground gap 1.12e-13; target met True | 32 / 65 | step_tolerance | 0.011827 | 0.000379 |
-| VQE / 3 | -0.244978333 | -2.0615528128 | ground gap 1.13e-13; target met True | 35 / 71 | step_tolerance | 0.012528 | 0.000398 |
+| QAOA / 1 | 0.785397339, 0.392698669 | 3.0000000000 | ratio 0.750000000; target met True | 42 / 169 | step_tolerance | 0.176754 | 0.001864 |
+| QAOA / 2 | 0.785397339, 0.392698669 | 3.0000000000 | ratio 0.750000000; target met True | 38 / 153 | step_tolerance | 0.158662 | 0.001655 |
+| QAOA / 3 | -0.785397339, -0.392698669 | 3.0000000000 | ratio 0.750000000; target met True | 43 / 173 | step_tolerance | 0.180116 | 0.001828 |
+| VQE / 1 | -0.244978333 | -2.0615528128 | ground gap 1.13e-13; target met True | 31 / 63 | step_tolerance | 0.024180 | 0.000729 |
+| VQE / 2 | -0.244978333 | -2.0615528128 | ground gap 1.12e-13; target met True | 32 / 65 | step_tolerance | 0.022679 | 0.000691 |
+| VQE / 3 | -0.244978333 | -2.0615528128 | ground gap 1.13e-13; target met True | 35 / 71 | step_tolerance | 0.024253 | 0.000725 |
 
-The complete ideal toy-workflow execution took 0.296339 s on this CPU, including exact reference checks, post-fit quality checks and probability generation. Artifact drawing/export and logical-ledger compilation are outside that workflow timer.
+The complete ideal toy-workflow execution took 0.596259 s on this CPU, including exact reference checks, post-fit quality checks and probability generation. Artifact drawing/export and logical-ledger compilation are outside that workflow timer.
 
 Finite-shot results evaluate the first optimized state only. These are independent ideal multinomial samples, not executed hardware shots. The standard error is estimated from the joint measured observable; it is not a rigorous confidence interval. The Hoeffding radius separately gives an ideal-sampling 95% bound for each listed estimate, not simultaneous coverage across this table.
 

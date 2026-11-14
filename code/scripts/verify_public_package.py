@@ -1328,6 +1328,327 @@ def _load_dynamics_record_gate(package: Path, provenance: dict):
     return gate
 
 
+# Exact retained public projections; no new numerical or formal execution.
+NEXT_SAVED_PACKETS = {'thermal-two-round': {'helper': 'scripts/verify_thermal_two_round_public.py',
+                       'helper_sha256': '128a4b64d0de76137b1bbdb49aa95cfc7ecdda45b66f1d70af8abae66f3d31c9',
+                       'prefix': 'assets/generated/simulation/detailed-balance-two-round',
+                       'manifest': 'assets/generated/simulation/detailed-balance-two-round/manifest.json',
+                       'manifest_sha256': 'e2f3c836fa05c6a0ae6be5daa18684a6b9ec96c6033f5bd34420a2413fe54377',
+                       'asset_hashes': {'assets/generated/simulation/detailed-balance-two-round/LICENSE.txt': {'bytes': 1093,
+                                                                                                               'sha256': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c'},
+                                        'assets/generated/simulation/detailed-balance-two-round/README.md': {'bytes': 5536,
+                                                                                                             'sha256': 'f0d05698d2cc3d6fb9ac9189dd44d8d3f2616a4da41df13cbfd2463eb0691934'},
+                                        'assets/generated/simulation/detailed-balance-two-round/UPSTREAM-LICENSES.md': {'bytes': 2179,
+                                                                                                                        'sha256': 'eab2d2d578ce1c6fa46bcade400a0b5e7d3d3e5557a811f2b461dc544ea99e9f'},
+                                        'assets/generated/simulation/detailed-balance-two-round/circuits/correction-heralded-step.qasm': {'bytes': 28765,
+                                                                                                                                          'sha256': 'ef799261d2152586a4e6031a028c1ffdeb41dc89813174958a97b1f796274dd4'},
+                                        'assets/generated/simulation/detailed-balance-two-round/circuits/correction_lcu.qasm': {'bytes': 28765,
+                                                                                                                                'sha256': 'ef799261d2152586a4e6031a028c1ffdeb41dc89813174958a97b1f796274dd4'},
+                                        'assets/generated/simulation/detailed-balance-two-round/circuits/round_macro.qasm': {'bytes': 43542,
+                                                                                                                             'sha256': '3d0629430724e49c9a10ab807e722f53164ae18a49b3c73e6cecba22d71cd74a'},
+                                        'assets/generated/simulation/detailed-balance-two-round/circuits/two_round_trial.qasm': {'bytes': 93239,
+                                                                                                                                 'sha256': 'a90cd2c06d3b765d3b27b666393e3367c321e4b2fba4c182ce2b5406546a53f2'},
+                                        'assets/generated/simulation/detailed-balance-two-round/circuits/weak_dilation.qasm': {'bytes': 14556,
+                                                                                                                               'sha256': '8c772b5d751918b24c19a4f8356ce05ff63a1695cecdf094f3ff9c71ff486916'},
+                                        'assets/generated/simulation/detailed-balance-two-round/circuits/weak_reset_prefix.qasm': {'bytes': 14652,
+                                                                                                                                   'sha256': '61db5e3d7f498d19ce9948e962818259009c91f8dfc3b108c3ba0c43b0e000a8'},
+                                        'assets/generated/simulation/detailed-balance-two-round/manifest.json': {'bytes': 3497,
+                                                                                                                 'sha256': 'e2f3c836fa05c6a0ae6be5daa18684a6b9ec96c6033f5bd34420a2413fe54377'},
+                                        'assets/generated/simulation/detailed-balance-two-round/manifest.sha256': {'bytes': 80,
+                                                                                                                   'sha256': 'f3bfd5181075899ac7fe182716c1546ab90e9c8058a382207c27338df34aa4ed'},
+                                        'assets/generated/simulation/detailed-balance-two-round/requirements-lock.txt': {'bytes': 1974,
+                                                                                                                         'sha256': '6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088'},
+                                        'assets/generated/simulation/detailed-balance-two-round/results.json': {'bytes': 1155156,
+                                                                                                                'sha256': 'ad4460dd4c63c7254bc5a790814df9f178ded7f43775efbb740ac208904a408a'},
+                                        'assets/generated/simulation/detailed-balance-two-round/sources/detailed_balance_access.py': {'bytes': 25361,
+                                                                                                                                      'sha256': '7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77'},
+                                        'assets/generated/simulation/detailed-balance-two-round/sources/detailed_balance_channel.py': {'bytes': 24362,
+                                                                                                                                       'sha256': '99ac8dbfacf6ee484caeb6ad328fe145f150871e4272538dd279f67cc2573a8b'},
+                                        'assets/generated/simulation/detailed-balance-two-round/sources/detailed_balance_correction.py': {'bytes': 24902,
+                                                                                                                                          'sha256': '62ede4bbafe79a15e7c66068f0dc2b54a32322bbbff4015f00e7a0ba64e3eb48'},
+                                        'assets/generated/simulation/detailed-balance-two-round/sources/detailed_balance_decay.py': {'bytes': 12324,
+                                                                                                                                     'sha256': '82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1'},
+                                        'assets/generated/simulation/detailed-balance-two-round/sources/detailed_balance_thermal_two_round.py': {'bytes': 22928,
+                                                                                                                                                 'sha256': '45ae8cc6b55d39caf29b80a8cf1aef770b7dae29d45d6e6bc41e341890c3b388'},
+                                        'assets/generated/simulation/detailed-balance-two-round/sources/detailed_balance_thermal_two_round_reference.py': {'bytes': 39381,
+                                                                                                                                                           'sha256': '98dfc9f75e6849419427ec2256a51adde1a52b1ac2bd6f8ee59ffaaa35ca8b52'},
+                                        'assets/generated/simulation/detailed-balance-two-round/sources/thermal_two_round_contract.py': {'bytes': 7277,
+                                                                                                                                         'sha256': '2a5f41bf8e36981ef9adac3928aaede05b984b094771320158d45f771f2d9fb1'},
+                                        'assets/generated/simulation/detailed-balance-two-round/summary.json': {'bytes': 2629,
+                                                                                                                'sha256': '84034c9fe48802232aafde8b9f9c65e6d7b37484c2e84a589ddd5a781ffb341e'},
+                                        'assets/generated/simulation/detailed-balance-two-round/two-round-circuit.svg': {'bytes': 10610,
+                                                                                                                         'sha256': '46eec2cb49da05e716b6c358293a370ac4aecb86ece06dbcd5a9c40430ae4770'}},
+                       'source_hashes': {'scripts/display_thermal_two_round_saved.py': '0e2caf47a6225d9d7c8ab8b4e23f72ee6193dd1b6dd7cf0a521eae40d3922fbc',
+                                         'scripts/verify_thermal_two_round_public.py': '128a4b64d0de76137b1bbdb49aa95cfc7ecdda45b66f1d70af8abae66f3d31c9'}},
+ 'shor-finite-adder': {'helper': 'scripts/verify_shor_finite_adder_reference.py',
+                       'helper_sha256': '0549789470c469e3b5e6ac86e40a1ba92cd2d19064afd07fe1f049b9a2a2f9fb',
+                       'prefix': 'assets/generated/shor/finite-adder-reference',
+                       'manifest': 'assets/generated/shor/finite-adder-reference/manifest.json',
+                       'manifest_sha256': 'a1b76407144da82df6065dd666e85da106c3e404dbd3af25b05b6e81e78164eb',
+                       'asset_hashes': {'assets/generated/shor/finite-adder-reference/LICENSE.txt': {'bytes': 1093,
+                                                                                                     'sha256': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c'},
+                                        'assets/generated/shor/finite-adder-reference/README.md': {'bytes': 2668,
+                                                                                                   'sha256': '9d1d949a2799610d5c523b49d94e877d9dbb2c86d08bf27c29dfa0c6a43d1a0f'},
+                                        'assets/generated/shor/finite-adder-reference/RippleTwoBitBool.lean': {'bytes': 6017,
+                                                                                                               'sha256': 'ca5b82b3ef36fb3ee651ce439e32ea6fc442ed8c7b3cb91ada9efa567562055f'},
+                                        'assets/generated/shor/finite-adder-reference/axiom-audit.txt': {'bytes': 595,
+                                                                                                         'sha256': '5967e8405d837377184177d9ea900bc6b29235302323bda89f29d04f5f421212'},
+                                        'assets/generated/shor/finite-adder-reference/compilation.json': {'bytes': 3434,
+                                                                                                          'sha256': 'db6ff7a90c7b5fa19cb3d52d9fab5c3ddb6ec6e58af77032212b7a0c38fe2858'},
+                                        'assets/generated/shor/finite-adder-reference/lean-toolchain': {'bytes': 29,
+                                                                                                        'sha256': '8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88'},
+                                        'assets/generated/shor/finite-adder-reference/manifest.json': {'bytes': 1180,
+                                                                                                       'sha256': 'a1b76407144da82df6065dd666e85da106c3e404dbd3af25b05b6e81e78164eb'},
+                                        'assets/generated/shor/finite-adder-reference/ripple-two-bit-source.qasm': {'bytes': 258,
+                                                                                                                    'sha256': '868b5fd14a9b1e12fe21a7329d6ea3eb07c613c13755d0bf87d486f27e018009'}},
+                       'source_hashes': {'scripts/verify_shor_finite_adder_reference.py': '0549789470c469e3b5e6ac86e40a1ba92cd2d19064afd07fe1f049b9a2a2f9fb'}},
+ 'dqi-path-majority': {'helper': 'scripts/display_dqi_path_majority_saved.py',
+                       'helper_sha256': '1e82bad0820cac97efd7a4805585a1b70aa89413de7d4af117170d2e230b219a',
+                       'prefix': 'assets/generated/optimization/dqi-path-majority',
+                       'manifest': 'assets/generated/optimization/dqi-path-majority/public-manifest.json',
+                       'manifest_sha256': 'b6f6ad7f3e4914a6af7c34a9c852652e623b9d22de07635378ad379e816363d9',
+                       'asset_hashes': {'assets/generated/optimization/dqi-path-majority/README.md': {'bytes': 5457,
+                                                                                                      'sha256': '9914c333d5848f9d7a41f40a4ad02e074909a1c3c5c77da96c17c170779202c2'},
+                                        'assets/generated/optimization/dqi-path-majority/accepted-components.json': {'bytes': 4758,
+                                                                                                                     'sha256': 'c3792356e0d2c3348720e85203f9c1e68a334afd36c8933cba3bafa7fc917a77'},
+                                        'assets/generated/optimization/dqi-path-majority/code/scripts/generate_optimization_dqi_path_majority.py': {'bytes': 23690,
+                                                                                                                                                    'sha256': '01bafe43a205a2b04441ceb8c3aac99f4285b383899a57ed4296c3a6e64c8305'},
+                                        'assets/generated/optimization/dqi-path-majority/code/scripts/validate_optimization_dqi_path_majority.py': {'bytes': 29413,
+                                                                                                                                                    'sha256': 'febe90401a61a332133f3cd9d9229e704fb4e529564508f36ad12c8b510cdd42'},
+                                        'assets/generated/optimization/dqi-path-majority/code/src/openquantum/optimization_dqi_path_majority.py': {'bytes': 36874,
+                                                                                                                                                   'sha256': 'ba3015dbdf35fe3ccec6a79503f2e911b735c2ea716969f690eb5fbc5e3c61bf'},
+                                        'assets/generated/optimization/dqi-path-majority/code/src/openquantum/optimization_dqi_path_majority_verify.py': {'bytes': 24109,
+                                                                                                                                                          'sha256': '206c1e705bef8130677f835b68ec8a94a1fd420a53acd62d3d66b3ff8d536606'},
+                                        'assets/generated/optimization/dqi-path-majority/code/tests/test_optimization_dqi_path_majority.py': {'bytes': 18529,
+                                                                                                                                              'sha256': '5b205986d5c71be16ca043897c4f8e0e42a5eda7e1b2e29bf40edf3aa5a9e7b9'},
+                                        'assets/generated/optimization/dqi-path-majority/code/tests/test_optimization_dqi_path_majority_boundaries.py': {'bytes': 14771,
+                                                                                                                                                         'sha256': 'b2f962131f9b0ac60f03c8c0d1640855ae18142c807e0e455f766a1805ed414a'},
+                                        'assets/generated/optimization/dqi-path-majority/companion-spec.json': {'bytes': 2780,
+                                                                                                                'sha256': 'ec78280f68ffae353f941f8914fd7c0fc07a5f9b1499dcd21d3b1282de0efec7'},
+                                        'assets/generated/optimization/dqi-path-majority/component-circuit.svg': {'bytes': 60796,
+                                                                                                                  'sha256': '1b94fb4e2830d8d965cc736d5f5b5fcef13e5af8b2667c0de4aa89bff6c31544'},
+                                        'assets/generated/optimization/dqi-path-majority/component-input-recipe.json': {'bytes': 785,
+                                                                                                                        'sha256': 'd750d0d1d282c80da33548dd0cfa228a2b314db499a4bde7d8b3fc7ea85e12ef'},
+                                        'assets/generated/optimization/dqi-path-majority/environment.json': {'bytes': 7342,
+                                                                                                             'sha256': '6ac15827380faac174597aef4da5bbe10967376cbb00cc4c738f0abcd6eb63e5'},
+                                        'assets/generated/optimization/dqi-path-majority/generated/component-ledger.json': {'bytes': 638,
+                                                                                                                            'sha256': 'eae3ccf4c2259bfb8c367619b5d895e4e00e66de5a1a0700a5bfb114b99c77e4'},
+                                        'assets/generated/optimization/dqi-path-majority/generated/component.ndjson': {'bytes': 14666,
+                                                                                                                       'sha256': '3cbb0866a388adf23a5b27594d90a92db99cfbab4ad901d597eef39ae9a6f562'},
+                                        'assets/generated/optimization/dqi-path-majority/generated/component.qasm': {'bytes': 5921,
+                                                                                                                     'sha256': '7c4359771fd9274d9217cb60ce4066384b8aa2eaeffe219927e1c3bf0bb18091'},
+                                        'assets/generated/optimization/dqi-path-majority/generated/manifest.json': {'bytes': 2300,
+                                                                                                                    'sha256': 'daccd5efa3afa4a47b707a60a6a4617056d13685e4e0c61bd40a50e2734419a1'},
+                                        'assets/generated/optimization/dqi-path-majority/generated/program-ledger.json': {'bytes': 6199,
+                                                                                                                          'sha256': '26f240f45234477a0e739004ccec8921c6c6581b1c631ee10ed0f786ed3324fc'},
+                                        'assets/generated/optimization/dqi-path-majority/generated/program.ndjson': {'bytes': 94905,
+                                                                                                                     'sha256': 'b1a422a454fd13ece43c21e83bce17cffa919174a1741544ee9445e6c9e1c22b'},
+                                        'assets/generated/optimization/dqi-path-majority/generated/program.qasm': {'bytes': 39912,
+                                                                                                                   'sha256': 'a43c9d0ae35facdf0f19d68053bff42488db092ca9ba96f24eac787ab52fc1bd'},
+                                        'assets/generated/optimization/dqi-path-majority/input-k3.json': {'bytes': 71,
+                                                                                                          'sha256': '3ffac5f985d06910bd5c194a5e56b15beffaa3535d7b76b9e05743717faeab30'},
+                                        'assets/generated/optimization/dqi-path-majority/public-manifest.json': {'bytes': 6318,
+                                                                                                                 'sha256': 'b6f6ad7f3e4914a6af7c34a9c852652e623b9d22de07635378ad379e816363d9'},
+                                        'assets/generated/optimization/dqi-path-majority/results-summary.json': {'bytes': 5595,
+                                                                                                                 'sha256': '216817dc4a1b6c05c7538132f617771706c1fe572d0ff412b36382edcc26689d'},
+                                        'assets/generated/optimization/dqi-path-majority/validation/manifest.json': {'bytes': 1155,
+                                                                                                                     'sha256': '6f8e26cde01ad76ea8e37a9fbbaac6274439377609051121408cfbdc73d0414f'},
+                                        'assets/generated/optimization/dqi-path-majority/validation/validation.json': {'bytes': 278512,
+                                                                                                                       'sha256': '4d10497bb5ec2bf335de94212f367c0fa3f4af3740ead4af9725328f4b63179d'}},
+                       'source_hashes': {'scripts/display_dqi_path_majority_saved.py': '1e82bad0820cac97efd7a4805585a1b70aa89413de7d4af117170d2e230b219a',
+                                         'scripts/generate_optimization_dqi_path_majority.py': '01bafe43a205a2b04441ceb8c3aac99f4285b383899a57ed4296c3a6e64c8305',
+                                         'scripts/plot_dqi_path_majority_component_svg.py': 'b063e57621b7a70301ac11f18c6269e0c0c1444481f2e2190490d09bc717febd',
+                                         'scripts/validate_optimization_dqi_path_majority.py': 'febe90401a61a332133f3cd9d9229e704fb4e529564508f36ad12c8b510cdd42',
+                                         'src/openquantum/optimization_dqi_path_majority.py': 'ba3015dbdf35fe3ccec6a79503f2e911b735c2ea716969f690eb5fbc5e3c61bf',
+                                         'src/openquantum/optimization_dqi_path_majority_verify.py': '206c1e705bef8130677f835b68ec8a94a1fd420a53acd62d3d66b3ff8d536606',
+                                         'tests/test_dqi_path_majority_public_projection.py': '4dfb5730c79f22054e4ae84798ecf6312e514545cb3410c02f4bdbe02b1829c1',
+                                         'tests/test_optimization_dqi_path_majority.py': '5b205986d5c71be16ca043897c4f8e0e42a5eda7e1b2e29bf40edf3aa5a9e7b9',
+                                         'tests/test_optimization_dqi_path_majority_boundaries.py': 'b2f962131f9b0ac60f03c8c0d1640855ae18142c807e0e455f766a1805ed414a'}},
+ 'rpe-resource-source': {'helper': 'scripts/verify_robust_qpe_resource_source_saved.py',
+                         'helper_sha256': 'c5019ed950e7dfd445135036dbe49c873db6e67c9d1f63caa19c69cf658c8267',
+                         'prefix': 'assets/generated/robust-qpe-resource-source',
+                         'manifest': 'assets/generated/robust-qpe-resource-source/projection-manifest.json',
+                         'manifest_sha256': 'aaa9eebc661db8e2c8a41764eb8497fa66d810934d9dd1f4bc3b414805378e33',
+                         'asset_hashes': {'assets/generated/robust-qpe-resource-source/LICENSE.txt': {'bytes': 1093,
+                                                                                                      'sha256': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c'},
+                                          'assets/generated/robust-qpe-resource-source/README.md': {'bytes': 4310,
+                                                                                                    'sha256': '826c362853966aa6a28d93d612bb6aa8bf18359ffd426bcf921c9bc45e222411'},
+                                          'assets/generated/robust-qpe-resource-source/code/LICENSE': {'bytes': 1093,
+                                                                                                       'sha256': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c'},
+                                          'assets/generated/robust-qpe-resource-source/code/pyproject.toml': {'bytes': 705,
+                                                                                                              'sha256': 'fb96cdbcbb8c032581d62d8d04f261e988fced3e66a0f560ea79d7e9c2d72404'},
+                                          'assets/generated/robust-qpe-resource-source/code/requirements-lock.txt': {'bytes': 1974,
+                                                                                                                     'sha256': '6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088'},
+                                          'assets/generated/robust-qpe-resource-source/code/scripts/generate_robust_qpe_resources.py': {'bytes': 16745,
+                                                                                                                                        'sha256': '5c5b34f3041a33d319232d60c5bd06067893f328a6645d1c38ed51860631e393'},
+                                          'assets/generated/robust-qpe-resource-source/code/scripts/verify_robust_qpe_resource_source_saved.py': {'bytes': 18745,
+                                                                                                                                                  'sha256': 'c5019ed950e7dfd445135036dbe49c873db6e67c9d1f63caa19c69cf658c8267'},
+                                          'assets/generated/robust-qpe-resource-source/code/src/openquantum/__init__.py': {'bytes': 401,
+                                                                                                                           'sha256': 'af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663'},
+                                          'assets/generated/robust-qpe-resource-source/code/src/openquantum/grover.py': {'bytes': 4377,
+                                                                                                                         'sha256': 'cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21'},
+                                          'assets/generated/robust-qpe-resource-source/code/src/openquantum/hadamard_qpe.py': {'bytes': 16847,
+                                                                                                                               'sha256': '2f0571046d4001af592cb07ce08993290bbdcd14da230315cd3f9722ac881bb5'},
+                                          'assets/generated/robust-qpe-resource-source/code/src/openquantum/instrument_resources.py': {'bytes': 52381,
+                                                                                                                                       'sha256': 'fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863'},
+                                          'assets/generated/robust-qpe-resource-source/code/src/openquantum/robust_qpe.py': {'bytes': 14438,
+                                                                                                                             'sha256': 'cba515031c6c422e197bfc7776eccd9a0cfc46baa4904ab85585d0b30026b39b'},
+                                          'assets/generated/robust-qpe-resource-source/code/src/openquantum/robust_qpe_resources.py': {'bytes': 22749,
+                                                                                                                                       'sha256': 'dc6081367516ef33d2ad31ffdd3531439808ef664bed3febf53266b60651e545'},
+                                          'assets/generated/robust-qpe-resource-source/code/tests/test_robust_qpe_resources.py': {'bytes': 16312,
+                                                                                                                                  'sha256': 'a77daf938d716bae17f4fe30dfc85e5b82e8f8971dcdc80ae09e2a84f3adcf77'},
+                                          'assets/generated/robust-qpe-resource-source/code/tests/test_robust_qpe_resources_producer.py': {'bytes': 6788,
+                                                                                                                                           'sha256': '384cd1ae4c837e893ac5d4f58558a58237008372640bf2682103309086cee1e8'},
+                                          'assets/generated/robust-qpe-resource-source/evidence/initial-producer.py': {'bytes': 16533,
+                                                                                                                       'sha256': 'f466be1d1ce7f022905103bb2f53dd2feb9e7cacb122835d52de4a196d1e2cfe'},
+                                          'assets/generated/robust-qpe-resource-source/evidence/initial-source-manifest.json': {'bytes': 6249,
+                                                                                                                                'sha256': 'c92c8dcb1c503bd573746450163698865ec15435e7e51118136dcf97c4a315c7'},
+                                          'assets/generated/robust-qpe-resource-source/evidence/producer-README.md': {'bytes': 1322,
+                                                                                                                      'sha256': 'e67498bce2298fe748ab6052539e25b6f28c3e26a2ee0138a8081189ce0befcd'},
+                                          'assets/generated/robust-qpe-resource-source/evidence/repaired-source-manifest.json': {'bytes': 6247,
+                                                                                                                                 'sha256': '4400c569f2a5fd716e0b1b348bce74ef5defdb3740a0b2cb0f3bb82d7ee8283c'},
+                                          'assets/generated/robust-qpe-resource-source/projection-manifest.json': {'bytes': 5626,
+                                                                                                                   'sha256': 'aaa9eebc661db8e2c8a41764eb8497fa66d810934d9dd1f4bc3b414805378e33'},
+                                          'assets/generated/robust-qpe-resource-source/references.bib': {'bytes': 3637,
+                                                                                                         'sha256': '40f8e96a89fd16af0584bedf4ce6f1e873544394d6add98ff40feebc92cd8428'},
+                                          'assets/generated/robust-qpe-resource-source/source-export-descriptor.json': {'bytes': 493,
+                                                                                                                        'sha256': 'eb533c1fb719207c09048476520ba72138fa925aceaf478bc5084b1289e250b1'},
+                                          'assets/generated/robust-qpe-resource-source/source-export-download.zip': {'bytes': 81554,
+                                                                                                                     'sha256': '2e49377067a3c2a02a55f172cebcc192fc2159e7f6ac682d6893967f9b801706'},
+                                          'assets/generated/robust-qpe-resource-source/source-export-record.json': {'bytes': 4429,
+                                                                                                                    'sha256': 'dcfce1590229237a8917d6377f6de78fe2e07ea47adb063fcc41a4bb57d36f8c'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-0.qasm': {'bytes': 925,
+                                                                                                                      'sha256': 'a905686d8a8ee354011811ee6fb50d36f75bc43c8976b310e415d508516f279d'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-1.qasm': {'bytes': 935,
+                                                                                                                      'sha256': '0d8dab4bb43a8b5ed675c1aa8c40e724d31b3cea9119f64473080aff17782a71'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-10.qasm': {'bytes': 21261,
+                                                                                                                       'sha256': '1bcb2f42da958fd58b7167d70f76f4a035f9ca1976242d6757e99760a11ae8a3'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-11.qasm': {'bytes': 21271,
+                                                                                                                       'sha256': 'd042ce6d42e21d5d0deb12343e44fd882669623198bf16aa9a52e7c27919b2b9'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-2.qasm': {'bytes': 1581,
+                                                                                                                      'sha256': 'da3a63c735e67c68f4a7fe7a71228f30358c6480fb41112b6b560026946f28d2'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-3.qasm': {'bytes': 1591,
+                                                                                                                      'sha256': 'b593608d00c056ba4449fd8a533bfd494af0f04e6881c90c2d47a0bb58ca5b49'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-4.qasm': {'bytes': 2893,
+                                                                                                                      'sha256': '9fa217bbbd7642905cfd84bf516d628477cdd65c573360368bbb12f758a9a1ab'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-5.qasm': {'bytes': 2903,
+                                                                                                                      'sha256': '015d2ae4e07cc0a8fd781898777acdc6caaf39d2fa0556c70c6b4371090a9fb3'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-6.qasm': {'bytes': 5517,
+                                                                                                                      'sha256': '5a99e12c0a13f80f7f4ec52b67096c91c5310c4cf8a84115255e250557ead1a6'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-7.qasm': {'bytes': 5527,
+                                                                                                                      'sha256': '3d30037e2947ae68d39d4725c0ced1604007a1b91e9ddbdc11e013fed5288c6b'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-8.qasm': {'bytes': 10765,
+                                                                                                                      'sha256': 'c0ca0f7ea6e9bf8e51eb6377c5c07a5623ab498039532265a56b761df9114f85'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-fringe-9.qasm': {'bytes': 10775,
+                                                                                                                      'sha256': 'e5e7550aa50ee2ced8a0fd629947a8493bbca3b2ecce745335bc82d8ec59661e'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-ledger.json': {'bytes': 779,
+                                                                                                                    'sha256': '45d01c4a2eb0fb013e786a4553c492432014ad48141497882209bcdfa692e766'},
+                                          'assets/generated/robust-qpe-resource-source/source/source-macrocycle.qasm': {'bytes': 85287,
+                                                                                                                        'sha256': '3e52a131b2a9a72497e0e5571be479c535e6011bb304815b4394543a17ad6f07'}},
+                         'source_hashes': {'LICENSE': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c',
+                                           'requirements-lock.txt': '6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088',
+                                           'scripts/generate_robust_qpe_resources.py': '5c5b34f3041a33d319232d60c5bd06067893f328a6645d1c38ed51860631e393',
+                                           'scripts/verify_robust_qpe_resource_source_saved.py': 'c5019ed950e7dfd445135036dbe49c873db6e67c9d1f63caa19c69cf658c8267',
+                                           'src/openquantum/__init__.py': 'af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663',
+                                           'src/openquantum/grover.py': 'cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21',
+                                           'src/openquantum/hadamard_qpe.py': '2f0571046d4001af592cb07ce08993290bbdcd14da230315cd3f9722ac881bb5',
+                                           'src/openquantum/instrument_resources.py': 'fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863',
+                                           'src/openquantum/robust_qpe.py': 'cba515031c6c422e197bfc7776eccd9a0cfc46baa4904ab85585d0b30026b39b',
+                                           'src/openquantum/robust_qpe_resources.py': 'dc6081367516ef33d2ad31ffdd3531439808ef664bed3febf53266b60651e545',
+                                           'tests/test_robust_qpe_resources.py': 'a77daf938d716bae17f4fe30dfc85e5b82e8f8971dcdc80ae09e2a84f3adcf77',
+                                           'tests/test_robust_qpe_resources_producer.py': '384cd1ae4c837e893ac5d4f58558a58237008372640bf2682103309086cee1e8'},
+                         'source_config_snapshot_only': 'assets/generated/robust-qpe-resource-source/code/pyproject.toml'}}
+
+
+def _load_next_saved_gate(package, provenance, kind):
+    packet = NEXT_SAVED_PACKETS[kind]
+    hashes = provenance.get("file_sha256") if isinstance(provenance, dict) else None
+    if (not isinstance(provenance, dict) or provenance.get("schema") != "openquantum-public-package-v2"
+            or not isinstance(hashes, dict)):
+        raise ValueError("Next saved evidence requires complete authenticated provenance")
+    for name, expected in packet["source_hashes"].items():
+        raw = _read_bounded_public_member(package, name, 128 * 1024)
+        if hashes.get(name) != expected or hashlib.sha256(raw).hexdigest() != expected:
+            raise ValueError("Next saved evidence source identity changed: " + name)
+    raw = _read_bounded_public_member(package, packet["helper"], 128 * 1024)
+    if (hashes.get(packet["helper"]) != packet["helper_sha256"]
+            or hashlib.sha256(raw).hexdigest() != packet["helper_sha256"]):
+        raise ValueError("Next saved evidence helper identity changed")
+    source = checked_path(package, packet["helper"])
+    spec = importlib.util.spec_from_file_location("_openquantum_next_saved_" + kind.replace("-", "_"), source)
+    if spec is None or spec.loader is None:
+        raise ValueError("Cannot load authenticated next saved evidence helper")
+    gate = importlib.util.module_from_spec(spec)
+    exec(compile(raw, str(source), "exec"), gate.__dict__)
+    return gate
+
+
+def _verify_next_saved_identity(gate, artifact_root, *, source_root, provenance, kind, omitted_assets=None):
+    packet = NEXT_SAVED_PACKETS[kind]
+    hashes = provenance.get("file_sha256") if isinstance(provenance, dict) else None
+    if (not isinstance(provenance, dict) or provenance.get("schema") != "openquantum-public-package-v2"
+            or not isinstance(hashes, dict)):
+        raise ValueError("Next saved evidence requires complete authenticated provenance")
+    split_roots = Path(artifact_root) != Path(source_root)
+    if split_roots and not isinstance(omitted_assets, dict):
+        raise ValueError("Served next evidence requires authenticated preview asset joins")
+    for name, pin in packet["asset_hashes"].items():
+        if hashes.get(name) != pin["sha256"]:
+            raise ValueError("Next saved evidence provenance identity changed: " + name)
+        if split_roots:
+            binding = omitted_assets.get(name)
+            if (not isinstance(binding, dict) or binding.get("site_path") != name
+                    or binding.get("sha256") != pin["sha256"]):
+                raise ValueError("Next saved evidence canonical preview identity changed: " + name)
+        raw = _read_bounded_public_member(artifact_root, name, pin["bytes"] + 1)
+        if len(raw) != pin["bytes"] or hashlib.sha256(raw).hexdigest() != pin["sha256"]:
+            raise ValueError("Next saved evidence canonical asset changed: " + name)
+    for name, expected in packet["source_hashes"].items():
+        raw = _read_bounded_public_member(source_root, name, 128 * 1024)
+        if hashes.get(name) != expected or hashlib.sha256(raw).hexdigest() != expected:
+            raise ValueError("Next saved evidence retained source changed: " + name)
+    if kind == "thermal-two-round":
+        result = gate.verify_full_bundle(Path(artifact_root) / packet["prefix"], provenance=provenance,
+                                         omitted_assets=omitted_assets if split_roots else None)
+        if result.get("full_byte_authenticated") is not True or result.get("scientific_work_reexecuted") is not False:
+            raise ValueError("Thermal full-byte authentication contract changed")
+    elif kind == "shor-finite-adder":
+        result = gate.verify_reference(Path(artifact_root) / packet["prefix"])
+        if (result.get("status") != "authenticated_recorded_finite_classical_reference"
+                or result.get("members") != 8 or result.get("helper_complete") is not False
+                or result.get("lean_executed_by_this_check") is not False
+                or result.get("qasm_parsed_by_this_check") is not False
+                or result.get("quantum_work_performed") is not False):
+            raise ValueError("Shor finite reference scope changed")
+    elif kind == "dqi-path-majority":
+        result = gate.display_saved_component(artifact_root, source_root=source_root,
+            expected_manifest_sha256=packet["manifest_sha256"], time_limit_seconds=5.0)
+        if (result.get("status") != "displayed_authenticated_saved_component"
+                or result.get("asset_files") != 24 or result.get("source_files") != 9
+                or result.get("scientific_work_reexecuted") is not False
+                or result.get("full_program_validated") is not False
+                or result.get("notebook_executed") is not False):
+            raise ValueError("DQI local component scope changed")
+    elif kind == "rpe-resource-source":
+        result = gate.verify_saved_source_export(Path(artifact_root) / packet["prefix"],
+            packet["manifest_sha256"], source_root=source_root, max_seconds=30)
+        expected_counts = {"actual_macrocycle_operations": 5286, "actual_unitary_operations": 5166,
+                           "reset_operations": 108, "readout_operations": 12, "source_files_checked": 12,
+                           "bundle_members_checked": 38, "zip_members_checked": 36,
+                           "producer_or_test_invocations": 0, "quantum_package_imports": 0}
+        if (result.get("status") != "verified_saved_source_export_bytes_recipe_and_outcome_scope"
+                or result.get("source_only_invocation_succeeded") is not True
+                or result.get("prior_source_only_invocation_succeeded") is not False
+                or result.get("algorithm_numerically_validated") is not False
+                or result.get("physical_resource_estimate_computed") is not False
+                or any(type(result.get(name)) is not int or result[name] != expected
+                       for name, expected in expected_counts.items())):
+            raise ValueError("RPE source-only outcome scope changed")
+    else:
+        raise ValueError("Unknown next saved evidence kind")
+    return result
+
+
 def verify_package(package: Path, *, run_tests: bool = True) -> None:
     package = checked_directory(package)
     provenance = verify_manifest(package)
@@ -1391,6 +1712,9 @@ def verify_package(package: Path, *, run_tests: bool = True) -> None:
         hamiltonian_gate = _load_hamiltonian_saved_gate(package, provenance, kind)
         _verify_hamiltonian_saved_identity(hamiltonian_gate, package, kind=kind,
                                           provenance=provenance, notebook_roots=(package,))
+    for kind in NEXT_SAVED_PACKETS:
+        next_gate = _load_next_saved_gate(package, provenance, kind)
+        _verify_next_saved_identity(next_gate, package, source_root=package, provenance=provenance, kind=kind)
     environment = os.environ.copy()
     environment["PYTHONPATH"] = str(package / "src")
     environment["PYTHONDONTWRITEBYTECODE"] = "1"

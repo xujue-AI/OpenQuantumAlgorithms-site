@@ -1,0 +1,210 @@
+{
+  "component_counts": {
+    "arbitrary_clause_targets": 32,
+    "complete_statevector_evolutions": 1,
+    "native_estimator_calls": 0,
+    "primitive_unitary_applications": 525,
+    "pure_boolean_mappings": 512,
+    "scratch_initially_clean": true,
+    "scratch_wires": [
+      9,
+      10,
+      11
+    ],
+    "small_ccx_reference_cases": 0,
+    "state_amplitudes": 4096,
+    "syndrome_wires": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "syndromes": 16,
+    "target_wires": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "validator_boolean_mappings": 512,
+    "whole_job_local_mapping_iterations": 1024,
+    "wires": 12
+  },
+  "component_diagnostics": {
+    "auxiliary_leakage_probability": 1.6312041995757796e-30,
+    "auxiliary_postselection": false,
+    "final_norm2": 1.0000000000000262,
+    "global_phase_fitted": false,
+    "max_signed_complex_entry_error": 1.1529425372364673e-15,
+    "preserved_syndrome_probability_error": 1.8457457784393227e-15,
+    "state_renormalized": false,
+    "tolerance_absolute": 2e-10,
+    "tolerance_relative": 0.0
+  },
+  "component_input_recipe": {
+    "all_support_magnitudes_distinct": true,
+    "amplitude_formula": "signed_numerator/sqrt(normalization_squared)",
+    "executed_by_metadata_function": false,
+    "independent_output_index_formula": "s+16*(t XOR direct_majority_decode(s))",
+    "index_formula": "ell=s+16*t",
+    "initial_scratch": "000",
+    "normalization_squared_integer_formula": "512*513*1025//6",
+    "s_range": [
+      0,
+      15
+    ],
+    "schema": "openquantum.dqi.path_majority_signed_input.v1",
+    "scratch_wires": [
+      9,
+      10,
+      11
+    ],
+    "scratch_zero_required": true,
+    "signed_numerator_formula": "(-1)^((popcount(s)+popcount(t)) mod 2)*(ell+1)",
+    "state_amplitudes": 4096,
+    "state_wires": 12,
+    "support_size": 512,
+    "syndrome_wires": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "t_range": [
+      0,
+      31
+    ],
+    "target_wires": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "uniform_target_plus": false
+  },
+  "full_state_payload": "assets/generated/optimization/dqi-path-majority/validation/validation.json",
+  "generated_source_counts": {
+    "N": 14,
+    "barrier_records": 7,
+    "component_primitive_counts": {
+      "cx": 219,
+      "h": 68,
+      "t": 136,
+      "tdg": 102
+    },
+    "component_primitives": 525,
+    "generation_only": true,
+    "k": 3,
+    "m": 15,
+    "n": 13,
+    "observed_source_counts": {
+      "barrier": 7,
+      "cx": 1272,
+      "h": 385,
+      "measure": 13,
+      "reset": 31,
+      "ry": 57,
+      "t": 744,
+      "tdg": 558,
+      "x": 84,
+      "z": 14
+    },
+    "operational_events_excluding_barriers": 3158,
+    "quantum_wires": 31,
+    "readout_events": 13,
+    "reset_events": 31,
+    "scope": "generation_only",
+    "source_records_including_barriers": 3165,
+    "unitary_primitives": 3114
+  },
+  "negative_case": {
+    "arbitrary_clause_targets": 32,
+    "mappings": 512,
+    "negative_error_bits": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "negative_error_weight": 3,
+    "negative_internal_syndrome_bits": [
+      1,
+      0,
+      0,
+      1
+    ],
+    "negative_returned_error_bits": [
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "negative_returned_weight": 2,
+    "other_path_errors_in_negative_case": "all zero",
+    "path_error_parity": 1,
+    "returned_path_error_parity": 0,
+    "scratch_initially_clean": true,
+    "syndrome_and_scratch_checked": true,
+    "syndromes": 16,
+    "terminal_syndrome_bit_of_error": 0,
+    "terminal_syndrome_bit_of_returned_error": 1,
+    "weight_two_promise_extended": false
+  },
+  "primitive_counts": {
+    "cx": 219,
+    "h": 68,
+    "t": 136,
+    "tdg": 102
+  },
+  "projection_scope": "Selection from accepted saved fields only; no numerical calculation or source replay.",
+  "quantum_source_envelope": {
+    "actual_complex_lists": 1,
+    "maximum_bytes": 4194304,
+    "peak_bytes": 2109440,
+    "reference_complex_lists": 1,
+    "scope": "conservative Python source buffers; whole-process RSS is separate",
+    "serialized_pair_lists": 1
+  },
+  "raw_state_pairs": 4096,
+  "schema": "openquantum.dqi.path_majority_public_results.v1",
+  "scope": "fixed 12-wire local decoder; generated 31-wire full source only",
+  "status": "parent_accepted_component_and_generation_only",
+  "test_counts": {
+    "global_weight_at_most_two_error_words": 121,
+    "independent_classical_assignments_scanned": 8192,
+    "passed": 259,
+    "private_control_boundary_checks": 75,
+    "public_source_contains_private_control_tests": false,
+    "scientific_pure_checks": 184
+  },
+  "unsupported_claims": {
+    "companion_notebook_executed": false,
+    "degree_two_preparation_validated": false,
+    "dense_operator_constructed": false,
+    "formal_proof_reproduced": false,
+    "full_program_validated": false,
+    "hardware_executed": false,
+    "optimization_output_validated": false,
+    "physical_resources_estimated": false,
+    "portable_scientific_replay_validated": false,
+    "publication_complete": false,
+    "rotation_synthesis_validated": false,
+    "sampling_performed": false,
+    "saved_display_executed": false
+  },
+  "validation_source_pin": {
+    "bytes": 278512,
+    "sha256": "4d10497bb5ec2bf335de94212f367c0fa3f4af3740ead4af9725328f4b63179d"
+  },
+  "vectors_saved": {
+    "final_state_pairs_saved": 4096,
+    "input_and_reference_defined_by_pinned_source_recipe": true,
+    "input_vector_separately_saved": false,
+    "reconstruction_performed_during_public_projection": false,
+    "reference_vector_separately_saved": false
+  }
+}

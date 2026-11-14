@@ -10,18 +10,18 @@
     0.00188283983163502
   ],
   "reference_approximate_phase_distribution": [
-    0.0021461414983890044,
-    0.003701692485335368,
-    0.013890534335256905,
-    0.953252845981645,
-    0.012084424260551719,
-    0.010570713645689449,
-    0.0024708079614965493,
-    0.001882839831636133
+    0.0021461414983890157,
+    0.003701692485335484,
+    0.013890534335257169,
+    0.9532528459816443,
+    0.01208442426055184,
+    0.010570713645689532,
+    0.0024708079614965757,
+    0.0018828398316361604
   ],
-  "distribution_max_error": 6.036282584886976e-13,
-  "access_gate_vs_product_reference_error": 4.591678453887476e-14,
-  "access_operator_error_against_exact_H": 0.00012652152481606202,
+  "distribution_max_error": 6.029621246739225e-13,
+  "access_gate_vs_product_reference_error": 4.662967683595027e-14,
+  "access_operator_error_against_exact_H": 0.00012652152481609186,
   "analytic_product_formula_bound": {
     "analytic_operator_error_bound": 0.00025018477641866854,
     "uncapped_analytic_bound": 0.00025018477641866854,
@@ -32,11 +32,11 @@
     "formal_proof_artifact": null
   },
   "exact_energy_ground_reference": -1.1373060357534,
-  "approximate_unitary_ground_energy_reference": -1.13728827003326,
-  "ground_energy_bias_numeric": 1.776572013989508e-05,
+  "approximate_unitary_ground_energy_reference": -1.137288270033261,
+  "ground_energy_bias_numeric": 1.7765720139006902e-05,
   "spectral_neighbourhood_energy_bound_ideal_angles": 0.0003017408037660486,
   "true_H_hf_ground_overlap_reference": 0.9875597343674857,
-  "approximate_V_hf_ground_weight_reference": 0.9875374834074062,
+  "approximate_V_hf_ground_weight_reference": 0.9875374834074064,
   "numerical_ground_subspace_energy_tolerance": 2.1373060357534e-10,
   "phase_grid_energy_width": 0.947246574608827,
   "energy_encoding": {
@@ -48,14 +48,14 @@
   "phase_eigenvalues_reference": [
     0.44273045470276023,
     0.4904692590052861,
-    0.3618747599618982,
-    0.5772791079012548
+    0.3618747599618981,
+    0.5772791079012549
   ],
   "phase_eigenweights_reference": [
     0.0,
     0.0,
-    0.9875374834074062,
-    0.012462516592593186
+    0.9875374834074064,
+    0.012462516592593169
   ],
   "sector_indices_reference": [
     6,
@@ -91,5 +91,5 @@
   },
   "simulation_width": 7,
   "statevector_performed": true,
-  "simulation_wall_seconds": 0.3008624949998193
+  "simulation_wall_seconds": 0.595574365000175
 }

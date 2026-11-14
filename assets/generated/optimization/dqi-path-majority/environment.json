@@ -1,0 +1,207 @@
+{
+  "companion_notebook_executed": false,
+  "original_code": {
+    "explanations_and_decoder_are_project_original": true,
+    "method_reference": {
+      "doi": "10.1038/s41586-025-09527-5",
+      "role": "DQI method context; the path-local circuit implementation is project-original",
+      "title": "Optimization by decoded quantum interferometry"
+    },
+    "project_license": "MIT",
+    "source_commit": "7a4b1cdaa1354014886f87d14149bd3d2d5edb63",
+    "source_pins": {
+      "scripts/generate_optimization_dqi_path_majority.py": {
+        "bytes": 23690,
+        "sha256": "01bafe43a205a2b04441ceb8c3aac99f4285b383899a57ed4296c3a6e64c8305"
+      },
+      "scripts/validate_optimization_dqi_path_majority.py": {
+        "bytes": 29413,
+        "sha256": "febe90401a61a332133f3cd9d9229e704fb4e529564508f36ad12c8b510cdd42"
+      },
+      "src/openquantum/optimization_dqi_path_majority.py": {
+        "bytes": 36874,
+        "sha256": "ba3015dbdf35fe3ccec6a79503f2e911b735c2ea716969f690eb5fbc5e3c61bf"
+      },
+      "src/openquantum/optimization_dqi_path_majority_verify.py": {
+        "bytes": 24109,
+        "sha256": "206c1e705bef8130677f835b68ec8a94a1fd420a53acd62d3d66b3ff8d536606"
+      },
+      "tests/test_optimization_dqi_path_majority.py": {
+        "bytes": 18529,
+        "sha256": "5b205986d5c71be16ca043897c4f8e0e42a5eda7e1b2e29bf40edf3aa5a9e7b9"
+      },
+      "tests/test_optimization_dqi_path_majority_boundaries.py": {
+        "bytes": 14771,
+        "sha256": "b2f962131f9b0ac60f03c8c0d1640855ae18142c807e0e455f766a1805ed414a"
+      }
+    },
+    "upstream_algorithm_code_or_figures_copied": false
+  },
+  "packages": {
+    "iniconfig": {
+      "installed_metadata_pin": {
+        "bytes": 2826,
+        "sha256": "47c2c35d936f5c649d8074c6464719a42966a67b5cebad01e3e5784cf090cfb6"
+      },
+      "license": "MIT",
+      "lock_match": true,
+      "repository": "https://github.com/pytest-dev/iniconfig",
+      "role": "pytest dependency",
+      "version": "2.3.1"
+    },
+    "packaging": {
+      "installed_metadata_pin": {
+        "bytes": 3544,
+        "sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763"
+      },
+      "license": "Apache-2.0 OR BSD-2-Clause",
+      "lock_match": true,
+      "repository": "https://github.com/pypa/packaging",
+      "role": "pytest dependency",
+      "version": "26.3"
+    },
+    "pluggy": {
+      "installed_metadata_pin": {
+        "bytes": 4966,
+        "sha256": "20ac8237e37f1d6e7e75500cd663015177ba80c1a1a595ff6bae18a539ff8a2c"
+      },
+      "license": "MIT",
+      "lock_match": true,
+      "repository": "https://github.com/pytest-dev/pluggy",
+      "role": "pytest dependency",
+      "version": "1.7.0"
+    },
+    "psutil": {
+      "installed_metadata_pin": {
+        "bytes": 22187,
+        "sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f"
+      },
+      "license": "BSD-3-Clause",
+      "lock_match": true,
+      "repository": "https://github.com/giampaolo/psutil",
+      "role": "private process monitor only; no quantum numerical backend",
+      "version": "7.2.2"
+    },
+    "pygments": {
+      "installed_metadata_pin": {
+        "bytes": 2527,
+        "sha256": "1dde075570136774c706bf0009183a793fe0ee262e4a5590cc6eff8453eedd43"
+      },
+      "license": "BSD-2-Clause",
+      "lock_match": true,
+      "repository": "https://github.com/pygments/pygments",
+      "role": "pytest dependency",
+      "version": "2.21.0"
+    },
+    "pytest": {
+      "installed_metadata_pin": {
+        "bytes": 7869,
+        "sha256": "006823d1759e40b4546ff4296945eda3f0692e799f724bb235edd0512d42eead"
+      },
+      "license": "MIT",
+      "lock_match": true,
+      "repository": "https://github.com/pytest-dev/pytest",
+      "role": "pure scientific/control checks; no quantum SDK",
+      "version": "9.2.0"
+    },
+    "typing_extensions": {
+      "installed_metadata_pin": {
+        "bytes": 3310,
+        "sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+      },
+      "license": "PSF-2.0",
+      "lock_match": true,
+      "repository": "https://github.com/python/typing_extensions",
+      "role": "test/control dependency",
+      "version": "4.16.0"
+    }
+  },
+  "physical_resources_estimated": false,
+  "public_operational_content_included": false,
+  "public_saved_display_executed": false,
+  "publication_complete": false,
+  "python": {
+    "implementation": "CPython",
+    "license": "Python Software Foundation License Agreement and bundled notices",
+    "native_quantum_sdk_used": false,
+    "role": "standard-library complex arithmetic implements the bounded local component check",
+    "upstream_release_tag": "v3.12.14",
+    "upstream_repository": "https://github.com/python/cpython",
+    "version": "3.12.14"
+  },
+  "root_support_pins": {
+    "LICENSE": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "pyproject.toml": {
+      "bytes": 705,
+      "sha256": "fb96cdbcbb8c032581d62d8d04f261e988fced3e66a0f560ea79d7e9c2d72404"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    }
+  },
+  "schema": "openquantum.dqi.path_majority_public_environment.v1",
+  "scientific_replay_in_new_download_context_validated": false,
+  "selected_environment": {
+    "native_stdlib_directory_members": 4,
+    "noncache_package_trees": 7,
+    "regular_files": 817,
+    "scope": "Selected file hashes and inventories; no complete dynamic import/library-link or future-process attestation.",
+    "selected_python_stdlib_subtrees": 13,
+    "selected_total_bytes": 49419226
+  },
+  "selected_environment_proposal_identity": {
+    "bytes": 238909,
+    "sha256": "2731e5e0c3a45ed04115552f850d51907cc16d5308e5e369c8103d87643726d4"
+  },
+  "selected_role_pins": {
+    "psutil_monitor_package": {
+      "bytes": 89878,
+      "sha256": "d138a5786b163b56ba86ea0b2d5589dfca37e1bcdf8de1057fe1e933d6ab808a"
+    },
+    "psutil_native_monitor_extension": {
+      "bytes": 105920,
+      "sha256": "ff4568b9187ca7b37c5134aaf614ffb061e7fedccebd84158343afb05991b8e2"
+    },
+    "pytest_public_package": {
+      "bytes": 5859,
+      "sha256": "df9445a69f8fa85f8f0569c3b166fcd681117cf23ea0924752b1bb314c5d7326"
+    },
+    "python_executable": {
+      "bytes": 18058560,
+      "sha256": "2a8addce917415c8f1c7bd70518a2c802ea2d92c6f0de50c6909a35cca4fc109"
+    },
+    "python_shared_library": {
+      "bytes": 18058384,
+      "sha256": "4213481457ca697ab18048f1e95ee774b832812dcfe043447cf33e676632c78f"
+    },
+    "python_sysconfig_and_builtin_support": {
+      "bytes": 49609,
+      "sha256": "8fd53ca557926873b7d519cd5cbd3d06b00c0983768901ac45f0c192d2ae05a7"
+    },
+    "venv_config_and_patch_version_evidence": {
+      "bytes": 426,
+      "sha256": "fa55a69891f8b0b8117685892b240b371081f56f98abf5bff4c5d1b4069c1736"
+    }
+  },
+  "startup": {
+    "implicit_editable_source_path": false,
+    "local_cpu_only": true,
+    "pth_processing": false,
+    "pytest_assertions": "plain",
+    "pytest_import_mode": "importlib",
+    "pytest_plugin_autoload": false,
+    "python_options": [
+      "-I",
+      "-S",
+      "-B"
+    ],
+    "redirected_absent_bytecode_prefix": true,
+    "site_processing": false,
+    "thread_count": 1
+  },
+  "status": "accepted_selected_environment_identity"
+}

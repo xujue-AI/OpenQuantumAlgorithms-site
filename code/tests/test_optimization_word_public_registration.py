@@ -91,7 +91,12 @@ def checker(monkeypatch, checked):
                         "PUBLIC_DQI_FILES": frozenset(), "PUBLIC_BATH_FILES": frozenset(),
                         "PUBLIC_MULTIPRODUCT_FILES": frozenset(), "PUBLIC_BAYESIAN_FILES": frozenset(), "PUBLIC_ROBUST_FILES": frozenset(), "PUBLIC_DQI_STRUCTURED_FILES": frozenset(), "PUBLIC_QPE_FEEDBACK_FILES": frozenset(),
                         "PUBLIC_LOCAL_SPIN_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_PRESENTATION_FILES": frozenset(), "PUBLIC_MEASURED_AND_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_REPRODUCTION_FILES": frozenset(), "PUBLIC_DQI_RESOURCE_FILES": frozenset(),
-                        "PUBLIC_CORRECTED_FORMULA_FILES": frozenset(), "PUBLIC_GQSP_FILES": frozenset()},
+                        "PUBLIC_CORRECTED_FORMULA_FILES": frozenset(), "PUBLIC_GQSP_FILES": frozenset(),
+                        "PUBLIC_TWO_ROUND_FILES": frozenset(),
+                        "PUBLIC_SHOR_FINITE_ADDER_FILES": frozenset(),
+                        "PUBLIC_DQI_PATH_MAJORITY_FILES": frozenset(),
+                        "PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS": frozenset(),
+                        "PUBLIC_RPE_RESOURCE_SOURCE_FILES": frozenset()},
         "energy_record_release": {
             "CORE_FILES": frozenset(), "MANIFEST_NAME": "unused.json", "RECORD_DIRECTORY": "unused",
             "SOURCE_FILES": (), "VERIFIER_FILES": (), "checked_directory": checked.checked_directory,
@@ -133,10 +138,12 @@ def checker(monkeypatch, checked):
     monkeypatch.setattr(caller, "site_local_spin_reproduction_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_measured_and_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "site_hamiltonian_packet_errors", lambda *_, **__: [])
+    monkeypatch.setattr(caller, "site_next_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(caller, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(caller, "GIBBS_CHANNEL_ARTICLE_LABELS", frozenset())
     monkeypatch.setattr(caller, "DECAY_ARTICLE_LABELS", frozenset())
     monkeypatch.setattr(caller, "CORRECTION_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(caller, "NEXT_EVIDENCE_ARTICLE_LABELS", {})
     return caller
 
 

@@ -1,0 +1,96 @@
+{
+  "accepted_source_commit": "02c6bce80784b249927223b08b39174396d6e184",
+  "file_count": 20,
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "README.md": {
+      "bytes": 5536,
+      "sha256": "f0d05698d2cc3d6fb9ac9189dd44d8d3f2616a4da41df13cbfd2463eb0691934"
+    },
+    "UPSTREAM-LICENSES.md": {
+      "bytes": 2179,
+      "sha256": "eab2d2d578ce1c6fa46bcade400a0b5e7d3d3e5557a811f2b461dc544ea99e9f"
+    },
+    "circuits/correction-heralded-step.qasm": {
+      "bytes": 28765,
+      "sha256": "ef799261d2152586a4e6031a028c1ffdeb41dc89813174958a97b1f796274dd4"
+    },
+    "circuits/correction_lcu.qasm": {
+      "bytes": 28765,
+      "sha256": "ef799261d2152586a4e6031a028c1ffdeb41dc89813174958a97b1f796274dd4"
+    },
+    "circuits/round_macro.qasm": {
+      "bytes": 43542,
+      "sha256": "3d0629430724e49c9a10ab807e722f53164ae18a49b3c73e6cecba22d71cd74a"
+    },
+    "circuits/two_round_trial.qasm": {
+      "bytes": 93239,
+      "sha256": "a90cd2c06d3b765d3b27b666393e3367c321e4b2fba4c182ce2b5406546a53f2"
+    },
+    "circuits/weak_dilation.qasm": {
+      "bytes": 14556,
+      "sha256": "8c772b5d751918b24c19a4f8356ce05ff63a1695cecdf094f3ff9c71ff486916"
+    },
+    "circuits/weak_reset_prefix.qasm": {
+      "bytes": 14652,
+      "sha256": "61db5e3d7f498d19ce9948e962818259009c91f8dfc3b108c3ba0c43b0e000a8"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "results.json": {
+      "bytes": 1155156,
+      "sha256": "ad4460dd4c63c7254bc5a790814df9f178ded7f43775efbb740ac208904a408a"
+    },
+    "sources/detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "sources/detailed_balance_channel.py": {
+      "bytes": 24362,
+      "sha256": "99ac8dbfacf6ee484caeb6ad328fe145f150871e4272538dd279f67cc2573a8b"
+    },
+    "sources/detailed_balance_correction.py": {
+      "bytes": 24902,
+      "sha256": "62ede4bbafe79a15e7c66068f0dc2b54a32322bbbff4015f00e7a0ba64e3eb48"
+    },
+    "sources/detailed_balance_decay.py": {
+      "bytes": 12324,
+      "sha256": "82a304024e7e1b27f5fd283359f620d9b0be5e545dfc9ba494c09737197e72e1"
+    },
+    "sources/detailed_balance_thermal_two_round.py": {
+      "bytes": 22928,
+      "sha256": "45ae8cc6b55d39caf29b80a8cf1aef770b7dae29d45d6e6bc41e341890c3b388"
+    },
+    "sources/detailed_balance_thermal_two_round_reference.py": {
+      "bytes": 39381,
+      "sha256": "98dfc9f75e6849419427ec2256a51adde1a52b1ac2bd6f8ee59ffaaa35ca8b52"
+    },
+    "sources/thermal_two_round_contract.py": {
+      "bytes": 7277,
+      "sha256": "2a5f41bf8e36981ef9adac3928aaede05b984b094771320158d45f771f2d9fb1"
+    },
+    "summary.json": {
+      "bytes": 2629,
+      "sha256": "84034c9fe48802232aafde8b9f9c65e6d7b37484c2e84a589ddd5a781ffb341e"
+    },
+    "two-round-circuit.svg": {
+      "bytes": 10610,
+      "sha256": "46eec2cb49da05e716b6c358293a370ac4aecb86ece06dbcd5a9c40430ae4770"
+    }
+  },
+  "original_accepted_payloads": {
+    "bytes": 1755875,
+    "files": 23
+  },
+  "raw_flags_unchanged": true,
+  "schema": "openquantum.fixed-two-round.public-manifest.v1",
+  "scientific_result_path": "results.json",
+  "scope": "fixed one-system two-round finite composition; no Gibbs/mixing/physical/formal guarantee",
+  "selected_payload_bytes": 1559231,
+  "summary_path": "summary.json"
+}

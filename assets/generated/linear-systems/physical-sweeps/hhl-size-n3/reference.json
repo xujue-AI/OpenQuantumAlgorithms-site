@@ -1,5 +1,5 @@
 {
-  "actual_condition_number": 4.0,
+  "actual_condition_number": 3.9999999999999956,
   "conditional_state_trace_distance": 1.0323785650203506e-16,
   "conditional_z_mean": 0.854368932038835,
   "expected_polynomial_branch_trace_distance": 1.0323785650203506e-16,
@@ -7,14 +7,14 @@
   "input_bytes_sha256": "6f530519c9b447b4e9100226699ca3bab488a5560a735ceeb278bcbf531e9ab9",
   "matrix_bytes_sha256": "951409782f4daaecf37051e056a10d3d6b7e3d6dd3ae8945b13506724045b400",
   "matrix_eigenvalues": [
-    0.12500000000000003,
+    0.12500000000000014,
     0.25,
-    0.25000000000000006,
-    0.25000000000000017,
-    0.3749999999999999,
+    0.25,
+    0.2500000000000001,
+    0.375,
     0.375,
     0.3750000000000001,
-    0.5000000000000001
+    0.5
   ],
   "method": "complete Qiskit gate statevectors versus independently assembled dense matrix powers/solve and analytic input amplitudes",
   "normalization_alpha": 1.0,
@@ -25,10 +25,10 @@
   "reference_equation": "A x=b; expected accepted branch C x",
   "reference_identity_sha256": "63814ab034ab89048b93115f83c4f305c2c55cdb760097c4a7945241053a0b52",
   "reference_solution_imag": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
     0.0,
     0.0,
     0.0,

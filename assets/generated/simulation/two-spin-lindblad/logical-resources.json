@@ -55,7 +55,7 @@
       ],
       "system_measurements": 2,
       "environment_measurements_ignored": 2,
-      "classical_build_and_lower_wall_seconds": 0.016698547000032704,
+      "classical_build_and_lower_wall_seconds": 0.024497808999967674,
       "qasm_file": "two-spin-x.qasm",
       "qasm_sha256": "9a878860359f68ba9a846efaab083c07e32177e1b261df1b726fc58f2266735f"
     },
@@ -96,7 +96,7 @@
       ],
       "system_measurements": 2,
       "environment_measurements_ignored": 2,
-      "classical_build_and_lower_wall_seconds": 0.009719153999867558,
+      "classical_build_and_lower_wall_seconds": 0.016630167000130314,
       "qasm_file": "two-spin-y.qasm",
       "qasm_sha256": "eb2a293f623b0d2e8ceee843bc66b469aae4e6632ce4c7583694a0de455c2d2f"
     },
@@ -135,7 +135,7 @@
       ],
       "system_measurements": 2,
       "environment_measurements_ignored": 2,
-      "classical_build_and_lower_wall_seconds": 0.00916792400016675,
+      "classical_build_and_lower_wall_seconds": 0.016180525999970996,
       "qasm_file": "two-spin-z.qasm",
       "qasm_sha256": "75e31ca766d2e60abd1cca4dedc6d1cfa56dbeead175eff4d58b40724ef21779"
     }
@@ -168,7 +168,7 @@
     "coherent_synthesis_bias_allowance": 0.01,
     "physical_failure_across_all_trials": 0.005,
     "physical_union_bound_per_trial": 9.899617874750035e-08,
-    "selected_splitting_bias_bound_from_trace_distance": 0.00021712872571774504,
+    "selected_splitting_bias_bound_from_trace_distance": 0.00021712872571784573,
     "splitting_allowance_met_numerically": true,
     "all_group_trials_primitive_counts": {
       "cx": 17879478,

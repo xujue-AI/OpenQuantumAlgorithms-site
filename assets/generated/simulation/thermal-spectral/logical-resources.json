@@ -32,11 +32,11 @@
         "even_degree": 6,
         "odd_degree": 7,
         "even_phases": [
-          0.7854019090291152,
+          0.7854019090291153,
           1.5712756035323159,
-          1.5957593614718608,
+          1.5957593614718606,
           1.8095037770484177,
-          1.5957593614718608,
+          1.5957593614718606,
           1.5712756035323159,
           2.356198235824012
         ],
@@ -44,8 +44,8 @@
           -0.7853984183896364,
           1.5707508144861346,
           1.566890289699305,
-          1.4666932642866177,
-          1.4666932642866177,
+          1.466693264286618,
+          1.466693264286618,
           1.566890289699305,
           1.5707508144861346,
           2.3561942352001566
@@ -92,18 +92,18 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.006656150000026173,
-          "node_max_residual": 2.7755575615628914e-16,
-          "grid_max_residual": 5.551115123125783e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 3.471203415617005e-16,
+          "wall_seconds": 0.00890711600004579,
+          "node_max_residual": 4.996003610813204e-16,
+          "grid_max_residual": 6.106226635438361e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 6.201793731748118e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
             0.23615161255795475,
-            -1.4977251391447112e-17,
-            0.048478896169453826,
-            -2.2312708494702937e-17,
-            0.0009307041407535352,
-            -2.590493775590896e-17,
-            7.274307547781824e-06
+            -4.170558093378777e-17,
+            0.04847889616945342,
+            -3.2199161750350857e-17,
+            0.0009307041407535067,
+            -1.9932814416883866e-18,
+            7.2743075479500765e-06
           ],
           "sampled_target_magnitude": 0.28556848717571004,
           "sampled_target_magnitude_guard": 0.75,
@@ -144,19 +144,19 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.006730944000082673,
-          "node_max_residual": 7.216449660063518e-16,
-          "grid_max_residual": 6.938893903907228e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 6.321694788860442e-16,
+          "wall_seconds": 0.00908351499992932,
+          "node_max_residual": 3.885780586188048e-16,
+          "grid_max_residual": 5.551115123125783e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 3.6590373838511585e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            6.071532165918823e-18,
-            -0.20661436036139766,
-            -2.879962511613673e-17,
-            -0.007726581204663655,
-            1.8978203172881933e-17,
-            -9.003440873756392e-05,
-            -2.3154501889022484e-17,
-            -5.044696867619766e-07
+            0.0,
+            -0.2066143603613972,
+            0.0,
+            -0.0077265812046636555,
+            -6.869154506741516e-17,
+            -9.003440873749909e-05,
+            -1.962615573354719e-17,
+            -5.044696867848292e-07
           ],
           "sampled_target_magnitude": 0.2144314804444854,
           "sampled_target_magnitude_guard": 0.75,
@@ -181,9 +181,9 @@
           "exact_parameter_decimal": "0.97499999999999997779553950749686919152736663818359375",
           "degree": 6,
           "decimal_precision": 80,
-          "uniform_error_upper": 3.0720918585089307e-08,
-          "uniform_error_upper_decimal": "3.0720918585089302262474254890281689468957681768860333433157895952410450519102607E-8",
-          "coefficient_residual_l1_upper_decimal": "3.0720918585089302262474254890281689468957681768860333433157895952410450519102606E-8",
+          "uniform_error_upper": 3.072091877951132e-08,
+          "uniform_error_upper_decimal": "3.0720918779511317072514629538845790850589567280226357451014728630432946989876007E-8",
+          "coefficient_residual_l1_upper_decimal": "3.0720918779511317072514629538845790850589567280226357451014728630432946989876006E-8",
           "analytic_target_taylor_remainder_upper_decimal": "1.7274299732237035740188920597031401580520320065628002777304273277973757217194712E-94",
           "target_taylor_degree": 64,
           "negative_exp_taylor_degree": 54,
@@ -219,32 +219,32 @@
           ],
           "achieved_chebyshev_intervals": [
             {
-              "lower": "0.23615161255795485448215743539955880053655414669387672116785110813387565799288831",
-              "upper": "0.23615161255795485448215743539955880053655414669387672116785110813387572467319738"
+              "lower": "0.23615161255795485972993684931654615477395636943098499360997362820336943610464876",
+              "upper": "0.23615161255795485972993684931654615477395636943098499360997362820336950278495706"
             },
             {
               "lower": "0E-491",
               "upper": "0E-491"
             },
             {
-              "lower": "0.048478896169453876987963477626682713985671171883949236667736646760663199575391893",
-              "upper": "0.048478896169453876987963477626682713985671171883949236667736646760663283701050519"
+              "lower": "0.048478896169453446037232408088314091420041633192442843422848395563044459948796243",
+              "upper": "0.048478896169453446037232408088314091420041633192442843422848395563044544074454019"
             },
             {
               "lower": "0E-492",
               "upper": "0E-492"
             },
             {
-              "lower": "0.0009307041407535536364241049136793625992851428484381049925344029227307296057140625",
-              "upper": "0.0009307041407535536364241049136793625992851428484381049925344029227307506340614375"
+              "lower": "0.0009307041407535523348924056669254732547881348655220662357848609947072942648906875",
+              "upper": "0.0009307041407535523348924056669254732547881348655220662357848609947073152932379375"
             },
             {
               "lower": "0E-492",
               "upper": "0E-492"
             },
             {
-              "lower": "0.00000727430754779954678169630967341385348832088453213585339376453125652634524390625",
-              "upper": "0.00000727430754779954678169630967341385348832088453213585339376453125652809695303125"
+              "lower": "0.00000727430754790735382851895217139960566982728297252058172347920148989409065590625",
+              "upper": "0.00000727430754790735382851895217139960566982728297252058172347920148989584236503125"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -510,13 +510,13 @@
             }
           ],
           "coefficient_residual_upper_decimals": [
-            "3.45806466587022393133178574663738042077122469267149432101148602E-18",
+            "1.78971474804676342290561647609972785167089782739799952380508708E-18",
             "0E-491",
-            "9.4975978112949352318243641505611479081191586569682090039805106255E-17",
+            "3.35974752956589016304321988033080027312053301681515528783952178417E-16",
             "0E-492",
-            "4.262416237389201759950817297255776086773415096312664095437294125195E-17",
+            "4.132263067464526371016367596457484482897740142119861751903211775195E-17",
             "0E-492",
-            "7.57069626195857864627478801868572672481834722007226606015372375655212E-17",
+            "3.21000842030567115230043013195411731365448575139475727679598843142946E-17",
             "0E-62",
             "3.0640250562637929664932724622162342649336916983920435585307915681116565070480624E-8",
             "0E-62",
@@ -595,9 +595,9 @@
           "exact_parameter_decimal": "0.97499999999999997779553950749686919152736663818359375",
           "degree": 7,
           "decimal_precision": 80,
-          "uniform_error_upper": 1.6588868278067035e-09,
-          "uniform_error_upper_decimal": "1.6588868278067033119153525130786646202804342697578165302367906919621088589896950E-9",
-          "coefficient_residual_l1_upper_decimal": "1.6588868278067033119153525130786646202804342697578165302367906919621088589896949E-9",
+          "uniform_error_upper": 1.6588865829772837e-09,
+          "uniform_error_upper_decimal": "1.6588865829772836793172193980080518498868672758366511893755381813560889096896950E-9",
+          "coefficient_residual_l1_upper_decimal": "1.6588865829772836793172193980080518498868672758366511893755381813560889096896949E-9",
           "analytic_target_taylor_remainder_upper_decimal": "2.5137973490941954422563718868643201908524528740478996449037845508227199770888962E-96",
           "target_taylor_degree": 65,
           "negative_exp_taylor_degree": 54,
@@ -641,32 +641,32 @@
               "upper": "0E-576"
             },
             {
-              "lower": "-0.20661436036139760234982109601728142443542648791608129878597706528643782312135698",
-              "upper": "-0.20661436036139760234982109601728142443542648791608129878597706528643767116473574"
+              "lower": "-0.20661436036139716822344377803179903365963342910757459671681922332513632349281811",
+              "upper": "-0.20661436036139716822344377803179903365963342910757459671681922332513617153620103"
             },
             {
               "lower": "0E-577",
               "upper": "0E-577"
             },
             {
-              "lower": "-0.0077265812046636498900302713418213114249616117759547839838666286396647393364936407",
-              "upper": "-0.0077265812046636498900302713418213114249616117759547839838666286396646702581170625"
+              "lower": "-0.0077265812046636502529163882812603559323865171382575925695461609862976560496785469",
+              "upper": "-0.0077265812046636502529163882812603559323865171382575925695461609862975869713042968"
             },
             {
               "lower": "0E-576",
               "upper": "0E-576"
             },
             {
-              "lower": "-0.000090034408737490518452829489264042616543114637131145046791345605662477513262921875",
-              "upper": "-0.000090034408737490518452829489264042616543114637131145046791345605662463704846062500"
+              "lower": "-0.000090034408737490522654863381906402862905831179200003443200583485349960491721765625",
+              "upper": "-0.000090034408737490522654863381906402862905831179200003443200583485349946683305640625"
             },
             {
               "lower": "0E-577",
               "upper": "0E-577"
             },
             {
-              "lower": "-5.04469686713481329881167286864541774649305680460144272344695137691511987765625E-7",
-              "upper": "-5.04469686713481329881167286864541774649305680460144272344695137690526154625000E-7"
+              "lower": "-5.04469686713481353287946705463783963077758102461743408552938717931757644484375E-7",
+              "upper": "-5.04469686713481353287946705463783963077758102461743408552938717930771811421875E-7"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -937,13 +937,13 @@
           ],
           "coefficient_residual_upper_decimals": [
             "0E-576",
-            "3.3929434269648605775092521488942264001370454910217632676113765587E-16",
+            "9.483203462149942463985057816938586668836460873978497489046893953E-17",
             "0E-577",
-            "1.439714611605620202650775010221859695212579416813067588214953905504E-16",
+            "1.436085750436225812205700761168236667126722621489601259047822033161E-16",
             "0E-576",
-            "5.8965952192360639311825177802745432537097121157737074024595968654084E-17",
+            "5.8961750158467996951578815086203363678700711919857386541617509075959E-17",
             "0E-577",
-            "6.364726000761588048247038513759263993923618113610546566458005675405149E-17",
+            "6.364723660083646188322819670914021793763704492786188542433439995717649E-17",
             "0E-59",
             "1.6553185697369121414545849074754901588110684232524074061239415428738658779233481E-9",
             "0E-61",
@@ -1014,9 +1014,9 @@
           ],
           "formal_proof_assistant": null
         },
-        "ideal_encoded_polynomial_error_upper": 1.6189902706448007e-08,
-        "ideal_decoded_filter_error_upper": 6.475961082579203e-08,
-        "ideal_shifted_filter_gibbs_error_upper": 9.103501446700807e-07,
+        "ideal_encoded_polynomial_error_upper": 1.6189902681244303e-08,
+        "ideal_decoded_filter_error_upper": 6.475961072497721e-08,
+        "ideal_shifted_filter_gibbs_error_upper": 9.10350143252889e-07,
         "certificate_scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate"
       },
       "error_contract": {
@@ -1027,23 +1027,23 @@
         "generated_phase_parameter": 0.975,
         "parameter_rounding_absolute_upper": 2.7755575615628914e-17,
         "encoded_filter_parameter_rounding_error_upper": 1.3877787807814457e-17,
-        "ideal_encoded_total_error_upper": 1.6189902720325795e-08,
-        "ideal_decoded_total_error_upper": 6.475961088130318e-08,
+        "ideal_encoded_total_error_upper": 1.618990269512209e-08,
+        "ideal_decoded_total_error_upper": 6.475961078048836e-08,
         "ideal_target_Bell_branch_amplitude_lower": 0.03556851789662839,
         "ideal_target_Bell_branch_amplitude_lower_decimal": "0.035568517896628396516797379072548760021184818730823605263368893991843609332809227",
-        "ideal_approximate_filter_acceptance_lower": 0.0012651183136613473,
-        "ideal_approximate_filter_acceptance_lower_decimal": "0.0012651183136613473401120223998383186772306347856568495198783558262246628022099525",
-        "ideal_Gibbs_trace_distance_upper": 9.103501454504217e-07,
-        "ideal_Gibbs_trace_distance_upper_decimal": "9.1035014545042163359082570775701838047835463272180307983160028878284994810620481E-7",
+        "ideal_approximate_filter_acceptance_lower": 0.001265118313661349,
+        "ideal_approximate_filter_acceptance_lower_decimal": "0.0012651183136613491330279401227954575947873112044388769313506516060136185361961810",
+        "ideal_Gibbs_trace_distance_upper": 9.1035014403323e-07,
+        "ideal_Gibbs_trace_distance_upper_decimal": "9.1035014403322999050766425139918245880087247039731609072688937358980063686535626E-7",
         "precision": 80,
         "outward_evaluation": true,
         "scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate",
-        "precompiler_source_encoded_total_error_upper": 1.6189902754809846e-08,
-        "precompiler_source_decoded_total_error_upper": 6.475961101923938e-08,
-        "precompiler_source_acceptance_lower": 0.0012651183136613447,
-        "precompiler_source_acceptance_lower_decimal": "0.0012651183136613448870198998373810502605734021256560120340419083652408056999426297",
-        "precompiler_source_Gibbs_trace_distance_upper": 9.103501473894427e-07,
-        "precompiler_source_Gibbs_trace_distance_upper_decimal": "9.1035014738944265596196165778358125585916049849549812761330143073312010184690760E-7",
+        "precompiler_source_encoded_total_error_upper": 1.6189902729606143e-08,
+        "precompiler_source_decoded_total_error_upper": 6.475961091842457e-08,
+        "precompiler_source_acceptance_lower": 0.0012651183136613467,
+        "precompiler_source_acceptance_lower_decimal": "0.0012651183136613466799358175603364509265109654120009588662447064997471366742612235",
+        "precompiler_source_Gibbs_trace_distance_upper": 9.103501459722511e-07,
+        "precompiler_source_Gibbs_trace_distance_upper_decimal": "9.1035014597225101287880020142574533418167833617101113850859051554007079060605905E-7",
         "loading_weight_certificate": {
           "certified": true,
           "certificate_scope": "logical RY/X PREPARE with exact binary64 angles and exact declared controls; accepted Hamiltonian block error requires exact indexed signed-Pauli SELECT with identity padding. Floating nested control decompositions, whole PREPARE-unitary and compiled/synthesized realization are not certified",
@@ -1127,66 +1127,66 @@
         "odd_degree": 7,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 1.591635476240548e-08,
-        "actual_Bell_branch_vector_error": 1.3671095944713565e-08,
-        "actual_acceptance_probability": 0.01579150253071545,
+        "actual_encoded_filter_operator_error": 1.591635465009115e-08,
+        "actual_Bell_branch_vector_error": 1.367109596284634e-08,
+        "actual_acceptance_probability": 0.015791502530715498,
         "exact_shifted_filter_acceptance_probability": 0.01579150312024659,
-        "gibbs_trace_distance": 9.462290804368445e-08,
-        "gibbs_max_entry_error": 6.809492764797698e-08,
+        "gibbs_trace_distance": 9.462290806450112e-08,
+        "gibbs_max_entry_error": 6.809492712755993e-08,
         "trace_real": 1.0,
-        "minimum_eigenvalue": 0.03531201244390124,
-        "actual_energy": -0.6582579722517473,
+        "minimum_eigenvalue": 0.0353120124439012,
+        "actual_energy": -0.6582579722517464,
         "exact_gibbs_energy": -0.6582579922490585,
-        "energy_error": 1.9997311140329543e-08,
+        "energy_error": 1.9997312028507963e-08,
         "actual_density_real": [
           [
-            0.09218485550671893,
-            -0.09982200909566905,
+            0.09218485550671938,
+            -0.0998220090956687,
+            -0.09982200909566884,
+            0.03495041296569646
+          ],
+          [
+            -0.0998220090956687,
+            0.4078151444932807,
+            0.06156701230714176,
+            -0.09982200909566863
+          ],
+          [
+            -0.09982200909566884,
+            0.06156701230714176,
+            0.4078151444932809,
+            -0.09982200909566877
+          ],
+          [
+            0.03495041296569646,
+            -0.09982200909566863,
             -0.09982200909566877,
-            0.034950412965697
-          ],
-          [
-            -0.09982200909566905,
-            0.4078151444932816,
-            0.06156701230714124,
-            -0.09982200909566862
-          ],
-          [
-            -0.09982200909566877,
-            0.06156701230714124,
-            0.40781514449328066,
-            -0.0998220090956689
-          ],
-          [
-            0.034950412965697,
-            -0.09982200909566862,
-            -0.0998220090956689,
-            0.09218485550671886
+            0.09218485550671895
           ]
         ],
         "actual_density_imag": [
           [
             0.0,
-            3.6927668698551124e-16,
-            8.868997894464804e-18,
-            -8.235415382327296e-17
+            4.7710569778655687e-17,
+            4.2421677495267373e-16,
+            -2.6654152763040335e-17
           ],
           [
-            -3.6927668698551124e-16,
+            -4.7710569778655687e-17,
             0.0,
-            2.09468007223443e-16,
-            1.1094735881119502e-16
+            -1.3212089138694643e-16,
+            3.594372267215266e-16
           ],
           [
-            -8.868997894464804e-18,
-            -2.09468007223443e-16,
+            -4.2421677495267373e-16,
+            1.3212089138694643e-16,
             0.0,
-            -9.037881315066112e-17
+            2.7656892177915135e-16
           ],
           [
-            8.235415382327296e-17,
-            -1.1094735881119502e-16,
-            9.037881315066112e-17,
+            2.6654152763040335e-17,
+            -3.594372267215266e-16,
+            -2.7656892177915135e-16,
             0.0
           ]
         ],
@@ -1197,7 +1197,7 @@
       },
       "source_primitive_check": {
         "scope": "full coherent Operator with phase retained",
-        "max_entry_error": 7.368889707447704e-15
+        "max_entry_error": 7.102201123698788e-15
       },
       "generation_only_scaling_case": false,
       "coherent": {
@@ -1274,19 +1274,19 @@
       "exports": {
         "coherent": {
           "file": "n2-beta-1p5-coherent.qasm",
-          "sha256": "4f14e66edd2d3be2430e3e848b34c71ed8aa0d1e0c6b9c226118875c17a330ba",
+          "sha256": "21ab09d124194c5ac41b8938b6a3e8d00bc968122a1858ee62e348964727d6f9",
           "compiled_global_phase_radians": 0.39269908169872814,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-X": {
           "file": "n2-beta-1p5-trial-X.qasm",
-          "sha256": "f20cbc61495066bfb87fd2db0465b64fae9e464e444602dfe971774124bb6c5c",
+          "sha256": "cfd133a71dc074cf3cf93d65125d2137fd320c72526f75e446ab20eb666eb5b6",
           "compiled_global_phase_radians": 3.5342917352885204,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-Z": {
           "file": "n2-beta-1p5-trial-Z.qasm",
-          "sha256": "6abe984632124c708ba990bb412d3ca0aa59fb5ef6cf33dba6ccaa287e711bba",
+          "sha256": "a97af84fe7d0fc3b8772e162f692334d453031897cd3699186783a6d82125d7c",
           "compiled_global_phase_radians": 0.39269908169872814,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         }
@@ -1337,7 +1337,7 @@
         "total_accepted_trials": 50507,
         "retry_cap_per_slot": 1014,
         "complete_attempt_cap": 51214098,
-        "expected_complete_attempts": 3198365.6971058175,
+        "expected_complete_attempts": 3198365.6971058077,
         "statistical_failure": 0.005,
         "acceptance_failure": 0.005,
         "sampling_performed": false,
@@ -1346,9 +1346,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.2695882220000385,
-        "lowering": 0.033947501000056945,
-        "bounded_checks": 1.3891175829999156
+        "phase_generation_certificate_source": 0.4209041920003074,
+        "lowering": 0.05035827500023515,
+        "bounded_checks": 2.602201348000108
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -1414,12 +1414,12 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.0003368839998074691,
+          "wall_seconds": 0.0005077499999970314,
           "node_max_residual": 1.1102230246251565e-16,
           "grid_max_residual": 1.1102230246251565e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 1.6653345369377348e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 2.220446049250313e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.49999999999999983
+            0.4999999999999998
           ],
           "sampled_target_magnitude": 0.5,
           "sampled_target_magnitude_guard": 0.75,
@@ -1454,12 +1454,12 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.00061551499993584,
+          "wall_seconds": 0.0008741840001675882,
           "node_max_residual": 6.121389792138483e-17,
           "grid_max_residual": 6.123233995736766e-17,
           "numerically_reconstructed_coefficient_l1_discrepancy": 6.123233995736765e-17,
           "numerically_reconstructed_chebyshev_coefficients": [
-            3.851859888774471e-33,
+            4.622231866529365e-33,
             6.123233995736765e-17
           ],
           "sampled_target_magnitude": 0.0,
@@ -2335,14 +2335,14 @@
         "odd_degree": 1,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 2.040702263111806e-15,
+        "actual_encoded_filter_operator_error": 2.0407022631118056e-15,
         "actual_Bell_branch_vector_error": 1.7496272078042326e-15,
         "actual_acceptance_probability": 0.06249999999999913,
         "exact_shifted_filter_acceptance_probability": 0.0625,
-        "gibbs_trace_distance": 8.118893040924118e-16,
+        "gibbs_trace_distance": 8.118893040924117e-16,
         "gibbs_max_entry_error": 3.906355550072899e-16,
         "trace_real": 1.0000000000000002,
-        "minimum_eigenvalue": 0.24999999999999936,
+        "minimum_eigenvalue": 0.24999999999999947,
         "actual_energy": 5.551115123125793e-16,
         "exact_gibbs_energy": 0.0,
         "energy_error": 5.551115123125793e-16,
@@ -2554,9 +2554,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.10411637999982304,
-        "lowering": 0.018791594000049372,
-        "bounded_checks": 0.5817749769998954
+        "phase_generation_certificate_source": 0.16793149599971002,
+        "lowering": 0.0293553419996897,
+        "bounded_checks": 1.1024012140001105
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -2595,10 +2595,10 @@
           0.7853982588214345,
           1.5708446734792918,
           1.5806381977947699,
-          1.9025067620283784,
+          1.9025067620283782,
           1.5806381977947699,
           1.5708446734792918,
-          2.356194585616331
+          2.3561945856163313
         ],
         "odd_phases": [
           -0.7853981665543615,
@@ -2652,18 +2652,18 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.006578679000085685,
-          "node_max_residual": 5.551115123125783e-16,
-          "grid_max_residual": 7.216449660063518e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 4.073299347179122e-16,
+          "wall_seconds": 0.008753918999900634,
+          "node_max_residual": 6.661338147750939e-16,
+          "grid_max_residual": 8.326672684688674e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 6.355189340487748e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.32559760084429096,
-            -8.88193659966941e-18,
-            0.01860889471259167,
-            -3.7738300612463166e-17,
-            9.141221597182465e-05,
-            -5.833902589871208e-17,
-            1.8042674232576987e-07
+            0.32559760084429085,
+            1.8092862316863812e-17,
+            0.01860889471259171,
+            -2.7599281500300734e-17,
+            9.141221597184242e-05,
+            -3.695237134206932e-17,
+            1.804267427787353e-07
           ],
           "sampled_target_magnitude": 0.34429808819959684,
           "sampled_target_magnitude_guard": 0.75,
@@ -2704,19 +2704,19 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.006310101000053692,
+          "wall_seconds": 0.008569585000259394,
           "node_max_residual": 6.661338147750939e-16,
           "grid_max_residual": 9.71445146547012e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 6.871526731765442e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 7.694949940787961e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            -9.107298248878236e-18,
-            -0.15419291232539759,
-            1.1572703422486064e-17,
-            -0.0015045454528503012,
-            1.0600418642287868e-17,
-            -4.447549724922873e-06,
-            -1.663928301339233e-17,
-            -6.276064206544789e-09
+            -1.040834085586084e-17,
+            -0.15419291232539756,
+            9.813077866773593e-18,
+            -0.0015045454528502806,
+            9.813077866773595e-18,
+            -4.447549724882787e-06,
+            0.0,
+            -6.276064218331065e-09
           ],
           "sampled_target_magnitude": 0.1557019116040367,
           "sampled_target_magnitude_guard": 0.75,
@@ -2741,9 +2741,9 @@
           "exact_parameter_decimal": "0.487499999999999988897769753748434595763683319091796875",
           "degree": 6,
           "decimal_precision": 80,
-          "uniform_error_upper": 1.9119271850615277e-10,
-          "uniform_error_upper_decimal": "1.9119271850615275995537119590826110053944219502231073526440816856336366443936515E-10",
-          "coefficient_residual_l1_upper_decimal": "1.9119271850615275995537119590826110053944219502231073526440816856336366443936514E-10",
+          "uniform_error_upper": 1.9119282253210694e-10,
+          "uniform_error_upper_decimal": "1.9119282253210691110358134097596721020493114162733302088660171911778255769800515E-10",
+          "coefficient_residual_l1_upper_decimal": "1.9119282253210691110358134097596721020493114162733302088660171911778255769800514E-10",
           "analytic_target_taylor_remainder_upper_decimal": "2.3411041622321452103411613635734031682557147824433117031266433046040108648689791E-114",
           "target_taylor_degree": 64,
           "negative_exp_taylor_degree": 45,
@@ -2779,32 +2779,32 @@
           ],
           "achieved_chebyshev_intervals": [
             {
-              "lower": "0.32559760084429114389249035399064760263249088985192677538415724602115370969429548",
-              "upper": "0.32559760084429114389249035399064760263249088985192677538415724602115376115837423"
+              "lower": "0.32559760084429093399251089830933227370544439476155377723313120672727401101469066",
+              "upper": "0.32559760084429093399251089830933227370544439476155377723313120672727406247876491"
             },
             {
               "lower": "0E-495",
               "upper": "0E-495"
             },
             {
-              "lower": "0.018608894712591711409902427654028673080517003681686447380005226040994809285286843",
-              "upper": "0.018608894712591711409902427654028673080517003681686447380005226040994874137589019"
+              "lower": "0.018608894712591712778911885284185147207539215471107483509575566922549876247723293",
+              "upper": "0.018608894712591712778911885284185147207539215471107483509575566922549941100019457"
             },
             {
               "lower": "0E-496",
               "upper": "0E-496"
             },
             {
-              "lower": "0.0000914122159718586824148987966429192300664540515943487359895542216437730039800625",
-              "upper": "0.0000914122159718586824148987966429192300664540515943487359895542216437892151408125"
+              "lower": "0.0000914122159718558424812472396367351591701983135333896306318328835559843360799375",
+              "upper": "0.0000914122159718558424812472396367351591701983135333896306318328835560005472389375"
             },
             {
               "lower": "0E-496",
               "upper": "0E-496"
             },
             {
-              "lower": "1.8042674232283797898452315906729311701198425103541445431263179532625532415625E-7",
-              "upper": "1.8042674232283797898452315906729311701198425103541445431263179532760594428125E-7"
+              "lower": "1.8042674274267776636710370065723702780506265087855506757278078844654725940625E-7",
+              "upper": "1.8042674274267776636710370065723702780506265087855506757278078844789787934375E-7"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -3070,13 +3070,13 @@
             }
           ],
           "coefficient_residual_upper_decimals": [
-            "9.876777161433402599333377014390998516756683558143401405816333024E-17",
+            "1.1113220784134728933559327635118038783058419045785986569283481554E-16",
             "0E-495",
-            "1.2090551160794648281827419250818470862954846654374659345518118445E-17",
+            "1.3459560618424804755954441462607891899084416995256214412480548883E-17",
             "0E-496",
-            "1.51586401500571207566998978826123064990586394028278622131782918822133E-16",
+            "1.48746467849014201382928082570385004031481036306940534343115016947133E-16",
             "0E-496",
-            "1.6335367263225937253859591842336733681828857923524805924202707531536673E-16",
+            "2.5648611475032116905134799236971106302485203402490093387961548034562537E-16",
             "0E-62",
             "1.9106625363340466638044604726802040884092055395784061824549820808677085762811142E-10",
             "0E-62",
@@ -3574,9 +3574,9 @@
           ],
           "formal_proof_assistant": null
         },
-        "ideal_encoded_polynomial_error_upper": 9.818375318070392e-11,
-        "ideal_decoded_filter_error_upper": 3.9273501272281567e-10,
-        "ideal_shifted_filter_gibbs_error_upper": 2.0824123766711315e-09,
+        "ideal_encoded_polynomial_error_upper": 9.8183805193681e-11,
+        "ideal_decoded_filter_error_upper": 3.92735220774724e-10,
+        "ideal_shifted_filter_gibbs_error_upper": 2.0824134798319267e-09,
         "certificate_scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate"
       },
       "error_contract": {
@@ -3587,23 +3587,23 @@
         "generated_phase_parameter": 0.4875,
         "parameter_rounding_absolute_upper": 1.3877787807814457e-17,
         "encoded_filter_parameter_rounding_error_upper": 6.938893903907228e-18,
-        "ideal_encoded_total_error_upper": 9.818376011959782e-11,
-        "ideal_decoded_total_error_upper": 3.927350404783913e-10,
+        "ideal_encoded_total_error_upper": 9.81838121325749e-11,
+        "ideal_decoded_total_error_upper": 3.927352485302996e-10,
         "ideal_target_Bell_branch_amplitude_lower": 0.09429808839078922,
         "ideal_target_Bell_branch_amplitude_lower_decimal": "0.094298088390789233056788596259895306949219101301219919634638785510114058490074547",
-        "ideal_approximate_filter_acceptance_lower": 0.008892129455640016,
-        "ideal_approximate_filter_acceptance_lower_decimal": "0.0088921294556400173582436319733590365602661050522695486489070352267801662136214167",
-        "ideal_Gibbs_trace_distance_upper": 2.0824125238404756e-09,
-        "ideal_Gibbs_trace_distance_upper_decimal": "2.0824125238404753295286680504291156327326367024230193364801916942725133362215226E-9",
+        "ideal_approximate_filter_acceptance_lower": 0.008892129455640007,
+        "ideal_approximate_filter_acceptance_lower_decimal": "0.0088921294556400075487950209212370504066393409249922874179953512397147043137202804",
+        "ideal_Gibbs_trace_distance_upper": 2.082413627001271e-09,
+        "ideal_Gibbs_trace_distance_upper_decimal": "2.0824136270012704770418813365154949936135957105670237004814245286326794351288075E-9",
         "precision": 80,
         "outward_evaluation": true,
         "scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate",
-        "precompiler_source_encoded_total_error_upper": 9.81837773616238e-11,
-        "precompiler_source_decoded_total_error_upper": 3.927351094464952e-10,
-        "precompiler_source_acceptance_lower": 0.008892129455640014,
-        "precompiler_source_acceptance_lower_decimal": "0.0088921294556400141064634548011953349230738683475143125750022288463737174193752864",
-        "precompiler_source_Gibbs_trace_distance_upper": 2.082412889532427e-09,
-        "precompiler_source_Gibbs_trace_distance_upper_decimal": "2.0824128895324268478324374283786548100985688129299690687638053433266213299014266E-9",
+        "precompiler_source_encoded_total_error_upper": 9.818382937460089e-11,
+        "precompiler_source_decoded_total_error_upper": 3.9273531749840355e-10,
+        "precompiler_source_acceptance_lower": 0.008892129455640004,
+        "precompiler_source_acceptance_lower_decimal": "0.0088921294556400042970148437490751423876519188296592778326571499571758738839220552",
+        "precompiler_source_Gibbs_trace_distance_upper": 2.082413992693222e-09,
+        "precompiler_source_Gibbs_trace_distance_upper_decimal": "2.0824139926932219953456507144650341709795278210739734327650381776867874288087115E-9",
         "loading_weight_certificate": {
           "certified": true,
           "certificate_scope": "logical RY/X PREPARE with exact binary64 angles and exact declared controls; accepted Hamiltonian block error requires exact indexed signed-Pauli SELECT with identity padding. Floating nested control decompositions, whole PREPARE-unitary and compiled/synthesized realization are not certified",
@@ -3687,66 +3687,66 @@
         "odd_degree": 7,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 9.738807128619335e-11,
-        "actual_Bell_branch_vector_error": 8.516077278430399e-11,
-        "actual_acceptance_probability": 0.027720230581476348,
+        "actual_encoded_filter_operator_error": 9.738849216582909e-11,
+        "actual_Bell_branch_vector_error": 8.51608670063353e-11,
+        "actual_acceptance_probability": 0.027720230581476234,
         "exact_shifted_filter_acceptance_probability": 0.027720230585504185,
-        "gibbs_trace_distance": 4.87474413267189e-10,
-        "gibbs_max_entry_error": 3.0197124314958017e-10,
-        "trace_real": 1.0,
-        "minimum_eigenvalue": 0.10648446926970528,
-        "actual_energy": -0.4119274842002367,
+        "gibbs_trace_distance": 4.874745797999667e-10,
+        "gibbs_max_entry_error": 3.019713472329942e-10,
+        "trace_real": 0.9999999999999999,
+        "minimum_eigenvalue": 0.10648446926970488,
+        "actual_energy": -0.4119274842002372,
         "exact_gibbs_energy": -0.4119274842591486,
-        "energy_error": 5.891187537798714e-11,
+        "energy_error": 5.891137577762606e-11,
         "actual_density_real": [
           [
-            0.14878980563099292,
-            -0.060365363469507355,
-            -0.06036536346950725,
-            0.01322294117320402
+            0.14878980563099328,
+            -0.060365363469507445,
+            -0.06036536346950744,
+            0.013222941173203958
           ],
           [
-            -0.060365363469507355,
+            -0.060365363469507445,
+            0.35121019436900686,
+            0.017769512902073962,
+            -0.060365363469507397
+          ],
+          [
+            -0.06036536346950744,
+            0.017769512902073962,
             0.35121019436900663,
-            0.017769512902074066,
-            -0.06036536346950746
+            -0.06036536346950768
           ],
           [
-            -0.06036536346950725,
-            0.017769512902074066,
-            0.3512101943690069,
-            -0.060365363469507244
-          ],
-          [
-            0.01322294117320402,
-            -0.06036536346950746,
-            -0.060365363469507244,
-            0.14878980563099356
+            0.013222941173203958,
+            -0.060365363469507397,
+            -0.06036536346950768,
+            0.14878980563099312
           ]
         ],
         "actual_density_imag": [
           [
             0.0,
-            4.2921466215162194e-16,
-            4.394989983743838e-16,
-            -1.3449613609321357e-16
+            1.8327147021812748e-16,
+            1.2876212402710118e-16,
+            -2.3373610499023586e-16
           ],
           [
-            -4.2921466215162194e-16,
+            -1.8327147021812748e-16,
             0.0,
-            8.569908574147779e-17,
-            3.321050855191445e-16
+            -1.0325481775720927e-16,
+            2.012333807774794e-16
           ],
           [
-            -4.394989983743838e-16,
-            -8.569908574147779e-17,
+            -1.2876212402710118e-16,
+            1.0325481775720927e-16,
             0.0,
-            -6.919121343606615e-17
+            1.9910769770635227e-16
           ],
           [
-            1.3449613609321357e-16,
-            -3.321050855191445e-16,
-            6.919121343606615e-17,
+            2.3373610499023586e-16,
+            -2.012333807774794e-16,
+            -1.9910769770635227e-16,
             0.0
           ]
         ],
@@ -3757,7 +3757,7 @@
       },
       "source_primitive_check": {
         "scope": "full coherent Operator with phase retained",
-        "max_entry_error": 6.984778717970515e-15
+        "max_entry_error": 7.604771700210345e-15
       },
       "generation_only_scaling_case": false,
       "coherent": {
@@ -3834,19 +3834,19 @@
       "exports": {
         "coherent": {
           "file": "n2-beta-0p75-coherent.qasm",
-          "sha256": "1252c671b6a56f5ec7e90351891c421fb0acda87fdedd33a317616f74816fa45",
+          "sha256": "a8ebe074c10581f62cb8835bf09b16b09f822bf906bab1a5b352cc4281d3febc",
           "compiled_global_phase_radians": 0.39269908169872814,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-X": {
           "file": "n2-beta-0p75-trial-X.qasm",
-          "sha256": "bdbf96d7f6c148217d5db311bc852df078935e8f2ac0bb8ea4f5508eeffa0a7f",
+          "sha256": "688b1623175e939647ce4986f9c83a3c5587509ae8616c781bbac749223890b8",
           "compiled_global_phase_radians": 3.5342917352885204,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-Z": {
           "file": "n2-beta-0p75-trial-Z.qasm",
-          "sha256": "bf3a295c0f9a2626a34ac017829797447495aa1ca08bfd661388670dd2ed3e3c",
+          "sha256": "5bda108336852336d3fb143cb919d6883cb3f48896bf5d45e9d90dad0fc1c3ac",
           "compiled_global_phase_radians": 0.39269908169872814,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         }
@@ -3897,7 +3897,7 @@
         "total_accepted_trials": 50507,
         "retry_cap_per_slot": 574,
         "complete_attempt_cap": 28991018,
-        "expected_complete_attempts": 1822026.690995514,
+        "expected_complete_attempts": 1822026.6909955214,
         "statistical_failure": 0.005,
         "acceptance_failure": 0.005,
         "sampling_performed": false,
@@ -3906,9 +3906,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.2600439059999644,
-        "lowering": 0.02858281499993609,
-        "bounded_checks": 1.3968136690000392
+        "phase_generation_certificate_source": 0.4051361659999202,
+        "lowering": 0.04657514099972104,
+        "bounded_checks": 2.5939499639998758
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -3936,7 +3936,7 @@
         "even_degree": 4,
         "odd_degree": 5,
         "even_phases": [
-          0.7853929786392652,
+          0.7853929786392653,
           1.5671763373249261,
           1.1688321437104614,
           1.5671763373249261,
@@ -3986,16 +3986,16 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.004884396000079505,
-          "node_max_residual": 4.996003610813204e-16,
-          "grid_max_residual": 6.661338147750939e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 6.625745966584332e-16,
+          "wall_seconds": 0.0066949189999832015,
+          "node_max_residual": 3.885780586188048e-16,
+          "grid_max_residual": 5.551115123125783e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 6.086207767170606e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.39121646875426097,
-            -3.1399571399754e-17,
-            0.006662823979395122,
-            -4.8890695998183e-17,
-            9.542882050583915e-06
+            0.3912164687542609,
+            -3.7719018050411e-17,
+            0.0066628239793951,
+            -5.0215359396380506e-17,
+            9.542882050444255e-06
           ],
           "sampled_target_magnitude": 0.3978888356157066,
           "sampled_target_magnitude_guard": 0.75,
@@ -4034,17 +4034,17 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.0048818330001267896,
+          "wall_seconds": 0.006430494999676739,
           "node_max_residual": 4.85722573273506e-16,
           "grid_max_residual": 4.787836793695988e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 3.306706681614956e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 3.716838250207891e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            -2.60208521396521e-18,
-            -0.101819827400698,
-            -1.0209428013489588e-17,
-            -0.00029108104800866155,
-            -1.0539719802419586e-17,
-            -2.5035695310032087e-07
+            -1.7347234759768067e-18,
+            -0.10181982740069806,
+            2.4532694666933983e-18,
+            -0.00029108104800867207,
+            0.0,
+            -2.503569531155029e-07
           ],
           "sampled_target_magnitude": 0.10211115880565981,
           "sampled_target_magnitude_guard": 0.75,
@@ -4069,9 +4069,9 @@
           "exact_parameter_decimal": "0.2624999999999999555910790149937383830547332763671875",
           "degree": 4,
           "decimal_precision": 80,
-          "uniform_error_upper": 5.475997631960766e-09,
-          "uniform_error_upper_decimal": "5.4759976319607657054038295681361663288239278839153333388209229860986569286243520E-9",
-          "coefficient_residual_l1_upper_decimal": "5.4759976319607657054038295681361663288239278839153333388209229860986569286243519E-9",
+          "uniform_error_upper": 5.475997529472648e-09,
+          "uniform_error_upper_decimal": "5.4759975294726473697016386893841933742968210135519823473803510464964418111243520E-9",
+          "coefficient_residual_l1_upper_decimal": "5.4759975294726473697016386893841933742968210135519823473803510464964418111243519E-9",
           "analytic_target_taylor_remainder_upper_decimal": "4.2230879466168572392876128125088591213760684746865531530179029937641342870926839E-132",
           "target_taylor_degree": 64,
           "negative_exp_taylor_degree": 40,
@@ -4099,24 +4099,24 @@
           ],
           "achieved_chebyshev_intervals": [
             {
-              "lower": "0.39121646875426109002569982074147233098794527335490898752074635902292529077946686",
-              "upper": "0.39121646875426109002569982074147233098794527335490898752074635902292529901274552"
+              "lower": "0.39121646875426109002748911253840984056558221141357253689313467169344456995278614",
+              "upper": "0.39121646875426109002748911253840984056558221141357253689313467169344457818606519"
             },
             {
               "lower": "0E-326",
               "upper": "0E-326"
             },
             {
-              "lower": "0.00666282397939513424451026651241318794848503249247278547758889718013455531129720",
-              "upper": "0.00666282397939513424451026651241318794848503249247278547758889718013456339546010"
+              "lower": "0.00666282397939513455898288958177485642674248730707016857833373382480365632443975",
+              "upper": "0.00666282397939513455898288958177485642674248730707016857833373382480366440860310"
             },
             {
               "lower": "0E-326",
               "upper": "0E-326"
             },
             {
-              "lower": "0.0000095428820506066908625859058237005629925671311643225624189827374100699594432625",
-              "upper": "0.0000095428820506066908625859058237005629925671311643225624189827374100709701238000"
+              "lower": "0.0000095428820505045190061650699319998669140054773183846722011406120265105436899250",
+              "upper": "0.0000095428820505045190061650699319998669140054773183846722011406120265115543705125"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -4382,11 +4382,11 @@
             }
           ],
           "coefficient_residual_upper_decimals": [
-            "9.700965218895240763221515930925761171547210276942142275873745159E-17",
+            "9.700786289715547012263752237119894816609971445675090347956413231E-17",
             "0E-326",
-            "8.55128412188551512574502386319344442735436930446138106694194329273E-17",
+            "8.51983685957857895889719811771198468904429482079691415684062903773E-17",
             "0E-326",
-            "3.396612070863260735604484994263703366693212091659799842807548080047823E-16",
+            "2.374893506654901818597524208647164907314309913238546007213390547172823E-16",
             "0E-62",
             "5.4743137150612661893849515197289403132542157585544413261389875378577574932752475E-9",
             "0E-62",
@@ -4870,9 +4870,9 @@
           ],
           "formal_proof_assistant": null
         },
-        "ideal_encoded_polynomial_error_upper": 2.7893171362481897e-09,
-        "ideal_decoded_filter_error_upper": 1.1157268544992759e-08,
-        "ideal_shifted_filter_gibbs_error_upper": 3.7721806671249433e-08,
+        "ideal_encoded_polynomial_error_upper": 2.7893170850041303e-09,
+        "ideal_decoded_filter_error_upper": 1.1157268340016521e-08,
+        "ideal_shifted_filter_gibbs_error_upper": 3.7721805978241646e-08,
         "certificate_scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate"
       },
       "error_contract": {
@@ -4883,23 +4883,23 @@
         "generated_phase_parameter": 0.26249999999999996,
         "parameter_rounding_absolute_upper": 2.7755575615628914e-17,
         "encoded_filter_parameter_rounding_error_upper": 1.3877787807814457e-17,
-        "ideal_encoded_total_error_upper": 2.7893171501259775e-09,
-        "ideal_decoded_total_error_upper": 1.115726860050391e-08,
+        "ideal_encoded_total_error_upper": 2.789317098881918e-09,
+        "ideal_decoded_total_error_upper": 1.1157268395527672e-08,
         "ideal_target_Bell_branch_amplitude_lower": 0.14788884109170375,
         "ideal_target_Bell_branch_amplitude_lower_decimal": "0.14788884109170377538994438265436628439022319598378708316076124841365633589858717",
-        "ideal_approximate_filter_acceptance_lower": 0.021871108494429456,
-        "ideal_approximate_filter_acceptance_lower_decimal": "0.021871108494429457365496720542260246481651791690227543481715012630923251812940019",
-        "ideal_Gibbs_trace_distance_upper": 3.772180685892807e-08,
-        "ideal_Gibbs_trace_distance_upper_decimal": "3.7721806858928069072172814860579644812895988077268532867478050325624255647767995E-8",
+        "ideal_approximate_filter_acceptance_lower": 0.02187110849442947,
+        "ideal_approximate_filter_acceptance_lower_decimal": "0.021871108494429472522345547096009059624430372380710306232486912872542489774943812",
+        "ideal_Gibbs_trace_distance_upper": 3.7721806165920284e-08,
+        "ideal_Gibbs_trace_distance_upper_decimal": "3.7721806165920280073169238556457755272704342396753229329476961478342403106615487E-8",
         "precision": 80,
         "outward_evaluation": true,
         "scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate",
-        "precompiler_source_encoded_total_error_upper": 2.7893171501259775e-09,
-        "precompiler_source_decoded_total_error_upper": 1.115726860050391e-08,
-        "precompiler_source_acceptance_lower": 0.021871108494429456,
-        "precompiler_source_acceptance_lower_decimal": "0.021871108494429457365496720542260246481651791690227543481715012630923251812940019",
-        "precompiler_source_Gibbs_trace_distance_upper": 3.772180685892807e-08,
-        "precompiler_source_Gibbs_trace_distance_upper_decimal": "3.7721806858928069072172814860579644812895988077268532867478050325624255647767995E-8",
+        "precompiler_source_encoded_total_error_upper": 2.789317098881918e-09,
+        "precompiler_source_decoded_total_error_upper": 1.1157268395527672e-08,
+        "precompiler_source_acceptance_lower": 0.02187110849442947,
+        "precompiler_source_acceptance_lower_decimal": "0.021871108494429472522345547096009059624430372380710306232486912872542489774943812",
+        "precompiler_source_Gibbs_trace_distance_upper": 3.7721806165920284e-08,
+        "precompiler_source_Gibbs_trace_distance_upper_decimal": "3.7721806165920280073169238556457755272704342396753229329476961478342403106615487E-8",
         "loading_weight_certificate": {
           "certified": true,
           "certificate_scope": "logical RY/X PREPARE with exact binary64 angles and exact declared controls; accepted Hamiltonian block error requires exact indexed signed-Pauli SELECT with identity padding. Floating nested control decompositions, whole PREPARE-unitary and compiled/synthesized realization are not certified",
@@ -4956,7 +4956,7 @@
         "odd_degree": 5,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 2.789316975310152e-09,
+        "actual_encoded_filter_operator_error": 2.7893170308213037e-09,
         "actual_Bell_branch_vector_error": 2.7384793992764796e-09,
         "actual_acceptance_probability": 0.04218555356506438,
         "exact_shifted_filter_acceptance_probability": 0.042185554659723595,
@@ -4979,12 +4979,12 @@
         ],
         "actual_density_imag": [
           [
-            2.8451138397773642e-34,
-            -1.2566224419790978e-33
+            0.0,
+            0.0
           ],
           [
-            -1.9971088178988108e-33,
-            1.7586703019163302e-35
+            0.0,
+            0.0
           ]
         ],
         "complete_trials_for_one_accepted_measured_output_99_percent": 107,
@@ -4994,7 +4994,7 @@
       },
       "source_primitive_check": {
         "scope": "full coherent Operator with phase retained",
-        "max_entry_error": 1.942890293094024e-16
+        "max_entry_error": 2.498001805406602e-16
       },
       "generation_only_scaling_case": false,
       "coherent": {
@@ -5062,19 +5062,19 @@
       "exports": {
         "coherent": {
           "file": "n1-beta-1p5-coherent.qasm",
-          "sha256": "2d49184dcbc1c147ad9087a0a7e6022279de3ae7dfa485f9d6c8db5192d2934e",
+          "sha256": "74d515068f9e34f8721a5f78f34a02f1754cbc93a1f04cc37d173abe87d6a542",
           "compiled_global_phase_radians": 0.0,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-X": {
           "file": "n1-beta-1p5-trial-X.qasm",
-          "sha256": "39194f8923804a8484efe473cd202977b11458b3e322faebb43dbcd89c840421",
+          "sha256": "b20452cb70e36349cc7739dd405579a6b040527f899927dd2efbfd058f064923",
           "compiled_global_phase_radians": 0.0,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-Z": {
           "file": "n1-beta-1p5-trial-Z.qasm",
-          "sha256": "343daf48654b1fbf0a26d82417951f1a14831c1a562f56f3fda5aa817809e38d",
+          "sha256": "5e5af03333e4d2c45ac621aab26f8f4cb7b5e25618cb033d9786097ec8f64bf3",
           "compiled_global_phase_radians": 0.0,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         }
@@ -5111,9 +5111,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.2004160060000686,
-        "lowering": 0.008776772999908644,
-        "bounded_checks": 0.01310916400007045
+        "phase_generation_certificate_source": 0.31392659299990555,
+        "lowering": 0.012638943999718322,
+        "bounded_checks": 0.02682375799986403
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -5171,12 +5171,12 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.0006799479999699543,
+          "wall_seconds": 0.00043076600013591815,
           "node_max_residual": 1.1102230246251565e-16,
           "grid_max_residual": 1.1102230246251565e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 1.6653345369377348e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 2.220446049250313e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.49999999999999983
+            0.4999999999999998
           ],
           "sampled_target_magnitude": 0.5,
           "sampled_target_magnitude_guard": 0.75,
@@ -5211,12 +5211,12 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.0010267620000377065,
+          "wall_seconds": 0.0010653419999471225,
           "node_max_residual": 6.121389792138483e-17,
           "grid_max_residual": 6.123233995736766e-17,
           "numerically_reconstructed_coefficient_l1_discrepancy": 6.123233995736765e-17,
           "numerically_reconstructed_chebyshev_coefficients": [
-            3.851859888774471e-33,
+            4.622231866529365e-33,
             6.123233995736765e-17
           ],
           "sampled_target_magnitude": 0.0,
@@ -6088,12 +6088,12 @@
         ],
         "actual_density_imag": [
           [
-            -3.1721860074199155e-34,
-            4.230176247722414e-35
+            0.0,
+            0.0
           ],
           [
-            4.7148318517867735e-35,
-            -3.1721860074199155e-34
+            0.0,
+            0.0
           ]
         ],
         "complete_trials_for_one_accepted_measured_output_99_percent": 72,
@@ -6220,9 +6220,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.11489716200003386,
-        "lowering": 0.008125522999989698,
-        "bounded_checks": 0.005201134000117236
+        "phase_generation_certificate_source": 0.17492148700011967,
+        "lowering": 0.012469015999613475,
+        "bounded_checks": 0.00921235899977546
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -6258,10 +6258,10 @@
         ],
         "odd_phases": [
           -0.7853981589428602,
-          1.5708170212885726,
-          1.5996508800326281,
-          1.5996508800326281,
-          1.5708170212885726,
+          1.5708170212885724,
+          1.599650880032628,
+          1.599650880032628,
+          1.5708170212885724,
           2.356194494646933
         ],
         "even_coefficients": [
@@ -6300,16 +6300,16 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.00463801799992325,
+          "wall_seconds": 0.006159437999940565,
           "node_max_residual": 2.7755575615628914e-16,
           "grid_max_residual": 4.996003610813204e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 5.454033022760134e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 4.840278492602967e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.44038974155891075,
-            -5.421387665960685e-17,
-            0.0018911711091639616,
-            -6.19114338820327e-17,
-            6.783267070777513e-07
+            0.4403897415589108,
+            -4.883539532136546e-17,
+            0.0018911711091639594,
+            -5.899346420689282e-17,
+            6.78326707078015e-07
           ],
           "sampled_target_magnitude": 0.4422815909947821,
           "sampled_target_magnitude_guard": 0.75,
@@ -6348,17 +6348,17 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.004815222999923208,
-          "node_max_residual": 8.534839501805891e-16,
-          "grid_max_residual": 9.159339953157541e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 7.384726949814902e-16,
+          "wall_seconds": 0.006455051000102685,
+          "node_max_residual": 7.979727989493313e-16,
+          "grid_max_residual": 9.020562075079397e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 9.457563293434055e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            -1.2034644114589096e-17,
-            -0.05767704547556838,
-            -7.883899805011605e-18,
-            -4.1354529616361005e-05,
-            1.083556979870247e-18,
-            -8.901760653223127e-09
+            -4.336808689942017e-18,
+            -0.05767704547556792,
+            -1.3492982066813691e-17,
+            -4.1354529615933057e-05,
+            9.813077866773595e-18,
+            -8.901760638706073e-09
           ],
           "sampled_target_magnitude": 0.05771840890694468,
           "sampled_target_magnitude_guard": 0.75,
@@ -6781,9 +6781,9 @@
           "exact_parameter_decimal": "0.13124999999999997779553950749686919152736663818359375",
           "degree": 5,
           "decimal_precision": 80,
-          "uniform_error_upper": 9.133441204193425e-13,
-          "uniform_error_upper_decimal": "9.1334412041934249111749075245512060896285025845440974025303828736481725010894467E-13",
-          "coefficient_residual_l1_upper_decimal": "9.1334412041934249111749075245512060896285025845440974025303828736481725010894466E-13",
+          "uniform_error_upper": 9.135988455429764e-13,
+          "uniform_error_upper_decimal": "9.1359884554297618191126486237612567652660443099534559232291579548160381610894467E-13",
+          "coefficient_residual_l1_upper_decimal": "9.1359884554297618191126486237612567652660443099534559232291579548160381610894466E-13",
           "analytic_target_taylor_remainder_upper_decimal": "1.1211789138608467841173243453021447062062239811086911973893178188326204956290959E-154",
           "target_taylor_degree": 65,
           "negative_exp_taylor_degree": 35,
@@ -6819,24 +6819,24 @@
               "upper": "0E-413"
             },
             {
-              "lower": "-0.057677045475568374724312688057919651024486560536295871897222532799159184635805175",
-              "upper": "-0.057677045475568374724312688057919651024486560536295871897222532799159146848384012"
+              "lower": "-0.057677045475567931745612083440797608706009757839622109196255280198462656101049125",
+              "upper": "-0.057677045475567931745612083440797608706009757839622109196255280198462618313620800"
             },
             {
               "lower": "0E-411",
               "upper": "0E-411"
             },
             {
-              "lower": "-0.00004135452961636621110945499437586635629958600385342462827172403536417728229328750",
-              "upper": "-0.00004135452961636621110945499437586635629958600385342462827172403536416467953079375"
+              "lower": "-0.00004135452961592249206979718751685384822973374185556773164136504904437409054975000",
+              "upper": "-0.00004135452961592249206979718751685384822973374185556773164136504904436148778493750"
             },
             {
               "lower": "0E-413",
               "upper": "0E-413"
             },
             {
-              "lower": "-8.90176063028606678750833981422929362696213262571439135564263857344868153750E-9",
-              "upper": "-8.90176063028606678750833981422929362696213262571439135564263857218844899375E-9"
+              "lower": "-8.90176063028606690168893906633944777152598310147489158846790594428130462500E-9",
+              "upper": "-8.90176063028606690168893906633944777152598310147489158846790594302107186250E-9"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -7107,11 +7107,11 @@
           ],
           "coefficient_residual_upper_decimals": [
             "0E-413",
-            "1.97414468931024665790100345236379549837628548681370515574813654279E-16",
+            "2.45564231673592456252218131566317123925072418571230180991514840805E-16",
             "0E-411",
-            "1.18571839440432227476313044660847929332964229772909591362910102850868E-16",
+            "3.25147200217374631536195025191414068523932400586076728452884410023934E-16",
             "0E-413",
-            "3.591559134465181326083859058643559402515144589832270260734581092351612080E-16",
+            "3.591559135606987318604960600089197907272749592160522934442907323226612080E-16",
             "0E-61",
             "9.1261439440624894785080034104879730862642601435844045206957763265139475403090622E-13",
             "0E-59",
@@ -7184,9 +7184,9 @@
           ],
           "formal_proof_assistant": null
         },
-        "ideal_encoded_polynomial_error_upper": 4.913700073329097e-11,
-        "ideal_decoded_filter_error_upper": 1.9654800293316388e-10,
-        "ideal_shifted_filter_gibbs_error_upper": 5.110941765584226e-10,
+        "ideal_encoded_polynomial_error_upper": 4.913712809585279e-11,
+        "ideal_decoded_filter_error_upper": 1.9654851238341117e-10,
+        "ideal_shifted_filter_gibbs_error_upper": 5.110955013088689e-10,
         "certificate_scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate"
       },
       "error_contract": {
@@ -7197,23 +7197,23 @@
         "generated_phase_parameter": 0.13124999999999998,
         "parameter_rounding_absolute_upper": 1.3877787807814457e-17,
         "encoded_filter_parameter_rounding_error_upper": 6.938893903907228e-18,
-        "ideal_encoded_total_error_upper": 4.9137007672184875e-11,
-        "ideal_decoded_total_error_upper": 1.965480306887395e-10,
+        "ideal_encoded_total_error_upper": 4.9137135034746696e-11,
+        "ideal_decoded_total_error_upper": 1.9654854013898678e-10,
         "ideal_target_Bell_branch_amplitude_lower": 0.19228159109214263,
         "ideal_target_Bell_branch_amplitude_lower_decimal": "0.19228159109214262960564912184689517431160746559732267630003243276630598062398410",
-        "ideal_approximate_filter_acceptance_lower": 0.03697221025402966,
-        "ideal_approximate_filter_acceptance_lower_decimal": "0.036972210254029659816471486608918452263748974402973337716747752778041256734282536",
-        "ideal_Gibbs_trace_distance_upper": 5.110942487327151e-10,
-        "ideal_Gibbs_trace_distance_upper_decimal": "5.1109424873271504049261316378785957465484509313569095791216851034255504591195774E-10",
+        "ideal_approximate_filter_acceptance_lower": 0.03697221025402961,
+        "ideal_approximate_filter_acceptance_lower_decimal": "0.036972210254029610837519435667747177596132969222279077028189267438068379747682068",
+        "ideal_Gibbs_trace_distance_upper": 5.110955734831615e-10,
+        "ideal_Gibbs_trace_distance_upper_decimal": "5.1109557348316144060913051705660864355380939079700181140587369311741500224241703E-10",
         "precision": 80,
         "outward_evaluation": true,
         "scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate",
-        "precompiler_source_encoded_total_error_upper": 4.9137007672184875e-11,
-        "precompiler_source_decoded_total_error_upper": 1.965480306887395e-10,
-        "precompiler_source_acceptance_lower": 0.03697221025402966,
-        "precompiler_source_acceptance_lower_decimal": "0.036972210254029659816471486608918452263748974402973337716747752778041256734282536",
-        "precompiler_source_Gibbs_trace_distance_upper": 5.110942487327151e-10,
-        "precompiler_source_Gibbs_trace_distance_upper_decimal": "5.1109424873271504049261316378785957465484509313569095791216851034255504591195774E-10",
+        "precompiler_source_encoded_total_error_upper": 4.9137135034746696e-11,
+        "precompiler_source_decoded_total_error_upper": 1.9654854013898678e-10,
+        "precompiler_source_acceptance_lower": 0.03697221025402961,
+        "precompiler_source_acceptance_lower_decimal": "0.036972210254029610837519435667747177596132969222279077028189267438068379747682068",
+        "precompiler_source_Gibbs_trace_distance_upper": 5.110955734831615e-10,
+        "precompiler_source_Gibbs_trace_distance_upper_decimal": "5.1109557348316144060913051705660864355380939079700181140587369311741500224241703E-10",
         "loading_weight_certificate": {
           "certified": true,
           "certificate_scope": "logical RY/X PREPARE with exact binary64 angles and exact declared controls; accepted Hamiltonian block error requires exact indexed signed-Pauli SELECT with identity padding. Floating nested control decompositions, whole PREPARE-unitary and compiled/synthesized realization are not certified",
@@ -7270,35 +7270,35 @@
         "odd_degree": 5,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 4.913651777127941e-11,
-        "actual_Bell_branch_vector_error": 4.8682538539655286e-11,
-        "actual_acceptance_probability": 0.049736105114906205,
+        "actual_encoded_filter_operator_error": 4.913679185758565e-11,
+        "actual_Bell_branch_vector_error": 4.868254442667977e-11,
+        "actual_acceptance_probability": 0.04973610511490617,
         "exact_shifted_filter_acceptance_probability": 0.04973610513646298,
-        "gibbs_trace_distance": 2.5340979314947276e-11,
-        "gibbs_max_entry_error": 2.5340979314947276e-11,
-        "trace_real": 1.0000000000000002,
-        "minimum_eigenvalue": 0.37168381167929293,
-        "actual_energy": -0.08982133182449502,
+        "gibbs_trace_distance": 2.5338203757385713e-11,
+        "gibbs_max_entry_error": 2.5338203757385713e-11,
+        "trace_real": 0.9999999999999999,
+        "minimum_eigenvalue": 0.37168381167929554,
+        "actual_energy": -0.08982133182449308,
         "exact_gibbs_energy": -0.08982133180675633,
-        "energy_error": 1.7738685520463093e-11,
+        "energy_error": 1.773674263017e-11,
         "actual_density_real": [
           [
-            0.5000000000000001,
-            -0.12831618832070718
+            0.49999999999999994,
+            -0.1283161883207044
           ],
           [
-            -0.12831618832070718,
-            0.5000000000000001
+            -0.1283161883207044,
+            0.49999999999999994
           ]
         ],
         "actual_density_imag": [
           [
-            3.18057219672256e-33,
-            1.8369026753281865e-33
+            0.0,
+            0.0
           ],
           [
-            2.4607177989031984e-34,
-            3.051445834820973e-33
+            0.0,
+            0.0
           ]
         ],
         "complete_trials_for_one_accepted_measured_output_99_percent": 91,
@@ -7308,7 +7308,7 @@
       },
       "source_primitive_check": {
         "scope": "full coherent Operator with phase retained",
-        "max_entry_error": 3.3306690738754696e-16
+        "max_entry_error": 4.996003610813204e-16
       },
       "generation_only_scaling_case": false,
       "coherent": {
@@ -7376,19 +7376,19 @@
       "exports": {
         "coherent": {
           "file": "n1-beta-0p75-coherent.qasm",
-          "sha256": "7eeee30520036619bb85303f103be22fd69f98dcb8626b4fe336482bdb2ce5e2",
+          "sha256": "4be66ed25c611cf9435983f9022513d8bd7b0e87b4cc601253368930b97d7fce",
           "compiled_global_phase_radians": 0.0,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-X": {
           "file": "n1-beta-0p75-trial-X.qasm",
-          "sha256": "22d9367c01577e846c7e13e73d357496123e92bb6b252604fa7f9586b97a49ec",
+          "sha256": "4369d09287ab70f4a3ea1c10d27152697023d4ff059034673502fb6b143fa7ce",
           "compiled_global_phase_radians": 0.0,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-Z": {
           "file": "n1-beta-0p75-trial-Z.qasm",
-          "sha256": "5eec5dcf352c911885b22353c1a6a59b40e8044c2767e3fc5546ae17d44b4c78",
+          "sha256": "a2ae122b0d25ecdf863d127a69870a7d6ac5c0e4b92a856596307ed668140e3e",
           "compiled_global_phase_radians": 0.0,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         }
@@ -7416,7 +7416,7 @@
         "total_accepted_trials": 1632,
         "retry_cap_per_slot": 249,
         "complete_attempt_cap": 406368,
-        "expected_complete_attempts": 32813.18463175919,
+        "expected_complete_attempts": 32813.18463175921,
         "statistical_failure": 0.005,
         "acceptance_failure": 0.005,
         "sampling_performed": false,
@@ -7425,9 +7425,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.1987691960000575,
-        "lowering": 0.008558698000115328,
-        "bounded_checks": 0.012740235000137545
+        "phase_generation_certificate_source": 0.3094266359998983,
+        "lowering": 0.012828979999994772,
+        "bounded_checks": 0.02669216200001756
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -7472,13 +7472,13 @@
         "odd_degree": 9,
         "even_phases": [
           0.7853975150985846,
-          1.5707441725841318,
+          1.5707441725841316,
           1.5685092573880364,
           1.5286228680860994,
-          1.3982974471740244,
+          1.3982974471740242,
           1.5286228680860994,
           1.5685092573880364,
-          1.5707441725841318,
+          1.5707441725841316,
           2.356193841893481
         ],
         "odd_phases": [
@@ -7541,20 +7541,20 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.010174292000101559,
-          "node_max_residual": 6.938893903907228e-16,
-          "grid_max_residual": 8.604228440844963e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 7.954079845841989e-16,
+          "wall_seconds": 0.01641380199998821,
+          "node_max_residual": 6.106226635438361e-16,
+          "grid_max_residual": 7.216449660063518e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 3.36844678649861e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.1710246431875113,
-            1.0527466462613685e-17,
-            0.08292934669011724,
-            -1.9757765374452718e-17,
-            0.004496696447580893,
-            -4.2425525491052014e-17,
-            0.00010255817840876731,
-            -9.518878454792401e-19,
-            1.2750775914790048e-06
+            0.1710246431875115,
+            -2.6985964133627383e-17,
+            0.08292934669011726,
+            -1.8706179683537167e-17,
+            0.004496696447580862,
+            -1.778620363352714e-17,
+            0.00010255817840922036,
+            0.0,
+            1.275077591493093e-06
           ],
           "sampled_target_magnitude": 0.2585545195812102,
           "sampled_target_magnitude_guard": 0.75,
@@ -7597,21 +7597,21 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.010936445999959687,
+          "wall_seconds": 0.018068295999910333,
           "node_max_residual": 4.718447854656915e-16,
           "grid_max_residual": 6.938893903907228e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 7.205426997137665e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 5.459915112440522e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            2.60208521396521e-18,
-            -0.21863244910913948,
-            7.256730076552116e-19,
-            -0.022059182880713436,
-            3.3082593893418753e-17,
-            -0.0007415108329227603,
-            6.79145286238054e-17,
-            -1.220823090205087e-05,
-            1.443718158993688e-16,
-            -1.1860633046373027e-07
+            3.4694469519536134e-18,
+            -0.21863244910913945,
+            -1.9626155733547187e-17,
+            -0.02205918288071337,
+            9.813077866773595e-18,
+            -0.0007415108329227559,
+            3.925231146709438e-17,
+            -1.2208230901986039e-05,
+            3.925231146709437e-17,
+            -1.1860633046770797e-07
           ],
           "sampled_target_magnitude": 0.24144546966000788,
           "sampled_target_magnitude_guard": 0.75,
@@ -7636,9 +7636,9 @@
           "exact_parameter_decimal": "1.6875",
           "degree": 8,
           "decimal_precision": 80,
-          "uniform_error_upper": 9.996707124557318e-09,
-          "uniform_error_upper_decimal": "9.9967071245573159532044807988136825598896736751631604188799043431942423806909470E-9",
-          "coefficient_residual_l1_upper_decimal": "9.9967071245573159532044807988136825598896736751631604188799043431942414661874005E-9",
+          "uniform_error_upper": 9.996706701452783e-09,
+          "uniform_error_upper_decimal": "9.9967067014527824910969307997933525542424120010609276600614359232251936506709470E-9",
+          "coefficient_residual_l1_upper_decimal": "9.9967067014527824910969307997933525542424120010609276600614359232251927361674005E-9",
           "analytic_target_taylor_remainder_upper_decimal": "9.1450354645957837324617719707936459353289197180481095877636164142457078463164517E-79",
           "target_taylor_degree": 64,
           "negative_exp_taylor_degree": 62,
@@ -7682,40 +7682,40 @@
           ],
           "achieved_chebyshev_intervals": [
             {
-              "lower": "0.17102464318751131811864460723855155025495440370929133124078957730577007722420557",
-              "upper": "0.17102464318751131811864460723855155025495440370929133124078957730577057180684165"
+              "lower": "0.17102464318751153599601522042929215245384993137265912496795632199943050832533837",
+              "upper": "0.17102464318751153599601522042929215245384993137265912496795632199943100290798467"
             },
             {
               "lower": "0E-660",
               "upper": "0E-660"
             },
             {
-              "lower": "0.082929346690117246474615611282432125107760014718653950474555019183645275961740375",
-              "upper": "0.082929346690117246474615611282432125107760014718653950474555019183645976505065626"
+              "lower": "0.082929346690117242048054649123540402281740117800650000353413480181631120153817812",
+              "upper": "0.082929346690117242048054649123540402281740117800650000353413480181631820697158251"
             },
             {
               "lower": "0E-660",
               "upper": "0E-660"
             },
             {
-              "lower": "0.0044966964475809509986103957819384124532679955240340405398666586686881084092490000",
-              "upper": "0.0044966964475809509986103957819384124532679955240340405398666586686883556028439063"
+              "lower": "0.0044966964475809443164008900917680412061070797072228082566501218509932929119040937",
+              "upper": "0.0044966964475809443164008900917680412061070797072228082566501218509935401055051563"
             },
             {
               "lower": "0E-660",
               "upper": "0E-660"
             },
             {
-              "lower": "0.0001025581784087832544357092724543184327877084850438443010732551858839425616016250",
-              "upper": "0.0001025581784087832544357092724543184327877084850438443010732551858839837467278750"
+              "lower": "0.0001025581784092199689296845011416105408705681342841477190245949725383930109646875",
+              "upper": "0.0001025581784092199689296845011416105408705681342841477190245949725384341960922500"
             },
             {
               "lower": "0E-660",
               "upper": "0E-660"
             },
             {
-              "lower": "0.0000012750775916342682159886073600863481540964868946322405817711146845472682826250000",
-              "upper": "0.0000012750775916342682159886073600863481540964868946322405817711146845498414899296875"
+              "lower": "0.0000012750775916342681666302376797367502768915648638112133110608438583100129097265625",
+              "upper": "0.0000012750775916342681666302376797367502768915648638112133110608438583125861171171875"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -7981,15 +7981,15 @@
             }
           ],
           "coefficient_residual_upper_decimals": [
-            "1.6966686482219766203982070915579564568123846498836243453331947408E-16",
+            "4.821050579099307856237818637186772211248870175633122639255753917E-17",
             "0E-660",
-            "6.3657118684744743044938852027763206085502429634509643754213733598E-17",
+            "5.9230557722585851322112832130845202135381288095507629598405826223E-17",
             "0E-660",
-            "1.159468903545234132775570348644653740075313666382108925143317614781E-16",
+            "1.092646808488332429063098739486485627752481501013931976988344227281E-16",
             "0E-660",
-            "3.6362692428995645568500741603185586620266939604024168978114055069207E-16",
+            "7.308756968527223160710066682779337410074855529954496471049405580955E-17",
             "0E-660",
-            "9.48945907109949984713959354474829891609141052057512452352118595404566E-17",
+            "9.48945413526253181217980582425609583398868344954804189979564867279566E-17",
             "0E-62",
             "9.9433996486646822570564545119756491197186832704464086006091360940083644477790984E-9",
             "0E-62",
@@ -8501,9 +8501,9 @@
           ],
           "formal_proof_assistant": null
         },
-        "ideal_encoded_polynomial_error_upper": 5.379391552756614e-09,
-        "ideal_decoded_filter_error_upper": 2.1517566211026455e-08,
-        "ideal_shifted_filter_gibbs_error_upper": 1.2576709224650988e-06,
+        "ideal_encoded_polynomial_error_upper": 5.3793913412043466e-09,
+        "ideal_decoded_filter_error_upper": 2.1517565364817386e-08,
+        "ideal_shifted_filter_gibbs_error_upper": 1.2576708730053909e-06,
         "certificate_scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate"
       },
       "error_contract": {
@@ -8514,23 +8514,23 @@
         "generated_phase_parameter": 1.6875,
         "parameter_rounding_absolute_upper": 8.326672684688674e-17,
         "encoded_filter_parameter_rounding_error_upper": 4.163336342344337e-17,
-        "ideal_encoded_total_error_upper": 5.379391594389977e-09,
-        "ideal_decoded_total_error_upper": 2.151756637755991e-08,
+        "ideal_encoded_total_error_upper": 5.37939138283771e-09,
+        "ideal_decoded_total_error_upper": 2.151756553135084e-08,
         "ideal_target_Bell_branch_amplitude_lower": 0.00855452957791651,
         "ideal_target_Bell_branch_amplitude_lower_decimal": "0.0085545295779165100992541201968823216742591897681525815187838668882522495251109602",
-        "ideal_approximate_filter_acceptance_lower": 7.317988426314834e-05,
-        "ideal_approximate_filter_acceptance_lower_decimal": "0.000073179884263148351478122219424336721027450872918691897326773622674677086849190148",
-        "ideal_Gibbs_trace_distance_upper": 1.2576709321987405e-06,
-        "ideal_Gibbs_trace_distance_upper_decimal": "0.0000012576709321987402895053231208930283473442161141038652100320195008676416750982002",
+        "ideal_approximate_filter_acceptance_lower": 7.317988426315196e-05,
+        "ideal_approximate_filter_acceptance_lower_decimal": "0.000073179884263151970936100022133731870452676179561004549549907198945271636591057130",
+        "ideal_Gibbs_trace_distance_upper": 1.2576708827390325e-06,
+        "ideal_Gibbs_trace_distance_upper_decimal": "0.0000012576708827390323628860415614134244658959461095494946817820074255736111843646829",
         "precision": 80,
         "outward_evaluation": true,
         "scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate",
-        "precompiler_source_encoded_total_error_upper": 5.379391644481479e-09,
-        "precompiler_source_decoded_total_error_upper": 2.1517566577925916e-08,
-        "precompiler_source_acceptance_lower": 7.317988426314749e-05,
-        "precompiler_source_acceptance_lower_decimal": "0.000073179884263147494460191335707699486540091282653206818186912659337419620592358158",
-        "precompiler_source_Gibbs_trace_distance_upper": 1.2576709439098466e-06,
-        "precompiler_source_Gibbs_trace_distance_upper_decimal": "0.0000012576709439098464300765605491335674499624404790708437376332651522392912529274250",
+        "precompiler_source_encoded_total_error_upper": 5.379391432929212e-09,
+        "precompiler_source_decoded_total_error_upper": 2.1517565731716848e-08,
+        "precompiler_source_acceptance_lower": 7.31798842631511e-05,
+        "precompiler_source_acceptance_lower_decimal": "0.000073179884263151113918169138395900694363122273671848281370365023894587867147438892",
+        "precompiler_source_Gibbs_trace_distance_upper": 1.2576708944501386e-06,
+        "precompiler_source_Gibbs_trace_distance_upper_decimal": "0.0000012576708944501385034572789896539635685141704745164732093832530769452607621939077",
         "loading_weight_certificate": {
           "certified": true,
           "certificate_scope": "logical RY/X PREPARE with exact binary64 angles and exact declared controls; accepted Hamiltonian block error requires exact indexed signed-Pauli SELECT with identity padding. Floating nested control decompositions, whole PREPARE-unitary and compiled/synthesized realization are not certified",
@@ -8650,178 +8650,178 @@
         "odd_degree": 9,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 5.144769585781068e-09,
-        "actual_Bell_branch_vector_error": 3.1321954209745224e-09,
-        "actual_acceptance_probability": 0.005940480965803195,
+        "actual_encoded_filter_operator_error": 5.144769737718322e-09,
+        "actual_Bell_branch_vector_error": 3.132195331793628e-09,
+        "actual_acceptance_probability": 0.005940480965803177,
         "exact_shifted_filter_acceptance_probability": 0.005940480611864164,
-        "gibbs_trace_distance": 1.8755251541027295e-08,
-        "gibbs_max_entry_error": 7.866522405697314e-09,
+        "gibbs_trace_distance": 1.8755251302448505e-08,
+        "gibbs_max_entry_error": 7.866522468147346e-09,
         "trace_real": 1.0,
-        "minimum_eigenvalue": 0.004529706334935451,
-        "actual_energy": -1.1628050123218152,
+        "minimum_eigenvalue": 0.004529706334935443,
+        "actual_energy": -1.1628050123218139,
         "exact_gibbs_energy": -1.162805027953218,
-        "energy_error": 1.5631402838778286e-08,
+        "energy_error": 1.5631404171045915e-08,
         "actual_density_real": [
           [
-            0.01891491946228358,
-            -0.018248639276110458,
-            -0.0497258125856387,
-            0.014654097944363769,
-            -0.018248639276110073,
+            0.018914919462282905,
+            -0.018248639276110097,
+            -0.0497258125856378,
+            0.014654097944363656,
+            -0.01824863927611003,
+            0.01991197048448463,
+            0.01465409794436343,
+            -0.005195754349868616
+          ],
+          [
+            -0.018248639276110097,
+            0.07111232532434207,
+            0.025169843024606307,
+            -0.03346792799867326,
+            0.01976558277456232,
+            -0.08120298589516754,
+            -0.008741913841309937,
+            0.014654097944363826
+          ],
+          [
+            -0.0497258125856378,
+            0.025169843024606307,
+            0.338860429889033,
+            -0.08120298589516814,
+            0.025169843024605815,
+            -0.015826287291079568,
+            -0.08120298589516653,
+            0.019911970484484953
+          ],
+          [
+            0.014654097944363656,
+            -0.03346792799867326,
+            -0.08120298589516814,
+            0.0711123253243415,
+            -0.008741913841309758,
+            0.02516984302460579,
+            0.019765582774562234,
+            -0.01824863927610997
+          ],
+          [
+            -0.01824863927611003,
+            0.01976558277456232,
+            0.025169843024605815,
+            -0.008741913841309758,
+            0.07111232532434203,
+            -0.08120298589516721,
+            -0.033467927998673215,
+            0.014654097944363908
+          ],
+          [
+            0.01991197048448463,
+            -0.08120298589516754,
+            -0.015826287291079568,
+            0.02516984302460579,
+            -0.08120298589516721,
+            0.33886042988903414,
+            0.02516984302460621,
+            -0.049725812585639274
+          ],
+          [
+            0.01465409794436343,
+            -0.008741913841309937,
+            -0.08120298589516653,
+            0.019765582774562234,
+            -0.033467927998673215,
+            0.02516984302460621,
+            0.07111232532434092,
+            -0.018248639276110187
+          ],
+          [
+            -0.005195754349868616,
+            0.014654097944363826,
             0.019911970484484953,
-            0.014654097944363594,
-            -0.005195754349868638
-          ],
-          [
-            -0.018248639276110458,
-            0.07111232532434142,
-            0.025169843024606526,
-            -0.03346792799867279,
-            0.01976558277456209,
-            -0.08120298589516697,
-            -0.00874191384131018,
-            0.014654097944363623
-          ],
-          [
-            -0.0497258125856387,
-            0.025169843024606526,
-            0.33886042988903575,
-            -0.08120298589516742,
-            0.02516984302460586,
-            -0.01582628729107963,
-            -0.08120298589516683,
-            0.01991197048448456
-          ],
-          [
-            0.014654097944363769,
-            -0.03346792799867279,
-            -0.08120298589516742,
-            0.07111232532434095,
-            -0.008741913841309462,
-            0.025169843024605766,
-            0.019765582774562147,
-            -0.01824863927610978
-          ],
-          [
-            -0.018248639276110073,
-            0.01976558277456209,
-            0.02516984302460586,
-            -0.008741913841309462,
-            0.07111232532434139,
-            -0.08120298589516715,
-            -0.03346792799867325,
-            0.014654097944363818
-          ],
-          [
-            0.019911970484484953,
-            -0.08120298589516697,
-            -0.01582628729107963,
-            0.025169843024605766,
-            -0.08120298589516715,
-            0.33886042988903325,
-            0.025169843024606422,
-            -0.049725812585638574
-          ],
-          [
-            0.014654097944363594,
-            -0.00874191384131018,
-            -0.08120298589516683,
-            0.019765582774562147,
-            -0.03346792799867325,
-            0.025169843024606422,
-            0.07111232532434059,
-            -0.01824863927611005
-          ],
-          [
-            -0.005195754349868638,
-            0.014654097944363623,
-            0.01991197048448456,
-            -0.01824863927610978,
-            0.014654097944363818,
-            -0.049725812585638574,
-            -0.01824863927611005,
-            0.018914919462283006
+            -0.01824863927610997,
+            0.014654097944363908,
+            -0.049725812585639274,
+            -0.018248639276110187,
+            0.018914919462283568
           ]
         ],
         "actual_density_imag": [
           [
-            0.0,
-            8.812102469401792e-19,
-            6.42465131362068e-16,
-            8.741933526522981e-17,
-            1.145835199389456e-16,
-            -1.205233127823149e-16,
-            -1.8641981940467417e-16,
-            2.1229086612725738e-17
+            -7.235483325804046e-33,
+            1.3751111264667117e-16,
+            -3.351129947998489e-16,
+            1.376714139808511e-16,
+            5.764132514564719e-17,
+            -2.001600180656418e-16,
+            2.6241779845608757e-16,
+            -9.647004251312344e-17
           ],
           [
-            -8.812102469401792e-19,
-            0.0,
-            -5.554947242928538e-16,
-            -3.9587890178015046e-17,
-            3.567987648837931e-16,
-            7.131394060893994e-17,
-            -5.45576701437862e-17,
-            5.781719872374504e-17
+            -1.375111126466712e-16,
+            1.1578130778077104e-32,
+            -1.4745666626135454e-16,
+            3.167615722446256e-16,
+            1.3546917937236822e-16,
+            8.412084971621382e-17,
+            -1.7529872167174463e-16,
+            -3.1100834894041027e-16
           ],
           [
-            -6.42465131362068e-16,
-            5.554947242928538e-16,
-            0.0,
-            -2.6102821549928796e-16,
-            -9.352379813268387e-17,
-            -5.3667598671566115e-16,
-            2.160390073354411e-16,
-            1.1972984985451588e-16
+            3.351129947998489e-16,
+            1.4745666626135454e-16,
+            3.7713951326750613e-32,
+            -3.242228779262891e-16,
+            -3.5744557948206374e-16,
+            3.1944717634883245e-16,
+            -1.456367970093448e-16,
+            2.417786076143892e-16
           ],
           [
-            -8.741933526522981e-17,
-            3.9587890178015046e-17,
-            2.6102821549928796e-16,
-            0.0,
-            -7.459360824639077e-17,
-            -3.1277899841125106e-16,
-            -1.7311279848813802e-16,
-            1.6823355395222008e-17
+            -1.376714139808511e-16,
+            -3.167615722446256e-16,
+            3.2422287792628904e-16,
+            1.899391770470036e-33,
+            -2.204750296126289e-16,
+            1.1199389137322558e-16,
+            5.550583136813434e-17,
+            3.3292817821572384e-16
           ],
           [
-            -1.145835199389456e-16,
-            -3.567987648837931e-16,
-            9.352379813268387e-17,
-            7.459360824639077e-17,
-            0.0,
-            1.0641459501355274e-15,
-            -1.0292329897897252e-16,
-            -1.619138722551944e-16
+            -5.764132514564715e-17,
+            -1.354691793723682e-16,
+            3.5744557948206383e-16,
+            2.204750296126289e-16,
+            2.379192594240505e-33,
+            1.8335834374692067e-16,
+            -1.9827869898654255e-17,
+            -6.266407520702133e-17
           ],
           [
-            1.205233127823149e-16,
-            -7.131394060893994e-17,
-            5.3667598671566115e-16,
-            3.1277899841125106e-16,
-            -1.0641459501355274e-15,
-            0.0,
-            4.110638389335688e-16,
-            3.251272050843265e-16
+            2.001600180656418e-16,
+            -8.41208497162138e-17,
+            -3.194471763488325e-16,
+            -1.1199389137322558e-16,
+            -1.833583437469207e-16,
+            1.8489483717670674e-32,
+            4.951434035336664e-16,
+            6.330266717233636e-16
           ],
           [
-            1.8641981940467417e-16,
-            5.45576701437862e-17,
-            -2.160390073354411e-16,
-            1.7311279848813802e-16,
-            1.0292329897897252e-16,
-            -4.110638389335688e-16,
+            -2.6241779845608757e-16,
+            1.7529872167174463e-16,
+            1.456367970093448e-16,
+            -5.550583136813436e-17,
+            1.982786989865427e-17,
+            -4.951434035336665e-16,
             0.0,
-            6.8144012162494315e-18
+            1.1772160477926673e-16
           ],
           [
-            -2.1229086612725738e-17,
-            -5.781719872374504e-17,
-            -1.1972984985451588e-16,
-            -1.6823355395222008e-17,
-            1.619138722551944e-16,
-            -3.251272050843265e-16,
-            -6.8144012162494315e-18,
+            9.647004251312343e-17,
+            3.1100834894041027e-16,
+            -2.417786076143892e-16,
+            -3.329281782157239e-16,
+            6.266407520702133e-17,
+            -6.330266717233636e-16,
+            -1.1772160477926673e-16,
             0.0
           ]
         ],
@@ -8832,7 +8832,7 @@
       },
       "source_primitive_check": {
         "scope": "coherent full-register Statevector on all-zero input only, with phase retained",
-        "max_entry_error": 9.821969801900353e-15
+        "max_entry_error": 9.82951234076372e-15
       },
       "generation_only_scaling_case": false,
       "coherent": {
@@ -8909,19 +8909,19 @@
       "exports": {
         "coherent": {
           "file": "n3-beta-1p5-coherent.qasm",
-          "sha256": "b01068bcf98430058e369c4f2690ae5734885ea9085da1408440d8ea0d00c213",
+          "sha256": "927c336e5b912ea689c78056e94cde9f0098ac3104ea90e117d873766ce837a0",
           "compiled_global_phase_radians": 3.4361169648638974,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-X": {
           "file": "n3-beta-1p5-trial-X.qasm",
-          "sha256": "18f363563c0646e6ca57e0478d0e790ac84a5c88b9b9316a6ac30fe6a1f6197f",
+          "sha256": "0c1fd0e0d27bcbf96bc14d751ffaa5ea904fbb760c99d2d517588ba399b9ad58",
           "compiled_global_phase_radians": 3.436116964863883,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-Z": {
           "file": "n3-beta-1p5-trial-Z.qasm",
-          "sha256": "77ed9882618a7d65604a6dd523e53c40e9c64eab92b747a609ed99d3008f84c7",
+          "sha256": "4a8e4e26150803c9691d9cb33f8aa3e66de6b5fbce59f1f0a9e2a32b41efed2f",
           "compiled_global_phase_radians": 1.8653206380689866,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         }
@@ -8972,7 +8972,7 @@
         "total_accepted_trials": 151074,
         "retry_cap_per_slot": 2891,
         "complete_attempt_cap": 436754934,
-        "expected_complete_attempts": 25431274.14592662,
+        "expected_complete_attempts": 25431274.1459267,
         "statistical_failure": 0.005,
         "acceptance_failure": 0.005,
         "sampling_performed": false,
@@ -8981,9 +8981,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.35658796799998527,
-        "lowering": 0.11313134000010905,
-        "bounded_checks": 1.3483202669999628
+        "phase_generation_certificate_source": 0.5681939779997265,
+        "lowering": 0.1751471899997341,
+        "bounded_checks": 2.7871688569998696
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -9057,12 +9057,12 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.0005437869999695977,
+          "wall_seconds": 0.0007237240001813916,
           "node_max_residual": 1.1102230246251565e-16,
           "grid_max_residual": 1.1102230246251565e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 1.6653345369377348e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 2.220446049250313e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.49999999999999983
+            0.4999999999999998
           ],
           "sampled_target_magnitude": 0.5,
           "sampled_target_magnitude_guard": 0.75,
@@ -9097,12 +9097,12 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.0006376439998803107,
+          "wall_seconds": 0.0008675129997754993,
           "node_max_residual": 6.121389792138483e-17,
           "grid_max_residual": 6.123233995736766e-17,
           "numerically_reconstructed_coefficient_l1_discrepancy": 6.123233995736765e-17,
           "numerically_reconstructed_chebyshev_coefficients": [
-            3.851859888774471e-33,
+            4.622231866529365e-33,
             6.123233995736765e-17
           ],
           "sampled_target_magnitude": 0.0,
@@ -10014,178 +10014,178 @@
         "odd_degree": 1,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 3.724179235681275e-15,
-        "actual_Bell_branch_vector_error": 3.057779352652283e-15,
-        "actual_acceptance_probability": 0.062499999999998467,
+        "actual_encoded_filter_operator_error": 3.750695564644686e-15,
+        "actual_Bell_branch_vector_error": 3.031412886558461e-15,
+        "actual_acceptance_probability": 0.06249999999999848,
         "exact_shifted_filter_acceptance_probability": 0.062499999999999986,
-        "gibbs_trace_distance": 8.529305377204759e-16,
-        "gibbs_max_entry_error": 2.3138472804969757e-16,
+        "gibbs_trace_distance": 9.194066101264835e-16,
+        "gibbs_max_entry_error": 1.8041124150158794e-16,
         "trace_real": 1.0000000000000002,
-        "minimum_eigenvalue": 0.1249999999999996,
-        "actual_energy": 1.406372299065922e-16,
+        "minimum_eigenvalue": 0.12499999999999954,
+        "actual_energy": -1.068685596901333e-16,
         "exact_gibbs_energy": 0.0,
-        "energy_error": 1.406372299065922e-16,
+        "energy_error": 1.068685596901333e-16,
         "actual_density_real": [
           [
-            0.12500000000000008,
-            2.6985964133627737e-17,
-            3.679904200040149e-18,
-            9.08335381285269e-18,
-            -7.359808400080289e-18,
-            -9.462594788133343e-18,
-            -1.1319627848966184e-17,
-            1.010495732762591e-17
+            0.12500000000000014,
+            2.5759329400281004e-17,
+            2.4532694666934052e-18,
+            -4.3922275505281234e-18,
+            3.066586833366785e-17,
+            -5.6378890077332025e-18,
+            -1.1716651284098189e-17,
+            6.897296218838938e-18
           ],
           [
-            2.6985964133627737e-17,
-            0.12500000000000006,
-            2.4498365608482047e-17,
-            2.6985964133627734e-17,
-            -1.3513112265934396e-18,
-            2.943923360032112e-17,
-            6.528283364075902e-18,
-            -1.3510112695256088e-17
-          ],
-          [
-            3.679904200040149e-18,
-            2.4498365608482047e-17,
-            0.12499999999999997,
-            2.3306059933587567e-17,
-            -2.545585187538932e-17,
-            -7.888675915144868e-18,
-            -1.2266347333467036e-18,
-            8.49876813107063e-19
-          ],
-          [
-            9.08335381285269e-18,
-            2.6985964133627734e-17,
-            2.3306059933587567e-17,
-            0.12499999999999997,
-            2.059410789735448e-17,
-            1.0623434175862127e-17,
-            -1.2359398180023661e-17,
-            4.415885040048171e-17
-          ],
-          [
-            -7.359808400080289e-18,
-            -1.3513112265934396e-18,
-            -2.545585187538932e-17,
-            2.059410789735448e-17,
+            2.5759329400281004e-17,
             0.12500000000000003,
-            -3.679904200040079e-18,
-            8.586443133427e-18,
-            -1.446415909861709e-17
+            5.1614355186624535e-18,
+            1.3492982066813875e-17,
+            3.919158952108176e-19,
+            2.5759329400280957e-17,
+            -3.544260879659284e-19,
+            5.052835941425279e-18
           ],
           [
-            -9.462594788133343e-18,
-            2.943923360032112e-17,
-            -7.888675915144868e-18,
-            1.0623434175862127e-17,
-            -3.679904200040079e-18,
+            2.4532694666934052e-18,
+            5.1614355186624535e-18,
+            0.12499999999999994,
+            -4.906538933386862e-18,
+            -2.131264207605912e-17,
+            -9.5008954935292e-18,
+            -6.133173666733585e-18,
+            -1.4242451365707758e-17
+          ],
+          [
+            -4.3922275505281234e-18,
+            1.3492982066813875e-17,
+            -4.906538933386862e-18,
+            0.12499999999999997,
+            7.439994002778154e-18,
+            2.289117866496986e-18,
+            -1.0906875879317294e-17,
+            -5.0292024067215205e-17
+          ],
+          [
+            3.066586833366785e-17,
+            3.919158952108176e-19,
+            -2.131264207605912e-17,
+            7.439994002778154e-18,
             0.12500000000000006,
-            2.085076004091639e-18,
-            -2.085279046689418e-17
+            -2.4532694666934267e-17,
+            2.2079425200240895e-17,
+            -4.237440465484096e-18
           ],
           [
-            -1.1319627848966184e-17,
-            6.528283364075902e-18,
-            -1.2266347333467036e-18,
-            -1.2359398180023661e-17,
-            8.586443133427e-18,
-            2.085076004091639e-18,
+            -5.6378890077332025e-18,
+            2.5759329400280957e-17,
+            -9.5008954935292e-18,
+            2.289117866496986e-18,
+            -2.4532694666934267e-17,
+            0.12500000000000014,
+            -1.481580378973318e-17,
+            -2.4532694666933687e-18
+          ],
+          [
+            -1.1716651284098189e-17,
+            -3.544260879659286e-19,
+            -6.133173666733586e-18,
+            -1.0906875879317294e-17,
+            2.2079425200240895e-17,
+            -1.481580378973318e-17,
             0.12500000000000008,
-            2.3306059933587545e-17
+            -6.1331736667335605e-18
           ],
           [
-            1.010495732762591e-17,
-            -1.3510112695256088e-17,
-            8.49876813107063e-19,
-            4.415885040048171e-17,
-            -1.446415909861709e-17,
-            -2.085279046689418e-17,
-            2.3306059933587545e-17,
-            0.12499999999999997
+            6.897296218838938e-18,
+            5.052835941425279e-18,
+            -1.4242451365707758e-17,
+            -5.029202406721521e-17,
+            -4.237440465484097e-18,
+            -2.4532694666933687e-18,
+            -6.1331736667335605e-18,
+            0.12499999999999982
           ]
         ],
         "actual_density_imag": [
           [
-            0.0,
-            1.424742422420099e-16,
-            1.3875822928679735e-16,
-            1.1807631924400037e-17,
-            8.453973501628343e-17,
-            -3.5579977108717686e-18,
-            4.314195009585432e-18,
-            -1.1567918364800343e-18
+            -5.037674500127777e-35,
+            1.2565005296098442e-16,
+            1.715946923287277e-16,
+            1.0945649556925401e-17,
+            1.1457423160569184e-16,
+            6.8021335466936685e-18,
+            7.159346163732519e-19,
+            5.231937899796335e-18
           ],
           [
-            -1.424742422420099e-16,
-            0.0,
-            -2.5364877259454396e-19,
-            2.2980567902993836e-16,
-            2.9163733776993417e-17,
-            1.010451407837058e-16,
-            -1.4046983718295855e-18,
-            -7.593466164935642e-18
+            -1.2565005296098442e-16,
+            1.6906053754246263e-36,
+            4.947673936674443e-17,
+            1.6956233735820722e-16,
+            7.863447002385378e-18,
+            1.127162251280857e-16,
+            -1.942846646544113e-18,
+            -8.90620971289065e-18
           ],
           [
-            -1.3875822928679735e-16,
-            2.5364877259454396e-19,
-            0.0,
-            1.1811589606798988e-16,
-            1.080166963721718e-17,
-            -6.95005922388442e-18,
-            1.1499514610186472e-16,
-            3.5031197964047584e-18
+            -1.715946923287277e-16,
+            -4.947673936674443e-17,
+            -2.2917502557935754e-33,
+            6.677158576034213e-17,
+            2.4414705946258746e-17,
+            5.558257673293869e-18,
+            1.5400089156570085e-16,
+            2.215050982069712e-17
           ],
           [
-            -1.1807631924400037e-17,
-            -2.2980567902993836e-16,
-            -1.1811589606798988e-16,
-            0.0,
-            7.5116366383003e-18,
-            8.592663984030652e-18,
-            -6.1677170581913994e-18,
-            1.4352033319949537e-16
+            -1.0945649556925401e-17,
+            -1.6956233735820722e-16,
+            -6.677158576034213e-17,
+            6.007351983990245e-34,
+            9.023621978815554e-18,
+            7.59450642388621e-18,
+            3.6645761196240154e-18,
+            1.702597313298643e-16
           ],
           [
-            -8.453973501628343e-17,
-            -2.9163733776993417e-17,
-            -1.080166963721718e-17,
-            -7.5116366383003e-18,
-            0.0,
-            1.2421296097955113e-16,
-            1.6633945640951232e-16,
-            9.273717473250705e-18
+            -1.1457423160569184e-16,
+            -7.863447002385378e-18,
+            -2.4414705946258746e-17,
+            -9.023621978815554e-18,
+            1.521871496927753e-34,
+            1.0830281820121605e-16,
+            1.6998325185438025e-16,
+            2.820794193010585e-19
           ],
           [
-            3.5579977108717686e-18,
-            -1.010451407837058e-16,
-            6.95005922388442e-18,
-            -8.592663984030652e-18,
-            -1.2421296097955113e-16,
-            0.0,
-            -8.792723165825413e-18,
-            1.3886036026936724e-16
+            -6.802133546693668e-18,
+            -1.1271622512808567e-16,
+            -5.558257673293869e-18,
+            -7.59450642388621e-18,
+            -1.0830281820121603e-16,
+            -1.3953002151722907e-33,
+            5.9461828842092536e-18,
+            1.705062973331231e-16
           ],
           [
-            -4.314195009585432e-18,
-            1.4046983718295855e-18,
-            -1.1499514610186472e-16,
-            6.1677170581913994e-18,
-            -1.6633945640951232e-16,
-            8.792723165825413e-18,
+            -7.159346163732525e-19,
+            1.942846646544111e-18,
+            -1.5400089156570085e-16,
+            -3.6645761196240154e-18,
+            -1.6998325185438025e-16,
+            -5.946182884209253e-18,
             0.0,
-            8.783483347532273e-17
+            1.0525428574543536e-16
           ],
           [
-            1.1567918364800343e-18,
-            7.593466164935642e-18,
-            -3.5031197964047584e-18,
-            -1.4352033319949537e-16,
-            -9.273717473250705e-18,
-            -1.3886036026936724e-16,
-            -8.783483347532273e-17,
+            -5.231937899796334e-18,
+            8.906209712890648e-18,
+            -2.215050982069712e-17,
+            -1.702597313298643e-16,
+            -2.820794193010588e-19,
+            -1.705062973331231e-16,
+            -1.0525428574543536e-16,
             0.0
           ]
         ],
@@ -10196,7 +10196,7 @@
       },
       "source_primitive_check": {
         "scope": "coherent full-register Statevector on all-zero input only, with phase retained",
-        "max_entry_error": 6.689573988965004e-15
+        "max_entry_error": 6.633949258475277e-15
       },
       "generation_only_scaling_case": false,
       "coherent": {
@@ -10336,7 +10336,7 @@
         "total_accepted_trials": 151074,
         "retry_cap_per_slot": 267,
         "complete_attempt_cap": 40336758,
-        "expected_complete_attempts": 2417184.000000059,
+        "expected_complete_attempts": 2417184.0000000587,
         "statistical_failure": 0.005,
         "acceptance_failure": 0.005,
         "sampling_performed": false,
@@ -10345,9 +10345,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.12505281600010676,
-        "lowering": 0.04833743099993626,
-        "bounded_checks": 0.3491568819999884
+        "phase_generation_certificate_source": 0.2018445700000484,
+        "lowering": 0.07480238300013298,
+        "bounded_checks": 0.6985817099998712
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -10391,20 +10391,20 @@
         "even_degree": 6,
         "odd_degree": 7,
         "even_phases": [
-          0.7853999505194657,
-          1.5711006429344196,
-          1.5917992522444058,
+          0.7853999505194655,
+          1.5711006429344199,
+          1.591799252244406,
           1.8289373920530256,
-          1.5917992522444058,
-          1.5711006429344196,
+          1.591799252244406,
+          1.5711006429344199,
           2.3561962773143623
         ],
         "odd_phases": [
           -0.7853982681995897,
           1.5707714108954463,
           1.567954863370982,
-          1.4710670593054753,
-          1.4710670593054753,
+          1.471067059305475,
+          1.471067059305475,
           1.567954863370982,
           1.5707714108954463,
           2.3561943853902036
@@ -10451,18 +10451,18 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.006471843000099398,
-          "node_max_residual": 5.273559366969494e-16,
-          "grid_max_residual": 7.771561172376096e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 7.20347958380906e-16,
+          "wall_seconds": 0.008733099999972183,
+          "node_max_residual": 9.992007221626409e-16,
+          "grid_max_residual": 1.1102230246251565e-15,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 1.0304890214187558e-15,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.25505815619523897,
-            1.3633208305716355e-18,
-            0.040595560515659365,
-            -3.9030810768095e-17,
-            0.0005881680364021246,
-            -3.304097966983347e-18,
-            3.454291227198276e-06
+            0.255058156195239,
+            -1.717288626685379e-17,
+            0.04059556051565982,
+            -3.342579648369756e-17,
+            0.0005881680364025171,
+            2.2386083883577264e-17,
+            3.4542912271302344e-06
           ],
           "sampled_target_magnitude": 0.2962453390385277,
           "sampled_target_magnitude_guard": 0.75,
@@ -10503,19 +10503,19 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.006784835999951611,
-          "node_max_residual": 8.604228440844963e-16,
-          "grid_max_residual": 8.604228440844963e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 7.579897933854833e-16,
+          "wall_seconds": 0.009208579000187456,
+          "node_max_residual": 5.273559366969494e-16,
+          "grid_max_residual": 8.049116928532385e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 5.578725220958098e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            -5.6378512969246215e-18,
-            -0.19807906719718876,
-            -4.820196284039233e-17,
-            -0.005626039567395525,
-            2.2417966089530542e-17,
-            -4.9335222249054e-05,
-            -4.3967661127693377e-17,
-            -2.0752480037892007e-07
+            -1.3877787807814454e-17,
+            -0.19807906719718915,
+            9.813077866773593e-18,
+            -0.005626039567395483,
+            -1.962615573354719e-17,
+            -4.933522224899229e-05,
+            1.962615573354719e-17,
+            -2.0752480040305527e-07
           ],
           "sampled_target_magnitude": 0.20375464951163436,
           "sampled_target_magnitude_guard": 0.75,
@@ -10540,9 +10540,9 @@
           "exact_parameter_decimal": "0.84375",
           "degree": 6,
           "decimal_precision": 80,
-          "uniform_error_upper": 1.0938298954642164e-08,
-          "uniform_error_upper_decimal": "1.0938298954642164238278282384528825957870290910650931981161290041908330655547536E-8",
-          "coefficient_residual_l1_upper_decimal": "1.0938298954642164238278282384528825957870290910650931981161290041908330655547535E-8",
+          "uniform_error_upper": 1.0938299257415943e-08,
+          "uniform_error_upper_decimal": "1.0938299257415941323796701217308509673903674968651137752371578654706375344037536E-8",
+          "coefficient_residual_l1_upper_decimal": "1.0938299257415941323796701217308509673903674968651137752371578654706375344037535E-8",
           "analytic_target_taylor_remainder_upper_decimal": "1.2393834147714666364992474032230798467901289553134087955272311452249478598103841E-98",
           "target_taylor_degree": 64,
           "negative_exp_taylor_degree": 52,
@@ -10578,32 +10578,32 @@
           ],
           "achieved_chebyshev_intervals": [
             {
-              "lower": "0.25505815619523907004507128596666743411396256280262037568650128225877956718779489",
-              "upper": "0.25505815619523907004507128596666743411396256280262037568650128225877964951743175"
+              "lower": "0.25505815619523906502195804984952178225189110317640051937589660837694548099307417",
+              "upper": "0.25505815619523906502195804984952178225189110317640051937589660837694556332271409"
             },
             {
               "lower": "0E-491",
               "upper": "0E-491"
             },
             {
-              "lower": "0.040595560515659362971407810428097926669597431910687110598260116683046112896127812",
-              "upper": "0.040595560515659362971407810428097926669597431910687110598260116683046216777499757"
+              "lower": "0.040595560515659787190925216774233479336754810187913085802885317734604293654375262",
+              "upper": "0.040595560515659787190925216774233479336754810187913085802885317734604397535751500"
             },
             {
               "lower": "0E-492",
               "upper": "0E-492"
             },
             {
-              "lower": "0.0005881680364021419187678169086671434633161818832324675315564303924651840943746250",
-              "upper": "0.0005881680364021419187678169086671434633161818832324675315564303924652100618778125"
+              "lower": "0.0005881680364025722897922170061321137067580020106268089567477392232553672812105000",
+              "upper": "0.0005881680364025722897922170061321137067580020106268089567477392232553932487151250"
             },
             {
               "lower": "0E-492",
               "upper": "0E-492"
             },
             {
-              "lower": "0.00000345429122716902535646362084121746412761831184960869460653539865823086118618750",
-              "upper": "0.00000345429122716902535646362084121746412761831184960869460653539865823302457659375"
+              "lower": "0.00000345429122706172896636507258123970255232126774751789456590585158317029296368750",
+              "upper": "0.00000345429122706172896636507258123970255232126774751789456590585158317245635425000"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -10869,13 +10869,13 @@
             }
           ],
           "coefficient_residual_upper_decimals": [
-            "4.40044082686661133163049861378943920737222199967139095759576391E-18",
+            "9.42355406298375698349257007341565906368282667355322504379048463E-18",
             "0E-491",
-            "2.06588430938669465965884015719836413755088802198840379672950413391E-16",
+            "2.17631086467676669586783141658440812220115823002211178611694634765E-16",
             "0E-492",
-            "1.818331299057756771623169010264026325698128519266302978036354707696E-17",
+            "4.1218771140951989725401175171748713108444390611616776042879087201520E-16",
             "0E-492",
-            "3.133522415680487422544883154565756110781936886169280582748687498118114E-16",
+            "2.060558514695004822767267401595315089873936479873809832143005274680614E-16",
             "0E-62",
             "1.0916758432431824230770674686519444927294417113388904224965672877266053239317395E-8",
             "0E-62",
@@ -10954,9 +10954,9 @@
           "exact_parameter_decimal": "0.84375",
           "degree": 7,
           "decimal_precision": 80,
-          "uniform_error_upper": 5.115402371615174e-10,
-          "uniform_error_upper_decimal": "5.1154023716151741806444648290486833430211497037491449237330428205504923440174583E-10",
-          "coefficient_residual_l1_upper_decimal": "5.1154023716151741806444648290486833430211497037491449237330428205504923440174582E-10",
+          "uniform_error_upper": 5.115400700383145e-10,
+          "uniform_error_upper_decimal": "5.1154007003831437006448388303744402437188854589894732280855790028696687250174583E-10",
+          "coefficient_residual_l1_upper_decimal": "5.1154007003831437006448388303744402437188854589894732280855790028696687250174582E-10",
           "analytic_target_taylor_remainder_upper_decimal": "1.5607906809155596635018507409992143592972706060383413003374645951993279950970321E-100",
           "target_taylor_degree": 65,
           "negative_exp_taylor_degree": 52,
@@ -11000,32 +11000,32 @@
               "upper": "0E-578"
             },
             {
-              "lower": "-0.19807906719718878695270513323199617763330428806824608435862347300718286607219853",
-              "upper": "-0.19807906719718878695270513323199617763330428806824608435862347300718270966478611"
+              "lower": "-0.19807906719718922198029173230554783100457651131326552931315692173966375210247667",
+              "upper": "-0.19807906719718922198029173230554783100457651131326552931315692173966359569506744"
             },
             {
               "lower": "0E-579",
               "upper": "0E-579"
             },
             {
-              "lower": "-0.0056260395673954855771177459560162967157039073912726293961047104121963616666802969",
-              "upper": "-0.0056260395673954855771177459560162967157039073912726293961047104121962905633471093"
+              "lower": "-0.0056260395673954853248409789506524094786374064124371416914245277109827718928441563",
+              "upper": "-0.0056260395673954853248409789506524094786374064124371416914245277109827007895130312"
             },
             {
               "lower": "0E-578",
               "upper": "0E-578"
             },
             {
-              "lower": "-0.000049335222248991390921286595225397814585545798110993695258636010086425867990265625",
-              "upper": "-0.000049335222248991390921286595225397814585545798110993695258636010086411653843703125"
+              "lower": "-0.000049335222248991388719442877618230441790324145587169968759854190616571789927218750",
+              "upper": "-0.000049335222248991388719442877618230441790324145587169968759854190616557575781343750"
             },
             {
               "lower": "0E-579",
               "upper": "0E-579"
             },
             {
-              "lower": "-2.07524800427019453937047244047668339084812797005400619576159107717770422109375E-7",
-              "upper": "-2.07524800427019453937047244047668339084812797005400619576159107716755565171875E-7"
+              "lower": "-2.07524800427019444715452633327931838778043410163991409395457111751419895156250E-7",
+              "upper": "-2.07524800427019444715452633327931838778043410163991409395457111750405038281250E-7"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -11296,13 +11296,13 @@
           ],
           "coefficient_residual_upper_decimals": [
             "0E-578",
-            "3.0120263873969554801379252928128799601113544488175995341721733209E-16",
+            "1.3382494785937800363957874294195702343381908856697252762524682640E-16",
             "0E-579",
-            "8.76278794645830768485300376833120468435815200744661064811944275069E-17",
+            "8.78801562315884407357671041842908823312862002571673200709682615850E-17",
             "0E-578",
-            "1.74920272712222529818471096458312063832049497426564264104502895516811E-16",
+            "1.74922474555940136985843891679964587655775996208383733958580957876186E-16",
             "0E-579",
-            "1.2527410599141177036185023661904865205321997053483337672785163102927056E-16",
+            "1.2527411521300638108158673692581803889462918071553537269420215791989556E-16",
             "0E-59",
             "5.1071472247526340421510924292762004553768750102359147460639136459907551483061162E-10",
             "0E-61",
@@ -11373,9 +11373,9 @@
           ],
           "formal_proof_assistant": null
         },
-        "ideal_encoded_polynomial_error_upper": 5.724919595901841e-09,
-        "ideal_decoded_filter_error_upper": 2.2899678383607365e-08,
-        "ideal_shifted_filter_gibbs_error_upper": 2.475889834878813e-07,
+        "ideal_encoded_polynomial_error_upper": 5.724919663727129e-09,
+        "ideal_decoded_filter_error_upper": 2.2899678654908517e-08,
+        "ideal_shifted_filter_gibbs_error_upper": 2.4758898642116165e-07,
         "certificate_scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate"
       },
       "error_contract": {
@@ -11386,23 +11386,23 @@
         "generated_phase_parameter": 0.84375,
         "parameter_rounding_absolute_upper": 4.163336342344337e-17,
         "encoded_filter_parameter_rounding_error_upper": 2.0816681711721685e-17,
-        "ideal_encoded_total_error_upper": 5.724919616718523e-09,
-        "ideal_decoded_total_error_upper": 2.289967846687409e-08,
+        "ideal_encoded_total_error_upper": 5.724919684543811e-09,
+        "ideal_decoded_total_error_upper": 2.2899678738175244e-08,
         "ideal_target_Bell_branch_amplitude_lower": 0.04624534997682607,
         "ideal_target_Bell_branch_amplitude_lower_decimal": "0.04624534997682607574898340356412834261680735935488216077896213266641123118706254",
-        "ideal_approximate_filter_acceptance_lower": 0.0021386318649773374,
-        "ideal_approximate_filter_acceptance_lower_decimal": "0.0021386318649773377708279983833609243289226046875447484362447448141887595480248214",
-        "ideal_Gibbs_trace_distance_upper": 2.4758898438815267e-07,
-        "ideal_Gibbs_trace_distance_upper_decimal": "2.4758898438815261501805525940560340991687765580572209159066626889954189620960658E-7",
+        "ideal_approximate_filter_acceptance_lower": 0.0021386318649773313,
+        "ideal_approximate_filter_acceptance_lower_decimal": "0.0021386318649773314976204476070003268746537638673757777733737282664563175860528655",
+        "ideal_Gibbs_trace_distance_upper": 2.4758898732143295e-07,
+        "ideal_Gibbs_trace_distance_upper_decimal": "2.4758898732143294106159183239739323142762645943895783249997351850274690035988588E-7",
         "precision": 80,
         "outward_evaluation": true,
         "scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate",
-        "precompiler_source_encoded_total_error_upper": 5.724919641764274e-09,
-        "precompiler_source_decoded_total_error_upper": 2.2899678567057095e-08,
-        "precompiler_source_acceptance_lower": 0.002138631864977335,
-        "precompiler_source_acceptance_lower_decimal": "0.0021386318649773354543292473126573473316015920638298918160697862667842045485957942",
-        "precompiler_source_Gibbs_trace_distance_upper": 2.4758898547132103e-07,
-        "precompiler_source_Gibbs_trace_distance_upper_decimal": "2.4758898547132101919100283581534428658854813026035901557110713949509804934408019E-7",
+        "precompiler_source_encoded_total_error_upper": 5.724919709589562e-09,
+        "precompiler_source_decoded_total_error_upper": 2.2899678838358248e-08,
+        "precompiler_source_acceptance_lower": 0.002138631864977329,
+        "precompiler_source_acceptance_lower_decimal": "0.0021386318649773291811216965363001473478592494424802876554773177866590702216527253",
+        "precompiler_source_Gibbs_trace_distance_upper": 2.4758898840460137e-07,
+        "precompiler_source_Gibbs_trace_distance_upper_decimal": "2.4758898840460134523453940880713410809929693389359475648041438909830305349435949E-7",
         "loading_weight_certificate": {
           "certified": true,
           "certificate_scope": "logical RY/X PREPARE with exact binary64 angles and exact declared controls; accepted Hamiltonian block error requires exact indexed signed-Pauli SELECT with identity padding. Floating nested control decompositions, whole PREPARE-unitary and compiled/synthesized realization are not certified",
@@ -11522,178 +11522,178 @@
         "odd_degree": 7,
         "operator_validation_performed": true,
         "operator_validation_scope": "all data basis inputs of the supplied core after coherent inverse Bell preparation, with zero reference/success projection; bounded filter-block check, not full total-wire unitary proof",
-        "actual_encoded_filter_operator_error": 5.325090237680412e-09,
-        "actual_Bell_branch_vector_error": 3.732929784230749e-09,
-        "actual_acceptance_probability": 0.015452010471536102,
+        "actual_encoded_filter_operator_error": 5.325090704825197e-09,
+        "actual_Bell_branch_vector_error": 3.732929834217252e-09,
+        "actual_acceptance_probability": 0.0154520104715361,
         "exact_shifted_filter_acceptance_probability": 0.015452011285072401,
-        "gibbs_trace_distance": 1.0672594067143609e-08,
-        "gibbs_max_entry_error": 3.6567386575356306e-09,
-        "trace_real": 1.0000000000000002,
-        "minimum_eigenvalue": 0.02967260889842316,
-        "actual_energy": -0.7351013538496783,
+        "gibbs_trace_distance": 1.067259441589869e-08,
+        "gibbs_max_entry_error": 3.6567385651616167e-09,
+        "trace_real": 1.0,
+        "minimum_eigenvalue": 0.029672608898422638,
+        "actual_energy": -0.7351013538496776,
         "exact_gibbs_energy": -0.7351013393438538,
-        "energy_error": 1.4505824541544143e-08,
+        "energy_error": 1.4505823764388026e-08,
         "actual_density_real": [
           [
-            0.04458813128793251,
-            -0.01795821769071128,
-            -0.030179199070500286,
-            0.0062332886137238174,
-            -0.017958217690711122,
-            0.007289041331490787,
+            0.0445881312879323,
+            -0.01795821769071154,
+            -0.030179199070500377,
             0.006233288613723695,
-            -0.0013705168366900241
+            -0.017958217690711417,
+            0.007289041331490764,
+            0.006233288613723769,
+            -0.0013705168366901007
           ],
           [
-            -0.01795821769071128,
-            0.10405183447731362,
-            0.008344794049257472,
-            -0.026656282878112385,
-            0.007284864789013477,
-            -0.04240018045028984,
-            -0.0018227455165524908,
-            0.006233288613723718
+            -0.01795821769071154,
+            0.10405183447731463,
+            0.00834479404925742,
+            -0.026656282878112492,
+            0.00728486478901332,
+            -0.042400180450289315,
+            -0.0018227455165525364,
+            0.006233288613723719
           ],
           [
-            -0.030179199070500286,
-            0.008344794049257472,
-            0.24730819975744017,
-            -0.04240018045028978,
-            0.008344794049257795,
-            -0.002468589019182445,
-            -0.0424001804502899,
-            0.0072890413314905525
-          ],
-          [
-            0.0062332886137238174,
-            -0.026656282878112385,
-            -0.04240018045028978,
-            0.10405183447731432,
-            -0.0018227455165524483,
-            0.008344794049257238,
-            0.007284864789013538,
-            -0.017958217690711185
-          ],
-          [
-            -0.017958217690711122,
-            0.007284864789013477,
-            0.008344794049257795,
-            -0.0018227455165524483,
-            0.1040518344773137,
-            -0.042400180450289614,
-            -0.02665628287811228,
-            0.006233288613724047
-          ],
-          [
-            0.007289041331490787,
-            -0.04240018045028984,
-            -0.002468589019182445,
-            0.008344794049257238,
-            -0.042400180450289614,
-            0.24730819975743962,
-            0.008344794049257299,
-            -0.030179199070500345
+            -0.030179199070500377,
+            0.00834479404925742,
+            0.24730819975743948,
+            -0.042400180450289406,
+            0.008344794049257481,
+            -0.0024685890191825373,
+            -0.042400180450289426,
+            0.007289041331490471
           ],
           [
             0.006233288613723695,
-            -0.0018227455165524908,
-            -0.0424001804502899,
-            0.007284864789013538,
-            -0.02665628287811228,
-            0.008344794049257299,
-            0.10405183447731386,
-            -0.0179582176907113
+            -0.026656282878112492,
+            -0.042400180450289406,
+            0.10405183447731417,
+            -0.0018227455165521903,
+            0.00834479404925716,
+            0.007284864789013405,
+            -0.01795821769071137
           ],
           [
-            -0.0013705168366900241,
-            0.006233288613723718,
-            0.0072890413314905525,
-            -0.017958217690711185,
-            0.006233288613724047,
-            -0.030179199070500345,
-            -0.0179582176907113,
-            0.04458813128793243
+            -0.017958217690711417,
+            0.00728486478901332,
+            0.008344794049257481,
+            -0.0018227455165521903,
+            0.1040518344773142,
+            -0.04240018045028951,
+            -0.026656282878112305,
+            0.006233288613723681
+          ],
+          [
+            0.007289041331490764,
+            -0.042400180450289315,
+            -0.0024685890191825373,
+            0.00834479404925716,
+            -0.04240018045028951,
+            0.24730819975743937,
+            0.008344794049257438,
+            -0.030179199070500515
+          ],
+          [
+            0.006233288613723769,
+            -0.0018227455165525364,
+            -0.042400180450289426,
+            0.007284864789013405,
+            -0.026656282878112305,
+            0.008344794049257438,
+            0.10405183447731392,
+            -0.017958217690711226
+          ],
+          [
+            -0.0013705168366901007,
+            0.006233288613723719,
+            0.007289041331490471,
+            -0.01795821769071137,
+            0.006233288613723681,
+            -0.030179199070500515,
+            -0.017958217690711226,
+            0.04458813128793206
           ]
         ],
         "actual_density_imag": [
           [
-            0.0,
-            -1.088576758597307e-17,
-            3.835442789665902e-16,
-            -1.0248729216175519e-16,
-            2.1184006194994257e-16,
-            -6.441457553786856e-18,
-            5.80570332688117e-17,
-            -7.941839516897986e-17
+            -9.024248359030101e-33,
+            4.425130437863127e-16,
+            2.1594674892332557e-16,
+            -4.31016653952297e-17,
+            2.7956543181183656e-16,
+            -7.543987821684159e-17,
+            -8.073476682888344e-17,
+            -3.427893425600892e-17
           ],
           [
-            1.088576758597307e-17,
-            0.0,
-            -1.6418114705929896e-16,
-            2.8084493648048257e-16,
-            -3.684285440995671e-17,
-            6.122570340280417e-17,
-            1.1402396395215912e-16,
-            1.2846822936670934e-16
+            -4.425130437863127e-16,
+            2.9795520548420826e-33,
+            -8.370639554022984e-18,
+            3.999731456727034e-16,
+            1.8127802919094093e-17,
+            -9.032735408798871e-17,
+            3.48399476452288e-17,
+            7.005476972500772e-18
           ],
           [
-            -3.835442789665902e-16,
-            1.6418114705929896e-16,
-            0.0,
-            3.4927052185762826e-17,
-            7.878959137771849e-17,
-            8.788193109491242e-17,
-            2.7113259859873923e-16,
-            -1.2627798755331832e-16
+            -2.159467489233256e-16,
+            8.370639554022994e-18,
+            -2.1941675607578946e-32,
+            -1.6743733270149219e-16,
+            -1.2170454974079653e-16,
+            3.04740802001882e-16,
+            2.480930036721593e-16,
+            -2.323873665145595e-16
           ],
           [
-            1.0248729216175519e-16,
-            -2.8084493648048257e-16,
-            -3.4927052185762826e-17,
-            0.0,
-            3.6316249225428236e-16,
-            -2.1039298764182731e-16,
-            -6.945962538466818e-17,
-            2.634072274471227e-16
+            4.3101665395229707e-17,
+            -3.9997314567270335e-16,
+            1.6743733270149219e-16,
+            -8.648075038051592e-33,
+            1.9003991385134748e-17,
+            -1.592631106785604e-17,
+            -1.65951719256048e-16,
+            2.6090019696651844e-16
           ],
           [
-            -2.1184006194994257e-16,
-            3.684285440995671e-17,
-            -7.878959137771849e-17,
-            -3.6316249225428236e-16,
-            0.0,
-            3.0134472033128255e-16,
-            4.211649362832952e-16,
-            1.1735225748705088e-17
+            -2.7956543181183656e-16,
+            -1.8127802919094105e-17,
+            1.217045497407965e-16,
+            -1.900399138513474e-17,
+            1.0764539653572361e-32,
+            4.0384377686183386e-17,
+            2.2423521029931404e-16,
+            -1.778431101636905e-16
           ],
           [
-            6.441457553786856e-18,
-            -6.122570340280417e-17,
-            -8.788193109491242e-17,
-            2.1039298764182731e-16,
-            -3.0134472033128255e-16,
-            0.0,
-            7.29412287715225e-17,
-            6.679336811241077e-17
+            7.543987821684155e-17,
+            9.032735408798871e-17,
+            -3.0474080200188207e-16,
+            1.592631106785604e-17,
+            -4.038437768618332e-17,
+            3.460257718888123e-32,
+            5.301334997465044e-17,
+            5.555487715197492e-16
           ],
           [
-            -5.80570332688117e-17,
-            -1.1402396395215912e-16,
-            -2.7113259859873923e-16,
-            6.945962538466818e-17,
-            -4.211649362832952e-16,
-            -7.29412287715225e-17,
+            8.073476682888343e-17,
+            -3.4839947645228805e-17,
+            -2.480930036721593e-16,
+            1.6595171925604799e-16,
+            -2.2423521029931404e-16,
+            -5.3013349974650434e-17,
             0.0,
-            2.1881046239509956e-16
+            1.079288855434067e-16
           ],
           [
-            7.941839516897986e-17,
-            -1.2846822936670934e-16,
-            1.2627798755331832e-16,
-            -2.634072274471227e-16,
-            -1.1735225748705088e-17,
-            -6.679336811241077e-17,
-            -2.1881046239509956e-16,
+            3.4278934256008905e-17,
+            -7.005476972500758e-18,
+            2.323873665145595e-16,
+            -2.6090019696651844e-16,
+            1.7784311016369052e-16,
+            -5.555487715197492e-16,
+            -1.079288855434067e-16,
             0.0
           ]
         ],
@@ -11704,7 +11704,7 @@
       },
       "source_primitive_check": {
         "scope": "coherent full-register Statevector on all-zero input only, with phase retained",
-        "max_entry_error": 1.0932236116866866e-14
+        "max_entry_error": 1.0644270501496146e-14
       },
       "generation_only_scaling_case": false,
       "coherent": {
@@ -11781,19 +11781,19 @@
       "exports": {
         "coherent": {
           "file": "n3-beta-0p75-coherent.qasm",
-          "sha256": "b02f5fbf7a67df3dcd7461c715656c526e9ec185213788c0a8bd227f5da170e9",
+          "sha256": "3f9d336dc23bf75b7ad1dc5fe4af19f330da6fb477e9d3365c019dc8cb461008",
           "compiled_global_phase_radians": 0.68722339297282,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-X": {
           "file": "n3-beta-0p75-trial-X.qasm",
-          "sha256": "e84814ba7e38263c4c713f373c474fcbbef81e9100247369d40d0f3fc215639c",
+          "sha256": "228a64784906941c3c683dd400b041abd1df3ac65846542edaa958e322a99755",
           "compiled_global_phase_radians": 4.221515128261325,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-Z": {
           "file": "n3-beta-0p75-trial-Z.qasm",
-          "sha256": "36531e65868e0620dedbdade241d1a18cc0cbadc41ae3e7781ab88dba97a9233",
+          "sha256": "26476868e7a2c38851b0f1b281c807b4272b443864f1beea932eb2004ea96d0b",
           "compiled_global_phase_radians": 2.650718801466427,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         }
@@ -11844,7 +11844,7 @@
         "total_accepted_trials": 151074,
         "retry_cap_per_slot": 1107,
         "complete_attempt_cap": 167238918,
-        "expected_complete_attempts": 9776980.172145946,
+        "expected_complete_attempts": 9776980.172145948,
         "statistical_failure": 0.005,
         "acceptance_failure": 0.005,
         "sampling_performed": false,
@@ -11853,9 +11853,9 @@
         "physical_failure_allowance": null
       },
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.28749513700017815,
-        "lowering": 0.09963506700000835,
-        "bounded_checks": 1.145392258000129
+        "phase_generation_certificate_source": 0.45682177300022886,
+        "lowering": 0.15502983099986523,
+        "bounded_checks": 2.31757977999996
       },
       "synthesis_performed": false,
       "physical_estimate": null,
@@ -11912,7 +11912,7 @@
           1.5710298028784022,
           1.5760581048219688,
           1.6229205630699053,
-          1.710351432807443,
+          1.7103514328074427,
           1.6229205630699053,
           1.5760581048219688,
           1.5710298028784022,
@@ -11921,16 +11921,16 @@
         ],
         "odd_phases": [
           -0.7853981730214665,
-          1.5707955739095347,
+          1.570795573909535,
           1.5707573311316272,
           1.5695910355338905,
-          1.552066348663759,
+          1.5520663486637591,
           1.4654933921541482,
           1.4654933921541482,
-          1.552066348663759,
+          1.5520663486637591,
           1.5695910355338905,
           1.5707573311316272,
-          1.5707955739095347,
+          1.570795573909535,
           2.356194480568327
         ],
         "even_coefficients": [
@@ -11987,22 +11987,22 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.009730789000059303,
-          "node_max_residual": 5.273559366969494e-16,
-          "grid_max_residual": 8.049116928532385e-16,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 6.053794638386837e-16,
+          "wall_seconds": 0.012945316999775969,
+          "node_max_residual": 5.204170427930421e-16,
+          "grid_max_residual": 7.7021722333370235e-16,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 8.738707360622618e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            0.13831116153345685,
-            -4.2662366275275185e-18,
-            0.1028880825005947,
-            -2.042366451711234e-17,
-            0.01038570455411686,
-            -8.634319082838583e-18,
-            0.0004609712282784884,
-            -2.152498206973852e-18,
-            1.1338730220915672e-05,
-            -6.241997206117448e-18,
-            1.7631519832905483e-07
+            0.1383111615334566,
+            4.906538933386797e-18,
+            0.10288808250059475,
+            1.793953297519548e-17,
+            0.010385704554116854,
+            -4.369886237547616e-17,
+            0.00046097122827847665,
+            2.4532694666933986e-17,
+            1.1338730220910507e-05,
+            -1.0273065891778606e-17,
+            1.7631519831482508e-07
           ],
           "sampled_target_magnitude": 0.2520574348618663,
           "sampled_target_magnitude_guard": 0.75,
@@ -12047,23 +12047,23 @@
           "maximum_restarts": 4,
           "maximum_function_evaluations_per_restart": 1500,
           "elapsed_time_limit_seconds": 30.0,
-          "wall_seconds": 0.00996722500008218,
-          "node_max_residual": 7.494005416219807e-16,
-          "grid_max_residual": 1.1379786002407855e-15,
-          "numerically_reconstructed_coefficient_l1_discrepancy": 1.2161687568361292e-15,
+          "wall_seconds": 0.013264923999940947,
+          "node_max_residual": 8.187894806610529e-16,
+          "grid_max_residual": 1.1934897514720433e-15,
+          "numerically_reconstructed_coefficient_l1_discrepancy": 9.647536934832365e-16,
           "numerically_reconstructed_chebyshev_coefficients": [
-            3.4694469519536134e-18,
+            -3.4694469519536134e-18,
             -0.2084810886795827,
-            3.1368710934757115e-17,
-            -0.03700095117859123,
-            -1.600384349098901e-17,
-            -0.0023819359982011233,
-            -9.09966836641306e-18,
-            -7.707985681004549e-05,
-            -8.540252346237787e-17,
-            -1.4883220033208807e-06,
-            -1.032676854310504e-16,
-            -1.9028683471464814e-08
+            2.4532694666933983e-18,
+            -0.037000951178590834,
+            5.397192826725477e-17,
+            -0.002381935998201174,
+            -9.813077866773595e-18,
+            -7.707985681001255e-05,
+            0.0,
+            -1.4883220029565778e-06,
+            0.0,
+            -1.9028683503954686e-08
           ],
           "sampled_target_magnitude": 0.24794256306387152,
           "sampled_target_magnitude_guard": 0.75,
@@ -12088,9 +12088,9 @@
           "exact_parameter_decimal": "2.399999999999999911182158029987476766109466552734375",
           "degree": 10,
           "decimal_precision": 80,
-          "uniform_error_upper": 1.9003893232412218e-09,
-          "uniform_error_upper_decimal": "1.9003893232412213892006775610778274879164661783511914416354697350314491069410269E-9",
-          "coefficient_residual_l1_upper_decimal": "1.9003893232412213892006775610778274879164661783511914416354583315419289269335516E-9",
+          "uniform_error_upper": 1.9003893856720664e-09,
+          "uniform_error_upper_decimal": "1.9003893856720662649569165418868411712409222504599744339074866511891568634997769E-9",
+          "coefficient_residual_l1_upper_decimal": "1.9003893856720662649569165418868411712409222504599744339074752476996366834923016E-9",
           "analytic_target_taylor_remainder_upper_decimal": "1.1403489520180007475273440512662063934105897213967215373619483384878399771843157E-68",
           "target_taylor_degree": 64,
           "negative_exp_taylor_degree": 69,
@@ -12142,48 +12142,48 @@
           ],
           "achieved_chebyshev_intervals": [
             {
-              "lower": "0.13831116153345694048167403900404474114096426261589147610075165156968993209452327",
-              "upper": "0.13831116153345694048167403900404474114096426261589147610075165156969319684132032"
+              "lower": "0.13831116153345672180078401196012511688758950039901462574202441910667948965702499",
+              "upper": "0.13831116153345672180078401196012511688758950039901462574202441910668275440384289"
             },
             {
               "lower": "0E-829",
               "upper": "0E-829"
             },
             {
-              "lower": "0.10288808250059472880349212819874336764432496635881026341302246346250677457092246",
-              "upper": "0.10288808250059472880349212819874336764432496635881026341302246346251172678439416"
+              "lower": "0.10288808250059473225922842793646469313586030005835028400292034949518763871853752",
+              "upper": "0.10288808250059473225922842793646469313586030005835028400292034949519259093204330"
             },
             {
               "lower": "0E-828",
               "upper": "0E-828"
             },
             {
-              "lower": "0.010385704554116875730722586961993742966751087806704772877155630248580645683181405",
-              "upper": "0.010385704554116875730722586961993742966751087806704772877155630248582795665231720"
+              "lower": "0.010385704554116876065576781944836380928583243663749929416372609377993125268730155",
+              "upper": "0.010385704554116876065576781944836380928583243663749929416372609377995275250797813"
             },
             {
               "lower": "0E-828",
               "upper": "0E-828"
             },
             {
-              "lower": "0.00046097122827850930709229471246863402099863587460313916921125574613382523773244140",
-              "upper": "0.00046097122827850930709229471246863402099863587460313916921125574613434633308849610"
+              "lower": "0.00046097122827850932173845226552788427977684372489761373086435206362718195825634765",
+              "upper": "0.00046097122827850932173845226552788427977684372489761373086435206362770305361683594"
             },
             {
               "lower": "0E-830",
               "upper": "0E-830"
             },
             {
-              "lower": "0.000011338730220979174829049732026383330193897432699976656206451220684974625491367187",
-              "upper": "0.000011338730220979174829049732026383330193897432699976656206451220685039746604414063"
+              "lower": "0.000011338730220979175186872662457677054305384434485447707176154411837526989733242187",
+              "upper": "0.000011338730220979175186872662457677054305384434485447707176154411837592110846640625"
             },
             {
               "lower": "0E-830",
               "upper": "0E-830"
             },
             {
-              "lower": "1.7631519842225999787082401106316961428658308817007835022832092431158526658203125E-7",
-              "upper": "1.7631519842225999787082401106316961428658308817007835022832092431484050935546875E-7"
+              "lower": "1.7631519842226000337013114238088429184916584582382603323909659929567038611328125E-7",
+              "upper": "1.7631519842226000337013114238088429184916584582382603323909659929892562886718750E-7"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -12449,17 +12449,17 @@
             }
           ],
           "coefficient_residual_upper_decimals": [
-            "7.623687424524843797712016893638355112918959788946545961791984154E-17",
+            "1.4244401578179548164713320582583332572116912934299755408936930713E-16",
             "0E-829",
-            "1.4273471918787188792616194565096700907868126680622249638586016061E-16",
+            "1.3927898288813416660067041031726746905809136892018981552171254555E-16",
             "0E-828",
-            "8.8092737218329266829522252273871912107004469972454523430210630536E-17",
+            "8.7757883023346424191560420118014866950465252993325110950625081786E-17",
             "0E-828",
-            "2.1678382444969802261363727827390430496866648974460351965841890629632E-16",
+            "2.1679847060725108186389605648175459944322814284092101301513943463616E-16",
             "0E-830",
-            "3.9785278335835692669236019945765073850870671923840255782814905668855E-17",
+            "3.9784920512905261375511908458763288379819702220649103230450663793855E-17",
             "0E-830",
-            "9.269090863781150339703030958980825260187859539758560826776471049701973E-17",
+            "9.269091413711863471474498715239101025562627840836128325184983000873848E-17",
             "0E-62",
             "1.8855985512864914392340595535943097636503423739342499544641887964493242467877321E-9",
             "0E-62",
@@ -12534,9 +12534,9 @@
           "exact_parameter_decimal": "2.399999999999999911182158029987476766109466552734375",
           "degree": 11,
           "decimal_precision": 80,
-          "uniform_error_upper": 1.7387451220058146e-10,
-          "uniform_error_upper_decimal": "1.7387451220058143427948436218711642925175177253769595365431862642580433160155276E-10",
-          "coefficient_residual_l1_upper_decimal": "1.7387451220058143427948436218711642925175177253769595365431821794259763858637473E-10",
+          "uniform_error_upper": 1.738744808157917e-10,
+          "uniform_error_upper_decimal": "1.7387448081579169202152994398037324026780868319173650495568533226968255127202776E-10",
+          "coefficient_residual_l1_upper_decimal": "1.7387448081579169202152994398037324026780868319173650495568492378647585825684973E-10",
           "analytic_target_taylor_remainder_upper_decimal": "4.0848320669301517802720786746786738780850104556549876608570362565204686958656215E-70",
           "target_taylor_degree": 65,
           "negative_exp_taylor_degree": 69,
@@ -12596,48 +12596,48 @@
               "upper": "0E-914"
             },
             {
-              "lower": "-0.20848108867958274488399888198354839721857852909460384919982209771071743687404926",
-              "upper": "-0.20848108867958274488399888198354839721857852909460384919982209771069490554425242"
+              "lower": "-0.20848108867958275342057286582052950759190116396428063433729922371651456277934443",
+              "upper": "-0.20848108867958275342057286582052950759190116396428063433729922371649203144991854"
             },
             {
               "lower": "0E-914",
               "upper": "0E-914"
             },
             {
-              "lower": "-0.037000951178591217976977115092443612022280717043719866842395827281627915546682500",
-              "upper": "-0.037000951178591217976977115092443612022280717043719866842395827281614306816585624"
+              "lower": "-0.037000951178590779487892653888009452752811145127730736693099134151119274499905470",
+              "upper": "-0.037000951178590779487892653888009452752811145127730736693099134151105665770034316"
             },
             {
               "lower": "0E-912",
               "upper": "0E-912"
             },
             {
-              "lower": "-0.0023819359982011659791921938856852393333466887481399810361109758032579440419475000",
-              "upper": "-0.0023819359982011659791921938856852393333466887481399810361109758032530276204517187"
+              "lower": "-0.0023819359982011678517002176774521266220379829519129998088596416993211194960353907",
+              "upper": "-0.0023819359982011678517002176774521266220379829519129998088596416993162030746187207"
             },
             {
               "lower": "0E-915",
               "upper": "0E-915"
             },
             {
-              "lower": "-0.000077079856810034511458533070412346979317219166057148048412528249171760948420312500",
-              "upper": "-0.000077079856810034511458533070412346979317219166057148048412528249170732199653125000"
+              "lower": "-0.000077079856810041174953043990477956931271120447301891136598373122272965087559765625",
+              "upper": "-0.000077079856810041174953043990477956931271120447301891136598373122271936338806396484"
             },
             {
               "lower": "0E-914",
               "upper": "0E-914"
             },
             {
-              "lower": "-0.0000014883220034301065634524804877584246944355166575269197938610169275570648521875000",
-              "upper": "-0.0000014883220034301065634524804877584246944355166575269197938610169274427924371875000"
+              "lower": "-0.0000014883220029910782588627086111207620249760135226399744190277332472692271410156250",
+              "upper": "-0.0000014883220029910782588627086111207620249760135226399744190277332471549547269042968"
             },
             {
               "lower": "0E-915",
               "upper": "0E-915"
             },
             {
-              "lower": "-1.9028683489888914716250245265369827068082612632347698450939120350956903750000000E-8",
-              "upper": "-1.9028683489888914716250245265369827068082612632347698450939120345764236406250000E-8"
+              "lower": "-1.9028683489888914874551544076825236770242829543888004388261695910652806640625000E-8",
+              "upper": "-1.9028683489888914874551544076825236770242829543888004388261695905460139306640625E-8"
             }
           ],
           "target_taylor_chebyshev_intervals": [
@@ -12908,17 +12908,17 @@
           ],
           "coefficient_residual_upper_decimals": [
             "0E-914",
-            "1.2425768311795457334407061732696726640289187243502870558763183554E-16",
+            "1.3279425710179155445444393996183694318802934956103450271353713071E-16",
             "0E-914",
-            "5.6260386775164136382565290112801757096876854388046333965286709581E-17",
+            "3.82228697686040297776704179459114232033272442305084188284517988878E-16",
             "0E-912",
-            "1.150447045369678646616707247703704978887993094683146719704685001161E-16",
+            "1.131721965131760977743820334761667248700265608024186087950143331141E-16",
             "0E-915",
-            "2.16189197839176475787224514848587528921985734270359719057479987195300E-16",
+            "2.22852692350096541397176468749868773665073920115232820261619126648425E-16",
             "0E-914",
-            "4.048544827777849867357947387672932422552997652833402138051959461047799E-16",
+            "3.41738218119868899018679306922098926316456095499434665969141803067160E-17",
             "0E-915",
-            "1.22287367975231920528724389128060948999772165356685539097481688187354587E-16",
+            "1.22287367816930621717268979425900732088231859419362963537785785286963962E-16",
             "0E-60",
             "1.7269809931136760132992797878379841321352158791894657504904799650991781227524040E-10",
             "0E-61",
@@ -12985,9 +12985,9 @@
           ],
           "formal_proof_assistant": null
         },
-        "ideal_encoded_polynomial_error_upper": 1.0371319177209017e-09,
-        "ideal_decoded_filter_error_upper": 4.148527670883607e-09,
-        "ideal_shifted_filter_gibbs_error_upper": 1.0081786587541835e-06,
+        "ideal_encoded_polynomial_error_upper": 1.0371319332439292e-09,
+        "ideal_decoded_filter_error_upper": 4.148527732975717e-09,
+        "ideal_shifted_filter_gibbs_error_upper": 1.00817867384386e-06,
         "certificate_scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate"
       },
       "error_contract": {
@@ -12998,23 +12998,23 @@
         "generated_phase_parameter": 2.4,
         "parameter_rounding_absolute_upper": 2.7755575615628914e-17,
         "encoded_filter_parameter_rounding_error_upper": 1.3877787807814457e-17,
-        "ideal_encoded_total_error_upper": 1.0371319315986895e-09,
-        "ideal_decoded_total_error_upper": 4.148527726394758e-09,
+        "ideal_encoded_total_error_upper": 1.037131947121717e-09,
+        "ideal_decoded_total_error_upper": 4.148527788486868e-09,
         "ideal_target_Bell_branch_amplitude_lower": 0.0020574367622550075,
         "ideal_target_Bell_branch_amplitude_lower_decimal": "0.0020574367622550076900253763763247018649260976088381285430868866597983347522086638",
-        "ideal_approximate_filter_acceptance_lower": 4.233041763012717e-06,
-        "ideal_approximate_filter_acceptance_lower_decimal": "0.0000042330417630127179194310293815163563781125268987926738040558576960202610022776348",
-        "ideal_Gibbs_trace_distance_upper": 1.0081786722445497e-06,
-        "ideal_Gibbs_trace_distance_upper_decimal": "0.0000010081786722445496693863329652633154814513206827128200840083087031017044373126123",
+        "ideal_approximate_filter_acceptance_lower": 4.233041763012654e-06,
+        "ideal_approximate_filter_acceptance_lower_decimal": "0.0000042330417630126540441686446706838640562753418330672967379021812739499180890157939",
+        "ideal_Gibbs_trace_distance_upper": 1.008178687334226e-06,
+        "ideal_Gibbs_trace_distance_upper_decimal": "0.0000010081786873342260207983551724975792493867921869852236273197186289779613316755070",
         "precision": 80,
         "outward_evaluation": true,
         "scope": "exact declared logical H/alpha_exact signal and stored exact angles; this conditioning evaluation includes the supplied error bound, with nested-control realization/compilation/synthesis/instrument faults separate",
-        "precompiler_source_encoded_total_error_upper": 1.037132036640639e-09,
-        "precompiler_source_decoded_total_error_upper": 4.148528146562556e-09,
-        "precompiler_source_acceptance_lower": 4.233041763012285e-06,
-        "precompiler_source_acceptance_lower_decimal": "0.0000042330417630122856853127749932874174388626110005308093385491214450804214923636368",
-        "precompiler_source_Gibbs_trace_distance_upper": 1.0081787743540786e-06,
-        "precompiler_source_Gibbs_trace_distance_upper_decimal": "0.0000010081787743540786011685544890244808604033354775686304909032616038720383716403752",
+        "precompiler_source_encoded_total_error_upper": 1.0371320521636662e-09,
+        "precompiler_source_decoded_total_error_upper": 4.148528208654665e-09,
+        "precompiler_source_acceptance_lower": 4.233041763012222e-06,
+        "precompiler_source_acceptance_lower_decimal": "0.0000042330417630122218100503902857160632371787939320982634498674993738624559523860304",
+        "precompiler_source_Gibbs_trace_distance_upper": 1.008178789443755e-06,
+        "precompiler_source_Gibbs_trace_distance_upper_decimal": "0.0000010081787894437549525805766962587446283388069818410340342146715297482952660032699",
         "loading_weight_certificate": {
           "certified": true,
           "certificate_scope": "logical RY/X PREPARE with exact binary64 angles and exact declared controls; accepted Hamiltonian block error requires exact indexed signed-Pauli SELECT with identity padding. Floating nested control decompositions, whole PREPARE-unitary and compiled/synthesized realization are not certified",
@@ -13202,27 +13202,27 @@
       "exports": {
         "coherent": {
           "file": "n4-beta-1p5-coherent.qasm",
-          "sha256": "3b3cc43a8dccb5b7e426bb70df053507f09330a3248eb1278519d812dfe37f9d",
+          "sha256": "387ecb42c11fcb17a9373849244e31caf7fc3dac365e0ec7fda9fff9e9738878",
           "compiled_global_phase_radians": 2.1598449493430696,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-X": {
           "file": "n4-beta-1p5-trial-X.qasm",
-          "sha256": "f8f3789432b93564361ee8551dcca8e80daad5b708c6ace68f03446f56d97a74",
+          "sha256": "732ee3cf6f7f5bec4ba19e1c9c74f7934fc43db74c378a8df079cabeb899d0e9",
           "compiled_global_phase_radians": 2.945243112740501,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         },
         "trial-Z": {
           "file": "n4-beta-1p5-trial-Z.qasm",
-          "sha256": "0eee2ccce9e07454527df78408d77d990473ad2bbf56587e95cfcab9a4d2caf6",
+          "sha256": "83cb8299a8be6c38a08ed50cf89475e4f6442f6ecb7254f04c8ce8be37bf8886",
           "compiled_global_phase_radians": 2.945243112740499,
           "phase_policy": "Qiskit OpenQASM3 export omits the recorded overall compiled phase. Measured probabilities are unchanged; these files are not phase-preserving specifications for coherently controlled reuse. Source circuits retain phases."
         }
       },
       "accepted_energy_workload": null,
       "classical_CPU_seconds": {
-        "phase_generation_certificate_source": 0.40840182700003425,
-        "lowering": 0.18570171800001845,
+        "phase_generation_certificate_source": 0.6330194969996228,
+        "lowering": 0.2752161889998206,
         "bounded_checks": null
       },
       "synthesis_performed": false,
@@ -13251,7 +13251,7 @@
       "generate_simulation_thermal_spectral.py": "ad35bd7eafdef24f56765bc02e3f81a18a728a14878af8b56de5f3b1f86cf9a9",
       "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
     },
-    "source_revision_at_generation": "899761f7fc918b466aea32df2543ea7c9b0535be",
+    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
     "source_dirty_at_generation": false,
     "revision_scope": "source hashes identify exact working-tree bytes when generation precedes commit",
     "python": "3.12.14",

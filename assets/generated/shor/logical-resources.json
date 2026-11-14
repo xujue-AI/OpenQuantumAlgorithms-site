@@ -37,8 +37,8 @@
   "primitive_unitary_gates": 8665,
   "continuous_rotations": 4388,
   "logical_resource_status": "computed explicit-circuit counts before synthesis and error correction",
-  "generation_wall_seconds": 0.021898539000176243,
-  "compilation_wall_seconds": 0.08987584600004084,
+  "generation_wall_seconds": 0.03674550200003068,
+  "compilation_wall_seconds": 0.13299711500008016,
   "workload_contract": {
     "fixed_modulus": 15,
     "fixed_base": 2,
@@ -127,7 +127,7 @@
     "device": "CPU",
     "seed": 20261112
   },
-  "source_commit": "899761f7fc918b466aea32df2543ea7c9b0535be",
+  "source_commit": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
   "source_commit_scope": "base checkout at generation; source hash above identifies working implementation",
   "simulation": {
     "probabilities": [
@@ -172,7 +172,7 @@
     "total_qubits": 14,
     "performed": true,
     "method": "Qiskit ideal statevector of actual arithmetic circuit vs independent Fourier residue-class sum",
-    "wall_seconds": 0.5957526239999424
+    "wall_seconds": 1.409687250999923
   },
   "executed_ideal_sampling": {
     "performed": true,
@@ -235,7 +235,7 @@
         "factors": []
       }
     ],
-    "classical_sampling_and_reconstruction_seconds": 0.00016974400000435708,
+    "classical_sampling_and_reconstruction_seconds": 0.00017035799987752398,
     "scope": "draws from validated exact circuit distribution; no hardware execution"
   },
   "scaling_scope": "actual arithmetic circuit materializations with t=2n; no large-instance simulations; favorable identity powers vary with N/a"

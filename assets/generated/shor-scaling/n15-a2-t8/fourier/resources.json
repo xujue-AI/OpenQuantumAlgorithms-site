@@ -9,9 +9,9 @@
     "phase_grid_spacing": 0.00390625,
     "standard_2n_resolution": true
   },
-  "compilation_wall_ns": 78761562,
+  "compilation_wall_ns": 129397560,
   "compiled_global_phase_radians": 1.5646604036433647,
-  "construction_wall_ns": 21931209,
+  "construction_wall_ns": 38824898,
   "controlled_multiplier_constants": [
     2,
     4,
@@ -97,7 +97,7 @@
           "model_properties": {
             "ALGORITHM_COMPUTE_QUBITS": 18,
             "ALGORITHM_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 27548162,
+            "EVALUATION_TIME": 46296460,
             "LOGICAL_COMPUTE_QUBITS": 49,
             "LOGICAL_MEMORY_QUBITS": 0,
             "NUM_TS_PER_ROTATION": 20,
@@ -127,7 +127,7 @@
           "model_properties": {
             "ALGORITHM_COMPUTE_QUBITS": 18,
             "ALGORITHM_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 27548162,
+            "EVALUATION_TIME": 46296460,
             "LOGICAL_COMPUTE_QUBITS": 49,
             "LOGICAL_MEMORY_QUBITS": 0,
             "NUM_TS_PER_ROTATION": 20,
@@ -157,7 +157,7 @@
           "model_properties": {
             "ALGORITHM_COMPUTE_QUBITS": 18,
             "ALGORITHM_MEMORY_QUBITS": 0,
-            "EVALUATION_TIME": 27548162,
+            "EVALUATION_TIME": 46296460,
             "LOGICAL_COMPUTE_QUBITS": 49,
             "LOGICAL_MEMORY_QUBITS": 0,
             "NUM_TS_PER_ROTATION": 20,
@@ -234,7 +234,7 @@
       }
     },
     "native_input_qasm_matches_export": true,
-    "native_worker_wall_ns": 918343618,
+    "native_worker_wall_ns": 1431232149,
     "status": "computed_conditional_model",
     "timeout_seconds": 90
   },

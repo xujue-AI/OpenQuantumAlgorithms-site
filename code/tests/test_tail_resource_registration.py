@@ -367,6 +367,8 @@ def configure_main(checker, root, monkeypatch):
     monkeypatch.setattr(checker, "site_local_spin_reproduction_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_measured_and_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(checker, "site_hamiltonian_packet_errors", lambda *_, **__: [])
+    monkeypatch.setattr(checker, "site_next_saved_errors", lambda *_, **__: [])
+    monkeypatch.setattr(checker, "NEXT_EVIDENCE_ARTICLE_LABELS", {})
     monkeypatch.setattr(checker, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(checker.sys, "argv", ["check_site.py", str(root)])
 
@@ -543,6 +545,14 @@ def test_tail_ci_replacements_keep_exact_positions_and_final75_vector():
         pytest.skip("Publication workflow is outside the public example package")
     commands = [line.strip().removeprefix("run ") for line in workflow.read_text().splitlines()
                 if line.startswith("          run python ")]
+    added_commands = (
+        'python scripts/verify_robust_qpe_resource_source_saved.py --bundle assets/generated/robust-qpe-resource-source --expected-manifest-sha256 aaa9eebc661db8e2c8a41764eb8497fa66d810934d9dd1f4bc3b414805378e33 --source-root . --max-seconds 30',
+        'python scripts/verify_shor_finite_adder_reference.py --bundle assets/generated/shor/finite-adder-reference',
+        'python scripts/verify_thermal_two_round_public.py --bundle assets/generated/simulation/detailed-balance-two-round',
+        'python -I -S -B scripts/display_dqi_path_majority_saved.py --display --artifact-root . --source-root . --manifest-sha256 b6f6ad7f3e4914a6af7c34a9c852652e623b9d22de07635378ad379e816363d9 --time-limit-seconds 5',
+    )
+    assert all(commands.count(command) == 1 for command in added_commands)
+    commands = [command for command in commands if command not in added_commands]
     degree_two = 'python scripts/verify_dqi_degree_two_public_saved.py --artifact-root . --source-root . --notebook-path notebooks/optimization_dqi_degree_two.ipynb --expected-manifest-sha256 ecd71a350153cba5a17ae1451a1545b703e604608b3d95abee815cabbcc26f6c --archive assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip --time-limit-seconds 10'
     assert len(commands) == 86 and commands.count(degree_two) == 1
     assert commands.index(degree_two) == commands.index("python scripts/verify_dqi_saved.py assets/generated/optimization/dqi") + 1

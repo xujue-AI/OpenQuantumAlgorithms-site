@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1284" viewBox="0 0 1180 1284" role="img" aria-labelledby="figure-title figure-description" data-schema="openquantum.dqi.path_majority_circuit_svg.v1" data-source-sha256="3cbb0866a388adf23a5b27594d90a92db99cfbab4ad901d597eef39ae9a6f562" data-wires="12" data-logical-gates="49" data-ccx-blocks="34" data-cx-outside-ccx="15" data-primitive-operations="525" data-full-program-validated="false">
+<title id="figure-title">Path-local majority decoder: every logical gate</title>
+<desc id="figure-description">Read panels A, B and C in order. Four syndrome wires become prefix bits, seventeen exact CCX blocks compute the majority flag, nine CX gates XOR the decoded word into arbitrary targets, and reversed CCX and prefix gates restore the three scratch wires and original syndrome. All 34 CCX and 15 CX glyphs are visible. Each CCX represents the full fifteen-primitive phase-exact lowering in the linked saved source, totaling 525 primitives. The full 31-wire program is generation-only and is not shown.</desc>
+<metadata id="circuit-metadata">{&quot;arbitrary_targets&quot;:true,&quot;ccx_blocks&quot;:34,&quot;cx_outside_ccx&quot;:15,&quot;final_scratch&quot;:&quot;000&quot;,&quot;full_program_validated&quot;:false,&quot;initial_scratch&quot;:&quot;000&quot;,&quot;logical_gates&quot;:[{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:1,&quot;primitive_start&quot;:0,&quot;primitive_stop&quot;:1,&quot;qubits&quot;:[0,1],&quot;stage&quot;:&quot;prefix&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:2,&quot;primitive_start&quot;:1,&quot;primitive_stop&quot;:2,&quot;qubits&quot;:[1,2],&quot;stage&quot;:&quot;prefix&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:3,&quot;primitive_start&quot;:2,&quot;primitive_stop&quot;:3,&quot;qubits&quot;:[2,3],&quot;stage&quot;:&quot;prefix&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:4,&quot;primitive_start&quot;:3,&quot;primitive_stop&quot;:18,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:5,&quot;primitive_start&quot;:18,&quot;primitive_stop&quot;:33,&quot;qubits&quot;:[9,2,11],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:6,&quot;primitive_start&quot;:33,&quot;primitive_stop&quot;:48,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:7,&quot;primitive_start&quot;:48,&quot;primitive_stop&quot;:63,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:8,&quot;primitive_start&quot;:63,&quot;primitive_stop&quot;:78,&quot;qubits&quot;:[9,3,11],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:9,&quot;primitive_start&quot;:78,&quot;primitive_stop&quot;:93,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:10,&quot;primitive_start&quot;:93,&quot;primitive_stop&quot;:108,&quot;qubits&quot;:[0,2,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:11,&quot;primitive_start&quot;:108,&quot;primitive_stop&quot;:123,&quot;qubits&quot;:[9,3,11],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:12,&quot;primitive_start&quot;:123,&quot;primitive_stop&quot;:138,&quot;qubits&quot;:[0,2,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:13,&quot;primitive_start&quot;:138,&quot;primitive_stop&quot;:153,&quot;qubits&quot;:[1,2,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:14,&quot;primitive_start&quot;:153,&quot;primitive_stop&quot;:168,&quot;qubits&quot;:[9,3,11],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:15,&quot;primitive_start&quot;:168,&quot;primitive_stop&quot;:183,&quot;qubits&quot;:[1,2,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:16,&quot;primitive_start&quot;:183,&quot;primitive_stop&quot;:198,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:17,&quot;primitive_start&quot;:198,&quot;primitive_stop&quot;:213,&quot;qubits&quot;:[9,2,10],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:18,&quot;primitive_start&quot;:213,&quot;primitive_stop&quot;:228,&quot;qubits&quot;:[10,3,11],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:19,&quot;primitive_start&quot;:228,&quot;primitive_stop&quot;:243,&quot;qubits&quot;:[9,2,10],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:20,&quot;primitive_start&quot;:243,&quot;primitive_stop&quot;:258,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;compute_flag&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:21,&quot;primitive_start&quot;:258,&quot;primitive_stop&quot;:259,&quot;qubits&quot;:[11,4],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:22,&quot;primitive_start&quot;:259,&quot;primitive_stop&quot;:260,&quot;qubits&quot;:[11,5],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:23,&quot;primitive_start&quot;:260,&quot;primitive_stop&quot;:261,&quot;qubits&quot;:[11,6],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:24,&quot;primitive_start&quot;:261,&quot;primitive_stop&quot;:262,&quot;qubits&quot;:[11,7],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:25,&quot;primitive_start&quot;:262,&quot;primitive_stop&quot;:263,&quot;qubits&quot;:[11,8],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:26,&quot;primitive_start&quot;:263,&quot;primitive_stop&quot;:264,&quot;qubits&quot;:[0,5],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:27,&quot;primitive_start&quot;:264,&quot;primitive_stop&quot;:265,&quot;qubits&quot;:[1,6],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:28,&quot;primitive_start&quot;:265,&quot;primitive_stop&quot;:266,&quot;qubits&quot;:[2,7],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:29,&quot;primitive_start&quot;:266,&quot;primitive_stop&quot;:267,&quot;qubits&quot;:[3,8],&quot;stage&quot;:&quot;xor_targets&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:30,&quot;primitive_start&quot;:267,&quot;primitive_stop&quot;:282,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:31,&quot;primitive_start&quot;:282,&quot;primitive_stop&quot;:297,&quot;qubits&quot;:[9,2,10],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:32,&quot;primitive_start&quot;:297,&quot;primitive_stop&quot;:312,&quot;qubits&quot;:[10,3,11],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:33,&quot;primitive_start&quot;:312,&quot;primitive_stop&quot;:327,&quot;qubits&quot;:[9,2,10],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:34,&quot;primitive_start&quot;:327,&quot;primitive_stop&quot;:342,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:35,&quot;primitive_start&quot;:342,&quot;primitive_stop&quot;:357,&quot;qubits&quot;:[1,2,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:36,&quot;primitive_start&quot;:357,&quot;primitive_stop&quot;:372,&quot;qubits&quot;:[9,3,11],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:37,&quot;primitive_start&quot;:372,&quot;primitive_stop&quot;:387,&quot;qubits&quot;:[1,2,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:38,&quot;primitive_start&quot;:387,&quot;primitive_stop&quot;:402,&quot;qubits&quot;:[0,2,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:39,&quot;primitive_start&quot;:402,&quot;primitive_stop&quot;:417,&quot;qubits&quot;:[9,3,11],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:40,&quot;primitive_start&quot;:417,&quot;primitive_stop&quot;:432,&quot;qubits&quot;:[0,2,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:41,&quot;primitive_start&quot;:432,&quot;primitive_stop&quot;:447,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:42,&quot;primitive_start&quot;:447,&quot;primitive_stop&quot;:462,&quot;qubits&quot;:[9,3,11],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:43,&quot;primitive_start&quot;:462,&quot;primitive_stop&quot;:477,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:44,&quot;primitive_start&quot;:477,&quot;primitive_stop&quot;:492,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:45,&quot;primitive_start&quot;:492,&quot;primitive_stop&quot;:507,&quot;qubits&quot;:[9,2,11],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;ccx&quot;,&quot;logical_index&quot;:46,&quot;primitive_start&quot;:507,&quot;primitive_stop&quot;:522,&quot;qubits&quot;:[0,1,9],&quot;stage&quot;:&quot;uncompute_flag&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:47,&quot;primitive_start&quot;:522,&quot;primitive_stop&quot;:523,&quot;qubits&quot;:[2,3],&quot;stage&quot;:&quot;undo_prefix&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:48,&quot;primitive_start&quot;:523,&quot;primitive_stop&quot;:524,&quot;qubits&quot;:[1,2],&quot;stage&quot;:&quot;undo_prefix&quot;},{&quot;gate&quot;:&quot;cx&quot;,&quot;logical_index&quot;:49,&quot;primitive_start&quot;:524,&quot;primitive_stop&quot;:525,&quot;qubits&quot;:[0,1],&quot;stage&quot;:&quot;undo_prefix&quot;}],&quot;logical_symbols_use_full_phase_exact_ccx&quot;:true,&quot;paired_source_qasm&quot;:{&quot;bytes&quot;:5921,&quot;path&quot;:&quot;assets/generated/optimization/dqi-path-majority/generated/component.qasm&quot;,&quot;sha256&quot;:&quot;7c4359771fd9274d9217cb60ce4066384b8aa2eaeffe219927e1c3bf0bb18091&quot;},&quot;primitive_counts&quot;:{&quot;cx&quot;:219,&quot;h&quot;:68,&quot;t&quot;:136,&quot;tdg&quot;:102},&quot;primitive_operations&quot;:525,&quot;schema&quot;:&quot;openquantum.dqi.path_majority_circuit_svg.v1&quot;,&quot;scope&quot;:&quot;fixed 12-wire local decoder component; 31-wire program not depicted&quot;,&quot;source_file&quot;:&quot;assets/generated/optimization/dqi-path-majority/generated/component.ndjson&quot;,&quot;source_sha256&quot;:&quot;3cbb0866a388adf23a5b27594d90a92db99cfbab4ad901d597eef39ae9a6f562&quot;,&quot;stage_ranges&quot;:{&quot;compute_flag&quot;:[3,258],&quot;prefix&quot;:[0,3],&quot;uncompute_flag&quot;:[267,522],&quot;undo_prefix&quot;:[522,525],&quot;xor_targets&quot;:[258,267]},&quot;syndrome_preserved&quot;:true,&quot;wires&quot;:12}</metadata>
+<style>text{font-family:Arial,"DejaVu Sans",sans-serif} .wire{stroke:#65758a;stroke-width:1.25}.gate-link{stroke:#26354a;stroke-width:1.8} .control{fill:#26354a}.target{fill:white;stroke:#26354a;stroke-width:1.8}</style>
+<rect width="1180" height="1284" fill="#fff"/>
+<text x="30.0" y="39.0" font-size="25" fill="#243247" text-anchor="start" font-weight="bold">Path-local majority decoder</text>
+<text x="30.0" y="68.0" font-size="15" fill="#243247" text-anchor="start" font-weight="normal">12 wires · arbitrary clause targets · clean scratch at the component boundaries</text>
+<text x="30.0" y="90.0" font-size="14" fill="#596879" text-anchor="start" font-weight="normal">Read A → B → C. Wire indices continue unchanged between panels.</text>
+<g class="circuit-panel" data-panel-row="0" data-logical-start="0" data-logical-stop="20">
+<rect x="20" y="108" width="1140" height="334" rx="10" fill="#fff" stroke="#d9e1ea"/>
+<text x="38.0" y="136.0" font-size="17" fill="#243247" text-anchor="start" font-weight="bold">A  Prefix and majority flag</text>
+<rect x="168.8" y="147" width="124.6" height="21" rx="4" fill="#eef2f7"/>
+<text x="231.0" y="162.0" font-size="11" fill="#405169" text-anchor="middle" font-weight="normal">Prefix · 3 CX</text>
+<rect x="293.3" y="147" width="705.9" height="21" rx="4" fill="#edf4fa"/>
+<text x="646.3" y="162.0" font-size="11" fill="#405169" text-anchor="middle" font-weight="normal">Compute flag · 17 CCX</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="0"><line class="wire" x1="148" y1="188" x2="1020" y2="188"/></g>
+<text x="136.0" y="192.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q0  s₁</text>
+<text x="1032.0" y="192.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₂</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="1"><line class="wire" x1="148" y1="208" x2="1020" y2="208"/></g>
+<text x="136.0" y="212.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q1  s₂</text>
+<text x="1032.0" y="212.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₃</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="2"><line class="wire" x1="148" y1="228" x2="1020" y2="228"/></g>
+<text x="136.0" y="232.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q2  s₃</text>
+<text x="1032.0" y="232.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₄</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="3"><line class="wire" x1="148" y1="248" x2="1020" y2="248"/></g>
+<text x="136.0" y="252.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q3  s₄</text>
+<text x="1032.0" y="252.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₅</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="4"><line class="wire" x1="148" y1="268" x2="1020" y2="268"/></g>
+<text x="136.0" y="272.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q4  t₁</text>
+<text x="1032.0" y="272.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₁</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="5"><line class="wire" x1="148" y1="288" x2="1020" y2="288"/></g>
+<text x="136.0" y="292.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q5  t₂</text>
+<text x="1032.0" y="292.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₂</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="6"><line class="wire" x1="148" y1="308" x2="1020" y2="308"/></g>
+<text x="136.0" y="312.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q6  t₃</text>
+<text x="1032.0" y="312.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₃</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="7"><line class="wire" x1="148" y1="328" x2="1020" y2="328"/></g>
+<text x="136.0" y="332.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q7  t₄</text>
+<text x="1032.0" y="332.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₄</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="8"><line class="wire" x1="148" y1="348" x2="1020" y2="348"/></g>
+<text x="136.0" y="352.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q8  t₅</text>
+<text x="1032.0" y="352.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₅</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="9"><line class="wire" x1="148" y1="368" x2="1020" y2="368"/></g>
+<text x="136.0" y="372.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q9  0</text>
+<text x="1032.0" y="372.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">0</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="10"><line class="wire" x1="148" y1="388" x2="1020" y2="388"/></g>
+<text x="136.0" y="392.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q10  0</text>
+<text x="1032.0" y="392.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">0</text>
+<g class="circuit-wire" data-panel-row="0" data-qubit="11"><line class="wire" x1="148" y1="408" x2="1020" y2="408"/></g>
+<text x="136.0" y="412.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q11  0</text>
+<text x="1032.0" y="412.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">M(r)</text>
+<g class="logical-gate cx" id="logical-gate-001" data-logical-index="1" data-gate="cx" data-qubits="0 1" data-primitive-start="0" data-primitive-stop="1" data-stage="prefix">
+<title>CX [0, 1]; saved primitives [0,1)</title>
+<line class="gate-link" x1="189.5" y1="188" x2="189.5" y2="208"/>
+<circle class="control" data-wire="0" cx="189.5" cy="188" r="3.4"/>
+<circle class="target" data-wire="1" cx="189.5" cy="208" r="6.5"/>
+<path class="gate-link" d="M185.5,208H193.5 M189.5,204V212"/>
+</g>
+<text x="189.5" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">1</text>
+<g class="logical-gate cx" id="logical-gate-002" data-logical-index="2" data-gate="cx" data-qubits="1 2" data-primitive-start="1" data-primitive-stop="2" data-stage="prefix">
+<title>CX [1, 2]; saved primitives [1,2)</title>
+<line class="gate-link" x1="231.0" y1="208" x2="231.0" y2="228"/>
+<circle class="control" data-wire="1" cx="231.0" cy="208" r="3.4"/>
+<circle class="target" data-wire="2" cx="231.0" cy="228" r="6.5"/>
+<path class="gate-link" d="M227.0,228H235.0 M231.0,224V232"/>
+</g>
+<text x="231.0" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">2</text>
+<g class="logical-gate cx" id="logical-gate-003" data-logical-index="3" data-gate="cx" data-qubits="2 3" data-primitive-start="2" data-primitive-stop="3" data-stage="prefix">
+<title>CX [2, 3]; saved primitives [2,3)</title>
+<line class="gate-link" x1="272.6" y1="228" x2="272.6" y2="248"/>
+<circle class="control" data-wire="2" cx="272.6" cy="228" r="3.4"/>
+<circle class="target" data-wire="3" cx="272.6" cy="248" r="6.5"/>
+<path class="gate-link" d="M268.6,248H276.6 M272.6,244V252"/>
+</g>
+<text x="272.6" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">3</text>
+<g class="logical-gate ccx" id="logical-gate-004" data-logical-index="4" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="3" data-primitive-stop="18" data-stage="compute_flag">
+<title>CCX [0, 1, 9]; saved primitives [3,18)</title>
+<line class="gate-link" x1="314.1" y1="188" x2="314.1" y2="368"/>
+<circle class="control" data-wire="0" cx="314.1" cy="188" r="3.4"/>
+<circle class="control" data-wire="1" cx="314.1" cy="208" r="3.4"/>
+<circle class="target" data-wire="9" cx="314.1" cy="368" r="6.5"/>
+<path class="gate-link" d="M310.1,368H318.1 M314.1,364V372"/>
+</g>
+<text x="314.1" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">4</text>
+<g class="logical-gate ccx" id="logical-gate-005" data-logical-index="5" data-gate="ccx" data-qubits="9 2 11" data-primitive-start="18" data-primitive-stop="33" data-stage="compute_flag">
+<title>CCX [9, 2, 11]; saved primitives [18,33)</title>
+<line class="gate-link" x1="355.6" y1="228" x2="355.6" y2="408"/>
+<circle class="control" data-wire="9" cx="355.6" cy="368" r="3.4"/>
+<circle class="control" data-wire="2" cx="355.6" cy="228" r="3.4"/>
+<circle class="target" data-wire="11" cx="355.6" cy="408" r="6.5"/>
+<path class="gate-link" d="M351.6,408H359.6 M355.6,404V412"/>
+</g>
+<text x="355.6" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">5</text>
+<g class="logical-gate ccx" id="logical-gate-006" data-logical-index="6" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="33" data-primitive-stop="48" data-stage="compute_flag">
+<title>CCX [0, 1, 9]; saved primitives [33,48)</title>
+<line class="gate-link" x1="397.1" y1="188" x2="397.1" y2="368"/>
+<circle class="control" data-wire="0" cx="397.1" cy="188" r="3.4"/>
+<circle class="control" data-wire="1" cx="397.1" cy="208" r="3.4"/>
+<circle class="target" data-wire="9" cx="397.1" cy="368" r="6.5"/>
+<path class="gate-link" d="M393.1,368H401.1 M397.1,364V372"/>
+</g>
+<text x="397.1" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">6</text>
+<g class="logical-gate ccx" id="logical-gate-007" data-logical-index="7" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="48" data-primitive-stop="63" data-stage="compute_flag">
+<title>CCX [0, 1, 9]; saved primitives [48,63)</title>
+<line class="gate-link" x1="438.7" y1="188" x2="438.7" y2="368"/>
+<circle class="control" data-wire="0" cx="438.7" cy="188" r="3.4"/>
+<circle class="control" data-wire="1" cx="438.7" cy="208" r="3.4"/>
+<circle class="target" data-wire="9" cx="438.7" cy="368" r="6.5"/>
+<path class="gate-link" d="M434.7,368H442.7 M438.7,364V372"/>
+</g>
+<text x="438.7" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">7</text>
+<g class="logical-gate ccx" id="logical-gate-008" data-logical-index="8" data-gate="ccx" data-qubits="9 3 11" data-primitive-start="63" data-primitive-stop="78" data-stage="compute_flag">
+<title>CCX [9, 3, 11]; saved primitives [63,78)</title>
+<line class="gate-link" x1="480.2" y1="248" x2="480.2" y2="408"/>
+<circle class="control" data-wire="9" cx="480.2" cy="368" r="3.4"/>
+<circle class="control" data-wire="3" cx="480.2" cy="248" r="3.4"/>
+<circle class="target" data-wire="11" cx="480.2" cy="408" r="6.5"/>
+<path class="gate-link" d="M476.2,408H484.2 M480.2,404V412"/>
+</g>
+<text x="480.2" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">8</text>
+<g class="logical-gate ccx" id="logical-gate-009" data-logical-index="9" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="78" data-primitive-stop="93" data-stage="compute_flag">
+<title>CCX [0, 1, 9]; saved primitives [78,93)</title>
+<line class="gate-link" x1="521.7" y1="188" x2="521.7" y2="368"/>
+<circle class="control" data-wire="0" cx="521.7" cy="188" r="3.4"/>
+<circle class="control" data-wire="1" cx="521.7" cy="208" r="3.4"/>
+<circle class="target" data-wire="9" cx="521.7" cy="368" r="6.5"/>
+<path class="gate-link" d="M517.7,368H525.7 M521.7,364V372"/>
+</g>
+<text x="521.7" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">9</text>
+<g class="logical-gate ccx" id="logical-gate-010" data-logical-index="10" data-gate="ccx" data-qubits="0 2 9" data-primitive-start="93" data-primitive-stop="108" data-stage="compute_flag">
+<title>CCX [0, 2, 9]; saved primitives [93,108)</title>
+<line class="gate-link" x1="563.2" y1="188" x2="563.2" y2="368"/>
+<circle class="control" data-wire="0" cx="563.2" cy="188" r="3.4"/>
+<circle class="control" data-wire="2" cx="563.2" cy="228" r="3.4"/>
+<circle class="target" data-wire="9" cx="563.2" cy="368" r="6.5"/>
+<path class="gate-link" d="M559.2,368H567.2 M563.2,364V372"/>
+</g>
+<text x="563.2" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">10</text>
+<g class="logical-gate ccx" id="logical-gate-011" data-logical-index="11" data-gate="ccx" data-qubits="9 3 11" data-primitive-start="108" data-primitive-stop="123" data-stage="compute_flag">
+<title>CCX [9, 3, 11]; saved primitives [108,123)</title>
+<line class="gate-link" x1="604.8" y1="248" x2="604.8" y2="408"/>
+<circle class="control" data-wire="9" cx="604.8" cy="368" r="3.4"/>
+<circle class="control" data-wire="3" cx="604.8" cy="248" r="3.4"/>
+<circle class="target" data-wire="11" cx="604.8" cy="408" r="6.5"/>
+<path class="gate-link" d="M600.8,408H608.8 M604.8,404V412"/>
+</g>
+<text x="604.8" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">11</text>
+<g class="logical-gate ccx" id="logical-gate-012" data-logical-index="12" data-gate="ccx" data-qubits="0 2 9" data-primitive-start="123" data-primitive-stop="138" data-stage="compute_flag">
+<title>CCX [0, 2, 9]; saved primitives [123,138)</title>
+<line class="gate-link" x1="646.3" y1="188" x2="646.3" y2="368"/>
+<circle class="control" data-wire="0" cx="646.3" cy="188" r="3.4"/>
+<circle class="control" data-wire="2" cx="646.3" cy="228" r="3.4"/>
+<circle class="target" data-wire="9" cx="646.3" cy="368" r="6.5"/>
+<path class="gate-link" d="M642.3,368H650.3 M646.3,364V372"/>
+</g>
+<text x="646.3" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">12</text>
+<g class="logical-gate ccx" id="logical-gate-013" data-logical-index="13" data-gate="ccx" data-qubits="1 2 9" data-primitive-start="138" data-primitive-stop="153" data-stage="compute_flag">
+<title>CCX [1, 2, 9]; saved primitives [138,153)</title>
+<line class="gate-link" x1="687.8" y1="208" x2="687.8" y2="368"/>
+<circle class="control" data-wire="1" cx="687.8" cy="208" r="3.4"/>
+<circle class="control" data-wire="2" cx="687.8" cy="228" r="3.4"/>
+<circle class="target" data-wire="9" cx="687.8" cy="368" r="6.5"/>
+<path class="gate-link" d="M683.8,368H691.8 M687.8,364V372"/>
+</g>
+<text x="687.8" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">13</text>
+<g class="logical-gate ccx" id="logical-gate-014" data-logical-index="14" data-gate="ccx" data-qubits="9 3 11" data-primitive-start="153" data-primitive-stop="168" data-stage="compute_flag">
+<title>CCX [9, 3, 11]; saved primitives [153,168)</title>
+<line class="gate-link" x1="729.3" y1="248" x2="729.3" y2="408"/>
+<circle class="control" data-wire="9" cx="729.3" cy="368" r="3.4"/>
+<circle class="control" data-wire="3" cx="729.3" cy="248" r="3.4"/>
+<circle class="target" data-wire="11" cx="729.3" cy="408" r="6.5"/>
+<path class="gate-link" d="M725.3,408H733.3 M729.3,404V412"/>
+</g>
+<text x="729.3" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">14</text>
+<g class="logical-gate ccx" id="logical-gate-015" data-logical-index="15" data-gate="ccx" data-qubits="1 2 9" data-primitive-start="168" data-primitive-stop="183" data-stage="compute_flag">
+<title>CCX [1, 2, 9]; saved primitives [168,183)</title>
+<line class="gate-link" x1="770.9" y1="208" x2="770.9" y2="368"/>
+<circle class="control" data-wire="1" cx="770.9" cy="208" r="3.4"/>
+<circle class="control" data-wire="2" cx="770.9" cy="228" r="3.4"/>
+<circle class="target" data-wire="9" cx="770.9" cy="368" r="6.5"/>
+<path class="gate-link" d="M766.9,368H774.9 M770.9,364V372"/>
+</g>
+<text x="770.9" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">15</text>
+<g class="logical-gate ccx" id="logical-gate-016" data-logical-index="16" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="183" data-primitive-stop="198" data-stage="compute_flag">
+<title>CCX [0, 1, 9]; saved primitives [183,198)</title>
+<line class="gate-link" x1="812.4" y1="188" x2="812.4" y2="368"/>
+<circle class="control" data-wire="0" cx="812.4" cy="188" r="3.4"/>
+<circle class="control" data-wire="1" cx="812.4" cy="208" r="3.4"/>
+<circle class="target" data-wire="9" cx="812.4" cy="368" r="6.5"/>
+<path class="gate-link" d="M808.4,368H816.4 M812.4,364V372"/>
+</g>
+<text x="812.4" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">16</text>
+<g class="logical-gate ccx" id="logical-gate-017" data-logical-index="17" data-gate="ccx" data-qubits="9 2 10" data-primitive-start="198" data-primitive-stop="213" data-stage="compute_flag">
+<title>CCX [9, 2, 10]; saved primitives [198,213)</title>
+<line class="gate-link" x1="853.9" y1="228" x2="853.9" y2="388"/>
+<circle class="control" data-wire="9" cx="853.9" cy="368" r="3.4"/>
+<circle class="control" data-wire="2" cx="853.9" cy="228" r="3.4"/>
+<circle class="target" data-wire="10" cx="853.9" cy="388" r="6.5"/>
+<path class="gate-link" d="M849.9,388H857.9 M853.9,384V392"/>
+</g>
+<text x="853.9" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">17</text>
+<g class="logical-gate ccx" id="logical-gate-018" data-logical-index="18" data-gate="ccx" data-qubits="10 3 11" data-primitive-start="213" data-primitive-stop="228" data-stage="compute_flag">
+<title>CCX [10, 3, 11]; saved primitives [213,228)</title>
+<line class="gate-link" x1="895.4" y1="248" x2="895.4" y2="408"/>
+<circle class="control" data-wire="10" cx="895.4" cy="388" r="3.4"/>
+<circle class="control" data-wire="3" cx="895.4" cy="248" r="3.4"/>
+<circle class="target" data-wire="11" cx="895.4" cy="408" r="6.5"/>
+<path class="gate-link" d="M891.4,408H899.4 M895.4,404V412"/>
+</g>
+<text x="895.4" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">18</text>
+<g class="logical-gate ccx" id="logical-gate-019" data-logical-index="19" data-gate="ccx" data-qubits="9 2 10" data-primitive-start="228" data-primitive-stop="243" data-stage="compute_flag">
+<title>CCX [9, 2, 10]; saved primitives [228,243)</title>
+<line class="gate-link" x1="937.0" y1="228" x2="937.0" y2="388"/>
+<circle class="control" data-wire="9" cx="937.0" cy="368" r="3.4"/>
+<circle class="control" data-wire="2" cx="937.0" cy="228" r="3.4"/>
+<circle class="target" data-wire="10" cx="937.0" cy="388" r="6.5"/>
+<path class="gate-link" d="M933.0,388H941.0 M937.0,384V392"/>
+</g>
+<text x="937.0" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">19</text>
+<g class="logical-gate ccx" id="logical-gate-020" data-logical-index="20" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="243" data-primitive-stop="258" data-stage="compute_flag">
+<title>CCX [0, 1, 9]; saved primitives [243,258)</title>
+<line class="gate-link" x1="978.5" y1="188" x2="978.5" y2="368"/>
+<circle class="control" data-wire="0" cx="978.5" cy="188" r="3.4"/>
+<circle class="control" data-wire="1" cx="978.5" cy="208" r="3.4"/>
+<circle class="target" data-wire="9" cx="978.5" cy="368" r="6.5"/>
+<path class="gate-link" d="M974.5,368H982.5 M978.5,364V372"/>
+</g>
+<text x="978.5" y="429.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">20</text>
+</g>
+<g class="circuit-panel" data-panel-row="1" data-logical-start="20" data-logical-stop="29">
+<rect x="20" y="454" width="1140" height="334" rx="10" fill="#fff" stroke="#d9e1ea"/>
+<text x="38.0" y="482.0" font-size="17" fill="#243247" text-anchor="start" font-weight="bold">B  XOR the decoded word into arbitrary targets</text>
+<rect x="191.6" y="493" width="784.8" height="21" rx="4" fill="#eef5ed"/>
+<text x="584.0" y="508.0" font-size="11" fill="#405169" text-anchor="middle" font-weight="normal">Target XOR · 9 CX</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="0"><line class="wire" x1="148" y1="534" x2="1020" y2="534"/></g>
+<text x="136.0" y="538.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q0  r₂</text>
+<text x="1032.0" y="538.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₂</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="1"><line class="wire" x1="148" y1="554" x2="1020" y2="554"/></g>
+<text x="136.0" y="558.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q1  r₃</text>
+<text x="1032.0" y="558.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₃</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="2"><line class="wire" x1="148" y1="574" x2="1020" y2="574"/></g>
+<text x="136.0" y="578.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q2  r₄</text>
+<text x="1032.0" y="578.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₄</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="3"><line class="wire" x1="148" y1="594" x2="1020" y2="594"/></g>
+<text x="136.0" y="598.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q3  r₅</text>
+<text x="1032.0" y="598.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">r₅</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="4"><line class="wire" x1="148" y1="614" x2="1020" y2="614"/></g>
+<text x="136.0" y="618.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q4  t₁</text>
+<text x="1032.0" y="618.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₁ ⊕ d₁</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="5"><line class="wire" x1="148" y1="634" x2="1020" y2="634"/></g>
+<text x="136.0" y="638.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q5  t₂</text>
+<text x="1032.0" y="638.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₂ ⊕ d₂</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="6"><line class="wire" x1="148" y1="654" x2="1020" y2="654"/></g>
+<text x="136.0" y="658.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q6  t₃</text>
+<text x="1032.0" y="658.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₃ ⊕ d₃</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="7"><line class="wire" x1="148" y1="674" x2="1020" y2="674"/></g>
+<text x="136.0" y="678.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q7  t₄</text>
+<text x="1032.0" y="678.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₄ ⊕ d₄</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="8"><line class="wire" x1="148" y1="694" x2="1020" y2="694"/></g>
+<text x="136.0" y="698.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q8  t₅</text>
+<text x="1032.0" y="698.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₅ ⊕ d₅</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="9"><line class="wire" x1="148" y1="714" x2="1020" y2="714"/></g>
+<text x="136.0" y="718.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q9  0</text>
+<text x="1032.0" y="718.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">0</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="10"><line class="wire" x1="148" y1="734" x2="1020" y2="734"/></g>
+<text x="136.0" y="738.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q10  0</text>
+<text x="1032.0" y="738.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">0</text>
+<g class="circuit-wire" data-panel-row="1" data-qubit="11"><line class="wire" x1="148" y1="754" x2="1020" y2="754"/></g>
+<text x="136.0" y="758.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q11  M(r)</text>
+<text x="1032.0" y="758.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">M(r)</text>
+<g class="logical-gate cx" id="logical-gate-021" data-logical-index="21" data-gate="cx" data-qubits="11 4" data-primitive-start="258" data-primitive-stop="259" data-stage="xor_targets">
+<title>CX [11, 4]; saved primitives [258,259)</title>
+<line class="gate-link" x1="235.2" y1="614" x2="235.2" y2="754"/>
+<circle class="control" data-wire="11" cx="235.2" cy="754" r="3.4"/>
+<circle class="target" data-wire="4" cx="235.2" cy="614" r="6.5"/>
+<path class="gate-link" d="M231.2,614H239.2 M235.2,610V618"/>
+</g>
+<text x="235.2" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">21</text>
+<g class="logical-gate cx" id="logical-gate-022" data-logical-index="22" data-gate="cx" data-qubits="11 5" data-primitive-start="259" data-primitive-stop="260" data-stage="xor_targets">
+<title>CX [11, 5]; saved primitives [259,260)</title>
+<line class="gate-link" x1="322.4" y1="634" x2="322.4" y2="754"/>
+<circle class="control" data-wire="11" cx="322.4" cy="754" r="3.4"/>
+<circle class="target" data-wire="5" cx="322.4" cy="634" r="6.5"/>
+<path class="gate-link" d="M318.4,634H326.4 M322.4,630V638"/>
+</g>
+<text x="322.4" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">22</text>
+<g class="logical-gate cx" id="logical-gate-023" data-logical-index="23" data-gate="cx" data-qubits="11 6" data-primitive-start="260" data-primitive-stop="261" data-stage="xor_targets">
+<title>CX [11, 6]; saved primitives [260,261)</title>
+<line class="gate-link" x1="409.6" y1="654" x2="409.6" y2="754"/>
+<circle class="control" data-wire="11" cx="409.6" cy="754" r="3.4"/>
+<circle class="target" data-wire="6" cx="409.6" cy="654" r="6.5"/>
+<path class="gate-link" d="M405.6,654H413.6 M409.6,650V658"/>
+</g>
+<text x="409.6" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">23</text>
+<g class="logical-gate cx" id="logical-gate-024" data-logical-index="24" data-gate="cx" data-qubits="11 7" data-primitive-start="261" data-primitive-stop="262" data-stage="xor_targets">
+<title>CX [11, 7]; saved primitives [261,262)</title>
+<line class="gate-link" x1="496.8" y1="674" x2="496.8" y2="754"/>
+<circle class="control" data-wire="11" cx="496.8" cy="754" r="3.4"/>
+<circle class="target" data-wire="7" cx="496.8" cy="674" r="6.5"/>
+<path class="gate-link" d="M492.8,674H500.8 M496.8,670V678"/>
+</g>
+<text x="496.8" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">24</text>
+<g class="logical-gate cx" id="logical-gate-025" data-logical-index="25" data-gate="cx" data-qubits="11 8" data-primitive-start="262" data-primitive-stop="263" data-stage="xor_targets">
+<title>CX [11, 8]; saved primitives [262,263)</title>
+<line class="gate-link" x1="584.0" y1="694" x2="584.0" y2="754"/>
+<circle class="control" data-wire="11" cx="584.0" cy="754" r="3.4"/>
+<circle class="target" data-wire="8" cx="584.0" cy="694" r="6.5"/>
+<path class="gate-link" d="M580.0,694H588.0 M584.0,690V698"/>
+</g>
+<text x="584.0" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">25</text>
+<g class="logical-gate cx" id="logical-gate-026" data-logical-index="26" data-gate="cx" data-qubits="0 5" data-primitive-start="263" data-primitive-stop="264" data-stage="xor_targets">
+<title>CX [0, 5]; saved primitives [263,264)</title>
+<line class="gate-link" x1="671.2" y1="534" x2="671.2" y2="634"/>
+<circle class="control" data-wire="0" cx="671.2" cy="534" r="3.4"/>
+<circle class="target" data-wire="5" cx="671.2" cy="634" r="6.5"/>
+<path class="gate-link" d="M667.2,634H675.2 M671.2,630V638"/>
+</g>
+<text x="671.2" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">26</text>
+<g class="logical-gate cx" id="logical-gate-027" data-logical-index="27" data-gate="cx" data-qubits="1 6" data-primitive-start="264" data-primitive-stop="265" data-stage="xor_targets">
+<title>CX [1, 6]; saved primitives [264,265)</title>
+<line class="gate-link" x1="758.4" y1="554" x2="758.4" y2="654"/>
+<circle class="control" data-wire="1" cx="758.4" cy="554" r="3.4"/>
+<circle class="target" data-wire="6" cx="758.4" cy="654" r="6.5"/>
+<path class="gate-link" d="M754.4,654H762.4 M758.4,650V658"/>
+</g>
+<text x="758.4" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">27</text>
+<g class="logical-gate cx" id="logical-gate-028" data-logical-index="28" data-gate="cx" data-qubits="2 7" data-primitive-start="265" data-primitive-stop="266" data-stage="xor_targets">
+<title>CX [2, 7]; saved primitives [265,266)</title>
+<line class="gate-link" x1="845.6" y1="574" x2="845.6" y2="674"/>
+<circle class="control" data-wire="2" cx="845.6" cy="574" r="3.4"/>
+<circle class="target" data-wire="7" cx="845.6" cy="674" r="6.5"/>
+<path class="gate-link" d="M841.6,674H849.6 M845.6,670V678"/>
+</g>
+<text x="845.6" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">28</text>
+<g class="logical-gate cx" id="logical-gate-029" data-logical-index="29" data-gate="cx" data-qubits="3 8" data-primitive-start="266" data-primitive-stop="267" data-stage="xor_targets">
+<title>CX [3, 8]; saved primitives [266,267)</title>
+<line class="gate-link" x1="932.8" y1="594" x2="932.8" y2="694"/>
+<circle class="control" data-wire="3" cx="932.8" cy="594" r="3.4"/>
+<circle class="target" data-wire="8" cx="932.8" cy="694" r="6.5"/>
+<path class="gate-link" d="M928.8,694H936.8 M932.8,690V698"/>
+</g>
+<text x="932.8" y="775.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">29</text>
+</g>
+<g class="circuit-panel" data-panel-row="2" data-logical-start="29" data-logical-stop="49">
+<rect x="20" y="800" width="1140" height="334" rx="10" fill="#fff" stroke="#d9e1ea"/>
+<text x="38.0" y="828.0" font-size="17" fill="#243247" text-anchor="start" font-weight="bold">C  Erase the flag and restore the syndrome</text>
+<rect x="168.8" y="839" width="705.9" height="21" rx="4" fill="#faf1e8"/>
+<text x="521.7" y="854.0" font-size="11" fill="#405169" text-anchor="middle" font-weight="normal">Uncompute · 17 CCX</text>
+<rect x="874.7" y="839" width="124.6" height="21" rx="4" fill="#eef2f7"/>
+<text x="937.0" y="854.0" font-size="11" fill="#405169" text-anchor="middle" font-weight="normal">Undo prefix · 3 CX</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="0"><line class="wire" x1="148" y1="880" x2="1020" y2="880"/></g>
+<text x="136.0" y="884.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q0  r₂</text>
+<text x="1032.0" y="884.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">s₁</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="1"><line class="wire" x1="148" y1="900" x2="1020" y2="900"/></g>
+<text x="136.0" y="904.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q1  r₃</text>
+<text x="1032.0" y="904.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">s₂</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="2"><line class="wire" x1="148" y1="920" x2="1020" y2="920"/></g>
+<text x="136.0" y="924.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q2  r₄</text>
+<text x="1032.0" y="924.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">s₃</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="3"><line class="wire" x1="148" y1="940" x2="1020" y2="940"/></g>
+<text x="136.0" y="944.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q3  r₅</text>
+<text x="1032.0" y="944.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">s₄</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="4"><line class="wire" x1="148" y1="960" x2="1020" y2="960"/></g>
+<text x="136.0" y="964.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q4  t₁ ⊕ d₁</text>
+<text x="1032.0" y="964.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₁ ⊕ d₁</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="5"><line class="wire" x1="148" y1="980" x2="1020" y2="980"/></g>
+<text x="136.0" y="984.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q5  t₂ ⊕ d₂</text>
+<text x="1032.0" y="984.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₂ ⊕ d₂</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="6"><line class="wire" x1="148" y1="1000" x2="1020" y2="1000"/></g>
+<text x="136.0" y="1004.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q6  t₃ ⊕ d₃</text>
+<text x="1032.0" y="1004.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₃ ⊕ d₃</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="7"><line class="wire" x1="148" y1="1020" x2="1020" y2="1020"/></g>
+<text x="136.0" y="1024.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q7  t₄ ⊕ d₄</text>
+<text x="1032.0" y="1024.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₄ ⊕ d₄</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="8"><line class="wire" x1="148" y1="1040" x2="1020" y2="1040"/></g>
+<text x="136.0" y="1044.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q8  t₅ ⊕ d₅</text>
+<text x="1032.0" y="1044.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">t₅ ⊕ d₅</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="9"><line class="wire" x1="148" y1="1060" x2="1020" y2="1060"/></g>
+<text x="136.0" y="1064.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q9  0</text>
+<text x="1032.0" y="1064.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">0</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="10"><line class="wire" x1="148" y1="1080" x2="1020" y2="1080"/></g>
+<text x="136.0" y="1084.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q10  0</text>
+<text x="1032.0" y="1084.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">0</text>
+<g class="circuit-wire" data-panel-row="2" data-qubit="11"><line class="wire" x1="148" y1="1100" x2="1020" y2="1100"/></g>
+<text x="136.0" y="1104.0" font-size="12" fill="#243247" text-anchor="end" font-weight="normal">q11  M(r)</text>
+<text x="1032.0" y="1104.0" font-size="12" fill="#243247" text-anchor="start" font-weight="normal">0</text>
+<g class="logical-gate ccx" id="logical-gate-030" data-logical-index="30" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="267" data-primitive-stop="282" data-stage="uncompute_flag">
+<title>CCX [0, 1, 9]; saved primitives [267,282)</title>
+<line class="gate-link" x1="189.5" y1="880" x2="189.5" y2="1060"/>
+<circle class="control" data-wire="0" cx="189.5" cy="880" r="3.4"/>
+<circle class="control" data-wire="1" cx="189.5" cy="900" r="3.4"/>
+<circle class="target" data-wire="9" cx="189.5" cy="1060" r="6.5"/>
+<path class="gate-link" d="M185.5,1060H193.5 M189.5,1056V1064"/>
+</g>
+<text x="189.5" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">30</text>
+<g class="logical-gate ccx" id="logical-gate-031" data-logical-index="31" data-gate="ccx" data-qubits="9 2 10" data-primitive-start="282" data-primitive-stop="297" data-stage="uncompute_flag">
+<title>CCX [9, 2, 10]; saved primitives [282,297)</title>
+<line class="gate-link" x1="231.0" y1="920" x2="231.0" y2="1080"/>
+<circle class="control" data-wire="9" cx="231.0" cy="1060" r="3.4"/>
+<circle class="control" data-wire="2" cx="231.0" cy="920" r="3.4"/>
+<circle class="target" data-wire="10" cx="231.0" cy="1080" r="6.5"/>
+<path class="gate-link" d="M227.0,1080H235.0 M231.0,1076V1084"/>
+</g>
+<text x="231.0" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">31</text>
+<g class="logical-gate ccx" id="logical-gate-032" data-logical-index="32" data-gate="ccx" data-qubits="10 3 11" data-primitive-start="297" data-primitive-stop="312" data-stage="uncompute_flag">
+<title>CCX [10, 3, 11]; saved primitives [297,312)</title>
+<line class="gate-link" x1="272.6" y1="940" x2="272.6" y2="1100"/>
+<circle class="control" data-wire="10" cx="272.6" cy="1080" r="3.4"/>
+<circle class="control" data-wire="3" cx="272.6" cy="940" r="3.4"/>
+<circle class="target" data-wire="11" cx="272.6" cy="1100" r="6.5"/>
+<path class="gate-link" d="M268.6,1100H276.6 M272.6,1096V1104"/>
+</g>
+<text x="272.6" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">32</text>
+<g class="logical-gate ccx" id="logical-gate-033" data-logical-index="33" data-gate="ccx" data-qubits="9 2 10" data-primitive-start="312" data-primitive-stop="327" data-stage="uncompute_flag">
+<title>CCX [9, 2, 10]; saved primitives [312,327)</title>
+<line class="gate-link" x1="314.1" y1="920" x2="314.1" y2="1080"/>
+<circle class="control" data-wire="9" cx="314.1" cy="1060" r="3.4"/>
+<circle class="control" data-wire="2" cx="314.1" cy="920" r="3.4"/>
+<circle class="target" data-wire="10" cx="314.1" cy="1080" r="6.5"/>
+<path class="gate-link" d="M310.1,1080H318.1 M314.1,1076V1084"/>
+</g>
+<text x="314.1" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">33</text>
+<g class="logical-gate ccx" id="logical-gate-034" data-logical-index="34" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="327" data-primitive-stop="342" data-stage="uncompute_flag">
+<title>CCX [0, 1, 9]; saved primitives [327,342)</title>
+<line class="gate-link" x1="355.6" y1="880" x2="355.6" y2="1060"/>
+<circle class="control" data-wire="0" cx="355.6" cy="880" r="3.4"/>
+<circle class="control" data-wire="1" cx="355.6" cy="900" r="3.4"/>
+<circle class="target" data-wire="9" cx="355.6" cy="1060" r="6.5"/>
+<path class="gate-link" d="M351.6,1060H359.6 M355.6,1056V1064"/>
+</g>
+<text x="355.6" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">34</text>
+<g class="logical-gate ccx" id="logical-gate-035" data-logical-index="35" data-gate="ccx" data-qubits="1 2 9" data-primitive-start="342" data-primitive-stop="357" data-stage="uncompute_flag">
+<title>CCX [1, 2, 9]; saved primitives [342,357)</title>
+<line class="gate-link" x1="397.1" y1="900" x2="397.1" y2="1060"/>
+<circle class="control" data-wire="1" cx="397.1" cy="900" r="3.4"/>
+<circle class="control" data-wire="2" cx="397.1" cy="920" r="3.4"/>
+<circle class="target" data-wire="9" cx="397.1" cy="1060" r="6.5"/>
+<path class="gate-link" d="M393.1,1060H401.1 M397.1,1056V1064"/>
+</g>
+<text x="397.1" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">35</text>
+<g class="logical-gate ccx" id="logical-gate-036" data-logical-index="36" data-gate="ccx" data-qubits="9 3 11" data-primitive-start="357" data-primitive-stop="372" data-stage="uncompute_flag">
+<title>CCX [9, 3, 11]; saved primitives [357,372)</title>
+<line class="gate-link" x1="438.7" y1="940" x2="438.7" y2="1100"/>
+<circle class="control" data-wire="9" cx="438.7" cy="1060" r="3.4"/>
+<circle class="control" data-wire="3" cx="438.7" cy="940" r="3.4"/>
+<circle class="target" data-wire="11" cx="438.7" cy="1100" r="6.5"/>
+<path class="gate-link" d="M434.7,1100H442.7 M438.7,1096V1104"/>
+</g>
+<text x="438.7" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">36</text>
+<g class="logical-gate ccx" id="logical-gate-037" data-logical-index="37" data-gate="ccx" data-qubits="1 2 9" data-primitive-start="372" data-primitive-stop="387" data-stage="uncompute_flag">
+<title>CCX [1, 2, 9]; saved primitives [372,387)</title>
+<line class="gate-link" x1="480.2" y1="900" x2="480.2" y2="1060"/>
+<circle class="control" data-wire="1" cx="480.2" cy="900" r="3.4"/>
+<circle class="control" data-wire="2" cx="480.2" cy="920" r="3.4"/>
+<circle class="target" data-wire="9" cx="480.2" cy="1060" r="6.5"/>
+<path class="gate-link" d="M476.2,1060H484.2 M480.2,1056V1064"/>
+</g>
+<text x="480.2" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">37</text>
+<g class="logical-gate ccx" id="logical-gate-038" data-logical-index="38" data-gate="ccx" data-qubits="0 2 9" data-primitive-start="387" data-primitive-stop="402" data-stage="uncompute_flag">
+<title>CCX [0, 2, 9]; saved primitives [387,402)</title>
+<line class="gate-link" x1="521.7" y1="880" x2="521.7" y2="1060"/>
+<circle class="control" data-wire="0" cx="521.7" cy="880" r="3.4"/>
+<circle class="control" data-wire="2" cx="521.7" cy="920" r="3.4"/>
+<circle class="target" data-wire="9" cx="521.7" cy="1060" r="6.5"/>
+<path class="gate-link" d="M517.7,1060H525.7 M521.7,1056V1064"/>
+</g>
+<text x="521.7" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">38</text>
+<g class="logical-gate ccx" id="logical-gate-039" data-logical-index="39" data-gate="ccx" data-qubits="9 3 11" data-primitive-start="402" data-primitive-stop="417" data-stage="uncompute_flag">
+<title>CCX [9, 3, 11]; saved primitives [402,417)</title>
+<line class="gate-link" x1="563.2" y1="940" x2="563.2" y2="1100"/>
+<circle class="control" data-wire="9" cx="563.2" cy="1060" r="3.4"/>
+<circle class="control" data-wire="3" cx="563.2" cy="940" r="3.4"/>
+<circle class="target" data-wire="11" cx="563.2" cy="1100" r="6.5"/>
+<path class="gate-link" d="M559.2,1100H567.2 M563.2,1096V1104"/>
+</g>
+<text x="563.2" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">39</text>
+<g class="logical-gate ccx" id="logical-gate-040" data-logical-index="40" data-gate="ccx" data-qubits="0 2 9" data-primitive-start="417" data-primitive-stop="432" data-stage="uncompute_flag">
+<title>CCX [0, 2, 9]; saved primitives [417,432)</title>
+<line class="gate-link" x1="604.8" y1="880" x2="604.8" y2="1060"/>
+<circle class="control" data-wire="0" cx="604.8" cy="880" r="3.4"/>
+<circle class="control" data-wire="2" cx="604.8" cy="920" r="3.4"/>
+<circle class="target" data-wire="9" cx="604.8" cy="1060" r="6.5"/>
+<path class="gate-link" d="M600.8,1060H608.8 M604.8,1056V1064"/>
+</g>
+<text x="604.8" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">40</text>
+<g class="logical-gate ccx" id="logical-gate-041" data-logical-index="41" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="432" data-primitive-stop="447" data-stage="uncompute_flag">
+<title>CCX [0, 1, 9]; saved primitives [432,447)</title>
+<line class="gate-link" x1="646.3" y1="880" x2="646.3" y2="1060"/>
+<circle class="control" data-wire="0" cx="646.3" cy="880" r="3.4"/>
+<circle class="control" data-wire="1" cx="646.3" cy="900" r="3.4"/>
+<circle class="target" data-wire="9" cx="646.3" cy="1060" r="6.5"/>
+<path class="gate-link" d="M642.3,1060H650.3 M646.3,1056V1064"/>
+</g>
+<text x="646.3" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">41</text>
+<g class="logical-gate ccx" id="logical-gate-042" data-logical-index="42" data-gate="ccx" data-qubits="9 3 11" data-primitive-start="447" data-primitive-stop="462" data-stage="uncompute_flag">
+<title>CCX [9, 3, 11]; saved primitives [447,462)</title>
+<line class="gate-link" x1="687.8" y1="940" x2="687.8" y2="1100"/>
+<circle class="control" data-wire="9" cx="687.8" cy="1060" r="3.4"/>
+<circle class="control" data-wire="3" cx="687.8" cy="940" r="3.4"/>
+<circle class="target" data-wire="11" cx="687.8" cy="1100" r="6.5"/>
+<path class="gate-link" d="M683.8,1100H691.8 M687.8,1096V1104"/>
+</g>
+<text x="687.8" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">42</text>
+<g class="logical-gate ccx" id="logical-gate-043" data-logical-index="43" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="462" data-primitive-stop="477" data-stage="uncompute_flag">
+<title>CCX [0, 1, 9]; saved primitives [462,477)</title>
+<line class="gate-link" x1="729.3" y1="880" x2="729.3" y2="1060"/>
+<circle class="control" data-wire="0" cx="729.3" cy="880" r="3.4"/>
+<circle class="control" data-wire="1" cx="729.3" cy="900" r="3.4"/>
+<circle class="target" data-wire="9" cx="729.3" cy="1060" r="6.5"/>
+<path class="gate-link" d="M725.3,1060H733.3 M729.3,1056V1064"/>
+</g>
+<text x="729.3" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">43</text>
+<g class="logical-gate ccx" id="logical-gate-044" data-logical-index="44" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="477" data-primitive-stop="492" data-stage="uncompute_flag">
+<title>CCX [0, 1, 9]; saved primitives [477,492)</title>
+<line class="gate-link" x1="770.9" y1="880" x2="770.9" y2="1060"/>
+<circle class="control" data-wire="0" cx="770.9" cy="880" r="3.4"/>
+<circle class="control" data-wire="1" cx="770.9" cy="900" r="3.4"/>
+<circle class="target" data-wire="9" cx="770.9" cy="1060" r="6.5"/>
+<path class="gate-link" d="M766.9,1060H774.9 M770.9,1056V1064"/>
+</g>
+<text x="770.9" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">44</text>
+<g class="logical-gate ccx" id="logical-gate-045" data-logical-index="45" data-gate="ccx" data-qubits="9 2 11" data-primitive-start="492" data-primitive-stop="507" data-stage="uncompute_flag">
+<title>CCX [9, 2, 11]; saved primitives [492,507)</title>
+<line class="gate-link" x1="812.4" y1="920" x2="812.4" y2="1100"/>
+<circle class="control" data-wire="9" cx="812.4" cy="1060" r="3.4"/>
+<circle class="control" data-wire="2" cx="812.4" cy="920" r="3.4"/>
+<circle class="target" data-wire="11" cx="812.4" cy="1100" r="6.5"/>
+<path class="gate-link" d="M808.4,1100H816.4 M812.4,1096V1104"/>
+</g>
+<text x="812.4" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">45</text>
+<g class="logical-gate ccx" id="logical-gate-046" data-logical-index="46" data-gate="ccx" data-qubits="0 1 9" data-primitive-start="507" data-primitive-stop="522" data-stage="uncompute_flag">
+<title>CCX [0, 1, 9]; saved primitives [507,522)</title>
+<line class="gate-link" x1="853.9" y1="880" x2="853.9" y2="1060"/>
+<circle class="control" data-wire="0" cx="853.9" cy="880" r="3.4"/>
+<circle class="control" data-wire="1" cx="853.9" cy="900" r="3.4"/>
+<circle class="target" data-wire="9" cx="853.9" cy="1060" r="6.5"/>
+<path class="gate-link" d="M849.9,1060H857.9 M853.9,1056V1064"/>
+</g>
+<text x="853.9" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">46</text>
+<g class="logical-gate cx" id="logical-gate-047" data-logical-index="47" data-gate="cx" data-qubits="2 3" data-primitive-start="522" data-primitive-stop="523" data-stage="undo_prefix">
+<title>CX [2, 3]; saved primitives [522,523)</title>
+<line class="gate-link" x1="895.4" y1="920" x2="895.4" y2="940"/>
+<circle class="control" data-wire="2" cx="895.4" cy="920" r="3.4"/>
+<circle class="target" data-wire="3" cx="895.4" cy="940" r="6.5"/>
+<path class="gate-link" d="M891.4,940H899.4 M895.4,936V944"/>
+</g>
+<text x="895.4" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">47</text>
+<g class="logical-gate cx" id="logical-gate-048" data-logical-index="48" data-gate="cx" data-qubits="1 2" data-primitive-start="523" data-primitive-stop="524" data-stage="undo_prefix">
+<title>CX [1, 2]; saved primitives [523,524)</title>
+<line class="gate-link" x1="937.0" y1="900" x2="937.0" y2="920"/>
+<circle class="control" data-wire="1" cx="937.0" cy="900" r="3.4"/>
+<circle class="target" data-wire="2" cx="937.0" cy="920" r="6.5"/>
+<path class="gate-link" d="M933.0,920H941.0 M937.0,916V924"/>
+</g>
+<text x="937.0" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">48</text>
+<g class="logical-gate cx" id="logical-gate-049" data-logical-index="49" data-gate="cx" data-qubits="0 1" data-primitive-start="524" data-primitive-stop="525" data-stage="undo_prefix">
+<title>CX [0, 1]; saved primitives [524,525)</title>
+<line class="gate-link" x1="978.5" y1="880" x2="978.5" y2="900"/>
+<circle class="control" data-wire="0" cx="978.5" cy="880" r="3.4"/>
+<circle class="target" data-wire="1" cx="978.5" cy="900" r="6.5"/>
+<path class="gate-link" d="M974.5,900H982.5 M978.5,896V904"/>
+</g>
+<text x="978.5" y="1121.0" font-size="9" fill="#778396" text-anchor="middle" font-weight="normal">49</text>
+</g>
+<text x="30.0" y="1174.0" font-size="14" fill="#243247" text-anchor="start" font-weight="normal">M(r) = r₂r₃r₄ ⊕ r₂r₃r₅ ⊕ r₂r₄r₅ ⊕ r₃r₄r₅ ⊕ r₂r₃r₄r₅  (threshold ≥ 3)</text>
+<text x="30.0" y="1200.0" font-size="14" fill="#243247" text-anchor="start" font-weight="normal">Every CCX uses H=2, CX=6, T=4, T†=3: 34 × 15 + 15 = 525 primitives.</text>
+<text x="30.0" y="1226.0" font-size="13" fill="#243247" text-anchor="start" font-weight="normal">Clean-scratch action: |s,t,000⟩ → |s,t ⊕ d(s),000⟩. No preparation, reset or readout is in this component.</text>
+<text x="30.0" y="1252.0" font-size="13" fill="#596879" text-anchor="start" font-weight="normal">Full phase-exact words and source indices are retained in component.qasm and component.ndjson.</text>
+</svg>

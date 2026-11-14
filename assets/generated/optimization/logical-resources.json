@@ -7990,11 +7990,11 @@
           ]
         }
       ],
-      "optimizer_wall_seconds": 0.2556325379998725,
-      "objective_wall_seconds": 0.25272831399888673,
-      "classical_control_seconds": 0.002904224000985778,
-      "finite_shot_sampling_seconds": 0.00023808800006008823,
-      "readout_probability_generation_seconds": 0.0012551980000807816,
+      "optimizer_wall_seconds": 0.5155319430000418,
+      "objective_wall_seconds": 0.5101847899964014,
+      "classical_control_seconds": 0.005347153003640415,
+      "finite_shot_sampling_seconds": 0.00033179000001837267,
+      "readout_probability_generation_seconds": 0.0026174540003012225,
       "simulated_rotation_angles": [
         -0.20000000000000018,
         -0.20000000000000018,
@@ -14609,11 +14609,11 @@
           ]
         }
       ],
-      "optimizer_wall_seconds": 0.03555099500022152,
-      "objective_wall_seconds": 0.03438754300054825,
-      "classical_control_seconds": 0.0011634519996732706,
-      "finite_shot_sampling_seconds": 0.00016537500005142647,
-      "readout_probability_generation_seconds": 0.0007189670000116166,
+      "optimizer_wall_seconds": 0.07111200400049711,
+      "objective_wall_seconds": 0.0689671460027057,
+      "classical_control_seconds": 0.002144857997791405,
+      "finite_shot_sampling_seconds": 0.0003625569997893763,
+      "readout_probability_generation_seconds": 0.0014179720005813579,
       "simulated_rotation_angles": [
         0.6000000000000001,
         0.20000000000000018,
@@ -14818,7 +14818,7 @@
     }
   },
   "physical_resource_estimate": null,
-  "hybrid_workflow_wall_seconds": 0.29633934399998907,
+  "hybrid_workflow_wall_seconds": 0.5962589929999922,
   "timing_scope": "run_demo CPU wall time includes reference checks, all optimization calls/control, post-fit validation and ideal readout probability generation/sampling; excludes compilation, export, plotting, input parsing, and file I/O",
   "synthesis_status": "pending; arbitrary rotations are neither T gates nor stochastic failures",
   "fault_tolerant_handoff": {
@@ -14844,7 +14844,7 @@
     "rotation synthesis, error correction, factories and hardware runtime"
   ],
   "provenance": {
-    "generated_at_utc": "2026-11-14T10:43:12.268790+00:00",
+    "generated_at_utc": "2026-11-14T16:46:53.485758+00:00",
     "python": "3.12.14",
     "packages": {
       "qiskit": "2.6.2",
@@ -14861,7 +14861,7 @@
     "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
     "generator_sha256": "2584ec7dedd16a0845fc6a1080210ec690af28deaf99364b2ff8225babbaf3d5",
     "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
-    "source_commit": "899761f7fc918b466aea32df2543ea7c9b0535be",
+    "source_commit": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
     "dirty_owned_source": false,
     "revision_note": "source_commit identifies the checkout base at generation; content hashes identify the implementation and generator actually executed"
   },

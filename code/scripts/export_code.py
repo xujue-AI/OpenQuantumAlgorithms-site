@@ -91,6 +91,11 @@ PUBLIC_SCRIPTS = (
     "render_reusable_bath_local_spin.py", "verify_reusable_bath_local_spin_saved.py",
     "generate_simulation_corrected_formula.py", "generate_cpf2_public.py", "verify_simulation_cpf_public.py",
     "generate_simulation_gqsp.py", "verify_simulation_gqsp_public.py",
+    "display_thermal_two_round_saved.py", "verify_thermal_two_round_public.py",
+    "verify_shor_finite_adder_reference.py",
+    "generate_optimization_dqi_path_majority.py", "validate_optimization_dqi_path_majority.py",
+    "plot_dqi_path_majority_component_svg.py", "display_dqi_path_majority_saved.py",
+    "generate_robust_qpe_resources.py", "verify_robust_qpe_resource_source_saved.py",
 )
 
 # These algorithm output trees contain the reviewed data and source snapshots
@@ -104,6 +109,7 @@ PUBLIC_ARTIFACT_TREES = (
     "dynamics-recorded-source",
     "dynamics-replay-evidence",
     "word-taylor-workloads", "word-taylor-physical", "shor-scaling",
+    "robust-qpe-resource-source",
 )
 ARTIFACT_SUFFIXES = frozenset({".py", ".qasm", ".json", ".csv", ".svg", ".md"})
 PUBLIC_ARCHIVES = frozenset({"assets/generated/shor/measured-and-artifacts.zip",
@@ -114,7 +120,8 @@ PUBLIC_ARCHIVES = frozenset({"assets/generated/shor/measured-and-artifacts.zip",
                              "assets/generated/simulation/multiproduct-large-bundle.zip",
                              "assets/generated/simulation/gqsp-reproduce.zip",
                              "assets/generated/simulation/detailed-balance-correction-download.zip",
-                             "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip"})
+                             "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip",
+                             "assets/generated/robust-qpe-resource-source/source-export-download.zip"})
 PUBLIC_DEPENDENCY_FILES = frozenset({
     "assets/generated/optimization/dqi-structured-resources/LICENSE.txt",
     "assets/generated/optimization/dqi-structured-resources/requirements-lock.txt",
@@ -1006,6 +1013,138 @@ PUBLIC_DQI_DEGREE_TWO_PUBLIC_FILES = frozenset({
     "assets/generated/optimization/dqi-degree-two-public/environment.json",
     "assets/generated/optimization/dqi-degree-two-public/projection-manifest.json",
 })
+PUBLIC_TWO_ROUND_FILES = frozenset('assets/generated/simulation/detailed-balance-two-round/' + name for name in (
+    'LICENSE.txt',
+    'README.md',
+    'UPSTREAM-LICENSES.md',
+    'circuits/correction-heralded-step.qasm',
+    'circuits/correction_lcu.qasm',
+    'circuits/round_macro.qasm',
+    'circuits/two_round_trial.qasm',
+    'circuits/weak_dilation.qasm',
+    'circuits/weak_reset_prefix.qasm',
+    'manifest.json',
+    'manifest.sha256',
+    'requirements-lock.txt',
+    'results.json',
+    'sources/detailed_balance_access.py',
+    'sources/detailed_balance_channel.py',
+    'sources/detailed_balance_correction.py',
+    'sources/detailed_balance_decay.py',
+    'sources/detailed_balance_thermal_two_round.py',
+    'sources/detailed_balance_thermal_two_round_reference.py',
+    'sources/thermal_two_round_contract.py',
+    'summary.json',
+    'two-round-circuit.svg',
+))
+
+PUBLIC_SHOR_FINITE_ADDER_FILES = frozenset('assets/generated/shor/finite-adder-reference/' + name for name in (
+    'LICENSE.txt',
+    'README.md',
+    'RippleTwoBitBool.lean',
+    'axiom-audit.txt',
+    'compilation.json',
+    'lean-toolchain',
+    'manifest.json',
+    'ripple-two-bit-source.qasm',
+))
+
+PUBLIC_DQI_PATH_MAJORITY_FILES = frozenset('assets/generated/optimization/dqi-path-majority/' + name for name in (
+    'README.md',
+    'accepted-components.json',
+    'code/scripts/generate_optimization_dqi_path_majority.py',
+    'code/scripts/validate_optimization_dqi_path_majority.py',
+    'code/src/openquantum/optimization_dqi_path_majority.py',
+    'code/src/openquantum/optimization_dqi_path_majority_verify.py',
+    'code/tests/test_optimization_dqi_path_majority.py',
+    'code/tests/test_optimization_dqi_path_majority_boundaries.py',
+    'companion-spec.json',
+    'component-circuit.svg',
+    'component-input-recipe.json',
+    'environment.json',
+    'generated/component-ledger.json',
+    'generated/component.ndjson',
+    'generated/component.qasm',
+    'generated/manifest.json',
+    'generated/program-ledger.json',
+    'generated/program.ndjson',
+    'generated/program.qasm',
+    'input-k3.json',
+    'public-manifest.json',
+    'results-summary.json',
+    'validation/manifest.json',
+    'validation/validation.json',
+))
+
+PUBLIC_RPE_RESOURCE_SOURCE_FILES = frozenset('assets/generated/robust-qpe-resource-source/' + name for name in (
+    'LICENSE.txt',
+    'README.md',
+    'code/LICENSE',
+    'code/pyproject.toml',
+    'code/requirements-lock.txt',
+    'code/scripts/generate_robust_qpe_resources.py',
+    'code/scripts/verify_robust_qpe_resource_source_saved.py',
+    'code/src/openquantum/__init__.py',
+    'code/src/openquantum/grover.py',
+    'code/src/openquantum/hadamard_qpe.py',
+    'code/src/openquantum/instrument_resources.py',
+    'code/src/openquantum/robust_qpe.py',
+    'code/src/openquantum/robust_qpe_resources.py',
+    'code/tests/test_robust_qpe_resources.py',
+    'code/tests/test_robust_qpe_resources_producer.py',
+    'evidence/initial-producer.py',
+    'evidence/initial-source-manifest.json',
+    'evidence/producer-README.md',
+    'evidence/repaired-source-manifest.json',
+    'projection-manifest.json',
+    'references.bib',
+    'source-export-descriptor.json',
+    'source-export-download.zip',
+    'source-export-record.json',
+    'source/source-fringe-0.qasm',
+    'source/source-fringe-1.qasm',
+    'source/source-fringe-10.qasm',
+    'source/source-fringe-11.qasm',
+    'source/source-fringe-2.qasm',
+    'source/source-fringe-3.qasm',
+    'source/source-fringe-4.qasm',
+    'source/source-fringe-5.qasm',
+    'source/source-fringe-6.qasm',
+    'source/source-fringe-7.qasm',
+    'source/source-fringe-8.qasm',
+    'source/source-fringe-9.qasm',
+    'source/source-ledger.json',
+    'source/source-macrocycle.qasm',
+))
+
+PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS = frozenset(('LICENSE',
+ 'requirements-lock.txt',
+ 'scripts/display_dqi_path_majority_saved.py',
+ 'scripts/display_thermal_two_round_saved.py',
+ 'scripts/generate_optimization_dqi_path_majority.py',
+ 'scripts/generate_robust_qpe_resources.py',
+ 'scripts/plot_dqi_path_majority_component_svg.py',
+ 'scripts/validate_optimization_dqi_path_majority.py',
+ 'scripts/verify_robust_qpe_resource_source_saved.py',
+ 'scripts/verify_shor_finite_adder_reference.py',
+ 'scripts/verify_thermal_two_round_public.py',
+ 'src/openquantum/__init__.py',
+ 'src/openquantum/grover.py',
+ 'src/openquantum/hadamard_qpe.py',
+ 'src/openquantum/instrument_resources.py',
+ 'src/openquantum/optimization_dqi_path_majority.py',
+ 'src/openquantum/optimization_dqi_path_majority_verify.py',
+ 'src/openquantum/robust_qpe.py',
+ 'src/openquantum/robust_qpe_resources.py',
+ 'tests/test_dqi_path_majority_public_projection.py',
+ 'tests/test_optimization_dqi_path_majority.py',
+ 'tests/test_optimization_dqi_path_majority_boundaries.py',
+ 'tests/test_robust_qpe_resource_source_saved.py',
+ 'tests/test_robust_qpe_resources.py',
+ 'tests/test_robust_qpe_resources_producer.py',
+ 'tests/test_shor_finite_adder_reference.py',
+ 'tests/test_thermal_two_round_public_static.py'))
+
 DQI_DEGREE_TWO_SOURCE_CONFIG = "source-config/dqi-degree-two/pyproject.toml"
 DQI_DEGREE_TWO_CONFIG_SHA256 = "fb96cdbcbb8c032581d62d8d04f261e988fced3e66a0f560ea79d7e9c2d72404"
 DQI_DEGREE_TWO_ARCHIVE = "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip"
@@ -1051,6 +1190,14 @@ def include_generated_file(relative):
         return False
     if generated.parts[0] in ("bayesian-qpe", "bayesian-qpe-validation"):
         return str(relative) in PUBLIC_BAYESIAN_FILES
+    if generated.parts[:2] == ('simulation', 'detailed-balance-two-round'):
+        return str(relative) in PUBLIC_TWO_ROUND_FILES
+    if generated.parts[:2] == ('shor', 'finite-adder-reference'):
+        return str(relative) in PUBLIC_SHOR_FINITE_ADDER_FILES
+    if generated.parts[:2] == ('optimization', 'dqi-path-majority'):
+        return str(relative) in PUBLIC_DQI_PATH_MAJORITY_FILES
+    if generated.parts[0] == "robust-qpe-resource-source":
+        return str(relative) in PUBLIC_RPE_RESOURCE_SOURCE_FILES
     if generated.parts[0] == "robust-qpe":
         return str(relative) in PUBLIC_ROBUST_FILES
     if generated.parts[0] in ("qpe-feedback-resources", "qpe-feedback-validation"):

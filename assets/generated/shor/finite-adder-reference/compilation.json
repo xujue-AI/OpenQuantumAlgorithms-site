@@ -1,0 +1,116 @@
+{
+  "accepted_at_utc": "2026-11-14T10:57:41.562367+00:00",
+  "exclusions": [
+    "Correctness of Python and the QASM parser",
+    "Coherent quantum amplitudes and phases",
+    "Arbitrary-width or modular arithmetic",
+    "Whole Shor or order-recovery success",
+    "Clifford+T lowering and rotation synthesis",
+    "Physical fault tolerance and resource estimates"
+  ],
+  "lean": {
+    "audit_order": [
+      "ripple_bits",
+      "weighted_lt32",
+      "ofState_toState",
+      "toState_ofState",
+      "input_values",
+      "decode_ofState",
+      "ripple_two_bit",
+      "ripple_two_bit_carry_one"
+    ],
+    "audit_transcript": {
+      "bytes": 595,
+      "sha256": "5967e8405d837377184177d9ea900bc6b29235302323bda89f29d04f5f421212"
+    },
+    "foundation_axioms_by_theorem": {
+      "decode_ofState": [],
+      "input_values": [],
+      "ofState_toState": [],
+      "ripple_bits": [
+        "propext"
+      ],
+      "ripple_two_bit": [
+        "propext"
+      ],
+      "ripple_two_bit_carry_one": [
+        "propext"
+      ],
+      "toState_ofState": [],
+      "weighted_lt32": []
+    },
+    "native_decide_used": false,
+    "proof_elapsed_seconds": 11.455950125004165,
+    "proof_source": {
+      "bytes": 6017,
+      "sha256": "ca5b82b3ef36fb3ee651ce439e32ea6fc442ed8c7b3cb91ada9efa567562055f"
+    },
+    "proof_subprocess_exit": 0,
+    "selected_executable": {
+      "bytes": 49968,
+      "sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554"
+    },
+    "sorryAx_present": false,
+    "source_commit": "6a10ac8c22beadecabdbb0919c2b50214762f91d",
+    "theorem_namespace": "ShorRippleBooleanReference",
+    "toolchain": "leanprover/lean4:v4.34.0-rc2",
+    "user_declared_domain_axioms": [],
+    "version": "4.34.0-rc2",
+    "version_subprocess_exit": 0
+  },
+  "native_source": {
+    "code_reference": {
+      "path": "assets/generated/shor/ripple/shor_ripple.py",
+      "sha256": "fb3acf345459446d20109d698efefdabd8f906d5ebaf48c8febd1a7a3bfcb282"
+    },
+    "correspondence_check_exit": 0,
+    "global_phase": 0,
+    "literal_gate_list_match_observed": true,
+    "parser_formally_verified": false,
+    "qasm": {
+      "bytes": 258,
+      "sha256": "868b5fd14a9b1e12fe21a7329d6ea3eb07c613c13755d0bf87d486f27e018009"
+    },
+    "qiskit_version": "2.6.2"
+  },
+  "original_helper": {
+    "empty_audit_contract_satisfied": false,
+    "exit": 1,
+    "helper_complete": false,
+    "reason": "The exact empty-audit policy rejected three standard propext dependencies after successful kernel compilation."
+  },
+  "prior_alternative_proof_attempts": {
+    "explicit_match_evaluator": "timed_out_not_accepted",
+    "integer_evaluator": "timed_out_not_accepted"
+  },
+  "projection_actions": {
+    "new_proof_run": false,
+    "new_quantum_simulation": false,
+    "new_source_export": false
+  },
+  "schema": "openquantum.shor.finite_adder_public_reference.v1",
+  "scope": {
+    "carry_in_one_included": true,
+    "input_count": 32,
+    "input_domain": "Fin 32",
+    "mapping": "(a,b,c) -> (a,(a+b+c) mod 4,c)",
+    "native_source_instructions": 12,
+    "proof_model": "finite classical Boolean-wire permutation",
+    "quantum_wires_in_native_source": 5,
+    "wire_order": {
+      "a": [
+        0,
+        1
+      ],
+      "b": [
+        2,
+        3
+      ],
+      "carry": [
+        4
+      ]
+    }
+  },
+  "source_commit": "5f07c424a44ab03af2e37e72233b6ce97aa2e212",
+  "status": "accepted_finite_classical_reference"
+}

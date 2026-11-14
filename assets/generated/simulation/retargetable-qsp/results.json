@@ -34,36 +34,36 @@
         "performed": true,
         "full_operator_performed": true,
         "conditional_state_scope": "accepted system state before final system readout",
-        "conditional_state_vector_error": 7.788895946507575e-07,
+        "conditional_state_vector_error": 7.788895936508988e-07,
         "conditional_state_infidelity": 6.066258606551855e-13,
-        "acceptance_probability": 0.06250000870777477,
+        "acceptance_probability": 0.06250000870777492,
         "Z_exact": 0.7836360900724648,
-        "Z_conditional": 0.783635787257478,
-        "Z_bias": 3.028149868633534e-07,
+        "Z_conditional": 0.783635787257479,
+        "Z_bias": 3.028149858641527e-07,
         "conditional_state_real": [
-          0.7649218294739167,
-          1.3356613678884707e-16,
-          6.174853644778829e-16,
-          -0.11266143803614533
+          0.7649218294739173,
+          -8.371634908711088e-17,
+          -1.330706050242307e-16,
+          -0.11266143803614431
         ],
         "conditional_state_imag": [
-          -0.46000034761807546,
-          -0.3084026079887539,
-          -0.3084026079887538,
-          0.019425193348427634
+          -0.4600003476180755,
+          -0.3084026079887535,
+          -0.30840260798875313,
+          0.019425193348427724
         ],
-        "encoded_block_operator_error": 1.99037236195623e-07,
-        "decoded_operator_error": 7.96148944782492e-07,
-        "finite_instance_minimum_acceptance": 0.06249993116122249,
-        "finite_instance_maximum_acceptance": 0.06250008625432707,
+        "encoded_block_operator_error": 1.990372363925344e-07,
+        "decoded_operator_error": 7.961489455701376e-07,
+        "finite_instance_minimum_acceptance": 0.0624999311612225,
+        "finite_instance_maximum_acceptance": 0.06250008625432696,
         "reference": "independent Kronecker Pauli matrix and scipy.linalg.expm; no matrix is a gate"
       },
-      "source_primitive_max_entry_difference": 9.795791624424727e-15,
+      "source_primitive_max_entry_difference": 9.859443069515822e-15,
       "source_primitive_scope": "full unitary Operator without global-phase alignment",
       "phase_plan_file": "phases-n2-time0p5.json",
-      "phase_generation_cpu_seconds": 0.22234955499993703,
-      "construction_lowering_cpu_seconds": 0.15284719199985375,
-      "numerical_comparison_cpu_seconds": 0.08359995999990133
+      "phase_generation_cpu_seconds": 0.33112879000009343,
+      "construction_lowering_cpu_seconds": 0.23048879399993893,
+      "numerical_comparison_cpu_seconds": 0.16889864799986753
     },
     {
       "case_id": "n1-time0p5",
@@ -89,32 +89,32 @@
         "performed": true,
         "full_operator_performed": true,
         "conditional_state_scope": "accepted system state before final system readout",
-        "conditional_state_vector_error": 2.5358256677652768e-08,
+        "conditional_state_vector_error": 2.53582570807417e-08,
         "conditional_state_infidelity": 6.661338147750939e-16,
-        "acceptance_probability": 0.06250000940769826,
+        "acceptance_probability": 0.06250000940769833,
         "Z_exact": 0.7648421872844885,
-        "Z_conditional": 0.7648422199569624,
-        "Z_bias": 3.2672473948558434e-08,
+        "Z_conditional": 0.7648422199569629,
+        "Z_bias": 3.2672474392647644e-08,
         "conditional_state_real": [
-          0.9393727215426693,
-          2.4837434362188458e-17
+          0.9393727215426694,
+          7.082437430700036e-17
         ],
         "conditional_state_imag": [
-          4.7942250250938205e-17,
-          -0.34289778363459683
+          1.9553103061262496e-18,
+          -0.34289778363459644
         ],
-        "encoded_block_operator_error": 1.9854702143698037e-08,
-        "decoded_operator_error": 7.941880857479215e-08,
-        "finite_instance_minimum_acceptance": 0.06250000940769826,
-        "finite_instance_maximum_acceptance": 0.06250000940769826,
+        "encoded_block_operator_error": 1.9854702309485264e-08,
+        "decoded_operator_error": 7.941880923794106e-08,
+        "finite_instance_minimum_acceptance": 0.06250000940769834,
+        "finite_instance_maximum_acceptance": 0.06250000940769834,
         "reference": "independent Kronecker Pauli matrix and scipy.linalg.expm; no matrix is a gate"
       },
-      "source_primitive_max_entry_difference": 4.163336342344337e-16,
+      "source_primitive_max_entry_difference": 4.996003610813204e-16,
       "source_primitive_scope": "full unitary Operator without global-phase alignment",
       "phase_plan_file": "phases-n1-time0p5.json",
-      "phase_generation_cpu_seconds": 0.09830957100007254,
-      "construction_lowering_cpu_seconds": 0.09726660399996945,
-      "numerical_comparison_cpu_seconds": 0.004940898000086236
+      "phase_generation_cpu_seconds": 0.1493466179999814,
+      "construction_lowering_cpu_seconds": 0.14830288699977245,
+      "numerical_comparison_cpu_seconds": 0.011580473999856622
     },
     {
       "case_id": "n3-time0p5",
@@ -156,7 +156,7 @@
         "performed": true,
         "full_operator_performed": true,
         "conditional_state_scope": "accepted system state before final system readout",
-        "conditional_state_vector_error": 4.378297537764758e-07,
+        "conditional_state_vector_error": 4.378297537746344e-07,
         "conditional_state_infidelity": 7.860379014346108e-14,
         "acceptance_probability": 0.06249996947675941,
         "Z_exact": 0.7836416941375912,
@@ -182,18 +182,18 @@
           0.017794477563087475,
           0.03569967679354431
         ],
-        "encoded_block_operator_error": 1.5894921705381483e-07,
-        "decoded_operator_error": 6.357968682152593e-07,
-        "finite_instance_minimum_acceptance": 0.062499936065927006,
-        "finite_instance_maximum_acceptance": 0.0625000086912057,
+        "encoded_block_operator_error": 1.5894921705035761e-07,
+        "decoded_operator_error": 6.357968682014305e-07,
+        "finite_instance_minimum_acceptance": 0.06249993606592705,
+        "finite_instance_maximum_acceptance": 0.06250000869120576,
         "reference": "independent Kronecker Pauli matrix and scipy.linalg.expm; no matrix is a gate"
       },
       "source_primitive_max_entry_difference": 4.960920742126948e-14,
       "source_primitive_scope": "full unitary Operator without global-phase alignment",
       "phase_plan_file": "phases-n3-time0p5.json",
-      "phase_generation_cpu_seconds": 0.16579430899992076,
-      "construction_lowering_cpu_seconds": 0.23876695500007372,
-      "numerical_comparison_cpu_seconds": 2.406543592999924
+      "phase_generation_cpu_seconds": 0.24603571499983445,
+      "construction_lowering_cpu_seconds": 0.3694378699997287,
+      "numerical_comparison_cpu_seconds": 4.7641890139998395
     },
     {
       "case_id": "n1-time0p25",
@@ -219,19 +219,19 @@
         "performed": true,
         "full_operator_performed": true,
         "conditional_state_scope": "accepted system state before final system readout",
-        "conditional_state_vector_error": 2.0145647589235188e-10,
+        "conditional_state_vector_error": 2.0145666721387356e-10,
         "conditional_state_infidelity": 0.0,
-        "acceptance_probability": 0.06250000015360165,
+        "acceptance_probability": 0.06250000015360162,
         "Z_exact": 0.9393727128473789,
         "Z_conditional": 0.9393727129855372,
         "Z_bias": 1.3815826260810127e-10,
         "conditional_state_real": [
           0.9847265389400088,
-          5.210697675519298e-17
+          6.1200334058404796e-18
         ],
         "conditional_state_imag": [
-          -5.809232818716189e-17,
-          -0.1741081373952164
+          -1.2105384837809401e-17,
+          -0.17410813739521622
         ],
         "encoded_block_operator_error": 3.1130432771076494e-10,
         "decoded_operator_error": 1.2452173108430598e-09,
@@ -242,9 +242,9 @@
       "source_primitive_max_entry_difference": 1.6653345369377348e-16,
       "source_primitive_scope": "full unitary Operator without global-phase alignment",
       "phase_plan_file": "phases-n1-time0p25.json",
-      "phase_generation_cpu_seconds": 0.09846661800020229,
-      "construction_lowering_cpu_seconds": 0.09659626099983143,
-      "numerical_comparison_cpu_seconds": 0.004922309999983554
+      "phase_generation_cpu_seconds": 0.14961884400008785,
+      "construction_lowering_cpu_seconds": 0.1474019289998978,
+      "numerical_comparison_cpu_seconds": 0.009530800999982603
     },
     {
       "case_id": "n1-time1",
@@ -270,19 +270,19 @@
         "performed": true,
         "full_operator_performed": true,
         "conditional_state_scope": "accepted system state before final system readout",
-        "conditional_state_vector_error": 6.761072229850288e-09,
-        "conditional_state_infidelity": 2.220446049250313e-16,
-        "acceptance_probability": 0.06249999891345487,
+        "conditional_state_vector_error": 6.761072314764827e-09,
+        "conditional_state_infidelity": 0.0,
+        "acceptance_probability": 0.062499998913454854,
         "Z_exact": 0.16996714290024073,
-        "Z_conditional": 0.1699671295748471,
-        "Z_bias": 1.33253936218658e-08,
+        "Z_conditional": 0.16996712957484694,
+        "Z_bias": 1.3325393788399253e-08,
         "conditional_state_real": [
           0.764842182928886,
-          -1.1376403823516655e-17
+          -5.736334762911365e-17
         ],
         "conditional_state_imag": [
-          -6.328923615643898e-18,
-          -0.6442176924088443
+          -2.537733943201153e-17,
+          -0.6442176924088444
         ],
         "encoded_block_operator_error": 2.7530578807048183e-09,
         "decoded_operator_error": 1.1012231522819273e-08,
@@ -293,9 +293,9 @@
       "source_primitive_max_entry_difference": 2.220446049250313e-16,
       "source_primitive_scope": "full unitary Operator without global-phase alignment",
       "phase_plan_file": "phases-n1-time1.json",
-      "phase_generation_cpu_seconds": 0.14366740299988123,
-      "construction_lowering_cpu_seconds": 0.14961218700000245,
-      "numerical_comparison_cpu_seconds": 0.005975095999929181
+      "phase_generation_cpu_seconds": 0.21371541899998192,
+      "construction_lowering_cpu_seconds": 0.2226173550002386,
+      "numerical_comparison_cpu_seconds": 0.012006139999812149
     },
     {
       "case_id": "n2-time0p25",
@@ -329,36 +329,36 @@
         "performed": true,
         "full_operator_performed": true,
         "conditional_state_scope": "accepted system state before final system readout",
-        "conditional_state_vector_error": 9.395022720608815e-07,
-        "conditional_state_infidelity": 8.504308368628699e-13,
-        "acceptance_probability": 0.06250009417338759,
+        "conditional_state_vector_error": 9.39502272314127e-07,
+        "conditional_state_infidelity": 8.499867476530198e-13,
+        "acceptance_probability": 0.06250009417338755,
         "Z_exact": 0.9406227202786428,
-        "Z_conditional": 0.9406226831457811,
-        "Z_bias": 3.713286167439378e-08,
+        "Z_conditional": 0.9406226831457816,
+        "Z_bias": 3.713286123030457e-08,
         "conditional_state_real": [
-          0.9389149038999844,
-          -1.8960934099730794e-16,
-          -1.9634396786229616e-16,
-          -0.029998481553744266
+          0.9389149038999847,
+          -1.8960934099730802e-16,
+          -1.7335051348233067e-16,
+          -0.029998481553744516
         ],
         "conditional_state_imag": [
           -0.24488313303262582,
-          -0.16965375316655587,
-          -0.16965375316655604,
-          0.0025206285089749724
+          -0.16965375316655584,
+          -0.169653753166556,
+          0.002520628508975279
         ],
-        "encoded_block_operator_error": 4.234368751221981e-07,
-        "decoded_operator_error": 1.6937475004887923e-06,
-        "finite_instance_minimum_acceptance": 0.06249998356469996,
-        "finite_instance_maximum_acceptance": 0.06250020478207567,
+        "encoded_block_operator_error": 4.2343687494754217e-07,
+        "decoded_operator_error": 1.6937474997901687e-06,
+        "finite_instance_minimum_acceptance": 0.06249998356469992,
+        "finite_instance_maximum_acceptance": 0.06250020478207559,
         "reference": "independent Kronecker Pauli matrix and scipy.linalg.expm; no matrix is a gate"
       },
-      "source_primitive_max_entry_difference": 7.408191391646052e-15,
+      "source_primitive_max_entry_difference": 7.514536976383426e-15,
       "source_primitive_scope": "full unitary Operator without global-phase alignment",
       "phase_plan_file": "phases-n2-time0p25.json",
-      "phase_generation_cpu_seconds": 0.11859166999988702,
-      "construction_lowering_cpu_seconds": 0.1205928459999086,
-      "numerical_comparison_cpu_seconds": 0.06617937300006815
+      "phase_generation_cpu_seconds": 0.17537109900013093,
+      "construction_lowering_cpu_seconds": 0.1852007889997367,
+      "numerical_comparison_cpu_seconds": 0.13777180099987163
     },
     {
       "case_id": "n2-time1",
@@ -392,36 +392,36 @@
         "performed": true,
         "full_operator_performed": true,
         "conditional_state_scope": "accepted system state before final system readout",
-        "conditional_state_vector_error": 2.512220010941146e-08,
-        "conditional_state_infidelity": 2.220446049250313e-16,
-        "acceptance_probability": 0.06249999946412608,
-        "Z_exact": 0.4030624656513243,
-        "Z_conditional": 0.40306249139537,
-        "Z_bias": 2.5744045673015137e-08,
+        "conditional_state_vector_error": 2.512220034399114e-08,
+        "conditional_state_infidelity": 0.0,
+        "acceptance_probability": 0.06249999946412611,
+        "Z_exact": 0.40306246565132464,
+        "Z_conditional": 0.4030624913953704,
+        "Z_bias": 2.574404578403744e-08,
         "conditional_state_real": [
-          0.19559587750404095,
-          4.74937434149504e-16,
-          6.807232001925734e-16,
-          -0.3447064160850709
+          0.1955958775040406,
+          -3.957654322195598e-17,
+          3.5201802396717375e-17,
+          -0.3447064160850706
         ],
         "conditional_state_imag": [
-          -0.708105626141099,
-          -0.4023181833181686,
-          -0.4023181833181685,
-          0.13336536425800152
+          -0.7081056261410995,
+          -0.4023181833181688,
+          -0.4023181833181681,
+          0.13336536425800166
         ],
-        "encoded_block_operator_error": 8.223624878231348e-09,
-        "decoded_operator_error": 3.2894499512925394e-08,
-        "finite_instance_minimum_acceptance": 0.06249999922293206,
-        "finite_instance_maximum_acceptance": 0.062499999705319984,
+        "encoded_block_operator_error": 8.223625071683976e-09,
+        "decoded_operator_error": 3.28945002867359e-08,
+        "finite_instance_minimum_acceptance": 0.06249999922293209,
+        "finite_instance_maximum_acceptance": 0.062499999705319956,
         "reference": "independent Kronecker Pauli matrix and scipy.linalg.expm; no matrix is a gate"
       },
-      "source_primitive_max_entry_difference": 1.1692973044180792e-14,
+      "source_primitive_max_entry_difference": 1.080544200616207e-14,
       "source_primitive_scope": "full unitary Operator without global-phase alignment",
       "phase_plan_file": "phases-n2-time1.json",
-      "phase_generation_cpu_seconds": 0.16833302999998523,
-      "construction_lowering_cpu_seconds": 0.19349545500017484,
-      "numerical_comparison_cpu_seconds": 0.11518493900007343
+      "phase_generation_cpu_seconds": 0.25917205800033116,
+      "construction_lowering_cpu_seconds": 0.2948965400000816,
+      "numerical_comparison_cpu_seconds": 0.22837357900016286
     }
   ],
   "provenance": {
@@ -435,7 +435,7 @@
       "generate_simulation_retargetable_qsp.py": "aa8fda2c1410e6ac426b336eed269c9305a50380ca8dc7af1408e2fd726f4048",
       "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
     },
-    "source_revision_at_generation": "899761f7fc918b466aea32df2543ea7c9b0535be",
+    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
     "source_working_tree_dirty": false,
     "revision_scope": "file hashes identify current working-tree source if generation precedes commit",
     "python": "3.12.14",

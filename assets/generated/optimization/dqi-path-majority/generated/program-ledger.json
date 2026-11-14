@@ -1,0 +1,434 @@
+{
+  "N": 14,
+  "component_numerically_validated": false,
+  "decoder": {
+    "ccx_blocks_per_path": 34,
+    "cx_outside_ccx_per_path": 15,
+    "predicted_primitives_per_path": 525,
+    "scope": "weight_at_most_two",
+    "source_prediction_only": true,
+    "total_extension": "local_majority_ignores_terminal"
+  },
+  "edges": [
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      1
+    ]
+  ],
+  "exclusions": {
+    "formal_proof": true,
+    "full_program_simulation": true,
+    "optimization_advantage": true,
+    "physical_estimation": true,
+    "rotation_synthesis": true,
+    "sampling": true
+  },
+  "formal_interval_certificate": false,
+  "full_program_validated": false,
+  "graph": {
+    "cycle_space_dimension": 2,
+    "every_neighbor_recovery_claimed": false,
+    "girth": 10,
+    "path_edges": 5,
+    "root": 0,
+    "terminal": 1
+  },
+  "input": {
+    "k": 3,
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "k": 3,
+  "m": 15,
+  "n": 13,
+  "normalization_squared": 4020,
+  "observed_component_counts": {
+    "cx": 219,
+    "h": 68,
+    "t": 136,
+    "tdg": 102
+  },
+  "observed_component_operations": 525,
+  "observed_source_counts": {
+    "barrier": 7,
+    "cx": 1272,
+    "h": 385,
+    "measure": 13,
+    "reset": 31,
+    "ry": 57,
+    "t": 744,
+    "tdg": 558,
+    "x": 84,
+    "z": 14
+  },
+  "observed_source_operations": 3165,
+  "old_degree_two_evidence_reexecuted": false,
+  "optimization_advantage_claim": false,
+  "per_pattern_coefficients": [
+    15,
+    15,
+    2
+  ],
+  "physical_resources_computed": false,
+  "preprocessing_counts": {
+    "decoder_lookup_entries": 0,
+    "edges": 15,
+    "incidence_masks": 15,
+    "rotation_ratios": 29
+  },
+  "publication_complete": false,
+  "repetitions": {
+    "complete_draws_represented": 1,
+    "generic_repetition_bound_available": false,
+    "generic_success_probability_available": false
+  },
+  "requires_observed_cli_exit_zero": true,
+  "rotation_ratios": [
+    [
+      0,
+      0,
+      281,
+      4020
+    ],
+    [
+      1,
+      0,
+      277,
+      3739
+    ],
+    [
+      1,
+      1,
+      4,
+      281
+    ],
+    [
+      2,
+      0,
+      91,
+      1154
+    ],
+    [
+      2,
+      1,
+      4,
+      277
+    ],
+    [
+      3,
+      0,
+      269,
+      3189
+    ],
+    [
+      3,
+      1,
+      4,
+      273
+    ],
+    [
+      4,
+      0,
+      53,
+      584
+    ],
+    [
+      4,
+      1,
+      4,
+      269
+    ],
+    [
+      5,
+      0,
+      29,
+      295
+    ],
+    [
+      5,
+      1,
+      4,
+      265
+    ],
+    [
+      6,
+      0,
+      257,
+      2394
+    ],
+    [
+      6,
+      1,
+      4,
+      261
+    ],
+    [
+      7,
+      0,
+      253,
+      2137
+    ],
+    [
+      7,
+      1,
+      4,
+      257
+    ],
+    [
+      8,
+      0,
+      83,
+      628
+    ],
+    [
+      8,
+      1,
+      4,
+      253
+    ],
+    [
+      9,
+      0,
+      49,
+      327
+    ],
+    [
+      9,
+      1,
+      4,
+      249
+    ],
+    [
+      10,
+      0,
+      241,
+      1390
+    ],
+    [
+      10,
+      1,
+      4,
+      245
+    ],
+    [
+      11,
+      0,
+      79,
+      383
+    ],
+    [
+      11,
+      1,
+      4,
+      241
+    ],
+    [
+      12,
+      0,
+      233,
+      912
+    ],
+    [
+      12,
+      1,
+      4,
+      237
+    ],
+    [
+      13,
+      0,
+      229,
+      679
+    ],
+    [
+      13,
+      1,
+      4,
+      233
+    ],
+    [
+      14,
+      0,
+      1,
+      2
+    ],
+    [
+      14,
+      1,
+      4,
+      229
+    ]
+  ],
+  "sampled_outcomes": false,
+  "scaling": {
+    "classical_comparator": "O(m)",
+    "decoder_lookup_entries": 0,
+    "fixed_degree": 2,
+    "fixed_path_length": 5,
+    "operation_model": "fixed path length and degree; gate counts separate from producer bit work",
+    "producer_bit_byte_work": "not identified with linear emitted gate counts",
+    "source_decoder": "O(m)",
+    "source_graph_mask_storage": "O(mn) bits",
+    "source_graph_preprocessing": "O(m) bounded-word operations; O(mn) mask bits",
+    "source_preparation": "O(m)",
+    "source_quantum_wires": "O(m+n)"
+  },
+  "schema": "openquantum.dqi.path_majority_generation_ledger.v1",
+  "scientific_validated": false,
+  "shared_clean_workspace": 3,
+  "signs": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "simulation_performed": false,
+  "source_counts": {
+    "barrier": 7,
+    "cx": 1272,
+    "h": 385,
+    "measure": 13,
+    "reset": 31,
+    "ry": 57,
+    "t": 744,
+    "tdg": 558,
+    "x": 84,
+    "z": 14
+  },
+  "source_materialized_operations": 3165,
+  "source_prediction_only": true,
+  "source_unitary_primitives": 3114,
+  "source_wires": 31,
+  "sources": {
+    "module": {
+      "bytes": 36874,
+      "path": "src/openquantum/optimization_dqi_path_majority.py",
+      "sha256": "ba3015dbdf35fe3ccec6a79503f2e911b735c2ea716969f690eb5fbc5e3c61bf"
+    },
+    "script": {
+      "bytes": 23690,
+      "path": "scripts/generate_optimization_dqi_path_majority.py",
+      "sha256": "01bafe43a205a2b04441ceb8c3aac99f4285b383899a57ed4296c3a6e64c8305"
+    }
+  },
+  "stage_ranges": {
+    "decoder": {
+      "barrier": 3136,
+      "start": 1561,
+      "stop": 3136
+    },
+    "hadamard": {
+      "barrier": 3150,
+      "start": 3137,
+      "stop": 3150
+    },
+    "preparation": {
+      "barrier": 1517,
+      "start": 32,
+      "stop": 1517
+    },
+    "readout": {
+      "barrier": 3164,
+      "start": 3151,
+      "stop": 3164
+    },
+    "reset": {
+      "barrier": 31,
+      "start": 0,
+      "stop": 31
+    },
+    "sign": {
+      "barrier": 1532,
+      "start": 1518,
+      "stop": 1532
+    },
+    "syndrome": {
+      "barrier": 1560,
+      "start": 1533,
+      "stop": 1560
+    }
+  },
+  "status": "generation_only_pending_invocation_acceptance"
+}

@@ -109,6 +109,7 @@ def configure_saved_site(checker, tmp_path, monkeypatch, *, omit_label=None, rej
     if hasattr(checker, "_site_redirects"):
         monkeypatch.setattr(checker._site_redirects, "REDIRECT_FRAGMENTS", {}, raising=False)
     monkeypatch.setattr(checker, "ALGORITHMS", [])
+    monkeypatch.setattr(checker, "NEXT_EVIDENCE_ARTICLE_LABELS", {})
     monkeypatch.setattr(checker, "N3_EMBED_LABELS", frozenset())
     monkeypatch.setattr(checker, "N4_EMBED_LABELS", frozenset())
     for name in ("QDRIFT_EMBED_LABELS", "SHOR_RECOVERY_EMBED_LABELS", "HADAMARD_EMBED_LABELS", "BAYESIAN_EMBED_LABELS", "ROBUST_EMBED_LABELS", "QPE_FEEDBACK_EMBED_LABELS",
@@ -121,6 +122,7 @@ def configure_saved_site(checker, tmp_path, monkeypatch, *, omit_label=None, rej
         monkeypatch.setattr(checker, name, lambda *args, **kwargs: {})
     monkeypatch.setattr(checker, "current_quality_resource_errors", lambda root: [])
     monkeypatch.setattr(checker, "site_energy_record_errors", lambda root: [])
+    monkeypatch.setattr(checker, "site_next_saved_errors", lambda *args, **kwargs: [])
     for name in ("site_dynamics_record_errors", "site_word_record_errors", "site_suzuki_record_errors",
                  "site_gibbs_channel_record_errors", "site_decay_record_errors", "site_tail_record_errors",
                  "site_dqi_saved_errors", "site_bath_saved_errors", "site_multiproduct_saved_errors",
@@ -203,6 +205,8 @@ def test_package_dispatch_calls_saved_port_gate_without_producer_or_native_execu
     monkeypatch.setattr(package_verify, "_verify_dqi_structured_saved_identity", lambda *args, **kwargs: None)
     monkeypatch.setattr(package_verify, "_load_hamiltonian_saved_gate", lambda *args: SimpleNamespace())
     monkeypatch.setattr(package_verify, "_verify_hamiltonian_saved_identity", lambda *args, **kwargs: None)
+    monkeypatch.setattr(package_verify, "_load_next_saved_gate", lambda *args: SimpleNamespace())
+    monkeypatch.setattr(package_verify, "_verify_next_saved_identity", lambda *args, **kwargs: None)
     monkeypatch.setattr(package_verify, "checked_path", lambda root, name: root / name)
     class Loader:
         def exec_module(self, module):

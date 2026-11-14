@@ -1,0 +1,153 @@
+{
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "README.md": {
+      "bytes": 4310,
+      "sha256": "826c362853966aa6a28d93d612bb6aa8bf18359ffd426bcf921c9bc45e222411"
+    },
+    "code/LICENSE": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "code/pyproject.toml": {
+      "bytes": 705,
+      "sha256": "fb96cdbcbb8c032581d62d8d04f261e988fced3e66a0f560ea79d7e9c2d72404"
+    },
+    "code/requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "code/scripts/generate_robust_qpe_resources.py": {
+      "bytes": 16745,
+      "sha256": "5c5b34f3041a33d319232d60c5bd06067893f328a6645d1c38ed51860631e393"
+    },
+    "code/scripts/verify_robust_qpe_resource_source_saved.py": {
+      "bytes": 18745,
+      "sha256": "c5019ed950e7dfd445135036dbe49c873db6e67c9d1f63caa19c69cf658c8267"
+    },
+    "code/src/openquantum/__init__.py": {
+      "bytes": 401,
+      "sha256": "af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663"
+    },
+    "code/src/openquantum/grover.py": {
+      "bytes": 4377,
+      "sha256": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21"
+    },
+    "code/src/openquantum/hadamard_qpe.py": {
+      "bytes": 16847,
+      "sha256": "2f0571046d4001af592cb07ce08993290bbdcd14da230315cd3f9722ac881bb5"
+    },
+    "code/src/openquantum/instrument_resources.py": {
+      "bytes": 52381,
+      "sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863"
+    },
+    "code/src/openquantum/robust_qpe.py": {
+      "bytes": 14438,
+      "sha256": "cba515031c6c422e197bfc7776eccd9a0cfc46baa4904ab85585d0b30026b39b"
+    },
+    "code/src/openquantum/robust_qpe_resources.py": {
+      "bytes": 22749,
+      "sha256": "dc6081367516ef33d2ad31ffdd3531439808ef664bed3febf53266b60651e545"
+    },
+    "code/tests/test_robust_qpe_resources.py": {
+      "bytes": 16312,
+      "sha256": "a77daf938d716bae17f4fe30dfc85e5b82e8f8971dcdc80ae09e2a84f3adcf77"
+    },
+    "code/tests/test_robust_qpe_resources_producer.py": {
+      "bytes": 6788,
+      "sha256": "384cd1ae4c837e893ac5d4f58558a58237008372640bf2682103309086cee1e8"
+    },
+    "evidence/initial-producer.py": {
+      "bytes": 16533,
+      "sha256": "f466be1d1ce7f022905103bb2f53dd2feb9e7cacb122835d52de4a196d1e2cfe"
+    },
+    "evidence/initial-source-manifest.json": {
+      "bytes": 6249,
+      "sha256": "c92c8dcb1c503bd573746450163698865ec15435e7e51118136dcf97c4a315c7"
+    },
+    "evidence/producer-README.md": {
+      "bytes": 1322,
+      "sha256": "e67498bce2298fe748ab6052539e25b6f28c3e26a2ee0138a8081189ce0befcd"
+    },
+    "evidence/repaired-source-manifest.json": {
+      "bytes": 6247,
+      "sha256": "4400c569f2a5fd716e0b1b348bce74ef5defdb3740a0b2cb0f3bb82d7ee8283c"
+    },
+    "references.bib": {
+      "bytes": 3637,
+      "sha256": "40f8e96a89fd16af0584bedf4ce6f1e873544394d6add98ff40feebc92cd8428"
+    },
+    "source-export-record.json": {
+      "bytes": 4429,
+      "sha256": "dcfce1590229237a8917d6377f6de78fe2e07ea47adb063fcc41a4bb57d36f8c"
+    },
+    "source/source-fringe-0.qasm": {
+      "bytes": 925,
+      "sha256": "a905686d8a8ee354011811ee6fb50d36f75bc43c8976b310e415d508516f279d"
+    },
+    "source/source-fringe-1.qasm": {
+      "bytes": 935,
+      "sha256": "0d8dab4bb43a8b5ed675c1aa8c40e724d31b3cea9119f64473080aff17782a71"
+    },
+    "source/source-fringe-10.qasm": {
+      "bytes": 21261,
+      "sha256": "1bcb2f42da958fd58b7167d70f76f4a035f9ca1976242d6757e99760a11ae8a3"
+    },
+    "source/source-fringe-11.qasm": {
+      "bytes": 21271,
+      "sha256": "d042ce6d42e21d5d0deb12343e44fd882669623198bf16aa9a52e7c27919b2b9"
+    },
+    "source/source-fringe-2.qasm": {
+      "bytes": 1581,
+      "sha256": "da3a63c735e67c68f4a7fe7a71228f30358c6480fb41112b6b560026946f28d2"
+    },
+    "source/source-fringe-3.qasm": {
+      "bytes": 1591,
+      "sha256": "b593608d00c056ba4449fd8a533bfd494af0f04e6881c90c2d47a0bb58ca5b49"
+    },
+    "source/source-fringe-4.qasm": {
+      "bytes": 2893,
+      "sha256": "9fa217bbbd7642905cfd84bf516d628477cdd65c573360368bbb12f758a9a1ab"
+    },
+    "source/source-fringe-5.qasm": {
+      "bytes": 2903,
+      "sha256": "015d2ae4e07cc0a8fd781898777acdc6caaf39d2fa0556c70c6b4371090a9fb3"
+    },
+    "source/source-fringe-6.qasm": {
+      "bytes": 5517,
+      "sha256": "5a99e12c0a13f80f7f4ec52b67096c91c5310c4cf8a84115255e250557ead1a6"
+    },
+    "source/source-fringe-7.qasm": {
+      "bytes": 5527,
+      "sha256": "3d30037e2947ae68d39d4725c0ced1604007a1b91e9ddbdc11e013fed5288c6b"
+    },
+    "source/source-fringe-8.qasm": {
+      "bytes": 10765,
+      "sha256": "c0ca0f7ea6e9bf8e51eb6377c5c07a5623ab498039532265a56b761df9114f85"
+    },
+    "source/source-fringe-9.qasm": {
+      "bytes": 10775,
+      "sha256": "e5e7550aa50ee2ced8a0fd629947a8493bbca3b2ecce745335bc82d8ec59661e"
+    },
+    "source/source-ledger.json": {
+      "bytes": 779,
+      "sha256": "45d01c4a2eb0fb013e786a4553c492432014ad48141497882209bcdfa692e766"
+    },
+    "source/source-macrocycle.qasm": {
+      "bytes": 85287,
+      "sha256": "3e52a131b2a9a72497e0e5571be479c535e6011bb304815b4394543a17ad6f07"
+    }
+  },
+  "numerical_validation": false,
+  "physical_estimation": false,
+  "raw_manifests": [
+    "evidence/initial-source-manifest.json",
+    "evidence/repaired-source-manifest.json"
+  ],
+  "schema": "openquantum.robust_qpe_resource_source_projection.v1",
+  "scope": "source_export_only",
+  "source_record": "source-export-record.json"
+}

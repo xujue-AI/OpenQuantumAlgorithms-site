@@ -304,6 +304,11 @@ def test_linked_helper_archive_or_bundle_member_is_rejected(packet, package_gate
 def test_export_contract_is_closed_without_private_registration_documents():
     export = load_script("export_code")
     assert export.PUBLIC_CORRECTION_FILES == PUBLIC_FILES
+    rpe_archive = "assets/generated/robust-qpe-resource-source/source-export-download.zip"
+    assert rpe_archive in export.PUBLIC_ARCHIVES and rpe_archive in export.PUBLIC_RPE_RESOURCE_SOURCE_FILES
+    assert len(export.PUBLIC_ARCHIVES) == 10
+    # Project only the exact new RPE archive before the original nine/eight checks.
+    export = SimpleNamespace(**{**vars(export), "PUBLIC_ARCHIVES": export.PUBLIC_ARCHIVES - {rpe_archive}})
     degree_two_archive = "assets/generated/optimization/dqi-degree-two-public/dqi-degree-two-download.zip"
     assert degree_two_archive in export.PUBLIC_ARCHIVES and len(export.PUBLIC_ARCHIVES) == 9
     assert ARCHIVE in export.PUBLIC_ARCHIVES and len(export.PUBLIC_ARCHIVES - {degree_two_archive}) == 8

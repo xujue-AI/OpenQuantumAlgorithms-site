@@ -1,0 +1,39 @@
+{
+  "controlled_U_calls": 50400,
+  "distinct_experiment_circuits": 12,
+  "final_readouts": 4800,
+  "fresh_preparations": 4800,
+  "levels": 6,
+  "logical_qubits": 9,
+  "maximum_coherent_base_calls": 32,
+  "powers": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "raw_all_trial_counts": {
+    "cx": 806400,
+    "h": 9600,
+    "measure": 4800,
+    "p": 1209600,
+    "reset": 43200,
+    "sdg": 2400,
+    "x": 38400
+  },
+  "shots_per_fringe": 400,
+  "source_counts_per_macrocycle": {
+    "cx": 2016,
+    "h": 24,
+    "measure": 12,
+    "p": 3024,
+    "reset": 108,
+    "sdg": 6,
+    "x": 96
+  },
+  "source_operations_per_macrocycle": 5286,
+  "source_status": "constructor_design_counts; generation does not supply phase, synthesis or physical validation",
+  "target_qubits": 8
+}

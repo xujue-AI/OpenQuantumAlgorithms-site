@@ -72,7 +72,7 @@
     "output_tv_from_exact": 2.1248194176370916e-15,
     "exact_dirichlet_max_error": 2.220446049250313e-15,
     "primitive_lowering_state_max_abs_error": 9.440976529270756e-16,
-    "qft_spectral_omission_error": 1.0738985049885943e-14,
+    "qft_spectral_omission_error": 1.0738985049885945e-14,
     "phase_output_probabilities": [
       0.00134957618286143,
       0.0015808134587602801,
@@ -109,7 +109,7 @@
     ]
   },
   "qasm_scope": "complete measured trial; overall global phase omitted by QASM is irrelevant for this output, not a controlled-oracle specification",
-  "generation_compilation_reference_wall_time_s": 0.04631798099990192,
+  "generation_compilation_reference_wall_time_s": 0.07883604499988905,
   "included": [
     "actual supplied eigenstate preparation",
     "every repeated controlled U",

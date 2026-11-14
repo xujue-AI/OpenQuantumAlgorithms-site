@@ -44,7 +44,7 @@
             1
           ],
           "outcome": 853,
-          "selected_joint_probability": 0.11398712783323167,
+          "selected_joint_probability": 0.11398712783323171,
           "steps": [
             {
               "output_bit": 0,
@@ -55,7 +55,7 @@
               "measured_bit": 1,
               "conditional_probability_zero": 0.5,
               "selected_conditional_probability": 0.5,
-              "raw_norm_before_probability_normalization": 0.9999999999999312,
+              "raw_norm_before_probability_normalization": 0.9999999999999317,
               "work_register_zero_probability": 1.0
             },
             {
@@ -69,10 +69,10 @@
                 -1.5707963267948966
               ],
               "measured_bit": 0,
-              "conditional_probability_zero": 0.49999999999999994,
-              "selected_conditional_probability": 0.49999999999999994,
-              "raw_norm_before_probability_normalization": 0.9999999999999313,
-              "work_register_zero_probability": 1.0000000000000002
+              "conditional_probability_zero": 0.5,
+              "selected_conditional_probability": 0.5,
+              "raw_norm_before_probability_normalization": 0.9999999999999308,
+              "work_register_zero_probability": 1.0
             },
             {
               "output_bit": 2,
@@ -86,10 +86,10 @@
                 -0.7853981633974483
               ],
               "measured_bit": 1,
-              "conditional_probability_zero": 0.058058261758407836,
-              "selected_conditional_probability": 0.9419417382415922,
-              "raw_norm_before_probability_normalization": 0.9999999999999312,
-              "work_register_zero_probability": 1.0
+              "conditional_probability_zero": 0.0580582617584079,
+              "selected_conditional_probability": 0.9419417382415921,
+              "raw_norm_before_probability_normalization": 0.9999999999999306,
+              "work_register_zero_probability": 1.0000000000000002
             },
             {
               "output_bit": 3,
@@ -105,10 +105,10 @@
                 -1.5707963267948966
               ],
               "measured_bit": 0,
-              "conditional_probability_zero": 0.9746357290481338,
-              "selected_conditional_probability": 0.9746357290481338,
-              "raw_norm_before_probability_normalization": 0.9999999999999303,
-              "work_register_zero_probability": 1.0
+              "conditional_probability_zero": 0.974635729048134,
+              "selected_conditional_probability": 0.974635729048134,
+              "raw_norm_before_probability_normalization": 0.9999999999999288,
+              "work_register_zero_probability": 1.0000000000000002
             },
             {
               "output_bit": 4,
@@ -125,10 +125,10 @@
                 -0.7853981633974483
               ],
               "measured_bit": 1,
-              "conditional_probability_zero": 0.004879521334889851,
-              "selected_conditional_probability": 0.9951204786651101,
-              "raw_norm_before_probability_normalization": 0.9999999999999313,
-              "work_register_zero_probability": 1.0
+              "conditional_probability_zero": 0.0048795213348897856,
+              "selected_conditional_probability": 0.9951204786651102,
+              "raw_norm_before_probability_normalization": 0.9999999999999306,
+              "work_register_zero_probability": 0.9999999999999999
             },
             {
               "output_bit": 5,
@@ -149,8 +149,8 @@
               "measured_bit": 0,
               "conditional_probability_zero": 0.9986001638554023,
               "selected_conditional_probability": 0.9986001638554023,
-              "raw_norm_before_probability_normalization": 0.9999999999999312,
-              "work_register_zero_probability": 1.0000000000000002
+              "raw_norm_before_probability_normalization": 0.9999999999999295,
+              "work_register_zero_probability": 1.0
             },
             {
               "output_bit": 6,
@@ -170,10 +170,10 @@
                 -0.7853981633974483
               ],
               "measured_bit": 1,
-              "conditional_probability_zero": 0.00032711126198179595,
+              "conditional_probability_zero": 0.00032711126198179514,
               "selected_conditional_probability": 0.9996728887380182,
-              "raw_norm_before_probability_normalization": 0.9999999999999295,
-              "work_register_zero_probability": 1.0
+              "raw_norm_before_probability_normalization": 0.9999999999999301,
+              "work_register_zero_probability": 0.9999999999999998
             },
             {
               "output_bit": 7,
@@ -197,8 +197,8 @@
               "measured_bit": 0,
               "conditional_probability_zero": 0.9999153837864209,
               "selected_conditional_probability": 0.9999153837864209,
-              "raw_norm_before_probability_normalization": 0.99999999999993,
-              "work_register_zero_probability": 1.0000000000000002
+              "raw_norm_before_probability_normalization": 0.9999999999999291,
+              "work_register_zero_probability": 0.9999999999999999
             },
             {
               "output_bit": 8,
@@ -221,9 +221,9 @@
                 -0.7853981633974483
               ],
               "measured_bit": 1,
-              "conditional_probability_zero": 2.0797997482778092e-05,
+              "conditional_probability_zero": 2.0797997482779508e-05,
               "selected_conditional_probability": 0.9999792020025172,
-              "raw_norm_before_probability_normalization": 0.9999999999999296,
+              "raw_norm_before_probability_normalization": 0.9999999999999292,
               "work_register_zero_probability": 1.0
             },
             {
@@ -251,8 +251,8 @@
               "measured_bit": 1,
               "conditional_probability_zero": 0.5,
               "selected_conditional_probability": 0.5,
-              "raw_norm_before_probability_normalization": 0.9999999999999349,
-              "work_register_zero_probability": 1.0
+              "raw_norm_before_probability_normalization": 0.9999999999999346,
+              "work_register_zero_probability": 0.9999999999999999
             }
           ],
           "quantum_execution": "ideal statevector evolution of actual arithmetic; explicit sampled projection and recycling",
@@ -300,11 +300,11 @@
   ],
   "status": "factored_quantum_trial",
   "generic_success_certificate": null,
-  "quantum_emulation_wall_seconds": 2.0452757769999153,
-  "classical_postprocessing_wall_seconds": 2.5069000002986286e-05,
-  "logical_compilation_wall_seconds": 0.743021206000094,
-  "classical_base_selection_and_gcd_wall_seconds": 2.554100001361803e-05,
-  "classical_precheck_wall_seconds": 1.4529000054608332e-05,
+  "quantum_emulation_wall_seconds": 3.9930774859999474,
+  "classical_postprocessing_wall_seconds": 2.8593000024557114e-05,
+  "logical_compilation_wall_seconds": 1.20715311999993,
+  "classical_base_selection_and_gcd_wall_seconds": 2.679999988686177e-05,
+  "classical_precheck_wall_seconds": 1.9415999986449606e-05,
   "executed_quantum_primitive_counts": {
     "rz": 38666,
     "cx": 33228,
@@ -319,7 +319,7 @@
   "executed_quantum_primitive_operations": 75799,
   "peak_logical_qubits": 13,
   "resource_estimate_status": "actual ideal trajectory logical counts; adaptive reset/feedback physical projection pending",
-  "wall_seconds": 2.7885254939999413,
+  "wall_seconds": 5.200454984000089,
   "numerical_policy_audit": {
     "modulus": 21,
     "config": {
@@ -547,7 +547,7 @@
                   0
                 ],
                 "outcome": 340,
-                "selected_joint_probability": 0.007124946547657345,
+                "selected_joint_probability": 0.007124946547657305,
                 "steps": [
                   {
                     "output_bit": 0,
@@ -558,7 +558,7 @@
                     "measured_bit": 0,
                     "conditional_probability_zero": 0.5,
                     "selected_conditional_probability": 0.5,
-                    "raw_norm_before_probability_normalization": 0.9999999999999312,
+                    "raw_norm_before_probability_normalization": 0.9999999999999301,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -570,9 +570,9 @@
                     ],
                     "feedback_angles": [],
                     "measured_bit": 0,
-                    "conditional_probability_zero": 0.7499999999999999,
-                    "selected_conditional_probability": 0.7499999999999999,
-                    "raw_norm_before_probability_normalization": 0.9999999999999302,
+                    "conditional_probability_zero": 0.7499999999999998,
+                    "selected_conditional_probability": 0.7499999999999998,
+                    "raw_norm_before_probability_normalization": 0.9999999999999308,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -585,9 +585,9 @@
                     ],
                     "feedback_angles": [],
                     "measured_bit": 1,
-                    "conditional_probability_zero": 0.9166666666666666,
-                    "selected_conditional_probability": 0.08333333333333337,
-                    "raw_norm_before_probability_normalization": 0.999999999999936,
+                    "conditional_probability_zero": 0.916666666666667,
+                    "selected_conditional_probability": 0.08333333333333304,
+                    "raw_norm_before_probability_normalization": 0.9999999999999344,
                     "work_register_zero_probability": 1.0000000000000002
                   },
                   {
@@ -603,9 +603,9 @@
                       -1.5707963267948966
                     ],
                     "measured_bit": 0,
-                    "conditional_probability_zero": 0.5000000000000001,
-                    "selected_conditional_probability": 0.5000000000000001,
-                    "raw_norm_before_probability_normalization": 0.9999999999999304,
+                    "conditional_probability_zero": 0.4999999999999996,
+                    "selected_conditional_probability": 0.4999999999999996,
+                    "raw_norm_before_probability_normalization": 0.9999999999999296,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -622,10 +622,10 @@
                       -0.7853981633974483
                     ],
                     "measured_bit": 1,
-                    "conditional_probability_zero": 0.058058261758407684,
+                    "conditional_probability_zero": 0.0580582617584076,
                     "selected_conditional_probability": 0.9419417382415923,
-                    "raw_norm_before_probability_normalization": 0.9999999999999304,
-                    "work_register_zero_probability": 0.9999999999999999
+                    "raw_norm_before_probability_normalization": 0.99999999999993,
+                    "work_register_zero_probability": 1.0000000000000002
                   },
                   {
                     "output_bit": 5,
@@ -643,10 +643,10 @@
                       -1.5707963267948966
                     ],
                     "measured_bit": 0,
-                    "conditional_probability_zero": 0.9746357290481338,
-                    "selected_conditional_probability": 0.9746357290481338,
-                    "raw_norm_before_probability_normalization": 0.9999999999999303,
-                    "work_register_zero_probability": 1.0
+                    "conditional_probability_zero": 0.9746357290481337,
+                    "selected_conditional_probability": 0.9746357290481337,
+                    "raw_norm_before_probability_normalization": 0.9999999999999302,
+                    "work_register_zero_probability": 0.9999999999999999
                   },
                   {
                     "output_bit": 6,
@@ -665,10 +665,10 @@
                       -0.7853981633974483
                     ],
                     "measured_bit": 1,
-                    "conditional_probability_zero": 0.004879521334889812,
-                    "selected_conditional_probability": 0.9951204786651102,
-                    "raw_norm_before_probability_normalization": 0.9999999999999315,
-                    "work_register_zero_probability": 1.0000000000000002
+                    "conditional_probability_zero": 0.004879521334889853,
+                    "selected_conditional_probability": 0.9951204786651101,
+                    "raw_norm_before_probability_normalization": 0.9999999999999316,
+                    "work_register_zero_probability": 0.9999999999999999
                   },
                   {
                     "output_bit": 7,
@@ -691,7 +691,7 @@
                     "measured_bit": 0,
                     "conditional_probability_zero": 0.9986001638554023,
                     "selected_conditional_probability": 0.9986001638554023,
-                    "raw_norm_before_probability_normalization": 0.9999999999999323,
+                    "raw_norm_before_probability_normalization": 0.999999999999932,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -714,10 +714,10 @@
                       -0.7853981633974483
                     ],
                     "measured_bit": 1,
-                    "conditional_probability_zero": 0.00032711126198178137,
-                    "selected_conditional_probability": 0.9996728887380183,
-                    "raw_norm_before_probability_normalization": 0.9999999999999304,
-                    "work_register_zero_probability": 1.0000000000000002
+                    "conditional_probability_zero": 0.00032711126198179026,
+                    "selected_conditional_probability": 0.9996728887380182,
+                    "raw_norm_before_probability_normalization": 0.9999999999999312,
+                    "work_register_zero_probability": 1.0
                   },
                   {
                     "output_bit": 9,
@@ -743,8 +743,8 @@
                     "measured_bit": 0,
                     "conditional_probability_zero": 0.5,
                     "selected_conditional_probability": 0.5,
-                    "raw_norm_before_probability_normalization": 0.9999999999999309,
-                    "work_register_zero_probability": 1.0000000000000002
+                    "raw_norm_before_probability_normalization": 0.9999999999999322,
+                    "work_register_zero_probability": 1.0
                   }
                 ],
                 "quantum_execution": "ideal statevector evolution of actual arithmetic; explicit sampled projection and recycling",
@@ -796,7 +796,7 @@
                   0
                 ],
                 "outcome": 171,
-                "selected_joint_probability": 0.1139871278332317,
+                "selected_joint_probability": 0.11398712783323171,
                 "steps": [
                   {
                     "output_bit": 0,
@@ -807,7 +807,7 @@
                     "measured_bit": 1,
                     "conditional_probability_zero": 0.5,
                     "selected_conditional_probability": 0.5,
-                    "raw_norm_before_probability_normalization": 0.9999999999999312,
+                    "raw_norm_before_probability_normalization": 0.9999999999999301,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -822,8 +822,8 @@
                     ],
                     "measured_bit": 1,
                     "conditional_probability_zero": 0.5000000000000001,
-                    "selected_conditional_probability": 0.4999999999999999,
-                    "raw_norm_before_probability_normalization": 0.9999999999999296,
+                    "selected_conditional_probability": 0.5,
+                    "raw_norm_before_probability_normalization": 0.9999999999999307,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -839,9 +839,9 @@
                       -1.5707963267948966
                     ],
                     "measured_bit": 0,
-                    "conditional_probability_zero": 0.9419417382415924,
-                    "selected_conditional_probability": 0.9419417382415924,
-                    "raw_norm_before_probability_normalization": 0.9999999999999309,
+                    "conditional_probability_zero": 0.9419417382415923,
+                    "selected_conditional_probability": 0.9419417382415923,
+                    "raw_norm_before_probability_normalization": 0.9999999999999303,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -858,10 +858,10 @@
                       -0.7853981633974483
                     ],
                     "measured_bit": 1,
-                    "conditional_probability_zero": 0.025364270951866243,
-                    "selected_conditional_probability": 0.9746357290481337,
-                    "raw_norm_before_probability_normalization": 0.9999999999999317,
-                    "work_register_zero_probability": 0.9999999999999997
+                    "conditional_probability_zero": 0.025364270951866198,
+                    "selected_conditional_probability": 0.9746357290481338,
+                    "raw_norm_before_probability_normalization": 0.999999999999932,
+                    "work_register_zero_probability": 1.0
                   },
                   {
                     "output_bit": 4,
@@ -881,8 +881,8 @@
                     "measured_bit": 0,
                     "conditional_probability_zero": 0.9951204786651102,
                     "selected_conditional_probability": 0.9951204786651102,
-                    "raw_norm_before_probability_normalization": 0.999999999999932,
-                    "work_register_zero_probability": 1.0
+                    "raw_norm_before_probability_normalization": 0.9999999999999302,
+                    "work_register_zero_probability": 0.9999999999999999
                   },
                   {
                     "output_bit": 5,
@@ -901,9 +901,9 @@
                       -0.7853981633974483
                     ],
                     "measured_bit": 1,
-                    "conditional_probability_zero": 0.001399836144597602,
-                    "selected_conditional_probability": 0.9986001638554024,
-                    "raw_norm_before_probability_normalization": 0.9999999999999318,
+                    "conditional_probability_zero": 0.0013998361445976856,
+                    "selected_conditional_probability": 0.9986001638554023,
+                    "raw_norm_before_probability_normalization": 0.9999999999999315,
                     "work_register_zero_probability": 1.0
                   },
                   {
@@ -927,8 +927,8 @@
                     "measured_bit": 0,
                     "conditional_probability_zero": 0.9996728887380182,
                     "selected_conditional_probability": 0.9996728887380182,
-                    "raw_norm_before_probability_normalization": 0.9999999999999309,
-                    "work_register_zero_probability": 1.0
+                    "raw_norm_before_probability_normalization": 0.9999999999999318,
+                    "work_register_zero_probability": 0.9999999999999999
                   },
                   {
                     "output_bit": 7,
@@ -950,7 +950,7 @@
                       -0.7853981633974483
                     ],
                     "measured_bit": 1,
-                    "conditional_probability_zero": 8.461621357916639e-05,
+                    "conditional_probability_zero": 8.461621357917348e-05,
                     "selected_conditional_probability": 0.9999153837864209,
                     "raw_norm_before_probability_normalization": 0.9999999999999282,
                     "work_register_zero_probability": 1.0000000000000002
@@ -979,8 +979,8 @@
                     "measured_bit": 0,
                     "conditional_probability_zero": 0.9999792020025172,
                     "selected_conditional_probability": 0.9999792020025172,
-                    "raw_norm_before_probability_normalization": 0.9999999999999277,
-                    "work_register_zero_probability": 1.0
+                    "raw_norm_before_probability_normalization": 0.9999999999999284,
+                    "work_register_zero_probability": 1.0000000000000002
                   },
                   {
                     "output_bit": 9,
@@ -1007,8 +1007,8 @@
                     "measured_bit": 0,
                     "conditional_probability_zero": 0.5,
                     "selected_conditional_probability": 0.5,
-                    "raw_norm_before_probability_normalization": 0.9999999999999317,
-                    "work_register_zero_probability": 1.0
+                    "raw_norm_before_probability_normalization": 0.9999999999999313,
+                    "work_register_zero_probability": 0.9999999999999999
                   }
                 ],
                 "quantum_execution": "ideal statevector evolution of actual arithmetic; explicit sampled projection and recycling",
@@ -1060,11 +1060,11 @@
         ],
         "status": "factored_classical_gcd",
         "generic_success_certificate": null,
-        "quantum_emulation_wall_seconds": 3.9433422189999874,
-        "classical_postprocessing_wall_seconds": 3.139900013593433e-05,
-        "logical_compilation_wall_seconds": 1.4506012409999585,
-        "classical_base_selection_and_gcd_wall_seconds": 4.5890000137660536e-05,
-        "classical_precheck_wall_seconds": 4.597000042849686e-06,
+        "quantum_emulation_wall_seconds": 7.759983244000068,
+        "classical_postprocessing_wall_seconds": 3.321200006212166e-05,
+        "logical_compilation_wall_seconds": 2.377685464999786,
+        "classical_base_selection_and_gcd_wall_seconds": 5.059400018581073e-05,
+        "classical_precheck_wall_seconds": 7.92499986346229e-06,
         "executed_quantum_primitive_counts": {
           "rz": 77252,
           "cx": 66384,
@@ -1079,7 +1079,7 @@
         "executed_quantum_primitive_operations": 151446,
         "peak_logical_qubits": 13,
         "resource_estimate_status": "actual ideal trajectory logical counts; adaptive reset/feedback physical projection pending",
-        "wall_seconds": 5.39410392700006
+        "wall_seconds": 10.137851071000114
       },
       {
         "modulus": 7,
@@ -1112,12 +1112,12 @@
         "classical_postprocessing_wall_seconds": 0.0,
         "logical_compilation_wall_seconds": 0.0,
         "classical_base_selection_and_gcd_wall_seconds": 0.0,
-        "classical_precheck_wall_seconds": 2.7490000320540275e-06,
+        "classical_precheck_wall_seconds": 5.079999937152024e-06,
         "executed_quantum_primitive_counts": {},
         "executed_quantum_primitive_operations": 0,
         "peak_logical_qubits": 0,
         "resource_estimate_status": "actual ideal trajectory logical counts; adaptive reset/feedback physical projection pending",
-        "wall_seconds": 1.7538999827593216e-05
+        "wall_seconds": 2.2381999997378443e-05
       },
       {
         "modulus": 3,
@@ -1148,12 +1148,12 @@
         "classical_postprocessing_wall_seconds": 0.0,
         "logical_compilation_wall_seconds": 0.0,
         "classical_base_selection_and_gcd_wall_seconds": 0.0,
-        "classical_precheck_wall_seconds": 3.490001745376503e-07,
+        "classical_precheck_wall_seconds": 6.30999920758768e-07,
         "executed_quantum_primitive_counts": {},
         "executed_quantum_primitive_operations": 0,
         "peak_logical_qubits": 0,
         "resource_estimate_status": "actual ideal trajectory logical counts; adaptive reset/feedback physical projection pending",
-        "wall_seconds": 5.274999921311974e-06
+        "wall_seconds": 7.674000016777427e-06
       }
     ],
     "quantum_trials": 2,
@@ -1174,7 +1174,7 @@
     "component_call_limit": 23,
     "global_quantum_cap": 16,
     "generic_success_certificate": null,
-    "wall_seconds": 5.3944012749998365
+    "wall_seconds": 10.13813927000001
   },
   "recursive_demo_scope": "separate independently invoked prime-factorization workflow; its counters are not included in the primary split run",
   "environment": {
@@ -1191,7 +1191,7 @@
     "shor.py": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3",
     "shor_driver.py": "a8affd1fff81b06917147dddd03f6efd18bf4824219da0fb575b7702ddd0e950"
   },
-  "source_commit": "899761f7fc918b466aea32df2543ea7c9b0535be",
+  "source_commit": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
   "source_commit_scope": "checkout at generation; exact working module hashes recorded separately",
-  "artifact_generation_wall_seconds": 7.14429126999994
+  "artifact_generation_wall_seconds": 12.953998685999977
 }

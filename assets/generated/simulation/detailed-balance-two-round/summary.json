@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "passed": 66,
+    "total": 66
+  },
+  "diagnostics": {
+    "correction_only_bound_4b": 3.7510726266399994e-06,
+    "final_state_error": 1.1657416103618903e-14,
+    "gibbs_frobenius_distance": 0.9272760329900334,
+    "gibbs_generator_residual": 0.07030950371894742,
+    "terminal_completeness_error": 1.4244161406162165e-13,
+    "two_success_probability": 0.9455058655888344,
+    "weak_kraus_max_error": 2.4762274922804275e-14,
+    "z_bias_against_finite_target": 6.903395810553548e-08
+  },
+  "flags": {
+    "all_components_verified": false,
+    "channel_implemented": false,
+    "coherent_correction_evolution_implemented": false,
+    "coherent_correction_implemented": false,
+    "exact_finite_kms": false,
+    "finite_mesh_exact_kms": false,
+    "finite_toy_checks_passed": true,
+    "floating_point_error_certified": false,
+    "formal_proof_reproduced": false,
+    "general_channel_implemented": false,
+    "general_coherent_correction_implemented": false,
+    "hardware_error_certified": false,
+    "mixing_certificate": false,
+    "new_algorithm_result": false,
+    "physical_resources_computed": false,
+    "random_sampling_performed": false,
+    "rotations_synthesized": false,
+    "sampler_implemented": false,
+    "successful_completion_claimed": true,
+    "whole_invocation_validated": false
+  },
+  "internal_reset_dispatches": {
+    "measured": false,
+    "predicted": 16
+  },
+  "observed_calls": {
+    "external_density_stages": 4,
+    "generator_expm": 1,
+    "interval_powers": 2,
+    "tiny_expm": 8,
+    "weak_statevectors": 2
+  },
+  "parameters": {
+    "beta": 1.0,
+    "clock_bits": 2,
+    "delta": 0.125,
+    "initial_state": "known_plus",
+    "product_steps": 1,
+    "proposals": [
+      "Z"
+    ],
+    "readout": "Z only after two all-zero five-bit heralds",
+    "rounds": 2,
+    "tau": 0.125,
+    "terms": [
+      [
+        0.6,
+        "Z"
+      ],
+      [
+        0.8,
+        "X"
+      ]
+    ]
+  },
+  "provenance": {
+    "accepted_source_commit": "02c6bce80784b249927223b08b39174396d6e184",
+    "raw_result_bytes": 1186965,
+    "raw_result_sha256": "a10133d55c305f526c570f35638d3b9ac9cea3079d65f8053af593a790ccea24"
+  },
+  "schema": "openquantum.fixed-two-round.public-summary.v1",
+  "scope": "fixed one-system two-round finite composition; no Gibbs/mixing/physical/formal guarantee",
+  "source_accounting": {
+    "program_early_abort_primitives": 3026,
+    "program_maximum_executed_primitives": 6049,
+    "program_static_primitive_instances": 6051,
+    "reserved_classical_bits": 11,
+    "reserved_quantum_wires": 6
+  },
+  "status": "parent_accepted_fixed_finite_composition_only"
+}

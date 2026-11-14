@@ -1,0 +1,150 @@
+{
+  "accepted_date": "2026-11-14",
+  "accepted_scope": {
+    "full_algorithm": false,
+    "generated_full_program_source": true,
+    "local_decoder_component": true
+  },
+  "component": {
+    "arbitrary_clause_targets": 32,
+    "complete_statevector_evolutions": 1,
+    "native_estimator_calls": 0,
+    "primitive_unitary_applications": 525,
+    "pure_boolean_mappings": 512,
+    "scratch_initially_clean": true,
+    "scratch_wires": [
+      9,
+      10,
+      11
+    ],
+    "small_ccx_reference_cases": 0,
+    "state_amplitudes": 4096,
+    "syndrome_wires": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "syndromes": 16,
+    "target_wires": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "validator_boolean_mappings": 512,
+    "whole_job_local_mapping_iterations": 1024,
+    "wires": 12
+  },
+  "component_diagnostics": {
+    "auxiliary_leakage_probability": 1.6312041995757796e-30,
+    "auxiliary_postselection": false,
+    "final_norm2": 1.0000000000000262,
+    "global_phase_fitted": false,
+    "max_signed_complex_entry_error": 1.1529425372364673e-15,
+    "preserved_syndrome_probability_error": 1.8457457784393227e-15,
+    "state_renormalized": false,
+    "tolerance_absolute": 2e-10,
+    "tolerance_relative": 0.0
+  },
+  "evidence_identities": {
+    "execution_receipt": {
+      "bytes": 12253,
+      "sha256": "a1c80e3eb76d38ed458d682c7b4303e51c45a61e601d3e9afedbe7fe98e68ea8"
+    },
+    "generated_manifest": {
+      "bytes": 2300,
+      "sha256": "daccd5efa3afa4a47b707a60a6a4617056d13685e4e0c61bd40a50e2734419a1"
+    },
+    "parent_acceptance_record": {
+      "bytes": 2399,
+      "sha256": "3a4694789d2400bbd37add828bc30cc64d6bb21b741244eaffde8a80c648838b"
+    },
+    "validation_manifest": {
+      "bytes": 1155,
+      "sha256": "6f8e26cde01ad76ea8e37a9fbbaac6274439377609051121408cfbdc73d0414f"
+    },
+    "validation_payload": {
+      "bytes": 278512,
+      "sha256": "4d10497bb5ec2bf335de94212f367c0fa3f4af3740ead4af9725328f4b63179d"
+    }
+  },
+  "generated_source_counts": {
+    "N": 14,
+    "barrier_records": 7,
+    "component_primitive_counts": {
+      "cx": 219,
+      "h": 68,
+      "t": 136,
+      "tdg": 102
+    },
+    "component_primitives": 525,
+    "generation_only": true,
+    "k": 3,
+    "m": 15,
+    "n": 13,
+    "observed_source_counts": {
+      "barrier": 7,
+      "cx": 1272,
+      "h": 385,
+      "measure": 13,
+      "reset": 31,
+      "ry": 57,
+      "t": 744,
+      "tdg": 558,
+      "x": 84,
+      "z": 14
+    },
+    "operational_events_excluding_barriers": 3158,
+    "quantum_wires": 31,
+    "readout_events": 13,
+    "reset_events": 31,
+    "scope": "generation_only",
+    "source_records_including_barriers": 3165,
+    "unitary_primitives": 3114
+  },
+  "interpretation": "Finite ideal local-decoder floating check and Boolean clean-scratch mappings; full 31-wire program is generation-only.",
+  "original_c5_evidence_modified": false,
+  "public_projection_scientific_work_reexecuted": false,
+  "raw_manifest_status_policy": "Original generation/validation ledgers and manifests retain pre-acceptance pending flags. This separate parent acceptance record supplies the accepted finite scope without changing those bytes.",
+  "raw_records_preserved": true,
+  "schema": "openquantum.dqi.path_majority_public_acceptance.v1",
+  "source_identities": {
+    "accepted_caller_source_commit": "9dad220bb2e18d72b3d267735f380e3fc9f2c352",
+    "repaired_control_source_commit": "241f3385e0070b5de90288324159a88ea200a00e",
+    "scientific_source_commit": "7a4b1cdaa1354014886f87d14149bd3d2d5edb63"
+  },
+  "status": "parent_accepted_component_and_generation_only",
+  "surface_code_baseline_modified": false,
+  "tests": {
+    "global_weight_at_most_two_error_words": 121,
+    "independent_classical_assignments_scanned": 8192,
+    "passed": 259,
+    "private_control_boundary_checks": 75,
+    "public_source_contains_private_control_tests": false,
+    "scientific_pure_checks": 184
+  },
+  "unsupported_claims": {
+    "companion_notebook_executed": false,
+    "degree_two_preparation_validated": false,
+    "dense_operator_constructed": false,
+    "formal_proof_reproduced": false,
+    "full_program_validated": false,
+    "hardware_executed": false,
+    "optimization_output_validated": false,
+    "physical_resources_estimated": false,
+    "portable_scientific_replay_validated": false,
+    "publication_complete": false,
+    "rotation_synthesis_validated": false,
+    "sampling_performed": false,
+    "saved_display_executed": false
+  },
+  "vectors_saved": {
+    "final_state_pairs_saved": 4096,
+    "input_and_reference_defined_by_pinned_source_recipe": true,
+    "input_vector_separately_saved": false,
+    "reconstruction_performed_during_public_projection": false,
+    "reference_vector_separately_saved": false
+  }
+}

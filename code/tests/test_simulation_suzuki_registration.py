@@ -112,7 +112,12 @@ def checker(monkeypatch, checked):
                         "PUBLIC_GIBBS_CHANNEL_FILES": frozenset(), "PUBLIC_DECAY_FILES": frozenset(), "PUBLIC_CORRECTION_FILES": frozenset(), "PUBLIC_DQI_DEGREE_TWO_FILES": frozenset(), "PUBLIC_DQI_DEGREE_TWO_PUBLIC_FILES": frozenset(), "PUBLIC_DQI_FILES": frozenset(),
                         "PUBLIC_BATH_FILES": frozenset(), "PUBLIC_MULTIPRODUCT_FILES": frozenset(), "PUBLIC_BAYESIAN_FILES": frozenset(), "PUBLIC_ROBUST_FILES": frozenset(), "PUBLIC_DQI_STRUCTURED_FILES": frozenset(), "PUBLIC_QPE_FEEDBACK_FILES": frozenset(),
                         "PUBLIC_LOCAL_SPIN_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_PRESENTATION_FILES": frozenset(), "PUBLIC_MEASURED_AND_FILES": frozenset(), "PUBLIC_LOCAL_SPIN_REPRODUCTION_FILES": frozenset(), "PUBLIC_DQI_RESOURCE_FILES": frozenset(),
-                        "PUBLIC_CORRECTED_FORMULA_FILES": frozenset(), "PUBLIC_GQSP_FILES": frozenset()},
+                        "PUBLIC_CORRECTED_FORMULA_FILES": frozenset(), "PUBLIC_GQSP_FILES": frozenset(),
+                        "PUBLIC_TWO_ROUND_FILES": frozenset(),
+                        "PUBLIC_SHOR_FINITE_ADDER_FILES": frozenset(),
+                        "PUBLIC_DQI_PATH_MAJORITY_FILES": frozenset(),
+                        "PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS": frozenset(),
+                        "PUBLIC_RPE_RESOURCE_SOURCE_FILES": frozenset()},
         "energy_record_release": {
             "CORE_FILES": frozenset(), "MANIFEST_NAME": "unused.json", "RECORD_DIRECTORY": "unused",
             "SOURCE_FILES": (), "VERIFIER_FILES": (), "checked_directory": checked.checked_directory,
@@ -154,10 +159,12 @@ def checker(monkeypatch, checked):
     monkeypatch.setattr(module, "site_local_spin_reproduction_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_measured_and_saved_errors", lambda *_: [])
     monkeypatch.setattr(module, "site_hamiltonian_packet_errors", lambda *_: [])
+    monkeypatch.setattr(module, "site_next_saved_errors", lambda *_, **__: [])
     monkeypatch.setattr(module, "MEASURED_AND_FIGURE_LABELS", frozenset())
     monkeypatch.setattr(module, "GIBBS_CHANNEL_ARTICLE_LABELS", frozenset())
     monkeypatch.setattr(module, "DECAY_ARTICLE_LABELS", frozenset())
     monkeypatch.setattr(module, "CORRECTION_ARTICLE_LABELS", frozenset())
+    monkeypatch.setattr(module, "NEXT_EVIDENCE_ARTICLE_LABELS", {})
     return module
 
 
@@ -825,6 +832,14 @@ def test_suzuki_ci_pair_restores_exact_latest_72_commands():
     if not workflow.is_file():
         pytest.skip("Publication workflow is deliberately outside the examples package")
     commands = [line.strip()[4:] for line in workflow.read_text().splitlines() if line.startswith("          run ")]
+    added_commands = (
+        'python scripts/verify_robust_qpe_resource_source_saved.py --bundle assets/generated/robust-qpe-resource-source --expected-manifest-sha256 aaa9eebc661db8e2c8a41764eb8497fa66d810934d9dd1f4bc3b414805378e33 --source-root . --max-seconds 30',
+        'python scripts/verify_shor_finite_adder_reference.py --bundle assets/generated/shor/finite-adder-reference',
+        'python scripts/verify_thermal_two_round_public.py --bundle assets/generated/simulation/detailed-balance-two-round',
+        'python -I -S -B scripts/display_dqi_path_majority_saved.py --display --artifact-root . --source-root . --manifest-sha256 b6f6ad7f3e4914a6af7c34a9c852652e623b9d22de07635378ad379e816363d9 --time-limit-seconds 5',
+    )
+    assert all(commands.count(command) == 1 for command in added_commands)
+    commands = [command for command in commands if command not in added_commands]
     additions = (
         "python scripts/generate_simulation_suzuki.py --output-dir .cache/suzuki-ci-replay",
         "python scripts/verify_simulation_suzuki.py --replay-dir .cache/suzuki-ci-replay",

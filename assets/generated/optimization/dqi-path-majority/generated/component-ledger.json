@@ -1,0 +1,37 @@
+{
+  "arbitrary_target_xor": true,
+  "ccx_blocks": 34,
+  "clean_scratch_required": true,
+  "cx_outside_ccx": 15,
+  "full_program_validation": false,
+  "primitive_counts": {
+    "cx": 219,
+    "h": 68,
+    "t": 136,
+    "tdg": 102
+  },
+  "promise_maximum_error_weight": 2,
+  "qubits": 12,
+  "schema": "openquantum.dqi.path_majority_component_ledger.v1",
+  "scratch_wires": [
+    9,
+    10,
+    11
+  ],
+  "status": "generated_source_unvalidated",
+  "syndrome_wires": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "target_wires": [
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "total_extension_uses_terminal_syndrome": false,
+  "unitary_operations": 525
+}

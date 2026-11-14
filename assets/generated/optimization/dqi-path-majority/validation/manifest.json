@@ -1,0 +1,32 @@
+{
+  "degree_two_preparation_validated": false,
+  "files": {
+    "validation.json": {
+      "bytes": 278512,
+      "sha256": "4d10497bb5ec2bf335de94212f367c0fa3f4af3740ead4af9725328f4b63179d"
+    }
+  },
+  "formal_interval_certificate": false,
+  "full_program_validated": false,
+  "input_manifest_sha256": "daccd5efa3afa4a47b707a60a6a4617056d13685e4e0c61bd40a50e2734419a1",
+  "optimization_output_validated": false,
+  "physical_resources_computed": false,
+  "publication_complete": false,
+  "requires_observed_cli_exit_zero": true,
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.path_majority_validation_manifest.v1",
+  "scope": "local_component_only",
+  "sources": {
+    "module": {
+      "bytes": 24109,
+      "path": "src/openquantum/optimization_dqi_path_majority_verify.py",
+      "sha256": "206c1e705bef8130677f835b68ec8a94a1fd420a53acd62d3d66b3ff8d536606"
+    },
+    "script": {
+      "bytes": 29413,
+      "path": "scripts/validate_optimization_dqi_path_majority.py",
+      "sha256": "febe90401a61a332133f3cd9d9229e704fb4e529564508f36ad12c8b510cdd42"
+    }
+  },
+  "status": "complete_validation_component_pending_invocation_acceptance"
+}
