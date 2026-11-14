@@ -1,0 +1,2248 @@
+{
+  "evidence_scope": "recorded source-stage evidence before Native execution",
+  "original_encoding": "sorted-indented-json-newline",
+  "original_sha256": "8446fc8e4e523531b666817bbcd1e33764d440c9d9417690ed7bbe7324e4465b",
+  "record": {
+    "actual_magic_states": 182646240,
+    "archived_supports": {
+      "qaoa": 3,
+      "vqe": 0
+    },
+    "class_checks": [
+      {
+        "candidate_operations_visited": 5888,
+        "class_id": "fb7c9e22b7c2d0cf3e22282f35f9ce9ca761c00bccbe9ec6771eec08d26257ed",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 1168,
+        "source_operations_visited": 5756,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5936,
+        "class_id": "550e032e8bdb453809fac762c567824c564b9ae3c9091cf9185725b48aa0507e",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations_visited": 5804,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5824,
+        "class_id": "4400b42c551aab4267c905a52463f77eb314d6ec7dc24af67588b4f8607b5a47",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations_visited": 5692,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 4920,
+        "class_id": "901bc9d8ea8952aff5d725a0c63623ab5314f3e42105ee4261342b1006a2069a",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 11,
+        "shots": 260,
+        "source_operations_visited": 4812,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5848,
+        "class_id": "e52e94b18e3baa061cd58154b81a831f5e1aa968e0f9a65425b2a6f567459946",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations_visited": 5716,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5936,
+        "class_id": "1db5e92725d8d9474198cce47cb104cb3991e6349b8620a86e8f5a1bcb93cc75",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations_visited": 5804,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5896,
+        "class_id": "774f19cf7fb51fb541fa59ed7234845281f4f359570cf8029631ec4596d1ed44",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 1560,
+        "source_operations_visited": 5764,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 4914,
+        "class_id": "4ff5ef50478c6da2610cf206856efeafc2eac8b4bcec589d8658be5c7a941365",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 11,
+        "shots": 260,
+        "source_operations_visited": 4812,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5848,
+        "class_id": "bed3b72756d275b4811edc8a0e986645faaeae8e3b2195f2ddd6966684e2a05a",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations_visited": 5716,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5992,
+        "class_id": "ff0c16b82fb8e7ab06b758bd9898fab810e7a1f2a4b5686f8a74eb7b4b3c2ca1",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations_visited": 5860,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5880,
+        "class_id": "2049ffeb8aae6985917a7f889ac6f647615e4f967f6fcfa59f8ffef293389e0c",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations_visited": 5748,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 4928,
+        "class_id": "91093d828e1796df46811716a41f8ddc2a973c2eb79fc6a77818a7bd8f91a34d",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 11,
+        "shots": 780,
+        "source_operations_visited": 4820,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5856,
+        "class_id": "1ecb125df99753b77404b64697a7d5271471fad450eeb32599d7b2e1346611b2",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 1300,
+        "source_operations_visited": 5724,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5984,
+        "class_id": "13517cb73a0d157af136bcd7614928ecfb95416afda1975246c557a4fc9ce75a",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations_visited": 5852,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 4922,
+        "class_id": "439605dbdb9d5902c9b8e85d2f556eb3df5b0920925815fc23a7d9ab4639a986",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 11,
+        "shots": 780,
+        "source_operations_visited": 4820,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5856,
+        "class_id": "80380412a7023080af405ecd115be27abf42f63f5acdb2183cc2481ad3639ebc",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations_visited": 5724,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5848,
+        "class_id": "b8c61cc319f67f066ed734ff411f6b511dc181a18a7a0d48d35d3b5fae43d4cb",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5716,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5904,
+        "class_id": "f5373d39f0da20198e832cfc7933956b92abee49590a386ecc8d0643e4168b6b",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5772,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5876,
+        "class_id": "b69e67ce0ca023f7a952396f6d2eff3e9bf171aa1c7b37e4d4732585fc2d2408",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5744,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5860,
+        "class_id": "edbd80dcaf25795af29eee2d5dd59ef31d144648cff93267564b1419486d5251",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 1040,
+        "source_operations_visited": 5728,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5904,
+        "class_id": "9d464cd381e4b3ceee6dde197b3144852d1b96072a089d9ff3d8b85372c1719c",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5772,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5936,
+        "class_id": "4c7779db4942f82ee77bf118a637a3875289aef4b3a69b66799c6c89aa42a380",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5804,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5876,
+        "class_id": "c09b6df6291b1b8401978e889f48d78d9478eff468091a01fe9603ecdda5637a",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5744,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5860,
+        "class_id": "e59cd31db0fea68aaecec71d4d4806e4dbca492c5b84e2c3bca6b6f7e6352fb8",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5728,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5872,
+        "class_id": "0b49afcc07950445e3090a0d3385a37dcb6e81a64e5702522e8822ac6cc7000f",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5740,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5828,
+        "class_id": "51a245f482a4f3c7badd7720ae30b28c7a404ae7160714cdd55d515f22e9ee7f",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 1560,
+        "source_operations_visited": 5696,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5896,
+        "class_id": "44eaf8c927344805b416c7431451cef2143579b0dab91788ddce3e7746fa8cc6",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5764,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5820,
+        "class_id": "df262b18ddac25476536fbcb4be9c6c50fce9152e1576904517568b6b8c44f84",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5688,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5860,
+        "class_id": "a5d71b83ebf11631c344ca68c021a21846b8db682152c634634371af40e30de9",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5728,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5804,
+        "class_id": "f423d9ec800c52460edba258050faa9f15d27ebd0eb99fd427237fd223e73a40",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5672,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5824,
+        "class_id": "742d6fcd3a7236e61a32b2cc7b1d37f16db1874e0569c5901c15c9d46f0380af",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5692,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5860,
+        "class_id": "1d11ccc11221636a165999a7629c3e9f613973d82fb70d276c4a7f5960a79c66",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5728,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5904,
+        "class_id": "5b138994f07d2fc3fd5a55c313e312ee9e293582d2361f8c52ceb23123ff315e",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5772,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5904,
+        "class_id": "ae6b115f895e84c79f6205b33bd1b3ca29921081178ce6dd535a2a73ccdabf25",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5772,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5864,
+        "class_id": "0e1b386c66fa83756c964e5cec7f213aa2209b1e811df74d021f85f21e921822",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5732,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5828,
+        "class_id": "6167ca4cc2931823c284778476fa83ae31df547d559a06b8ca4017c098506b06",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5696,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5868,
+        "class_id": "c9baae512c6dfdc94e19e7acfa9d8375a55695f24531e3f8771c1b4b8d2b0b71",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 21584,
+        "source_operations_visited": 5736,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5848,
+        "class_id": "86e1e5f849ff221d026d404ab98826fc0852febaf194f83731bd4089f85cc3de",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5716,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5832,
+        "class_id": "2f8e806dda25fc7e8f5a4b4222493ed988b0ba60b5ea071e29f7493df1c25baf",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5700,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5860,
+        "class_id": "b3b088059765455b97b3c1e47a481f0515f4c22dd73951c6836827bab9ecbd83",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5728,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5916,
+        "class_id": "c479c9e8ef56c684cd656cf250e02765c5ad6b866e4e68ad1cf45026f14dcd50",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5784,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5944,
+        "class_id": "183bee4820cc9db9160bd5d91d37e3c79e52495e47f3dacf7decec0df26538b7",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5812,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5908,
+        "class_id": "d575f94c35ee5fdcd65ca2cccbffeb0801e4c11b95ba80bcf6af9cb7cd44bd14",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5776,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5908,
+        "class_id": "022bc4e612330e512612e741e8d37e71dae9beb51214b08e4d0d3d826b5e7716",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5776,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5888,
+        "class_id": "bc0bcf17fcb5a4861c2cee7f5e19a41b93266211acc30d7641dd8809d6f7f7bc",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5756,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5872,
+        "class_id": "5623940e635764c58e29118e2d965f97d1e991db7f3e82756d5c4cde4ef68e2e",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations_visited": 5740,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5764,
+        "class_id": "e1c9f761f046559de2b7d595cf47d025f4ff7765ecc8ab0aa276d11b1610fab3",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5632,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5908,
+        "class_id": "c6f5c27e7fe1712b35dea11e55d5bb544123fea9aee970e040c686a3543034d9",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5776,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5924,
+        "class_id": "cd867fceafe96b434398881b8bdfb397aa63f34c6d3570af57ea01ab39c26826",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5792,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5892,
+        "class_id": "66966a894ddedc83494653782892819c275b7834b1abf27d0bfe777d28e5341b",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5760,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5876,
+        "class_id": "bed7fcf00e412d5d511fac57e5adbd19ebfe1dddfa702f7ea62b09209d4ac435",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5744,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5804,
+        "class_id": "e162c55393e6ac1be43b157f4fd0566a40cd1d19e939ae600c5fda8b4eed3847",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5672,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5876,
+        "class_id": "d2be017f42415c07acef481014b1c47ee887743765360ad8a84aeb7234fd8342",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5744,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      },
+      {
+        "candidate_operations_visited": 5884,
+        "class_id": "0e38baa8f9556fc33364365edc104bcdceaaf1676a6d21b3afd93031c21fdf31",
+        "coverage": "ideal complete-data coherent operator and initialized final readout; not a physical-code model",
+        "event_subsequence_preserved": true,
+        "global_phase_fitting": false,
+        "global_phase_metadata_bit_identical": true,
+        "joint_z_maximum_probability_error": 0.0,
+        "measurement_map": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "num_qubits": 4,
+        "operator_spectral_error": 0.0,
+        "original_barriers_and_source_events_preserved": true,
+        "requires_independent_structural_word_boundary_audit": true,
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations_visited": 5752,
+        "spectral_tolerance": 2e-11,
+        "status": "validated_ideal_logical_word_shuttle",
+        "structural_word_boundaries_verified": true
+      }
+    ],
+    "classes": 54,
+    "density_checks": {
+      "branch_handling": "each corrected two-outcome injection/reset is contracted immediately",
+      "case_count": 20,
+      "cases": [
+        {
+          "case_id": "corrected-kraus-t",
+          "density_dimension": 2,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 0.0,
+          "micro_operations": 0,
+          "qubits": 1,
+          "spectral_error": 2.220446049250313e-16,
+          "trace_error": 0.0
+        },
+        {
+          "case_id": "injection-choi-t",
+          "density_dimension": 16,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 1.6653345369377348e-16,
+          "micro_operations": 10,
+          "qubits": 4,
+          "spectral_error": 1.796378588936215e-16,
+          "trace_error": 3.3306690738754696e-16
+        },
+        {
+          "case_id": "corrected-kraus-tdg",
+          "density_dimension": 2,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 0.0,
+          "micro_operations": 0,
+          "qubits": 1,
+          "spectral_error": 2.220446049250313e-16,
+          "trace_error": 0.0
+        },
+        {
+          "case_id": "injection-choi-tdg",
+          "density_dimension": 16,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 1.6653345369377348e-16,
+          "micro_operations": 10,
+          "qubits": 4,
+          "spectral_error": 1.796378588936215e-16,
+          "trace_error": 3.3306690738754696e-16
+        },
+        {
+          "case_id": "initialized-port-route-0",
+          "density_dimension": 8,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 0.0,
+          "micro_operations": 3,
+          "qubits": 3,
+          "spectral_error": 0.0,
+          "trace_error": 2.220446049250313e-16
+        },
+        {
+          "case_id": "initialized-port-route-1",
+          "density_dimension": 16,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 0.0,
+          "micro_operations": 6,
+          "qubits": 4,
+          "spectral_error": 0.0,
+          "trace_error": 2.220446049250313e-16
+        },
+        {
+          "case_id": "initialized-port-route-2",
+          "density_dimension": 32,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 0.0,
+          "micro_operations": 9,
+          "qubits": 5,
+          "spectral_error": 0.0,
+          "trace_error": 2.220446049250313e-16
+        },
+        {
+          "case_id": "initialized-port-route-3",
+          "density_dimension": 64,
+          "hermiticity_error": 0.0,
+          "maximum_branch_probability_error": 0.0,
+          "micro_operations": 12,
+          "qubits": 6,
+          "spectral_error": 0.0,
+          "trace_error": 2.220446049250313e-16
+        },
+        {
+          "case_id": "data-shuttle-1-ghz-signed-forward",
+          "density_dimension": 64,
+          "hermiticity_error": 3.925231146709438e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 38,
+          "qubits": 6,
+          "spectral_error": 5.360646545746549e-16,
+          "trace_error": 8.881784197001252e-16
+        },
+        {
+          "case_id": "data-shuttle-1-ghz-signed-inverse",
+          "density_dimension": 64,
+          "hermiticity_error": 3.925231146709438e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 38,
+          "qubits": 6,
+          "spectral_error": 5.360646545746549e-16,
+          "trace_error": 8.881784197001252e-16
+        },
+        {
+          "case_id": "data-shuttle-1-mixed-entangled-signed-forward",
+          "density_dimension": 64,
+          "hermiticity_error": 3.314590238266796e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 38,
+          "qubits": 6,
+          "spectral_error": 3.6925729777010494e-16,
+          "trace_error": 8.88185195937854e-16
+        },
+        {
+          "case_id": "data-shuttle-1-mixed-entangled-signed-inverse",
+          "density_dimension": 64,
+          "hermiticity_error": 3.314590238266796e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 38,
+          "qubits": 6,
+          "spectral_error": 3.6925729777010494e-16,
+          "trace_error": 8.88185195937854e-16
+        },
+        {
+          "case_id": "data-shuttle-2-ghz-signed-forward",
+          "density_dimension": 64,
+          "hermiticity_error": 3.925231146709438e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 44,
+          "qubits": 6,
+          "spectral_error": 5.360646545746549e-16,
+          "trace_error": 8.881784197001252e-16
+        },
+        {
+          "case_id": "data-shuttle-2-ghz-signed-inverse",
+          "density_dimension": 64,
+          "hermiticity_error": 3.925231146709438e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 44,
+          "qubits": 6,
+          "spectral_error": 5.360646545746549e-16,
+          "trace_error": 8.881784197001252e-16
+        },
+        {
+          "case_id": "data-shuttle-2-mixed-entangled-signed-forward",
+          "density_dimension": 64,
+          "hermiticity_error": 3.1636811530793427e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 44,
+          "qubits": 6,
+          "spectral_error": 3.8485181711176215e-16,
+          "trace_error": 8.88185195937854e-16
+        },
+        {
+          "case_id": "data-shuttle-2-mixed-entangled-signed-inverse",
+          "density_dimension": 64,
+          "hermiticity_error": 3.1636811530793427e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 44,
+          "qubits": 6,
+          "spectral_error": 3.8485181711176215e-16,
+          "trace_error": 8.88185195937854e-16
+        },
+        {
+          "case_id": "data-shuttle-3-ghz-signed-forward",
+          "density_dimension": 64,
+          "hermiticity_error": 3.925231146709438e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 50,
+          "qubits": 6,
+          "spectral_error": 5.360646545746549e-16,
+          "trace_error": 8.881784197001252e-16
+        },
+        {
+          "case_id": "data-shuttle-3-ghz-signed-inverse",
+          "density_dimension": 64,
+          "hermiticity_error": 3.925231146709438e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 50,
+          "qubits": 6,
+          "spectral_error": 5.360646545746549e-16,
+          "trace_error": 8.881784197001252e-16
+        },
+        {
+          "case_id": "data-shuttle-3-mixed-entangled-signed-forward",
+          "density_dimension": 64,
+          "hermiticity_error": 1.951034952686544e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 50,
+          "qubits": 6,
+          "spectral_error": 4.468460952526921e-16,
+          "trace_error": 8.88185195937854e-16
+        },
+        {
+          "case_id": "data-shuttle-3-mixed-entangled-signed-inverse",
+          "density_dimension": 64,
+          "hermiticity_error": 1.951034952686544e-17,
+          "maximum_branch_probability_error": 4.440892098500626e-16,
+          "micro_operations": 50,
+          "qubits": 6,
+          "spectral_error": 4.468460952526921e-16,
+          "trace_error": 8.88185195937854e-16
+        }
+      ],
+      "coverage": "ideal logical CPTP mechanisms with ideal magic-state inputs; no physical-code, factory-circuit, hardware-noise or decoder validation",
+      "maximum_branch_probability_error": 4.440892098500626e-16,
+      "maximum_density_dimension": 64,
+      "maximum_micro_operations": 50,
+      "maximum_qubits": 6,
+      "maximum_spectral_error": 5.360646545746549e-16,
+      "optimizer_sampling_synthesis_native_calls": 0,
+      "spectral_tolerance": 2e-11,
+      "status": "validated_ideal_logical_injection_transport_channels"
+    },
+    "groups": 110,
+    "immutable_inputs_preserved": true,
+    "maximum_joint_probability_error": 0.0,
+    "maximum_operator_spectral_error": 0.0,
+    "native_queries": 0,
+    "new_holdout_samples": 0,
+    "optimizer_calls": 0,
+    "physical_execution_performed": false,
+    "preparations": 82032,
+    "recipe_sha256": "42dc12de0aa666e4fc9054c22b2321e58240959f1f74c647dc368894de79b694",
+    "schema_version": 1,
+    "source_validation_wall_scope": "input binding, ideal density mechanisms and full-class operators; final input recheck/export are additionally covered by the 180s process watchdog",
+    "source_validation_wall_seconds": 9.910032250001677,
+    "synthesis_calls": 0
+  },
+  "record_kind": "source_validation",
+  "removed_fields": [
+    "status",
+    "physical_approval_requirement"
+  ],
+  "schema": "openquantum-word-scientific-record-v1"
+}

@@ -1,0 +1,553 @@
+{
+  "schema": "openquantum-dynamics-record-v2",
+  "status": "frozen_conditional_dynamics_record",
+  "files": {
+    "LICENSE.txt": {
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+      "bytes": 1093
+    },
+    "dynamics_resources.py": {
+      "sha256": "d43f8c6f3211f48952b629b3c423cca94e007d9a2760803352ddc76daf58c99e",
+      "bytes": 25407
+    },
+    "generate_dynamics_resources.py": {
+      "sha256": "f00a4358e81108d23c5e0497c48f890b5a977fa324f110b1871aa018045062f9",
+      "bytes": 35003
+    },
+    "manifest.json": {
+      "sha256": "35078f9e54e137c2718791741041c2d7b1f850409d54e9f93ecf32d0c76f82fb",
+      "bytes": 177567
+    },
+    "pf1-n2-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "a116d80ff5a45cb3bb93202dfb2938662ca7cd52d97f3c06346628ac5baa6155",
+      "bytes": 66228
+    },
+    "pf1-n2-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "0f3319853da426eaaaee838a715a73c3c18bc6868b27483ea50b47cff66de20c",
+      "bytes": 68350
+    },
+    "pf1-n2-t1-eps0.05/logical-resources.json": {
+      "sha256": "009792126ab24005311fa405afe5ba46d615b0c1926754fe869029e4c07cfbe8",
+      "bytes": 5519
+    },
+    "pf1-n2-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "3ac13e5457585f582cc190fee3c727a63797cb70448b870757ff3f0a4b26ed1c",
+      "bytes": 35309
+    },
+    "pf1-n3-t0.5-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "fcf97c1091b12f4d3e273bda234b96270cfd101b21801210bfc310aa9944ae6c",
+      "bytes": 63804
+    },
+    "pf1-n3-t0.5-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "df3337d94512570b15d775aab2d0a213a6579c43bc6748eb9195120a54fa581f",
+      "bytes": 59537
+    },
+    "pf1-n3-t0.5-eps0.05/logical-resources.json": {
+      "sha256": "27676f196a870e0843741fea39a1788d012aa5e0b0b029b22336aef8e436f50e",
+      "bytes": 5616
+    },
+    "pf1-n3-t0.5-eps0.05/measured-trial.qasm": {
+      "sha256": "ce2b3868e2cea62c6f3b772d67a7bcf74f7f20aecfaed0aebbe4c3d55b497b31",
+      "bytes": 30906
+    },
+    "pf1-n3-t1-eps0.025/frozen-p-1e-3.json": {
+      "sha256": "08f1d29fe0c997a3dab6ee2236920030af27a711784a0861632bd094792f06dd",
+      "bytes": 287218
+    },
+    "pf1-n3-t1-eps0.025/frozen-p-1e-4.json": {
+      "sha256": "7d4ad223985bf6125a6b34355e264cf2288c0605f8b32aa55922f0183318219f",
+      "bytes": 293632
+    },
+    "pf1-n3-t1-eps0.025/logical-resources.json": {
+      "sha256": "e01f9a118964abb3f1190645346bfc79603dfaa8553b8720dfe8398f4b2eae6a",
+      "bytes": 5629
+    },
+    "pf1-n3-t1-eps0.025/measured-trial.qasm": {
+      "sha256": "305aa85dc76cf927afc9a084c1053bd63b85aa94fbf10665a71869e53e3236c1",
+      "bytes": 251621
+    },
+    "pf1-n3-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "8b4074a3b7dce163373fc0b055cf449450a43f495a17cec17c36f18c0c9d301b",
+      "bytes": 158560
+    },
+    "pf1-n3-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "8696f6ba64c54f90a4de2a048d6dadecbd8b868ec21b2da4860084ad1c443bcd",
+      "bytes": 162820
+    },
+    "pf1-n3-t1-eps0.05/logical-resources.json": {
+      "sha256": "d69b36bd94dee552c90775ef38aaada7f95576e4c6a058011a9a56574091495b",
+      "bytes": 5617
+    },
+    "pf1-n3-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "ecbc42adf9be47d6dd18a3f913495925b14c88b7d32a5864ebdd24c6475d19d7",
+      "bytes": 126001
+    },
+    "pf1-n3-t1-eps0.1/frozen-p-1e-3.json": {
+      "sha256": "6f3563584908a846405c0ef68a7c57fc5085206078474b1c7c3ff312265e895e",
+      "bytes": 95803
+    },
+    "pf1-n3-t1-eps0.1/frozen-p-1e-4.json": {
+      "sha256": "8e69db07176cedc3dc2199904b1236e728aecff5aaa13a3580f42438e560ce22",
+      "bytes": 89430
+    },
+    "pf1-n3-t1-eps0.1/logical-resources.json": {
+      "sha256": "c8fa9baa27f40a7b89e3fa05eea0650c85bf9d3e380723b7de31c13712e28985",
+      "bytes": 5610
+    },
+    "pf1-n3-t1-eps0.1/measured-trial.qasm": {
+      "sha256": "e26d112d3f10d09c8b6119d40f5d3dc00f81c8b3c3c149419d73d4c27acef733",
+      "bytes": 61651
+    },
+    "pf1-n3-t2-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "e7aa40e98b08b1466327af0b583098a26e2672c21b728d173ba1bf086ff6a9f7",
+      "bytes": 548969
+    },
+    "pf1-n3-t2-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "002226476ff11c630a40edb59b8aa865932aeae3dda24062c7a6aebf560369ca",
+      "bytes": 555386
+    },
+    "pf1-n3-t2-eps0.05/logical-resources.json": {
+      "sha256": "2a7ab822866cf2d7038ded2c964f04cdc6f663d9dda7b453ace0b8e9948e12af",
+      "bytes": 5625
+    },
+    "pf1-n3-t2-eps0.05/measured-trial.qasm": {
+      "sha256": "a856ad4c7cf038be41454426e7121fb01c092eafd156be1998bd868ea81996b2",
+      "bytes": 503081
+    },
+    "pf1-n4-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "bb52823802ad39b77bbcf848de37e709825c935bd4451c8e42b4f19f39143d08",
+      "bytes": 305663
+    },
+    "pf1-n4-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "ac219f8cf5bce82e5adc08ba23ff2651c431d00e203c86e54804be0e756c07d4",
+      "bytes": 312043
+    },
+    "pf1-n4-t1-eps0.05/logical-resources.json": {
+      "sha256": "e129e954d17b678d24470ce9d9b2c61513cb889ec977e632dbb93c5fd17494e8",
+      "bytes": 5689
+    },
+    "pf1-n4-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "239298db7838b4b2e2470104c8283c551b8cd47d9a26e6072d76e94804d636d8",
+      "bytes": 267029
+    },
+    "pf1-n5-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "a4fd260153db92dbe1994bc07262d7badcdb4c89230f37c05e270373bf2fb842",
+      "bytes": 515591
+    },
+    "pf1-n5-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "c0a34f8840ff56e18ea86ec0babbd2c8eb59c01405812059add48ccb0062ad69",
+      "bytes": 522009
+    },
+    "pf1-n5-t1-eps0.05/logical-resources.json": {
+      "sha256": "328d1ad908cde516a6ddc6f2dcc91bcfe12d80938d364e8f7ec1b79d9709aa39",
+      "bytes": 5782
+    },
+    "pf1-n5-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "43c4800379f3b82e2940f67f80a03025b7d46509cd0baac1ae2e6d4698a3468c",
+      "bytes": 466565
+    },
+    "pf1-n6-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "13839e711e4b54901ca63248689391341896ffa5ee9b7d0789d5a7b2ad727fc8",
+      "bytes": 775142
+    },
+    "pf1-n6-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "af4b20dd9a157991096f7ba7a693c53ff507cfabb23affde83a2acadd3a5d077",
+      "bytes": 783711
+    },
+    "pf1-n6-t1-eps0.05/logical-resources.json": {
+      "sha256": "27c535e6d7a1e52d6b85f02113a7fc8107cdcd8b89ff1b8ca433562037fdca6b",
+      "bytes": 5878
+    },
+    "pf1-n6-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "63c5e8572d4464069f1526472530a6ca9a3b881c3bd0337caff1a7d649d7fd6a",
+      "bytes": 717609
+    },
+    "pf2-n2-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "9005fa850fffbb34455bd154682205d74f3021682cc5110f1c8384d683609213",
+      "bytes": 29154
+    },
+    "pf2-n2-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "56840479b5f31ed5bfcc83f2b5ebefa786eea11d9585852dffa6a0357380b1f9",
+      "bytes": 24942
+    },
+    "pf2-n2-t1-eps0.05/logical-resources.json": {
+      "sha256": "c3afbcd0ac9cea9e3769363c218f0f3eccf0fdd5de5f72a302d678e92fa19c8e",
+      "bytes": 5527
+    },
+    "pf2-n2-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "f5f6b41bbd1e32c43ef2df01781bc68d7cfd66b4081af684a7a60946c79d3431",
+      "bytes": 1858
+    },
+    "pf2-n3-t0.5-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "ad8e3e5f6f0c90eb7bf12187b0679a6d427c1f8c2bb8a41d0de38368b391d894",
+      "bytes": 31571
+    },
+    "pf2-n3-t0.5-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "4ff66a52b0e477739ef96f5fdc7aec9f0bfaec1c5b9d6b5eb28251cd404ac5ab",
+      "bytes": 23094
+    },
+    "pf2-n3-t0.5-eps0.05/logical-resources.json": {
+      "sha256": "f81898f5f10508cdbe2eff49706e427835dc1abeff9efb30e0104bd27d97ea49",
+      "bytes": 5599
+    },
+    "pf2-n3-t0.5-eps0.05/measured-trial.qasm": {
+      "sha256": "44ea670a2c3ef1a12f5ea7dc9bc0c0ec76b3c2e5f7a17713ddf2babc4806049f",
+      "bytes": 2073
+    },
+    "pf2-n3-t1-eps0.025/frozen-p-1e-3.json": {
+      "sha256": "717688beb099254f7d9c3f6cb60f1fd4d94ffbb83b7ede12fc1d612da78552c2",
+      "bytes": 39754
+    },
+    "pf2-n3-t1-eps0.025/frozen-p-1e-4.json": {
+      "sha256": "228886f50acea701c619897c64837a5e39a7663ea5a3bebd49b34c759caa8272",
+      "bytes": 37632
+    },
+    "pf2-n3-t1-eps0.025/logical-resources.json": {
+      "sha256": "1bcbca1ca195dad15bc3ca04b6c9dad5b8f9f598ced4c3d62d80ffc2da6648b6",
+      "bytes": 5615
+    },
+    "pf2-n3-t1-eps0.025/measured-trial.qasm": {
+      "sha256": "377643b04ca9be25a5d00ebef5854c810f868290dae99f4362cfe5df59b8244f",
+      "bytes": 9847
+    },
+    "pf2-n3-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "810879f7fac29b02c7554a1e5d80ee996eb80e6d257615a534806b79aaafbad0",
+      "bytes": 36928
+    },
+    "pf2-n3-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "29f1a7c99289a460f0ee7c444867a2c860be21e14924e9e9061d77333a92a4d7",
+      "bytes": 28429
+    },
+    "pf2-n3-t1-eps0.05/logical-resources.json": {
+      "sha256": "3dc6db1338459c5bcd0236bdea419610a28d915d8e444fe4f35b3bca1d1301ff",
+      "bytes": 5603
+    },
+    "pf2-n3-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "9e3ca7adc700d94ff50248f1afe56d6d51671480f845ea7c9500a8fe5c40370b",
+      "bytes": 7175
+    },
+    "pf2-n3-t1-eps0.1/frozen-p-1e-3.json": {
+      "sha256": "d59e16fd18970bb09e7c3454115fca37a468600de8521a36b639c8db9ad15551",
+      "bytes": 34683
+    },
+    "pf2-n3-t1-eps0.1/frozen-p-1e-4.json": {
+      "sha256": "4a60de94e55759297c7877ce15235a49f84e6b1db1339400bcf610c25bd0f463",
+      "bytes": 26246
+    },
+    "pf2-n3-t1-eps0.1/logical-resources.json": {
+      "sha256": "fd03fe4482bd0eea909c96258570e9f16c74402d16aa59b5534c55d0f77a93ca",
+      "bytes": 5599
+    },
+    "pf2-n3-t1-eps0.1/measured-trial.qasm": {
+      "sha256": "9f97a1c2d2068d68d03fabf859d31fd06213337d57e90e23752f1db32de79ce6",
+      "bytes": 5111
+    },
+    "pf2-n3-t2-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "70fc1a8bd2ffd3d4a74905e2589b94b4179cb6e799a30b301c08f9aa726b7be4",
+      "bytes": 49884
+    },
+    "pf2-n3-t2-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "3b802b1adcb0e6432f352d5d39ec962d894cd630bef8ad46237218cc7ea21c3b",
+      "bytes": 41343
+    },
+    "pf2-n3-t2-eps0.05/logical-resources.json": {
+      "sha256": "930915fafaef2d1370e06e2cfeed848cab98beba07eea0c2a719b62dd0e1486e",
+      "bytes": 5613
+    },
+    "pf2-n3-t2-eps0.05/measured-trial.qasm": {
+      "sha256": "3e03efb6bde72cee5c3e7327af9e00c6b3840da06693bf06ad3a650c16780ccf",
+      "bytes": 19533
+    },
+    "pf2-n4-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "e95066d6ae3bbe7865fe3f95ead58184f6234d730cc6a516232b1e63135ada64",
+      "bytes": 42870
+    },
+    "pf2-n4-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "72273369a8f3808237ef883bca394c60322a06df67981b84ed6301275501a5b8",
+      "bytes": 36487
+    },
+    "pf2-n4-t1-eps0.05/logical-resources.json": {
+      "sha256": "f304978c8605fbe67b16c6f4e53bf6dd5a1b46a194769e9cac0c4fe1222e342c",
+      "bytes": 5689
+    },
+    "pf2-n4-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "6d90d0e5d34a03e1da7c1cc85ca55098bae131fd356d81541f514ce4a3cfd65e",
+      "bytes": 12827
+    },
+    "pf2-n5-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "5a9177d6f69d0058ee2ac2270cc5d14bd97c0e5b004be94dad038bd8961903c7",
+      "bytes": 51652
+    },
+    "pf2-n5-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "b3b4309fc6b0f0d976180e8d09989a94d66dfa4d860ad467f9fc089cec06190f",
+      "bytes": 43117
+    },
+    "pf2-n5-t1-eps0.05/logical-resources.json": {
+      "sha256": "a474b0d7a4877ffc5cead68cfe59043efbf1e9afaeccdec9195e2050641c328d",
+      "bytes": 5776
+    },
+    "pf2-n5-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "a60e38de5b2588d581e37ebaefbb067b238420f66c43d030895787f6dd914dbd",
+      "bytes": 19121
+    },
+    "pf2-n6-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "73f45901cf99fd8ef92f3bd65048d4eff2995b3bcc6931a7b42fdedd3a8fc80c",
+      "bytes": 60232
+    },
+    "pf2-n6-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "c836953ac0c9a4ecffd3eacb0d5c8fbcd68c056deebfc4f38c06707b00056606",
+      "bytes": 60193
+    },
+    "pf2-n6-t1-eps0.05/logical-resources.json": {
+      "sha256": "a71794473ccddfbb8b345e6ada0ffcd31a728546cc420b8389c945b66a82a14d",
+      "bytes": 5861
+    },
+    "pf2-n6-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "6d749b3c335420e64792bcb872b36df86f63d79036d5d0b3d592c27f3e19ccdc",
+      "bytes": 27315
+    },
+    "physical-summary.csv": {
+      "sha256": "1ea90790644e36c8e50299400619b4cdf7597c8b8090fdb90ac2482880e6d87c",
+      "bytes": 28029
+    },
+    "product-formula-scaling.svg": {
+      "sha256": "def7df0f2dea31cddda11c80e1c0b6d0269a1f9c6e4866cae168c6204893d6ef",
+      "bytes": 144263
+    },
+    "qsp-amplification-resources.svg": {
+      "sha256": "3b5c0c04be673d25765ba00c62e018fff3ab4bdfbf43055acc881cd6205f4b48",
+      "bytes": 74588
+    },
+    "qsp-oaa0-n3-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "8b247f3cc47499e15b06b494badedaafcfb6e61bdbeba146b8159a74fdb604ac",
+      "bytes": 154358
+    },
+    "qsp-oaa0-n3-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "a42b49bed2e964760a133a3a8ef71e7f6bf002fd7d700d49e331e2daf1e35b57",
+      "bytes": 162930
+    },
+    "qsp-oaa0-n3-t1-eps0.05/logical-resources.json": {
+      "sha256": "502f4298890a8af9d849880c58225cf3e594ec841e3b08a2629dbad89f6e9e17",
+      "bytes": 7668
+    },
+    "qsp-oaa0-n3-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "281a6460b8b87e5fbc8e267bc47ded9d03afb8641b072beb9555ebccec5e19d2",
+      "bytes": 123880
+    },
+    "qsp-oaa1-n3-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "bbfc2f77627921e3f70c64a48e75b4230a8598a5851b331567fa0a795b096764",
+      "bytes": 421116
+    },
+    "qsp-oaa1-n3-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "6f32193255a10f3290946e5c365b16f299fd58a02a9076b53d16a872f61ebe73",
+      "bytes": 427552
+    },
+    "qsp-oaa1-n3-t1-eps0.05/logical-resources.json": {
+      "sha256": "90a2dedcf8cf573a5c577f9670a7d5eb69eebb9ce78c73d9f7239742a70476a6",
+      "bytes": 7717
+    },
+    "qsp-oaa1-n3-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "efca9124f1cc42ba69b11a91fcf2026d5a45b0ee12d491d7c9f6eb6923054ebb",
+      "bytes": 370927
+    },
+    "qsp-oaa2-n3-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "abab7d441bb94d9d2f95345def5b8edd3420c0a26ab41c3cfffbfc8a143c5bc4",
+      "bytes": 685677
+    },
+    "qsp-oaa2-n3-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "5c4cf6cc60eef9a2884e53e3d2df58a48af5746f85af8dcd805060e8149087e9",
+      "bytes": 692125
+    },
+    "qsp-oaa2-n3-t1-eps0.05/logical-resources.json": {
+      "sha256": "063e190f072d480fe5e3f3a48c1b0b849d8df5926e52f699fac50877d1f961a1",
+      "bytes": 7730
+    },
+    "qsp-oaa2-n3-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "cb6a8f896108ec867b6beec2b728b7f5042388e3938d17d15cc3b693a0eb4124",
+      "bytes": 617974
+    },
+    "qsp-oaa3-n3-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "4cffd3f875214712774f6f66662a884aa2c39be0361245fbd25d1892fa72885c",
+      "bytes": 950240
+    },
+    "qsp-oaa3-n3-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "2c4fbc7199975097aaf74a112e3444c416785701e4319677ecb772228dda9992",
+      "bytes": 956684
+    },
+    "qsp-oaa3-n3-t1-eps0.05/logical-resources.json": {
+      "sha256": "e3a2ed7457442eae3a74091529d5ce821afb53755a26cb2a9248a4657f0a8115",
+      "bytes": 7738
+    },
+    "qsp-oaa3-n3-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "884b935331fe9c6992d0ef3085ced92de68b4d456e07fe5c51fae3426b15b873",
+      "bytes": 865021
+    },
+    "qsp-retargeted-n2-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "10a0c7360d61d62da4e566246b980d30a0ef2b43e451e4b9451bb4d1307037c3",
+      "bytes": 68175
+    },
+    "qsp-retargeted-n2-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "a4eb8f43f5259309c66da16497c830b1aca0989b10ed454b671743f1be235154",
+      "bytes": 72465
+    },
+    "qsp-retargeted-n2-t1-eps0.05/logical-resources.json": {
+      "sha256": "34e146c7d8225444b75d765885c8dd140d927a15b065f33f3c62a77e968dfacb",
+      "bytes": 11220
+    },
+    "qsp-retargeted-n2-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "79fc30f21fc41b7ac1c0e1d7edcad3b137a29a58829001322458472230c92414",
+      "bytes": 39351
+    },
+    "qsp-retargeted-n4-t1-eps0.05/frozen-p-1e-3.json": {
+      "sha256": "90722e6d88e0815ce8c746be5ecda9a0498ee26a2ecf6b994ac065e5cf0bf069",
+      "bytes": 204805
+    },
+    "qsp-retargeted-n4-t1-eps0.05/frozen-p-1e-4.json": {
+      "sha256": "13e47860a900d7c72f08c7aaba3b3f1ece764b7c0767ed512e3dba58c5ef00d5",
+      "bytes": 213392
+    },
+    "qsp-retargeted-n4-t1-eps0.05/logical-resources.json": {
+      "sha256": "d5c16f0055b471f0ec0546291d5c73a5d14b0708cdf71751d15ee785dfbfef3c",
+      "bytes": 11203
+    },
+    "qsp-retargeted-n4-t1-eps0.05/measured-trial.qasm": {
+      "sha256": "c15db228240434f294d782dd1c25db9be3c2337a1d26b87d80c69ab7155b0ab6",
+      "bytes": 171165
+    },
+    "qsp-size-resources.svg": {
+      "sha256": "aa8e8904928777235ac47a98b1fe58122b88624f2d4b1015327e88fead7632c8",
+      "bytes": 65552
+    },
+    "summary.md": {
+      "sha256": "860ed59a49702c759c7ca94dd2bb42956b356b2e3c41e9186667dd8878ccab2c",
+      "bytes": 749
+    }
+  },
+  "study_manifest_sha256": "35078f9e54e137c2718791741041c2d7b1f850409d54e9f93ecf32d0c76f82fb",
+  "native_provenance": {
+    "source_commit": "f842df78eb01cedd1fb438d5fd45c16fe48c435d",
+    "source_revision_scope": "Exact checkout root when Git is available; null for standalone packages. Content hashes identify actual source.",
+    "source_sha256": {
+      "src/openquantum/dynamics_resources.py": "d43f8c6f3211f48952b629b3c423cca94e007d9a2760803352ddc76daf58c99e",
+      "scripts/generate_dynamics_resources.py": "f00a4358e81108d23c5e0497c48f890b5a977fa324f110b1871aa018045062f9",
+      "src/openquantum/hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+      "src/openquantum/resource_estimation.py": "267329af4b100c7f9c82900f1f2713f934ec710e50fd8999d331c0f4b84654de",
+      "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+      "src/openquantum/simulation/qsp_evolution.py": "b7636da8257c6f85133ba98d88bd13aa54d065058a54e56df7418ce58d77429e",
+      "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "src/openquantum/simulation/amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "device": "CPU",
+      "seed": 20261112,
+      "packages": {
+        "qiskit": "2.6.2",
+        "qdk": "1.34.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2"
+      }
+    }
+  },
+  "native_evidence": {
+    "kind": "saved_generator_completion_manifest",
+    "external_completion_receipt_available": false,
+    "wall_seconds": null,
+    "peak_rss_kib": null,
+    "declared_cases": 24,
+    "declared_queries": 48
+  },
+  "replay_sources": {
+    "src/openquantum/dynamics_resources.py": "daf327847a1a4f6d8a8821ce7843348d30d6fc140c6e924498bbd24a40384683",
+    "scripts/generate_dynamics_resources.py": "f00a4358e81108d23c5e0497c48f890b5a977fa324f110b1871aa018045062f9",
+    "src/openquantum/hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+    "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+    "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+    "src/openquantum/simulation/qsp_evolution.py": "b7636da8257c6f85133ba98d88bd13aa54d065058a54e56df7418ce58d77429e",
+    "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "src/openquantum/simulation/amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "src/openquantum/__init__.py": "af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663",
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "scripts/source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+    "LICENSE": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+  },
+  "frozen_files": {
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+    "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+    "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+    "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+  },
+  "historical_adapter": {
+    "path": "assets/generated/dynamics-recorded-source/resource_estimation.py",
+    "sha256": "267329af4b100c7f9c82900f1f2713f934ec710e50fd8999d331c0f4b84654de"
+  },
+  "verifier_sources": {
+    "scripts/verify_dynamics_resources.py": "08eaf8c01e815a562835e66ec7cdc5f0d161243873b86757ec5d37e5f6de563b",
+    "scripts/freeze_dynamics_resources.py": "b63ef33ba12ecb6e8ff31359f3e0a9fa41941ef83bf40eca8dc9e1979a91fa7e",
+    "scripts/dynamics_physical_records.py": "d3c47056fe6b806add2bbdc20636a6974879bed67d9046edfee8d140c37161e1",
+    "scripts/dynamics_canonical_replay.py": "55aafc6d31a192e5d28dad8bcdeb4823264aff2698b4d6343ffd657592bb75ff",
+    "scripts/dynamics_source_transport.py": "0d474322a6b1870bd39063f5592bb02e5cd820ca0464b800141677594a69e6ce",
+    "scripts/tail_resource_qasm.py": "881b21fed5bae0bc4702f09f6b392823537582bf0e27b938929afa56372d3154"
+  },
+  "physical_validation": {
+    "status": "validated_frozen_conditional_dynamics_records",
+    "cases": 24,
+    "reports": 48,
+    "pareto_points": 489,
+    "csv_rows": 144,
+    "native_estimates_run": false,
+    "profiles": [
+      {
+        "name": "frozen-p-1e-3",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      {
+        "name": "frozen-p-1e-4",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      }
+    ],
+    "distance_domain": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      37,
+      39,
+      41
+    ],
+    "limitations": [
+      "Caller must authenticate original artifact/source/receipt bindings and perform bounded logical replay",
+      "Canonical Native RZ bucketization is trusted frozen evidence, not independently derived from QASM",
+      "Factory recipes, configurations and Pareto choices are trusted immutable Native outputs; search is not repeated",
+      "Stored finite-H acceptance and phase evidence remain numerical; no interval/channel/hardware certificate is produced",
+      "Arithmetic consistency does not attest fresh Native execution, global optimality or actual synthesis"
+    ]
+  },
+  "contract": "Saved conditional Native models retain their original source provenance; routine CI authenticates records, replays logical work, and checks frozen model arithmetic without Native re-estimation or factory search. No external completion receipt or measured wall/RSS is claimed.",
+  "source_reproduction_evidence": {
+    "path": "assets/generated/dynamics-replay-evidence/linux-source-reproduction.json",
+    "sha256": "f96066cd7c26bf069b14a3ef4d3602ea5d2aee65f626098a0ce76bdcd84adb60",
+    "bytes": 224988
+  }
+}

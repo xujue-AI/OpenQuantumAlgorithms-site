@@ -1,0 +1,450 @@
+{
+  "schema": "openquantum-suzuki-study-v1",
+  "status": "generated_and_numerically_checked",
+  "source_commit": "a9edff74764c2e89ea835c1ef19fc5c1e18c0e64",
+  "source_commit_scope": "Exact checkout root only; null for detached downloads. All four producer bytes authenticate when Git is available.",
+  "source_sha256": {
+    "src/openquantum/simulation/suzuki.py": "7410f1a50873847f630a49e906351be2a0a042f509738942ae5fd32ba42748be",
+    "scripts/generate_simulation_suzuki.py": "3336b53325942b21cb7b6cd0be5a3bcbf6fca149cbe696d14e4ba7e0f6403d9e",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "LICENSE": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+  },
+  "python": "3.12.14",
+  "device": "CPU",
+  "seed": null,
+  "randomness": "No stochastic algorithm or optimizer; deterministic circuit construction and numerical checks",
+  "packages": {
+    "qiskit": "2.6.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "qiskit_reference": {
+    "version": "2.6.2",
+    "source_relative": "qiskit/synthesis/evolution/suzuki_trotter.py",
+    "source_sha256": "546bc06261fb6143a2560c61ef8dfb1b6de274e236916e69876365c3420ae2c1",
+    "grouping": "Nonempty commutingA/B groups; zero blocks omitted only as a declared reference shortcut",
+    "primitive_count_scope": "Unitary reference only, not a complete measured/physical resource model"
+  },
+  "case_ids": [
+    "n1-s2-r1",
+    "n1-s2-r2",
+    "n1-s2-r4",
+    "n1-s2-r8",
+    "n1-s4-r1",
+    "n1-s4-r2",
+    "n1-s4-r4",
+    "n1-s4-r8",
+    "n1-s6-r1",
+    "n1-s6-r2",
+    "n1-s6-r4",
+    "n1-s6-r8",
+    "n2-s2-r1",
+    "n2-s2-r2",
+    "n2-s2-r4",
+    "n2-s2-r8",
+    "n2-s4-r1",
+    "n2-s4-r2",
+    "n2-s4-r4",
+    "n2-s4-r8",
+    "n2-s6-r1",
+    "n2-s6-r2",
+    "n2-s6-r4",
+    "n2-s6-r8",
+    "n3-s2-r1",
+    "n3-s2-r2",
+    "n3-s2-r4",
+    "n3-s2-r8",
+    "n3-s4-r1",
+    "n3-s4-r2",
+    "n3-s4-r4",
+    "n3-s4-r8",
+    "n3-s6-r1",
+    "n3-s6-r2",
+    "n3-s6-r4",
+    "n3-s6-r8"
+  ],
+  "canonical_case_count": 36,
+  "common_task": {
+    "time_exact": "1",
+    "coupling": "1",
+    "x_field": "7/10",
+    "z_field": "0",
+    "initial_basis": 0,
+    "observable": "Z0"
+  },
+  "generation_wall_seconds_after_imports": 2.2489280000008876,
+  "timing_scope": "After CLI parsing through source preflight, input preparation, circuit/validation/figure/file generation; excludes interpreter imports and final manifest serialization",
+  "command": {
+    "script": "scripts/generate_simulation_suzuki.py",
+    "qubits": null,
+    "orders": [
+      2,
+      4,
+      6
+    ],
+    "repetitions": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "time_exact": "1",
+    "coupling": "1",
+    "x_field": "7/10",
+    "z_field": "0",
+    "initial_basis": 0,
+    "no_sim": false,
+    "output_path": "omitted; use a dedicated fresh output directory"
+  },
+  "generator_guards": {
+    "qubits": 64,
+    "base_blocks": 16384,
+    "complete_primitive_operations": 100000
+  },
+  "dense_guards": {
+    "qubits": 3,
+    "base_blocks": 512,
+    "evolution_body_operations": 10000
+  },
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "error-vs-steps.svg": {
+      "bytes": 73560,
+      "sha256": "b8a01fa9d9408b2a4f1c347e8b36d83fbc22d5f9893580065dc61dfef7bd8ecc"
+    },
+    "error-vs-work.svg": {
+      "bytes": 81469,
+      "sha256": "42b54b0f737992379e8665affcd9e845ab28ecdc01c5bb6caabbe874a9b86d45"
+    },
+    "generate_simulation_suzuki.py": {
+      "bytes": 16744,
+      "sha256": "3336b53325942b21cb7b6cd0be5a3bcbf6fca149cbe696d14e4ba7e0f6403d9e"
+    },
+    "n1-order4-circuit.svg": {
+      "bytes": 16377,
+      "sha256": "cbf1031482d8067467a197300b39bc2d3352e5230f67bd41c5c1d66eae088a44"
+    },
+    "n1-s2-r1/measured-trial.qasm": {
+      "bytes": 107,
+      "sha256": "f57e739f17bcd98371a358fab45d989cdf5f574e125ce38d93d87f00ee5785d1"
+    },
+    "n1-s2-r1/record.json": {
+      "bytes": 5960,
+      "sha256": "0c164aa45728ec36a92fc199dade80487cc5fc6221cfdf8a27f955b70cf81bee"
+    },
+    "n1-s2-r2/measured-trial.qasm": {
+      "bytes": 121,
+      "sha256": "9d72d0beb446681205546a674fc2ef12c5cc274cb788c98a85ec9a5033e5887b"
+    },
+    "n1-s2-r2/record.json": {
+      "bytes": 5960,
+      "sha256": "7d28157bc814c95e1cd422ee2ff2668d95f9311f6f77c0cfabc2982569a29575"
+    },
+    "n1-s2-r4/measured-trial.qasm": {
+      "bytes": 153,
+      "sha256": "7b08074e8b9fbeb7d0654b37f92a089698697dabadfc3160f40f863caa54f668"
+    },
+    "n1-s2-r4/record.json": {
+      "bytes": 5978,
+      "sha256": "12c5ab18dab0fe68e0a6c4dbcd7fef32230e461666b8e8f2ee3f6db9b94850b9"
+    },
+    "n1-s2-r8/measured-trial.qasm": {
+      "bytes": 221,
+      "sha256": "d5228263139a2a90a07444aa3d7e6ff94725dbe949d7df4394653b8a24d476bb"
+    },
+    "n1-s2-r8/record.json": {
+      "bytes": 5983,
+      "sha256": "6933e04349e83332042dcdcdd3e014b1be4b22caf41af73332f3ca4b4fe5187c"
+    },
+    "n1-s4-r1/measured-trial.qasm": {
+      "bytes": 235,
+      "sha256": "9bb78917f0136f8b7f1e8bf7f8a27e2896710114f0e4360317c011676b41cd11"
+    },
+    "n1-s4-r1/record.json": {
+      "bytes": 13564,
+      "sha256": "b01ddb114b3d18b531ee51528f117bfba0e81d4f21f12b2dc54fe282eb3dca52"
+    },
+    "n1-s4-r2/measured-trial.qasm": {
+      "bytes": 379,
+      "sha256": "cc49afc58b314285938ffc13e1c2784c8d3707ab33cc823134a45b6d8156b116"
+    },
+    "n1-s4-r2/record.json": {
+      "bytes": 13538,
+      "sha256": "e7a5bf8c56084f94ea2e92cccc88dc770b84a7b69fc24245a27c3b6e947005fe"
+    },
+    "n1-s4-r4/measured-trial.qasm": {
+      "bytes": 681,
+      "sha256": "f27889e5875632ef9314f41bd635852c34db1d29f87060e4f3df2ba5066f70e8"
+    },
+    "n1-s4-r4/record.json": {
+      "bytes": 13576,
+      "sha256": "261dfaed243abf21d479e0b04a671b317b7b993710d7c7ab1e0b07ee2d6c719b"
+    },
+    "n1-s4-r8/measured-trial.qasm": {
+      "bytes": 1301,
+      "sha256": "2df37d8366b25dc9a122487ef5b0f031b738802efca23c6d1f134c1e82d182a2"
+    },
+    "n1-s4-r8/record.json": {
+      "bytes": 13555,
+      "sha256": "cb246abdff498e14bf189b4f5cbe27b0670690eedaa247b52317f08d893030f7"
+    },
+    "n1-s6-r1/measured-trial.qasm": {
+      "bytes": 847,
+      "sha256": "7db8e901e55b04cf13b02d50e2ebd6598d87b1e72859656eb7ed540423fc0f24"
+    },
+    "n1-s6-r1/record.json": {
+      "bytes": 55976,
+      "sha256": "198b41acb20a22d6c5e1075ffc143b91159a00e3f5eec7ce15761516975f3495"
+    },
+    "n1-s6-r2/measured-trial.qasm": {
+      "bytes": 1609,
+      "sha256": "a137daef71db4fc0c1face38435a576669bf37d3ddc04e8327fe592f3fc93b10"
+    },
+    "n1-s6-r2/record.json": {
+      "bytes": 55944,
+      "sha256": "7c4d48e19b4b3be4b8784c993cb873e97985eb7100347a5cdf102b4b7af20945"
+    },
+    "n1-s6-r4/measured-trial.qasm": {
+      "bytes": 3125,
+      "sha256": "2437ee8bc1f09d4bde521a0fd0818c7d5443fb3687242b06aa2681e1cb276022"
+    },
+    "n1-s6-r4/record.json": {
+      "bytes": 56011,
+      "sha256": "8791e9aef43adb2b4093f9ca47d74ed9463e680b99c0f520b5aed1a6cbf93edb"
+    },
+    "n1-s6-r8/measured-trial.qasm": {
+      "bytes": 6157,
+      "sha256": "5d5104b53b33dcffb0623b9dfce9208302ab8bee3add74be10f430b26e2fca69"
+    },
+    "n1-s6-r8/record.json": {
+      "bytes": 56082,
+      "sha256": "bffe4e9afcf1b0be93a591cb2e0d2b92019c92fd22c0c144e4f7506abe6d073e"
+    },
+    "n2-order4-circuit.svg": {
+      "bytes": 80994,
+      "sha256": "780ac1e341536aaac272e8baf925362589ff275f69236ed70460e028a4ca81ee"
+    },
+    "n2-s2-r1/measured-trial.qasm": {
+      "bytes": 242,
+      "sha256": "e5fa53a983a341ec0eba23268bcccbcd93ea5fed1a347f6d80ae9a765a35d154"
+    },
+    "n2-s2-r1/record.json": {
+      "bytes": 6154,
+      "sha256": "dc0a43bf673f4b9c861c88819d8a4242e4e8d9fcb1c14ecb01a20f1b5a41e722"
+    },
+    "n2-s2-r2/measured-trial.qasm": {
+      "bytes": 358,
+      "sha256": "502c98dd86ec3fc6ba3feb5ae291e4a579786083af0cc9c73677bc90ff2e7aad"
+    },
+    "n2-s2-r2/record.json": {
+      "bytes": 6165,
+      "sha256": "00e2afed4697d09f09cbd2319e67fa43f9ad95e950730562a85dd19de7b6545c"
+    },
+    "n2-s2-r4/measured-trial.qasm": {
+      "bytes": 606,
+      "sha256": "10dc900599e388b282fa969c4dcdbbef202ab1f58344ae9f490642ce19186822"
+    },
+    "n2-s2-r4/record.json": {
+      "bytes": 6171,
+      "sha256": "aafff0c328e48bfaace2bccb7fcfac94d37bd54db2a7073f58fcee27b34262a5"
+    },
+    "n2-s2-r8/measured-trial.qasm": {
+      "bytes": 1118,
+      "sha256": "5b28294769b1a3701ec9251358b828e74b16d1934c163489056b23ffb2eeee56"
+    },
+    "n2-s2-r8/record.json": {
+      "bytes": 6176,
+      "sha256": "cb43b509de6623e5be6e391940c83e4c58a1038b3334342ac37384ae9b3469d1"
+    },
+    "n2-s4-r1/measured-trial.qasm": {
+      "bytes": 1002,
+      "sha256": "e82d25c4d3f9531046514cedd79c6887fc6d1c339c2a7ea325a2d6b137fe5ed6"
+    },
+    "n2-s4-r1/record.json": {
+      "bytes": 13963,
+      "sha256": "1d277a9210cdfbe2cebc64b603f97880cda7b5c27a9e975bd38e24d73963cb05"
+    },
+    "n2-s4-r2/measured-trial.qasm": {
+      "bytes": 1898,
+      "sha256": "d9a8ed36c06a3d373ec1be8c89b749cbdf349cc912cfbda9ec9909fe96c4cae3"
+    },
+    "n2-s4-r2/record.json": {
+      "bytes": 13979,
+      "sha256": "cf1d9c2181782c29973e3004ac6b509f737588ce13797d96d3b6dd87f08386cc"
+    },
+    "n2-s4-r4/measured-trial.qasm": {
+      "bytes": 3702,
+      "sha256": "3ed365789df28f07c9e1bf5619eef4b18781503c2e8c52278641e341f7ee00af"
+    },
+    "n2-s4-r4/record.json": {
+      "bytes": 13985,
+      "sha256": "379af12857d5050faeaef7ad9add1f4954a49c88f3c4ce234c7393bc5f860757"
+    },
+    "n2-s4-r8/measured-trial.qasm": {
+      "bytes": 7422,
+      "sha256": "cf03bb6592795ed3f960553dbfea54fc1bd8f70007f53a43116e4b7b607bf831"
+    },
+    "n2-s4-r8/record.json": {
+      "bytes": 14000,
+      "sha256": "f47aecc2665c960ce4f34ff8de778c45c879364fe9dd704167864848c5682c32"
+    },
+    "n2-s6-r1/measured-trial.qasm": {
+      "bytes": 4640,
+      "sha256": "18de08bbf50ff8efd7b4a67e62b4052e156892eab12900304f53cf3dbe84f30e"
+    },
+    "n2-s6-r1/record.json": {
+      "bytes": 57388,
+      "sha256": "91689e66a26aa546d3d22c28f5f5e08603e275fdbf576d6083d5aedda9d46227"
+    },
+    "n2-s6-r2/measured-trial.qasm": {
+      "bytes": 9170,
+      "sha256": "1fbc814cc9e953775baf603cadafc1a215c3074c2813230646518cf1394a0c7d"
+    },
+    "n2-s6-r2/record.json": {
+      "bytes": 57411,
+      "sha256": "cde6aa10d79fb540709dc6e321c2468dc948c41ca48dcaf3b009c3e51fdce7ba"
+    },
+    "n2-s6-r4/measured-trial.qasm": {
+      "bytes": 18286,
+      "sha256": "ebde8ba72f05b7dabe8525c86e6e4acede244242f95a943bd60d0b8954302233"
+    },
+    "n2-s6-r4/record.json": {
+      "bytes": 57448,
+      "sha256": "95d910241d01b5c1563fabbfdb38f024fa89607c31d818f461a6f23153489df9"
+    },
+    "n2-s6-r8/measured-trial.qasm": {
+      "bytes": 36766,
+      "sha256": "08cdda9c75d66e568731b567b06ef7b06e7989af29f232d98d7925742a28ffe5"
+    },
+    "n2-s6-r8/record.json": {
+      "bytes": 57495,
+      "sha256": "76e8417d623006479d1440ba5bb06e49cd8202643a5ac9667ba8f77679c99b72"
+    },
+    "n3-order4-circuit.svg": {
+      "bytes": 144413,
+      "sha256": "4f97d92625574e6656ccd8f839bcfd431b1bd00944da85bff1f3a3646ee2d2a2"
+    },
+    "n3-s2-r1/measured-trial.qasm": {
+      "bytes": 377,
+      "sha256": "c69e3cb6fd3a8fa0539c932a67cb91b440b4c60de3d63e39348fa555ec29e469"
+    },
+    "n3-s2-r1/record.json": {
+      "bytes": 6287,
+      "sha256": "d0328a23c571fd205cf4349cd2f23060fd97baa3f8e83a2d46fd2714f77a9ddc"
+    },
+    "n3-s2-r2/measured-trial.qasm": {
+      "bytes": 595,
+      "sha256": "2f15fa5060308baa0129de703694532b25e2a5f734d910279041458ed00cff2d"
+    },
+    "n3-s2-r2/record.json": {
+      "bytes": 6295,
+      "sha256": "a90db20997e912dd482e940b6f5d98344a5b0f6d7870a009471c46b77eb92426"
+    },
+    "n3-s2-r4/measured-trial.qasm": {
+      "bytes": 1059,
+      "sha256": "e62f1dfca04dce877c5c2b633a260481bf9eef9e3b8931b629e8f5ccad0c4545"
+    },
+    "n3-s2-r4/record.json": {
+      "bytes": 6304,
+      "sha256": "c0a18eff217dd032b76500332383847d9ec49064e5c268895a2f24b85ac510fb"
+    },
+    "n3-s2-r8/measured-trial.qasm": {
+      "bytes": 2015,
+      "sha256": "7a7f1da7a8aa34a072dc82eac2ac4823f642fa49fe3144ff3cc5a96d7a869f92"
+    },
+    "n3-s2-r8/record.json": {
+      "bytes": 6307,
+      "sha256": "8dbcc8ebcb4d33b9a2e0ea53b26bb3d91f34758cc77e7cfa597cb6af638cfbe3"
+    },
+    "n3-s4-r1/measured-trial.qasm": {
+      "bytes": 1769,
+      "sha256": "4d2054049827032a2944cdc77ab3a8095a72dc82ebfa846403f1fe24e77a3c87"
+    },
+    "n3-s4-r1/record.json": {
+      "bytes": 14101,
+      "sha256": "2505b1f8902f56f00441ee9653f5033c0c4cfefc68c350a3e0fb9cf565b77929"
+    },
+    "n3-s4-r2/measured-trial.qasm": {
+      "bytes": 3417,
+      "sha256": "fd0497e4fd7e499f4abd28c4d29f7a607633079bdb5229450cf39fe5d60129c7"
+    },
+    "n3-s4-r2/record.json": {
+      "bytes": 14116,
+      "sha256": "e693d33d9c3f13fb911fa9dba4297cf55cdc1f3f24626e3d2cc88d6eb12738f7"
+    },
+    "n3-s4-r4/measured-trial.qasm": {
+      "bytes": 6723,
+      "sha256": "aa8a1616f7a124c5d1f9d646631afcf220f6175de22e2a40949f10ebc594f32e"
+    },
+    "n3-s4-r4/record.json": {
+      "bytes": 14123,
+      "sha256": "2e0fb22150079a07e17c624efb551009491300cf1f91c898699632d62f7f10d1"
+    },
+    "n3-s4-r8/measured-trial.qasm": {
+      "bytes": 13543,
+      "sha256": "770cc2ea335046f801d1d69f5b9c73f4c26e4efea02af2ae8fd29a8252338759"
+    },
+    "n3-s4-r8/record.json": {
+      "bytes": 14141,
+      "sha256": "c1bf785bc4e59179d69a0d3fb4c1e074d11faf747e923946fb167f707727104f"
+    },
+    "n3-s6-r1/measured-trial.qasm": {
+      "bytes": 8433,
+      "sha256": "4635c28a2c9828e76a18f63b583d1ec889ba4c10a001653e4138a1df53b0d3b0"
+    },
+    "n3-s6-r1/record.json": {
+      "bytes": 57519,
+      "sha256": "494aaf161e7c48caecfb8f0219d0075c4c4e090539c4084e37bd4a977606e11e"
+    },
+    "n3-s6-r2/measured-trial.qasm": {
+      "bytes": 16731,
+      "sha256": "59cc775010eb0d93a929d066eb9907ce7095f4d649219941de889740f7a89642"
+    },
+    "n3-s6-r2/record.json": {
+      "bytes": 57527,
+      "sha256": "2cd7135418642dc8f393d55d82bfb1c97af7179e130ed818d58a0145479ead35"
+    },
+    "n3-s6-r4/measured-trial.qasm": {
+      "bytes": 33447,
+      "sha256": "4d2df62bc96b758362e2bcb0382e04090ab5d47dd36f69df92675e125d7e3887"
+    },
+    "n3-s6-r4/record.json": {
+      "bytes": 57575,
+      "sha256": "a60dfeb9dd554c3d90123bd3ad27d574d6ae164fceb518bb538cb20ab10f2eab"
+    },
+    "n3-s6-r8/measured-trial.qasm": {
+      "bytes": 67375,
+      "sha256": "39cc02a1b950978a423c9e79fa4c09b871dc954d87139bd14c92ce07112ad13f"
+    },
+    "n3-s6-r8/record.json": {
+      "bytes": 57632,
+      "sha256": "d03f38ec66a1f718f933dc2bc45ac6d625d10d46aaed2e1d1b91ec1749b89269"
+    },
+    "signed-substeps.svg": {
+      "bytes": 55969,
+      "sha256": "1e26000369764baca980e5f944fe56af82d9d32e1c5ca89dcbd7d45e8ad34c97"
+    },
+    "summary.csv": {
+      "bytes": 7425,
+      "sha256": "0ce445b423fb2901d9f9f17a7e25964e30332f6d5ac57aaa365394ad69f541c5"
+    },
+    "summary.md": {
+      "bytes": 946,
+      "sha256": "7f74b88e1ec4369bf25d3c1d97387092a3f73c2762744e7fd7839a65611693e9"
+    },
+    "suzuki.py": {
+      "bytes": 20672,
+      "sha256": "7410f1a50873847f630a49e906351be2a0a042f509738942ae5fd32ba42748be"
+    }
+  },
+  "payload_bytes": 1679681,
+  "native_estimator_calls": 0,
+  "factory_searches": 0,
+  "gpu_jobs": 0,
+  "physical_resource_estimate": null,
+  "scope": "Original small ideal circuit and independent numerical work/error study. Mathematical source scalar bounds are separate from splitting/synthesis/physical errors; no generic empirical step certificate, formal proof or unconditional advantage."
+}

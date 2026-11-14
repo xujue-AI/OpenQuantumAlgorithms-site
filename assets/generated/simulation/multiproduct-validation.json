@@ -1,0 +1,62 @@
+{
+  "schema": "openquantum-multiproduct-validation-summary-v1",
+  "verified_date": "2026-11-13",
+  "tested_source_commit": "372a2ec1f96d0abbcb1447b52465ce34cd5b7836",
+  "module_sha256": "810f4c8431845f8d8310ab56dc84564fd521bc5ccb6c7d6d7ac6e398ad1b211a",
+  "generator_sha256": "bd68b40ad9c3745241094c4e52707c0e2b17230db9fb1f01ba08579a3d2d6489",
+  "python": "3.12.14",
+  "device": "CPU",
+  "scientific_tests_passed": 103,
+  "notebook_code_cells_executed": 7,
+  "fixed_grid": {
+    "systems": [
+      1,
+      2,
+      3
+    ],
+    "steps": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "extra_cases": [
+      [
+        2,
+        32
+      ],
+      [
+        3,
+        32
+      ]
+    ],
+    "J": 1,
+    "h": 0.7,
+    "time": 1,
+    "initial_basis": 0,
+    "readout": "Z(q0)",
+    "seed": 17,
+    "numerical_cases": 14
+  },
+  "large_export": {
+    "n_system": 32,
+    "steps": 1,
+    "numerical_validation_performed": false,
+    "complete_exported_instructions": 26096,
+    "complete_oaa_trial_instructions": 5427
+  },
+  "implementation_reference_tolerance": 1e-10,
+  "max_recorded_implementation_reference_residual": 4.627153740745378e-12,
+  "source_generation_and_small_models_checked": true,
+  "synthesis_performed": false,
+  "physical_estimation_performed": false,
+  "formalization_reproduced": false,
+  "literal_quantum_trial_population_executed": false,
+  "literal_postselection_retries_executed": false,
+  "scope": "small primitive/reference agreement, fixed-case approximation metrics, known-input instruments, source-only n32 export and standalone deterministic replay; no large simulation, full-joint ideal-evolution/diamond-norm certificate, hardware or total-accuracy claim",
+  "bundles": {
+    "grid_manifest_sha256": "ec73967168a1d80fd70439c872f80f174a506f99875c234c6bd6f2a3a973f6b7",
+    "large_manifest_sha256": "c3b5f06b9fb9a3a10f6d5fd70ea37e55e21a0c5cb7ce00c74fd553bea8282f5f"
+  },
+  "provenance_note": "The bundles record actual source-file hashes; this summary binds them to the reviewed source checkpoint."
+}

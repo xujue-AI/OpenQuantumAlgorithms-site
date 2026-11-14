@@ -1,0 +1,50 @@
+{
+  "schema": "openquantum.dqi.public_saved_bundle.v1",
+  "scope": "Portable saved coherent component and ordinary reusable notebook; notebook source projection permits execution outputs to change. Generator materialization is separate from coherent validation.",
+  "files": {
+    "LICENSE.txt": {
+      "kind": "file",
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "dqi-circuit.svg": {
+      "kind": "file",
+      "bytes": 7487,
+      "sha256": "d885a5f9231e132d5dd837ddf908d68637814a16d96ad52672b33f24d2791451"
+    },
+    "dqi-validated.json": {
+      "kind": "file",
+      "bytes": 9194,
+      "sha256": "8025eb5a3e97a775ea620e5014ec14af4abf51d6765db82ec9635ed34b4c3477"
+    },
+    "dqi.qasm": {
+      "kind": "file",
+      "bytes": 4971,
+      "sha256": "e334295404c7bd518133ff6e513bea9e360c51fcb9b2dbf4d7d056df6cc01eb9"
+    },
+    "generate_optimization_dqi.py": {
+      "kind": "file",
+      "bytes": 16221,
+      "sha256": "5312969299af870925d766263eda13fc27f156b497b6fa40cf744bc3ff620cca"
+    },
+    "optimization_dqi.ipynb": {
+      "kind": "notebook_sources",
+      "source_sha256": "bdd3db3d07a8f4218a4d32f53b1371196b52466de7d69ec856c36f4850052667"
+    },
+    "optimization_dqi.py": {
+      "kind": "file",
+      "bytes": 21182,
+      "sha256": "370088484830c23140f14181a3892194fa936e4477327536946423854fcc1f99"
+    },
+    "requirements-lock.txt": {
+      "kind": "file",
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "verify_dqi_saved.py": {
+      "kind": "file",
+      "bytes": 16770,
+      "sha256": "981d550cf0aac5ec8f1ceb6d8c8f8625fe00a5cdcba9646ed9d2cbb011c4242e"
+    }
+  }
+}

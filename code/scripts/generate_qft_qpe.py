@@ -18,6 +18,20 @@ import platform
 from pathlib import Path
 import subprocess
 import sys
+
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
 import tempfile
 import shutil
 
@@ -69,10 +83,7 @@ def main():
     (output/'LICENSE.txt').write_bytes((ROOT/'LICENSE').read_bytes())
     environment={'python':platform.python_version(),'device':'CPU','seed':731,
                  'packages':{p:importlib.metadata.version(p) for p in ('qiskit','numpy','matplotlib')}}
-    try:
-        source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True,stderr=subprocess.DEVNULL).strip()
-    except (OSError,subprocess.CalledProcessError):
-        source_commit=None
+    source_commit=git_revision(ROOT)
     provenance={'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
                 'source_commit':source_commit,
                 'source_status':'source hash identifies implementation; HEAD may precede this generated increment',

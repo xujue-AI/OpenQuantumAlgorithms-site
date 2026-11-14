@@ -1,0 +1,104 @@
+{
+  "contract": {
+    "kind": "minimum_of_retained-target_medians",
+    "dimers": 2,
+    "data_qubits": 4,
+    "phase_bits": 4,
+    "phase_width": 16,
+    "encoding": {
+      "shift": -4.61715311755506,
+      "span": 7.904689229814596
+    },
+    "energy_absolute_error_ideal": 0.49404307686341226,
+    "ground_overlap_lower_bound": 0.9752742289439791,
+    "overlap_promise_source": "analytic two-parity dimer family; not generic chemistry state preparation",
+    "independent_groups": 2,
+    "qpe_rounds_per_retained_target": 19,
+    "one_round_phase_success_lower_bound": 0.8105694691387022,
+    "median_failure_bound_per_group": 0.0010171187434588472,
+    "no_ground_group_failure_bound": 0.0006113637543147618,
+    "ideal_failure_union_bound": 0.0026456012412324563,
+    "ideal_confidence_lower_bound": 0.9973543987587675,
+    "requested_ideal_failure": 0.005,
+    "total_qpe_rounds": 38,
+    "total_base_U_equivalent_calls": 570,
+    "assumptions": [
+      "exact analytic-angle Hamiltonian access",
+      "independent HF preparations across groups",
+      "same target retained for all median rounds within each group",
+      "spectrum maps into [1/4,3/4]",
+      "correct classical median/min decoding",
+      "no physical faults or synthesis error"
+    ],
+    "hardware_or_synthesis_confidence_certified": false
+  },
+  "access_mode": "repeated_U",
+  "controlled_power_circuits_all_groups": 570,
+  "logical_qubits_per_group": 80,
+  "source_instruction_counts_per_group": {
+    "cEnergy U": 285,
+    "h": 152,
+    "cp": 114,
+    "measure": 76,
+    "swap": 38,
+    "x": 2
+  },
+  "primitive_counts_per_group": {
+    "cx": 61902,
+    "t": 27362,
+    "tdg": 23940,
+    "rz": 15445,
+    "ry": 13110,
+    "h": 6426,
+    "measure": 76,
+    "x": 2
+  },
+  "primitive_operations_per_group": 148263,
+  "dependency_depth_per_group": 95925,
+  "primitive_operations_all_groups": 296526,
+  "qubit_measurements_all_groups": 152,
+  "hartree_fock_preparations_all_groups": 2,
+  "qasm_sha256": "bc9c6374c919fab9ac391d60435a355b9910fbf4ae70b50b308550c5dca002ab",
+  "compiled_global_phase_radians": 3.632466505714212,
+  "qasm_phase_policy": "pinned exporter can omit overall compiled global phase; complete measured groups preserve probabilities; not a recontrolled oracle specification",
+  "construction_and_lowering_wall_seconds": 2.623315677046776,
+  "full_static_group_simulated": false,
+  "sequential_equivalent_simulation": null,
+  "included": [
+    "one HF preparation per group",
+    "all repeated controlled exact dimer accesses",
+    "identity/shift coherent phases",
+    "every clock Hadamard and inverse QFT",
+    "all final clock measurements",
+    "all serial median groups",
+    "classical median/min rule"
+  ],
+  "excluded_physical_costs": [
+    "fresh zero-state initialization/reset faults and timing",
+    "classical coefficient/SCF/mapping construction",
+    "compilation and decoder/routing implementation",
+    "classical readout/median communication latency"
+  ],
+  "source_commit": null,
+  "source_dirty": null,
+  "source_commit_scope": "exact checkout at generation, if available; content hashes identify working source",
+  "source_sha256": {
+    "src/openquantum/energy_estimation.py": "8f10d8ae76ad472884910ebf7f7e3de90a9a58f0b8e9801c14310fdc68fcf9ae",
+    "src/openquantum/qft_qpe.py": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab",
+    "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+    "scripts/generate_energy_estimation.py": "054e3c2b2e2b1811f3b5170de3376378e6155e4a985289efa4a1acf0e1066f36",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "device": "CPU",
+    "seed": 20261112,
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "qdk": "1.34.0"
+    }
+  }
+}

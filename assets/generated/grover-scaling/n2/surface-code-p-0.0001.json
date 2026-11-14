@@ -1,5 +1,5 @@
 {
-  "classical_estimator_wall_time_s": 0.04729098399997156,
+  "classical_estimator_wall_time_s": 0.06420702000013989,
   "estimate": {
     "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
     "budget": {
@@ -60,7 +60,7 @@
         "model_properties": {
           "ALGORITHM_COMPUTE_QUBITS": 2,
           "ALGORITHM_MEMORY_QUBITS": 0,
-          "EVALUATION_TIME": 71698,
+          "EVALUATION_TIME": 111958,
           "LOGICAL_COMPUTE_QUBITS": 9,
           "LOGICAL_MEMORY_QUBITS": 0,
           "NUM_TS_PER_ROTATION": 5,
@@ -121,7 +121,24 @@
       "model_error_per_rotation": 0.0,
       "num_arbitrary_rotations": 0
     },
-    "synthesized_application_trace": "@compute_qubits(9)\n{\n  repeat 2 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8)\n  }\n}\n"
+    "synthesized_application_trace": "@compute_qubits(9)\n{\n  repeat 2 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8)\n  }\n}\n",
+    "transpiler": {
+      "basis_gates": [
+        "h",
+        "x",
+        "z",
+        "s",
+        "sdg",
+        "t",
+        "tdg",
+        "rx",
+        "ry",
+        "rz",
+        "cx"
+      ],
+      "optimization_level": 1,
+      "seed_transpiler": 7
+    }
   },
   "profile": {
     "factory_model": "RoundBasedFactory",

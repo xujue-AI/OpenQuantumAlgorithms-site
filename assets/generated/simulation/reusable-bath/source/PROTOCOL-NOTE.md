@@ -1,0 +1,3 @@
+# Preserved source protocol
+
+The scientific-only coefficient/protocol JSON is a frozen projection of the reviewed source recipe; it contains no private plan or authorization. The private historical recipe is preserved separately and is not exported. Recorded numerical evidence is in results.json and its artifact manifest. Loading this protocol does not authorize execution, inherit continuum accuracy, or produce a large-system generator. Only the one-spin bounded emitter/scalar count source is supplied here. The reference source is for inspection and requires an explicitly bounded caller; counting never imports or dispatches it. Physical budgets and synthesis are uncomputed.

@@ -1,0 +1,214 @@
+{
+  "modulus": 15,
+  "base": 2,
+  "phase_bits": 4,
+  "integer_bits": 4,
+  "ripple": {
+    "logical_qubits": 20,
+    "decomposed_gate_counts": {
+      "cx": 7690,
+      "t": 3837,
+      "tdg": 2952,
+      "h": 1776,
+      "rz": 117,
+      "x": 93,
+      "ry": 4,
+      "measure": 4
+    },
+    "dependency_depth": 9978,
+    "primitive_operations": 16473,
+    "rotation_basis_operations": 121
+  },
+  "fourier_same_task": {
+    "logical_qubits": 14,
+    "decomposed_gate_counts": {
+      "rz": 4356,
+      "cx": 3778,
+      "h": 442,
+      "ry": 32,
+      "t": 32,
+      "tdg": 24,
+      "measure": 4,
+      "x": 1
+    },
+    "dependency_depth": 4994,
+    "primitive_operations": 8669,
+    "rotation_basis_operations": 4388
+  },
+  "actual_source_primitive_counts": {
+    "x": 97,
+    "h": 8,
+    "ccx": 976,
+    "cx": 1760,
+    "cswap": 8,
+    "swap": 2,
+    "cp": 6
+  },
+  "simulation": {
+    "performed": true,
+    "method": "bounded source-gate complex sparse statevector; actual H/phase/Boolean primitives",
+    "modulus": 15,
+    "base": 2,
+    "phase_bits": 4,
+    "total_qubits": 20,
+    "probabilities": [
+      0.24999999999999967,
+      0.0,
+      0.0,
+      0.0,
+      0.24999999999999967,
+      0.0,
+      0.0,
+      0.0,
+      0.24999999999999967,
+      0.0,
+      0.0,
+      0.0,
+      0.24999999999999967,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_probabilities": [
+      0.25,
+      4.686749320818307e-34,
+      9.37349864163661e-34,
+      4.218074388736474e-33,
+      0.25,
+      4.686749320818307e-34,
+      9.37349864163661e-34,
+      4.218074388736474e-33,
+      0.25,
+      4.686749320818307e-34,
+      9.37349864163661e-34,
+      4.218074388736474e-33,
+      0.25,
+      4.686749320818307e-34,
+      9.37349864163661e-34,
+      4.218074388736474e-33
+    ],
+    "maximum_probability_error": 3.3306690738754696e-16,
+    "dirty_work_probability": 0.0,
+    "norm": 0.9999999999999987,
+    "qiskit_dense_check_performed": false,
+    "peak_nonzero_amplitudes": 16,
+    "source_gate_state_applications": 45564
+  },
+  "boolean_multiplier_validation": {
+    "performed": true,
+    "valid_control_input_cases": 30,
+    "all_work_zero_on_tested_inputs": true,
+    "all_valid_inputs_tested": true,
+    "tested_input_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "method": "exact integer interpreter of actual X/CX/CCX/SWAP source primitives"
+  },
+  "retry_contract": {
+    "fixed_modulus": 15,
+    "fixed_base": 2,
+    "phase_bits": 4,
+    "reference_order": 4,
+    "ideal_factoring_success_probability_per_trial": 0.5,
+    "ideal_sampling_failure_allowance": 0.005,
+    "serial_trials": 8,
+    "records": [
+      {
+        "outcome": 0,
+        "probability": 0.25,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 4,
+        "probability": 0.25,
+        "recovered_order": 4,
+        "factors": [
+          3,
+          5
+        ]
+      },
+      {
+        "outcome": 8,
+        "probability": 0.25,
+        "recovered_order": null,
+        "factors": []
+      },
+      {
+        "outcome": 12,
+        "probability": 0.25,
+        "recovered_order": 4,
+        "factors": [
+          3,
+          5
+        ]
+      }
+    ],
+    "scope": "fixed chosen base; no random-base or generic factoring guarantee",
+    "classical_reference_used_only_for_validation_and_sampling_contract": true
+  },
+  "comparison_scope": "identical N/a/t, input1, exponent readout, exact-angle circuit model and reconstruction rule; logical counts only",
+  "physical_estimation_status": "separate conditional comparison file for default N15 only",
+  "arithmetic": "Cuccaro-style MAJ/UMA modulo2^m add, controlled constant preparation, borrow cleanup, compute-swap-unmultiply",
+  "valid_domain": "x<N, accumulator/borrow/constant/carry initialized0; reversible extension unspecified on dirty/invalid input",
+  "logical_scaling": "width t+3n+4; adderO(n), multiplierO(n^2), fullO(t*n^2+t^2), O(n^3) at t2n",
+  "limits": {
+    "source_qubits": 64,
+    "source_primitives": 100000,
+    "sparse_phase_bits": 8,
+    "sparse_amplitudes": 8192,
+    "sparse_gate_state_work": 4000000,
+    "qiskit_dense_qubits": 20,
+    "dense_gate_amplitude_work": 4294967296,
+    "input_bits": 12,
+    "phase_bits_generation": 24,
+    "primitive_export": 500000
+  },
+  "preparation_and_readout": "all model-zero ancillas, X for input1, exponent H, explicit controlled multipliers and cleanup, inverseQFT, final t readouts",
+  "included_in_counts": [
+    "all controlled constant preparation/unpreparation",
+    "borrow and carry handling",
+    "inverse arithmetic",
+    "input and exponent preparation",
+    "inverseQFT",
+    "complete exponent readout"
+  ],
+  "excluded_from_physical_runtime": [
+    "classical base choice/CF/gcd/verification",
+    "generation/compilation",
+    "generic factoring success",
+    "certified synthesis sequence or confidence",
+    "exact Clifford scheduling"
+  ],
+  "compiled_global_phase_radians": 5.792311455056193,
+  "qasm_policy": "exporter omits whole global phase; complete measured trial probabilities preserved; not phase-preserving controlled oracle specification",
+  "module_sha256": "fb3acf345459446d20109d698efefdabd8f906d5ebaf48c8febd1a7a3bfcb282",
+  "base_module_sha256": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3",
+  "qasm_sha256": "8c995af6cd7e292eaa53028d3f5a9ce3950f5d0bcb06d6f6db170511dd72b5a4",
+  "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+  "source_commit_scope": "checkout at generation; module hashes identify exact working sources",
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU"
+  },
+  "wall_seconds_generation_compilation_validation": 0.7402657109998927
+}

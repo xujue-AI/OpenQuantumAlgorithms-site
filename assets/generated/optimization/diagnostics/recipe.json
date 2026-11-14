@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "recipe_id": "optimization-matched-preparations-v1",
+  "fixed_predeclared_recipe": true,
+  "fixed_published_recipe": false,
+  "cases": [
+    {
+      "case_id": "qaoa-cycle-4-p1",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 4,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "ratio_at_least": 0.8
+      },
+      "initial_shots_per_group": 128,
+      "base_shots_per_group": 468,
+      "parameter_count": 2,
+      "starts": [
+        {
+          "start_id": "original",
+          "parameters": [
+            0.2,
+            0.1
+          ],
+          "stream_id": 30
+        },
+        {
+          "start_id": "alternate",
+          "parameters": [
+            0.6,
+            0.4
+          ],
+          "stream_id": 31
+        }
+      ],
+      "schedule": [
+        [
+          0.4,
+          468,
+          4
+        ],
+        [
+          0.2,
+          936,
+          4
+        ],
+        [
+          0.1,
+          1872,
+          4
+        ]
+      ],
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_groups_per_seed": 61,
+        "training_shots_per_seed": 65648,
+        "validation_shots_per_seed": 16384,
+        "total_shots_per_seed": 82032,
+        "controls_per_start": 2
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-4-p2",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 4,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "ratio_at_least": 0.8
+      },
+      "initial_shots_per_group": 128,
+      "base_shots_per_group": 260,
+      "parameter_count": 4,
+      "starts": [
+        {
+          "start_id": "original",
+          "parameters": [
+            0.2,
+            0.1,
+            0.2,
+            0.1
+          ],
+          "stream_id": 32
+        },
+        {
+          "start_id": "alternate",
+          "parameters": [
+            0.6,
+            0.4,
+            0.6,
+            0.4
+          ],
+          "stream_id": 33
+        }
+      ],
+      "schedule": [
+        [
+          0.4,
+          260,
+          4
+        ],
+        [
+          0.2,
+          520,
+          4
+        ],
+        [
+          0.1,
+          1040,
+          4
+        ]
+      ],
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_groups_per_seed": 109,
+        "training_shots_per_seed": 65648,
+        "validation_shots_per_seed": 16384,
+        "total_shots_per_seed": 82032,
+        "controls_per_start": 2
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-6-p1",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 6,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "ratio_at_least": 0.8
+      },
+      "initial_shots_per_group": 128,
+      "base_shots_per_group": 468,
+      "parameter_count": 2,
+      "starts": [
+        {
+          "start_id": "original",
+          "parameters": [
+            0.2,
+            0.1
+          ],
+          "stream_id": 34
+        },
+        {
+          "start_id": "alternate",
+          "parameters": [
+            0.6,
+            0.4
+          ],
+          "stream_id": 35
+        }
+      ],
+      "schedule": [
+        [
+          0.4,
+          468,
+          4
+        ],
+        [
+          0.2,
+          936,
+          4
+        ],
+        [
+          0.1,
+          1872,
+          4
+        ]
+      ],
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_groups_per_seed": 61,
+        "training_shots_per_seed": 65648,
+        "validation_shots_per_seed": 16384,
+        "total_shots_per_seed": 82032,
+        "controls_per_start": 2
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-6-p2",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 6,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "ratio_at_least": 0.8
+      },
+      "initial_shots_per_group": 128,
+      "base_shots_per_group": 260,
+      "parameter_count": 4,
+      "starts": [
+        {
+          "start_id": "original",
+          "parameters": [
+            0.2,
+            0.1,
+            0.2,
+            0.1
+          ],
+          "stream_id": 36
+        },
+        {
+          "start_id": "alternate",
+          "parameters": [
+            0.6,
+            0.4,
+            0.6,
+            0.4
+          ],
+          "stream_id": 37
+        }
+      ],
+      "schedule": [
+        [
+          0.4,
+          260,
+          4
+        ],
+        [
+          0.2,
+          520,
+          4
+        ],
+        [
+          0.1,
+          1040,
+          4
+        ]
+      ],
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_groups_per_seed": 109,
+        "training_shots_per_seed": 65648,
+        "validation_shots_per_seed": 16384,
+        "total_shots_per_seed": 82032,
+        "controls_per_start": 2
+      }
+    },
+    {
+      "case_id": "vqe-open-chain-4",
+      "algorithm": "vqe",
+      "graph_family": "open-chain",
+      "n_qubits": 4,
+      "p": null,
+      "edges": [],
+      "groups": [
+        "all_z",
+        "all_x"
+      ],
+      "target": {
+        "density_gap_at_most": 0.05
+      },
+      "initial_shots_per_group": 64,
+      "base_shots_per_group": 130,
+      "parameter_count": 4,
+      "hamiltonian": "-sum_i Z_i+0.5 sum_i X_i X_(i+1); open chain",
+      "ansatz": "RY on each wire, then ascending CX(i,i+1)",
+      "starts": [
+        {
+          "start_id": "original",
+          "parameters": [
+            0.6,
+            0.6,
+            0.6,
+            0.6
+          ],
+          "stream_id": 38
+        },
+        {
+          "start_id": "alternate",
+          "parameters": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stream_id": 39
+        }
+      ],
+      "schedule": [
+        [
+          0.4,
+          130,
+          4
+        ],
+        [
+          0.2,
+          260,
+          4
+        ],
+        [
+          0.1,
+          520,
+          4
+        ]
+      ],
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_groups_per_seed": 218,
+        "training_shots_per_seed": 65648,
+        "validation_shots_per_seed": 32768,
+        "total_shots_per_seed": 98416,
+        "controls_per_start": 2
+      }
+    },
+    {
+      "case_id": "vqe-open-chain-6",
+      "algorithm": "vqe",
+      "graph_family": "open-chain",
+      "n_qubits": 6,
+      "p": null,
+      "edges": [],
+      "groups": [
+        "all_z",
+        "all_x"
+      ],
+      "target": {
+        "density_gap_at_most": 0.05
+      },
+      "initial_shots_per_group": 64,
+      "base_shots_per_group": 90,
+      "parameter_count": 6,
+      "hamiltonian": "-sum_i Z_i+0.5 sum_i X_i X_(i+1); open chain",
+      "ansatz": "RY on each wire, then ascending CX(i,i+1)",
+      "starts": [
+        {
+          "start_id": "original",
+          "parameters": [
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6
+          ],
+          "stream_id": 40
+        },
+        {
+          "start_id": "alternate",
+          "parameters": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stream_id": 41
+        }
+      ],
+      "schedule": [
+        [
+          0.4,
+          90,
+          4
+        ],
+        [
+          0.2,
+          180,
+          4
+        ],
+        [
+          0.1,
+          360,
+          4
+        ]
+      ],
+      "planned": {
+        "training_calls_per_seed": 157,
+        "training_groups_per_seed": 314,
+        "training_shots_per_seed": 65648,
+        "validation_shots_per_seed": 32768,
+        "total_shots_per_seed": 98416,
+        "controls_per_start": 2
+      }
+    }
+  ],
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "comparison_z": 2.0,
+  "control_modes": [
+    "exact-objective",
+    "expected-margin"
+  ],
+  "execution_order": "all 36 sampled runs, then 24 deterministic CPU controls",
+  "budget_matched": "training preparations only; not source gates, synthesis or physical cost",
+  "starts_policy": "predeclared starts; no fifth winning angles or diagnostic witnesses",
+  "validation_shots_per_group": 16384,
+  "validation_failure_total": 0.05,
+  "validation_failure_per_group": 0.0010416666666666667,
+  "normalized_holdout_precision_target": 0.05,
+  "planned": {
+    "sampled_runs": 36,
+    "cpu_controls": 24,
+    "training_calls": 3636,
+    "validation_calls": 36,
+    "objective_calls": 3672,
+    "training_groups": 5232,
+    "validation_groups": 48,
+    "group_batches": 5280,
+    "training_shots": 2363328,
+    "validation_shots": 786432,
+    "total_shots": 3149760,
+    "measured_qubit_readouts": 15748800,
+    "shot_weighted_source_unitary_gates": 82488288,
+    "cpu_control_evaluations_per_mode": 1212,
+    "cpu_control_evaluations": 2424,
+    "cpu_control_final_audits": 24
+  },
+  "expected_weighted_gate_counts": {
+    "h": 12796320,
+    "rx": 14765760,
+    "rz": 14765760,
+    "ry": 5904960,
+    "cx": 34255488,
+    "measure": 15748800
+  },
+  "bounds": {
+    "simulation_qubits": 8,
+    "dense_qubits": 8,
+    "actual_max_qubits": 6,
+    "source_unitary_gates_per_circuit": 100000,
+    "group_batches": 10000,
+    "sampled_shots": 10000000,
+    "numerical_wall_seconds": 120
+  },
+  "control_semantics": "classical exact-moment diagnostics, not zero-shot quantum algorithms or expected stochastic paths",
+  "formal_coverage": "Classical C4 reference coverage only"
+}

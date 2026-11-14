@@ -1,0 +1,284 @@
+{
+  "status": "computed_conditional_model",
+  "common_absolute_energy_error_target_Ha": 0.5,
+  "same_ideal_failure": 0.005,
+  "hardware_energy_confidence_certified": false,
+  "points": [
+    {
+      "data_qubits": 2,
+      "phase_bits": 3,
+      "contract": {
+        "kind": "minimum_of_retained-target_medians",
+        "dimers": 1,
+        "data_qubits": 2,
+        "phase_bits": 3,
+        "phase_width": 8,
+        "encoding": {
+          "shift": -2.30857655877753,
+          "span": 3.952344614907298
+        },
+        "energy_absolute_error_ideal": 0.49404307686341226,
+        "ground_overlap_lower_bound": 0.9875597343674858,
+        "overlap_promise_source": "analytic two-parity dimer family; not generic chemistry state preparation",
+        "independent_groups": 2,
+        "qpe_rounds_per_retained_target": 19,
+        "one_round_phase_success_lower_bound": 0.8105694691387022,
+        "median_failure_bound_per_group": 0.0010171187434588472,
+        "no_ground_group_failure_bound": 0.00015476020900751427,
+        "ideal_failure_union_bound": 0.0021889976959252088,
+        "ideal_confidence_lower_bound": 0.9978110023040748,
+        "requested_ideal_failure": 0.005,
+        "total_qpe_rounds": 38,
+        "total_base_U_equivalent_calls": 266,
+        "assumptions": [
+          "exact analytic-angle Hamiltonian access",
+          "independent HF preparations across groups",
+          "same target retained for all median rounds within each group",
+          "spectrum maps into [1/4,3/4]",
+          "correct classical median/min decoding",
+          "no physical faults or synthesis error"
+        ],
+        "hardware_or_synthesis_confidence_certified": false
+      },
+      "status": "computed_conditional_model",
+      "pareto_points": [
+        {
+          "peak_physical_qubits": 44041,
+          "data_code_distance": 9,
+          "runtime_per_execution_ns": 732060000.0,
+          "serial_runtime_all_executions_ns": 1464120000.0,
+          "qdk_combined_error_score_per_execution": 0.00022391660306475582,
+          "synthesis_model_error_per_execution": 8.844863064755817e-06,
+          "physical_failure_model_per_execution": 0.00021507174,
+          "physical_failure_union_bound_all_executions": 0.00043014348,
+          "factories": {
+            "T": {
+              "copies": 11,
+              "runs": 8044,
+              "states": 83448,
+              "error_rate": 2.165e-09
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 75875813,
+            "NUM_TS_PER_ROTATION": 20,
+            "ALGORITHM_COMPUTE_QUBITS": 59,
+            "PHYSICAL_COMPUTE_QUBITS": 22701,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 141,
+            "PHYSICAL_FACTORY_QUBITS": 21340
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+        }
+      ]
+    },
+    {
+      "data_qubits": 4,
+      "phase_bits": 4,
+      "contract": {
+        "kind": "minimum_of_retained-target_medians",
+        "dimers": 2,
+        "data_qubits": 4,
+        "phase_bits": 4,
+        "phase_width": 16,
+        "encoding": {
+          "shift": -4.61715311755506,
+          "span": 7.904689229814596
+        },
+        "energy_absolute_error_ideal": 0.49404307686341226,
+        "ground_overlap_lower_bound": 0.9752742289439791,
+        "overlap_promise_source": "analytic two-parity dimer family; not generic chemistry state preparation",
+        "independent_groups": 2,
+        "qpe_rounds_per_retained_target": 19,
+        "one_round_phase_success_lower_bound": 0.8105694691387022,
+        "median_failure_bound_per_group": 0.0010171187434588472,
+        "no_ground_group_failure_bound": 0.0006113637543147618,
+        "ideal_failure_union_bound": 0.0026456012412324563,
+        "ideal_confidence_lower_bound": 0.9973543987587675,
+        "requested_ideal_failure": 0.005,
+        "total_qpe_rounds": 38,
+        "total_base_U_equivalent_calls": 570,
+        "assumptions": [
+          "exact analytic-angle Hamiltonian access",
+          "independent HF preparations across groups",
+          "same target retained for all median rounds within each group",
+          "spectrum maps into [1/4,3/4]",
+          "correct classical median/min decoding",
+          "no physical faults or synthesis error"
+        ],
+        "hardware_or_synthesis_confidence_certified": false
+      },
+      "status": "computed_conditional_model",
+      "pareto_points": [
+        {
+          "peak_physical_qubits": 53387,
+          "data_code_distance": 9,
+          "runtime_per_execution_ns": 3185964000.0,
+          "serial_runtime_all_executions_ns": 6371928000.0,
+          "qdk_combined_error_score_per_execution": 0.001036678454262966,
+          "synthesis_model_error_per_execution": 2.7582532629660966e-06,
+          "physical_failure_model_per_execution": 0.001033920201,
+          "physical_failure_union_bound_all_executions": 0.002067840402,
+          "factories": {
+            "T": {
+              "copies": 12,
+              "runs": 35010,
+              "states": 385833,
+              "error_rate": 2.165e-09
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 327076229,
+            "NUM_TS_PER_ROTATION": 22,
+            "ALGORITHM_COMPUTE_QUBITS": 80,
+            "PHYSICAL_COMPUTE_QUBITS": 30107,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 187,
+            "PHYSICAL_FACTORY_QUBITS": 23280
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+        }
+      ]
+    },
+    {
+      "data_qubits": 6,
+      "phase_bits": 5,
+      "contract": {
+        "kind": "minimum_of_retained-target_medians",
+        "dimers": 3,
+        "data_qubits": 6,
+        "phase_bits": 5,
+        "phase_width": 32,
+        "encoding": {
+          "shift": -6.9257296763325895,
+          "span": 11.857033844721894
+        },
+        "energy_absolute_error_ideal": 0.3705323076475592,
+        "ground_overlap_lower_bound": 0.9631415584713705,
+        "overlap_promise_source": "analytic two-parity dimer family; not generic chemistry state preparation",
+        "independent_groups": 2,
+        "qpe_rounds_per_retained_target": 19,
+        "one_round_phase_success_lower_bound": 0.8105694691387022,
+        "median_failure_bound_per_group": 0.0010171187434588472,
+        "no_ground_group_failure_bound": 0.0013585447119193992,
+        "ideal_failure_union_bound": 0.003392782198837094,
+        "ideal_confidence_lower_bound": 0.9966072178011629,
+        "requested_ideal_failure": 0.005,
+        "total_qpe_rounds": 38,
+        "total_base_U_equivalent_calls": 1178,
+        "assumptions": [
+          "exact analytic-angle Hamiltonian access",
+          "independent HF preparations across groups",
+          "same target retained for all median rounds within each group",
+          "spectrum maps into [1/4,3/4]",
+          "correct classical median/min decoding",
+          "no physical faults or synthesis error"
+        ],
+        "hardware_or_synthesis_confidence_certified": false
+      },
+      "status": "computed_conditional_model",
+      "pareto_points": [
+        {
+          "peak_physical_qubits": 85652,
+          "data_code_distance": 9,
+          "runtime_per_execution_ns": 9948051000.0,
+          "serial_runtime_all_executions_ns": 19896102000.0,
+          "qdk_combined_error_score_per_execution": 0.0008449213644537205,
+          "synthesis_model_error_per_execution": 8.51597585372042e-06,
+          "physical_failure_model_per_execution": 0.0008364053886000001,
+          "physical_failure_union_bound_all_executions": 0.0016728107772000002,
+          "factories": {
+            "T": {
+              "copies": 15,
+              "runs": 85026,
+              "states": 1191642,
+              "error_rate": 5.6300000000000015e-11
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 1008174977,
+            "NUM_TS_PER_ROTATION": 22,
+            "ALGORITHM_COMPUTE_QUBITS": 101,
+            "PHYSICAL_COMPUTE_QUBITS": 37352,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 232,
+            "PHYSICAL_FACTORY_QUBITS": 48300
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+        }
+      ]
+    },
+    {
+      "data_qubits": 8,
+      "phase_bits": 5,
+      "contract": {
+        "kind": "minimum_of_retained-target_medians",
+        "dimers": 4,
+        "data_qubits": 8,
+        "phase_bits": 5,
+        "phase_width": 32,
+        "encoding": {
+          "shift": -9.23430623511012,
+          "span": 15.809378459629192
+        },
+        "energy_absolute_error_ideal": 0.49404307686341226,
+        "ground_overlap_lower_bound": 0.951159821642273,
+        "overlap_promise_source": "analytic two-parity dimer family; not generic chemistry state preparation",
+        "independent_groups": 2,
+        "qpe_rounds_per_retained_target": 19,
+        "one_round_phase_success_lower_bound": 0.8105694691387022,
+        "median_failure_bound_per_group": 0.0010171187434588472,
+        "no_ground_group_failure_bound": 0.0023853630220145874,
+        "ideal_failure_union_bound": 0.004419600508932282,
+        "ideal_confidence_lower_bound": 0.9955803994910677,
+        "requested_ideal_failure": 0.005,
+        "total_qpe_rounds": 38,
+        "total_base_U_equivalent_calls": 1178,
+        "assumptions": [
+          "exact analytic-angle Hamiltonian access",
+          "independent HF preparations across groups",
+          "same target retained for all median rounds within each group",
+          "spectrum maps into [1/4,3/4]",
+          "correct classical median/min decoding",
+          "no physical faults or synthesis error"
+        ],
+        "hardware_or_synthesis_confidence_certified": false
+      },
+      "status": "computed_conditional_model",
+      "pareto_points": [
+        {
+          "peak_physical_qubits": 86296,
+          "data_code_distance": 9,
+          "runtime_per_execution_ns": 13660308000.0,
+          "serial_runtime_all_executions_ns": 27320616000.0,
+          "qdk_combined_error_score_per_execution": 0.0011704506844496668,
+          "synthesis_model_error_per_execution": 3.0647074496665094e-06,
+          "physical_failure_model_per_execution": 0.0011673859770000004,
+          "physical_failure_union_bound_all_executions": 0.0023347719540000008,
+          "factories": {
+            "T": {
+              "copies": 15,
+              "runs": 116754,
+              "states": 1647870,
+              "error_rate": 5.6300000000000015e-11
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 1345070576,
+            "NUM_TS_PER_ROTATION": 23,
+            "ALGORITHM_COMPUTE_QUBITS": 103,
+            "PHYSICAL_COMPUTE_QUBITS": 37996,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 236,
+            "PHYSICAL_FACTORY_QUBITS": 48300
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+        }
+      ]
+    }
+  ]
+}

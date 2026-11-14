@@ -1,0 +1,178 @@
+{
+  "case_id": "qsp-oaa3-n3-t1-eps0.05",
+  "method": "QSP_oblivious_amplification",
+  "system_qubits": 3,
+  "logical_qubits": 8,
+  "time": 1,
+  "J": 1,
+  "h": 0.7,
+  "hbar": 1,
+  "phase_tau": 4.1,
+  "task": {
+    "absolute_error": 0.05,
+    "algorithm_bias": 0.01,
+    "synthesis_bias": 0.01,
+    "sampling_error": 0.03,
+    "sampling_failure": 0.004,
+    "acceptance_failure": 0.001,
+    "physical_failure": 0.005,
+    "accepted_samples": 13811,
+    "whole_task_failure_allowance": 0.01,
+    "certified_confidence_lower_bound": null
+  },
+  "rounds": 3,
+  "initial_state": "000",
+  "observable": "Z(q0)",
+  "source_gate_counts": {
+    "x": 5100,
+    "h": 824,
+    "mcx": 692,
+    "ccry": 392,
+    "crz": 217,
+    "c4rz": 217,
+    "ry": 196,
+    "cry": 196,
+    "cPauli LCU": 4,
+    "sdg": 4,
+    "s": 3,
+    "cPauli LCU_dg": 3
+  },
+  "source_depth": 4139,
+  "compiled_gate_counts": {
+    "cx": 26504,
+    "rz": 14333,
+    "t": 6183,
+    "tdg": 5481,
+    "ry": 4413,
+    "h": 1707,
+    "x": 1385,
+    "rx": 1296,
+    "measure": 8,
+    "sdg": 1,
+    "barrier": 1
+  },
+  "compiled_depth": 46784,
+  "access": {
+    "forward_A_calls": 4,
+    "inverse_A_calls": 3,
+    "total_A_or_inverse_calls": 7,
+    "zero_ancilla_reflections": 6,
+    "uncontrolled_block_encoding_calls": 98,
+    "controlled_block_encoding_calls": 7,
+    "branch_conditioned_projector_phase_calls": 217
+  },
+  "numerical_checks": {
+    "rounds": 3,
+    "ideal_input_amplitude": 0.25,
+    "ideal_scaled_unitary_amplified_amplitude": 0.98046875,
+    "ideal_scaled_unitary_success_probability": 0.9613189697265625,
+    "ideal_success_formula_scope": "exactly Pi A Pi=sU with unitaryU; approximate QSP instance tested separately",
+    "actual_input_acceptance_probability": 0.9613189700632978,
+    "actual_minus_ideal_success_probability": 3.367353063055134e-10,
+    "block_error_vs_ideal_amplitude_times_exact_U": 5.413798489483353e-09,
+    "decoded_linear_map_operator_error": 5.521643051397867e-09,
+    "conditional_state_check_scope": "accepted data state before final system readout",
+    "conditional_state_vector_error": 4.205062394516854e-09,
+    "conditional_state_infidelity": 0.0,
+    "observable_exact": 0.40425585728735497,
+    "observable_conditional": 0.40425585564044086,
+    "observable_error": 1.6469141050912128e-09,
+    "actual_block_singular_values": [
+      0.9804687515091128,
+      0.9804687515091097,
+      0.9804687513179752,
+      0.9804687513179684,
+      0.9804687481978351,
+      0.9804687481978307,
+      0.9804687480131923,
+      0.9804687480131901
+    ],
+    "finite_H_numerical_minimum_acceptance_probability": 0.9613189658305524,
+    "finite_H_numerical_maximum_acceptance_probability": 0.9613189726858384,
+    "finite_H_numerical_acceptance_input_dependence_span": 6.855286005524874e-09,
+    "acceptance_certified": false,
+    "accepted_block_polynomial_error": 7.728602308602046e-13,
+    "all_input_conditional_Pauli_bias_projection": 2.208657244558347e-08,
+    "seeded_full_state_lowering_error": 1.0149519140746765e-13,
+    "acceptance_guard_subtracted": 1e-09,
+    "guard_is_certificate": false
+  },
+  "postselection_contract": {
+    "reference_acceptance_lower": 0.9613189648305525,
+    "synthesis_model_error_per_attempt": 0.0048065948241527625,
+    "conditional_acceptance_lower_after_synthesis_model": 0.9565123700063997,
+    "conditional_synthesis_Pauli_bias_allowance": 0.01,
+    "attempts_per_accepted_slot": 6,
+    "accepted_slots": 13811,
+    "maximum_complete_attempts": 82866,
+    "all_slots_no_acceptance_union_bound": 9.34156338588651e-05,
+    "conditional_expected_stopped_attempts_all_slots": 14438.91405867753,
+    "physical_failure_allowance_per_complete_attempt": 6.033837762170251e-08,
+    "certified_confidence_lower_bound": null,
+    "conditional_confidence_lower_bound": 0.99,
+    "assumptions": [
+      "The stated finite-H numerical minimum acceptance is a valid lower bound; it is not formally certified",
+      "The QDK mean-fit scalar upper-bounds total variation of the complete final joint data/ancilla distribution",
+      "The independently declared ideal algorithm bias bound applies to each conditional Pauli mean",
+      "Every independent trial starts with newly supplied clean zero qubits",
+      "The declared physical-fault model and classical acceptance/readout interpretation are correct"
+    ],
+    "proof": "For event E, restricted l1 difference a and complement b satisfy |p-q|<=b; conditional TV<=(a+|p-q|)/(2p)<=TV(P,Q)/p",
+    "does_not_certify": [
+      "concrete synthesis",
+      "operator/diamond error",
+      "runtime tails",
+      "fresh-state/reset hardware cost"
+    ]
+  },
+  "complete_attempts": 82866,
+  "attempts_per_accepted_slot": 6,
+  "accepted_slots": 13811,
+  "cpu_timings_seconds": {
+    "construction_validation_lowering": 10.591757124999276
+  },
+  "measurement": "all 8 wires measured; accept only zero outcomes on all five success ancillas; bit0 gives +/-1",
+  "input_preparation": "fresh clean zeros assumed on all 8 wires for each complete attempt; all rejected schedules charged",
+  "compiled_global_phase_radians": 4.417864669111248,
+  "qasm_global_phase_scope": "Measured trial; omitted overall phase does not specify a coherently controlled oracle",
+  "size_scaling_scope": "This is the n3,t1,alpha*t4.1 amplification slice; n2/n4 retargeted circuits are separate cases, and other n/time require new phases and approximation evidence",
+  "exclusions": [
+    "Clean zero states are supplied; physical initialization/reset time and faults are not modeled",
+    "Classical coefficient handling, compilation, acceptance/readout communication and verification latency are not quantum-model time",
+    "QDK uses an empirical mean synthesis fit; no concrete Clifford+T sequence, channel error certificate or runtime-tail bound is supplied",
+    "QDK abstracts Clifford scheduling; the source dependency depth is not a physical routed schedule",
+    "Reset, intermediate measurement and dynamic-feedback instruments are not costed by this study"
+  ],
+  "qasm_sha256": "884b935331fe9c6992d0ef3085ced92de68b4d456e07fe5c51fae3426b15b873",
+  "provenance": {
+    "source_commit": "f842df78eb01cedd1fb438d5fd45c16fe48c435d",
+    "source_revision_scope": "Exact checkout root when Git is available; null for standalone packages. Content hashes identify actual source.",
+    "source_sha256": {
+      "src/openquantum/dynamics_resources.py": "d43f8c6f3211f48952b629b3c423cca94e007d9a2760803352ddc76daf58c99e",
+      "scripts/generate_dynamics_resources.py": "f00a4358e81108d23c5e0497c48f890b5a977fa324f110b1871aa018045062f9",
+      "src/openquantum/hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+      "src/openquantum/resource_estimation.py": "267329af4b100c7f9c82900f1f2713f934ec710e50fd8999d331c0f4b84654de",
+      "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+      "src/openquantum/simulation/qsp_evolution.py": "b7636da8257c6f85133ba98d88bd13aa54d065058a54e56df7418ce58d77429e",
+      "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "src/openquantum/simulation/amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "device": "CPU",
+      "seed": 20261112,
+      "packages": {
+        "qiskit": "2.6.2",
+        "qdk": "1.34.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2"
+      }
+    }
+  },
+  "physical_reports": [
+    "frozen-p-1e-3.json",
+    "frozen-p-1e-4.json"
+  ]
+}

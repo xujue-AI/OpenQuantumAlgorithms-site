@@ -1,0 +1,14 @@
+OPENQASM 3.0;
+include "stdgates.inc";
+bit[4] assignment;
+qubit[4] x_0;
+qubit[4] clause;
+qubit[1] work;
+h x_0[0];
+h x_0[1];
+h x_0[2];
+h x_0[3];
+assignment[0] = measure x_0[0];
+assignment[1] = measure x_0[1];
+assignment[2] = measure x_0[2];
+assignment[3] = measure x_0[3];

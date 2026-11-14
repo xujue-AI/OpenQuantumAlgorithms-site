@@ -1,0 +1,399 @@
+{
+  "case_id": "size-n1-normalization2-oaa1",
+  "slice": "size",
+  "plan": {
+    "n": 1,
+    "mode": "normalization2-oaa1",
+    "degree": 3,
+    "segments": 1,
+    "J": {
+      "numerator": "3",
+      "denominator": "5",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.6
+    },
+    "h": {
+      "numerator": "7",
+      "denominator": "20",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.35
+    },
+    "total_time": {
+      "numerator": "1",
+      "denominator": "1",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.0
+    },
+    "total_accuracy": {
+      "numerator": "1",
+      "denominator": "20",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.05
+    },
+    "alpha_binary_coefficients": {
+      "numerator": "3152519739159347",
+      "denominator": "9007199254740992",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.35
+    },
+    "segment_exposure": {
+      "numerator": "3152519739159347",
+      "denominator": "9007199254740992",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.35
+    },
+    "binary_segment_time": {
+      "numerator": "1",
+      "denominator": "1",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.0
+    },
+    "terms": [
+      {
+        "coefficient": {
+          "numerator": "7",
+          "denominator": "20",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "pauli": "X",
+        "binary_coefficient": {
+          "numerator": "3152519739159347",
+          "denominator": "9007199254740992",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "binary_hex": "0x1.6666666666666p-2"
+      }
+    ],
+    "uniform_ideal_bounds": {
+      "segment_tail": {
+        "numerator": "493857055266026838077994724790111510398816143433714098816776405",
+        "denominator": "734553234388186380725582172687768269113136888937909298173057171456",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.000672323028673835
+      },
+      "native_taylor_normalization": {
+        "numerator": "6218963498399991323860799498977504559049777514283",
+        "denominator": "4384504911992708754611054498148849058967797628928",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 1.4183958333333333
+      },
+      "segment_comparison_operator_error": {
+        "numerator": "533476957334047661784160371885781857002935809158507758506320272337212757191035465313278981290596021657875170040080591507590440925820169182695147949789156104592655505134112566109297164748311141485",
+        "denominator": "792683506339647004523354864129804973173219831311003391488146830429851335684538665581167924432392190325586425822093434941315874942676001350411284812111119703283503460426815997478724980754905019973632",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.0006730012080073038
+      },
+      "composition_comparison_error": {
+        "numerator": "533476957334047661784160371885781857002935809158507758506320272337212757191035465313278981290596021657875170040080591507590440925820169182695147949789156104592655505134112566109297164748311141485",
+        "denominator": "792683506339647004523354864129804973173219831311003391488146830429851335684538665581167924432392190325586425822093434941315874942676001350411284812111119703283503460426815997478724980754905019973632",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.0006730012080073038
+      },
+      "target_exposure_error": {
+        "numerator": "1",
+        "denominator": "45035996273704960",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 2.2204460492503132e-17
+      },
+      "full_comparison_operator_error": {
+        "numerator": "2667384786670326314468799747163602147848489768900610289013898997451242058662845671069244732798758588100145816861827002381164037455562718857981719015079048267862827494799587737619511077819678002721",
+        "denominator": "3963417531698235022616774320649024865866099156555016957440734152149256678422693327905839622161960951627932129110467174706579374713380006752056424060555598516417517302134079987393624903774525099868160",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.000673001208007326
+      },
+      "acceptance_lower": {
+        "numerator": "627501669050399280876101160919009414617280390340533763046230030947441807483322504190831603591925290908099688393753327713405183466812621409719360165907794125390442910737171239650324629569584821556684154954974227462453545367739797132826507896506941783953923005845873201828385496880263745919841237709332232545203527215149135290459587851945021924757241986639066070410398613944874502393532876620629609",
+        "denominator": "628347141222917192811301672842822729997298648678165091141802519857666995988015609244946073468722008455987802981150136124781650566227381900047450637399433591730605279522844677430560390718497498277433898069343034706410506226871694364770312549889534707008726691964625341805905279679018196970062976839026275212729864576697385550510412921465999948383050738978366212925493329642748636109728865975271424",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.9986544505146113
+      },
+      "conditional_pauli_bias": {
+        "numerator": "10669539146681305257875198988654408591393959075602441156055595989804968234651382684276978931195034352400583267447308009524656149822250875431926876060316193071451309979198350950478044311278712010884",
+        "denominator": "3960750146911564696302305520901861263718250666786116347151720253151805436364030482234770377429162193039831983293605347704198210675924444033198442341540519468149654474639280399656005392696705421865439",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.002693817774645792
+      }
+    },
+    "operator_comparison_map": "OAA operator errors compare the actual ideal accepted B and B^r with U; B=3T_K/2-T_K T_K\u2020 T_K/2.",
+    "pre_amplification_source_block_normalization_per_segment": {
+      "numerator": "2",
+      "denominator": "1",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 2.0
+    },
+    "error_allocation": {
+      "ideal_algorithm_bias": {
+        "numerator": "1",
+        "denominator": "100",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.01
+      },
+      "reserved_synthesis_bias_unimplemented": {
+        "numerator": "1",
+        "denominator": "100",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.01
+      },
+      "statistical_error": {
+        "numerator": "3",
+        "denominator": "100",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.03
+      },
+      "statistical_failure": {
+        "numerator": "1",
+        "denominator": "250",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.004
+      },
+      "acceptance_failure": {
+        "numerator": "1",
+        "denominator": "1000",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.001
+      },
+      "physical_fault_allowance_unmodeled": {
+        "numerator": "1",
+        "denominator": "200",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.005
+      },
+      "ideal_output_error_bound_if_exact_access": {
+        "numerator": "1",
+        "denominator": "25",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.04
+      },
+      "ideal_bad_output_or_cap_exhaustion_failure_bound_if_exact_access": {
+        "numerator": "1",
+        "denominator": "200",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.005
+      },
+      "hardware_combined_guarantee": false
+    },
+    "workload": {
+      "accepted_slots": 13811,
+      "full_attempt_cap_per_slot": 3,
+      "charged_complete_attempts": 41433,
+      "retry_probability_lower_rounded_down_64_bits": {
+        "numerator": "18421923066714076001",
+        "denominator": "18446744073709551616",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.9986544505146113
+      },
+      "uncapped_expected_attempts_upper_bound": {
+        "numerator": "8678102367429709349916887403632224723992691636894138073759434601754238881590483579281950220676519658785647546972664530019359375970166371421555340753123577335391389515490007839993469556213168948709639566235696652330235501499324970871842786626524363838497524342723440595681357817646920318353539773123791886963012159668767591838099312858366925287118313756030215766713988375696001413311465367984473636864",
+        "denominator": "627501669050399280876101160919009414617280390340533763046230030947441807483322504190831603591925290908099688393753327713405183466812621409719360165907794125390442910737171239650324629569584821556684154954974227462453545367739797132826507896506941783953923005845873201828385496880263745919841237709332232545203527215149135290459587851945021924757241986639066070410398613944874502393532876620629609",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 13829.608422496016
+      },
+      "sampling_performed": false,
+      "retry_policy": "All segments run on every attempt; fresh basis input for every retry",
+      "retry_cap_rule": "Round p_lower down to 64 dyadic bits, then ceil(log_upper(M/delta_acceptance)/log_lower(1/(1-p_lower))); p_lower=1 uses one attempt",
+      "log_upper_series_terms": 64,
+      "retry_log_lower_series_terms": 8
+    },
+    "policy": "Smallest r enforcing exact binary exposure <=1/2; smallest K<=8 meeting ideal Pauli-bias allocation",
+    "guarantee_scope": "Any normalized input for ideal exact access at the binary constants, with an exact rational target-exposure correction",
+    "implemented_trial_input": "Fresh all-zero basis input; it is not a protocol for copying an unknown specimen",
+    "not_certified": [
+      "floating normalization/probability/angle construction",
+      "primitive compiler arithmetic",
+      "rotation synthesis",
+      "physical gates/reset/readout",
+      "hardware confidence"
+    ],
+    "bound_source": {
+      "method": "Simulating Hamiltonian Dynamics with a Truncated Taylor Series",
+      "doi": "10.1103/PhysRevLett.114.090502",
+      "arxiv": "https://arxiv.org/abs/1412.4687",
+      "access": "Existing original degree/term PREPARE, signed SELECT and unprepare",
+      "bound_derivation": "Original exact-rational tail, contraction/composition and normalization ledger",
+      "oaa_identity": "One round has block 3F-4FF\u2020F; padding F=T/2 gives 3T/2-TT\u2020T/2"
+    }
+  },
+  "circuit_generation": {
+    "performed": true,
+    "measured_qasm_sha256": "fedc7d5398ef1ffce5d797ff5e7333bd632c094b559fda3483dbdf2c816d98fe",
+    "coherent_source_qasm_sha256": "b848d3b2748da5973bb823fa2165035741473cbde61bd56d1df57e3298fc62f6",
+    "compiled_global_phase_radians": 1.1780972450961755,
+    "coherent_source_global_phase_radians": 3.141592653589793,
+    "qasm_phase_scope": "Pinned QASM exporter may omit global phase; measured-trial probabilities are the export contract",
+    "source_access_normalization_float": 1.4183958333333335,
+    "source_access_alpha_float": 0.35,
+    "transpilation": {
+      "optimization_level": 1,
+      "seed": 7,
+      "qubits_initially_zero": false
+    },
+    "source_hashes": {
+      "word_taylor_workloads.py": "2257812cde76ac864108ff8f2c703fd7b8e0d629b9342eccf21c56db3ba77282",
+      "word_taylor.py": "f6c051233d27e41cd4971de564f1d0b77cc49f7f34f9c509ed65c512b03a27af",
+      "amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+      "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+      "source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+      "generate_word_taylor_workloads.py": "7a0e09bd42d6e72b32ca186875e241b4f1aa32a165ff76cea03a64454ec8d3a5",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    }
+  },
+  "numerical_validation": {
+    "performed": true,
+    "source_block_residual_vs_independent_polynomial": 5.987893319279444e-15,
+    "complete_measured_branch_probability_residual": 8.881784197001252e-15,
+    "coherent_lowering_random_full_register_residual": 4.414963008530313e-15,
+    "independent_expm_eigh_residual": 2.848271876211152e-16,
+    "actual_known_input_acceptance": 0.9999989205441355,
+    "actual_known_input_Z_mean": 0.7646197120528923,
+    "independent_target_Z_mean": 0.7648421872844885,
+    "actual_known_input_Z_bias": 0.00022247523159624194,
+    "actual_full_map_minimum_acceptance": 0.9999989205441346,
+    "numerical_probability_guard": 5e-10,
+    "seed": 20261112,
+    "uniform_hardware_certificate": false,
+    "measured_check": {
+      "acceptance_bits_checked": 4,
+      "data_readout_map": {
+        "0": 4
+      },
+      "rejected_branches_enumerated": false,
+      "method": "Unnormalized all-zero ancillary branch of actual primitive events"
+    },
+    "scope": "Tiny numerical gate/access/instrument check; analytic bounds remain an ideal-access statement"
+  },
+  "physical_estimation": {
+    "performed": false,
+    "reason": "general-width reset instrument is not implemented"
+  },
+  "sampling": {
+    "performed": false
+  },
+  "logical_resources": {
+    "logical_qubits": 5,
+    "classical_readout_bits": 5,
+    "source_instructions": 140,
+    "source_dependency_depth": 89,
+    "primitive_gate_counts_per_attempt": {
+      "cx": 361,
+      "rz": 359,
+      "x": 47,
+      "ry": 38,
+      "reset": 5,
+      "measure": 5,
+      "h": 2,
+      "rx": 2
+    },
+    "primitive_operations_per_attempt": 819,
+    "primitive_dependency_depth_per_attempt": 703,
+    "primitive_gate_counts_full_cap": {
+      "cx": 14957313,
+      "rz": 14874447,
+      "x": 1947351,
+      "ry": 1574454,
+      "reset": 207165,
+      "measure": 207165,
+      "h": 82866,
+      "rx": 82866
+    },
+    "primitive_operations_full_cap": 33933627,
+    "serial_dependency_layers_full_cap": 29127399,
+    "exact_T_Tdag_per_attempt": 0,
+    "arbitrary_rotations_per_attempt": 399,
+    "source_access_and_schedule_metadata": {
+      "n_system": 1,
+      "time": 1.0,
+      "degree": 3,
+      "alpha": 0.35,
+      "accepted_branch_normalization": null,
+      "n_degree": 2,
+      "n_term": 0,
+      "term_registers": 3,
+      "n_ancillas": 4,
+      "degree_coefficient_count": 4,
+      "term_coefficient_count": 1,
+      "word_enumeration_performed": false,
+      "SELECT_slot_degree_term_predicates": 6,
+      "SELECT_signed_Pauli_gates": 6,
+      "SELECT_negative_coefficient_phase_calls": 0,
+      "SELECT_degree_phase_calls": 3,
+      "PREPARE_degree_calls": 1,
+      "PREPARE_term_calls": 3,
+      "UNPREPARE_degree_calls": 1,
+      "UNPREPARE_term_calls": 3,
+      "PREPARE_total_calls": 1,
+      "SELECT_total_calls": 1,
+      "UNPREPARE_total_calls": 1,
+      "source_instruction_count": 29,
+      "register_order": "data, degree, slot0 term, ..., slot(K-1) term",
+      "inactive_terms": "prepared independently and not selected; their projected weights sum to1",
+      "primitive_rotations_synthesized": false,
+      "native_Taylor_normalization": 1.4183958333333335,
+      "padding_signal_probability_zero": 0.7091979166666668,
+      "zero_LCU_padding": true,
+      "padding_ancillas": 2,
+      "padding_implementation": "signal0 controls actual word SELECT; signal1 applies Z to sign|+>; all uncomputed",
+      "controlled_SELECT_implementation": "extra signal guard on actual degree phases and Pauli predicates",
+      "n_amplification_ancillas": 4,
+      "encoded_operator": "K p_r(K\u2020K), where K is the source accepted block",
+      "source_accepted_branch_normalization": 2.0,
+      "source_uncontrolled_block_encoding_calls": 0,
+      "source_controlled_block_encoding_calls": 0,
+      "uncontrolled_block_encoding_calls": 0,
+      "controlled_block_encoding_calls": 0,
+      "branch_conditioned_projector_phase_calls": 0,
+      "oblivious_rounds": 1,
+      "forward_A_calls": 2,
+      "inverse_A_calls": 1,
+      "total_A_or_inverse_calls": 3,
+      "zero_ancilla_reflections": 2,
+      "reflection_convention": "R=I-2Pi_anc0; Pi_anc0 tensor identity_data",
+      "operator_convention": "A_r=(-A R A\u2020 R)^r A",
+      "round_global_pi_phases": 1,
+      "input_state_knowledge_used_by_amplification": false,
+      "amplitude_amplification": "implemented integer-round oblivious path; not deterministic",
+      "status": "explicit oblivious amplification; numerical instance checks separate",
+      "segments": 1,
+      "initial_basis": 0,
+      "forward_A_calls_per_attempt": 2,
+      "inverse_A_calls_per_attempt": 1,
+      "total_A_or_inverse_calls_per_attempt": 3,
+      "zero_ancilla_reflections_per_attempt": 2,
+      "degree_prepare_or_inverse_calls_per_attempt": 6,
+      "term_prepare_or_inverse_calls_per_attempt": 18,
+      "SELECT_or_inverse_calls_per_attempt": 3,
+      "SELECT_predicates_or_inverse_per_attempt": 18,
+      "SELECT_signed_Paulis_or_inverse_per_attempt": 18,
+      "padding_signal_and_sign_prepare_or_inverse_calls_per_attempt": 12,
+      "padding_zero_LCU_CZ_or_inverse_calls_per_attempt": 3,
+      "acceptance": "all measured degree+word ancillary bits are zero",
+      "schedule": "run all segments; reset ancillary wires between segments; final Z data readout"
+    },
+    "synthesis": {
+      "performed": false,
+      "T_cost_inferred_from_rotations": false
+    },
+    "physical_resource_estimate": null,
+    "physical_scope": "The current small instrument model does not cover these general-width measured Taylor schedules",
+    "time_scope": "Dependency layers and measured CPU generation time are not fault-tolerant runtime",
+    "included": [
+      "all input resets",
+      "degree and term PREPARE/unprepare",
+      "actual signed SELECT",
+      "actual forward/inverse OAA calls where selected",
+      "all ancilla reflections and zero-LCU padding where selected",
+      "every segment ancilla measurement/reset",
+      "final system Z readout",
+      "all rejected complete attempts and capped accepted-shot workload"
+    ],
+    "excluded": [
+      "rotation synthesis",
+      "physical fault/timing/routing/factory/code model",
+      "classical coefficient/readout wall time",
+      "executed sampling"
+    ]
+  },
+  "cpu_generation_and_check_seconds": 0.30840610199993534
+}

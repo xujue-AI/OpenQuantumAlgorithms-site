@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "task": "one approximate-eigenenergy sample from explicit Pauli product-formula QPE",
+  "model": "H2 STO-3G four-spin-orbital Jordan-Wigner fixture",
+  "energy_unit": "Hartree",
+  "fixture_provenance": {
+    "molecule": "H2",
+    "bond_length_angstrom": 0.735,
+    "basis": "sto3g",
+    "charge": 0,
+    "spin": 0,
+    "method": "RHF",
+    "spin_orbital_order": "alpha block then beta block",
+    "mapper": "JordanWignerMapper()",
+    "pauli_label_order": "q3 q2 q1 q0",
+    "hf_occupation": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "hf_basis_integer": 5,
+    "fixed_alpha_beta_particle_numbers": [
+      1,
+      1
+    ],
+    "source_repository": "qiskit-community/qiskit-nature",
+    "fixture_checkout_tag": "0.7.2",
+    "fixture_checkout_commit": "d86d4a0306f8f4af8918c9eb9e3eae4622192f45",
+    "source_notebook": "docs/tutorials/06_qubit_mappers.ipynb",
+    "source_stdout_cell": 6,
+    "source_notebook_sha256": "560c1b4c4863cabef7b2cf8b2d5975695bfc0782fd1cbed2156aed6b778374bd",
+    "source_notebook_cell_indexing": "zero-based",
+    "fixture_release_date": "2024-02-23",
+    "nuclear_source_notebook": "docs/tutorials/01_electronic_structure.ipynb",
+    "nuclear_source_stdout_cell": 12,
+    "nuclear_source_notebook_sha256": "d22a8646af6af5d83218c9351832e2b0f3e8dd21f6ae15896b205ab35d0bb33f",
+    "stored_execution_qiskit_nature_version": "0.6.0",
+    "stored_execution_python_version": "3.9.16",
+    "stored_execution_date": "2023-04-06",
+    "mapped_space_is_singlet_only": false,
+    "pyscf_version_in_stored_execution": null,
+    "fresh_scf_or_mapping_executed_here": false,
+    "upstream_license": "Apache-2.0",
+    "nuclear_energy_is_separate_from_electronic_operator": true
+  },
+  "terms": [
+    {
+      "coefficient": -0.09057898608834869,
+      "label": "IIII"
+    },
+    {
+      "coefficient": 0.17218393261915543,
+      "label": "IIIZ"
+    },
+    {
+      "coefficient": -0.2257534922240237,
+      "label": "IIZI"
+    },
+    {
+      "coefficient": 0.12091263261776633,
+      "label": "IIZZ"
+    },
+    {
+      "coefficient": 0.17218393261915543,
+      "label": "IZII"
+    },
+    {
+      "coefficient": 0.16892753870087907,
+      "label": "IZIZ"
+    },
+    {
+      "coefficient": 0.045232799946057826,
+      "label": "YYYY"
+    },
+    {
+      "coefficient": 0.045232799946057826,
+      "label": "XXYY"
+    },
+    {
+      "coefficient": 0.045232799946057826,
+      "label": "YYXX"
+    },
+    {
+      "coefficient": 0.045232799946057826,
+      "label": "XXXX"
+    },
+    {
+      "coefficient": -0.22575349222402363,
+      "label": "ZIII"
+    },
+    {
+      "coefficient": 0.1661454325638241,
+      "label": "ZIIZ"
+    },
+    {
+      "coefficient": 0.16614543256382408,
+      "label": "IZZI"
+    },
+    {
+      "coefficient": 0.1746434306830045,
+      "label": "ZIZI"
+    },
+    {
+      "coefficient": 0.12091263261776633,
+      "label": "ZZII"
+    }
+  ],
+  "parameters": {
+    "phase_bits": 3,
+    "steps": 8,
+    "order": 2,
+    "initial_basis": 5,
+    "control_strategy": "termwise"
+  },
+  "energy_encoding": {
+    "shift": -3.8795652845236566,
+    "span": 7.577972596870616,
+    "center": -0.09057898608834869,
+    "pauli_norm_bound": 1.894493149217654
+  },
+  "logical_qubits": 7,
+  "source_counts": {
+    "cPF2 r=8": 7,
+    "h": 6,
+    "cp": 3,
+    "measure": 3,
+    "x": 2,
+    "swap": 1
+  },
+  "primitive_gate_counts": {
+    "cx": 6953,
+    "rz": 3043,
+    "rx": 896,
+    "h": 792,
+    "sdg": 169,
+    "s": 169,
+    "measure": 3,
+    "x": 2
+  },
+  "primitive_operations": 12027,
+  "dependency_depth": 9989,
+  "controlled_unitary_calls": 7,
+  "phase_measurements": 3,
+  "compiled_global_phase_radians": 3.730641276137878,
+  "qasm_global_phase_policy": "exporter can omit overall compiled phase; qpe.qasm specifies complete measured trials, not a new coherently controlled oracle",
+  "analytic_product_formula_bound": {
+    "analytic_operator_error_bound": 0.00025018477641866854,
+    "uncapped_analytic_bound": 0.00025018477641866854,
+    "method": "symmetric nested-commutator triangle sum, O(t\u00b3/r\u00b2)",
+    "sum_commutator_norms": 0.2879971828636951,
+    "coefficient_sum_arithmetic": "exact Fraction of normalized binary64 input; incoming duplicate aggregation roundoff excluded; rounded upward on float export",
+    "includes_floating_gate_or_synthesis_error": false,
+    "formal_proof_artifact": null
+  },
+  "ground_confidence_guarantee": null,
+  "ideal_spectral_sample_contract": {
+    "kind": "one energy sample near some supplied-H eigenvalue",
+    "analytic_ideal_angle_contract_applies": true,
+    "phase_grid_error": 0.125,
+    "spectral_phase_bias_bound": 3.981814395721817e-05,
+    "energy_error_bound_ideal": 0.9475483154125931,
+    "one_shot_ideal_success_lower_bound": 0.8105694691387022,
+    "ground_energy_selection_guarantee": null,
+    "synthesis_or_physical_accuracy_certified": false,
+    "branch_margin_condition": "spectral phase perturbation<=1/4-1/M",
+    "exclusions": [
+      "floating coefficient/gate arithmetic beyond fixed normalized input",
+      "concrete gate synthesis errors",
+      "physical faults",
+      "ground-state overlap/selection"
+    ]
+  },
+  "simulation": {
+    "performed": true,
+    "method": "independent Pauli matrix factors and unitary Schur spectral law",
+    "results": "results.json",
+    "distribution_max_error": 6.029621246739225e-13,
+    "simulation_width": 7
+  },
+  "physical_resource_estimate": {
+    "status": "computed_conditional_model",
+    "kind": "conditional_mean_fit_resource_projection",
+    "pareto_points": 3,
+    "complete_trials": 1,
+    "physical_fault_allowance": 0.005,
+    "synthesis_model_scalar_allowance": 1e-05,
+    "hardware_ground_confidence_certified": false,
+    "report": "surface-code.json"
+  },
+  "construction_wall_seconds": 0.0622762650000368,
+  "lowering_wall_seconds": 0.02994177899972783,
+  "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+  "source_dirty": false,
+  "source_commit_scope": "exact checkout at generation, if available; content hashes identify working source",
+  "source_sha256": {
+    "energy_estimation_pauli.py": "bdee96d30dd784ccd30a23bbbcc80cd962bfd640cb49f256acb8463e45a4d942",
+    "generator.py": "3334020e9efa08b4017263dfffe2213f2dd6d5038aaf8f992856da0d51bf3008",
+    "qft_qpe.py": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab",
+    "resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b"
+  },
+  "qasm_sha256": "74b3f85b088cd2b214fc0c089da324f293860c5d85dc94515a862f6c2ce8b7ff",
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU",
+    "seed": 20261112
+  },
+  "limits": {
+    "generator_qubits": 24,
+    "input_terms": 256,
+    "source_operations": 100000,
+    "primitive_operations": 500000,
+    "statevector_qubits": 12,
+    "dense_reference_qubits": 6
+  },
+  "excluded": [
+    "fresh integral/SCF and fermion-mapping computation (input fixture is supplied)",
+    "classical parsing/compilation/readout latency from physical model",
+    "physical initialization/reset timing and faults",
+    "concrete Clifford+T synthesis certificate",
+    "ground-energy selection/confidence beyond the single-sample contract"
+  ],
+  "illustrative_ideal_readout": {
+    "seed": 20261112,
+    "draws": 256,
+    "counts": {
+      "1": 1,
+      "2": 3,
+      "3": 245,
+      "4": 6,
+      "5": 1
+    },
+    "model": "classical categorical draws from validated ideal gate-circuit distribution",
+    "hardware_run": false,
+    "does_not_certify_ground_energy": true
+  },
+  "scaling": {
+    "performed": true,
+    "rows": 10,
+    "family": "synthetic local Pauli chain; not molecule growth",
+    "all_rows_actually_compiled": true,
+    "rows_statevector_validated": false,
+    "matched_absolute_accuracy": false
+  },
+  "control_comparison": {
+    "alternative_strategy": "lift-all-gates",
+    "alternative_primitive_gate_counts": {
+      "cx": 33273,
+      "rz": 17208,
+      "t": 13160,
+      "tdg": 11760,
+      "rx": 4368,
+      "h": 2806,
+      "ry": 1904,
+      "measure": 3,
+      "x": 2
+    },
+    "alternative_primitive_operations": 84484,
+    "alternative_dependency_depth": 59007,
+    "alternative_qasm_sha256": "550450ab9c5be795d8007e71ecfb7a9e3760a966fb05ec69ee646b79b09377cf",
+    "same_model_parameters": true,
+    "same_ideal_access_polynomial": true,
+    "same_phase_precision": true,
+    "same_one_trial_output_contract": true,
+    "synthesis_or_physical_accuracy_certificate": false,
+    "selected_input_distribution_max_difference": 1.2546630401288894e-12,
+    "alternative_physical_pareto_points": 4
+  }
+}

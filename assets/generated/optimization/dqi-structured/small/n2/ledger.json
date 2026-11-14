@@ -1,0 +1,179 @@
+{
+  "actual_ledger": {
+    "compiled_clifford_t_demand_known": false,
+    "events_excluding_barriers": 109,
+    "explicit_t_tdg": 35,
+    "primitive_counts": {
+      "barrier": 7,
+      "cx": 38,
+      "h": 12,
+      "measure": 2,
+      "reset": 6,
+      "ry": 5,
+      "t": 20,
+      "tdg": 15,
+      "x": 10,
+      "z": 1
+    },
+    "source_operations": 116,
+    "stages": [
+      {
+        "barrier_index": 6,
+        "name": "reset",
+        "start": 0,
+        "stop": 6
+      },
+      {
+        "barrier_index": 52,
+        "name": "preparation",
+        "start": 7,
+        "stop": 52
+      },
+      {
+        "barrier_index": 54,
+        "name": "sign",
+        "start": 53,
+        "stop": 54
+      },
+      {
+        "barrier_index": 59,
+        "name": "syndrome",
+        "start": 55,
+        "stop": 59
+      },
+      {
+        "barrier_index": 109,
+        "name": "decoder",
+        "start": 60,
+        "stop": 109
+      },
+      {
+        "barrier_index": 112,
+        "name": "hadamard",
+        "start": 110,
+        "stop": 112
+      },
+      {
+        "barrier_index": 115,
+        "name": "readout",
+        "start": 113,
+        "stop": 115
+      }
+    ],
+    "unitary_primitives": 101,
+    "unsynthesized_ry": 5,
+    "workspace": {
+      "allocated_clean_wires": 1,
+      "arbitrary_dirty_target_action_validated": false,
+      "decoder_peak_clean_wires": 0,
+      "preparation_peak_clean_wires": 1
+    }
+  },
+  "analytic_prediction": {
+    "accounting_scope": "one complete initialized draw, including preparation/sign/syndrome/decoder/uncompute/reset/readout",
+    "ccx_blocks": {
+      "decoder": 3,
+      "preparation": 2
+    },
+    "classical_readout_bits": 2,
+    "classical_work": {
+      "angle_generation": "O(n) classical coefficient/angle calculations, time unmeasured",
+      "family_input": "n specifies fixed B/v; an explicit B dump takes O(n^2) bits",
+      "hardware_input_delivery": "not measured or represented as a generic loading oracle",
+      "primitive_compilation": "O(n^2) emitted primitives, time separate from quantum runtime",
+      "scoring_per_assignment": "O(n) bit/parity work and output selection, time unmeasured"
+    },
+    "counts": {
+      "barrier": 7,
+      "cx": 38,
+      "h": 12,
+      "measure": 2,
+      "reset": 6,
+      "ry": 5,
+      "t": 20,
+      "tdg": 15,
+      "x": 10,
+      "z": 1
+    },
+    "ell": 1,
+    "events_without_barriers": 109,
+    "exclusions": [
+      "all RY synthesis and approximation allocation",
+      "routing/scheduling and physical faults",
+      "classical compilation, angle generation and input delivery time",
+      "classical objective scoring and output selection time"
+    ],
+    "execution_evidence": "external; formulas alone are not validation",
+    "explicit_t_tdg": 35,
+    "m": 3,
+    "n": 2,
+    "physical_estimate_status": "pending",
+    "schedule_scope": "all unitary primitives serial; parallel/routed/physical scheduling pending",
+    "schema": "openquantum.dqi.structured_source_ledger.v1",
+    "source_operations": 116,
+    "stage_intervals": {
+      "decoder": {
+        "barrier_index": 109,
+        "operations": 49,
+        "start": 60,
+        "stop": 109
+      },
+      "hadamard": {
+        "barrier_index": 112,
+        "operations": 2,
+        "start": 110,
+        "stop": 112
+      },
+      "preparation": {
+        "barrier_index": 52,
+        "operations": 45,
+        "start": 7,
+        "stop": 52
+      },
+      "readout": {
+        "barrier_index": 115,
+        "operations": 2,
+        "start": 113,
+        "stop": 115
+      },
+      "reset": {
+        "barrier_index": 6,
+        "operations": 6,
+        "start": 0,
+        "stop": 6
+      },
+      "sign": {
+        "barrier_index": 54,
+        "operations": 1,
+        "start": 53,
+        "stop": 54
+      },
+      "syndrome": {
+        "barrier_index": 59,
+        "operations": 4,
+        "start": 55,
+        "stop": 59
+      }
+    },
+    "total_qubits": 6,
+    "unitary_gates": 101,
+    "unitary_serial_layer_upper_bound": 101,
+    "unsynthesized_ry": 5,
+    "workspace": {
+      "allocated_clean": 1,
+      "clean_target_law_requires_zero_input": true,
+      "decoder_peak_used": 0,
+      "preparation_peak_used": 1,
+      "restored_after_each_predicate": true,
+      "serial_reuse": true
+    }
+  },
+  "n": 2,
+  "preparation_angles_hex": [
+    "0x1.0c152382d7366p+0",
+    "0x1.3b2028082e8d5p+0",
+    "0x1.921fb54442d17p+0"
+  ],
+  "rotation_synthesis_performed": false,
+  "schema": "openquantum.dqi.structured.primitive_ledger.v1"
+}

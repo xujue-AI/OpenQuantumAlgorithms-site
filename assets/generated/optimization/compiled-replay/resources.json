@@ -1,0 +1,59 @@
+{
+  "source_weighted_counts": {
+    "cx": 1312512,
+    "rz": 656256,
+    "rx": 656256,
+    "h": 328128,
+    "measure": 328128
+  },
+  "augmented_weighted_counts": {
+    "cx": 1312512,
+    "rz": 656256,
+    "rx": 656256,
+    "reset": 328128,
+    "h": 328128,
+    "measure": 328128
+  },
+  "routed_weighted_counts": {
+    "cx": 2542992,
+    "rz": 656256,
+    "rx": 656256,
+    "reset": 328128,
+    "h": 328128,
+    "measure": 328128
+  },
+  "clifford_t_weighted_counts": {
+    "h": 185794912,
+    "t": 182646240,
+    "s": 95398208,
+    "cx": 2542992,
+    "x": 401440,
+    "reset": 328128,
+    "measure": 328128
+  },
+  "preparations": 82032,
+  "original_source_qubit_readouts": 328128,
+  "explicit_input_initializations": 328128,
+  "total_source_classes": 54,
+  "measured_groups": 110,
+  "actual_materialized_ct_operations": 306508,
+  "native_synthesis_calls": 193,
+  "actual_t_states": 182646240,
+  "physical_macro_totals": {
+    "selected_minimum_qubits": {
+      "readouts": 4780464240,
+      "preparations": 9379512720,
+      "decisions": 22072802800,
+      "scope": "complete serialized data/workspace/injection/control macro ledger; native factory-internal operation counts are abstracted into its time/space/output-error ISA"
+    },
+    "selected_minimum_runtime": {
+      "readouts": 4780464240,
+      "preparations": 9379512720,
+      "decisions": 22072802800,
+      "scope": "complete serialized data/workspace/injection/control macro ledger; native factory-internal operation counts are abstracted into its time/space/output-error ISA"
+    }
+  },
+  "source_unitary_gates": 2953152,
+  "realization_guarded_static_transcript_tv": 0.0009485411989169976,
+  "actual_numerical_static_transcript_tv_sum": 4.208561292460776e-05
+}

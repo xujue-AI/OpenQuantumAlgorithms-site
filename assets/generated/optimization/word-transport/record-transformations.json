@@ -1,0 +1,66 @@
+{
+  "disclosure": "transformed public metadata has new hashes; exact scientific preimages retain original bytes",
+  "exact_scientific_files": {
+    "native-inputs.json.gz": "517fb5dc6ff3db3f4ded3d108d8da21951b1308813ac1e7a357927ec74053180",
+    "native-result.json": "c3a849ed45a65248901bf4d7a6ab816c7f8235b241dd5ff60b0b789b7d91ddd3",
+    "producer-returns.jsonl.gz": "8c3416bbbf3d6ba1841102f8b6270711c28eaff411af93f593830347d64882a9"
+  },
+  "excluded": "private operational approval/state/config/PID/deadline/journal files and raw logs",
+  "schema": "openquantum-word-record-transformations-v1",
+  "transformed": {
+    "native-plan.json": {
+      "original_encoding": "sorted-compact-json-newline",
+      "original_sha256": "2ece6303339a4e3a5c679624fb618b195730c8ae2286572cb425dd18ce1d9bd4",
+      "policy": "scientific fields retained; fixed historical non-execution fields reconstructed in memory for exact hash checking",
+      "public_sha256": "f4dc334cd09b1cdb98bcf6d491e72878836a3e9e48c595601e2bd66eeb32678e",
+      "removed_fields": [
+        "status",
+        "execution_enabled",
+        "approval_required"
+      ]
+    },
+    "source-accounting.json": {
+      "original_encoding": "sorted-indented-json-newline",
+      "original_sha256": "19bd70a79f2103fd1cc141dc142ad954b3d0fad0934c5428f3cdf19a60f1f722",
+      "policy": "scientific fields retained; fixed historical non-execution fields reconstructed in memory for exact hash checking",
+      "public_sha256": "b7746b49fcfcbd37643ebe0133aca97c417e3f963dc16c90133749a4f8ea8387",
+      "removed_fields": [
+        "status",
+        "physical_execution_enabled",
+        "physical_execution_requires"
+      ]
+    },
+    "source-artifact-manifest.json": {
+      "original_encoding": "sorted-indented-json-newline",
+      "original_sha256": "b25408c303fdc1ecef17454914c5f084f9439fe0c605468fb66653b313245385",
+      "policy": "scientific fields retained; fixed historical non-execution fields reconstructed in memory for exact hash checking",
+      "public_sha256": "d0677fa7155c7c478b40b874626ef111458eaba6a8a3f094583279d4898f6460",
+      "removed_fields": [
+        "status"
+      ]
+    },
+    "source-recipe.json": {
+      "original_encoding": "sorted-indented-json-newline",
+      "original_sha256": "42dc12de0aa666e4fc9054c22b2321e58240959f1f74c647dc368894de79b694",
+      "policy": "scientific fields retained; fixed historical non-execution fields reconstructed in memory for exact hash checking",
+      "public_sha256": "58012332529fbbe32b687e8079a2909d100e1aa026dc62a77f778ed7eb6db039",
+      "removed_fields": [
+        "status",
+        "candidate_approval_received",
+        "physical_execution_enabled",
+        "seventh_clearance_received",
+        "seventh_cli_receipt_boundary"
+      ]
+    },
+    "source-validation.json": {
+      "original_encoding": "sorted-indented-json-newline",
+      "original_sha256": "8446fc8e4e523531b666817bbcd1e33764d440c9d9417690ed7bbe7324e4465b",
+      "policy": "scientific fields retained; fixed historical non-execution fields reconstructed in memory for exact hash checking",
+      "public_sha256": "ff21da003aa95322e6ce113bbabc03130479cc49b950308841bb41ad5161a3ff",
+      "removed_fields": [
+        "status",
+        "physical_approval_requirement"
+      ]
+    }
+  }
+}

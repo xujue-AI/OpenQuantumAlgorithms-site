@@ -18,6 +18,20 @@ from pathlib import Path
 import platform
 import subprocess
 import sys
+
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
 import tempfile
 import time
 
@@ -243,12 +257,7 @@ def guard_output_directory(output: Path) -> None:
 
 
 def provenance() -> dict:
-    try:
-        code_commit = subprocess.run(
-            ["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True, check=True, timeout=5
-        ).stdout.strip()
-    except (OSError, subprocess.SubprocessError):
-        code_commit = None
+    code_commit = git_revision(ROOT)
     source_paths = [
         "scripts/generate_grover_scaling.py", "src/openquantum/grover.py",
         "src/openquantum/resource_estimation.py", "requirements-lock.txt",

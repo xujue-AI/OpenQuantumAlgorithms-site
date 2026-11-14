@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "n1-gap1of2",
+      "n": 1,
+      "delta_exact": "1/2",
+      "condition_upper_promised": 2.0,
+      "axis": "size"
+    },
+    {
+      "id": "n2-gap1of2",
+      "n": 2,
+      "delta_exact": "1/2",
+      "condition_upper_promised": 2.0,
+      "axis": "size_and_condition"
+    },
+    {
+      "id": "n3-gap1of2",
+      "n": 3,
+      "delta_exact": "1/2",
+      "condition_upper_promised": 2.0,
+      "axis": "size"
+    },
+    {
+      "id": "n4-gap1of2",
+      "n": 4,
+      "delta_exact": "1/2",
+      "condition_upper_promised": 2.0,
+      "axis": "size"
+    },
+    {
+      "id": "n2-gap3of4",
+      "n": 2,
+      "delta_exact": "3/4",
+      "condition_upper_promised": 1.3333333333333333,
+      "axis": "condition"
+    },
+    {
+      "id": "n2-gap3of5",
+      "n": 2,
+      "delta_exact": "3/5",
+      "condition_upper_promised": 1.6666666666666667,
+      "axis": "condition"
+    },
+    {
+      "id": "n2-gap2of5",
+      "n": 2,
+      "delta_exact": "2/5",
+      "condition_upper_promised": 2.5,
+      "axis": "condition"
+    },
+    {
+      "id": "n2-gap1of3",
+      "n": 2,
+      "delta_exact": "1/3",
+      "condition_upper_promised": 3.0,
+      "axis": "unsupported_condition"
+    },
+    {
+      "id": "n2-gap1of4",
+      "n": 2,
+      "delta_exact": "1/4",
+      "condition_upper_promised": 4.0,
+      "axis": "unsupported_condition"
+    }
+  ],
+  "uniform_contract": {
+    "observable": "normalized inverse-state Z(q0)",
+    "absolute_error_target": 0.05,
+    "algorithm_bias_allowance": 0.01,
+    "synthesis_bias_allowance": 0.01,
+    "sampling_error_allowance": 0.03,
+    "statistical_failure": 0.004,
+    "empty_slot_failure": 0.001,
+    "physical_failure": 0.005,
+    "synthesis_model_error_per_complete_attempt": 1e-06,
+    "profile": {
+      "name": "illustrative-p-1e-4",
+      "physical_error_rate": 0.0001,
+      "gate_time_ns": 100,
+      "measurement_time_ns": 500
+    },
+    "confidence_status": "conditional projection; numerical access/loading and concrete synthesis/physical output confidence are not certified",
+    "failure_budget_scope": "the same allocations apply per benchmark case; no joint confidence claim for the full grid",
+    "included": "actual gate input preparation, every signed Pauli PREPARE/SELECT/unprepare and projector phase, real extraction, all readout, all failed complete fresh trials",
+    "excluded": [
+      "fresh-zero initialization/reset timing and faults",
+      "classical preprocessing/compilation/readout wall time in physical runtime",
+      "arbitrary matrix/vector loading",
+      "concrete synthesis sequence and certificate"
+    ]
+  },
+  "degree_rule": "smallestK<=31 passing the exact rational ideal-phase-adjusted Pauli bias<=.01",
+  "phase_rule": "current method API: frozen default atK16; deterministic symmetric fitter at otherK",
+  "retry_rule": "source interval/phase acceptance lower bound rounded downward; observed probability is validation only",
+  "family": "A=R(q+p)I-(q-p)*(sumZ+sumXX),delta=p/q,R=2n-1,alpha=2qR",
+  "validation": "every supported case: explicit input/access/readout, independent Kronecker solve and canonical QASM vector replay",
+  "native_query_cap": {
+    "cases": 7,
+    "wires": 8,
+    "primitive_operations": 25000,
+    "seconds_per_case": 60
+  },
+  "expected_unsupported": [
+    "n2-gap1of3",
+    "n2-gap1of4"
+  ],
+  "qasm_literal_policy": "Qiskit disable_constants=True for both independently replayed trial and native estimator input",
+  "scope": "conditional surface-code resource scaling for this implemented geometric reciprocal; no algorithmic optimality or hardware confidence claim"
+}

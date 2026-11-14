@@ -136,7 +136,10 @@
         "statistical_failure": 0.0025,
         "complete_trial_cap_per_accepted_shot": 25,
         "worst_case_complete_trials": 371375,
-        "expected_complete_trials": 31701.47128978712
+        "expected_complete_trials": 31701.47128978712,
+        "expected_complete_trials_uncapped": 31701.47128978712,
+        "expected_complete_trials_stopped_at_cap": 31701.466956498592,
+        "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p"
       },
       {
         "axis": "Z",
@@ -146,7 +149,10 @@
         "statistical_failure": 0.0025,
         "complete_trial_cap_per_accepted_shot": 25,
         "worst_case_complete_trials": 371375,
-        "expected_complete_trials": 31701.47128978712
+        "expected_complete_trials": 31701.47128978712,
+        "expected_complete_trials_uncapped": 31701.47128978712,
+        "expected_complete_trials_stopped_at_cap": 31701.466956498592,
+        "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p"
       }
     ],
     "total_accepted_shots": 29710,
@@ -156,6 +162,10 @@
     "physical_failure_probability": 0.005,
     "worst_case_complete_trials": 742750,
     "expected_complete_trials": 63402.94257957424,
+    "expected_complete_trials_uncapped": 63402.94257957424,
+    "expected_complete_trials_stopped_at_cap": 63402.933912997185,
+    "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p",
+    "stopped_expectation_scope": "M*(1-(1-p)^R)/p; every requested slot stops on acceptance or cap R, including exhausted slots; all M slots are attempted, without early abort or conditioning on workload success",
     "physical_failure_per_complete_trial_proposal": 6.731740154830024e-09,
     "sampling_performed": false,
     "scope": "separate Pauli-basis accepted iid samples; every complete retry re-prepares Bell input/access and runs final readout"
@@ -172,7 +182,10 @@
         "statistical_failure": 0.0025,
         "complete_trial_cap_per_accepted_shot": 25,
         "worst_case_complete_trials": 371375,
-        "expected_complete_trials": 31710.735490784944
+        "expected_complete_trials": 31710.735490784944,
+        "expected_complete_trials_uncapped": 31710.735490784944,
+        "expected_complete_trials_stopped_at_cap": 31710.73112822784,
+        "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p"
       },
       {
         "axis": "Z",
@@ -182,7 +195,10 @@
         "statistical_failure": 0.0025,
         "complete_trial_cap_per_accepted_shot": 25,
         "worst_case_complete_trials": 371375,
-        "expected_complete_trials": 31710.735490784944
+        "expected_complete_trials": 31710.735490784944,
+        "expected_complete_trials_uncapped": 31710.735490784944,
+        "expected_complete_trials_stopped_at_cap": 31710.73112822784,
+        "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p"
       }
     ],
     "total_accepted_shots": 29710,
@@ -192,6 +208,10 @@
     "physical_failure_probability": 0.005,
     "worst_case_complete_trials": 742750,
     "expected_complete_trials": 63421.47098156989,
+    "expected_complete_trials_uncapped": 63421.47098156989,
+    "expected_complete_trials_stopped_at_cap": 63421.46225645568,
+    "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p",
+    "stopped_expectation_scope": "M*(1-(1-p)^R)/p; every requested slot stops on acceptance or cap R, including exhausted slots; all M slots are attempted, without early abort or conditioning on workload success",
     "physical_failure_per_complete_trial_proposal": 6.731740154830024e-09,
     "sampling_performed": false,
     "scope": "separate Pauli-basis accepted iid samples; every complete retry re-prepares Bell input/access and runs final readout"
@@ -230,11 +250,11 @@
     "validation_cases": 64
   },
   "provenance": {
-    "source_revision_at_generation": "76033515484638fb9fb047bb4329719be895baf5",
+    "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
     "source_hashes": {
-      "thermal_filter.py": "ebdce0cc992e09e4e0105f40a5e7c0fa972e0be92030771c85341b0b1fd29fb2",
+      "thermal_filter.py": "2d58a96bb1bfe37f804bd8f60f54110d9ba617424b95f0bd37a0745eef92848b",
       "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
-      "generate_simulation_thermal_filter.py": "b0312b50f54efbf9545eff9cc4b367073597e28c29c30e6477328cddd085b15e"
+      "generate_simulation_thermal_filter.py": "bfc9419016e2a8c4993b74b8f298dfe2cb0c43ec665f7f41d244af6382d5d142"
     },
     "qasm_hashes": {
       "thermal-filter.qasm": "b30704341ea2c4d5f25c4b692b12bca3bf97947c388ac81023d507da2e44b448",
@@ -242,7 +262,7 @@
       "thermal-trial-Z.qasm": "22a75480bda887c4dea59f9ca06d6bc7b05875834a2b4c0a2963e103367104ac"
     },
     "revision_note": "source hashes identify working-tree files if generation precedes their commit",
-    "python": "3.12.16",
+    "python": "3.12.14",
     "packages": {
       "qiskit": "2.6.2",
       "numpy": "2.5.4",

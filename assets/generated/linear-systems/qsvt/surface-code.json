@@ -6,6 +6,23 @@
   "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
   "source_commit_is_package_release_commit": false,
   "qiskit_version": "2.6.2",
+  "transpiler": {
+    "optimization_level": 1,
+    "seed_transpiler": 7,
+    "basis_gates": [
+      "h",
+      "x",
+      "z",
+      "s",
+      "sdg",
+      "t",
+      "tdg",
+      "rx",
+      "ry",
+      "rz",
+      "cx"
+    ]
+  },
   "qasm_sha256": "bc85a3402cad25eb94cf26f42b62f8cb29855e97a86dea11a08ebd9fbae0eb3f",
   "source_gate_counts": {
     "x": 14,
@@ -104,7 +121,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 117707,
+        "EVALUATION_TIME": 192168,
         "NUM_TS_PER_ROTATION": 18,
         "ALGORITHM_COMPUTE_QUBITS": 3,
         "PHYSICAL_COMPUTE_QUBITS": 14988,
@@ -133,7 +150,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 117707,
+        "EVALUATION_TIME": 192168,
         "NUM_TS_PER_ROTATION": 18,
         "ALGORITHM_COMPUTE_QUBITS": 3,
         "PHYSICAL_COMPUTE_QUBITS": 12684,
@@ -162,7 +179,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 117707,
+        "EVALUATION_TIME": 192168,
         "NUM_TS_PER_ROTATION": 18,
         "ALGORITHM_COMPUTE_QUBITS": 3,
         "PHYSICAL_COMPUTE_QUBITS": 8652,
@@ -191,7 +208,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 117707,
+        "EVALUATION_TIME": 192168,
         "NUM_TS_PER_ROTATION": 18,
         "ALGORITHM_COMPUTE_QUBITS": 3,
         "PHYSICAL_COMPUTE_QUBITS": 6924,
@@ -220,7 +237,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 117707,
+        "EVALUATION_TIME": 192168,
         "NUM_TS_PER_ROTATION": 18,
         "ALGORITHM_COMPUTE_QUBITS": 3,
         "PHYSICAL_COMPUTE_QUBITS": 5388,
@@ -249,7 +266,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 117707,
+        "EVALUATION_TIME": 192168,
         "NUM_TS_PER_ROTATION": 18,
         "ALGORITHM_COMPUTE_QUBITS": 3,
         "PHYSICAL_COMPUTE_QUBITS": 4044,
@@ -278,7 +295,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 117707,
+        "EVALUATION_TIME": 192168,
         "NUM_TS_PER_ROTATION": 18,
         "ALGORITHM_COMPUTE_QUBITS": 3,
         "PHYSICAL_COMPUTE_QUBITS": 2892,

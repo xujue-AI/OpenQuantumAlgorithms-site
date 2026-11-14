@@ -1,0 +1,156 @@
+{
+  "ledger": {
+    "status": "recorded ideal adaptive trajectory; all selected batches charged",
+    "circuits": [
+      {
+        "power": 0,
+        "multiplier": 1,
+        "shots": 768,
+        "logical_qubits": 3,
+        "decomposed_gate_counts": {
+          "cx": 6,
+          "t": 4,
+          "tdg": 3,
+          "ry": 2,
+          "h": 2,
+          "x": 2,
+          "measure": 1
+        },
+        "operations_per_shot": 20,
+        "dependency_depth_per_shot": 12,
+        "all_shot_operations": 15360,
+        "all_shot_dependency_depth": 9216,
+        "A_calls_per_shot": 1,
+        "A_inverse_calls_per_shot": 0,
+        "predicate_or_inverse_calls_per_shot": 1,
+        "zero_reflections_per_shot": 0,
+        "good_reflections_per_shot": 0,
+        "measurements_per_shot": 1
+      },
+      {
+        "power": 2,
+        "multiplier": 5,
+        "shots": 256,
+        "logical_qubits": 3,
+        "decomposed_gate_counts": {
+          "cx": 42,
+          "t": 22,
+          "tdg": 21,
+          "ry": 16,
+          "rz": 14,
+          "h": 2,
+          "x": 2,
+          "measure": 1
+        },
+        "operations_per_shot": 120,
+        "dependency_depth_per_shot": 80,
+        "all_shot_operations": 30720,
+        "all_shot_dependency_depth": 20480,
+        "A_calls_per_shot": 3,
+        "A_inverse_calls_per_shot": 2,
+        "predicate_or_inverse_calls_per_shot": 5,
+        "zero_reflections_per_shot": 2,
+        "good_reflections_per_shot": 2,
+        "measurements_per_shot": 1
+      }
+    ],
+    "logical_qubits": 3,
+    "total_shots": 1024,
+    "total_Q_calls": 512,
+    "total_threshold_predicate_or_inverse_calls": 2048,
+    "total_flag_measurements": 1024,
+    "total_primitive_operations": 46080,
+    "serial_dependency_depth_sum": 29696,
+    "depth_semantics": "serial per-shot circuit dependencies; not physical time",
+    "excluded": [
+      "classical adaptive inference and compilation timing",
+      "hardware initialization faults and device execution",
+      "actual synthesis certificate",
+      "application-specific input loading"
+    ],
+    "arithmetic_certificates_are_not_circuit_or_hardware_proofs": true
+  },
+  "exported_power_circuits": [
+    {
+      "power": 0,
+      "multiplier": 1,
+      "recorded_shots": 768,
+      "logical_qubits": 3,
+      "filename": "power-0.qasm",
+      "qasm_sha256": "8893ddf857d98120225429d8431d6b670a8a86f761c17e1d4daa6c2aafd5fc22",
+      "source_gate_counts": {
+        "x": 4,
+        "h": 2,
+        "ccx": 1,
+        "measure": 1
+      },
+      "decomposed_gate_counts": {
+        "cx": 6,
+        "t": 4,
+        "tdg": 3,
+        "ry": 2,
+        "h": 2,
+        "x": 2,
+        "measure": 1
+      },
+      "decomposed_dependency_depth": 12,
+      "decomposed_operations_including_flag_measurement": 20,
+      "all_shot_primitive_operations": 15360,
+      "qasm_phase_scope": "fixed-power measured trial; omitted overall scalar is irrelevant to flag probabilities, not a phase-preserving controlled oracle"
+    },
+    {
+      "power": 2,
+      "multiplier": 5,
+      "recorded_shots": 256,
+      "logical_qubits": 3,
+      "filename": "power-2.qasm",
+      "qasm_sha256": "978611e7cf44dbc8f20c37f31845648752757e899e65619329eeb33a479dd323",
+      "source_gate_counts": {
+        "x": 32,
+        "h": 14,
+        "ccx": 7,
+        "z": 2,
+        "measure": 1
+      },
+      "decomposed_gate_counts": {
+        "cx": 42,
+        "t": 22,
+        "tdg": 21,
+        "ry": 16,
+        "rz": 14,
+        "h": 2,
+        "x": 2,
+        "measure": 1
+      },
+      "decomposed_dependency_depth": 80,
+      "decomposed_operations_including_flag_measurement": 120,
+      "all_shot_primitive_operations": 30720,
+      "qasm_phase_scope": "fixed-power measured trial; omitted overall scalar is irrelevant to flag probabilities, not a phase-preserving controlled oracle"
+    }
+  ],
+  "source_and_environment": {
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "qdk": "1.34.0"
+    },
+    "device": "CPU",
+    "system": "Linux",
+    "machine": "x86_64",
+    "seed": 314159,
+    "source_base_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_base_commit_is_full_current_source_commit": false,
+    "source_sha256": {
+      "iterative_amplitude_estimation.py": "3d9bbab9fe817f071d21e7ff252bd1614042b501ddbd93711cf3dc94fab0ce05",
+      "amplitude_estimation.py": "9f82e44955922a7f404fc946c661ef72b9bf42f3b083a095168f69d5a48e1695",
+      "qft_qpe.py": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab",
+      "resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b"
+    },
+    "generator_sha256": "0ead20e4c25f06214f061caeebc32cdec0ceecec1fa50c42a209f511d6b74731",
+    "requirements_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "hardware_execution": false
+  }
+}

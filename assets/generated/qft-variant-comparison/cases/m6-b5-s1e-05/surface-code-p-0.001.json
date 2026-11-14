@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "status": "computed_conditional_model",
+  "resource_estimate_kind": "conditional_mean_fit_resource_projection",
+  "qdk_version": "1.34.0",
+  "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
+  "source_commit_is_package_release_commit": false,
+  "qiskit_version": "2.6.2",
+  "transpiler": {
+    "optimization_level": 1,
+    "seed_transpiler": 7,
+    "basis_gates": [
+      "h",
+      "x",
+      "z",
+      "s",
+      "sdg",
+      "t",
+      "tdg",
+      "rx",
+      "ry",
+      "rz",
+      "cx"
+    ]
+  },
+  "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[6] c;\nqubit[7] q;\nh q[0];\nrz(3*pi/10) q[0];\nh q[1];\nrz(3*pi/10) q[1];\nh q[2];\nrz(3*pi/10) q[2];\nh q[3];\nrz(3*pi/10) q[3];\nh q[4];\nrz(3*pi/10) q[4];\nh q[5];\nrz(3*pi/10) q[5];\nx q[6];\ncx q[0], q[6];\nrz(-3*pi/10) q[6];\ncx q[0], q[6];\nrz(3*pi/10) q[6];\ncx q[1], q[6];\nrz(-3*pi/10) q[6];\ncx q[1], q[6];\nrz(3*pi/10) q[1];\nrz(3*pi/10) q[6];\ncx q[1], q[6];\nrz(-3*pi/10) q[6];\ncx q[1], q[6];\nrz(3*pi/10) q[6];\ncx q[2], q[6];\nrz(-3*pi/10) q[6];\ncx q[2], q[6];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[6];\ncx q[2], q[6];\nrz(-3*pi/10) q[6];\ncx q[2], q[6];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[6];\ncx q[2], q[6];\nrz(-3*pi/10) q[6];\ncx q[2], q[6];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[6];\ncx q[2], q[6];\nrz(-3*pi/10) q[6];\ncx q[2], q[6];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[6];\ncx q[3], q[6];\nrz(-3*pi/10) q[6];\ncx q[3], q[6];\ncx q[2], q[3];\ncx q[3], q[2];\ncx q[2], q[3];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[6];\ncx q[4], q[6];\nrz(-3*pi/10) q[6];\ncx q[4], q[6];\ncx q[1], q[4];\ncx q[4], q[1];\ncx q[1], q[4];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\nrz(3*pi/10) q[5];\nrz(3*pi/10) q[6];\ncx q[5], q[6];\nrz(-3*pi/10) q[6];\ncx q[5], q[6];\ncx q[0], q[5];\ncx q[5], q[0];\ncx q[0], q[5];\nh q[0];\nrz(-pi/4) q[0];\ncx q[0], q[1];\nrz(pi/4) q[1];\ncx q[0], q[1];\nrz(-pi/8) q[0];\ncx q[0], q[2];\nrz(-pi/4) q[1];\nh q[1];\nrz(-pi/4) q[1];\nrz(pi/8) q[2];\ncx q[0], q[2];\nrz(-pi/16) q[0];\ncx q[0], q[3];\nrz(-pi/8) q[2];\ncx q[1], q[2];\nrz(pi/4) q[2];\ncx q[1], q[2];\nrz(-pi/8) q[1];\nrz(-pi/4) q[2];\nh q[2];\nrz(-pi/4) q[2];\nrz(pi/16) q[3];\ncx q[0], q[3];\nrz(-pi/32) q[0];\ncx q[0], q[4];\nrz(-pi/16) q[3];\ncx q[1], q[3];\nrz(pi/8) q[3];\ncx q[1], q[3];\nrz(-pi/16) q[1];\nrz(-pi/8) q[3];\ncx q[2], q[3];\nrz(pi/4) q[3];\ncx q[2], q[3];\nrz(-pi/8) q[2];\nrz(-pi/4) q[3];\nh q[3];\nrz(-pi/4) q[3];\nrz(pi/32) q[4];\ncx q[0], q[4];\nrz(-pi/64) q[0];\ncx q[0], q[5];\nrz(-pi/32) q[4];\ncx q[1], q[4];\nrz(pi/16) q[4];\ncx q[1], q[4];\nrz(-pi/32) q[1];\nrz(-pi/16) q[4];\ncx q[2], q[4];\nrz(pi/8) q[4];\ncx q[2], q[4];\nrz(-pi/16) q[2];\nrz(-pi/8) q[4];\ncx q[3], q[4];\nrz(pi/4) q[4];\ncx q[3], q[4];\nrz(-pi/8) q[3];\nrz(-pi/4) q[4];\nh q[4];\nrz(-pi/4) q[4];\nrz(pi/64) q[5];\ncx q[0], q[5];\nrz(-pi/64) q[5];\ncx q[1], q[5];\nrz(pi/32) q[5];\ncx q[1], q[5];\nrz(-pi/32) q[5];\ncx q[2], q[5];\nrz(pi/16) q[5];\ncx q[2], q[5];\nrz(-pi/16) q[5];\ncx q[3], q[5];\nrz(pi/8) q[5];\ncx q[3], q[5];\nrz(-pi/8) q[5];\ncx q[4], q[5];\nrz(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi/4) q[5];\nh q[5];\nrz(3*pi/10) q[6];\nc[0] = measure q[0];\nc[1] = measure q[1];\nc[2] = measure q[2];\nc[3] = measure q[3];\nc[4] = measure q[4];\nc[5] = measure q[5];\n",
+  "qasm_sha256": "fc2187c080eab7a24075c9af39d58007bbcbf01f39932ca0cfb4f51dc13d49eb",
+  "source_gate_counts": {
+    "cProduct phase U": 63,
+    "cp": 15,
+    "h": 12,
+    "measure": 6,
+    "swap": 3,
+    "x": 1
+  },
+  "decomposed_gate_counts": {
+    "rz": 234,
+    "cx": 165,
+    "h": 12,
+    "measure": 6,
+    "x": 1
+  },
+  "canonical_gate_counts": {
+    "T": 15,
+    "RZ": 219,
+    "MEAS_Z": 6
+  },
+  "canonical_application_trace": "@compute_qubits(7)\n{\n  repeat 77 {\n    RZ(0)\n    RZ(1)\n  }\n  repeat 65 {\n    RZ(0)\n  }\n  repeat 15 {\n    T(0)\n  }\n  repeat 6 {\n    MEAS_Z(0)\n  }\n}\n",
+  "synthesized_application_trace": "@compute_qubits(23)\n@base_error(0.0000075365424012340485)\n@resource_state(T, 3957)\n{\n  repeat 2796 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)\n  }\n}\n",
+  "synthesis": {
+    "model": "QDK PSSPC mixed-fallback Clifford+T approximation",
+    "cost_semantics": "mean linear fit for random angles; not worst-case or certified per angle",
+    "fit_domain": "per-rotation modeled diamond-distance accuracy epsilon < 1e-4",
+    "num_arbitrary_rotations": 219,
+    "fixed_num_ts_per_rotation": 18,
+    "model_error_per_rotation": 3.441343562207328e-08,
+    "model_error_per_execution": 7.5365424012340485e-06,
+    "actual_synthesis_sequence_generated": false,
+    "instance_approximation_certificate_verified": false
+  },
+  "budget": {
+    "synthesis_model_error_per_execution": 1e-05,
+    "physical_failure_probability": 0.005,
+    "executions": 15
+  },
+  "observable_contract": null,
+  "physical_profile": {
+    "name": "illustrative-p-0.001",
+    "physical_error_rate": 0.001,
+    "gate_time_ns": 100,
+    "measurement_time_ns": 500
+  },
+  "error_composition": "UnionBound; approximation base and physical contribution explicitly separated",
+  "isa_graph_pruning": false,
+  "pareto_completeness": "enumerated ISA combinations; limited to declared models/domains",
+  "included": [
+    "all operations in supplied bound circuit",
+    "explicit input preparation and output basis changes if supplied",
+    "final measurements",
+    "serial executions",
+    "PSSPC logical layout",
+    "surface-code data qubits",
+    "round-based magic-state factories"
+  ],
+  "limitations": [
+    "The synthesis formula is a mean linear fit for random angles, not a worst-case bound or certified concrete Clifford+T implementation",
+    "The fit models expected fallback-protocol work; no synthesis runtime-tail or budget-overrun confidence is certified",
+    "The QDK trace abstracts Clifford work and scheduling into PSSPC rather than preserving an exact gate schedule",
+    "Physical reliability is conditional on the declared hardware/QEC/factory models",
+    "No algorithm approximation, optimizer convergence, or observable precision is inferred from the circuit",
+    "Classical optimizer/preprocessing/compilation/verification costs and external data loading are excluded",
+    "A bounded-observable contract covers one fixed scalar mean only when its declared assumptions hold"
+  ],
+  "sources": [
+    "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace/transforms/psspc.rs",
+    "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace.rs",
+    "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/result.rs",
+    "https://learn.microsoft.com/en-us/azure/quantum/qre-estimation-results",
+    "https://arxiv.org/abs/2203.10064"
+  ],
+  "pareto_points": [
+    {
+      "peak_physical_qubits": 163527,
+      "data_code_distance": 25,
+      "runtime_per_execution_ns": 69900000.0,
+      "serial_runtime_all_executions_ns": 1048500000.0,
+      "qdk_combined_error_score_per_execution": 0.0002303158353252341,
+      "synthesis_model_error_per_execution": 7.5365424012340485e-06,
+      "physical_failure_model_per_execution": 0.00022277929292400004,
+      "physical_failure_union_bound_all_executions": 0.0033416893938600007,
+      "factories": {
+        "T": {
+          "copies": 10,
+          "runs": 413,
+          "states": 3957,
+          "error_rate": 5.6300000000000014e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 2375315,
+        "NUM_TS_PER_ROTATION": 18,
+        "ALGORITHM_COMPUTE_QUBITS": 7,
+        "PHYSICAL_COMPUTE_QUBITS": 28727,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 23,
+        "PHYSICAL_FACTORY_QUBITS": 134800
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=25)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+      "peak_qubit_time_product_qubit_seconds": 171458.0595,
+      "conditional_median_plus_physical_failure_upper": 0.00637938752034131
+    },
+    {
+      "peak_physical_qubits": 172591,
+      "data_code_distance": 23,
+      "runtime_per_execution_ns": 64308000.0,
+      "serial_runtime_all_executions_ns": 964620000.0,
+      "qdk_combined_error_score_per_execution": 0.00023031757164123412,
+      "synthesis_model_error_per_execution": 7.5365424012340485e-06,
+      "physical_failure_model_per_execution": 0.00022278102924000006,
+      "physical_failure_union_bound_all_executions": 0.003341715438600001,
+      "factories": {
+        "T": {
+          "copies": 11,
+          "runs": 380,
+          "states": 3957,
+          "error_rate": 5.6300000000000014e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 2375315,
+        "NUM_TS_PER_ROTATION": 18,
+        "ALGORITHM_COMPUTE_QUBITS": 7,
+        "PHYSICAL_COMPUTE_QUBITS": 24311,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 23,
+        "PHYSICAL_FACTORY_QUBITS": 148280
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=23)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+      "peak_qubit_time_product_qubit_seconds": 166484.73042,
+      "conditional_median_plus_physical_failure_upper": 0.00637941356508131
+    },
+    {
+      "peak_physical_qubits": 182023,
+      "data_code_distance": 21,
+      "runtime_per_execution_ns": 58716000.0,
+      "serial_runtime_all_executions_ns": 880740000.0,
+      "qdk_combined_error_score_per_execution": 0.0002303349348012341,
+      "synthesis_model_error_per_execution": 7.5365424012340485e-06,
+      "physical_failure_model_per_execution": 0.00022279839240000004,
+      "physical_failure_union_bound_all_executions": 0.0033419758860000004,
+      "factories": {
+        "T": {
+          "copies": 12,
+          "runs": 347,
+          "states": 3957,
+          "error_rate": 5.6300000000000014e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 2375315,
+        "NUM_TS_PER_ROTATION": 18,
+        "ALGORITHM_COMPUTE_QUBITS": 7,
+        "PHYSICAL_COMPUTE_QUBITS": 20263,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 23,
+        "PHYSICAL_FACTORY_QUBITS": 161760
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=21)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+      "peak_qubit_time_product_qubit_seconds": 160314.93702,
+      "conditional_median_plus_physical_failure_upper": 0.0063796740124813095
+    },
+    {
+      "peak_physical_qubits": 191823,
+      "data_code_distance": 19,
+      "runtime_per_execution_ns": 53124000.0,
+      "serial_runtime_all_executions_ns": 796860000.0,
+      "qdk_combined_error_score_per_execution": 0.0002305085664012341,
+      "synthesis_model_error_per_execution": 7.5365424012340485e-06,
+      "physical_failure_model_per_execution": 0.00022297202400000006,
+      "physical_failure_union_bound_all_executions": 0.003344580360000001,
+      "factories": {
+        "T": {
+          "copies": 13,
+          "runs": 314,
+          "states": 3957,
+          "error_rate": 5.6300000000000014e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 2375315,
+        "NUM_TS_PER_ROTATION": 18,
+        "ALGORITHM_COMPUTE_QUBITS": 7,
+        "PHYSICAL_COMPUTE_QUBITS": 16583,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 23,
+        "PHYSICAL_FACTORY_QUBITS": 175240
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=19)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+      "peak_qubit_time_product_qubit_seconds": 152856.07578,
+      "conditional_median_plus_physical_failure_upper": 0.00638227848648131
+    },
+    {
+      "peak_physical_qubits": 215471,
+      "data_code_distance": 17,
+      "runtime_per_execution_ns": 47532000.0,
+      "serial_runtime_all_executions_ns": 712980000.0,
+      "qdk_combined_error_score_per_execution": 0.0002322448824012341,
+      "synthesis_model_error_per_execution": 7.5365424012340485e-06,
+      "physical_failure_model_per_execution": 0.00022470834000000005,
+      "physical_failure_union_bound_all_executions": 0.003370625100000001,
+      "factories": {
+        "T": {
+          "copies": 15,
+          "runs": 281,
+          "states": 3957,
+          "error_rate": 5.6300000000000014e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 2375315,
+        "NUM_TS_PER_ROTATION": 18,
+        "ALGORITHM_COMPUTE_QUBITS": 7,
+        "PHYSICAL_COMPUTE_QUBITS": 13271,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 23,
+        "PHYSICAL_FACTORY_QUBITS": 202200
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=17)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+      "peak_qubit_time_product_qubit_seconds": 153626.51358,
+      "conditional_median_plus_physical_failure_upper": 0.00640832322648131
+    },
+    {
+      "peak_physical_qubits": 226007,
+      "data_code_distance": 15,
+      "runtime_per_execution_ns": 41940000.0,
+      "serial_runtime_all_executions_ns": 629100000.0,
+      "qdk_combined_error_score_per_execution": 0.0002496080424012341,
+      "synthesis_model_error_per_execution": 7.5365424012340485e-06,
+      "physical_failure_model_per_execution": 0.00024207150000000007,
+      "physical_failure_union_bound_all_executions": 0.003631072500000001,
+      "factories": {
+        "T": {
+          "copies": 16,
+          "runs": 248,
+          "states": 3957,
+          "error_rate": 5.6300000000000014e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 2375315,
+        "NUM_TS_PER_ROTATION": 18,
+        "ALGORITHM_COMPUTE_QUBITS": 7,
+        "PHYSICAL_COMPUTE_QUBITS": 10327,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 23,
+        "PHYSICAL_FACTORY_QUBITS": 215680
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=15)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+      "peak_qubit_time_product_qubit_seconds": 142181.0037,
+      "conditional_median_plus_physical_failure_upper": 0.0066687706264813105
+    },
+    {
+      "peak_physical_qubits": 584751,
+      "data_code_distance": 13,
+      "runtime_per_execution_ns": 36348000.0,
+      "serial_runtime_all_executions_ns": 545220000.0,
+      "qdk_combined_error_score_per_execution": 0.00033979838340123414,
+      "synthesis_model_error_per_execution": 7.5365424012340485e-06,
+      "physical_failure_model_per_execution": 0.0003322618410000001,
+      "physical_failure_union_bound_all_executions": 0.004983927615000001,
+      "factories": {
+        "T": {
+          "copies": 25,
+          "runs": 164,
+          "states": 3957,
+          "error_rate": 3.5213000000000006e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 2375315,
+        "NUM_TS_PER_ROTATION": 18,
+        "ALGORITHM_COMPUTE_QUBITS": 7,
+        "PHYSICAL_COMPUTE_QUBITS": 7751,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 23,
+        "PHYSICAL_FACTORY_QUBITS": 577000
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=13)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+      "peak_qubit_time_product_qubit_seconds": 318817.94022000005,
+      "conditional_median_plus_physical_failure_upper": 0.008021625741481311
+    }
+  ],
+  "qpe_variant_contract": {
+    "phase_bits": 6,
+    "max_distance": 5,
+    "target_qubits": 1,
+    "phase": 0.3,
+    "phase_error_target": 0.015625,
+    "variant": "exact",
+    "total_failure_target": 0.01,
+    "statistical_failure_allowance": 0.0049,
+    "statistical_allowance_exact_fraction": "49/10000",
+    "physical_failure_allowance_all_trials": 0.005,
+    "synthesis_model_allowance_per_trial": 1e-05,
+    "base_single_failure_upper": 0.19008264462809918,
+    "base_single_failure_exact_fraction": "23/121",
+    "existing_numeric_spectral_omission_bound": 0,
+    "omission_output_tv_upper": 0.0,
+    "omission_output_tv_upper_exact_fraction": "0",
+    "single_failure_upper": 0.19009264462809916,
+    "single_failure_upper_exact_fraction": "13577517896180764023273/71425793053403383857152",
+    "odd_fresh_trials": 15,
+    "median_failure_upper": 0.0030376981264813095,
+    "median_failure_upper_exact_fraction": "221762448553914291587688526492068894937564307895401122086906232041297391450351893359129288115620311664044531998651297349554655787955029597590028820938274141534621232581219257862496927795619101504612895970407813810520452739426773927020149878303084912596365708250712016890467988894224384538604612946856553963323517500680453794405305766401265/73003451732312467594074978074066849161327368263391672953224768243273058075533815205139511546589457112211141864617701347209212290000234046024150293964639530249215988976640974340733153021981419732112170922166196890742375264900422104957329821460939089268852458455054344392481008231203809528148207357080140508291101975166788433322041979474804736",
+    "configured_conditional_full_failure_upper": 0.00803769812648131,
+    "scalar_median_branch_cut_assumption_satisfied": true,
+    "output": "median of fresh scalar y/2^m values within absolute phase error 2^-m",
+    "omission_semantics": "coherent spectral-norm loss converted to worst-case output TV, never an additive phase-angle bias",
+    "arithmetic": "exact Fraction binomial allocation with conservative pi<22/7; no Lean proof",
+    "confidence_scope": "conditional on ideal unitary/phase theorem, IID outputs, synthesis-TV scalar, correct decoder and physical-fault model",
+    "certified_hardware_confidence": null
+  },
+  "logical_measured_trial_qasm_sha256": "fc2187c080eab7a24075c9af39d58007bbcbf01f39932ca0cfb4f51dc13d49eb",
+  "physical_initialization_cost_included": false
+}

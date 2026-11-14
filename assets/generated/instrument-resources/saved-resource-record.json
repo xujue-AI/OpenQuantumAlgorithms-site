@@ -1,0 +1,240 @@
+{
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "README.md": {
+      "bytes": 7453,
+      "sha256": "04ce4433642bac8e391fad98268c32f9b6298af09b3534bc3789350a40f897c1"
+    },
+    "damping-Z/clifford-t-instrument.qasm": {
+      "bytes": 2243,
+      "sha256": "34501996bb120b465d6988de8cdb499784a410cc11e1a2e4cf5b2ed7a8e34d25"
+    },
+    "damping-Z/report.json": {
+      "bytes": 43968,
+      "sha256": "7b6a81da033ef2015132e346752ce0a94c7fba29628730b11547156a81cda6f4"
+    },
+    "damping-Z/source-instrument.qasm": {
+      "bytes": 185,
+      "sha256": "0fcd45f0cb755a39f90318b63b6bdc573b2eccc5f43ad02b4c7ab6faeee58395"
+    },
+    "generate_instrument_resources.py": {
+      "bytes": 29422,
+      "sha256": "0d385faadfda3615ac3f3da60e49ce50a7166b3249b8ba2b8eb54e7b20ded4a5"
+    },
+    "instrument_resources.py": {
+      "bytes": 52381,
+      "sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863"
+    },
+    "lcu.py": {
+      "bytes": 14488,
+      "sha256": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6"
+    },
+    "lindblad-Z/clifford-t-instrument.qasm": {
+      "bytes": 423194,
+      "sha256": "db1bc3ed3705d23fecc29242ef4c6c4060f74104e93c7be335e6a4aeb04a57fe"
+    },
+    "lindblad-Z/report.json": {
+      "bytes": 55604,
+      "sha256": "80188830b9bca6c96ac58dcd7406f9bc00370205b455338bb445a35e6207817f"
+    },
+    "lindblad-Z/source-instrument.qasm": {
+      "bytes": 7938,
+      "sha256": "399617a4398b9ed2a395731032cefd87c4f9b1c13cd8891029e9191b1412ccd5"
+    },
+    "lindblad.py": {
+      "bytes": 13635,
+      "sha256": "069ee82b310defbaba395b74111072553fc830487a09a81a1a44d782d593698f"
+    },
+    "manifest.json": {
+      "bytes": 6088,
+      "sha256": "699d672ad41c4c5817b8fccfb1c850b94f2471d1eabea8350ed2f70878b103a6"
+    },
+    "open_systems.py": {
+      "bytes": 14355,
+      "sha256": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692"
+    },
+    "references.bib": {
+      "bytes": 2140,
+      "sha256": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "space-time.svg": {
+      "bytes": 50676,
+      "sha256": "e37bb5ca3e0f249d335f26efa0c023d7cd1ceb19859c722ccdfa22180eb3cbc3"
+    },
+    "summary.csv": {
+      "bytes": 994,
+      "sha256": "dd620f1f884713947f34c286ae641509197fe527c50af486b94dafd2d9ba1810"
+    },
+    "summary.md": {
+      "bytes": 588,
+      "sha256": "17b54f6fb8760b0df26156681788ea7b22ad6dddcfb4a29a2794317debb0ee50"
+    },
+    "thermal-X/clifford-t-instrument.qasm": {
+      "bytes": 9391,
+      "sha256": "0d756addbe06ce08ae8c7b5676f91be2d47b40b31e395ae9df21ae5f64ea0571"
+    },
+    "thermal-X/report.json": {
+      "bytes": 60544,
+      "sha256": "2447b61a6c36a393d02683242a544e68105c0a9ac43cda7ca7270374678fbae5"
+    },
+    "thermal-X/source-instrument.qasm": {
+      "bytes": 630,
+      "sha256": "5911ebddbfd683730ec2762f05941f91e0a60aba8459273ecd9616952384551b"
+    },
+    "thermal-Z/clifford-t-instrument.qasm": {
+      "bytes": 9383,
+      "sha256": "8805293d254a0d4c00a0d0a902554c8e20024cf4902ec7aa1118def5f9ad2cfc"
+    },
+    "thermal-Z/report.json": {
+      "bytes": 60527,
+      "sha256": "d78d8d06e5c85812a02604e1fabfb951a0121613a8b656bda314c4e4e9563b75"
+    },
+    "thermal-Z/source-instrument.qasm": {
+      "bytes": 622,
+      "sha256": "02925bbabc832c236b27b6f7a06a9080e1a861eb35eb4bc7dd1e20610b8bedee"
+    },
+    "thermal_filter.py": {
+      "bytes": 21694,
+      "sha256": "2d58a96bb1bfe37f804bd8f60f54110d9ba617424b95f0bd37a0745eef92848b"
+    }
+  },
+  "kind": "instrument",
+  "producer_commit": "d4d0aedafc5e92f9a33c3bff34a5e79d83a63af1",
+  "schema": "openquantum-saved-tail-resource-v1",
+  "scope": {
+    "controller_negatives": 0,
+    "positive_profiles": 8,
+    "reported_feasible_candidates": 859,
+    "stored_points": 23,
+    "unavailable_candidate_ledgers": 836
+  },
+  "sources": {
+    "LICENSE": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "assets/generated/grover/circuit.qasm": {
+      "bytes": 1058,
+      "sha256": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0"
+    },
+    "assets/generated/resources/grover-surface-code.csv": {
+      "bytes": 1088,
+      "sha256": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+    },
+    "assets/generated/resources/grover-surface-code.json": {
+      "bytes": 18956,
+      "sha256": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "scripts/energy_physical_records.py": {
+      "bytes": 37819,
+      "sha256": "d1dfcdf57aca15e4784d23a6d5a1360c00a51af68a43caad31b919766da48187"
+    },
+    "scripts/estimate_resources.py": {
+      "bytes": 13462,
+      "sha256": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4"
+    },
+    "scripts/freeze_energy_estimation.py": {
+      "bytes": 1059,
+      "sha256": "46c78e8d5b26d6defc8d6b3029ea3e2c219b5eb32c8f3451ab42298d3f97bd86"
+    },
+    "scripts/generate_energy_estimation.py": {
+      "bytes": 21971,
+      "sha256": "054e3c2b2e2b1811f3b5170de3376378e6155e4a985289efa4a1acf0e1066f36"
+    },
+    "scripts/generate_instrument_resources.py": {
+      "bytes": 29422,
+      "sha256": "0d385faadfda3615ac3f3da60e49ce50a7166b3249b8ba2b8eb54e7b20ded4a5"
+    },
+    "scripts/source_provenance.py": {
+      "bytes": 2401,
+      "sha256": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255"
+    },
+    "scripts/tail_resource_instrument_policy.json": {
+      "bytes": 16196,
+      "sha256": "140dcfe17ed48e2aacdb9e5916c248db3478bdae450634ff5f15cebfc151de00"
+    },
+    "scripts/tail_resource_model.py": {
+      "bytes": 34610,
+      "sha256": "52dfb817d0b8f18a22429e57d4df30251a6bede40f99a62f9cf2ebaa8951ba3b"
+    },
+    "scripts/tail_resource_numerical.py": {
+      "bytes": 16756,
+      "sha256": "da2919f82b0d7765d06590075d1fa70412f125ca3bb309f4e83aff124cb09ec9"
+    },
+    "scripts/tail_resource_qasm.py": {
+      "bytes": 19393,
+      "sha256": "881b21fed5bae0bc4702f09f6b392823537582bf0e27b938929afa56372d3154"
+    },
+    "scripts/tail_resource_records.py": {
+      "bytes": 31382,
+      "sha256": "855fa714cca68a5b7f2366ba09be0a593ae0912a736c50833df69b0d6fe94310"
+    },
+    "scripts/tail_resource_replay.py": {
+      "bytes": 22120,
+      "sha256": "c65fe32f56661d355772a9b8840c7f67e9e0e25f526bc4c00c564ae394e9e2f5"
+    },
+    "scripts/verify_energy_estimation.py": {
+      "bytes": 35413,
+      "sha256": "2a981633a4b6109778a223e07bd89e91a875a456cca80e7aa1417f4996a7b563"
+    },
+    "src/openquantum/__init__.py": {
+      "bytes": 401,
+      "sha256": "af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663"
+    },
+    "src/openquantum/energy_estimation.py": {
+      "bytes": 25499,
+      "sha256": "8f10d8ae76ad472884910ebf7f7e3de90a9a58f0b8e9801c14310fdc68fcf9ae"
+    },
+    "src/openquantum/grover.py": {
+      "bytes": 4377,
+      "sha256": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21"
+    },
+    "src/openquantum/instrument_resources.py": {
+      "bytes": 52381,
+      "sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863"
+    },
+    "src/openquantum/qft_qpe.py": {
+      "bytes": 18558,
+      "sha256": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab"
+    },
+    "src/openquantum/resource_estimation.py": {
+      "bytes": 19854,
+      "sha256": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b"
+    },
+    "src/openquantum/simulation/lcu.py": {
+      "bytes": 14488,
+      "sha256": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6"
+    },
+    "src/openquantum/simulation/lindblad.py": {
+      "bytes": 13635,
+      "sha256": "069ee82b310defbaba395b74111072553fc830487a09a81a1a44d782d593698f"
+    },
+    "src/openquantum/simulation/open_systems.py": {
+      "bytes": 14355,
+      "sha256": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692"
+    },
+    "src/openquantum/simulation/thermal_filter.py": {
+      "bytes": 21694,
+      "sha256": "2d58a96bb1bfe37f804bd8f60f54110d9ba617424b95f0bd37a0745eef92848b"
+    }
+  },
+  "trust_boundaries": [
+    "Native factory properties and absent raw Trace JSON are producer-attested; Trace hashes are identities only.",
+    "No Native estimation, factory search, phase fitting or rotation synthesis is executed.",
+    "Only retained instrument point ledgers are available; omitted search candidates are not replayed.",
+    "Frozen source/Clifford+T replay checks the recorded fixed input, not arbitrary-input channel correctness.",
+    "Per-rotation approximant words and routing boundaries are absent; their producer claims are not renewed.",
+    "Large repeated workloads, physical hardware and complete-shot ensembles remain unexecuted."
+  ]
+}

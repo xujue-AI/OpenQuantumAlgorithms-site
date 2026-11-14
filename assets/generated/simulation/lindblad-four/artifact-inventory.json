@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "file": "LICENSE.txt",
+      "category": "copied_license_or_primary_references",
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    {
+      "file": "README.md",
+      "category": "result_or_documentation",
+      "bytes": 5877,
+      "sha256": "0e03a0e9f673f5b49dc122a51f5f8f7a240d23b49efe5430b6989b28f3d1092e"
+    },
+    {
+      "file": "bounded_density_instrument.py",
+      "category": "copied_frozen_source_dependency",
+      "bytes": 23060,
+      "sha256": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517"
+    },
+    {
+      "file": "clifford-t-trial.qasm",
+      "category": "actual_circuit_export",
+      "bytes": 13671190,
+      "sha256": "527e5a78aa0f4ed8a3394f040049028969644e43ed1763d4f0e81a0ac66c3009"
+    },
+    {
+      "file": "counts.svg",
+      "category": "original_figure",
+      "bytes": 31425,
+      "sha256": "6a2a4aeed53b87f4b091ea2480924da904d9cf6c7155c5e3588541c506890ebb"
+    },
+    {
+      "file": "error-budget.svg",
+      "category": "original_figure",
+      "bytes": 43572,
+      "sha256": "5e4d49f2e89c17f99090b4e37c3efa649986d16051cf4d8ee7a15cf19df27a6e"
+    },
+    {
+      "file": "failures.svg",
+      "category": "original_figure",
+      "bytes": 38220,
+      "sha256": "0b3955f4903126df106fc16b486445daca62ccf80d6e3b0c798d1e8d7b4f1ed8"
+    },
+    {
+      "file": "family-status.csv",
+      "category": "result_or_documentation",
+      "bytes": 942,
+      "sha256": "d46e8d0a73c46fb73ef6467c24e5744aebb7c4c75523be751d26faa6735b292c"
+    },
+    {
+      "file": "generate_simulation_lindblad_four.py",
+      "category": "new_original_source_snapshot",
+      "bytes": 62145,
+      "sha256": "cf4491b1cced1d712248cddff968610bbcee74060b666ec8efb34055d4d68b12"
+    },
+    {
+      "file": "instrument_resources.py",
+      "category": "copied_frozen_source_dependency",
+      "bytes": 52381,
+      "sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863"
+    },
+    {
+      "file": "lindblad_four_compile.py",
+      "category": "new_original_source_snapshot",
+      "bytes": 22747,
+      "sha256": "8036bd1e5e9c1ba89050c025224da80883c4af0296f915e7a531d03193290249"
+    },
+    {
+      "file": "lindblad_four_density.py",
+      "category": "new_original_source_snapshot",
+      "bytes": 28335,
+      "sha256": "83c4245acc7a243fdd8a227b937fdbda2ccaf7e8e7498db3c9da4d73aa23fcf5"
+    },
+    {
+      "file": "lindblad_four_physical.py",
+      "category": "new_original_source_snapshot",
+      "bytes": 55208,
+      "sha256": "636c95a24eeb10d0d6ab01a46125adc9b4897cbaa7f555e664f57b05e15fa452"
+    },
+    {
+      "file": "lindblad_workload.py",
+      "category": "copied_frozen_source_dependency",
+      "bytes": 19899,
+      "sha256": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577"
+    },
+    {
+      "file": "one-step.svg",
+      "category": "original_figure",
+      "bytes": 112010,
+      "sha256": "5a2f260bf42cb38a72539a0b06c4cb7bef2ac5d9af165c2a71abe605ea2b721b"
+    },
+    {
+      "file": "open_systems.py",
+      "category": "copied_frozen_source_dependency",
+      "bytes": 14355,
+      "sha256": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692"
+    },
+    {
+      "file": "references.bib",
+      "category": "copied_license_or_primary_references",
+      "bytes": 10907,
+      "sha256": "7bd314a90054ec17e348ca5f4cf748b0100150f6c3f4eac6732335f077a6bc4a"
+    },
+    {
+      "file": "requirements-lock.txt",
+      "category": "copied_environment_lock",
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    {
+      "file": "results.json",
+      "category": "result_or_documentation",
+      "bytes": 269279,
+      "sha256": "a7451fd56010cbcf6d0591e55c30d154c6e02fed4ce850a02a0a9c604e985002"
+    },
+    {
+      "file": "routed-rotation-trial.qasm",
+      "category": "actual_circuit_export",
+      "bytes": 464087,
+      "sha256": "d62bb9b41337af2e0a8eb2d1eb4b3f3a50f3b3bd46e772b54e9b7b752db53c5c"
+    },
+    {
+      "file": "source-preflight.json",
+      "category": "result_or_documentation",
+      "bytes": 90465,
+      "sha256": "a70329ebb4f37ac3144ce73aee99c1249a8b653b2112a03ed1f5a582a152045d"
+    },
+    {
+      "file": "source-trial.qasm",
+      "category": "actual_circuit_export",
+      "bytes": 226930,
+      "sha256": "6924fce307bb11bb111e6588482a240f172c77c6dd5f9e14cfce98ce2857ce9b"
+    },
+    {
+      "file": "space-time.svg",
+      "category": "original_figure",
+      "bytes": 31705,
+      "sha256": "b8e921a5acdaa3250ecb7f55bfa90a5fea17880d6fc9eca673621747b0518305"
+    },
+    {
+      "file": "summary.csv",
+      "category": "result_or_documentation",
+      "bytes": 448,
+      "sha256": "d8d504f979b1b779ca787e7a190528b0a6dc57a81e1dabf7f49ac8adce2258d3"
+    },
+    {
+      "file": "two_spin_lindblad.py",
+      "category": "copied_frozen_source_dependency",
+      "bytes": 23120,
+      "sha256": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34"
+    }
+  ],
+  "payload_files": 25,
+  "payload_bytes": 15301374,
+  "categories": {
+    "copied_license_or_primary_references": {
+      "files": 2,
+      "bytes": 12000
+    },
+    "result_or_documentation": {
+      "files": 5,
+      "bytes": 367011
+    },
+    "copied_frozen_source_dependency": {
+      "files": 5,
+      "bytes": 132815
+    },
+    "actual_circuit_export": {
+      "files": 3,
+      "bytes": 14362207
+    },
+    "original_figure": {
+      "files": 5,
+      "bytes": 256932
+    },
+    "new_original_source_snapshot": {
+      "files": 4,
+      "bytes": 168435
+    },
+    "copied_environment_lock": {
+      "files": 1,
+      "bytes": 1974
+    }
+  },
+  "excluded_metadata": [
+    "artifact-inventory.csv",
+    "artifact-inventory.json",
+    "manifest.json",
+    "progress.json"
+  ],
+  "metadata_scope": "recursive inventory/manifest hashes and volatile progress are excluded here; manifest attests inventory files",
+  "baseline_local_inventory": {
+    "tracked_generated_assets_files_at_start": 7159,
+    "tracked_generated_assets_bytes_at_start": 358968120,
+    "preserved_prior_files": 66,
+    "preserved_prior_total_bytes": 11701228,
+    "scope": "local tracked generated source assets at worktree creation; not public hosting occupancy"
+  },
+  "publication_layout_selected": false,
+  "originals_preserved": true,
+  "scope": "managed local payload only; unknown user files omitted; not public hosting occupancy"
+}

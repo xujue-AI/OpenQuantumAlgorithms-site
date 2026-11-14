@@ -1,0 +1,17 @@
+case_id,slice,n,time,total_accuracy,mode,segments,degree,ideal_algorithm_bias_allowance,uniform_ideal_bias_bound,uniform_ideal_acceptance_lower,accepted_slots,full_attempt_cap_per_slot,complete_attempts_full_cap,circuit_generated,primitive_operations_per_attempt,logical_qubits,primitive_operations_full_cap,dependency_layers_full_cap,simulation_performed,status
+size-n1-native,size,1,1.0,0.05,native,1,3,0.01,0.00269110140414193,0.49638761546632,13811,24,331464,True,107,3,35466648,26185656,True,tiny-circuit-checked
+size-n1-normalization2-oaa1,size,1,1.0,0.05,normalization2-oaa1,1,3,0.01,0.002693817774645792,0.9986544505146113,13811,3,41433,True,819,5,33933627,29127399,True,tiny-circuit-checked
+size-n2-native,size,2,1.0,0.05,native,3,4,0.01,0.0016478018826218545,0.07425202169080024,13811,214,2955554,True,9582,13,28320118428,26322163924,False,circuit-only
+size-n2-normalization2-oaa1,size,2,1.0,0.05,normalization2-oaa1,3,4,0.01,0.0016479149922106618,0.9991766644099032,13811,3,41433,True,39297,15,1628192601,1471948758,False,circuit-only
+size-n3-native,size,3,1.0,0.05,native,5,4,0.01,0.003328704480151019,0.01110228255374898,13811,1473,20343603,True,35150,18,715077645450,653192405124,False,circuit-only
+size-n3-normalization2-oaa1,size,3,1.0,0.05,normalization2-oaa1,5,4,0.01,0.0033284275193976253,0.9983384135928909,13811,3,41433,True,134110,20,5556579630,5065598580,False,circuit-only
+size-n4-native,size,4,1.0,0.05,native,7,4,0.01,0.005051691521897041,0.001660013671566437,13811,9896,136673656,True,70263,19,9603101091528,8785792628648,False,circuit-only
+size-n4-normalization2-oaa1,size,4,1.0,0.05,normalization2-oaa1,7,4,0.01,0.005050325140140339,0.9974809725370174,13811,3,41433,False,,,,,False,materialization-rejected: primitive export operation limit exceeded
+time-half-native,time,2,0.5,0.05,native,2,3,0.01,0.003982361582957435,0.27238081143139636,13811,52,718172,True,2714,10,1949118808,1783939248,True,tiny-circuit-checked
+time-half-normalization2-oaa1,time,2,0.5,0.05,normalization2-oaa1,2,3,0.01,0.003984343491731637,0.9980112954811228,13811,3,41433,True,12414,12,514349262,459657702,True,tiny-circuit-checked
+time-two-native,time,2,2.0,0.05,native,6,4,0.01,0.0032976413227674933,0.00551335898263073,13811,2974,41073914,True,19158,13,786894044412,731649630082,False,circuit-only
+time-two-normalization2-oaa1,time,2,2.0,0.05,normalization2-oaa1,6,4,0.01,0.0032971883559523027,0.9983540067013001,13811,3,41433,True,78588,15,3256136604,2943897516,False,circuit-only
+accuracy-025-native,accuracy,2,1.0,0.025,native,3,4,0.005,0.0016478018826218545,0.07425202169080024,55241,232,12815912,True,9582,13,122802068784,114138512272,False,circuit-only
+accuracy-025-normalization2-oaa1,accuracy,2,1.0,0.025,normalization2-oaa1,3,4,0.005,0.0016479149922106618,0.9991766644099032,55241,3,165723,True,39297,15,6512416731,5887475298,False,circuit-only
+accuracy-100-native,accuracy,2,1.0,0.1,native,3,3,0.02,0.019428165084532045,0.07401861656229164,3453,196,676788,True,4067,10,2752496796,2521712088,True,tiny-circuit-checked
+accuracy-100-normalization2-oaa1,accuracy,2,1.0,0.1,normalization2-oaa1,3,3,0.02,0.019443850282069332,0.9903640219184229,3453,4,13812,True,18618,12,257151816,229817868,True,tiny-circuit-checked

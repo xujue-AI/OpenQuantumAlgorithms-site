@@ -1,0 +1,24 @@
+{
+  "producers": {
+    "large": {
+      "observation": {
+        "kind": "cli_exit",
+        "raw_waitpid_status": 0,
+        "returncode": 0,
+        "stage_receipt_sha256": "6ce023901800f583fd032a8567f1ce009880d789a32376d86c0453ffb28cdbe4"
+      },
+      "receipt_sha256": "ee8a6dc7a1ef2ab0699ba8814f56d5bd643d971e75926f8310aedd6730f1723d"
+    },
+    "small": {
+      "observation": {
+        "kind": "cli_exit",
+        "raw_waitpid_status": 0,
+        "returncode": 0,
+        "stage_receipt_sha256": "e011639d0d7028d753cd38c9603c478fe801af47ff9af4626591b5bcd29e630e"
+      },
+      "receipt_sha256": "e7aeadafbb838e00c22dbef400b7d0bf637d45a7aad4ff107dac79f7662b7d42"
+    }
+  },
+  "schema": "openquantum.dqi.structured_invocation_acceptance.v1",
+  "scope": "caller-observed small and large producer acceptance; no overall notebook, guardian or publication claim"
+}

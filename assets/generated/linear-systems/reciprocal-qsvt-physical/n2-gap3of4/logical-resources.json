@@ -1,0 +1,213 @@
+{
+  "id": "n2-gap3of4",
+  "n": 2,
+  "delta_exact": "3/4",
+  "condition_upper_promised": 1.3333333333333333,
+  "axis": "condition",
+  "terms_exact": [
+    [
+      "21",
+      "II"
+    ],
+    [
+      "-1",
+      "IZ"
+    ],
+    [
+      "-1",
+      "ZI"
+    ],
+    [
+      "-1",
+      "XX"
+    ]
+  ],
+  "matrix_dimension": 4,
+  "alpha_exact": "24",
+  "K": 5,
+  "degree": 11,
+  "phase_choice": "existing deterministic symmetric fitter",
+  "phase_certificate": {
+    "method": "exact rational Taylor enclosure and polynomial recurrence",
+    "degree": 11,
+    "phase_count": 12,
+    "exact_binary_phase_hex": [
+      "0x1.922b74d9dca21p+0",
+      "0x1.9186c146fe13ap+0",
+      "0x1.95c2262b22229p+0",
+      "0x1.8460c6775685ap+0",
+      "0x1.b644689fb16e4p+0",
+      "0x1.4d24ed9881fafp+0",
+      "0x1.4d24ed9881fafp+0",
+      "0x1.b644689fb16e4p+0",
+      "0x1.8460c6775685ap+0",
+      "0x1.95c2262b22229p+0",
+      "0x1.9186c146fe13ap+0",
+      "-0x1.9219d57975e98p+1"
+    ],
+    "target_coefficient_count": 12,
+    "coefficient_l1_error_upper": {
+      "numerator": "799221058583659920409171638402451",
+      "denominator": "730750818665451459101842416358141509827966271488",
+      "rounding": "upwards on a 2^-160 lattice"
+    },
+    "phase_exponential_error_upper": {
+      "numerator": "1",
+      "denominator": "91343852333181432387730302044767688728495783936",
+      "rounding": "upwards on a 2^-160 lattice"
+    },
+    "uniform_realization_error_upper": {
+      "numerator": "1598442117167319840818343276804917",
+      "denominator": "1461501637330902918203684832716283019655932542976",
+      "rounding": "upwards on a 2^-160 lattice"
+    },
+    "uniform_realization_error_float_upper": 1.0936984785638062e-15,
+    "float_conversion": "math.nextafter towards +infinity; null means overflow",
+    "trig_precision_bits": 160,
+    "maximum_phase_magnitude": 32,
+    "maximum_taylor_degree": 56,
+    "taylor_degree_cap": 256,
+    "interval": [
+      -1,
+      1
+    ],
+    "signal_convention": "D(phi0) B(x) ... B(x) D(phid); real top-left entry",
+    "verification_scope": "rigorous rational bound for the ideal signal sequence with exact stored binary phases",
+    "excluded_errors": [
+      "matrix loading/access",
+      "gate decomposition or compiler",
+      "concrete angle synthesis",
+      "physical faults"
+    ]
+  },
+  "phase_adjusted_contract": {
+    "uniform_ideal_phase_error_bound": 1.0936984785638062e-15,
+    "phase_adjusted_trace_bound": 0.003518550214597801,
+    "phase_adjusted_Pauli_bias_bound": 0.007037100429195602,
+    "phase_adjusted_success_lower_bound": 0.11111111111111037,
+    "retry_success_lower_bound_exact": "15637498706147/140737488355328",
+    "retry_success_rounding": "downwards to2^-48 dyadic; exact target plus certified ideal stored phases",
+    "scope": "promised exact matrix/access and exact binary phase gates; numerical access/loading, compiler and physical synthesis require separate certificates"
+  },
+  "uniform_contract": {
+    "observable": "normalized inverse-state Z(q0)",
+    "absolute_error_target": 0.05,
+    "algorithm_bias_allowance": 0.01,
+    "synthesis_bias_allowance": 0.01,
+    "sampling_error_allowance": 0.03,
+    "statistical_failure": 0.004,
+    "empty_slot_failure": 0.001,
+    "physical_failure": 0.005,
+    "synthesis_model_error_per_complete_attempt": 1e-06,
+    "profile": {
+      "name": "illustrative-p-1e-4",
+      "physical_error_rate": 0.0001,
+      "gate_time_ns": 100,
+      "measurement_time_ns": 500
+    },
+    "confidence_status": "conditional projection; numerical access/loading and concrete synthesis/physical output confidence are not certified",
+    "failure_budget_scope": "the same allocations apply per benchmark case; no joint confidence claim for the full grid",
+    "included": "actual gate input preparation, every signed Pauli PREPARE/SELECT/unprepare and projector phase, real extraction, all readout, all failed complete fresh trials",
+    "excluded": [
+      "fresh-zero initialization/reset timing and faults",
+      "classical preprocessing/compilation/readout wall time in physical runtime",
+      "arbitrary matrix/vector loading",
+      "concrete synthesis sequence and certificate"
+    ]
+  },
+  "workload": {
+    "accepted_samples": 13811,
+    "retry_cap_per_slot": 140,
+    "total_capped_attempts": 1933540,
+    "success_lower_bound_used": 0.11111111111110716,
+    "success_lower_bound_exact": "15637498706147/140737488355328",
+    "sampling_error": 0.03,
+    "sampling_failure": 0.004,
+    "no_acceptance_failure_allowance": 0.001,
+    "verified_union_empty_slot_bound": 0.0009525153488499079,
+    "verified_minimal_retry_cap": true,
+    "hoeffding_bound_certified": true,
+    "hoeffding_certificate": "exact positive Taylor lower sum at M*e\u00b2/2 >=2/f; at most256terms",
+    "uncapped_expected_attempts_upper": 124299.00000000442,
+    "finite_cap_expected_attempts_upper": 124298.99142736629,
+    "assumptions": "independent fresh preparation, exact target acceptance lower bound; access/phase/synthesis changes require a revised lower bound",
+    "status": "unexecuted ideal workload proposal; conditional cost projection, not output-confidence certificate"
+  },
+  "retry_probability_source": "rigorous ideal-phase interval lower bound rounded downward; never observed acceptance",
+  "logical_qubits": 5,
+  "primitive_operations": 1179,
+  "primitive_gate_counts": {
+    "cx": 467,
+    "rz": 457,
+    "ry": 153,
+    "x": 92,
+    "measure": 5,
+    "h": 4,
+    "rx": 1,
+    "barrier": 1
+  },
+  "dependency_depth": 903,
+  "block_access_calls_per_attempt": 11,
+  "input_preparation_counts": {
+    "ry": 2,
+    "h": 1,
+    "s": 1,
+    "cx": 1
+  },
+  "coefficient_conversion_l1_error_exact": "0",
+  "numeric_access_scope": "exact input versus rationalized float coefficients normalized by their exact l1 sum; probability/libm/angle evaluation and synthesis not covered",
+  "validation": {
+    "performed": true,
+    "normalized_eigenvalues": [
+      0.7818305009375088,
+      0.8333333333333333,
+      0.9166666666666666,
+      0.9681694990624912
+    ],
+    "actual_condition_number": 1.2383368235206218,
+    "success_observed_ideal_numeric": 0.1494094704921313,
+    "branch_error_vs_independent_spectral_polynomial": 1.4693957770002175e-15,
+    "solve_residual": 3.179800655392251e-17,
+    "solution_trace_distance": 0.0016893067787270726,
+    "z_actual": 0.1792548289695134,
+    "z_classical_solution": 0.18213385736842452,
+    "z_bias": 0.002879028398911132,
+    "qasm_state_error_modulo_global_phase": 3.529964300768651e-15,
+    "qasm_full_measured_probability_error": 1.7208456881689926e-15,
+    "scope": "deterministic declared input; independent Kronecker matrix/solve and restricted NumPy QASM vector replay; no uniform numeric-loading/compiler certificate"
+  },
+  "qasm_sha256": "d14ee696f3497cc92ae8daa8cad7b5289b76b2a09300d5e6c5919246af9b6bb0",
+  "qasm_global_phase_radians": 4.7123889803846595,
+  "qasm_scope": "complete measured trial; pinned export may omit overall phase",
+  "qasm_literal_policy": "official Qiskit disable_constants=True; preserve stored numeric angles instead of approximate symbolic-pi recognition",
+  "native_caps": {
+    "wires": 8,
+    "primitive_operations": 25000,
+    "timeout_seconds": 60
+  },
+  "classical_generation_validation_seconds_CPU": 0.17661287000009906,
+  "source_provenance": {
+    "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_hashes_sha256": {
+      "src/openquantum/reciprocal_physical_sweep.py": "f6cfe9c30fba956753b85496cc577030419cf25fd86ec812c11c6fc777fe0f3b",
+      "scripts/generate_reciprocal_physical_sweep.py": "737b35d188730a5ab495e7f6945c8bdbb5d1ed609d39e6bb55ee2fd590010466",
+      "src/openquantum/linear_systems_qsvt_reciprocal.py": "f0e2485132a1a3541a18a0e103e169abcc2e5b87ab5c7a3a3bda336a3f5882ee",
+      "src/openquantum/reciprocal_phase_certificate.py": "1ecb5a104628ef468ae94d40a8e9df1b1529e6625f7f16fa7498bb4a45e2aacc",
+      "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+      "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+      "src/openquantum/linear_systems_qsvt.py": "c4735e188c9e80fb6fb60dc34c00558b17ab8f2c48c110a30b732aee9c105590",
+      "src/openquantum/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0"
+    },
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "qdk": "1.34.0"
+    },
+    "seed": 7,
+    "device": "CPU",
+    "source_note": "ROOT must own.git and equal the Git top-level; exact content hashes identify working-tree code"
+  }
+}

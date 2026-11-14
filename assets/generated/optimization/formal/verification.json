@@ -1,0 +1,56 @@
+{
+  "schema": "optimization-finite-classical-formal-v1",
+  "status": "checked",
+  "scope": "Encoded finite classical C4 MaxCut reference and known marked vertex only",
+  "exclusions": [
+    "Equivalence to the Python implementation",
+    "Quantum circuit semantics and uncomputation",
+    "Adiabatic theorem, spectral gap, or runtime guarantee",
+    "Quantum-walk success probability",
+    "Sampling confidence and fault-tolerant resource models"
+  ],
+  "assignment_domain": "Fin 16; vertex 0 is the least significant bit",
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "toolchain": "leanprover/lean4:v4.34.0-rc2",
+  "lean_version_output": "Lean (version 4.34.0-rc2, arm64-apple-darwin24.6.0, commit 6a10ac8c22beadecabdbb0919c2b50214762f91d, Release)",
+  "upstream_source": "https://github.com/leanprover/lean4/tree/6a10ac8c22beadecabdbb0919c2b50214762f91d",
+  "upstream_license": "Apache-2.0",
+  "upstream_license_url": "https://github.com/leanprover/lean4/blob/6a10ac8c22beadecabdbb0919c2b50214762f91d/LICENSE",
+  "original_artifact_license": "MIT",
+  "python_version": "3.12.14",
+  "check_command": "elan run leanprover/lean4:v4.34.0-rc2 lean C4Reference.lean",
+  "exit_code": 0,
+  "kernel_checked_closed_propositions": true,
+  "native_decide_used": false,
+  "axioms_by_theorem": {
+    "all_cuts_le_four": [],
+    "optimal_iff": [],
+    "five_is_optimal": [],
+    "ten_is_optimal": [],
+    "marked_iff": []
+  },
+  "source_sha256": {
+    "C4Reference.lean": "7056b87b9a5c919e83cca7437720df32a373dd88363f835aaad49ece14ea7873",
+    "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
+    "check.py": "32a6cc37a7bd584067b8dc0ad334d9442fcff4305a34937f81c9bc77e12d0357",
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "README.md": "30289b6eba95844f8ee8c40aea96a10816854178fc6b892c93d9f49a328c399b"
+  }
+}

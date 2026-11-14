@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "status": "computed_conditional_model",
+  "resource_estimate_kind": "conditional_mean_fit_resource_projection",
+  "qdk_version": "1.34.0",
+  "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
+  "source_commit_is_package_release_commit": false,
+  "qiskit_version": "2.6.2",
+  "transpiler": {
+    "optimization_level": 1,
+    "seed_transpiler": 7,
+    "basis_gates": [
+      "h",
+      "x",
+      "z",
+      "s",
+      "sdg",
+      "t",
+      "tdg",
+      "rx",
+      "ry",
+      "rz",
+      "cx"
+    ]
+  },
+  "qasm_sha256": "9a4e7c3b3df9115686ce29f7d006143003bdf7c758e5136c14c193506603becc",
+  "source_gate_counts": {
+    "rx": 3,
+    "measure": 3
+  },
+  "decomposed_gate_counts": {
+    "rx": 3,
+    "measure": 3
+  },
+  "canonical_gate_counts": {
+    "RZ": 3,
+    "MEAS_Z": 3
+  },
+  "canonical_application_trace": "@compute_qubits(3)\n{\n  {\n    RZ(0)\n    RZ(1)\n    RZ(2)\n  }\n  repeat 3 {\n    MEAS_Z(0)\n  }\n}\n",
+  "synthesized_application_trace": "@compute_qubits(12)\n@base_error(0.0000714093214343971)\n@resource_state(T, 39)\n{\n  repeat 19 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)\n  }\n}\n",
+  "synthesis": {
+    "model": "QDK PSSPC mixed-fallback Clifford+T approximation",
+    "cost_semantics": "mean linear fit for random angles; not worst-case or certified per angle",
+    "fit_domain": "per-rotation modeled diamond-distance accuracy epsilon < 1e-4",
+    "num_arbitrary_rotations": 3,
+    "fixed_num_ts_per_rotation": 13,
+    "model_error_per_rotation": 2.3803107144799034e-05,
+    "model_error_per_execution": 7.14093214343971e-05,
+    "actual_synthesis_sequence_generated": false,
+    "instance_approximation_certificate_verified": false
+  },
+  "budget": {
+    "synthesis_model_error_per_execution": 0.0001,
+    "physical_failure_probability": 0.005,
+    "executions": 3329
+  },
+  "observable_contract": {
+    "absolute_error_target": 0.0301,
+    "algorithm_bias_bound": 0.0,
+    "synthesis_bias_allowance": 0.0001,
+    "sampling_error_allowance": 0.03,
+    "sampling_failure_probability": 0.005,
+    "physical_failure_probability": 0.005,
+    "outcome_min": 0.0,
+    "outcome_max": 1.0,
+    "kind": "one_bounded_scalar_mean",
+    "shots_required": 3329,
+    "confidence_status": "conditional_only; independent approximation evidence is required",
+    "certified_confidence_lower_bound": null,
+    "conditional_confidence_lower_bound": 0.99,
+    "assumptions": [
+      "Independent identically distributed bounded shots at one fixed circuit/parameter setting",
+      "The caller independently establishes the algorithm_bias_bound",
+      "The synthesis model scalar upper-bounds output-distribution total variation; this module does not certify it",
+      "The declared physical-fault model upper-bounds faults and the classical measurement interpretation is correct"
+    ],
+    "does_not_cover": [
+      "optimizer convergence",
+      "noncommuting observable grouping",
+      "multiple parameter settings",
+      "adaptive stopping"
+    ]
+  },
+  "physical_profile": {
+    "name": "surface-code-p-0.001",
+    "physical_error_rate": 0.001,
+    "gate_time_ns": 100,
+    "measurement_time_ns": 500
+  },
+  "error_composition": "UnionBound; approximation base and physical contribution explicitly separated",
+  "isa_graph_pruning": false,
+  "pareto_completeness": "enumerated ISA combinations; limited to declared models/domains",
+  "included": [
+    "all operations in supplied bound circuit",
+    "explicit input preparation and output basis changes if supplied",
+    "final measurements",
+    "serial executions",
+    "PSSPC logical layout",
+    "surface-code data qubits",
+    "round-based magic-state factories"
+  ],
+  "limitations": [
+    "The synthesis formula is a mean linear fit for random angles, not a worst-case bound or certified concrete Clifford+T implementation",
+    "The fit models expected fallback-protocol work; no synthesis runtime-tail or budget-overrun confidence is certified",
+    "The QDK trace abstracts Clifford work and scheduling into PSSPC rather than preserving an exact gate schedule",
+    "Physical reliability is conditional on the declared hardware/QEC/factory models",
+    "No algorithm approximation, optimizer convergence, or observable precision is inferred from the circuit",
+    "Classical optimizer/preprocessing/compilation/verification costs and external data loading are excluded",
+    "A bounded-observable contract covers one fixed scalar mean only when its declared assumptions hold"
+  ],
+  "sources": [
+    "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace/transforms/psspc.rs",
+    "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace.rs",
+    "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/result.rs",
+    "https://learn.microsoft.com/en-us/azure/quantum/qre-estimation-results",
+    "https://arxiv.org/abs/2203.10064"
+  ],
+  "pareto_points": [
+    {
+      "peak_physical_qubits": 369772,
+      "data_code_distance": 21,
+      "runtime_per_execution_ns": 399000.0,
+      "serial_runtime_all_executions_ns": 1328271000.0,
+      "qdk_combined_error_score_per_execution": 7.28574598343971e-05,
+      "synthesis_model_error_per_execution": 7.14093214343971e-05,
+      "physical_failure_model_per_execution": 1.448138400000001e-06,
+      "physical_failure_union_bound_all_executions": 0.004820852733600003,
+      "factories": {
+        "T": {
+          "copies": 20,
+          "runs": 2,
+          "states": 39,
+          "error_rate": 3.713e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 64761,
+        "NUM_TS_PER_ROTATION": 13,
+        "ALGORITHM_COMPUTE_QUBITS": 3,
+        "PHYSICAL_COMPUTE_QUBITS": 10572,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 12,
+        "PHYSICAL_FACTORY_QUBITS": 359200
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=21)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+    },
+    {
+      "peak_physical_qubits": 565412,
+      "data_code_distance": 19,
+      "runtime_per_execution_ns": 361000.0,
+      "serial_runtime_all_executions_ns": 1201769000.0,
+      "qdk_combined_error_score_per_execution": 7.28580754343971e-05,
+      "synthesis_model_error_per_execution": 7.14093214343971e-05,
+      "physical_failure_model_per_execution": 1.4487539999999996e-06,
+      "physical_failure_union_bound_all_executions": 0.0048229020659999984,
+      "factories": {
+        "T": {
+          "copies": 20,
+          "runs": 2,
+          "states": 39,
+          "error_rate": 3.713e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 64761,
+        "NUM_TS_PER_ROTATION": 13,
+        "ALGORITHM_COMPUTE_QUBITS": 3,
+        "PHYSICAL_COMPUTE_QUBITS": 8652,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 12,
+        "PHYSICAL_FACTORY_QUBITS": 556760
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=19)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+    },
+    {
+      "peak_physical_qubits": 707364,
+      "data_code_distance": 17,
+      "runtime_per_execution_ns": 323000.0,
+      "serial_runtime_all_executions_ns": 1075267000.0,
+      "qdk_combined_error_score_per_execution": 7.28642314343971e-05,
+      "synthesis_model_error_per_execution": 7.14093214343971e-05,
+      "physical_failure_model_per_execution": 1.4549099999999993e-06,
+      "physical_failure_union_bound_all_executions": 0.004843395389999998,
+      "factories": {
+        "T": {
+          "copies": 39,
+          "runs": 1,
+          "states": 39,
+          "error_rate": 3.713e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 64761,
+        "NUM_TS_PER_ROTATION": 13,
+        "ALGORITHM_COMPUTE_QUBITS": 3,
+        "PHYSICAL_COMPUTE_QUBITS": 6924,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 12,
+        "PHYSICAL_FACTORY_QUBITS": 700440
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=17)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+    },
+    {
+      "peak_physical_qubits": 905508,
+      "data_code_distance": 15,
+      "runtime_per_execution_ns": 285000.0,
+      "serial_runtime_all_executions_ns": 948765000.0,
+      "qdk_combined_error_score_per_execution": 7.28510284343971e-05,
+      "synthesis_model_error_per_execution": 7.14093214343971e-05,
+      "physical_failure_model_per_execution": 1.4417069999999959e-06,
+      "physical_failure_union_bound_all_executions": 0.004799442602999986,
+      "factories": {
+        "T": {
+          "copies": 39,
+          "runs": 1,
+          "states": 39,
+          "error_rate": 3.5213000000000006e-08
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 64761,
+        "NUM_TS_PER_ROTATION": 13,
+        "ALGORITHM_COMPUTE_QUBITS": 3,
+        "PHYSICAL_COMPUTE_QUBITS": 5388,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 12,
+        "PHYSICAL_FACTORY_QUBITS": 900120
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=15)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+    },
+    {
+      "peak_physical_qubits": 1234845,
+      "data_code_distance": 13,
+      "runtime_per_execution_ns": 247000.0,
+      "serial_runtime_all_executions_ns": 822263000.0,
+      "qdk_combined_error_score_per_execution": 7.218958874788257e-05,
+      "synthesis_model_error_per_execution": 7.14093214343971e-05,
+      "physical_failure_model_per_execution": 7.802673134854637e-07,
+      "physical_failure_union_bound_all_executions": 0.0025975098865931084,
+      "factories": {
+        "T": {
+          "copies": 39,
+          "runs": 1,
+          "states": 39,
+          "error_rate": 2.468392653473627e-09
+        }
+      },
+      "model_properties": {
+        "LOGICAL_MEMORY_QUBITS": 0,
+        "EVALUATION_TIME": 64761,
+        "NUM_TS_PER_ROTATION": 13,
+        "ALGORITHM_COMPUTE_QUBITS": 3,
+        "PHYSICAL_COMPUTE_QUBITS": 4044,
+        "ALGORITHM_MEMORY_QUBITS": 0,
+        "LOGICAL_COMPUTE_QUBITS": 12,
+        "PHYSICAL_FACTORY_QUBITS": 1230801
+      },
+      "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=13)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+    }
+  ],
+  "initialization_boundary": "clean logical zero inputs assumed; physical initialization/reset timing and faults excluded",
+  "observable": "one fixed vertex-return indicator in [0,1]; the coined model marginalizes every coin outcome"
+}

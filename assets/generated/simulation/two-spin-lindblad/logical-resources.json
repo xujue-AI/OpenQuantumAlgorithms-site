@@ -1,0 +1,244 @@
+{
+  "resource_kind": "actual primitive measured/reset circuits before synthesis/error correction",
+  "physical_resource_estimate": null,
+  "logical_qubits": 4,
+  "component_calls": {
+    "ZZ": 64,
+    "Xlayer": 64,
+    "D0": 64,
+    "D1": 32
+  },
+  "environment_initializations_per_trial": [
+    64,
+    32
+  ],
+  "environment_discard_resets_before_reuse": [
+    63,
+    31
+  ],
+  "final_environment_measurements_ignored": 2,
+  "input_preparation": "known product H/S gates or explicit two-qubit Bell H/CX; system resets included",
+  "readout": "X/Y/Z basis on every system, Z on environments; no environment postselection",
+  "measurement_groups": {
+    "X": {
+      "source_gate_counts": {
+        "cx": 224,
+        "rx": 128,
+        "reset": 98,
+        "cry": 96,
+        "rz": 64,
+        "h": 4,
+        "measure": 4,
+        "s": 1
+      },
+      "primitive_gate_counts_per_trial": {
+        "cx": 354,
+        "ry": 192,
+        "rx": 128,
+        "reset": 98,
+        "rz": 33,
+        "h": 4,
+        "measure": 4,
+        "s": 1
+      },
+      "logical_qubits": 4,
+      "dependency_depth": 488,
+      "rotation_operations": 353,
+      "system_initializations": 2,
+      "environment_initializations": [
+        64,
+        32
+      ],
+      "environment_discards_before_reuse": [
+        63,
+        31
+      ],
+      "system_measurements": 2,
+      "environment_measurements_ignored": 2,
+      "classical_build_and_lower_wall_seconds": 0.025054821000139782,
+      "qasm_file": "two-spin-x.qasm",
+      "qasm_sha256": "9a878860359f68ba9a846efaab083c07e32177e1b261df1b726fc58f2266735f"
+    },
+    "Y": {
+      "source_gate_counts": {
+        "cx": 224,
+        "rx": 128,
+        "reset": 98,
+        "cry": 96,
+        "rz": 64,
+        "h": 4,
+        "measure": 4,
+        "sdg": 2,
+        "s": 1
+      },
+      "primitive_gate_counts_per_trial": {
+        "cx": 354,
+        "ry": 192,
+        "rx": 128,
+        "reset": 98,
+        "rz": 33,
+        "h": 4,
+        "measure": 4,
+        "sdg": 2,
+        "s": 1
+      },
+      "logical_qubits": 4,
+      "dependency_depth": 489,
+      "rotation_operations": 353,
+      "system_initializations": 2,
+      "environment_initializations": [
+        64,
+        32
+      ],
+      "environment_discards_before_reuse": [
+        63,
+        31
+      ],
+      "system_measurements": 2,
+      "environment_measurements_ignored": 2,
+      "classical_build_and_lower_wall_seconds": 0.016828388999783783,
+      "qasm_file": "two-spin-y.qasm",
+      "qasm_sha256": "eb2a293f623b0d2e8ceee843bc66b469aae4e6632ce4c7583694a0de455c2d2f"
+    },
+    "Z": {
+      "source_gate_counts": {
+        "cx": 224,
+        "rx": 128,
+        "reset": 98,
+        "cry": 96,
+        "rz": 64,
+        "measure": 4,
+        "h": 2,
+        "s": 1
+      },
+      "primitive_gate_counts_per_trial": {
+        "cx": 354,
+        "ry": 192,
+        "rx": 128,
+        "reset": 98,
+        "rz": 33,
+        "measure": 4,
+        "h": 2,
+        "s": 1
+      },
+      "logical_qubits": 4,
+      "dependency_depth": 487,
+      "rotation_operations": 353,
+      "system_initializations": 2,
+      "environment_initializations": [
+        64,
+        32
+      ],
+      "environment_discards_before_reuse": [
+        63,
+        31
+      ],
+      "system_measurements": 2,
+      "environment_measurements_ignored": 2,
+      "classical_build_and_lower_wall_seconds": 0.01605165199998737,
+      "qasm_file": "two-spin-z.qasm",
+      "qasm_sha256": "75e31ca766d2e60abd1cca4dedc6d1cfa56dbeead175eff4d58b40724ef21779"
+    }
+  },
+  "energy_workload_proposal_n2": {
+    "groups": {
+      "X": {
+        "outcome_min": -0.7,
+        "outcome_max": 0.7,
+        "width": 1.4,
+        "statistical_error": 0.015,
+        "statistical_failure": 0.0025,
+        "trials": 29116
+      },
+      "Z": {
+        "outcome_min": -0.6,
+        "outcome_max": 0.6,
+        "width": 1.2,
+        "statistical_error": 0.015,
+        "statistical_failure": 0.0025,
+        "trials": 21391
+      }
+    },
+    "total_trials": 50507,
+    "statistical_error": 0.03,
+    "statistical_failure": 0.005,
+    "scope": "one fixed energy mean; correlated bits within a trial are combined into one bounded scalar score",
+    "observable_absolute_error_target": 0.05,
+    "global_splitting_bias_allowance": 0.01,
+    "coherent_synthesis_bias_allowance": 0.01,
+    "physical_failure_across_all_trials": 0.005,
+    "physical_union_bound_per_trial": 9.899617874750035e-08,
+    "selected_splitting_bias_bound_from_trace_distance": 0.00021712872571784573,
+    "splitting_allowance_met_numerically": true,
+    "all_group_trials_primitive_counts": {
+      "cx": 17879478,
+      "ry": 9697344,
+      "rx": 6464896,
+      "reset": 4949686,
+      "rz": 1666731,
+      "h": 159246,
+      "measure": 202028,
+      "s": 50507
+    },
+    "logical_qubit_layer_volume": 98504100,
+    "volume_scope": "circuit dependency-layer proxy, not physical qubit-seconds or hardware runtime",
+    "synthesis_scope": "pending per-gate certificates; not a stochastic fault probability"
+  },
+  "global_error_contract": "all H-term and H/D splitting commutators are in the global error; H-only diagnostic is not added",
+  "separate_errors": {
+    "representation": "fixed real coefficients and floating angles",
+    "global_splitting": "selected n2 numerical trace/observable errors; no diamond/interval certificate",
+    "coherent_synthesis": "pending; rotations continuous",
+    "statistics": "two bounded weighted-score means and union bound; correlated bits within a trial allowed",
+    "physical_faults": "pending; separate from intended damping and approximation"
+  },
+  "source_complexity": {
+    "logical_qubits": "2n",
+    "source_Lie_primitive_upper": "(10n-3)r+6n+8",
+    "scaling_family": "order2/product, rates0.8 on site0 and0.5 elsewhere; selected time/J/hx",
+    "source_Strang_primitive_upper": "(20n-12)r+6n+8",
+    "n_scaling_scope": "counts materialized for n=1,2,3,4,8 at r=2,4,8; same-accuracy r(n) unvalidated",
+    "energy_general_n_conditional": "fixed absolute statistical error: group widths O(n), Hoeffding trials O(n^2/epsilon_stat^2 log(1/delta)); combined with O(nr) gates gives conditional O(n^3 r/epsilon_stat^2 log(1/delta)), before choosing accuracy-dependent r(n)"
+  },
+  "prominent_exclusions": [
+    "coefficient preparation/readout wall time in quantum costs",
+    "physical reset/discard/measurement duration",
+    "hardware routing/scheduling",
+    "coherent rotation synthesis",
+    "physical faults/error correction/factories"
+  ],
+  "physical_adapter": "mid-circuit resets are not supported by the current static adapter",
+  "formal_coverage": "no integrated Lean or other formal certificate",
+  "limits": {
+    "generator_system_qubits": 16,
+    "generator_steps": 1024,
+    "estimated_and_compiled_primitive_cap": 50000,
+    "density_study_system_qubits": 2,
+    "density_steps": 128,
+    "reference_exposure": 100.0,
+    "validation_points_per_order": 16,
+    "energy_budget_trial_cap": 1000000000000
+  },
+  "transpilation": {
+    "optimization_level": 1,
+    "seed_transpiler": 7,
+    "basis": [
+      "h",
+      "x",
+      "z",
+      "s",
+      "sdg",
+      "t",
+      "tdg",
+      "rx",
+      "ry",
+      "rz",
+      "cx"
+    ]
+  },
+  "source_sha256": {
+    "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+    "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+    "generate_simulation_two_spin_lindblad.py": "b02480817a9a7467d4f725a2455a85edf334957118d7ef2a3ea64712a913d244"
+  }
+}

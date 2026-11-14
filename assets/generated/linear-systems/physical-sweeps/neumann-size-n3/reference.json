@@ -1,0 +1,51 @@
+{
+  "actual_condition_number": 1.787085605640206,
+  "conditional_state_trace_distance": 0.00016724630803639838,
+  "conditional_z_mean": 0.6574627780738634,
+  "expected_polynomial_branch_trace_distance": 5.0095623804349395e-16,
+  "independent_expected_probability": 0.7765192808188263,
+  "input_bytes_sha256": "14e074040973cac3110960f9143c1f2e15f94faf02515dbbcc289dd0091a7d4d",
+  "matrix_bytes_sha256": "6b0948c7abb698074f7729e1aa4da75046f3546f4abcd633bffe81bca753e5cf",
+  "matrix_eigenvalues": [
+    0.5381966011250103,
+    0.538196601125011,
+    0.7381966011250103,
+    0.7381966011250104,
+    0.7618033988749896,
+    0.7618033988749896,
+    0.9618033988749889,
+    0.9618033988749894
+  ],
+  "method": "complete Qiskit gate statevectors versus independently assembled dense matrix powers/solve and analytic input amplitudes",
+  "normalization_alpha": 1.0,
+  "normalized_classical_solution_z_mean": 0.6572563476288182,
+  "performed": true,
+  "physical_attempts_executed": 0,
+  "reference_classical_residual_norm": 5.941468092779229e-17,
+  "reference_equation": "A x=b; expected branch T_K(A/alpha)b/s assembled by independent dense matrix powers",
+  "reference_identity_sha256": "e2655811b5d090b3431bf29662cf2b8f4e53663b33ef20e01fcffe346c3fdac8",
+  "reference_solution_imag": [
+    -0.16639102627196736,
+    0.029923879330469583,
+    0.0001155170874262531,
+    -0.0018180797649315502,
+    -0.023866071118962655,
+    0.00513788166640439,
+    0.0006172768283299931,
+    -0.00971508662442985
+  ],
+  "reference_solution_real": [
+    0.8854550435219568,
+    0.4053702073289919,
+    0.005687871598115794,
+    0.010416450537543535,
+    0.12403811379183435,
+    0.053109429700418244,
+    0.03039369688293606,
+    0.05566131984046053
+  ],
+  "scope": "bounded ideal-angle numerical verification; no synthesized operator-error or hardware confidence certificate",
+  "source_primitive_joint_probability_max_error": 1.2212453270876722e-15,
+  "source_success_probability": 0.776519280818822,
+  "z_absolute_bias": 0.00020643044504520258
+}

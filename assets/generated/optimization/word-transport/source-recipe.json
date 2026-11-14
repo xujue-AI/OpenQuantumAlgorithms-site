@@ -1,0 +1,2237 @@
+{
+  "evidence_scope": "recorded source-stage evidence before Native execution",
+  "original_encoding": "sorted-indented-json-newline",
+  "original_sha256": "42dc12de0aa666e4fc9054c22b2321e58240959f1f74c647dc368894de79b694",
+  "record": {
+    "accounting_sha256": "19bd70a79f2103fd1cc141dc142ad954b3d0fad0934c5428f3cdf19a60f1f722",
+    "base_commit": "4fb73f6968c3d17c0e505f043b3e3ad400025393",
+    "baseline_manifest_sha256": "a4e0bbd7e1063713bd4faa5af82ce2bed0a3c10201f99cbf0d53b61c507d34eb",
+    "baseline_physical_dag_sha256": "731791448fcfd3e7fc2df18efa0d7d0db12c49254a709bb58d0286a93d1cca34",
+    "candidate_id": "qaoa-word-data-shuttle-v1",
+    "classes": [
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 0,
+            "group": "all_z",
+            "phase": "training",
+            "role": "initial",
+            "shots": 128
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 1,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 15,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 24,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 33,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5888,
+        "candidate_operations_sha256": "003eddd98ba8df5b63c8336dae3a7cbf8a4646d816ee517ea11dcedccfcddc0b",
+        "candidate_qasm_sha256": "85f4ffa65799a136f1fad107fc32f892937f144bb7582b0da8ef1e79144a54f8",
+        "checkpoint_sha256": "731ef6b2ee6a0e34d0df89f1a114edc49096602dfc49ff06b98b36793299b1d4",
+        "class_id": "fb7c9e22b7c2d0cf3e22282f35f9ce9ca761c00bccbe9ec6771eec08d26257ed",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "segments_sha256": "f2380c03f9c0db597535f590a8ddaa450993d17bad3ac2e431a16e4a3b7ff76f",
+        "selected_words": 14,
+        "shots": 1168,
+        "source_operations": 5756,
+        "source_operations_sha256": "72f6ac9a4f7912e4c40221845db7045784ffbbac0d2327900628d3a778860dc3",
+        "source_qasm_sha256": "6d0ae9bf59b04f6b4a7cedf37626b404f26d8d8afbcca543151b551514acb8bc"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 2,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5936,
+        "candidate_operations_sha256": "b565869db2c57989f0092b0d3f4a1740d02832a9a775297e55f6c24f77002827",
+        "candidate_qasm_sha256": "c96196f67056c16d1ce86c01c5a3a8998c55ba18b68c55b9b5fc97c6f60e74c3",
+        "checkpoint_sha256": "5d9ca09d23375552cb38578c52b16b5220717dcde2eb9a597f21ae6e96b96c87",
+        "class_id": "550e032e8bdb453809fac762c567824c564b9ae3c9091cf9185725b48aa0507e",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.20000000000000018,
+          0.3999999999999999,
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "segments_sha256": "5f6a1b4707553de31611e558e75872dd1235c1eb4e5be97da686cfde40535f48",
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations": 5804,
+        "source_operations_sha256": "7055d2c7765cd8c399f04e60245b0dfb6e8b3719cdfebd395280ad6bc86a7725",
+        "source_qasm_sha256": "cba6b26ca0e095cad3be9e157e0c752cf2249eb69ef7eb2cbb731de8755c113f"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 3,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5824,
+        "candidate_operations_sha256": "9dcbe7c9d5dc0871a6092546ec8bcc7c15552101de1a8a5f073ab11ee894f70f",
+        "candidate_qasm_sha256": "9916cd510529ed21f4872b6a10aeaafa541525ad3bf0dda298abdc823fdaf970",
+        "checkpoint_sha256": "6ad2a9f78ec117480a52d083917bf6f48d3ded1b5fc466ee7570e1516acd1455",
+        "class_id": "4400b42c551aab4267c905a52463f77eb314d6ec7dc24af67588b4f8607b5a47",
+        "exact_global_phase": 0.0,
+        "global_phase_hex": "0x0.0p+0",
+        "parameters": [
+          1.0,
+          0.3999999999999999,
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "segments_sha256": "b271225d54825126b95e0f504d2c034dfb2171ffc974a2cf5e2ce132267c19ac",
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations": 5692,
+        "source_operations_sha256": "c9c04c7ba3b2d00aad8ac5827c6ee70aa00c63ba8bedb2c935229da431041984",
+        "source_qasm_sha256": "6e3ca9d87a5c2802265c7b2207905cc0d49f846d845ea88c5b30bfced4b849bc"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 4,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 4920,
+        "candidate_operations_sha256": "9d546b72eb7e75064b6a119ee624ec4fcd082496fac950a033d0e0fd78a11813",
+        "candidate_qasm_sha256": "c56ea4b50395894e8de63349f998945a23e9909a6f582b951316d0803ab9e671",
+        "checkpoint_sha256": "6f4b96ff5013280ed66f8c9bd87a7bf5b8f21a1168ad29c819e7fbae9ebca41d",
+        "class_id": "901bc9d8ea8952aff5d725a0c63623ab5314f3e42105ee4261342b1006a2069a",
+        "exact_global_phase": 3.141592653589793,
+        "global_phase_hex": "0x1.921fb54442d18p+1",
+        "parameters": [
+          0.6000000000000001,
+          0.0,
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "segments_sha256": "bb10fd4d51d6dd6b7ce1d56b7bbd96793c9b99180a66bf67848402386f057a50",
+        "selected_words": 11,
+        "shots": 260,
+        "source_operations": 4812,
+        "source_operations_sha256": "98529a24839921eece92b44d52fb39d5751e38b7efbe9b08782824ef1fefac1c",
+        "source_qasm_sha256": "deff8c2300c5e0081b610b83f319b55d2257642a570eadc01f78964727853973"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 5,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5848,
+        "candidate_operations_sha256": "e44e7a78a50e0bd211eeae17c1ec504fee06708fb4954c743f6831978b7d7b93",
+        "candidate_qasm_sha256": "dba2fa7a3203e829e0fd44f8c02d63555a01865071fc3882ccf5061deeb32f05",
+        "checkpoint_sha256": "09b5c54c9d96a376020e119d99880a78f40ee03bcf753550afb8ef94d872bff1",
+        "class_id": "e52e94b18e3baa061cd58154b81a831f5e1aa968e0f9a65425b2a6f567459946",
+        "exact_global_phase": 1.5707963267948957,
+        "global_phase_hex": "0x1.921fb54442d14p+0",
+        "parameters": [
+          0.6000000000000001,
+          0.7999999999999998,
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "segments_sha256": "4aba809b01cfd2cc577ff92692d159d17b513be3eb59a6fb40584cb31a35a803",
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations": 5716,
+        "source_operations_sha256": "4a4403c0a277cf33bc43b3a89339942ad5d68806724893ec4a883a84570e1765",
+        "source_qasm_sha256": "d221e43381820c499d854208b8612cec6e435339a51a4a6324d6e08da38e930a"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 6,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5936,
+        "candidate_operations_sha256": "4e9e9e98e82f1536fb3579e2dbd7d0f69b0da16b759f61ebd3c8190989aeeb23",
+        "candidate_qasm_sha256": "05673bd0319c7fc1d030215a76464cef4c65e3ebe2d6ad3492189e94bbd4593d",
+        "checkpoint_sha256": "8ec872bb117bb26652abf5571050802a9bdd981d7aa77607c8b206dd1310b771",
+        "class_id": "1db5e92725d8d9474198cce47cb104cb3991e6349b8620a86e8f5a1bcb93cc75",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          0.20000000000000018,
+          0.3999999999999999
+        ],
+        "segments_sha256": "814e2ede6e4824301c63f516ddcac6f7843d685b6921d0bb3cf562a221bfad9b",
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations": 5804,
+        "source_operations_sha256": "ec74a02fff2eba2b66bb04891143295bdf8b0203d894aeac66626f9ef5def639",
+        "source_qasm_sha256": "dfad4753894aac44f98cfb703022a839aee862ec6fe91786ff18e2abad429667"
+      },
+      {
+        "batches": [
+          {
+            "accepted": true,
+            "evaluation_index": 7,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 10,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 19,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 28,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 37,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5896,
+        "candidate_operations_sha256": "79034cbef2611a8c761186a1cf93815ff7b400e851802d3bde816657d2bf1f2c",
+        "candidate_qasm_sha256": "e26334c1411a8a5ad619ee9f355ec8c9e9b47e7bbedc6d372f2f298267c24509",
+        "checkpoint_sha256": "52b4d55abb8a33fb6fa874507c751e4027a7079b88d33f94884c130afa563999",
+        "class_id": "774f19cf7fb51fb541fa59ed7234845281f4f359570cf8029631ec4596d1ed44",
+        "exact_global_phase": 3.141592653589793,
+        "global_phase_hex": "0x1.921fb54442d18p+1",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "acaf616b5a13df23d933ee04cd18c3f93d83835c09767d307a5a285da09a9c5b",
+        "selected_words": 14,
+        "shots": 1560,
+        "source_operations": 5764,
+        "source_operations_sha256": "d12348937ded99f386739dcc16b8886094527c7c8af028520506791d1870ac30",
+        "source_qasm_sha256": "ddf13b98adb395dc8c121fca010812dfb2e43fda29a545daf1238870c1618dda"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 8,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 4914,
+        "candidate_operations_sha256": "acc8a908019d81d72667d5e6491e97a4d02765bd9ac0dc692dc0bdd46af7123d",
+        "candidate_qasm_sha256": "d59ad5547caf5bf9b6ee2ed06afa46d44b82749b8f6edb25ef6aabe7348b3aa7",
+        "checkpoint_sha256": "31dac02778d6f72d485ff7bd2492801914d66c71a5d0ac0829dd9bd25b849df3",
+        "class_id": "4ff5ef50478c6da2610cf206856efeafc2eac8b4bcec589d8658be5c7a941365",
+        "exact_global_phase": 3.141592653589793,
+        "global_phase_hex": "0x1.921fb54442d18p+1",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          0.6000000000000001,
+          0.0
+        ],
+        "segments_sha256": "bd8d3ba3fd59e9eea16139fde9698809f34a06b20bda4fe9a2c85e47f6b5b11c",
+        "selected_words": 11,
+        "shots": 260,
+        "source_operations": 4812,
+        "source_operations_sha256": "7223600ba183c06cec266dc21dad69b3c45d622551ba094fa3e912e08dd077d7",
+        "source_qasm_sha256": "b923dc4c737fc783e553225a145bbfbab68342c17d299d7b23f3f5f5fe9b4d99"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 9,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5848,
+        "candidate_operations_sha256": "3465d578ca8bf0404fdae27b5182dd4367ccd02f6e4fd25720fc60b54cbc23f1",
+        "candidate_qasm_sha256": "5501dd7878220cd62f4ec1b77f0ea18a7e7a1104b7b8e24945140be8351f1afc",
+        "checkpoint_sha256": "88ebc4abb8a46c986286f7e2bc5fae2cfda02ac12f2ac11d1b01f444707aab44",
+        "class_id": "bed3b72756d275b4811edc8a0e986645faaeae8e3b2195f2ddd6966684e2a05a",
+        "exact_global_phase": 1.5707963267948948,
+        "global_phase_hex": "0x1.921fb54442d10p+0",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          0.6000000000000001,
+          0.7999999999999998
+        ],
+        "segments_sha256": "b993bf348841a0d437f8e9a4f622c7c5fdb8c2b127b7240e5c5ec0252d63ff10",
+        "selected_words": 14,
+        "shots": 260,
+        "source_operations": 5716,
+        "source_operations_sha256": "14138eb0a2fb11fc61cc7291627f9a0b57479e21ad4f877f50b3797941f5b8c6",
+        "source_qasm_sha256": "d1a97df22d0b8dc2a9865b38444eb4dd60973b52c022fb392a7eab6085cdbbd9"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 11,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 20,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 29,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5992,
+        "candidate_operations_sha256": "5b30245067c0908250776a0746a2d91a65461888c15935c915721ec7ff575b8b",
+        "candidate_qasm_sha256": "02d306cc423372b1ea1c9a676cb80fbb0fdfeaaa1903b0179fb160966505ef2c",
+        "checkpoint_sha256": "7da077c142a99456b6332eab2ffb659542dc0e182260542cc03a62f5ac8d1ebe",
+        "class_id": "ff0c16b82fb8e7ab06b758bd9898fab810e7a1f2a4b5686f8a74eb7b4b3c2ca1",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.20000000000000018,
+          0.3999999999999999,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "05c0a9ff0677411fc663a085059f96d67a5d09c953f41cccbc450cb2f43ea283",
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations": 5860,
+        "source_operations_sha256": "74880c677afa2db6ba110f2d1cac69ae39875411f89a7c792a3274009f4f4731",
+        "source_qasm_sha256": "afa703e7cbb44b3530e99d9456cab4df837064557155407f6bea99d2433d849d"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 12,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 21,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 30,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5880,
+        "candidate_operations_sha256": "51ad69c1ecf777c86f2ca5770ccc5abc36fa34aa6147ea9dce6485de478e1717",
+        "candidate_qasm_sha256": "fe09a5eb310da72baca70c3e40811e210b4008ebfd34397c0cda9617b2a85972",
+        "checkpoint_sha256": "384d888b365bd3f0a64e686af17b7387fc16be716a1c7ed9125a6ff2b50bb379",
+        "class_id": "2049ffeb8aae6985917a7f889ac6f647615e4f967f6fcfa59f8ffef293389e0c",
+        "exact_global_phase": 0.0,
+        "global_phase_hex": "0x0.0p+0",
+        "parameters": [
+          1.0,
+          0.3999999999999999,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "431d365d97259fdbdf1df63f319e7ef5ef096fbe1d1d8c1762d475ae67e97526",
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations": 5748,
+        "source_operations_sha256": "4f2307a1b88fb412ae2b2ba2e0723ce13c8117097d516331a868c19f54c5fc61",
+        "source_qasm_sha256": "367693a20bda9e6ec3c303c011da78257a53b6ba5aef6ada509c71a49b1b3ed0"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 13,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 22,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 31,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 4928,
+        "candidate_operations_sha256": "acbfc99d1b3902632694051ddf9033a0a2e7aabaad3950409b0d8a81ca2667d7",
+        "candidate_qasm_sha256": "f1accfd54550f5fb80902a29e11fd67e69652ac36d04ed9724d00f1bc2975b63",
+        "checkpoint_sha256": "6c264e6303ffa4cc78f7e1dbccb346026c65a8ba211f08d36cb0cd31f75e0d9d",
+        "class_id": "91093d828e1796df46811716a41f8ddc2a973c2eb79fc6a77818a7bd8f91a34d",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.6000000000000001,
+          0.0,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "6702ab7c013d15ecc0efed2cd4d62bf51c32abe3819e0becb46c543bf114a51d",
+        "selected_words": 11,
+        "shots": 780,
+        "source_operations": 4820,
+        "source_operations_sha256": "6c458d26f7fc9be54138f99fd46bbd9e2f0699d407bb7e10d254ff3637250909",
+        "source_qasm_sha256": "6ea946c4e05f47dd6081d468d6f886729a931273b2c72c1f1b65b40dae1c8cb2"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 14,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 23,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 32,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 50,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5856,
+        "candidate_operations_sha256": "0711be63ac2a4585c27ea6eb8775d5a073ec8ed5486b6b3320e7ad583096c02b",
+        "candidate_qasm_sha256": "557735ca58dbbfeb823ef0cb5378098ebdc0fa770bd9603c71d5c60a2122782d",
+        "checkpoint_sha256": "50fcb19bb57a0d18e7905d3082d55d9437d5c01fd8a72fec6817d5701a179711",
+        "class_id": "1ecb125df99753b77404b64697a7d5271471fad450eeb32599d7b2e1346611b2",
+        "exact_global_phase": 4.712388980384686,
+        "global_phase_hex": "0x1.2d97c7f3321cep+2",
+        "parameters": [
+          0.6000000000000001,
+          0.7999999999999998,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "fcb573aac7fa4b31aebf671759be07373cb5a999c492b06b46857ad27f9d3eef",
+        "selected_words": 14,
+        "shots": 1300,
+        "source_operations": 5724,
+        "source_operations_sha256": "68eb58968bd9eabe217c2fa494273886f17b728f4a3500a3bc8e867280a118e0",
+        "source_qasm_sha256": "763a599c4cbb714ab5565a14dc771a312e3ea1245bb17fb2ee6d527a2fe3ee4a"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 16,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 25,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 34,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5984,
+        "candidate_operations_sha256": "26122e22e65a7566b4d262d1d895be01d39a28c73cd380e74aba060ed6911a77",
+        "candidate_qasm_sha256": "68db2ab923f53450969e4bb030c099b4c340e1b9f7c78afd474bd25082daba37",
+        "checkpoint_sha256": "8b1165ba916dccab611b55747a8f161f2630c75b8bac640c7cea1cd52062f3c0",
+        "class_id": "13517cb73a0d157af136bcd7614928ecfb95416afda1975246c557a4fc9ce75a",
+        "exact_global_phase": 3.141592653589793,
+        "global_phase_hex": "0x1.921fb54442d18p+1",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          1.4000000000000004,
+          0.3999999999999999
+        ],
+        "segments_sha256": "d8c6414a38f1c1efb3dde31761f5f3d3b7897bd2597681bca501b6b88dfe5000",
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations": 5852,
+        "source_operations_sha256": "b110477984330099e80ec37f7d065f44065a901d873fb9329db3ce5811f576ea",
+        "source_qasm_sha256": "b5fe63d1f2ee3aadba9a74fb3b143e8310f25e79adbdb12a63574feb295c521e"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 17,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 26,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 35,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 4922,
+        "candidate_operations_sha256": "f1f89a0a92f191a798945f51a573fe760264628e1595e768f72f30f35f3b5285",
+        "candidate_qasm_sha256": "74ae891a06c775010519c7d3c0916e810247dffd81a59268fd8ea617067dc8f8",
+        "checkpoint_sha256": "730e63a78492c00c2518789b9c04697af77eea88df6984b8e59024d00ae264a4",
+        "class_id": "439605dbdb9d5902c9b8e85d2f556eb3df5b0920925815fc23a7d9ab4639a986",
+        "exact_global_phase": 0.0,
+        "global_phase_hex": "0x0.0p+0",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          1.0,
+          0.0
+        ],
+        "segments_sha256": "64ed05148cdbd6a924a62fb3d4dea359a19686b5edc4513dc6cc2acc36670dc2",
+        "selected_words": 11,
+        "shots": 780,
+        "source_operations": 4820,
+        "source_operations_sha256": "1350b12aadc8b10be48cbc1fd56882b92a2734ab30658f3b7b66335fc9b64707",
+        "source_qasm_sha256": "17522df6ae16c1d46cc0b94c0110d57280d26be2600bcbc311e3e191518e77b4"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 18,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 27,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 36,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 260
+          }
+        ],
+        "candidate_operations": 5856,
+        "candidate_operations_sha256": "4918c87c26a3736524236ced96feac095b7406346c68ea6c55bbe7cd166c3908",
+        "candidate_qasm_sha256": "0e2b857793d3bc08b092438dac828056a8ac7938fdcffd06ffcba336e431dc92",
+        "checkpoint_sha256": "13879340f4165d11b8531afc02d9e33e9083bd09d15902ef33c85d1a87e1332b",
+        "class_id": "80380412a7023080af405ecd115be27abf42f63f5acdb2183cc2481ad3639ebc",
+        "exact_global_phase": 4.712388980384688,
+        "global_phase_hex": "0x1.2d97c7f3321d0p+2",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          1.0,
+          0.7999999999999998
+        ],
+        "segments_sha256": "43392baa1523441459e316b2e059001d60646923417cc2d405a1f8455ede3c64",
+        "selected_words": 14,
+        "shots": 780,
+        "source_operations": 5724,
+        "source_operations_sha256": "39bfbc4791003c37969fe089cf1c09bbe8f53ed0dbcd964bd4c0f8c8c1a6a834",
+        "source_qasm_sha256": "5f8876aadb91a6bf9719fa8ed91de2ba789e9c24a8212c54bed55050cd3baf7b"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 38,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5848,
+        "candidate_operations_sha256": "0c03b251c98d7254dfa982b049f17661c8ac2736301bace9e18b619404b06392",
+        "candidate_qasm_sha256": "e7964f7953e89d502f31f40c89d9c672a2ac4235e05e7b19a6be73b73d1c7410",
+        "checkpoint_sha256": "4a663a676e0cfcc80dc17c5279e1eb80caeb5c788ee685e0955d469ce10f076f",
+        "class_id": "b8c61cc319f67f066ed734ff411f6b511dc181a18a7a0d48d35d3b5fae43d4cb",
+        "exact_global_phase": 3.141592653589793,
+        "global_phase_hex": "0x1.921fb54442d18p+1",
+        "parameters": [
+          0.3999999999999999,
+          0.3999999999999999,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "87c1b72de7496e322dbf5f2d86a45a59a318a99dc5aa8e499e7fadba6a56d3b1",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5716,
+        "source_operations_sha256": "afcc2858e150e2e926e7494e9c2f9c773c8c07e34f3a2825461baaaf5c5f4775",
+        "source_qasm_sha256": "db779ece1c43418da13edaaf41fb5ba0517c404fa896f958ab7b69fdc53bfec3"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 39,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5904,
+        "candidate_operations_sha256": "f87463ff09cceca9f310ea99f86db98056f1981a590e98755b00218f46ae9e5f",
+        "candidate_qasm_sha256": "a29d97c8a71f5e7852b1e1c10f030a72fdd351e5656d2b14029b42e594b931ad",
+        "checkpoint_sha256": "caca9b3f7145c86e0defc033a347ee83cdac7a495a342f06a5dfbd025fa0741b",
+        "class_id": "f5373d39f0da20198e832cfc7933956b92abee49590a386ecc8d0643e4168b6b",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "d27dbb3187ccbcfc530257f718ed3da54312476452ce45c996b5bd44bf70e8c9",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5772,
+        "source_operations_sha256": "f0d5cf6c05895d2c6f9b837be0a58df70714be33c42c7a94cfd70fa170e853be",
+        "source_qasm_sha256": "42c864e81fd55854988b2e7c544c5332150cad8f8d49084a737ede8731bb722f"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 40,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5876,
+        "candidate_operations_sha256": "6cc58509976f14b504e04c997588d6405d05ab0898976e4509c135d119c81ab0",
+        "candidate_qasm_sha256": "2ca6ef101fe58ee695d1c29c74a92796c0d59abaf92db0d86228e497a1e5222a",
+        "checkpoint_sha256": "a19a20a8e4d765af055081941a9e4a64d1dc45d2ee4569a214806d8a84f85698",
+        "class_id": "b69e67ce0ca023f7a952396f6d2eff3e9bf171aa1c7b37e4d4732585fc2d2408",
+        "exact_global_phase": 1.5707963267948957,
+        "global_phase_hex": "0x1.921fb54442d14p+0",
+        "parameters": [
+          0.6000000000000001,
+          0.19999999999999973,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "c6b243d106a4cddf0e348e63671b8d1fd7db50f71be7fa11c7552990678fae14",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5744,
+        "source_operations_sha256": "37b9b35593db3fbd03232b8172df3df1b6ff2cd23e5c93dae7974e268e971329",
+        "source_qasm_sha256": "b02fa29a21ed0f54d29775f990b8e2634e786a22620c910aa21edf2cc716f55c"
+      },
+      {
+        "batches": [
+          {
+            "accepted": true,
+            "evaluation_index": 41,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 46,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5860,
+        "candidate_operations_sha256": "5b2dc1b367530b8dac78685140a47e3c807222f189f9a0be1345232f4e24ed66",
+        "candidate_qasm_sha256": "dcdb3ec1beede42addc406f7e3a386fc1fcb41d055c6a1186a681e8241abcd93",
+        "checkpoint_sha256": "c6e18b8ae6d2366321311dd4874d00900e8e32b6c30f3a608fd089ae8071f119",
+        "class_id": "edbd80dcaf25795af29eee2d5dd59ef31d144648cff93267564b1419486d5251",
+        "exact_global_phase": 4.7123889803846915,
+        "global_phase_hex": "0x1.2d97c7f3321d4p+2",
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "697a9b9a5def4bf9a4df73dc6bab52d2e1811029918b85eeac5e20daca743f4c",
+        "selected_words": 14,
+        "shots": 1040,
+        "source_operations": 5728,
+        "source_operations_sha256": "6806056479afabe6f2c24937a091c977fe6400f4950e5165c25cb3b993ff5751",
+        "source_qasm_sha256": "6519bf5001d8d2a851a27b17d968e050125682b3e8aec55d16f4f5281e739c02"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 42,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5904,
+        "candidate_operations_sha256": "0e2754c68402d1215124e8ab15727a337796cecac0c365294e0963c3cd9a565b",
+        "candidate_qasm_sha256": "66311b7f10f10f2b4ff8fad027701027400bc3351daf97c18d418b0ef07266ed",
+        "checkpoint_sha256": "b7f69684bdafc82370280a1dd54bc7a46ab57b99db48285d9caa01c7ea49aaf0",
+        "class_id": "9d464cd381e4b3ceee6dde197b3144852d1b96072a089d9ff3d8b85372c1719c",
+        "exact_global_phase": 3.1415926535897896,
+        "global_phase_hex": "0x1.921fb54442d10p+1",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "segments_sha256": "cc415d2433ec12012bf1d3c38643d689ee2a0126057ce56db68eaa9c4025f815",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5772,
+        "source_operations_sha256": "0c5d5f55238625f206e0fe3a7a358f399fc5163f827903d42de3cb09f4535984",
+        "source_qasm_sha256": "eb511305bb25d236fbbb369a0f5335c7139866f6626cecd3cfd7dd0a5cd17c04"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 43,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5936,
+        "candidate_operations_sha256": "0ddde2145504b16d5d6b81481b34670f16cbfc7fda0299dba5fddd894f57e091",
+        "candidate_qasm_sha256": "1aafabf8aa9acd23763f5b80387e78039146f99dfa0426d8cbd751cf57f449d0",
+        "checkpoint_sha256": "2d59267df9ee8f9e40bd4c43a105ecef35e298b37a8d30ecf563ad1a804072c4",
+        "class_id": "4c7779db4942f82ee77bf118a637a3875289aef4b3a69b66799c6c89aa42a380",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "98a4103d844d83b2246c4412d5384a8753068476225402be129b31c75b7eb32f",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5804,
+        "source_operations_sha256": "20ee9306de88de35ecd617dc31571cb6e0ad89769c9e771e1e7ca603b0407f61",
+        "source_qasm_sha256": "f8a34c3c7a42b9913c0c15f52b2aa2c28c4368a32280196e74ff7b77f9839a80"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 44,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5876,
+        "candidate_operations_sha256": "fd67b06c6fa6171e55958a997202e1ed8e7e90ae48198c27ede52573a1fafc92",
+        "candidate_qasm_sha256": "8499dd76996280d17d870de1a032e9d9e1051c50850d29dbce837f9fd8d6a8f3",
+        "checkpoint_sha256": "c1285c4ae8f9369c31e160389a127cfaa57619f3082f3bebd7b93d69b872ec32",
+        "class_id": "c09b6df6291b1b8401978e889f48d78d9478eff468091a01fe9603ecdda5637a",
+        "exact_global_phase": 1.570796326794894,
+        "global_phase_hex": "0x1.921fb54442d0cp+0",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          1.0,
+          0.19999999999999973
+        ],
+        "segments_sha256": "68b360cc5800e45c00cd4ef1c6eb309f0df1b2cad73ce39123f1fb4f615ba95d",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5744,
+        "source_operations_sha256": "6d36861706633fb2185930986ba771b5305503c5246d2566f57c200df3904e70",
+        "source_qasm_sha256": "6e49b9fc1b989a2f1f68bb7cfcf1857cc75b2eb41bb613d427a09a26786cc3b7"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 45,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5860,
+        "candidate_operations_sha256": "652606527c8fe0f185de7e4291ab71922fdc9f45f34f90a924adcbc17be63ead",
+        "candidate_qasm_sha256": "8bda785ac1452ed0aa2a33a0825c0dc7940423135a87d0940c5b0adfe54adc1e",
+        "checkpoint_sha256": "01c5739594e0c25e4c0f2f7dc20d7391bee65a9748ef36913c5dfd90a930b6e4",
+        "class_id": "e59cd31db0fea68aaecec71d4d4806e4dbca492c5b84e2c3bca6b6f7e6352fb8",
+        "exact_global_phase": 1.5707963267948966,
+        "global_phase_hex": "0x1.921fb54442d18p+0",
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999,
+          1.0,
+          0.5999999999999996
+        ],
+        "segments_sha256": "7ea0b897582de5b9932c0d94e9c16a8d721da497acefa6b229518a858a413450",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5728,
+        "source_operations_sha256": "03a04c4758a271eaf8444a25a9dc158a2785f455ce6b811d3ee475cce672302f",
+        "source_qasm_sha256": "ba70a7b91a72f6bd3e8a673925108fed4961ff5b70bf6b079fd3127d778546e8"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 47,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5872,
+        "candidate_operations_sha256": "82fb72eeb1b0e364285f4a607e176e2f12cfa60e192d9fbd8d4cc6eb2472e13d",
+        "candidate_qasm_sha256": "dddfd781ff9c28e58730b32364f4beebe0d76dbb6e2e5097e0204de0baf79eb8",
+        "checkpoint_sha256": "f0175ae974f779dd963e8864a4eed03980dac5ecfc11d41b9e9b23aaa3342715",
+        "class_id": "0b49afcc07950445e3090a0d3385a37dcb6e81a64e5702522e8822ac6cc7000f",
+        "exact_global_phase": 4.71238898038469,
+        "global_phase_hex": "0x1.2d97c7f3321d2p+2",
+        "parameters": [
+          0.3999999999999999,
+          0.5999999999999996,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "b9b38051cfdf3de21819d2a4607af8c4b993938c4210e2e734286cad873ff36b",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5740,
+        "source_operations_sha256": "228bee09678c26ede9f6751ce845d04851c9b9806f26cde4e53febe73944410e",
+        "source_qasm_sha256": "4d9735cd14b4677f8fcb9a797ed5ba3501d3655de1cdaf9f2fa3d8efb342f55c"
+      },
+      {
+        "batches": [
+          {
+            "accepted": true,
+            "evaluation_index": 48,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 55,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 520
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 69,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5828,
+        "candidate_operations_sha256": "93e7115f6af1c43add876166ef4a9f95c7c679850f228a23230ab1b1a1f18e27",
+        "candidate_qasm_sha256": "d93d466b2c67168362f054253b4a6f808d3082beddabd44e881147716debf399",
+        "checkpoint_sha256": "be127134947372e552d118f98ecfeded69d47e62f3679ef24c9bc240d9159a76",
+        "class_id": "51a245f482a4f3c7badd7720ae30b28c7a404ae7160714cdd55d515f22e9ee7f",
+        "exact_global_phase": 1.5707963267948948,
+        "global_phase_hex": "0x1.921fb54442d10p+0",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "66a2cd69737f576a88348cfc4514974e6b516527dbe43ce72264f36fc6e8af92",
+        "selected_words": 14,
+        "shots": 1560,
+        "source_operations": 5696,
+        "source_operations_sha256": "a878b5f79f878f156472c5d46782ef4c0f07e58cbdfb06427e41d676354772ef",
+        "source_qasm_sha256": "182fd002bfdf66331b583978d7c277bc1b6eb500a0b3c0c63702b1a0f1351a28"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 49,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5896,
+        "candidate_operations_sha256": "79034cbef2611a8c761186a1cf93815ff7b400e851802d3bde816657d2bf1f2c",
+        "candidate_qasm_sha256": "e26334c1411a8a5ad619ee9f355ec8c9e9b47e7bbedc6d372f2f298267c24509",
+        "checkpoint_sha256": "012865436e4fbe32b33eed114da78480b7132df791f4fbebc0fc2af0c4882134",
+        "class_id": "44eaf8c927344805b416c7431451cef2143579b0dab91788ddce3e7746fa8cc6",
+        "exact_global_phase": 3.141592653589793,
+        "global_phase_hex": "0x1.921fb54442d18p+1",
+        "parameters": [
+          0.6000000000000001,
+          0.39999999999999947,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "acaf616b5a13df23d933ee04cd18c3f93d83835c09767d307a5a285da09a9c5b",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5764,
+        "source_operations_sha256": "d12348937ded99f386739dcc16b8886094527c7c8af028520506791d1870ac30",
+        "source_qasm_sha256": "ddf13b98adb395dc8c121fca010812dfb2e43fda29a545daf1238870c1618dda"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 51,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5820,
+        "candidate_operations_sha256": "99e5227a360d04d0609f5ac10a88f26771bce36bb9630c280060129d1a662dbe",
+        "candidate_qasm_sha256": "3beb37cba7cf4a9f09701d2e144d8adbebb09212b4c500f74c3ab85b7338ee9c",
+        "checkpoint_sha256": "7dbea412df51e89c216df75ebcdc6eff1504dc50f9a4e8e27f0603d4b0a5cc33",
+        "class_id": "df262b18ddac25476536fbcb4be9c6c50fce9152e1576904517568b6b8c44f84",
+        "exact_global_phase": 4.7123889803846915,
+        "global_phase_hex": "0x1.2d97c7f3321d4p+2",
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996,
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "segments_sha256": "324bab4b0e6b18ced61b7339e63803cba34ce67022e8d5c90a0dcf57183c2c6b",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5688,
+        "source_operations_sha256": "94eb6a0cedaf9c289d48956cad72bc38ff814d3bef85f038f9407f03ee55ce9b",
+        "source_qasm_sha256": "4f2d33e4f80534f9733f5a7f154e0cdf303f50a6c08049a0b600d3123d130290"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 52,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5860,
+        "candidate_operations_sha256": "2c75234aa1034d5f9c3dd6372a215bf7da7ef34b14ca6a2c1979fca39caea55e",
+        "candidate_qasm_sha256": "8c7559b09fa799b4b4009fd4c5faaaf5f4d7b177ceced4aa08fa446ca3ff7993",
+        "checkpoint_sha256": "4c8582be19158ab9cf81eccbd402f633b8fffe32c95c747e2867a1e0bbc5a131",
+        "class_id": "a5d71b83ebf11631c344ca68c021a21846b8db682152c634634371af40e30de9",
+        "exact_global_phase": 1.5707963267948983,
+        "global_phase_hex": "0x1.921fb54442d20p+0",
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "3c35cffc984bbc97ee97903b9839349d24c449771edfa41c26c7e083e7501f67",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5728,
+        "source_operations_sha256": "65479cb3c47558189bf73b0f5de359d83d608303fdcd93638cb7e52d6cbb6214",
+        "source_qasm_sha256": "3be69387f8611de0add6d4657340f80394576858bc4f544419457ab8113a024e"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 53,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5804,
+        "candidate_operations_sha256": "7089941f4586c658e834c0ea1882ef44d20e53fa5cf35763e26611010df44780",
+        "candidate_qasm_sha256": "b95a117191666eb9834549317ec596e9933785d66b6f00a59fd9a43875d3e72c",
+        "checkpoint_sha256": "14fa7749942f4978ca60d323316dce3d07dc2e983e58bf10bb8c3c242dc09f3f",
+        "class_id": "f423d9ec800c52460edba258050faa9f15d27ebd0eb99fd427237fd223e73a40",
+        "exact_global_phase": 3.141592653589793,
+        "global_phase_hex": "0x1.921fb54442d18p+1",
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996,
+          1.0,
+          0.19999999999999973
+        ],
+        "segments_sha256": "d32db630041437cb1a0aa3a6a7dc9f054a00b8d91f1c9633c45db8dfe0f965dc",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5672,
+        "source_operations_sha256": "1f62bb6bcb2b86aa6f52b1eb51b4580372e5cbd4b79bf95fd218c3e4a81ffb8c",
+        "source_qasm_sha256": "ae3fcfb021862a554aa9b2a68f995a41a0c2144a454df08aa79348d8711e9255"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 54,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5824,
+        "candidate_operations_sha256": "b9a41cf912d5b01f0750ed0813350b3933106312f5540b91c0259a9573ae4f0c",
+        "candidate_qasm_sha256": "5eafcf44a7fb2399ec63100b3f729c912982b2c5642e15ccf7d35a85f63eda7f",
+        "checkpoint_sha256": "5a38a3ed9a64a7a283c5b841c748ee965adc45edb92bea312a792ce31ba880c7",
+        "class_id": "742d6fcd3a7236e61a32b2cc7b1d37f16db1874e0569c5901c15c9d46f0380af",
+        "exact_global_phase": 1.7763568394002505e-15,
+        "global_phase_hex": "0x1.0000000000000p-49",
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996,
+          1.0,
+          0.5999999999999996
+        ],
+        "segments_sha256": "587210e2843efbb2306403220e82dedd215a99e5d218f26088b948a613d0b286",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5692,
+        "source_operations_sha256": "31c9614a7f03b16e9e7dfc434ef220b4bec7ae52fbeab71fb4f0681b64c7858f",
+        "source_qasm_sha256": "449c1b1fbf393d98c8fb3cca6b1362a5a16648fdad27839ab881c3309756fa94"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 56,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5860,
+        "candidate_operations_sha256": "5b2dc1b367530b8dac78685140a47e3c807222f189f9a0be1345232f4e24ed66",
+        "candidate_qasm_sha256": "dcdb3ec1beede42addc406f7e3a386fc1fcb41d055c6a1186a681e8241abcd93",
+        "checkpoint_sha256": "5fe703f1a9aaf24bcc9e4a592fce0db1f7fadfbe6cfd4e7cae081f8879d266dd",
+        "class_id": "1d11ccc11221636a165999a7629c3e9f613973d82fb70d276c4a7f5960a79c66",
+        "exact_global_phase": 4.7123889803846915,
+        "global_phase_hex": "0x1.2d97c7f3321d4p+2",
+        "parameters": [
+          0.5999999999999996,
+          0.5999999999999996,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "697a9b9a5def4bf9a4df73dc6bab52d2e1811029918b85eeac5e20daca743f4c",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5728,
+        "source_operations_sha256": "6806056479afabe6f2c24937a091c977fe6400f4950e5165c25cb3b993ff5751",
+        "source_qasm_sha256": "6519bf5001d8d2a851a27b17d968e050125682b3e8aec55d16f4f5281e739c02"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 57,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5904,
+        "candidate_operations_sha256": "beb13f0f5d3b7574e18d24de92c11e8235a1ba8b1f81f6ef6b5913a5c5ecc510",
+        "candidate_qasm_sha256": "44432e616b2691a7dca8c4312865c322cadbe7993f84a60ee405683431d9aa90",
+        "checkpoint_sha256": "4b80a1a30dd3fc243d8adc9a1d9c7a858443a6e2cf51b15e9bfd62534475a640",
+        "class_id": "5b138994f07d2fc3fd5a55c313e312ee9e293582d2361f8c52ceb23123ff315e",
+        "exact_global_phase": 1.5707963267948983,
+        "global_phase_hex": "0x1.921fb54442d20p+0",
+        "parameters": [
+          1.0,
+          0.5999999999999996,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "22639f289144df7677048609a067fe728b0b43403340f30d30586098d5afb92d",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5772,
+        "source_operations_sha256": "b37e5436a7e0769a6f70ebb85544bb190ee6d2b2275ae65bee1bb75f0b57a79d",
+        "source_qasm_sha256": "39d192c262fb023675245b5b021f3bbe3df6c64a31d3ab6d6bcbfff34ad59175"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 58,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5904,
+        "candidate_operations_sha256": "f87463ff09cceca9f310ea99f86db98056f1981a590e98755b00218f46ae9e5f",
+        "candidate_qasm_sha256": "a29d97c8a71f5e7852b1e1c10f030a72fdd351e5656d2b14029b42e594b931ad",
+        "checkpoint_sha256": "425f2250308bc82ed40a6c90ea79a99d356833c34ab65d7fa50254d7605e8367",
+        "class_id": "ae6b115f895e84c79f6205b33bd1b3ca29921081178ce6dd535a2a73ccdabf25",
+        "exact_global_phase": 6.283185307179585,
+        "global_phase_hex": "0x1.921fb54442d17p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.39999999999999947,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "d27dbb3187ccbcfc530257f718ed3da54312476452ce45c996b5bd44bf70e8c9",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5772,
+        "source_operations_sha256": "f0d5cf6c05895d2c6f9b837be0a58df70714be33c42c7a94cfd70fa170e853be",
+        "source_qasm_sha256": "42c864e81fd55854988b2e7c544c5332150cad8f8d49084a737ede8731bb722f"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 59,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5864,
+        "candidate_operations_sha256": "cc964145d7a649fd4bd9e881e92287c3ad2f269a5dd163609d130cd10582c940",
+        "candidate_qasm_sha256": "d66ac93190aed6293524614f9dfbf555d5c692a94435736eb67c45e3e65863a1",
+        "checkpoint_sha256": "36d8ed68f24df45421c7e01a0410f5a231533a1b6af952fd4221614696872fdf",
+        "class_id": "0e1b386c66fa83756c964e5cec7f213aa2209b1e811df74d021f85f21e921822",
+        "exact_global_phase": 1.570796326794894,
+        "global_phase_hex": "0x1.921fb54442d0cp+0",
+        "parameters": [
+          0.7999999999999998,
+          0.7999999999999998,
+          1.0,
+          0.3999999999999999
+        ],
+        "segments_sha256": "7322f0d505689c3c835970f5928c71553f8fc1f7c9c50d2e1458500c7a655e4c",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5732,
+        "source_operations_sha256": "5d3b021c0ca2f25711b516636deef44eafecaa619fa2c03c2efb19f4b85b8f86",
+        "source_qasm_sha256": "3cc5f2ab256b9eb90d868404b318507528f411421a395bdccf95898705f23314"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 60,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5828,
+        "candidate_operations_sha256": "0c4b97f3adb3890c9b220dc8d184ea85810bb7a6c2df2c9531773e901322b83b",
+        "candidate_qasm_sha256": "9981bb70bef6e443759e7dfa47eec0bd7438083b41cd92260c8bde3b6f7edfff",
+        "checkpoint_sha256": "c4f7c404985a2f648e663782ae9926c0a2e05708fbfd465e193a6e32e9da3f5a",
+        "class_id": "6167ca4cc2931823c284778476fa83ae31df547d559a06b8ca4017c098506b06",
+        "exact_global_phase": 1.5707963267948948,
+        "global_phase_hex": "0x1.921fb54442d10p+0",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "segments_sha256": "9b5a0805469d76a3e7d8b666e99470ecaab89d4b6335f3bb98b9d82cbc54d110",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5696,
+        "source_operations_sha256": "fd7e807ec6d0a4ca95e3c58525cf1df96d534bf759ca114d85985f588d50903e",
+        "source_qasm_sha256": "2141f1e8087bcc2ce887fadaa5bb977fb2d329740d36203c07dd328ddf9bcccd"
+      },
+      {
+        "batches": [
+          {
+            "accepted": true,
+            "evaluation_index": 61,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 64,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 520
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 73,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 82,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 91,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 100,
+            "group": "all_z",
+            "phase": "training",
+            "role": "incumbent",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 0,
+            "group": "all_z",
+            "phase": "holdout",
+            "role": "independent_final_validation",
+            "shots": 16384
+          }
+        ],
+        "candidate_operations": 5868,
+        "candidate_operations_sha256": "c91f3981ae1c70ddf6785d1be87b0f41b7d7e3a7e4233d6d91b6d29b9b95a5f7",
+        "candidate_qasm_sha256": "b2b6ca908c8dd24858f0511bc4bde19c612753e06b03dd161fe64df696f8d09c",
+        "checkpoint_sha256": "ddb89e86ab3c46b8f76646b1d2416ddff329ae89f665a5e8f177ca10fea3cb07",
+        "class_id": "c9baae512c6dfdc94e19e7acfa9d8375a55695f24531e3f8771c1b4b8d2b0b71",
+        "exact_global_phase": 4.71238898038469,
+        "global_phase_hex": "0x1.2d97c7f3321d2p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "1ab991f4c9f12847b4d7d8f5fad217e7fd769041a8536034f86c377c1bfbfb8a",
+        "selected_words": 14,
+        "shots": 21584,
+        "source_operations": 5736,
+        "source_operations_sha256": "50b5f569e6c2a7701734673b5385c48ca60399d21f9d56727ea1a6ac9906d890",
+        "source_qasm_sha256": "ebacb5be862b4a37d6338086f6b5e63982a5650fd1b444394fce70ce200a45de"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 62,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5848,
+        "candidate_operations_sha256": "2a206229979f83a7bf70a7dae070b3f43beda101cddabc0c7875c54c84cca0a2",
+        "candidate_qasm_sha256": "16aac5ee5a11c511493f935f80aa62fea3d781ffaf3b536952245f4af470d87f",
+        "checkpoint_sha256": "3f84d829fd1f07839becff8f303385c724871c7b367b20eb3eec52c21306ac50",
+        "class_id": "86e1e5f849ff221d026d404ab98826fc0852febaf194f83731bd4089f85cc3de",
+        "exact_global_phase": 3.1415926535897896,
+        "global_phase_hex": "0x1.921fb54442d10p+1",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.0,
+          0.19999999999999973
+        ],
+        "segments_sha256": "24748ebe8dac088195f65d6bac5b7728688b808461af3fc55a89a0e1ddf4d60a",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5716,
+        "source_operations_sha256": "f98ba4210717247ee0c0254dbebbb5c88dcf214fbac95b4f282f698de5ded618",
+        "source_qasm_sha256": "32f17350e50f4560a5eafe35b9d5115b7b0a629db0379f62a4d8d83e00bb70ea"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 63,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5832,
+        "candidate_operations_sha256": "394b5f242987f2960014fbeb1791b7d424597e6b5e2a4d2924834d45efe1bfdd",
+        "candidate_qasm_sha256": "f55f3aa07488c564edaa7bf717202a4252a5482818fb741df7d5985066bd29c9",
+        "checkpoint_sha256": "acd0617a13ad44e3683dea6db4a6136dfaa0e7a89c02e8373e5e6654429116b2",
+        "class_id": "2f8e806dda25fc7e8f5a4b4222493ed988b0ba60b5ea071e29f7493df1c25baf",
+        "exact_global_phase": 3.1415926535897927,
+        "global_phase_hex": "0x1.921fb54442d17p+1",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.0,
+          0.5999999999999996
+        ],
+        "segments_sha256": "a5e5d579889c1e4d822c61293a23eaa39f4e775b0d488d505dfbd89e6914c99a",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5700,
+        "source_operations_sha256": "611e1604e0338621a52b608c84fda216e80a2b1ae1ba100398066d539192cf6e",
+        "source_qasm_sha256": "c9ae6a22096cbf14a3c45f1c58c6c256740dd6521ac799e764ba1c7838843914"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 65,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5860,
+        "candidate_operations_sha256": "2c75234aa1034d5f9c3dd6372a215bf7da7ef34b14ca6a2c1979fca39caea55e",
+        "candidate_qasm_sha256": "8c7559b09fa799b4b4009fd4c5faaaf5f4d7b177ceced4aa08fa446ca3ff7993",
+        "checkpoint_sha256": "fbe38986105f79c4d9dfaebef69edc2ec1db9dc26381ec058854c3bdd718a744",
+        "class_id": "b3b088059765455b97b3c1e47a481f0515f4c22dd73951c6836827bab9ecbd83",
+        "exact_global_phase": 1.5707963267948983,
+        "global_phase_hex": "0x1.921fb54442d20p+0",
+        "parameters": [
+          0.5999999999999996,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "3c35cffc984bbc97ee97903b9839349d24c449771edfa41c26c7e083e7501f67",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5728,
+        "source_operations_sha256": "65479cb3c47558189bf73b0f5de359d83d608303fdcd93638cb7e52d6cbb6214",
+        "source_qasm_sha256": "3be69387f8611de0add6d4657340f80394576858bc4f544419457ab8113a024e"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 66,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5916,
+        "candidate_operations_sha256": "b1262b872087afb38e318bdb3b7a9d20669134121d66466b22de7eaa7a352772",
+        "candidate_qasm_sha256": "8734942c32a156c276b2daa5551736535e8509c2bb6a56608c8ed2820ce3801f",
+        "checkpoint_sha256": "32a698eedc25e85b9eb909832e50230563d378d7078da54f493f3d9cf2b8124f",
+        "class_id": "c479c9e8ef56c684cd656cf250e02765c5ad6b866e4e68ad1cf45026f14dcd50",
+        "exact_global_phase": 1.5707963267948983,
+        "global_phase_hex": "0x1.921fb54442d20p+0",
+        "parameters": [
+          1.0,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "3992ce33f2f21497717ae1fb49762cc6b64874fb7ec76fcdc197166205a0dbf3",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5784,
+        "source_operations_sha256": "025b1c10cd3e942e9f37f13d69b751ac0cd82f21176c08759183a50d2b3d7a8e",
+        "source_qasm_sha256": "e7abb73157866ae61dd1fb5dfff9ff1c750a0a0c80c57909c03c11534283e64a"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 67,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5944,
+        "candidate_operations_sha256": "6f955ab8f08072f2173cdda75de473612bcb66e21e25792a82ffc2dd5d094e02",
+        "candidate_qasm_sha256": "d0dff7cf2c792e83c90df818700181fd9e593180b0d4ec44b1e74414ad0539db",
+        "checkpoint_sha256": "2663a88a1e54563a7f7f609785f4d3582fb099d8acc051e4197d19ef6b90fb0b",
+        "class_id": "183bee4820cc9db9160bd5d91d37e3c79e52495e47f3dacf7decec0df26538b7",
+        "exact_global_phase": 3.1415926535897896,
+        "global_phase_hex": "0x1.921fb54442d10p+1",
+        "parameters": [
+          0.7999999999999998,
+          0.39999999999999947,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "61b96de9f0f303fbd2c4d694f244c0e9e563d194772df077cc3a11704e7b78f2",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5812,
+        "source_operations_sha256": "e4f605560673b20360b4b676c582fe9d845e1747e15ae6de8fc57f03a3268efb",
+        "source_qasm_sha256": "912e95ef7ed5dc07df67f1164443b5c82dd977ab2ae2624025c3fb5c5135a7ee"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 68,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5908,
+        "candidate_operations_sha256": "537a906c0b77c1f97e8a35b4cac09f48c99f470718b995d69a9121534ff62943",
+        "candidate_qasm_sha256": "1f9eb7d3d2458d6d3310ea138e788edd552f14617a5722ed8c0f8593709051c9",
+        "checkpoint_sha256": "c7ca97c26a0693288cef01a673356243c14a133a7235afbf6fc2de627b68bd01",
+        "class_id": "d575f94c35ee5fdcd65ca2cccbffeb0801e4c11b95ba80bcf6af9cb7cd44bd14",
+        "exact_global_phase": 4.712388980384688,
+        "global_phase_hex": "0x1.2d97c7f3321d0p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.7999999999999998,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "62a3b6b1db19a43f4a559966d95d44b41df6b2bfc738f4afb3ac70dac7140cf7",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5776,
+        "source_operations_sha256": "ca32681b0e827c082f046852aafb1784b8193faef01b1fa8e4b57750dd58db6c",
+        "source_qasm_sha256": "b3437a87967a0a4a4113a4ec040d44a667a91a8ef63980dc526c5327a6bb54e8"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 70,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5908,
+        "candidate_operations_sha256": "e1c9c1d6b7eb3c1f48c2d86b9b120ceefc7ea07219bd56219aa24e93c5297622",
+        "candidate_qasm_sha256": "f368f52bd18f924a8133cb04a67027cea5c947754796b9fe6f932cec712b0c69",
+        "checkpoint_sha256": "1cc24fe1b58a605611392f570f3025f25199e71f1e3b709cab7ddae627d65209",
+        "class_id": "022bc4e612330e512612e741e8d37e71dae9beb51214b08e4d0d3d826b5e7716",
+        "exact_global_phase": 1.5707963267948948,
+        "global_phase_hex": "0x1.921fb54442d10p+0",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.4000000000000004,
+          0.3999999999999999
+        ],
+        "segments_sha256": "fa9eb168b7393072d78a685aed48a82424ed22e0a6fe208fb4eb189dda1a2dad",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5776,
+        "source_operations_sha256": "9ee31cb7f9c072df548643530259a972d436edb3ad84d2696fe4584436ce3653",
+        "source_qasm_sha256": "95a1a348a7f3d4df110f9d5d2e3f50304bb4be3ef98b3347653dbdb62df7ab0b"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 71,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5888,
+        "candidate_operations_sha256": "301283607cd6a6e5358d04b68bcd063d73b21861f7fd495029602c53e4a76971",
+        "candidate_qasm_sha256": "ebcbf5a7ee83190bf37458e818d37d2d6e318a0011062c68226e5fd8ee04799b",
+        "checkpoint_sha256": "72afd94ddef43802dc41219a575bbaf41936778e7bd18b932fa7a0079522c7e6",
+        "class_id": "bc0bcf17fcb5a4861c2cee7f5e19a41b93266211acc30d7641dd8809d6f7f7bc",
+        "exact_global_phase": 6.2831853071795845,
+        "global_phase_hex": "0x1.921fb54442d16p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.19999999999999973
+        ],
+        "segments_sha256": "9ba500f80838dca48abb61aa0a2190db74f071723684fef57717bf8e41c6cd33",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5756,
+        "source_operations_sha256": "322dc34d59ff57b805c8a5d45e8daa45353f8fc555aed9fce524e53c74c4bf03",
+        "source_qasm_sha256": "3c180dceee41a2a55f1cd2457d8fc3047056d9363d8fa0fbf3fe84c23750c7d8"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 72,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 520
+          }
+        ],
+        "candidate_operations": 5872,
+        "candidate_operations_sha256": "9ce7ebfbe86b29f3b9bdcdb2fb3c669b4affe1ddb70a60b40fcf181c585b6e76",
+        "candidate_qasm_sha256": "b7e3b5aa4af5bbf2a994c7c055fa3f18a022702ca7fb1726dca7779ecb8f3693",
+        "checkpoint_sha256": "ad534578f71cf534d7520ed8502eeedbced0d88351128b6e43abeed5b0d2131e",
+        "class_id": "5623940e635764c58e29118e2d965f97d1e991db7f3e82756d5c4cde4ef68e2e",
+        "exact_global_phase": 0.0,
+        "global_phase_hex": "0x0.0p+0",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.5999999999999996
+        ],
+        "segments_sha256": "e427eccaae11f94adb128ffad17acc2ceba84eb9790f105dfccbccd58a076360",
+        "selected_words": 14,
+        "shots": 520,
+        "source_operations": 5740,
+        "source_operations_sha256": "c0d85ddf164b3f1e4a735371e68f3f792e550b426e0fbf3446f91641d6fe3ada",
+        "source_qasm_sha256": "41f0ba5254a57cf342288fbb1b37c9b030638126c32909f788dc5b6f045514bf"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 74,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 83,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 92,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 101,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5764,
+        "candidate_operations_sha256": "9c1d939c86007232c9726f0625a7041917a5ca749087c17ddae2d24c71f0bbf7",
+        "candidate_qasm_sha256": "8f6fbcd6dd8af9d5a59053dbf1c3d90890dded8567c0563f2a02c9d27e75349a",
+        "checkpoint_sha256": "8f4b44dba797aea5270e678934979348376dd2014a2a8607fd0ae6258af309a1",
+        "class_id": "e1c9f761f046559de2b7d595cf47d025f4ff7765ecc8ab0aa276d11b1610fab3",
+        "exact_global_phase": 1.5707963267948983,
+        "global_phase_hex": "0x1.921fb54442d20p+0",
+        "parameters": [
+          0.6999999999999997,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "3a34ed6e63211172418ea8e1cf8033aee98abc7211215b5606d984e6381797ae",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5632,
+        "source_operations_sha256": "40fec4239a52306d2ddc4e133f712531d1e83bfcdab25b19e9ebb45a59772a3b",
+        "source_qasm_sha256": "f19fa3e41261f5bc64359d9f19f0141f58d694b726d2a759c23c794bb46d9c03"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 75,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 84,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 93,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 102,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5908,
+        "candidate_operations_sha256": "00607bd96fb57e101a3c1041157dd8c1283d3583ac424b3a02b31d1bbe7bc731",
+        "candidate_qasm_sha256": "629394d10608f7261371d7d28a5d3de5c285354ba588a84a4d3b6ff74defc307",
+        "checkpoint_sha256": "ac1019d2c27465c35861bef3957799a274884d9beaa9c19b5862b740b919f14f",
+        "class_id": "c6f5c27e7fe1712b35dea11e55d5bb544123fea9aee970e040c686a3543034d9",
+        "exact_global_phase": 1.5707963267948966,
+        "global_phase_hex": "0x1.921fb54442d18p+0",
+        "parameters": [
+          0.8999999999999995,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "ee3affff19783a441dcb550af47e37409d0bf1d1c2a851f9fba26a2ec73d8cbb",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5776,
+        "source_operations_sha256": "606162834f011ef0ee07b5b4af39e14238ca85cbf0b81c090553e4deb33b6cde",
+        "source_qasm_sha256": "457d06cb1b42051c9547057887c8637209782af2d1079d4b28098347157632ef"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 76,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 85,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 94,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 103,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5924,
+        "candidate_operations_sha256": "ef673292abeb4d3dabad68f8ec6cc2b09a9f2e232db23656135b633d496aaeb2",
+        "candidate_qasm_sha256": "05dcf58c1d8b16ff1797cbdf1403c1163287e039ad53a519ef02cd02b8cb5fc1",
+        "checkpoint_sha256": "90113f716acc6a48e091a88195a664d7e26f3384f670969eb3d70047f6d38cd3",
+        "class_id": "cd867fceafe96b434398881b8bdfb397aa63f34c6d3570af57ea01ab39c26826",
+        "exact_global_phase": 4.712388980384688,
+        "global_phase_hex": "0x1.2d97c7f3321d0p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.49999999999999956,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "88979ca5c135c3e16d75bd613a8d1f5a9d3541dcfdda9e9ac3563617361ffd6a",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5792,
+        "source_operations_sha256": "8e6f1b20f8c1ec3b05a6c0fd90349479a4353b432290d68a05bb2f8b5b809d94",
+        "source_qasm_sha256": "ee6f816d0a06b47a7c14319eec4c2bcadfa9f99e784414adab8bba36883ed8fc"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 77,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 86,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 95,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 104,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5892,
+        "candidate_operations_sha256": "df0f257e60645c22a32e5120a0d0e275ac8feee8b3b64b2239e8e7f2aafddb58",
+        "candidate_qasm_sha256": "f94d5abd39176ec06008b1d33a9dda5d18c26975ebccc97958fe1bc1f558912a",
+        "checkpoint_sha256": "bab6be378229bb98e83a3c6c9fa12aa17cbfe92c80a37dd490562579d3542f10",
+        "class_id": "66966a894ddedc83494653782892819c275b7834b1abf27d0bfe777d28e5341b",
+        "exact_global_phase": 8.881784197001252e-16,
+        "global_phase_hex": "0x1.0000000000000p-50",
+        "parameters": [
+          0.7999999999999998,
+          0.6999999999999997,
+          1.2000000000000002,
+          0.3999999999999999
+        ],
+        "segments_sha256": "f3d2900fe7bbdd82ac892454a55d7e4595885db5275921b703fb342949dac64f",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5760,
+        "source_operations_sha256": "2342ba036e53730153825a3b8d457c7879112a09445b41b5eb9bd9d2cc0656a0",
+        "source_qasm_sha256": "bd5e831e397ea488d99d60a3a0b34eb50b1371c71252ae93ddc94dccea3592f8"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 78,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 87,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 96,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 105,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5876,
+        "candidate_operations_sha256": "3bd58a1a1af11b872e1fa27b0795c8f674542365b412df0477bf7f65a1188934",
+        "candidate_qasm_sha256": "5ec9689daa8b1b0f79f835b9c773544aa80dc97546b45c32c66387216a733aad",
+        "checkpoint_sha256": "3030a36f94a4d9b94586f89babca7eb6fc0241ffd520c356e4403c5fc15cc0fb",
+        "class_id": "bed7fcf00e412d5d511fac57e5adbd19ebfe1dddfa702f7ea62b09209d4ac435",
+        "exact_global_phase": 1.5707963267948966,
+        "global_phase_hex": "0x1.921fb54442d18p+0",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.0999999999999996,
+          0.3999999999999999
+        ],
+        "segments_sha256": "ae8fb464080be9d4afab118281bbb46db4ea63811a3c2c40d6db9d2188c99a6f",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5744,
+        "source_operations_sha256": "5d5a6e4e371163f036291f5913f5045c25987051c9d402299adc098a92b5216f",
+        "source_qasm_sha256": "8b73460950f51e22ca1e8fd263721b69a41ea69bf0cd3aa023fd670dc254aafa"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 79,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 88,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 97,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 106,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5804,
+        "candidate_operations_sha256": "e2d019c21e6289712f1586c41933457854151b0e2f2b4e6e6c01c74ea7e012b9",
+        "candidate_qasm_sha256": "e834a3cc41a7cecc8ea648705d36591b3c28040dd2bc3deecf2f17d04aae912f",
+        "checkpoint_sha256": "c0e45ca66d7720b03dc221939c46d24bfc62c101d3b66b1e72fae7bc87b95764",
+        "class_id": "e162c55393e6ac1be43b157f4fd0566a40cd1d19e939ae600c5fda8b4eed3847",
+        "exact_global_phase": 4.71238898038469,
+        "global_phase_hex": "0x1.2d97c7f3321d2p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.3000000000000007,
+          0.3999999999999999
+        ],
+        "segments_sha256": "a5ed81a35df9c25138db224c5f21d38789eaf9c9fc09803671d4f9d749f397c2",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5672,
+        "source_operations_sha256": "968a7603a28a828f0dd556540c8d074f58a5c6e49617ab8f96277de498d1641b",
+        "source_qasm_sha256": "462c8460be811e8c8443301184e7628654e98a7452e04c42f35865103b47b202"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 80,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 89,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 98,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 107,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5876,
+        "candidate_operations_sha256": "8c2d94c2e1f59c03e86ac9252f2b278b2c8ed2561ff286c43a0a3605ba28924a",
+        "candidate_qasm_sha256": "f69786aa73c6aca10fd223d869d003525c57f8b2ba7d50bd9249ef162ee8beea",
+        "checkpoint_sha256": "f5a63d261681759e5b4bc8c735c228296e3a49e6ca2164310dce044bb2b6b1da",
+        "class_id": "d2be017f42415c07acef481014b1c47ee887743765360ad8a84aeb7234fd8342",
+        "exact_global_phase": 4.71238898038469,
+        "global_phase_hex": "0x1.2d97c7f3321d2p+2",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.2999999999999998
+        ],
+        "segments_sha256": "17b9ad5d78d0f266e74d93c9bf59bb95e2ac9ba91aed1ee233f0bb64ee2f087a",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5744,
+        "source_operations_sha256": "8f28a7b6f7caee5e7d2857ee47c6bceeb074a8e3154a4a25dddf6c30c39070a6",
+        "source_qasm_sha256": "03c86524b63b64baa747ed5bff3c00ad454057f29b89f35a414fead0602d3a20"
+      },
+      {
+        "batches": [
+          {
+            "accepted": false,
+            "evaluation_index": 81,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 90,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 99,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          },
+          {
+            "accepted": false,
+            "evaluation_index": 108,
+            "group": "all_z",
+            "phase": "training",
+            "role": "proposal",
+            "shots": 1040
+          }
+        ],
+        "candidate_operations": 5884,
+        "candidate_operations_sha256": "61f1bb6fd151aaf3266961d5f767374b4838e4c98402dcfb92d02a02dfb034bd",
+        "candidate_qasm_sha256": "3d4b96020177f38f69f19195a77543d9a5772a00835238e1933dcc98cead199c",
+        "checkpoint_sha256": "18bc474356b8b8ead08ab12340697ecaccdc1627be3edf61da856cb7eeadad1f",
+        "class_id": "0e38baa8f9556fc33364365edc104bcdceaaf1676a6d21b3afd93031c21fdf31",
+        "exact_global_phase": 3.1415926535897927,
+        "global_phase_hex": "0x1.921fb54442d17p+1",
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996,
+          1.2000000000000002,
+          0.5
+        ],
+        "segments_sha256": "69d33f42011e0fba012d7256da3eb6098bc80abe771f7538a34d12a08d86d952",
+        "selected_words": 14,
+        "shots": 4160,
+        "source_operations": 5752,
+        "source_operations_sha256": "4c50a8b573fbc5ba4504804845f76471a97b330418c94051fc5427493a2e1d7c",
+        "source_qasm_sha256": "e10db1eceea5da0f6437e67b5d2e9f235d0edf28f5c57372b6eb0d43debc25e9"
+      }
+    ],
+    "common_machine": {
+      "baseline_selection": "seventh_minimum_runtime",
+      "baseline_serial_model_time_ns": 797328306784000,
+      "data_code_distance": 15,
+      "data_workspace_physical_qubits": 6735,
+      "factory_physical_qubits": 236623,
+      "factory_retry_cap": 6,
+      "native_factory_isa_sha256": "2c94c77a1cb4779ac6b4d2f49d9312d70974b9ff82650b4f252ea52fe939c102",
+      "native_t_instruction_sha256": "ad99b8ce36f8b556c05d877305e97e5e654f31c0d3756f0630c5bb2b44b184cb",
+      "peak_physical_qubits": 243358,
+      "reserved_logical_patches": 15
+    },
+    "eligible_paths": "all four data wires explicitly initialized; arbitrary entangled spectator data allowed; no clean spectator assumption",
+    "input_inventory_sha256": "f2755030731455a8eba738434d3a0a5fc322f09d49c97a6a1ed94a275291eba7",
+    "limitations": [
+      "no candidate native Trace or factory calibration",
+      "no hardware or physical-code geometry certificate",
+      "encoder/factory internals and decoder throughput remain unsupported",
+      "archived holdouts and prospective fixed execution remain separate experiments"
+    ],
+    "owned_source_sha256": {
+      "scripts/prepare_optimization_word_transport.py": "d585f1d6b2e9bbe09eaa87d32a12cf8b9c9cdaaf0426029cd19c9c12c128b0bf",
+      "src/openquantum/optimization_word_accounting.py": "f604622e251baa50a6100b0e02867f10d994dd97ec29ab0e47584c11db214de6",
+      "src/openquantum/optimization_word_transport.py": "168d6df0e7b429c05a54635c0a586de6d4a40567b50d8b2aa3a39f1cb800c998",
+      "src/openquantum/optimization_word_validation.py": "f2d8aecc963df1394b68a82b79549eaeb9eba4bfc01181ed8daf5a3249a92eef",
+      "tests/test_optimization_word_accounting.py": "b3014d268d2a06e1775ac03f5999e8ee501b06ed8cf22bac75231a8f9b5843fc",
+      "tests/test_optimization_word_driver.py": "04ba1561c0f5850ad66f5a69a6420fb87c3326569b1bd6df17bb19a7cbd65e11",
+      "tests/test_optimization_word_transport.py": "8d0c9c59689cef887fc25d5a3a580014b5cc8da01bb5d6793b7ee4d063bdb150",
+      "tests/test_optimization_word_validation.py": "c54f18cd94dfd37abe49cef5493f30953abd4d2cf76194c9620595c0c7900c89"
+    },
+    "profile": {
+      "code_cycle_time_ns": 1000,
+      "controller_failure_per_decision": 1e-15,
+      "factory_feedback_rounds_reserved": 3,
+      "factory_pipeline_failure_bound": 0.01,
+      "initialization_residual_prefactor": 0.1,
+      "maximum_code_distance": 49,
+      "memory_prefactor": 0.1,
+      "memory_threshold": 0.01,
+      "physical_error_rate": 0.0001,
+      "physical_gate_time_ns": 100,
+      "physical_initialization_time_ns": 100,
+      "physical_measurement_time_ns": 500,
+      "reaction_time_ns": 10000
+    },
+    "prospective_native_caps": {
+      "candidate_bundle_bytes": 16777216,
+      "decoded_record_bytes": 67108864,
+      "expected_parent_trace_estimates": 49,
+      "factory_frontier_queries": 0,
+      "physical_wall_seconds": 60,
+      "pipeline_candidates": 0,
+      "synthesis_calls": 0,
+      "trace_estimates": 54
+    },
+    "rule": "maximal contiguous single-wire local Clifford+T words, wire>0 and T/Tdg>=3; adjacent DATA SWAP path to D0 and exact reversal",
+    "run_id": "qaoa-cycle-4-p2-alternate-seed-7",
+    "schema_version": 1,
+    "source_caps": {
+      "candidate_operations": 540000,
+      "classes": 54,
+      "data_qubits": 4,
+      "density_cases": 32,
+      "density_complex_entries": 4096,
+      "density_micro_operations": 64,
+      "density_qubits": 6,
+      "measured_groups": 110,
+      "operations_per_class": 10000,
+      "output_bytes": 16777216,
+      "preparations": 82032,
+      "source_validation_wall_seconds": 180,
+      "spectral_tolerance": 2e-11,
+      "validation_primitive_visits": 1080000
+    },
+    "unchanged_budget": {
+      "conditional_precision_radius": 0.015411911813511618,
+      "conditional_ratio_lower": 0.9729914084989884,
+      "conditional_sampling_radius": 0.01541185086168794,
+      "factory_failure_whole_workload": 0.0025,
+      "final_ratio_bias_allowance": 6.095182367856447e-08,
+      "per_preparation_operator_allowance": 6.095182367856447e-08,
+      "physical_failure_whole_workload": 0.0025,
+      "realization_scope": "conditional numerical operator bounds transfer fixed-script event probabilities; not a native physical failure or adaptive-path theorem",
+      "realization_static_transcript_tv": 0.005,
+      "reserved_total": 0.05,
+      "sampling_failure_family": 0.04,
+      "sampling_failure_per_group": 0.0008333333333333334,
+      "sampling_final_group_count": 48,
+      "saved_estimate": 0.9884033203125,
+      "selection_coverage": "retain all-48-group sampling protection; selection is outcome-dependent"
+    },
+    "validation_design": "independent phase-restored full16x16 operators/all16 initialized joint outputs for54classes; corrected injection Kraus/Choi and bounded6qubit ideal density mechanisms; exact old49allocation parents"
+  },
+  "record_kind": "source_recipe",
+  "removed_fields": [
+    "status",
+    "candidate_approval_received",
+    "physical_execution_enabled",
+    "seventh_clearance_received",
+    "seventh_cli_receipt_boundary"
+  ],
+  "schema": "openquantum-word-scientific-record-v1"
+}

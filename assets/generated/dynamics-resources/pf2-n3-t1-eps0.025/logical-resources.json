@@ -1,0 +1,152 @@
+{
+  "case_id": "pf2-n3-t1-eps0.025",
+  "method": "product_formula",
+  "order": 2,
+  "system_qubits": 3,
+  "logical_qubits": 3,
+  "time": 1.0,
+  "J": 1,
+  "h": 0.7,
+  "hbar": 1,
+  "boundary": "open",
+  "steps": 29,
+  "task": {
+    "absolute_error": 0.025,
+    "algorithm_bias": 0.005,
+    "synthesis_bias": 0.005,
+    "sampling_error": 0.015,
+    "sampling_failure": 0.004,
+    "acceptance_failure": 0.001,
+    "physical_failure": 0.005,
+    "accepted_samples": 55241,
+    "whole_task_failure_allowance": 0.01,
+    "certified_confidence_lower_bound": null
+  },
+  "initial_state": "000",
+  "observable": "Z(q0)",
+  "terms": [
+    [
+      1.0,
+      "IZZ"
+    ],
+    [
+      1.0,
+      "ZZI"
+    ],
+    [
+      0.7,
+      "IIX"
+    ],
+    [
+      0.7,
+      "IXI"
+    ],
+    [
+      0.7,
+      "XII"
+    ]
+  ],
+  "source_gate_counts": {
+    "cx": 232,
+    "rz": 116,
+    "rx": 87
+  },
+  "source_depth": 377,
+  "compiled_gate_counts": {
+    "cx": 232,
+    "rz": 116,
+    "rx": 87,
+    "measure": 3,
+    "barrier": 1
+  },
+  "compiled_depth": 378,
+  "analytic_error": {
+    "commutator_Pauli_l1_bounds_exact": {
+      "AB": "28/5",
+      "AAB": "84/5",
+      "BBA": "392/25"
+    },
+    "product_formula_operator_bound_exact": "301/126150",
+    "source_angle_rounding_operator_bound_exact": "41/720575940379279360",
+    "operator_bound_upper_float": 0.002386048455132836,
+    "Pauli_bias_bound_upper_float": 0.004772096910265672,
+    "numerical_lowering_guard_added": 1e-10,
+    "numerical_lowering_guard_is_certificate": false,
+    "rounding_reserve": 5e-05,
+    "scope": "Exact rational target coefficients and intended product formula; original binary64 RX/RZ rounding separately bounded; no synthesis/physical certificate",
+    "source": {
+      "paper": "Theory of Trotter Error with Commutator Scaling",
+      "doi": "10.1103/PhysRevX.11.011020",
+      "arxiv": "https://arxiv.org/abs/1912.08854v3",
+      "PDF_sha256": "c76e2980dee799253ac3a5fa6176ac9005f78c844c1243dc2e579433137c7965",
+      "equations": "Sec. 5.1, Eqs. (143) and (150), PDF pages 38/39, arXiv v3 (3 February 2021)",
+      "step_composition": "Unitary telescoping over r equal-duration steps"
+    }
+  },
+  "numerical_checks": {
+    "order": 2,
+    "steps": 29,
+    "operator_error": 0.0006120104513952987,
+    "state_vector_error": 0.0004937063737783066,
+    "state_infidelity": 2.0427139113543547e-07,
+    "observable": "Z(q0)",
+    "exact_observable": 0.40425585728735497,
+    "circuit_observable": 0.4040621025484783,
+    "observable_error": 0.0001937547388766725,
+    "source_to_lowered_operator_error": 1.2399896443563082e-15,
+    "certified": false,
+    "performed": true
+  },
+  "complete_attempts": 55241,
+  "attempts_per_accepted_slot": 1,
+  "accepted_slots": 55241,
+  "acceptance_probability": 1,
+  "no_acceptance_failure_actual": 0,
+  "cpu_timings_seconds": {
+    "construction_and_lowering": 0.003335459000481933,
+    "independent_dense_validation": 0.020637957999497303
+  },
+  "measurement": "all n data qubits measured; bit0 gives the +/-1 mean",
+  "input_preparation": "fresh clean zeros assumed; no system preparation gates for this input",
+  "compiled_global_phase_radians": 0.0,
+  "qasm_global_phase_scope": "Measured trial; overall exported phase is not a coherently controlled oracle specification",
+  "exclusions": [
+    "Clean zero states are supplied; physical initialization/reset time and faults are not modeled",
+    "Classical coefficient handling, compilation, acceptance/readout communication and verification latency are not quantum-model time",
+    "QDK uses an empirical mean synthesis fit; no concrete Clifford+T sequence, channel error certificate or runtime-tail bound is supplied",
+    "QDK abstracts Clifford scheduling; the source dependency depth is not a physical routed schedule",
+    "Reset, intermediate measurement and dynamic-feedback instruments are not costed by this study"
+  ],
+  "qasm_sha256": "377643b04ca9be25a5d00ebef5854c810f868290dae99f4362cfe5df59b8244f",
+  "provenance": {
+    "source_commit": "f842df78eb01cedd1fb438d5fd45c16fe48c435d",
+    "source_revision_scope": "Exact checkout root when Git is available; null for standalone packages. Content hashes identify actual source.",
+    "source_sha256": {
+      "src/openquantum/dynamics_resources.py": "d43f8c6f3211f48952b629b3c423cca94e007d9a2760803352ddc76daf58c99e",
+      "scripts/generate_dynamics_resources.py": "f00a4358e81108d23c5e0497c48f890b5a977fa324f110b1871aa018045062f9",
+      "src/openquantum/hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+      "src/openquantum/resource_estimation.py": "267329af4b100c7f9c82900f1f2713f934ec710e50fd8999d331c0f4b84654de",
+      "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+      "src/openquantum/simulation/qsp_evolution.py": "b7636da8257c6f85133ba98d88bd13aa54d065058a54e56df7418ce58d77429e",
+      "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "src/openquantum/simulation/amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "device": "CPU",
+      "seed": 20261112,
+      "packages": {
+        "qiskit": "2.6.2",
+        "qdk": "1.34.0",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "matplotlib": "3.11.2"
+      }
+    }
+  },
+  "physical_reports": [
+    "frozen-p-1e-3.json",
+    "frozen-p-1e-4.json"
+  ]
+}

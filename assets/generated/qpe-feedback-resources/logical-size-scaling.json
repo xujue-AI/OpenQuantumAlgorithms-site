@@ -1,0 +1,358 @@
+[
+  {
+    "n": 1,
+    "m": 3,
+    "variant": "textbook QPE",
+    "logical_qubits": 4,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 1,
+      "logical_qubits": 4,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 1,
+      "supplied_preparation_source_operations": 1,
+      "source_operation_upper_guard": 26,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "h": 6,
+        "rz": 30,
+        "x": 1,
+        "cx": 23,
+        "measure": 3
+      },
+      "decomposed_dependency_depth": 48,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "textbook QPE",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  },
+  {
+    "n": 1,
+    "m": 3,
+    "variant": "iterative feedback",
+    "logical_qubits": 2,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 1,
+      "logical_qubits": 2,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 1,
+      "supplied_preparation_source_operations": 1,
+      "source_operation_upper_guard": 26,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "reset": 3,
+        "h": 6,
+        "rz": 21,
+        "x": 1,
+        "cx": 14,
+        "measure": 3,
+        "conditional_blocks": 3,
+        "conditional_rz": 3
+      },
+      "decomposed_dependency_depth": 43,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "iterative feedback",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  },
+  {
+    "n": 2,
+    "m": 3,
+    "variant": "textbook QPE",
+    "logical_qubits": 5,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 2,
+      "logical_qubits": 5,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 2,
+      "supplied_preparation_source_operations": 2,
+      "source_operation_upper_guard": 34,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "h": 6,
+        "rz": 51,
+        "x": 2,
+        "cx": 37,
+        "measure": 3
+      },
+      "decomposed_dependency_depth": 68,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "textbook QPE",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  },
+  {
+    "n": 2,
+    "m": 3,
+    "variant": "iterative feedback",
+    "logical_qubits": 3,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 2,
+      "logical_qubits": 3,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 2,
+      "supplied_preparation_source_operations": 2,
+      "source_operation_upper_guard": 34,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "reset": 3,
+        "h": 6,
+        "rz": 42,
+        "x": 2,
+        "cx": 28,
+        "measure": 3,
+        "conditional_blocks": 3,
+        "conditional_rz": 3
+      },
+      "decomposed_dependency_depth": 71,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "iterative feedback",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  },
+  {
+    "n": 4,
+    "m": 3,
+    "variant": "textbook QPE",
+    "logical_qubits": 7,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 4,
+      "logical_qubits": 7,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 4,
+      "supplied_preparation_source_operations": 4,
+      "source_operation_upper_guard": 50,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "h": 6,
+        "rz": 93,
+        "x": 4,
+        "cx": 65,
+        "measure": 3
+      },
+      "decomposed_dependency_depth": 108,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "textbook QPE",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  },
+  {
+    "n": 4,
+    "m": 3,
+    "variant": "iterative feedback",
+    "logical_qubits": 5,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 4,
+      "logical_qubits": 5,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 4,
+      "supplied_preparation_source_operations": 4,
+      "source_operation_upper_guard": 50,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "reset": 3,
+        "h": 6,
+        "rz": 84,
+        "x": 4,
+        "cx": 56,
+        "measure": 3,
+        "conditional_blocks": 3,
+        "conditional_rz": 3
+      },
+      "decomposed_dependency_depth": 127,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "iterative feedback",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  },
+  {
+    "n": 8,
+    "m": 3,
+    "variant": "textbook QPE",
+    "logical_qubits": 11,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 8,
+      "logical_qubits": 11,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 8,
+      "supplied_preparation_source_operations": 8,
+      "source_operation_upper_guard": 82,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "h": 6,
+        "rz": 177,
+        "x": 8,
+        "cx": 121,
+        "measure": 3
+      },
+      "decomposed_dependency_depth": 188,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "textbook QPE",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  },
+  {
+    "n": 8,
+    "m": 3,
+    "variant": "iterative feedback",
+    "logical_qubits": 9,
+    "controlled_U_calls": 7,
+    "validation_status": "generator/source ledger only; not simulated/synthesized/physically estimated here",
+    "source_ledger": {
+      "phase_bits": 3,
+      "target_qubits": 8,
+      "logical_qubits": 9,
+      "classical_output_bits": 3,
+      "input_preparations_per_execution": 1,
+      "controlled_unitary_calls_per_execution": 7,
+      "controlled_powers": [
+        1,
+        2,
+        4
+      ],
+      "supplied_unitary_source_operations": 8,
+      "supplied_preparation_source_operations": 8,
+      "source_operation_upper_guard": 82,
+      "source_count_semantics": "recognized CP/MCX/CCX gates count as single source operations; this guard does not bound nested transpilation work",
+      "decomposed_gate_counts": {
+        "reset": 3,
+        "h": 6,
+        "rz": 168,
+        "x": 8,
+        "cx": 112,
+        "measure": 3,
+        "conditional_blocks": 3,
+        "conditional_rz": 3
+      },
+      "decomposed_dependency_depth": 239,
+      "depth_semantics": "circuit dependencies; no physical feed-forward latency or scheduling model",
+      "variant": "iterative feedback",
+      "rotation_synthesis_performed": false,
+      "scope": "all supplied preparation, controlled access, Fourier/feedback gates, reset and final phase readout",
+      "excluded": [
+        "construction of application unitary and eigenstate beyond supplied circuits",
+        "classical compilation/phase decoding runtime",
+        "physical initialization faults",
+        "physical execution unless separately projected"
+      ]
+    }
+  }
+]

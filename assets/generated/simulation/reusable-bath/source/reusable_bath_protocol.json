@@ -1,0 +1,3344 @@
+{
+  "schema_version": 2,
+  "status": "frozen_scientific_parameter_record",
+  "source_recipe_sha256": "3482c732f1b268b3b3f7b9498fcf19b5978e26e1e5387737c88b6c368a8ed5fb",
+  "method_scope": "Original restricted one-spin finite-pulse full-XX source; scientific parameters only, no execution authorization or general algorithm proof",
+  "hamiltonian": {
+    "h_rational": [
+      1,
+      2
+    ],
+    "system_term": "h Z_S",
+    "bath_term": "-omega Z_E/2",
+    "coupling_operator": "X_S",
+    "coupling_distribution": "point mass at X; no coupling RNG draw in this restricted toy",
+    "bath_raising_operator": "|1><0|",
+    "interaction": "(2/25) f(t) X_S X_E; retain rotating and counter-rotating transitions",
+    "hbar": 1,
+    "system_ground_computational_bit": 1,
+    "gap": 1
+  },
+  "layout": {
+    "system_qubit": 0,
+    "bath_qubit": 1,
+    "output_clbit": 0,
+    "qiskit_matrix_basis": "|e,s>",
+    "independent_matrix_basis": "|s,e>",
+    "basis_permutation": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "frequency_quadrature": {
+    "rule": "17-point Gauss-Legendre for probability density1/2 on[0,2]",
+    "exact_nodes": "omega_j=1+x_j, x_j ordered roots of P17",
+    "exact_weights": "w_j=1/((1-x_j^2)*(P17prime(x_j))^2)",
+    "positive_frequency_cutoff": 2,
+    "nodes": [
+      {
+        "index": 0,
+        "omega_binary64_hex": "0x1.34d2a4a707b00p-7",
+        "weight_binary64_hex": "0x1.8ba552c4c18fep-7",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.fd965be24d89fp-2"
+      },
+      {
+        "index": 1,
+        "omega_binary64_hex": "0x1.9410ed9ca72c0p-5",
+        "weight_binary64_hex": "0x1.c653101d35e43p-6",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.f360204ef2fd5p-2"
+      },
+      {
+        "index": 2,
+        "omega_binary64_hex": "0x1.ea8a596157918p-4",
+        "weight_binary64_hex": "0x1.5c4edd40005d4p-5",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.e160b87a513d1p-2"
+      },
+      {
+        "index": 3,
+        "omega_binary64_hex": "0x1.bf7595ff2d828p-3",
+        "weight_binary64_hex": "0x1.ca46b78a5760dp-5",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.c849fdb8ab7b9p-2"
+      },
+      {
+        "index": 4,
+        "omega_binary64_hex": "0x1.5e8b739e914f6p-2",
+        "weight_binary64_hex": "0x1.14c260589486dp-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.a935b166cc56fp-2"
+      },
+      {
+        "index": 5,
+        "omega_binary64_hex": "0x1.f3014078fac8cp-2",
+        "weight_binary64_hex": "0x1.3b7c580f4c738p-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.85a9068ccfe28p-2"
+      },
+      {
+        "index": 6,
+        "omega_binary64_hex": "0x1.4c2b59ad4c631p-1",
+        "weight_binary64_hex": "0x1.581288e2d8ab8p-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.5f816d902454ap-2"
+      },
+      {
+        "index": 7,
+        "omega_binary64_hex": "0x1.a49db8ab3e777p-1",
+        "weight_binary64_hex": "0x1.6999b529f4c57p-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.38c5c8dd288b6p-2"
+      },
+      {
+        "index": 8,
+        "omega_binary64_hex": "0x1.0000000000000p+0",
+        "weight_binary64_hex": "0x1.6f81a18c80156p-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.136561454ba86p-2"
+      },
+      {
+        "index": 9,
+        "omega_binary64_hex": "0x1.2db123aa60c44p+0",
+        "weight_binary64_hex": "0x1.6999b529f4c57p-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.e1f1ff3b1366cp-3"
+      },
+      {
+        "index": 10,
+        "omega_binary64_hex": "0x1.59ea532959ce8p+0",
+        "weight_binary64_hex": "0x1.581288e2d8ab8p-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.a535d2d3a1d25p-3"
+      },
+      {
+        "index": 11,
+        "omega_binary64_hex": "0x1.833fafe1c14ddp+0",
+        "weight_binary64_hex": "0x1.3b7c580f4c738p-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.71bf2a062067dp-3"
+      },
+      {
+        "index": 12,
+        "omega_binary64_hex": "0x1.a85d23185bac2p+0",
+        "weight_binary64_hex": "0x1.14c260589486dp-4",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.47d55489e1f7cp-3"
+      },
+      {
+        "index": 13,
+        "omega_binary64_hex": "0x1.c8114d401a4fbp+0",
+        "weight_binary64_hex": "0x1.ca46b78a5760dp-5",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.2726707788bd3p-3"
+      },
+      {
+        "index": 14,
+        "omega_binary64_hex": "0x1.e1575a69ea86ep+0",
+        "weight_binary64_hex": "0x1.5c4edd40005d4p-5",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.0f137f395db2dp-3"
+      },
+      {
+        "index": 15,
+        "omega_binary64_hex": "0x1.f35f78931ac6ap+0",
+        "weight_binary64_hex": "0x1.c653101d35e43p-6",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.fdde71e3c45d4p-4"
+      },
+      {
+        "index": 16,
+        "omega_binary64_hex": "0x1.fd965ab6b1f0ap+0",
+        "weight_binary64_hex": "0x1.8ba552c4c18fep-7",
+        "bath_excited_probability_beta1_binary64_hex": "0x1.ec52a24395105p-4"
+      }
+    ],
+    "binary64_weight_sum": 1.0,
+    "resonant_node_included_but_not_exclusive": true
+  },
+  "envelope": {
+    "type": "finite centered Gaussian",
+    "sigma": 2,
+    "duration": 16,
+    "alpha_rational": [
+      2,
+      25
+    ],
+    "function": "f(t)=exp(-(t-8)^2/8),0<=t<=16",
+    "pulse_area_alpha": 0.40103511977127315,
+    "discarded_gaussian_tail_area_alpha": 2.5404169686903884e-05
+  },
+  "rounds": 192,
+  "time_discretization": {
+    "steps_per_round": 256,
+    "positive_dt_rational": [
+      1,
+      16
+    ],
+    "scheme": "second-order free-half / full interaction at midpoint / free-half",
+    "system_rz_half_angle_rational": [
+      1,
+      32
+    ],
+    "bath_rz_half_angle": "-omega/32",
+    "interaction_rxx_angle": "exp(-(2j+1-256)^2/8192)/100",
+    "interaction_angles": [
+      {
+        "index": 0,
+        "midpoint_rational": {
+          "numerator": 1,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 65025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.df3affbbb2118p-19"
+      },
+      {
+        "index": 1,
+        "midpoint_rational": {
+          "numerator": 3,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 64009,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0f412db02dca4p-18"
+      },
+      {
+        "index": 2,
+        "midpoint_rational": {
+          "numerator": 5,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 63001,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.32c5a0c9e9ebdp-18"
+      },
+      {
+        "index": 3,
+        "midpoint_rational": {
+          "numerator": 7,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 62001,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5a99ed5387c31p-18"
+      },
+      {
+        "index": 4,
+        "midpoint_rational": {
+          "numerator": 9,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 61009,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.873831e9f0ed3p-18"
+      },
+      {
+        "index": 5,
+        "midpoint_rational": {
+          "numerator": 11,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 60025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b92684ac329cdp-18"
+      },
+      {
+        "index": 6,
+        "midpoint_rational": {
+          "numerator": 13,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 59049,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f0f7ef0736a92p-18"
+      },
+      {
+        "index": 7,
+        "midpoint_rational": {
+          "numerator": 15,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 58081,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.17a6bc4a011adp-17"
+      },
+      {
+        "index": 8,
+        "midpoint_rational": {
+          "numerator": 17,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 57121,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3a6ba0a5e7426p-17"
+      },
+      {
+        "index": 9,
+        "midpoint_rational": {
+          "numerator": 19,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 56169,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.612ad5a0b257cp-17"
+      },
+      {
+        "index": 10,
+        "midpoint_rational": {
+          "numerator": 21,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 55225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.8c4d49fc27e24p-17"
+      },
+      {
+        "index": 11,
+        "midpoint_rational": {
+          "numerator": 23,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 54289,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.bc454eac49692p-17"
+      },
+      {
+        "index": 12,
+        "midpoint_rational": {
+          "numerator": 25,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 53361,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f18f43103abc3p-17"
+      },
+      {
+        "index": 13,
+        "midpoint_rational": {
+          "numerator": 27,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 52441,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1659246562638p-16"
+      },
+      {
+        "index": 14,
+        "midpoint_rational": {
+          "numerator": 29,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 51529,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.37207f848afc0p-16"
+      },
+      {
+        "index": 15,
+        "midpoint_rational": {
+          "numerator": 31,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 50625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5b6d227956ffbp-16"
+      },
+      {
+        "index": 16,
+        "midpoint_rational": {
+          "numerator": 33,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 49729,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.83950173f27adp-16"
+      },
+      {
+        "index": 17,
+        "midpoint_rational": {
+          "numerator": 35,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 48841,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.aff4fd0e991fcp-16"
+      },
+      {
+        "index": 18,
+        "midpoint_rational": {
+          "numerator": 37,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 47961,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.e0f14d041f3cfp-16"
+      },
+      {
+        "index": 19,
+        "midpoint_rational": {
+          "numerator": 39,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 47089,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0b7af6be3ac1fp-15"
+      },
+      {
+        "index": 20,
+        "midpoint_rational": {
+          "numerator": 41,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 46225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.293b8746f7194p-15"
+      },
+      {
+        "index": 21,
+        "midpoint_rational": {
+          "numerator": 43,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 45369,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.49f8c2c172bffp-15"
+      },
+      {
+        "index": 22,
+        "midpoint_rational": {
+          "numerator": 45,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 44521,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6df59fb1c004ap-15"
+      },
+      {
+        "index": 23,
+        "midpoint_rational": {
+          "numerator": 47,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 43681,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9579da1943b6ap-15"
+      },
+      {
+        "index": 24,
+        "midpoint_rational": {
+          "numerator": 49,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 42849,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c0d22d1d8ce00p-15"
+      },
+      {
+        "index": 25,
+        "midpoint_rational": {
+          "numerator": 51,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 42025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f0508c5d7d3dbp-15"
+      },
+      {
+        "index": 26,
+        "midpoint_rational": {
+          "numerator": 53,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 41209,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.12262e48bd510p-14"
+      },
+      {
+        "index": 27,
+        "midpoint_rational": {
+          "numerator": 55,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 40401,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2e91558502b42p-14"
+      },
+      {
+        "index": 28,
+        "midpoint_rational": {
+          "numerator": 57,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 39601,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.4d9b31cb4c3e1p-14"
+      },
+      {
+        "index": 29,
+        "midpoint_rational": {
+          "numerator": 59,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 38809,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6f78422a9bdc8p-14"
+      },
+      {
+        "index": 30,
+        "midpoint_rational": {
+          "numerator": 61,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 38025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.94602770cf89bp-14"
+      },
+      {
+        "index": 31,
+        "midpoint_rational": {
+          "numerator": 63,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 37249,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.bc8dbb28dbecep-14"
+      },
+      {
+        "index": 32,
+        "midpoint_rational": {
+          "numerator": 65,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 36481,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.e83f24b1f591bp-14"
+      },
+      {
+        "index": 33,
+        "midpoint_rational": {
+          "numerator": 67,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 35721,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0bdaf60ecd41bp-13"
+      },
+      {
+        "index": 34,
+        "midpoint_rational": {
+          "numerator": 69,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 34969,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.259b853f28481p-13"
+      },
+      {
+        "index": 35,
+        "midpoint_rational": {
+          "numerator": 71,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 34225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.41857ba68d688p-13"
+      },
+      {
+        "index": 36,
+        "midpoint_rational": {
+          "numerator": 73,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 33489,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5fbed94419ec9p-13"
+      },
+      {
+        "index": 37,
+        "midpoint_rational": {
+          "numerator": 75,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 32761,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.806f659549200p-13"
+      },
+      {
+        "index": 38,
+        "midpoint_rational": {
+          "numerator": 77,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 32041,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.a3c0b0cc9a6a6p-13"
+      },
+      {
+        "index": 39,
+        "midpoint_rational": {
+          "numerator": 79,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 31329,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c9de12d09e657p-13"
+      },
+      {
+        "index": 40,
+        "midpoint_rational": {
+          "numerator": 81,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 30625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f2f4a7d04475cp-13"
+      },
+      {
+        "index": 41,
+        "midpoint_rational": {
+          "numerator": 83,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 29929,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0f99a51c79f1cp-12"
+      },
+      {
+        "index": 42,
+        "midpoint_rational": {
+          "numerator": 85,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 29241,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.276544ed888b8p-12"
+      },
+      {
+        "index": 43,
+        "midpoint_rational": {
+          "numerator": 87,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 28561,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.40f6500509398p-12"
+      },
+      {
+        "index": 44,
+        "midpoint_rational": {
+          "numerator": 89,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 27889,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5c66b0432070fp-12"
+      },
+      {
+        "index": 45,
+        "midpoint_rational": {
+          "numerator": 91,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 27225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.79d1137fdb6bfp-12"
+      },
+      {
+        "index": 46,
+        "midpoint_rational": {
+          "numerator": 93,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 26569,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9950e082166ecp-12"
+      },
+      {
+        "index": 47,
+        "midpoint_rational": {
+          "numerator": 95,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 25921,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.bb022a15d5e18p-12"
+      },
+      {
+        "index": 48,
+        "midpoint_rational": {
+          "numerator": 97,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 25281,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.df01a02dac3adp-12"
+      },
+      {
+        "index": 49,
+        "midpoint_rational": {
+          "numerator": 99,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 24649,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.02b63f7e50536p-11"
+      },
+      {
+        "index": 50,
+        "midpoint_rational": {
+          "numerator": 101,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 24025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.17303dfc192b8p-11"
+      },
+      {
+        "index": 51,
+        "midpoint_rational": {
+          "numerator": 103,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 23409,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2cfdd85a45edep-11"
+      },
+      {
+        "index": 52,
+        "midpoint_rational": {
+          "numerator": 105,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 22801,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.442e41c7e0c79p-11"
+      },
+      {
+        "index": 53,
+        "midpoint_rational": {
+          "numerator": 107,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 22201,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5cd0c71206fbcp-11"
+      },
+      {
+        "index": 54,
+        "midpoint_rational": {
+          "numerator": 109,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 21609,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.76f4c0be33171p-11"
+      },
+      {
+        "index": 55,
+        "midpoint_rational": {
+          "numerator": 111,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 21025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.92a984053a946p-11"
+      },
+      {
+        "index": 56,
+        "midpoint_rational": {
+          "numerator": 113,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 20449,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.affe52b0864a8p-11"
+      },
+      {
+        "index": 57,
+        "midpoint_rational": {
+          "numerator": 115,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 19881,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.cf0249dd3095ap-11"
+      },
+      {
+        "index": 58,
+        "midpoint_rational": {
+          "numerator": 117,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 19321,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.efc44faaf9371p-11"
+      },
+      {
+        "index": 59,
+        "midpoint_rational": {
+          "numerator": 119,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 18769,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.09297fefb1443p-10"
+      },
+      {
+        "index": 60,
+        "midpoint_rational": {
+          "numerator": 121,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 18225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1b5e4bc3e5475p-10"
+      },
+      {
+        "index": 61,
+        "midpoint_rational": {
+          "numerator": 123,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 17689,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2e876fd3f4701p-10"
+      },
+      {
+        "index": 62,
+        "midpoint_rational": {
+          "numerator": 125,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 17161,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.42ab8b8261e7bp-10"
+      },
+      {
+        "index": 63,
+        "midpoint_rational": {
+          "numerator": 127,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 16641,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.57d0ed8f738bcp-10"
+      },
+      {
+        "index": 64,
+        "midpoint_rational": {
+          "numerator": 129,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 16129,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6dfd8838b37d2p-10"
+      },
+      {
+        "index": 65,
+        "midpoint_rational": {
+          "numerator": 131,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 15625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.8536e506ff50fp-10"
+      },
+      {
+        "index": 66,
+        "midpoint_rational": {
+          "numerator": 133,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 15129,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9d821858acb48p-10"
+      },
+      {
+        "index": 67,
+        "midpoint_rational": {
+          "numerator": 135,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 14641,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b6e3b4b6a6ebbp-10"
+      },
+      {
+        "index": 68,
+        "midpoint_rational": {
+          "numerator": 137,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 14161,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.d15fbe04bbe31p-10"
+      },
+      {
+        "index": 69,
+        "midpoint_rational": {
+          "numerator": 139,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 13689,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.ecf99c9e96f88p-10"
+      },
+      {
+        "index": 70,
+        "midpoint_rational": {
+          "numerator": 141,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 13225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.04da083a0fbb1p-9"
+      },
+      {
+        "index": 71,
+        "midpoint_rational": {
+          "numerator": 143,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 12769,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.13c8921c8a96ap-9"
+      },
+      {
+        "index": 72,
+        "midpoint_rational": {
+          "numerator": 145,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 12321,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2349105e69726p-9"
+      },
+      {
+        "index": 73,
+        "midpoint_rational": {
+          "numerator": 147,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 11881,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.335bc0400843cp-9"
+      },
+      {
+        "index": 74,
+        "midpoint_rational": {
+          "numerator": 149,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 11449,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.440071cfa939dp-9"
+      },
+      {
+        "index": 75,
+        "midpoint_rational": {
+          "numerator": 151,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 11025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.55368214b2228p-9"
+      },
+      {
+        "index": 76,
+        "midpoint_rational": {
+          "numerator": 153,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 10609,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.66fcd57ce42e5p-9"
+      },
+      {
+        "index": 77,
+        "midpoint_rational": {
+          "numerator": 155,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 10201,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.7951d297b37d3p-9"
+      },
+      {
+        "index": 78,
+        "midpoint_rational": {
+          "numerator": 157,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9801,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.8c335d2bfe5a5p-9"
+      },
+      {
+        "index": 79,
+        "midpoint_rational": {
+          "numerator": 159,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9409,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9f9ed1b466d8ap-9"
+      },
+      {
+        "index": 80,
+        "midpoint_rational": {
+          "numerator": 161,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b391014e7b574p-9"
+      },
+      {
+        "index": 81,
+        "midpoint_rational": {
+          "numerator": 163,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 8649,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c8062e28aa321p-9"
+      },
+      {
+        "index": 82,
+        "midpoint_rational": {
+          "numerator": 165,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 8281,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.dcfa087ab1b85p-9"
+      },
+      {
+        "index": 83,
+        "midpoint_rational": {
+          "numerator": 167,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 7921,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f267ac13d6b7cp-9"
+      },
+      {
+        "index": 84,
+        "midpoint_rational": {
+          "numerator": 169,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 7569,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0424cf44d48e9p-8"
+      },
+      {
+        "index": 85,
+        "midpoint_rational": {
+          "numerator": 171,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 7225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0f4ce708bf9aap-8"
+      },
+      {
+        "index": 86,
+        "midpoint_rational": {
+          "numerator": 173,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 6889,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1aa8c8870a888p-8"
+      },
+      {
+        "index": 87,
+        "midpoint_rational": {
+          "numerator": 175,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 6561,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2634d32cf3738p-8"
+      },
+      {
+        "index": 88,
+        "midpoint_rational": {
+          "numerator": 177,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 6241,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.31ed1b2af5d7ap-8"
+      },
+      {
+        "index": 89,
+        "midpoint_rational": {
+          "numerator": 179,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5929,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3dcd6a61a4d2bp-8"
+      },
+      {
+        "index": 90,
+        "midpoint_rational": {
+          "numerator": 181,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.49d141b6bd13bp-8"
+      },
+      {
+        "index": 91,
+        "midpoint_rational": {
+          "numerator": 183,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5329,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.55f3dad48b909p-8"
+      },
+      {
+        "index": 92,
+        "midpoint_rational": {
+          "numerator": 185,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5041,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.62302a551de5bp-8"
+      },
+      {
+        "index": 93,
+        "midpoint_rational": {
+          "numerator": 187,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 4761,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6e80e259ff8a3p-8"
+      },
+      {
+        "index": 94,
+        "midpoint_rational": {
+          "numerator": 189,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 4489,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.7ae075908d113p-8"
+      },
+      {
+        "index": 95,
+        "midpoint_rational": {
+          "numerator": 191,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 4225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.87491aa225c94p-8"
+      },
+      {
+        "index": 96,
+        "midpoint_rational": {
+          "numerator": 193,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3969,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.93b4d00ebdbcdp-8"
+      },
+      {
+        "index": 97,
+        "midpoint_rational": {
+          "numerator": 195,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3721,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.a01d606f87e72p-8"
+      },
+      {
+        "index": 98,
+        "midpoint_rational": {
+          "numerator": 197,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3481,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.ac7c671ea4149p-8"
+      },
+      {
+        "index": 99,
+        "midpoint_rational": {
+          "numerator": 199,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3249,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b8cb553fef158p-8"
+      },
+      {
+        "index": 100,
+        "midpoint_rational": {
+          "numerator": 201,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c503772648801p-8"
+      },
+      {
+        "index": 101,
+        "midpoint_rational": {
+          "numerator": 203,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2809,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.d11dfa0fd9081p-8"
+      },
+      {
+        "index": 102,
+        "midpoint_rational": {
+          "numerator": 205,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2601,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.dd13f2332160fp-8"
+      },
+      {
+        "index": 103,
+        "midpoint_rational": {
+          "numerator": 207,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2401,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.e8de6115dd85ap-8"
+      },
+      {
+        "index": 104,
+        "midpoint_rational": {
+          "numerator": 209,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2209,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f4763c26150acp-8"
+      },
+      {
+        "index": 105,
+        "midpoint_rational": {
+          "numerator": 211,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.ffd4738d089d4p-8"
+      },
+      {
+        "index": 106,
+        "midpoint_rational": {
+          "numerator": 213,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1849,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0578fc9988633p-7"
+      },
+      {
+        "index": 107,
+        "midpoint_rational": {
+          "numerator": 215,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1681,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0ae3e3f57a19dp-7"
+      },
+      {
+        "index": 108,
+        "midpoint_rational": {
+          "numerator": 217,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1521,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1027755d5edc4p-7"
+      },
+      {
+        "index": 109,
+        "midpoint_rational": {
+          "numerator": 219,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1369,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1540421bd6b53p-7"
+      },
+      {
+        "index": 110,
+        "midpoint_rational": {
+          "numerator": 221,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1a2aeaf5430d1p-7"
+      },
+      {
+        "index": 111,
+        "midpoint_rational": {
+          "numerator": 223,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1089,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1ee423d89903dp-7"
+      },
+      {
+        "index": 112,
+        "midpoint_rational": {
+          "numerator": 225,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 961,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2368b78944186p-7"
+      },
+      {
+        "index": 113,
+        "midpoint_rational": {
+          "numerator": 227,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 841,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.27b58b3c6fe23p-7"
+      },
+      {
+        "index": 114,
+        "midpoint_rational": {
+          "numerator": 229,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 729,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2bc7a2240cdeap-7"
+      },
+      {
+        "index": 115,
+        "midpoint_rational": {
+          "numerator": 231,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2f9c20e1ecf2cp-7"
+      },
+      {
+        "index": 116,
+        "midpoint_rational": {
+          "numerator": 233,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 529,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.333050dd685d2p-7"
+      },
+      {
+        "index": 117,
+        "midpoint_rational": {
+          "numerator": 235,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 441,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3681a3761b683p-7"
+      },
+      {
+        "index": 118,
+        "midpoint_rational": {
+          "numerator": 237,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 361,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.398db50e7820fp-7"
+      },
+      {
+        "index": 119,
+        "midpoint_rational": {
+          "numerator": 239,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 289,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3c524fe91d6e3p-7"
+      },
+      {
+        "index": 120,
+        "midpoint_rational": {
+          "numerator": 241,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3ecd6ed425c68p-7"
+      },
+      {
+        "index": 121,
+        "midpoint_rational": {
+          "numerator": 243,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 169,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.40fd3f9deafe4p-7"
+      },
+      {
+        "index": 122,
+        "midpoint_rational": {
+          "numerator": 245,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 121,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.42e0254f11adfp-7"
+      },
+      {
+        "index": 123,
+        "midpoint_rational": {
+          "numerator": 247,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 81,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.4474ba260cd67p-7"
+      },
+      {
+        "index": 124,
+        "midpoint_rational": {
+          "numerator": 249,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 49,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.45b9d150b0f23p-7"
+      },
+      {
+        "index": 125,
+        "midpoint_rational": {
+          "numerator": 251,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 25,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.46ae7860dbb25p-7"
+      },
+      {
+        "index": 126,
+        "midpoint_rational": {
+          "numerator": 253,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.4751f879aa535p-7"
+      },
+      {
+        "index": 127,
+        "midpoint_rational": {
+          "numerator": 255,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.47a3d73332c5fp-7"
+      },
+      {
+        "index": 128,
+        "midpoint_rational": {
+          "numerator": 257,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.47a3d73332c5fp-7"
+      },
+      {
+        "index": 129,
+        "midpoint_rational": {
+          "numerator": 259,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.4751f879aa535p-7"
+      },
+      {
+        "index": 130,
+        "midpoint_rational": {
+          "numerator": 261,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 25,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.46ae7860dbb25p-7"
+      },
+      {
+        "index": 131,
+        "midpoint_rational": {
+          "numerator": 263,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 49,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.45b9d150b0f23p-7"
+      },
+      {
+        "index": 132,
+        "midpoint_rational": {
+          "numerator": 265,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 81,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.4474ba260cd67p-7"
+      },
+      {
+        "index": 133,
+        "midpoint_rational": {
+          "numerator": 267,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 121,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.42e0254f11adfp-7"
+      },
+      {
+        "index": 134,
+        "midpoint_rational": {
+          "numerator": 269,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 169,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.40fd3f9deafe4p-7"
+      },
+      {
+        "index": 135,
+        "midpoint_rational": {
+          "numerator": 271,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3ecd6ed425c68p-7"
+      },
+      {
+        "index": 136,
+        "midpoint_rational": {
+          "numerator": 273,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 289,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3c524fe91d6e3p-7"
+      },
+      {
+        "index": 137,
+        "midpoint_rational": {
+          "numerator": 275,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 361,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.398db50e7820fp-7"
+      },
+      {
+        "index": 138,
+        "midpoint_rational": {
+          "numerator": 277,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 441,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3681a3761b683p-7"
+      },
+      {
+        "index": 139,
+        "midpoint_rational": {
+          "numerator": 279,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 529,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.333050dd685d2p-7"
+      },
+      {
+        "index": 140,
+        "midpoint_rational": {
+          "numerator": 281,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2f9c20e1ecf2cp-7"
+      },
+      {
+        "index": 141,
+        "midpoint_rational": {
+          "numerator": 283,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 729,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2bc7a2240cdeap-7"
+      },
+      {
+        "index": 142,
+        "midpoint_rational": {
+          "numerator": 285,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 841,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.27b58b3c6fe23p-7"
+      },
+      {
+        "index": 143,
+        "midpoint_rational": {
+          "numerator": 287,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 961,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2368b78944186p-7"
+      },
+      {
+        "index": 144,
+        "midpoint_rational": {
+          "numerator": 289,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1089,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1ee423d89903dp-7"
+      },
+      {
+        "index": 145,
+        "midpoint_rational": {
+          "numerator": 291,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1a2aeaf5430d1p-7"
+      },
+      {
+        "index": 146,
+        "midpoint_rational": {
+          "numerator": 293,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1369,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1540421bd6b53p-7"
+      },
+      {
+        "index": 147,
+        "midpoint_rational": {
+          "numerator": 295,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1521,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1027755d5edc4p-7"
+      },
+      {
+        "index": 148,
+        "midpoint_rational": {
+          "numerator": 297,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1681,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0ae3e3f57a19dp-7"
+      },
+      {
+        "index": 149,
+        "midpoint_rational": {
+          "numerator": 299,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 1849,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0578fc9988633p-7"
+      },
+      {
+        "index": 150,
+        "midpoint_rational": {
+          "numerator": 301,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.ffd4738d089d4p-8"
+      },
+      {
+        "index": 151,
+        "midpoint_rational": {
+          "numerator": 303,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2209,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f4763c26150acp-8"
+      },
+      {
+        "index": 152,
+        "midpoint_rational": {
+          "numerator": 305,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2401,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.e8de6115dd85ap-8"
+      },
+      {
+        "index": 153,
+        "midpoint_rational": {
+          "numerator": 307,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2601,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.dd13f2332160fp-8"
+      },
+      {
+        "index": 154,
+        "midpoint_rational": {
+          "numerator": 309,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 2809,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.d11dfa0fd9081p-8"
+      },
+      {
+        "index": 155,
+        "midpoint_rational": {
+          "numerator": 311,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c503772648801p-8"
+      },
+      {
+        "index": 156,
+        "midpoint_rational": {
+          "numerator": 313,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3249,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b8cb553fef158p-8"
+      },
+      {
+        "index": 157,
+        "midpoint_rational": {
+          "numerator": 315,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3481,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.ac7c671ea4149p-8"
+      },
+      {
+        "index": 158,
+        "midpoint_rational": {
+          "numerator": 317,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3721,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.a01d606f87e72p-8"
+      },
+      {
+        "index": 159,
+        "midpoint_rational": {
+          "numerator": 319,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 3969,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.93b4d00ebdbcdp-8"
+      },
+      {
+        "index": 160,
+        "midpoint_rational": {
+          "numerator": 321,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 4225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.87491aa225c94p-8"
+      },
+      {
+        "index": 161,
+        "midpoint_rational": {
+          "numerator": 323,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 4489,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.7ae075908d113p-8"
+      },
+      {
+        "index": 162,
+        "midpoint_rational": {
+          "numerator": 325,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 4761,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6e80e259ff8a3p-8"
+      },
+      {
+        "index": 163,
+        "midpoint_rational": {
+          "numerator": 327,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5041,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.62302a551de5bp-8"
+      },
+      {
+        "index": 164,
+        "midpoint_rational": {
+          "numerator": 329,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5329,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.55f3dad48b909p-8"
+      },
+      {
+        "index": 165,
+        "midpoint_rational": {
+          "numerator": 331,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.49d141b6bd13bp-8"
+      },
+      {
+        "index": 166,
+        "midpoint_rational": {
+          "numerator": 333,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 5929,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3dcd6a61a4d2bp-8"
+      },
+      {
+        "index": 167,
+        "midpoint_rational": {
+          "numerator": 335,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 6241,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.31ed1b2af5d7ap-8"
+      },
+      {
+        "index": 168,
+        "midpoint_rational": {
+          "numerator": 337,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 6561,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2634d32cf3738p-8"
+      },
+      {
+        "index": 169,
+        "midpoint_rational": {
+          "numerator": 339,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 6889,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1aa8c8870a888p-8"
+      },
+      {
+        "index": 170,
+        "midpoint_rational": {
+          "numerator": 341,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 7225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0f4ce708bf9aap-8"
+      },
+      {
+        "index": 171,
+        "midpoint_rational": {
+          "numerator": 343,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 7569,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0424cf44d48e9p-8"
+      },
+      {
+        "index": 172,
+        "midpoint_rational": {
+          "numerator": 345,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 7921,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f267ac13d6b7cp-9"
+      },
+      {
+        "index": 173,
+        "midpoint_rational": {
+          "numerator": 347,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 8281,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.dcfa087ab1b85p-9"
+      },
+      {
+        "index": 174,
+        "midpoint_rational": {
+          "numerator": 349,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 8649,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c8062e28aa321p-9"
+      },
+      {
+        "index": 175,
+        "midpoint_rational": {
+          "numerator": 351,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b391014e7b574p-9"
+      },
+      {
+        "index": 176,
+        "midpoint_rational": {
+          "numerator": 353,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9409,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9f9ed1b466d8ap-9"
+      },
+      {
+        "index": 177,
+        "midpoint_rational": {
+          "numerator": 355,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 9801,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.8c335d2bfe5a5p-9"
+      },
+      {
+        "index": 178,
+        "midpoint_rational": {
+          "numerator": 357,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 10201,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.7951d297b37d3p-9"
+      },
+      {
+        "index": 179,
+        "midpoint_rational": {
+          "numerator": 359,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 10609,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.66fcd57ce42e5p-9"
+      },
+      {
+        "index": 180,
+        "midpoint_rational": {
+          "numerator": 361,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 11025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.55368214b2228p-9"
+      },
+      {
+        "index": 181,
+        "midpoint_rational": {
+          "numerator": 363,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 11449,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.440071cfa939dp-9"
+      },
+      {
+        "index": 182,
+        "midpoint_rational": {
+          "numerator": 365,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 11881,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.335bc0400843cp-9"
+      },
+      {
+        "index": 183,
+        "midpoint_rational": {
+          "numerator": 367,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 12321,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2349105e69726p-9"
+      },
+      {
+        "index": 184,
+        "midpoint_rational": {
+          "numerator": 369,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 12769,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.13c8921c8a96ap-9"
+      },
+      {
+        "index": 185,
+        "midpoint_rational": {
+          "numerator": 371,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 13225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.04da083a0fbb1p-9"
+      },
+      {
+        "index": 186,
+        "midpoint_rational": {
+          "numerator": 373,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 13689,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.ecf99c9e96f88p-10"
+      },
+      {
+        "index": 187,
+        "midpoint_rational": {
+          "numerator": 375,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 14161,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.d15fbe04bbe31p-10"
+      },
+      {
+        "index": 188,
+        "midpoint_rational": {
+          "numerator": 377,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 14641,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b6e3b4b6a6ebbp-10"
+      },
+      {
+        "index": 189,
+        "midpoint_rational": {
+          "numerator": 379,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 15129,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9d821858acb48p-10"
+      },
+      {
+        "index": 190,
+        "midpoint_rational": {
+          "numerator": 381,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 15625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.8536e506ff50fp-10"
+      },
+      {
+        "index": 191,
+        "midpoint_rational": {
+          "numerator": 383,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 16129,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6dfd8838b37d2p-10"
+      },
+      {
+        "index": 192,
+        "midpoint_rational": {
+          "numerator": 385,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 16641,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.57d0ed8f738bcp-10"
+      },
+      {
+        "index": 193,
+        "midpoint_rational": {
+          "numerator": 387,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 17161,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.42ab8b8261e7bp-10"
+      },
+      {
+        "index": 194,
+        "midpoint_rational": {
+          "numerator": 389,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 17689,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2e876fd3f4701p-10"
+      },
+      {
+        "index": 195,
+        "midpoint_rational": {
+          "numerator": 391,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 18225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1b5e4bc3e5475p-10"
+      },
+      {
+        "index": 196,
+        "midpoint_rational": {
+          "numerator": 393,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 18769,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.09297fefb1443p-10"
+      },
+      {
+        "index": 197,
+        "midpoint_rational": {
+          "numerator": 395,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 19321,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.efc44faaf9371p-11"
+      },
+      {
+        "index": 198,
+        "midpoint_rational": {
+          "numerator": 397,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 19881,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.cf0249dd3095ap-11"
+      },
+      {
+        "index": 199,
+        "midpoint_rational": {
+          "numerator": 399,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 20449,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.affe52b0864a8p-11"
+      },
+      {
+        "index": 200,
+        "midpoint_rational": {
+          "numerator": 401,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 21025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.92a984053a946p-11"
+      },
+      {
+        "index": 201,
+        "midpoint_rational": {
+          "numerator": 403,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 21609,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.76f4c0be33171p-11"
+      },
+      {
+        "index": 202,
+        "midpoint_rational": {
+          "numerator": 405,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 22201,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5cd0c71206fbcp-11"
+      },
+      {
+        "index": 203,
+        "midpoint_rational": {
+          "numerator": 407,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 22801,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.442e41c7e0c79p-11"
+      },
+      {
+        "index": 204,
+        "midpoint_rational": {
+          "numerator": 409,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 23409,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2cfdd85a45edep-11"
+      },
+      {
+        "index": 205,
+        "midpoint_rational": {
+          "numerator": 411,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 24025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.17303dfc192b8p-11"
+      },
+      {
+        "index": 206,
+        "midpoint_rational": {
+          "numerator": 413,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 24649,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.02b63f7e50536p-11"
+      },
+      {
+        "index": 207,
+        "midpoint_rational": {
+          "numerator": 415,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 25281,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.df01a02dac3adp-12"
+      },
+      {
+        "index": 208,
+        "midpoint_rational": {
+          "numerator": 417,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 25921,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.bb022a15d5e18p-12"
+      },
+      {
+        "index": 209,
+        "midpoint_rational": {
+          "numerator": 419,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 26569,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9950e082166ecp-12"
+      },
+      {
+        "index": 210,
+        "midpoint_rational": {
+          "numerator": 421,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 27225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.79d1137fdb6bfp-12"
+      },
+      {
+        "index": 211,
+        "midpoint_rational": {
+          "numerator": 423,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 27889,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5c66b0432070fp-12"
+      },
+      {
+        "index": 212,
+        "midpoint_rational": {
+          "numerator": 425,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 28561,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.40f6500509398p-12"
+      },
+      {
+        "index": 213,
+        "midpoint_rational": {
+          "numerator": 427,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 29241,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.276544ed888b8p-12"
+      },
+      {
+        "index": 214,
+        "midpoint_rational": {
+          "numerator": 429,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 29929,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0f99a51c79f1cp-12"
+      },
+      {
+        "index": 215,
+        "midpoint_rational": {
+          "numerator": 431,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 30625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f2f4a7d04475cp-13"
+      },
+      {
+        "index": 216,
+        "midpoint_rational": {
+          "numerator": 433,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 31329,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c9de12d09e657p-13"
+      },
+      {
+        "index": 217,
+        "midpoint_rational": {
+          "numerator": 435,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 32041,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.a3c0b0cc9a6a6p-13"
+      },
+      {
+        "index": 218,
+        "midpoint_rational": {
+          "numerator": 437,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 32761,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.806f659549200p-13"
+      },
+      {
+        "index": 219,
+        "midpoint_rational": {
+          "numerator": 439,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 33489,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5fbed94419ec9p-13"
+      },
+      {
+        "index": 220,
+        "midpoint_rational": {
+          "numerator": 441,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 34225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.41857ba68d688p-13"
+      },
+      {
+        "index": 221,
+        "midpoint_rational": {
+          "numerator": 443,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 34969,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.259b853f28481p-13"
+      },
+      {
+        "index": 222,
+        "midpoint_rational": {
+          "numerator": 445,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 35721,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0bdaf60ecd41bp-13"
+      },
+      {
+        "index": 223,
+        "midpoint_rational": {
+          "numerator": 447,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 36481,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.e83f24b1f591bp-14"
+      },
+      {
+        "index": 224,
+        "midpoint_rational": {
+          "numerator": 449,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 37249,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.bc8dbb28dbecep-14"
+      },
+      {
+        "index": 225,
+        "midpoint_rational": {
+          "numerator": 451,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 38025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.94602770cf89bp-14"
+      },
+      {
+        "index": 226,
+        "midpoint_rational": {
+          "numerator": 453,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 38809,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6f78422a9bdc8p-14"
+      },
+      {
+        "index": 227,
+        "midpoint_rational": {
+          "numerator": 455,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 39601,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.4d9b31cb4c3e1p-14"
+      },
+      {
+        "index": 228,
+        "midpoint_rational": {
+          "numerator": 457,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 40401,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.2e91558502b42p-14"
+      },
+      {
+        "index": 229,
+        "midpoint_rational": {
+          "numerator": 459,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 41209,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.12262e48bd510p-14"
+      },
+      {
+        "index": 230,
+        "midpoint_rational": {
+          "numerator": 461,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 42025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f0508c5d7d3dbp-15"
+      },
+      {
+        "index": 231,
+        "midpoint_rational": {
+          "numerator": 463,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 42849,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.c0d22d1d8ce00p-15"
+      },
+      {
+        "index": 232,
+        "midpoint_rational": {
+          "numerator": 465,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 43681,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.9579da1943b6ap-15"
+      },
+      {
+        "index": 233,
+        "midpoint_rational": {
+          "numerator": 467,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 44521,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.6df59fb1c004ap-15"
+      },
+      {
+        "index": 234,
+        "midpoint_rational": {
+          "numerator": 469,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 45369,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.49f8c2c172bffp-15"
+      },
+      {
+        "index": 235,
+        "midpoint_rational": {
+          "numerator": 471,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 46225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.293b8746f7194p-15"
+      },
+      {
+        "index": 236,
+        "midpoint_rational": {
+          "numerator": 473,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 47089,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0b7af6be3ac1fp-15"
+      },
+      {
+        "index": 237,
+        "midpoint_rational": {
+          "numerator": 475,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 47961,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.e0f14d041f3cfp-16"
+      },
+      {
+        "index": 238,
+        "midpoint_rational": {
+          "numerator": 477,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 48841,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.aff4fd0e991fcp-16"
+      },
+      {
+        "index": 239,
+        "midpoint_rational": {
+          "numerator": 479,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 49729,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.83950173f27adp-16"
+      },
+      {
+        "index": 240,
+        "midpoint_rational": {
+          "numerator": 481,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 50625,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5b6d227956ffbp-16"
+      },
+      {
+        "index": 241,
+        "midpoint_rational": {
+          "numerator": 483,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 51529,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.37207f848afc0p-16"
+      },
+      {
+        "index": 242,
+        "midpoint_rational": {
+          "numerator": 485,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 52441,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.1659246562638p-16"
+      },
+      {
+        "index": 243,
+        "midpoint_rational": {
+          "numerator": 487,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 53361,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f18f43103abc3p-17"
+      },
+      {
+        "index": 244,
+        "midpoint_rational": {
+          "numerator": 489,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 54289,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.bc454eac49692p-17"
+      },
+      {
+        "index": 245,
+        "midpoint_rational": {
+          "numerator": 491,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 55225,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.8c4d49fc27e24p-17"
+      },
+      {
+        "index": 246,
+        "midpoint_rational": {
+          "numerator": 493,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 56169,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.612ad5a0b257cp-17"
+      },
+      {
+        "index": 247,
+        "midpoint_rational": {
+          "numerator": 495,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 57121,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.3a6ba0a5e7426p-17"
+      },
+      {
+        "index": 248,
+        "midpoint_rational": {
+          "numerator": 497,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 58081,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.17a6bc4a011adp-17"
+      },
+      {
+        "index": 249,
+        "midpoint_rational": {
+          "numerator": 499,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 59049,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.f0f7ef0736a92p-18"
+      },
+      {
+        "index": 250,
+        "midpoint_rational": {
+          "numerator": 501,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 60025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.b92684ac329cdp-18"
+      },
+      {
+        "index": 251,
+        "midpoint_rational": {
+          "numerator": 503,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 61009,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.873831e9f0ed3p-18"
+      },
+      {
+        "index": 252,
+        "midpoint_rational": {
+          "numerator": 505,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 62001,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.5a99ed5387c31p-18"
+      },
+      {
+        "index": 253,
+        "midpoint_rational": {
+          "numerator": 507,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 63001,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.32c5a0c9e9ebdp-18"
+      },
+      {
+        "index": 254,
+        "midpoint_rational": {
+          "numerator": 509,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 64009,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.0f412db02dca4p-18"
+      },
+      {
+        "index": 255,
+        "midpoint_rational": {
+          "numerator": 511,
+          "denominator": 32
+        },
+        "gaussian_exponent_rational": {
+          "numerator": 65025,
+          "denominator": 8192
+        },
+        "rxx_angle_binary64_hex": "0x1.df3affbbb2118p-19"
+      }
+    ],
+    "rxx_decomposition": [
+      "h S",
+      "h E",
+      "cx S E",
+      "rz(angle) E",
+      "cx S E",
+      "h S",
+      "h E"
+    ],
+    "step_sequence": [
+      "rz(1/32) S",
+      "rz(-omega/32) E",
+      "h S",
+      "h E",
+      "cx S E",
+      "rz(interaction_angle) E",
+      "cx S E",
+      "h S",
+      "h E",
+      "rz(1/32) S",
+      "rz(-omega/32) E"
+    ],
+    "ideal_vs_machine": "Ideal T17 uses exact rational/free angles, exact exp interaction angles and exact GL nodes/law; stored binary64 angles,frequencies,mixture probabilities and sampled endpoint law belong to logical realization/representation reserves"
+  },
+  "modes": {
+    "thermal": {
+      "beta": 1,
+      "bath_bit_probability": "p_e(omega)=1/(1+exp(omega))",
+      "target_system_density": "diag(exp(-1/2),exp(+1/2))/(2 cosh(1/2))",
+      "target_Z": "-tanh(1/2)"
+    },
+    "ground": {
+      "beta": "infinite",
+      "bath_bit_probability": 0,
+      "target_system_density": "|1><1|",
+      "target_Z": -1
+    }
+  },
+  "randomness": {
+    "seed": 20261113,
+    "bit_generator": "PCG64",
+    "mode_streams": "SeedSequence(seed).spawn(2),thermal then ground",
+    "frequency_draw": "new independent categorical draw from all17 weights EVERY round and preparation",
+    "thermal_bath_draw": "fresh Bernoulli conditioned on current omega; explicit X_E if1",
+    "ground_bath_draw": "fixed0; no bath-bit RNG",
+    "initial_system_state": "|0>,excited for h>0",
+    "preparation_vs_trajectory": "Target is the average over random choices and unobserved bath discards, not a single chosen schedule/purification.",
+    "schedule_order": "Each mode uses its own spawned stream; preparation-major then round-major; frequency uniform first, thermal bit uniform next; ground consumes no bit draw",
+    "categorical_rule": "Use stored binary64 weights normalized by math.fsum; cumulative endpoints math.fsum(prefix)/math.fsum(weights); last endpoint=1; select first endpoint strictly greater than rng.random()",
+    "thermal_bit_rule": "Use next rng.random() < stored node p1, consuming it once EVERY thermal round even when bit=0",
+    "statistical_independence_premise": "PCG64 schedules are deterministic audit records; Hoeffding presumes independent complete physical/logical trial samples and independent per-round random choices, not a proof supplied by PRNG records",
+    "classical_law_representation_error": "Exact ideal Q17/T17 weights/probabilities versus machine cumulative endpoints, finite uniform grid and stored probabilities require a separate full-preparation total-variation allowance"
+  },
+  "reset_readout": {
+    "initial": [
+      "reset S",
+      "reset E"
+    ],
+    "each_round": [
+      "optional X E from thermal bit",
+      "all256 full-Hamiltonian Trotter steps",
+      "reset E,unobserved discard+prepare0"
+    ],
+    "bath_resets_per_preparation": 193,
+    "system_resets_per_preparation": 1,
+    "total_resets_per_preparation": 194,
+    "final_readout": [
+      "measure S to c0"
+    ],
+    "environment_measurements": 0,
+    "reset_map": "R_E(rho)=sum_b (I_S tensor |0><b|_E) rho (I_S tensor |b><0|_E)",
+    "postselection": "none"
+  },
+  "upstream_packages": [
+    {
+      "name": "numpy",
+      "version": "2.5.4",
+      "repository": "https://github.com/numpy/numpy",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1",
+      "repository": "https://github.com/scipy/scipy",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "qiskit",
+      "version": "2.6.2",
+      "repository": "https://github.com/Qiskit/qiskit",
+      "license": "Apache-2.0"
+    }
+  ],
+  "paper_reference": {
+    "bibliography_key": "frontier_thermal_bath_2026",
+    "doi": "10.1038/s41567-026-03389-y",
+    "arxiv": "2508.05703v3"
+  }
+}

@@ -1,0 +1,9 @@
+method,physical_error_rate,choice,executions,peak_physical_qubits,serial_runtime_ns,physical_failure_union_bound,synthesis_model_allowance_per_execution
+annealing,0.001,fewest physical qubits,12288,1317615,8502067200000.0,0.000294128881623449,1e-05
+annealing,0.001,shortest modeled runtime,12288,1422975,7821901824000.0,0.00043186237026345,1e-05
+walk,0.001,fewest physical qubits,12288,704817,123801600000.0,0.00010472738256334292,0.0
+walk,0.001,shortest modeled runtime,12288,876993,94089216000.0,0.0005944914642273431,0.0
+annealing,0.0001,fewest physical qubits,12288,131595,8502067200000.0,0.0002779837950854583,1e-05
+annealing,0.0001,shortest modeled runtime,12288,260115,3740909568000.0,0.00043102100468546053,1e-05
+walk,0.0001,fewest physical qubits,12288,40101,64376832000.0,0.0002712402702336001,0.0
+walk,0.0001,shortest modeled runtime,12288,47173,44568576000.0,0.0007614455808000002,0.0

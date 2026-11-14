@@ -1,0 +1,523 @@
+{
+  "basis": {
+    "certified": false,
+    "evidence": [
+      {
+        "label": "local",
+        "sha256": "9dca05ab0118b318f6a0d33c5578a177ecf2b5acd4dd0542d6e572d9bb4b5509"
+      },
+      {
+        "label": "linux",
+        "sha256": "ba5ae99622f7d4ff73196de74b40a740a1fa2ed16570cf9ebfcad4e351a14f73"
+      }
+    ],
+    "guard_rule": "nextafter_observed_summary_toward_positive_infinity"
+  },
+  "cases": {
+    "damping-Z": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 7.771561172376096e-16,
+                "upper": 7.771561172376097e-16
+              }
+            },
+            "saved": 0.9999999999999748
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 6.661338147750939e-16,
+                "upper": 6.66133814775094e-16
+              }
+            },
+            "saved": 0.5506518485708496
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 5.345129893183401e-16,
+                "upper": 5.345129893183402e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 3.6117217523811847e-16,
+                "upper": 3.611721752381185e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 1.6650973677125036e-16,
+                "upper": 1.6650973677125039e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 3.608224830031759e-16,
+                "upper": 3.6082248300317592e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 254
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": 0.5506710358827784
+      },
+      "saved_exact_reference_mean": null,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.9999999999999998
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.5506710358827784
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 7
+      },
+      "source_bias": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "frozen": 0.0,
+        "mode": "recorded_discrepancy"
+      }
+    },
+    "lindblad-Z": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 8.670841822322473e-14,
+                "upper": 8.670841822322474e-14
+              }
+            },
+            "saved": 0.9999999999945203
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.374278717023117e-14,
+                "upper": 4.3742787170231174e-14
+              }
+            },
+            "saved": 0.9112872347723378
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 3.489410229598692e-14,
+                "upper": 3.4894102295986926e-14
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 2.3524172874423315e-14,
+                "upper": 2.3524172874423318e-14
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 8.376162675790608e-15,
+                "upper": 8.37616267579061e-15
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 2.19824158875781e-14,
+                "upper": 2.1982415887578103e-14
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 52683
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": 0.9112963723288879
+      },
+      "saved_exact_reference_mean": null,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 3.3306690738754696e-16,
+                "upper": 3.33066907387547e-16
+              }
+            },
+            "saved": 0.999999999999998
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 8.881784197001252e-16,
+                "upper": 8.881784197001254e-16
+              }
+            },
+            "saved": 0.9113124171987086
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 7.049342117539133e-16,
+                "upper": 7.049342117539134e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 5.242368754048828e-16,
+                "upper": 5.242368754048829e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 2.7858405415425645e-16,
+                "upper": 2.785840541542565e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 4.440892098500626e-16,
+                "upper": 4.440892098500627e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 293
+      },
+      "source_bias": {
+        "absolute_difference": {
+          "observed_maximum": 7.771561172376096e-16,
+          "upper": 7.771561172376097e-16
+        },
+        "frozen": 1.6044869820763807e-05,
+        "mode": "recorded_discrepancy"
+      }
+    },
+    "thermal-X": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.440892098500626e-16,
+                "upper": 4.440892098500627e-16
+              }
+            },
+            "saved": 0.46859047954767274
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 6.106226635438361e-16,
+                "upper": 6.106226635438362e-16
+              }
+            },
+            "saved": -0.39770491633848043
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.3351199622156232e-15,
+                "upper": 1.3351199622156234e-15
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 9.100771429906964e-16,
+                "upper": 9.100771429906966e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 6.200855965165529e-16,
+                "upper": 6.20085596516553e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 6.661338147750939e-16,
+                "upper": 6.66133814775094e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 1078
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 5.551115123125783e-17,
+          "upper": 5.551115123125784e-17
+        },
+        "baseline": -0.3977050370364477
+      },
+      "saved_exact_reference_mean": null,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 2.220446049250313e-16,
+                "upper": 2.2204460492503136e-16
+              }
+            },
+            "saved": 0.4685902387371417
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              }
+            },
+            "saved": -0.39770460063853585
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.2412670766236366e-16,
+                "upper": 1.2412670766236368e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 3.3533690281707056e-33,
+                "upper": 3.353369028170706e-33
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 33
+      },
+      "source_bias": {
+        "absolute_difference": {
+          "observed_maximum": 1.6653345369377348e-16,
+          "upper": 1.665334536937735e-16
+        },
+        "frozen": 4.3639791186267374e-07,
+        "mode": "recorded_discrepancy"
+      }
+    },
+    "thermal-Z": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.996003610813204e-16,
+                "upper": 4.996003610813205e-16
+              }
+            },
+            "saved": 0.46859047954767274
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.3322676295501878e-15,
+                "upper": 1.332267629550188e-15
+              }
+            },
+            "saved": -0.5965557221032711
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.359704882614973e-15,
+                "upper": 1.3597048826149732e-15
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.0579050069403473e-15,
+                "upper": 1.0579050069403475e-15
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 8.218447204445844e-16,
+                "upper": 8.218447204445845e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 6.938893903907228e-16,
+                "upper": 6.938893903907229e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 1077
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": -0.5965575555546715
+      },
+      "saved_exact_reference_mean": null,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 2.7755575615628914e-16,
+                "upper": 2.775557561562892e-16
+              }
+            },
+            "saved": 0.46859023873714173
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": -0.596556900957804
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.3597399555105182e-16,
+                "upper": 1.3597399555105185e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 3.288041081824748e-33,
+                "upper": 3.288041081824749e-33
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "density matrix",
+        "peak_branches": null,
+        "primitive_operations": 32
+      },
+      "source_bias": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "frozen": 6.545968674886993e-07,
+        "mode": "recorded_discrepancy"
+      }
+    }
+  },
+  "helper_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+  "kind": "instrument",
+  "lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+  "runtime": {
+    "machines": [
+      "arm64",
+      "x86_64"
+    ],
+    "packages": {
+      "numpy": "2.5.4",
+      "qiskit": "2.6.2",
+      "scipy": "1.18.1"
+    },
+    "python_version": "3.12.14"
+  },
+  "schema": "openquantum-tail-numerical-policy-v1",
+  "status": "reviewed_observed_reproduction"
+}

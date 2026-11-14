@@ -183,14 +183,17 @@ def choose_num_ts_per_rotation(rotation_count: int, allowance: float) -> int:
     return count
 
 
-def prepare_measured_circuit(circuit: QuantumCircuit) -> QuantumCircuit:
+def prepare_measured_circuit(circuit: QuantumCircuit, *, optimization_level: int = 1) -> QuantumCircuit:
     """Lower a bound static circuit to explicit rotations and Clifford gates.
 
     Reject mid-circuit measurements, resets, dynamic control, and unbound
     parameters because the current QDK import can otherwise choose a branch or
     omit work. Input preparation and final basis changes must already be part
     of the supplied circuit. The input circuit is not modified.
+    Level 0 preserves exact Clifford+T words; level 1 is the existing default.
     """
+    if isinstance(optimization_level, bool) or not isinstance(optimization_level, int) or optimization_level not in (0, 1):
+        raise ValueError("Supported transpiler optimization levels are 0 and 1")
     if circuit.num_parameters:
         raise ValueError("Bind all circuit parameters before resource estimation")
     measured = False
@@ -210,7 +213,7 @@ def prepare_measured_circuit(circuit: QuantumCircuit) -> QuantumCircuit:
     if not measured:
         raise ValueError("Supply explicit final output measurements")
     compiled = transpile(
-        circuit, basis_gates=list(ROTATION_BASIS), optimization_level=1, seed_transpiler=7
+        circuit, basis_gates=list(ROTATION_BASIS), optimization_level=optimization_level, seed_transpiler=7
     )
     if any(item.operation.name not in {*ROTATION_BASIS, "measure", "barrier"} for item in compiled.data):
         raise ValueError("Circuit lowering left an unsupported opaque operation")
@@ -225,6 +228,8 @@ def estimate_circuit_resources(
     cache_dir: Path,
     observable_budget: BoundedObservableBudget | None = None,
     use_graph: bool = False,
+    optimization_level: int = 1,
+    isolate_context: bool = False,
 ) -> dict[str, Any]:
     """Run a conditional, explicit-synthesis surface-code resource model.
 
@@ -232,13 +237,17 @@ def estimate_circuit_resources(
     ``use_graph=False`` avoids the documented ISA-pruning incompleteness.
     The report separates QDK's approximation base scalar from its physical-fault
     contribution by using the explicitly additive UnionBound composition.
+    ``isolate_context=True`` uses a fresh, default-configured Unrestricted
+    QDK interpreter without inheriting the caller's global configuration.
     """
+    if not isinstance(isolate_context, bool):
+        raise ValueError("isolate_context must be a bool")
     installed_version = importlib.metadata.version("qdk")
     if installed_version != PINNED_QDK_VERSION:
         raise RuntimeError(f"Audited QDK {PINNED_QDK_VERSION} required; found {installed_version}")
     if observable_budget is not None and budget != observable_budget.resource_budget():
         raise ValueError("Circuit budget must match the supplied bounded-observable allocation")
-    compiled = prepare_measured_circuit(circuit)
+    compiled = prepare_measured_circuit(circuit, optimization_level=optimization_level)
     qasm = qasm3.dumps(compiled)
 
     from qdk.qre import ErrorComposition, LatticeSurgery, PSSPC, estimate, instruction_name, property_name
@@ -246,7 +255,16 @@ def estimate_circuit_resources(
     from qdk.qre.instruction_ids import LATTICE_SURGERY, RZ
     from qdk.qre.models import GateBased, RoundBasedFactory, SurfaceCode
 
-    app = OpenQASMApplication(qasm)
+    context = None
+    if isolate_context:
+        from qdk import Context
+        from qdk.openqasm import ProgramType
+
+        context = Context()
+        context.import_openqasm(qasm, name="ResourceEstimate", program_type=ProgramType.File)
+        app = OpenQASMApplication(context.code.qasm_import.ResourceEstimate)
+    else:
+        app = OpenQASMApplication(qasm)
     raw_trace = next(app.enumerate_traces())
     counts = {instruction_name(key): count for key, count in raw_trace.gate_counts.items()}
     if set(counts) - {"RZ", "T", "CCX", "MEAS_Z"}:
@@ -311,6 +329,8 @@ def estimate_circuit_resources(
         "audited_source_commit": AUDITED_SOURCE_COMMIT,
         "source_commit_is_package_release_commit": False,
         "qiskit_version": importlib.metadata.version("qiskit"),
+        "transpiler": {"optimization_level": optimization_level, "seed_transpiler": 7,
+                       "basis_gates": list(ROTATION_BASIS)},
         "qasm3": qasm,
         "qasm_sha256": hashlib.sha256(qasm.encode()).hexdigest(),
         "source_gate_counts": dict(circuit.count_ops()),

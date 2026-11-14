@@ -18,6 +18,20 @@ import platform
 from pathlib import Path
 import subprocess
 import sys
+
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
 import time
 
 HERE = Path(__file__).resolve().parent
@@ -196,7 +210,7 @@ def generate(output: Path, z: float = .6, x: float = .4, beta: float = 1.25,
                                "maximum_degree": 12, "maximum_aggregated_pauli_terms": 256,
                                "beta_times_alpha_over_two_maximum": 10, "statevector_total_qubits": 12,
                                "decomposed_artifact_operation_limit": 250_000, "validation_cases": 64},
-              "provenance": {"source_revision_at_generation": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip() if REPOSITORY else None,
+              "provenance": {"source_revision_at_generation": git_revision(ROOT) if REPOSITORY else None,
                              "source_hashes": source_hashes, "qasm_hashes": qasm_hashes,
                              "revision_note": "source hashes identify working-tree files if generation precedes their commit",
                              "python": platform.python_version(), "packages": {p: importlib.metadata.version(p) for p in ("qiskit", "numpy", "scipy", "matplotlib")},

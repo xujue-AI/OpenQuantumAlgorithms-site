@@ -1,0 +1,3750 @@
+{
+  "schema": "openquantum-hadamard-qpe-v1",
+  "parameters": {
+    "target_qubits": 1,
+    "levels": 6,
+    "phases": [
+      0.3,
+      0.995,
+      0.125,
+      0.5
+    ],
+    "seeds": [
+      7,
+      19,
+      41
+    ],
+    "canonical_study": true,
+    "total_ideal_failure_target_exact": "1/100",
+    "per_run_ideal_failure_target_exact": "1/1200",
+    "shots_per_fringe": 329
+  },
+  "environment": {
+    "python": "3.12.14",
+    "device": "CPU",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "provenance": {
+    "source_commit": "def275c501c8c55a32e219674000b4199eaa16d4",
+    "source_sha256": {
+      "hadamard_qpe.py": "690ba2177b39c7be87814bf9e7fa78edd9d4d0ad43b043309e9b51226b74556c",
+      "generate_hadamard_qpe.py": "d4c0de63ce6cf00495a1825efd5230ec271d9b3390e34471429a02702ec6d2be",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+      "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "source_revision_scope": "Exact source hashes identify this producer; Git HEAD is recorded when available and may precede uncommitted source edits"
+  },
+  "simulation": {
+    "performed": true,
+    "sampling_scope": "classically sampled binomial counts from checked circuit probabilities, representing fresh ideal trials; no QPU execution",
+    "modeled_fresh_trials_sampled": 47376,
+    "unique_experiment_circuits": 48
+  },
+  "ideal_confidence": {
+    "phase_radius_exact": "1/256",
+    "per_run_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+    "whole_predeclared_study_failure_upper_bound_exact": "54239717698470525845496825676912115762407604407735528430443426062626405517125448840179676036212111802581830228938119350764647095099512710167728731823390137010066864993291062077813316361380084674724756027314352578484798193275619459645677489912109659821502390928967824867262690426897620272231006162680004004048658192947728136278572089137532619520587199749816320000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+    "scope": "union bound over predefined outputs, conditional on exact eigenstate/powers, fresh IID ideal trials and exact-real angular inference",
+    "numerical_inference_certified": false,
+    "hardware_confidence_certified": false
+  },
+  "cases": [
+    {
+      "case_id": "phase-0",
+      "nominal_phase": 0.3,
+      "actual_angle_phase_reference": 0.3,
+      "actual_angle_reference_scope": "binary64 diagnostic from stored P angles; not interval certified",
+      "experiments": [
+        {
+          "power": 1,
+          "basis": "cos",
+          "file": "circuits/phase-0-cos-k1.qasm",
+          "sha256": "aa4e7a248121a997df7869319430b688347df5e6bdc8161a3871c3ed27d891b3",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 8,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 8,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.47123889803846897,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.3454915028125263,
+            "analytic_zero_probability": 0.34549150281252633,
+            "probability_absolute_error": 5.551115123125783e-17,
+            "full_operator_max_error": 2.841691039586389e-17,
+            "source_to_lowered_operator_max_error": 5.551115123125783e-17,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.3454915028125263,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 1,
+          "basis": "sin",
+          "file": "circuits/phase-0-sin-k1.qasm",
+          "sha256": "dcaeb243087fd6d9d64e2ba1a6acf80e05bd1e0f9edbce0a074a34fe5d0c227e",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 9,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 9,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.47123889803846897,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9755282581475763,
+            "analytic_zero_probability": 0.9755282581475768,
+            "probability_absolute_error": 5.551115123125783e-16,
+            "full_operator_max_error": 5.551115123125783e-17,
+            "source_to_lowered_operator_max_error": 8.326672684688674e-17,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9755282581475763,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "cos",
+          "file": "circuits/phase-0-cos-k2.qasm",
+          "sha256": "c6c3cc43c5b2555583c675a4b2af37f0af8295b8ea8ff44812fe67cdfed9c228",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 12,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 12,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.9424777960769379,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.09549150281252627,
+            "analytic_zero_probability": 0.09549150281252627,
+            "probability_absolute_error": 0.0,
+            "full_operator_max_error": 6.206335383118183e-17,
+            "source_to_lowered_operator_max_error": 1.5700924586837752e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.09549150281252627,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "sin",
+          "file": "circuits/phase-0-sin-k2.qasm",
+          "sha256": "a7b1758470bc3ffbcb46a6d203a56058357f34e73f5f83b96469c9c82b09de98",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 13,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 13,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.9424777960769379,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.2061073738537634,
+            "analytic_zero_probability": 0.2061073738537635,
+            "probability_absolute_error": 8.326672684688674e-17,
+            "full_operator_max_error": 1.1102230246251565e-16,
+            "source_to_lowered_operator_max_error": 2.2887833992611187e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.2061073738537634,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "cos",
+          "file": "circuits/phase-0-cos-k4.qasm",
+          "sha256": "964fb5349be80d636d940d563f2fffcddc48c61e49cdb73e49ad5b102cab6116",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 20,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 20,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.8849555921538759,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.6545084971874734,
+            "analytic_zero_probability": 0.6545084971874738,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 1.1102230246251565e-16,
+            "source_to_lowered_operator_max_error": 2.7755575615628914e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.6545084971874734,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "sin",
+          "file": "circuits/phase-0-sin-k4.qasm",
+          "sha256": "0f702b242a204860dbb7a7990446e1a2d5b100b8371f50cb568ad7178d8699e9",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 21,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 21,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.8849555921538759,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9755282581475765,
+            "analytic_zero_probability": 0.9755282581475768,
+            "probability_absolute_error": 3.3306690738754696e-16,
+            "full_operator_max_error": 1.6653345369377348e-16,
+            "source_to_lowered_operator_max_error": 2.7755575615628914e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9755282581475765,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "cos",
+          "file": "circuits/phase-0-cos-k8.qasm",
+          "sha256": "57c9a78edd181821f2ebd971c9bf6d8efa341ff5115153988bf0e7407cfed059",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 36,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 36,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.7699111843077517,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.09549150281252623,
+            "analytic_zero_probability": 0.09549150281252644,
+            "probability_absolute_error": 2.0816681711721685e-16,
+            "full_operator_max_error": 4.0029660424867215e-16,
+            "source_to_lowered_operator_max_error": 1.055077015130091e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.09549150281252623,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "sin",
+          "file": "circuits/phase-0-sin-k8.qasm",
+          "sha256": "475392f44c0f7e863356420519d1fd2a0f5409e8e2a84b44d74e62b86773b62c",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 37,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 37,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.7699111843077517,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.793892626146236,
+            "analytic_zero_probability": 0.7938926261462368,
+            "probability_absolute_error": 7.771561172376096e-16,
+            "full_operator_max_error": 3.387999773988765e-16,
+            "source_to_lowered_operator_max_error": 7.947987303456223e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.793892626146236,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "cos",
+          "file": "circuits/phase-0-cos-k16.qasm",
+          "sha256": "b9fe4ce4daa0a64b8800311be6912307bfe17736237f18dcac5628b22a8b9414",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 68,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 68,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.2566370614359172,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.6545084971874736,
+            "analytic_zero_probability": 0.6545084971874732,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 8.326672684688674e-16,
+            "source_to_lowered_operator_max_error": 2.0606528920186867e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.6545084971874736,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "sin",
+          "file": "circuits/phase-0-sin-k16.qasm",
+          "sha256": "34d8e9c1feea5fd6b2bd17fb14c53e54e8c305acac189a0fd436c3ad41b36422",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 69,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 69,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.2566370614359172,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.024471741852423207,
+            "analytic_zero_probability": 0.024471741852423012,
+            "probability_absolute_error": 1.942890293094024e-16,
+            "full_operator_max_error": 8.604228440844963e-16,
+            "source_to_lowered_operator_max_error": 2.001293569022258e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.024471741852423207,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "cos",
+          "file": "circuits/phase-0-cos-k32.qasm",
+          "sha256": "41fe2ae0a25491adb844d786681982e4a771aedfd7a9bef2045779e2a8bf7a8e",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 132,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 132,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 2.5132741228718345,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.09549150281252627,
+            "analytic_zero_probability": 0.09549150281252561,
+            "probability_absolute_error": 6.661338147750939e-16,
+            "full_operator_max_error": 1.6690311775283584e-15,
+            "source_to_lowered_operator_max_error": 3.4079506945718548e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.09549150281252627,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "sin",
+          "file": "circuits/phase-0-sin-k32.qasm",
+          "sha256": "5d0059b5fdce51bd5bc8d0c3ddeda112cbb2d2c5a57af770787b046e2c29771a",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 133,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 133,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 2.5132741228718345,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.2061073738537634,
+            "analytic_zero_probability": 0.20610737385376438,
+            "probability_absolute_error": 9.71445146547012e-16,
+            "full_operator_max_error": 1.6662594659381951e-15,
+            "source_to_lowered_operator_max_error": 3.997188364167557e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.2061073738537634,
+          "sampling_probability_clipping_absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "phase-1",
+      "nominal_phase": 0.995,
+      "actual_angle_phase_reference": 0.995,
+      "actual_angle_reference_scope": "binary64 diagnostic from stored P angles; not interval certified",
+      "experiments": [
+        {
+          "power": 1,
+          "basis": "cos",
+          "file": "circuits/phase-1-cos-k1.qasm",
+          "sha256": "3cb38ffd238fa3c39c97f3b78a999ff40aa15900055a4cf0d81f4a97ff09682a",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 8,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 8,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.5629423451609221,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9997532801828654,
+            "analytic_zero_probability": 0.9997532801828658,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 2.2385114313160504e-17,
+            "source_to_lowered_operator_max_error": 3.330849769336005e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9997532801828654,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 1,
+          "basis": "sin",
+          "file": "circuits/phase-1-sin-k1.qasm",
+          "sha256": "a85ce060dd52c6ae498b622aa0563bcb00cc14df77149b2074b3e679caf41706",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 9,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 9,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.5629423451609221,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4842946204609355,
+            "analytic_zero_probability": 0.4842946204609358,
+            "probability_absolute_error": 2.7755575615628914e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 1.6653345369377348e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4842946204609355,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "cos",
+          "file": "circuits/phase-1-cos-k2.qasm",
+          "sha256": "69e6102e436e2a1c483d5650308c8d4405072a2a1ce048736399ce4215745f18",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 12,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 12,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.1258846903218442,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9990133642141357,
+            "analytic_zero_probability": 0.9990133642141358,
+            "probability_absolute_error": 1.1102230246251565e-16,
+            "full_operator_max_error": 2.2385114313160504e-17,
+            "source_to_lowered_operator_max_error": 4.443059973708341e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9990133642141357,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "sin",
+          "file": "circuits/phase-1-sin-k2.qasm",
+          "sha256": "17200631e6a7066abbdc70060e730d74d4030d492530e52cd072b5b8a14871b7",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 13,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 13,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.1258846903218442,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4686047402353431,
+            "analytic_zero_probability": 0.46860474023534326,
+            "probability_absolute_error": 1.6653345369377348e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 2.482534153247273e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4686047402353431,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "cos",
+          "file": "circuits/phase-1-cos-k4.qasm",
+          "sha256": "91d0f174b4d066b87f4c9164b7a9d95b32c33bcd9c8846899cdecdf1b00d2fc3",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 20,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 20,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.2517693806436885,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9960573506572384,
+            "analytic_zero_probability": 0.9960573506572389,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 1.1102230246251565e-16,
+            "source_to_lowered_operator_max_error": 8.882296275145475e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9960573506572384,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "sin",
+          "file": "circuits/phase-1-sin-k4.qasm",
+          "sha256": "0cbdadec098a296895b8d538b0da68a2f5097d1af57ed8079375d5eb1ef51809",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 21,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 21,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.2517693806436885,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.43733338321784754,
+            "analytic_zero_probability": 0.43733338321784776,
+            "probability_absolute_error": 2.220446049250313e-16,
+            "full_operator_max_error": 5.551115123125783e-17,
+            "source_to_lowered_operator_max_error": 6.684427777288335e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.43733338321784754,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "cos",
+          "file": "circuits/phase-1-cos-k8.qasm",
+          "sha256": "6e1cdf16a069e0e02619021d8a4ac2f550faa22bd54bbf822b9209d3dc80f939",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 36,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 36,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.220353454107791,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9842915805643152,
+            "analytic_zero_probability": 0.9842915805643155,
+            "probability_absolute_error": 3.3306690738754696e-16,
+            "full_operator_max_error": 6.664589960562512e-17,
+            "source_to_lowered_operator_max_error": 2.010224687281295e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9842915805643152,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "sin",
+          "file": "circuits/phase-1-sin-k8.qasm",
+          "sha256": "d3fb401b3f8d50aec8a82afa53a1234dcc8431024379d22bd77a368fa55518ab",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 37,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 37,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.220353454107791,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.3756550564175723,
+            "analytic_zero_probability": 0.37565505641757235,
+            "probability_absolute_error": 5.551115123125783e-17,
+            "full_operator_max_error": 7.850462293418876e-17,
+            "source_to_lowered_operator_max_error": 1.4655364458042816e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.3756550564175723,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "cos",
+          "file": "circuits/phase-1-cos-k16.qasm",
+          "sha256": "f4e65dd129cccf3c3b86d6e19b8e88e8f5fe71ff7b2aab22aea2376be124681b",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 68,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 68,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.157521601035995,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9381533400219311,
+            "analytic_zero_probability": 0.9381533400219315,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 3.7859917605697454e-16,
+            "source_to_lowered_operator_max_error": 2.971459915798561e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9381533400219311,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "sin",
+          "file": "circuits/phase-1-sin-k16.qasm",
+          "sha256": "f40f557427b2470f40a2ff5dcde3ecdf25bd63d55a497831d5331bdff8bac5d4",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 69,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 69,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.157521601035995,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.2591231629491417,
+            "analytic_zero_probability": 0.2591231629491419,
+            "probability_absolute_error": 1.6653345369377348e-16,
+            "full_operator_max_error": 3.510833468576701e-16,
+            "source_to_lowered_operator_max_error": 2.3374084080959644e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.2591231629491417,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "cos",
+          "file": "circuits/phase-1-cos-k32.qasm",
+          "sha256": "c1e2ad575ff80973f07e360e67b452d60612584ff54d2f4bb2f2878dd1bc384d",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 132,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 132,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.031857894892404,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.7679133974894969,
+            "analytic_zero_probability": 0.7679133974894974,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 5.302695275805846e-16,
+            "source_to_lowered_operator_max_error": 5.264556217235939e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.7679133974894969,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "sin",
+          "file": "circuits/phase-1-sin-k32.qasm",
+          "sha256": "d688214da7f90eb9ecb04cc7c5682f4bba642dcdacb9856916fb8c3416feebed",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 133,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 133,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 6.031857894892404,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.07783603724899188,
+            "analytic_zero_probability": 0.07783603724899191,
+            "probability_absolute_error": 2.7755575615628914e-17,
+            "full_operator_max_error": 5.551115123125783e-16,
+            "source_to_lowered_operator_max_error": 4.627446325315405e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.07783603724899188,
+          "sampling_probability_clipping_absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "phase-2",
+      "nominal_phase": 0.125,
+      "actual_angle_phase_reference": 0.125,
+      "actual_angle_reference_scope": "binary64 diagnostic from stored P angles; not interval certified",
+      "experiments": [
+        {
+          "power": 1,
+          "basis": "cos",
+          "file": "circuits/phase-2-cos-k1.qasm",
+          "sha256": "a40f3efe1d7b830d89f617b222ce50c775e6a020c7cdfe6214fc7d44e303cb07",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 8,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 8,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.19634954084936207,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.8535533905932733,
+            "analytic_zero_probability": 0.8535533905932737,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 1.1102230246251565e-16,
+            "source_to_lowered_operator_max_error": 1.1102230246251565e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.8535533905932733,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 1,
+          "basis": "sin",
+          "file": "circuits/phase-2-sin-k1.qasm",
+          "sha256": "af3ccef1f55308e82fe5a8ca745c23e86e2c2b92ed70f74ce3fe0190acd4a1e9",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 9,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 9,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.19634954084936207,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.8535533905932733,
+            "analytic_zero_probability": 0.8535533905932737,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 6.206335383118183e-17,
+            "source_to_lowered_operator_max_error": 5.551115123125783e-17,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.8535533905932733,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "cos",
+          "file": "circuits/phase-2-cos-k2.qasm",
+          "sha256": "14dff81a78e58227cfd924ad6c9104a507ac6b0ecfcd3051988da7a4acbec13e",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 12,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 12,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.39269908169872414,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999998,
+            "analytic_zero_probability": 0.5,
+            "probability_absolute_error": 2.220446049250313e-16,
+            "full_operator_max_error": 7.850462293418876e-17,
+            "source_to_lowered_operator_max_error": 1.2412670766236366e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999998,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "sin",
+          "file": "circuits/phase-2-sin-k2.qasm",
+          "sha256": "553c8e2bb481c180bbd5586c833ef0e3ee98d0d0882d377f288e735c98e7b6a9",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 13,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 13,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.39269908169872414,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999993,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 6.661338147750939e-16,
+            "full_operator_max_error": 8.071853094456256e-17,
+            "source_to_lowered_operator_max_error": 1.303674869848349e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999993,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "cos",
+          "file": "circuits/phase-2-cos-k4.qasm",
+          "sha256": "4a7216334386e63074297be196167a4926006da21e4b069780580ec2a5d45748",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 20,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 20,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.7853981633974483,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 3.872928019572694e-37,
+            "analytic_zero_probability": 0.0,
+            "probability_absolute_error": 3.872928019572694e-37,
+            "full_operator_max_error": 9.29942228108682e-17,
+            "source_to_lowered_operator_max_error": 2.81284803319325e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 3.872928019572694e-37,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "sin",
+          "file": "circuits/phase-2-sin-k4.qasm",
+          "sha256": "7559a306e6cd41ef4dbfbacb5b39cbce26e736b557d56bff706768e44d37a45c",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 21,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 21,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.7853981633974483,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999998,
+            "analytic_zero_probability": 0.5000000000000001,
+            "probability_absolute_error": 3.3306690738754696e-16,
+            "full_operator_max_error": 7.850462293418876e-17,
+            "source_to_lowered_operator_max_error": 2.7755575615628914e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999998,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "cos",
+          "file": "circuits/phase-2-cos-k8.qasm",
+          "sha256": "5522d102c6e3683f4ca69c5331a918a9f5f25b80c8c64a19be7fd494c33847f7",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 36,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 36,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.5707963267948966,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999993,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 6.661338147750939e-16,
+            "full_operator_max_error": 2.2201484954719692e-16,
+            "source_to_lowered_operator_max_error": 9.992801334462378e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999993,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "sin",
+          "file": "circuits/phase-2-sin-k8.qasm",
+          "sha256": "2f001c183eeaede69f08736d8c092e02afdae7b284d784f4f5861aa7af4412f0",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 37,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 37,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.5707963267948966,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999998,
+            "analytic_zero_probability": 0.4999999999999999,
+            "probability_absolute_error": 1.1102230246251565e-16,
+            "full_operator_max_error": 1.7554167342883506e-16,
+            "source_to_lowered_operator_max_error": 7.71185559270127e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999998,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "cos",
+          "file": "circuits/phase-2-cos-k16.qasm",
+          "sha256": "577ddc215d6a8a0dcfbeb08ed8cb88df22aacbeff28a2e721004653342088f23",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 68,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 68,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.141592653589794,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999993,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 6.661338147750939e-16,
+            "full_operator_max_error": 4.843424604091097e-16,
+            "source_to_lowered_operator_max_error": 1.5291887045321753e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999993,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "sin",
+          "file": "circuits/phase-2-sin-k16.qasm",
+          "sha256": "949172dd5431dabe54672a359776cfd7cb5f726426e98343907c89e26f7c33a3",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 69,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 69,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.141592653589794,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999998,
+            "analytic_zero_probability": 0.4999999999999998,
+            "probability_absolute_error": 0.0,
+            "full_operator_max_error": 4.577566798522237e-16,
+            "source_to_lowered_operator_max_error": 1.4571016336180838e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999998,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "cos",
+          "file": "circuits/phase-2-cos-k32.qasm",
+          "sha256": "df13c442ef9b10683b892801146b3f36452b05ab3c5f9f4ccfb754e46ad7995f",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 132,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 132,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 4.440892098500626e-15,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999993,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 6.661338147750939e-16,
+            "full_operator_max_error": 7.24927664651115e-16,
+            "source_to_lowered_operator_max_error": 5.006673981860854e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999993,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "sin",
+          "file": "circuits/phase-2-sin-k32.qasm",
+          "sha256": "cdbf9176172e87b4c922da3757758fa5ae06a246e16ba247ec79ba2f45252f95",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 133,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 133,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 4.440892098500626e-15,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999998,
+            "analytic_zero_probability": 0.4999999999999995,
+            "probability_absolute_error": 2.7755575615628914e-16,
+            "full_operator_max_error": 7.301351988545592e-16,
+            "source_to_lowered_operator_max_error": 3.638839588886975e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999998,
+          "sampling_probability_clipping_absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "case_id": "phase-3",
+      "nominal_phase": 0.5,
+      "actual_angle_phase_reference": 0.5,
+      "actual_angle_reference_scope": "binary64 diagnostic from stored P angles; not interval certified",
+      "experiments": [
+        {
+          "power": 1,
+          "basis": "cos",
+          "file": "circuits/phase-3-cos-k1.qasm",
+          "sha256": "e411c033f77a3526c3455acbaf34d077a612b3f25611e8bcca5b501be81aacec",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 8,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 8,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.7853981633974483,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 4.249867503421168e-33,
+            "analytic_zero_probability": 0.0,
+            "probability_absolute_error": 4.249867503421168e-33,
+            "full_operator_max_error": 2.2371143170757382e-17,
+            "source_to_lowered_operator_max_error": 1.0592344226857937e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 4.249867503421168e-33,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 1,
+          "basis": "sin",
+          "file": "circuits/phase-3-sin-k1.qasm",
+          "sha256": "47273734190e7b96abf4183d8f0f0f150bad1501b26154254a934a07a697841e",
+          "source_gate_counts": {
+            "p": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 9,
+          "lowered_gate_counts": {
+            "rz": 3,
+            "reset": 2,
+            "h": 2,
+            "cx": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 9,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.7853981633974483,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999998,
+            "analytic_zero_probability": 0.5000000000000001,
+            "probability_absolute_error": 3.3306690738754696e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 1.1102230246251565e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999998,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "cos",
+          "file": "circuits/phase-3-cos-k2.qasm",
+          "sha256": "882601a5dce7e2add7c44b126bfd0cdfd42e09521a625868a1122ae6ce6f3b7e",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 12,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 12,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.5707963267948966,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999996,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 2.2371143170757382e-17,
+            "source_to_lowered_operator_max_error": 2.484237224946644e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999996,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 2,
+          "basis": "sin",
+          "file": "circuits/phase-3-sin-k2.qasm",
+          "sha256": "0533252dba75e39b5df9640c4b5b1e41f0984abf3676915800d3acf274f23867",
+          "source_gate_counts": {
+            "p": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 13,
+          "lowered_gate_counts": {
+            "rz": 6,
+            "cx": 4,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 13,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 1.5707963267948966,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999998,
+            "analytic_zero_probability": 0.4999999999999999,
+            "probability_absolute_error": 1.1102230246251565e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 2.7755575615628914e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999998,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "cos",
+          "file": "circuits/phase-3-cos-k4.qasm",
+          "sha256": "da47f173e47ba1b61760095a4ad545fc835bfab90fd41a8709144fd644e24b7c",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 20,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 20,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.141592653589793,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999996,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 2.2371143170757382e-17,
+            "source_to_lowered_operator_max_error": 4.2417998390139875e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999996,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 4,
+          "basis": "sin",
+          "file": "circuits/phase-3-sin-k4.qasm",
+          "sha256": "def2278e1c2d090aa5574b68b681fd2d9c9e5919279e84e34e87b64addb4a188",
+          "source_gate_counts": {
+            "p": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 21,
+          "lowered_gate_counts": {
+            "rz": 12,
+            "cx": 8,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 21,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 3.141592653589793,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999996,
+            "analytic_zero_probability": 0.4999999999999998,
+            "probability_absolute_error": 1.6653345369377348e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 4.577566798522237e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999996,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "cos",
+          "file": "circuits/phase-3-cos-k8.qasm",
+          "sha256": "0d41490abe74906ed22f359c8cb7b9a11184dc033b4308989e843e79f9b70dbf",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 36,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 36,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.0,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999996,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 2.2371143170757382e-17,
+            "source_to_lowered_operator_max_error": 8.917810906272003e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999996,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 8,
+          "basis": "sin",
+          "file": "circuits/phase-3-sin-k8.qasm",
+          "sha256": "51d94beadd65f175b160fa8f2ce3b3ff68517e584cdd5b2a377eeccdd7d411db",
+          "source_gate_counts": {
+            "p": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 37,
+          "lowered_gate_counts": {
+            "rz": 24,
+            "cx": 16,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 37,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.0,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999993,
+            "analytic_zero_probability": 0.4999999999999995,
+            "probability_absolute_error": 2.220446049250313e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 6.684427777288335e-16,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999993,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "cos",
+          "file": "circuits/phase-3-cos-k16.qasm",
+          "sha256": "f21d6f7a856ba7d124a245996faf9c16c9f0fd46df15de87e57e37e9634ad0c6",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 68,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 68,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.0,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999996,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 2.2371143170757382e-17,
+            "source_to_lowered_operator_max_error": 1.5404528957404318e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999996,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 16,
+          "basis": "sin",
+          "file": "circuits/phase-3-sin-k16.qasm",
+          "sha256": "5cd3a81364fb1c775fe2c926c7cd1db556c22c106029dd2a4b87d3cfe189eac6",
+          "source_gate_counts": {
+            "p": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 69,
+          "lowered_gate_counts": {
+            "rz": 48,
+            "cx": 32,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 69,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.0,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.49999999999999883,
+            "analytic_zero_probability": 0.499999999999999,
+            "probability_absolute_error": 1.6653345369377348e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 1.217454592664719e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.49999999999999883,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "cos",
+          "file": "circuits/phase-3-cos-k32.qasm",
+          "sha256": "cfc3dbb0272f34480243629e46a4ae7abbe8db1253c4fb12b465057520ff7b49",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 132,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 132,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.0,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.9999999999999996,
+            "analytic_zero_probability": 1.0,
+            "probability_absolute_error": 4.440892098500626e-16,
+            "full_operator_max_error": 2.2371143170757382e-17,
+            "source_to_lowered_operator_max_error": 3.5576092370525174e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.9999999999999996,
+          "sampling_probability_clipping_absolute_error": 0.0
+        },
+        {
+          "power": 32,
+          "basis": "sin",
+          "file": "circuits/phase-3-sin-k32.qasm",
+          "sha256": "5f019a65555a369b93fc89ba628ea995d5295ba9df1085421af58f311a7105bd",
+          "source_gate_counts": {
+            "p": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "source_dependency_depth": 133,
+          "lowered_gate_counts": {
+            "rz": 96,
+            "cx": 64,
+            "reset": 2,
+            "h": 2,
+            "x": 1,
+            "sdg": 1,
+            "measure": 1
+          },
+          "lowered_dependency_depth": 133,
+          "logical_qubits": 2,
+          "lowered_global_phase_radians": 0.0,
+          "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+          "check": {
+            "performed": true,
+            "zero_probability": 0.4999999999999979,
+            "analytic_zero_probability": 0.49999999999999806,
+            "probability_absolute_error": 1.6653345369377348e-16,
+            "full_operator_max_error": 0.0,
+            "source_to_lowered_operator_max_error": 2.7476618026966065e-15,
+            "certified": false
+          },
+          "sampling_zero_probability": 0.4999999999999979,
+          "sampling_probability_clipping_absolute_error": 0.0
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "case_id": "phase-0",
+      "seed": 7,
+      "stream": 0,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.3004174559438086,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": -0.2826747720364742,
+            "sin_signal": 0.9635258358662615,
+            "angle_cycles": 0.29541775141074245,
+            "lift_integer": 0,
+            "phase_estimate": 0.29541775141074245
+          },
+          {
+            "power": 2,
+            "cos_signal": -0.8601823708206687,
+            "sin_signal": -0.5379939209726443,
+            "angle_cycles": 0.5889543836666331,
+            "lift_integer": 0,
+            "phase_estimate": 0.29447719183331655
+          },
+          {
+            "power": 4,
+            "cos_signal": 0.2826747720364742,
+            "sin_signal": 0.9513677811550152,
+            "angle_cycles": 0.20403338973948748,
+            "lift_integer": 1,
+            "phase_estimate": 0.30100834743487187
+          },
+          {
+            "power": 8,
+            "cos_signal": -0.7933130699088146,
+            "sin_signal": 0.6170212765957446,
+            "angle_cycles": 0.3947917120802828,
+            "lift_integer": 2,
+            "phase_estimate": 0.29934896401003536
+          },
+          {
+            "power": 16,
+            "cos_signal": 0.34954407294832834,
+            "sin_signal": -0.9513677811550152,
+            "angle_cycles": 0.8060387359682136,
+            "lift_integer": 4,
+            "phase_estimate": 0.30037742099801334
+          },
+          {
+            "power": 32,
+            "cos_signal": -0.756838905775076,
+            "sin_signal": -0.6534954407294833,
+            "angle_cycles": 0.6133585902018741,
+            "lift_integer": 9,
+            "phase_estimate": 0.3004174559438086
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 118,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 323,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 23,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 76,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 211,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 321,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 34,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 266,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 222,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 8,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 40,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 57,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.00041745594380859785,
+      "circular_error_vs_nominal_phase": 0.00041745594380859785,
+      "classical_sampling_and_recovery_seconds": 0.0006329589959932491
+    },
+    {
+      "case_id": "phase-0",
+      "seed": 19,
+      "stream": 0,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.299777766424113,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": -0.32522796352583583,
+            "sin_signal": 0.9635258358662615,
+            "angle_cycles": 0.30180990831953614,
+            "lift_integer": 0,
+            "phase_estimate": 0.30180990831953614
+          },
+          {
+            "power": 2,
+            "cos_signal": -0.817629179331307,
+            "sin_signal": -0.6413373860182371,
+            "angle_cycles": 0.6058615626216994,
+            "lift_integer": 0,
+            "phase_estimate": 0.3029307813108497
+          },
+          {
+            "power": 4,
+            "cos_signal": 0.4042553191489362,
+            "sin_signal": 0.9574468085106382,
+            "angle_cycles": 0.18641513428819909,
+            "lift_integer": 1,
+            "phase_estimate": 0.29660378357204975
+          },
+          {
+            "power": 8,
+            "cos_signal": -0.8419452887537994,
+            "sin_signal": 0.5866261398176291,
+            "angle_cycles": 0.4031475275401939,
+            "lift_integer": 2,
+            "phase_estimate": 0.30039344094252424
+          },
+          {
+            "power": 16,
+            "cos_signal": 0.31914893617021267,
+            "sin_signal": -0.9574468085106383,
+            "angle_cycles": 0.8012081911747834,
+            "lift_integer": 4,
+            "phase_estimate": 0.30007551194842397
+          },
+          {
+            "power": 32,
+            "cos_signal": -0.8054711246200608,
+            "sin_signal": -0.5319148936170213,
+            "angle_cycles": 0.5928885255716172,
+            "lift_integer": 9,
+            "phase_estimate": 0.299777766424113
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 111,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 323,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 30,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 59,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 231,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 322,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 26,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 261,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 217,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 7,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 32,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 77,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.00022223357588696535,
+      "circular_error_vs_nominal_phase": 0.00022223357588696535,
+      "classical_sampling_and_recovery_seconds": 0.0005237090008449741
+    },
+    {
+      "case_id": "phase-0",
+      "seed": 41,
+      "stream": 0,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.2999839112841871,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": -0.2036474164133738,
+            "sin_signal": 0.9696048632218845,
+            "angle_cycles": 0.28294860931476784,
+            "lift_integer": 0,
+            "phase_estimate": 0.28294860931476784
+          },
+          {
+            "power": 2,
+            "cos_signal": -0.8601823708206687,
+            "sin_signal": -0.574468085106383,
+            "angle_cycles": 0.5937132315068474,
+            "lift_integer": 0,
+            "phase_estimate": 0.2968566157534237
+          },
+          {
+            "power": 4,
+            "cos_signal": 0.3799392097264438,
+            "sin_signal": 0.9452887537993921,
+            "angle_cycles": 0.1891760059970297,
+            "lift_integer": 1,
+            "phase_estimate": 0.29729400149925744
+          },
+          {
+            "power": 8,
+            "cos_signal": -0.7872340425531915,
+            "sin_signal": 0.5501519756838906,
+            "angle_cycles": 0.4029237356307691,
+            "lift_integer": 2,
+            "phase_estimate": 0.30036546695384614
+          },
+          {
+            "power": 16,
+            "cos_signal": 0.3130699088145896,
+            "sin_signal": -0.939209726443769,
+            "angle_cycles": 0.8012081911747834,
+            "lift_integer": 4,
+            "phase_estimate": 0.30007551194842397
+          },
+          {
+            "power": 32,
+            "cos_signal": -0.8297872340425532,
+            "sin_signal": -0.5987841945288754,
+            "angle_cycles": 0.5994851610939873,
+            "lift_integer": 9,
+            "phase_estimate": 0.2999839112841871
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 131,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 324,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 23,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 70,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 227,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 320,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 35,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 255,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 216,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 10,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 28,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 66,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 1.608871581287863e-05,
+      "circular_error_vs_nominal_phase": 1.608871581287863e-05,
+      "classical_sampling_and_recovery_seconds": 0.0004912079966743477
+    },
+    {
+      "case_id": "phase-1",
+      "seed": 7,
+      "stream": 1,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.9949121278937758,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": 1.0,
+            "sin_signal": -0.033434650455927084,
+            "angle_cycles": 0.9946806916276595,
+            "lift_integer": 0,
+            "phase_estimate": 0.9946806916276595
+          },
+          {
+            "power": 2,
+            "cos_signal": 1.0,
+            "sin_signal": -0.03951367781155013,
+            "angle_cycles": 0.993714472757946,
+            "lift_integer": 1,
+            "phase_estimate": 0.9968572363789729
+          },
+          {
+            "power": 4,
+            "cos_signal": 0.9696048632218845,
+            "sin_signal": -0.1063829787234043,
+            "angle_cycles": 0.9826074269324938,
+            "lift_integer": 3,
+            "phase_estimate": 0.9956518567331234
+          },
+          {
+            "power": 8,
+            "cos_signal": 0.9696048632218845,
+            "sin_signal": -0.21580547112462,
+            "angle_cycles": 0.9651449336162898,
+            "lift_integer": 7,
+            "phase_estimate": 0.9956431167020362
+          },
+          {
+            "power": 16,
+            "cos_signal": 0.8541033434650456,
+            "sin_signal": -0.574468085106383,
+            "angle_cycles": 0.9057647425937854,
+            "lift_integer": 15,
+            "phase_estimate": 0.9941102964121116
+          },
+          {
+            "power": 32,
+            "cos_signal": 0.5136778115501519,
+            "sin_signal": -0.8419452887537994,
+            "angle_cycles": 0.8371880926008265,
+            "lift_integer": 31,
+            "phase_estimate": 0.9949121278937758
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 159,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 158,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 324,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 147,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 324,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 129,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 305,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 70,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 249,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 26,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 8.787210622418495e-05,
+      "circular_error_vs_nominal_phase": 8.787210622418495e-05,
+      "classical_sampling_and_recovery_seconds": 0.000509333003719803
+    },
+    {
+      "case_id": "phase-1",
+      "seed": 19,
+      "stream": 1,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.9947713999001029,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": 1.0,
+            "sin_signal": -0.07598784194528874,
+            "angle_cycles": 0.9879293562521414,
+            "lift_integer": 0,
+            "phase_estimate": 0.9879293562521414
+          },
+          {
+            "power": 2,
+            "cos_signal": 1.0,
+            "sin_signal": -0.03951367781155013,
+            "angle_cycles": 0.993714472757946,
+            "lift_integer": 1,
+            "phase_estimate": 0.9968572363789729
+          },
+          {
+            "power": 4,
+            "cos_signal": 0.993920972644377,
+            "sin_signal": -0.13677811550151975,
+            "angle_cycles": 0.9782346524819763,
+            "lift_integer": 3,
+            "phase_estimate": 0.9945586631204941
+          },
+          {
+            "power": 8,
+            "cos_signal": 0.9878419452887539,
+            "sin_signal": -0.3009118541033434,
+            "angle_cycles": 0.9529401600198985,
+            "lift_integer": 7,
+            "phase_estimate": 0.9941175200024873
+          },
+          {
+            "power": 16,
+            "cos_signal": 0.8601823708206686,
+            "sin_signal": -0.45896656534954405,
+            "angle_cycles": 0.9219916829471662,
+            "lift_integer": 15,
+            "phase_estimate": 0.9951244801841979
+          },
+          {
+            "power": 32,
+            "cos_signal": 0.49544072948328277,
+            "sin_signal": -0.8662613981762918,
+            "angle_cycles": 0.8326847968032923,
+            "lift_integer": 31,
+            "phase_estimate": 0.9947713999001029
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 152,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 158,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 328,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 142,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 327,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 115,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 306,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 89,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 246,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 22,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.00022860009989711383,
+      "circular_error_vs_nominal_phase": 0.00022860009989711383,
+      "classical_sampling_and_recovery_seconds": 0.0004678750046878122
+    },
+    {
+      "case_id": "phase-1",
+      "seed": 41,
+      "stream": 1,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.9951576130323296,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": 1.0,
+            "sin_signal": -0.07598784194528874,
+            "angle_cycles": 0.9879293562521414,
+            "lift_integer": 0,
+            "phase_estimate": 0.9879293562521414
+          },
+          {
+            "power": 2,
+            "cos_signal": 1.0,
+            "sin_signal": -0.06382978723404253,
+            "angle_cycles": 0.9898549367213713,
+            "lift_integer": 1,
+            "phase_estimate": 0.9949274683606857
+          },
+          {
+            "power": 4,
+            "cos_signal": 0.993920972644377,
+            "sin_signal": -0.1550151975683891,
+            "angle_cycles": 0.9753760461433033,
+            "lift_integer": 3,
+            "phase_estimate": 0.9938440115358258
+          },
+          {
+            "power": 8,
+            "cos_signal": 0.9878419452887539,
+            "sin_signal": -0.3799392097264438,
+            "angle_cycles": 0.9415624693738283,
+            "lift_integer": 7,
+            "phase_estimate": 0.9926953086717285
+          },
+          {
+            "power": 16,
+            "cos_signal": 0.8601823708206686,
+            "sin_signal": -0.45896656534954405,
+            "angle_cycles": 0.9219916829471662,
+            "lift_integer": 15,
+            "phase_estimate": 0.9951244801841979
+          },
+          {
+            "power": 32,
+            "cos_signal": 0.56838905775076,
+            "sin_signal": -0.8358662613981763,
+            "angle_cycles": 0.8450436170345483,
+            "lift_integer": 31,
+            "phase_estimate": 0.9951576130323296
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 152,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 154,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 328,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 139,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 327,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 102,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 306,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 89,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 258,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 27,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.00015761303232963986,
+      "circular_error_vs_nominal_phase": 0.00015761303232963986,
+      "classical_sampling_and_recovery_seconds": 0.00044741699821315706
+    },
+    {
+      "case_id": "phase-2",
+      "seed": 7,
+      "stream": 2,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.12534713314617593,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": 0.696048632218845,
+            "sin_signal": 0.6352583586626139,
+            "angle_cycles": 0.11773769556501264,
+            "lift_integer": 0,
+            "phase_estimate": 0.11773769556501264
+          },
+          {
+            "power": 2,
+            "cos_signal": 0.00911854103343468,
+            "sin_signal": 1.0,
+            "angle_cycles": 0.24854877934178127,
+            "lift_integer": 0,
+            "phase_estimate": 0.12427438967089063
+          },
+          {
+            "power": 4,
+            "cos_signal": -1.0,
+            "sin_signal": -0.07598784194528874,
+            "angle_cycles": 0.5120706437478586,
+            "lift_integer": 0,
+            "phase_estimate": 0.12801766093696465
+          },
+          {
+            "power": 8,
+            "cos_signal": 1.0,
+            "sin_signal": -0.027355623100303927,
+            "angle_cycles": 0.9956473028970874,
+            "lift_integer": 0,
+            "phase_estimate": 0.12445591286213592
+          },
+          {
+            "power": 16,
+            "cos_signal": 1.0,
+            "sin_signal": -0.0820668693009119,
+            "angle_cycles": 0.9869678567615923,
+            "lift_integer": 1,
+            "phase_estimate": 0.12418549104759952
+          },
+          {
+            "power": 32,
+            "cos_signal": 1.0,
+            "sin_signal": 0.06990881458966558,
+            "angle_cycles": 0.011108260677630025,
+            "lift_integer": 4,
+            "phase_estimate": 0.12534713314617593
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 279,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 269,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 166,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 0,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 152,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 160,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 151,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 176,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.0003471331461759597,
+      "circular_error_vs_nominal_phase": 0.0003471331461759597,
+      "classical_sampling_and_recovery_seconds": 0.0005083750002086163
+    },
+    {
+      "case_id": "phase-2",
+      "seed": 19,
+      "stream": 2,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.12525676575773084,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": 0.6778115501519757,
+            "sin_signal": 0.7082066869300911,
+            "angle_cycles": 0.12848968063598978,
+            "lift_integer": 0,
+            "phase_estimate": 0.12848968063598978
+          },
+          {
+            "power": 2,
+            "cos_signal": 0.00911854103343468,
+            "sin_signal": 1.0,
+            "angle_cycles": 0.24854877934178127,
+            "lift_integer": 0,
+            "phase_estimate": 0.12427438967089063
+          },
+          {
+            "power": 4,
+            "cos_signal": -1.0,
+            "sin_signal": 0.003039513677811634,
+            "angle_cycles": 0.49951624786331505,
+            "lift_integer": 0,
+            "phase_estimate": 0.12487906196582876
+          },
+          {
+            "power": 8,
+            "cos_signal": 1.0,
+            "sin_signal": 0.02735562310030404,
+            "angle_cycles": 0.004352697102912646,
+            "lift_integer": 1,
+            "phase_estimate": 0.12554408713786408
+          },
+          {
+            "power": 16,
+            "cos_signal": 1.0,
+            "sin_signal": -0.00911854103343468,
+            "angle_cycles": 0.9985487793417812,
+            "lift_integer": 1,
+            "phase_estimate": 0.12490929870886133
+          },
+          {
+            "power": 32,
+            "cos_signal": 1.0,
+            "sin_signal": 0.05167173252279644,
+            "angle_cycles": 0.008216504247387327,
+            "lift_integer": 4,
+            "phase_estimate": 0.12525676575773084
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 276,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 281,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 166,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 0,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 165,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 169,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 163,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 173,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.00025676575773081467,
+      "circular_error_vs_nominal_phase": 0.00025676575773081467,
+      "classical_sampling_and_recovery_seconds": 0.0004551670062937774
+    },
+    {
+      "case_id": "phase-2",
+      "seed": 41,
+      "stream": 2,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.12531703322745716,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": 0.7325227963525835,
+            "sin_signal": 0.696048632218845,
+            "angle_cycles": 0.12093735216917266,
+            "lift_integer": 0,
+            "phase_estimate": 0.12093735216917266
+          },
+          {
+            "power": 2,
+            "cos_signal": -0.06990881458966569,
+            "sin_signal": 1.0,
+            "angle_cycles": 0.26110826067763004,
+            "lift_integer": 0,
+            "phase_estimate": 0.13055413033881502
+          },
+          {
+            "power": 4,
+            "cos_signal": -1.0,
+            "sin_signal": 0.00911854103343468,
+            "angle_cycles": 0.49854877934178127,
+            "lift_integer": 0,
+            "phase_estimate": 0.12463719483544532
+          },
+          {
+            "power": 8,
+            "cos_signal": 1.0,
+            "sin_signal": -0.1063829787234043,
+            "angle_cycles": 0.9831320655355341,
+            "lift_integer": 0,
+            "phase_estimate": 0.12289150819194176
+          },
+          {
+            "power": 16,
+            "cos_signal": 1.0,
+            "sin_signal": 0.033434650455927084,
+            "angle_cycles": 0.005319308372340486,
+            "lift_integer": 2,
+            "phase_estimate": 0.1253324567732713
+          },
+          {
+            "power": 32,
+            "cos_signal": 1.0,
+            "sin_signal": 0.06382978723404253,
+            "angle_cycles": 0.010145063278628708,
+            "lift_integer": 4,
+            "phase_estimate": 0.12531703322745716
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 285,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 279,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 153,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 0,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 166,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 147,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 170,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 175,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.0003170332274571308,
+      "circular_error_vs_nominal_phase": 0.0003170332274571308,
+      "classical_sampling_and_recovery_seconds": 0.0004387499939184636
+    },
+    {
+      "case_id": "phase-3",
+      "seed": 7,
+      "stream": 3,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.49968296677254287,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": -1.0,
+            "sin_signal": 0.0820668693009119,
+            "angle_cycles": 0.48696785676159227,
+            "lift_integer": 0,
+            "phase_estimate": 0.48696785676159227
+          },
+          {
+            "power": 2,
+            "cos_signal": 1.0,
+            "sin_signal": -0.021276595744680882,
+            "angle_cycles": 0.9966142354579686,
+            "lift_integer": 0,
+            "phase_estimate": 0.4983071177289843
+          },
+          {
+            "power": 4,
+            "cos_signal": 1.0,
+            "sin_signal": -0.027355623100303927,
+            "angle_cycles": 0.9956473028970874,
+            "lift_integer": 1,
+            "phase_estimate": 0.49891182572427184
+          },
+          {
+            "power": 8,
+            "cos_signal": 1.0,
+            "sin_signal": 0.033434650455927084,
+            "angle_cycles": 0.005319308372340486,
+            "lift_integer": 4,
+            "phase_estimate": 0.5006649135465425
+          },
+          {
+            "power": 16,
+            "cos_signal": 1.0,
+            "sin_signal": -0.06990881458966569,
+            "angle_cycles": 0.98889173932237,
+            "lift_integer": 7,
+            "phase_estimate": 0.49930573370764814
+          },
+          {
+            "power": 32,
+            "cos_signal": 1.0,
+            "sin_signal": -0.06382978723404253,
+            "angle_cycles": 0.9898549367213713,
+            "lift_integer": 15,
+            "phase_estimate": 0.49968296677254287
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 0,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 178,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 161,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 160,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 170,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 153,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 154,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.0003170332274571308,
+      "circular_error_vs_nominal_phase": 0.0003170332274571308,
+      "classical_sampling_and_recovery_seconds": 0.0005051249972893856
+    },
+    {
+      "case_id": "phase-3",
+      "seed": 19,
+      "stream": 3,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.5001964227263141,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": -1.0,
+            "sin_signal": 0.02735562310030404,
+            "angle_cycles": 0.49564730289708736,
+            "lift_integer": 0,
+            "phase_estimate": 0.49564730289708736
+          },
+          {
+            "power": 2,
+            "cos_signal": 1.0,
+            "sin_signal": -0.027355623100303927,
+            "angle_cycles": 0.9956473028970874,
+            "lift_integer": 0,
+            "phase_estimate": 0.4978236514485437
+          },
+          {
+            "power": 4,
+            "cos_signal": 1.0,
+            "sin_signal": 0.00911854103343468,
+            "angle_cycles": 0.001451220658218743,
+            "lift_integer": 2,
+            "phase_estimate": 0.5003628051645547
+          },
+          {
+            "power": 8,
+            "cos_signal": 1.0,
+            "sin_signal": 0.015197568389057725,
+            "angle_cycles": 0.002418581940095462,
+            "lift_integer": 4,
+            "phase_estimate": 0.500302322742512
+          },
+          {
+            "power": 16,
+            "cos_signal": 1.0,
+            "sin_signal": 0.033434650455927084,
+            "angle_cycles": 0.005319308372340486,
+            "lift_integer": 8,
+            "phase_estimate": 0.5003324567732713
+          },
+          {
+            "power": 32,
+            "cos_signal": 1.0,
+            "sin_signal": 0.03951367781155013,
+            "angle_cycles": 0.006285527242054053,
+            "lift_integer": 16,
+            "phase_estimate": 0.5001964227263141
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 0,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 169,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 160,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 166,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 167,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 170,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 171,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.00019642272631414937,
+      "circular_error_vs_nominal_phase": 0.00019642272631414937,
+      "classical_sampling_and_recovery_seconds": 0.0004659999976865947
+    },
+    {
+      "case_id": "phase-3",
+      "seed": 41,
+      "stream": 3,
+      "seed_scope": "SeedSequence([seed, phase_index]); separate predefined ideal binomial-count streams",
+      "result": {
+        "status": "recovered_numerically",
+        "phase_estimate": 0.5001662283866356,
+        "ideal_phase_radius_exact": "1/256",
+        "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+        "confidence_scope": "exact eigenstate, exact controlled powers, IID fresh ideal trials, exact-real angle/lift inference",
+        "numerical_inference_certified": false,
+        "physical_confidence_certified": false,
+        "trace": [
+          {
+            "power": 1,
+            "cos_signal": -1.0,
+            "sin_signal": 0.02127659574468077,
+            "angle_cycles": 0.4966142354579686,
+            "lift_integer": 0,
+            "phase_estimate": 0.4966142354579686
+          },
+          {
+            "power": 2,
+            "cos_signal": 1.0,
+            "sin_signal": 0.003039513677811634,
+            "angle_cycles": 0.00048375213668499037,
+            "lift_integer": 1,
+            "phase_estimate": 0.5002418760683425
+          },
+          {
+            "power": 4,
+            "cos_signal": 1.0,
+            "sin_signal": -0.003039513677811523,
+            "angle_cycles": 0.999516247863315,
+            "lift_integer": 1,
+            "phase_estimate": 0.49987906196582876
+          },
+          {
+            "power": 8,
+            "cos_signal": 1.0,
+            "sin_signal": 0.11246200607902734,
+            "angle_cycles": 0.017823991768861555,
+            "lift_integer": 4,
+            "phase_estimate": 0.5022279989711077
+          },
+          {
+            "power": 16,
+            "cos_signal": 1.0,
+            "sin_signal": 0.06382978723404253,
+            "angle_cycles": 0.010145063278628708,
+            "lift_integer": 8,
+            "phase_estimate": 0.5006340664549143
+          },
+          {
+            "power": 32,
+            "cos_signal": 1.0,
+            "sin_signal": 0.033434650455927084,
+            "angle_cycles": 0.005319308372340486,
+            "lift_integer": 16,
+            "phase_estimate": 0.5001662283866356
+          }
+        ],
+        "counts": [
+          {
+            "power": 1,
+            "basis": "cos",
+            "zeros": 0,
+            "shots": 329
+          },
+          {
+            "power": 1,
+            "basis": "sin",
+            "zeros": 168,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 2,
+            "basis": "sin",
+            "zeros": 165,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 4,
+            "basis": "sin",
+            "zeros": 164,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 8,
+            "basis": "sin",
+            "zeros": 183,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 16,
+            "basis": "sin",
+            "zeros": 175,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "cos",
+            "zeros": 329,
+            "shots": 329
+          },
+          {
+            "power": 32,
+            "basis": "sin",
+            "zeros": 170,
+            "shots": 329
+          }
+        ]
+      },
+      "circular_error_vs_actual_angle_reference": 0.0001662283866356029,
+      "circular_error_vs_nominal_phase": 0.0001662283866356029,
+      "classical_sampling_and_recovery_seconds": 0.0004452919965842739
+    }
+  ],
+  "common_per_output_ledger": {
+    "target_qubits": 1,
+    "logical_qubits": 2,
+    "levels": 6,
+    "shots_per_fringe": 329,
+    "distinct_experiment_circuits": 12,
+    "complete_fresh_preparations": 3948,
+    "maximum_controlled_U_power": 32,
+    "shot_weighted_controlled_U_calls": 41454,
+    "source_gate_counts_all_trials": {
+      "p": 124362,
+      "cx": 82908,
+      "h": 7896,
+      "x": 3948,
+      "sdg": 1974,
+      "reset": 7896,
+      "measure": 3948
+    },
+    "ideal_phase_radius_exact": "1/256",
+    "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+    "controlled_power_scope": "literal repeated controlled product-P calls; no analytic power shortcut",
+    "interrogation_time_scope": "dimensionless base-U calls; not physical wall time",
+    "initialization_scope": "actual ideal resets then n X gates for every fresh measured trial",
+    "physical_estimate_performed": false,
+    "synthesis_performed": false,
+    "exclusions": [
+      "physical zero initialization/reset error and time",
+      "rotation synthesis and hardware faults",
+      "routing/factory/controller schedules",
+      "classical compilation/communication latency"
+    ],
+    "reference_scope": "commuting product phase gates on |1>^n are classically easy; no application advantage"
+  },
+  "whole_study_modeled_workload": {
+    "outputs": 12,
+    "complete_fresh_preparations": 47376,
+    "shot_weighted_controlled_U_calls": 497448,
+    "source_gate_counts": {
+      "p": 1492344,
+      "cx": 994896,
+      "h": 94752,
+      "x": 47376,
+      "sdg": 23688,
+      "reset": 94752,
+      "measure": 47376
+    },
+    "workload_status": "sampled ideal counts"
+  },
+  "physical_estimate_performed": false,
+  "synthesis_performed": false,
+  "observed_all_prescribed_runs_within_ideal_radius": true,
+  "larger_materialized_example": {
+    "file": "circuits/large-n8-sin-k32.qasm",
+    "sha256": "2291803a2fb5aaabb27276db2e72e3041cd9a7c387fb9fe415ddc1cc1dc901ac",
+    "source_gate_counts": {
+      "p": 768,
+      "cx": 512,
+      "reset": 9,
+      "x": 8,
+      "h": 2,
+      "sdg": 1,
+      "measure": 1
+    },
+    "source_dependency_depth": 1029,
+    "lowered_gate_counts": {
+      "rz": 768,
+      "cx": 512,
+      "reset": 9,
+      "x": 8,
+      "h": 2,
+      "sdg": 1,
+      "measure": 1
+    },
+    "lowered_dependency_depth": 1029,
+    "logical_qubits": 9,
+    "lowered_global_phase_radians": 2.513274122871846,
+    "export_scope": "fresh-reset measured trial; global phase omitted by QASM does not change readout",
+    "circuit_materialized": true,
+    "simulation_performed": false,
+    "reason": "outside separate three-data-wire dense cap"
+  },
+  "cpu_wall_seconds": 0.6127498339992599,
+  "cpu_timing_scope": "function entry through circuit checks, samples, plots and scaling; excludes final record serialization/publication copy"
+}

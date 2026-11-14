@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "recorded_before_new_searches": true,
+  "recorded_at_utc": "2026-11-12T13:55:37.750402+00:00",
+  "previous_query_limit": 64,
+  "new_query_limit": 96,
+  "planned_physical_estimator_searches": 85,
+  "previous_physical_estimator_searches": 0,
+  "reason": "User-authorized computation-only resource-search cap amendment to complete the existing whole85-query plan",
+  "cases_seeds_targets_shots_profiles_error_allowances_changed": false,
+  "old_manifest_sha256": "0be61f0554ba2edabf24fe71a9a64f87cf718dd0d5f1487b5598ab09950e70f7",
+  "archive_inventory_sha256": "e654aceb17c73bd1de9619dada185ca3e94f8447329f54ca9e30eb1377ded7c5",
+  "input_sha256": {
+    "runs": "3eba36c699b660710fcafd957f2426ec8ad8c95bb302b7e91e9af0a7e6da5c36",
+    "resources": "2f103f6ae5cfe6cb7916c919f88898500dab04155e101090c57d68ed810331c5",
+    "circuit-manifest": "2a7a2c437dd88562c619a5476cd5bf382352ddb455c07c029346e9f044eb5ff9"
+  },
+  "recorded_implementation_sha256": "b959c0852ddddcdba4de20dddec2df09bdcd14dae2bd2ef277fde032eab0f392",
+  "physical_allowance": 0.001,
+  "synthesis_model_scalar_per_execution": 1e-05,
+  "new_resource_generator_sha256": "431c21d0ca86d1b2c638b3eec3d06af905108b3b76913243264c0e3e97bcd241",
+  "retained_audit_relative_directory": "quality-resources-cap64"
+}

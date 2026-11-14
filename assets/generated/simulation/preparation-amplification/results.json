@@ -1,0 +1,1014 @@
+{
+  "status": "checked known-input thermal preparation amplification",
+  "validation_performed": true,
+  "default_case_id": "beta-1p25-round-1",
+  "default_validation": {
+    "beta": 1.25,
+    "degree": 6,
+    "rounds": 1,
+    "n_system": 1,
+    "n_reference": 1,
+    "n_index": 2,
+    "total_qubits": 4,
+    "baseline_acceptance_probability": 0.468590238737142,
+    "signed_amplification_factor": 1.1256390450514322,
+    "expected_global_sign": 1,
+    "model_success_probability_from_actual_baseline_p": 0.593733475378643,
+    "actual_acceptance_probability": 0.593733475378641,
+    "raw_signed_accepted_vector_error": 1.2803144976877373e-15,
+    "baseline_gibbs_trace_distance": 3.933637618545911e-07,
+    "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+    "conditional_state_defined": true,
+    "source_forward_calls": 2,
+    "source_inverse_calls": 1,
+    "total_source_calls": 3,
+    "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+    "acceptance_certified": false,
+    "phase_invariant_purification_error": 4.488303147857592e-17,
+    "signed_normalized_purification_error": 1.4137341307932963e-16,
+    "reduced_state_trace_distance_from_baseline": 2.801422213870023e-17,
+    "reduced_state_trace_distance_from_polynomial": 9.317247133152639e-17,
+    "gibbs_trace_distance": 3.933637618699871e-07,
+    "actual_energy": -0.5170159808300967,
+    "exact_gibbs_energy": -0.517016548147382,
+    "energy_error": 5.673172852604935e-07,
+    "actual_density_real": [
+      [
+        0.20172154952109803,
+        -0.1988523003192679
+      ],
+      [
+        -0.1988523003192679,
+        0.7982784504789019
+      ]
+    ],
+    "actual_density_imag": [
+      [
+        0.0,
+        -3.797981606267656e-18
+      ],
+      [
+        3.797981606267656e-18,
+        0.0
+      ]
+    ],
+    "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+  },
+  "instance": {
+    "Hamiltonian": "H/E0=z Z+x X",
+    "E0": 1,
+    "k_B": 1,
+    "z": 0.6,
+    "x": 0.4,
+    "beta": 1.25,
+    "degree": 6,
+    "known_input": "all wires zero; Bell purification prepared by actual H/CX",
+    "selected_default_round": 1
+  },
+  "cases": [
+    {
+      "case_id": "beta-1p25-round-0",
+      "beta": 1.25,
+      "degree": 6,
+      "rounds": 0,
+      "validation": {
+        "beta": 1.25,
+        "degree": 6,
+        "rounds": 0,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.468590238737142,
+        "signed_amplification_factor": 1.0,
+        "expected_global_sign": 1,
+        "model_success_probability_from_actual_baseline_p": 0.468590238737142,
+        "actual_acceptance_probability": 0.468590238737142,
+        "raw_signed_accepted_vector_error": 0.0,
+        "baseline_gibbs_trace_distance": 3.933637618545911e-07,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 1,
+        "source_inverse_calls": 0,
+        "total_source_calls": 1,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 0.0,
+        "signed_normalized_purification_error": 0.0,
+        "reduced_state_trace_distance_from_baseline": 0.0,
+        "reduced_state_trace_distance_from_polynomial": 6.938893903907228e-17,
+        "gibbs_trace_distance": 3.933637618545911e-07,
+        "actual_energy": -0.5170159808300967,
+        "exact_gibbs_energy": -0.517016548147382,
+        "energy_error": 5.673172852604935e-07,
+        "actual_density_real": [
+          [
+            0.20172154952109803,
+            -0.19885230031926793
+          ],
+          [
+            -0.19885230031926793,
+            0.7982784504789019
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 4.738896508609104e-16,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 56,
+      "coherent_dependency_depth": 43,
+      "exports": {
+        "coherent": {
+          "file": "beta-1p25-round-0-coherent.qasm",
+          "sha256": "b30704341ea2c4d5f25c4b692b12bca3bf97947c388ac81023d507da2e44b448",
+          "compiled_global_phase_radians": 0.7853981633974483,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-1p25-round-0-trial-X.qasm",
+          "sha256": "b618afab85fc319210b8d1f4fd17916816de77e565527d3ede0dfcb6c0534d09",
+          "compiled_global_phase_radians": 0.39269908169872414,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-1p25-round-0-trial-Z.qasm",
+          "sha256": "22a75480bda887c4dea59f9ca06d6bc7b05875834a2b4c0a2963e103367104ac",
+          "compiled_global_phase_radians": 0.7853981633974483,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-1p25-round-1",
+      "beta": 1.25,
+      "degree": 6,
+      "rounds": 1,
+      "validation": {
+        "beta": 1.25,
+        "degree": 6,
+        "rounds": 1,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.468590238737142,
+        "signed_amplification_factor": 1.1256390450514322,
+        "expected_global_sign": 1,
+        "model_success_probability_from_actual_baseline_p": 0.593733475378643,
+        "actual_acceptance_probability": 0.593733475378641,
+        "raw_signed_accepted_vector_error": 1.2803144976877373e-15,
+        "baseline_gibbs_trace_distance": 3.933637618545911e-07,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 2,
+        "source_inverse_calls": 1,
+        "total_source_calls": 3,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 4.488303147857592e-17,
+        "signed_normalized_purification_error": 1.4137341307932963e-16,
+        "reduced_state_trace_distance_from_baseline": 2.801422213870023e-17,
+        "reduced_state_trace_distance_from_polynomial": 9.317247133152639e-17,
+        "gibbs_trace_distance": 3.933637618699871e-07,
+        "actual_energy": -0.5170159808300967,
+        "exact_gibbs_energy": -0.517016548147382,
+        "energy_error": 5.673172852604935e-07,
+        "actual_density_real": [
+          [
+            0.20172154952109803,
+            -0.1988523003192679
+          ],
+          [
+            -0.1988523003192679,
+            0.7982784504789019
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            -3.797981606267656e-18
+          ],
+          [
+            3.797981606267656e-18,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 1.313763957347152e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 202,
+      "coherent_dependency_depth": 150,
+      "exports": {
+        "coherent": {
+          "file": "beta-1p25-round-1-coherent.qasm",
+          "sha256": "ceda95e7bdc5aae561a15b3f73293535e51d0a09c47ffbd346d1ed382757ffea",
+          "compiled_global_phase_radians": 5.301437602932777,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-1p25-round-1-trial-X.qasm",
+          "sha256": "58b9be253e4b853fdf9442d220988a571a001181bd765ae41e0c9c0f52b94930",
+          "compiled_global_phase_radians": 4.908738521234053,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-1p25-round-1-trial-Z.qasm",
+          "sha256": "949f386e700ad28d0cfa0b0d78c393e3007b4580fe218edf34360dd41fe0860c",
+          "compiled_global_phase_radians": 5.301437602932777,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-1p25-round-2",
+      "beta": 1.25,
+      "degree": 6,
+      "rounds": 2,
+      "validation": {
+        "beta": 1.25,
+        "degree": 6,
+        "rounds": 2,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.468590238737142,
+        "signed_amplification_factor": -0.8585757853071321,
+        "expected_global_sign": -1,
+        "model_success_probability_from_actual_baseline_p": 0.34542240931550555,
+        "actual_acceptance_probability": 0.34542240931550505,
+        "raw_signed_accepted_vector_error": 4.655986795055661e-16,
+        "baseline_gibbs_trace_distance": 3.933637618545911e-07,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 3,
+        "source_inverse_calls": 2,
+        "total_source_calls": 5,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 4.656793017645665e-16,
+        "signed_normalized_purification_error": 4.991962429066161e-16,
+        "reduced_state_trace_distance_from_baseline": 3.7753601100576536e-16,
+        "reduced_state_trace_distance_from_polynomial": 3.240027865475763e-16,
+        "gibbs_trace_distance": 3.9336376149278456e-07,
+        "actual_energy": -0.5170159808300971,
+        "exact_gibbs_energy": -0.517016548147382,
+        "energy_error": 5.673172848164043e-07,
+        "actual_density_real": [
+          [
+            0.20172154952109775,
+            -0.19885230031926804
+          ],
+          [
+            -0.19885230031926804,
+            0.7982784504789023
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            -3.8240974739069665e-18
+          ],
+          [
+            3.8240974739069665e-18,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 1.4109995900009617e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 348,
+      "coherent_dependency_depth": 257,
+      "exports": {
+        "coherent": {
+          "file": "beta-1p25-round-2-coherent.qasm",
+          "sha256": "65cbc212b5a488b5b210fb22bc1221be431307bf4a6dff21c2e80725c635ed5d",
+          "compiled_global_phase_radians": 3.534291735288517,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-1p25-round-2-trial-X.qasm",
+          "sha256": "ba985ddbbb2b86fa24a566213856150e5f7afd2715ffbfc35c6a62a8e65434d9",
+          "compiled_global_phase_radians": 3.1415926535897927,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-1p25-round-2-trial-Z.qasm",
+          "sha256": "43ff53109e8bf286de0ac97d321c067055de4595442625ee5be379a4103cb960",
+          "compiled_global_phase_radians": 3.534291735288517,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-1p25-round-3",
+      "beta": 1.25,
+      "degree": 6,
+      "rounds": 3,
+      "validation": {
+        "beta": 1.25,
+        "degree": 6,
+        "rounds": 3,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.468590238737142,
+        "signed_amplification_factor": -1.2335096868217037,
+        "expected_global_sign": -1,
+        "model_success_probability_from_actual_baseline_p": 0.7129816724986271,
+        "actual_acceptance_probability": 0.7129816724986208,
+        "raw_signed_accepted_vector_error": 3.7783440568651905e-15,
+        "baseline_gibbs_trace_distance": 3.933637618545911e-07,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 4,
+        "source_inverse_calls": 3,
+        "total_source_calls": 7,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 3.882843720692121e-16,
+        "signed_normalized_purification_error": 4.110230160367447e-16,
+        "reduced_state_trace_distance_from_baseline": 2.516576488087631e-16,
+        "reduced_state_trace_distance_from_polynomial": 2.103921713242228e-16,
+        "gibbs_trace_distance": 3.9336376163134877e-07,
+        "actual_energy": -0.5170159808300969,
+        "exact_gibbs_energy": -0.517016548147382,
+        "energy_error": 5.673172850384489e-07,
+        "actual_density_real": [
+          [
+            0.20172154952109775,
+            -0.19885230031926796
+          ],
+          [
+            -0.19885230031926796,
+            0.7982784504789021
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            1.2691336732330557e-17
+          ],
+          [
+            -1.2691336732330557e-17,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 1.452560498395166e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 494,
+      "coherent_dependency_depth": 364,
+      "exports": {
+        "coherent": {
+          "file": "beta-1p25-round-3-coherent.qasm",
+          "sha256": "ddc6958665b72dc066d2c46366cd46e7d4abfc701f7873afbe162d8162c53981",
+          "compiled_global_phase_radians": 1.7671458676442584,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-1p25-round-3-trial-X.qasm",
+          "sha256": "7fb14b3336cdd04fa27297d7b54cd99c44c799427fbec0d7b0d38336cb01787e",
+          "compiled_global_phase_radians": 1.3744467859455343,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-1p25-round-3-trial-Z.qasm",
+          "sha256": "2569a78f30f25dd2a0468249b52186752bb59f08e06abc23459b774b3a1794d2",
+          "compiled_global_phase_radians": 1.7671458676442584,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-1p25-round-4",
+      "beta": 1.25,
+      "degree": 6,
+      "rounds": 4,
+      "validation": {
+        "beta": 1.25,
+        "degree": 6,
+        "rounds": 4,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.468590238737142,
+        "signed_amplification_factor": 0.7035988061931622,
+        "expected_global_sign": 1,
+        "model_success_probability_from_actual_baseline_p": 0.23197619751814819,
+        "actual_acceptance_probability": 0.23197619751814802,
+        "raw_signed_accepted_vector_error": 4.525810095035639e-16,
+        "baseline_gibbs_trace_distance": 3.933637618545911e-07,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 5,
+        "source_inverse_calls": 4,
+        "total_source_calls": 9,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 7.6627577944239285e-16,
+        "signed_normalized_purification_error": 8.328870815185305e-16,
+        "reduced_state_trace_distance_from_baseline": 5.460727147775402e-16,
+        "reduced_state_trace_distance_from_polynomial": 6.019376022251872e-16,
+        "gibbs_trace_distance": 3.933637623703579e-07,
+        "actual_energy": -0.5170159808300959,
+        "exact_gibbs_energy": -0.517016548147382,
+        "energy_error": 5.673172860376496e-07,
+        "actual_density_real": [
+          [
+            0.20172154952109853,
+            -0.1988523003192678
+          ],
+          [
+            -0.1988523003192678,
+            0.7982784504789013
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            2.884140099099656e-17
+          ],
+          [
+            -2.884140099099656e-17,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 1.449466720381007e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 640,
+      "coherent_dependency_depth": 471,
+      "exports": {
+        "coherent": {
+          "file": "beta-1p25-round-4-coherent.qasm",
+          "sha256": "e340ff27011141734fd6b0285ab7d0b1e3ff05bcda06f1fc908f664ded3c44c3",
+          "compiled_global_phase_radians": 0.0,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-1p25-round-4-trial-X.qasm",
+          "sha256": "633701a9ff23262b69490186ef516d8468fb3e0ae20566283745d0acdfa8fe24",
+          "compiled_global_phase_radians": 5.8904862254808625,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-1p25-round-4-trial-Z.qasm",
+          "sha256": "ef4bf03c4ffe5b5be383f4a861d41b073176d5b0431c79b49c88c950bc40c870",
+          "compiled_global_phase_radians": 0.0,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-2-round-0",
+      "beta": 2.0,
+      "degree": 6,
+      "rounds": 0,
+      "validation": {
+        "beta": 2.0,
+        "degree": 6,
+        "rounds": 0,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.40083329684249275,
+        "signed_amplification_factor": 1.0,
+        "expected_global_sign": 1,
+        "model_success_probability_from_actual_baseline_p": 0.40083329684249275,
+        "actual_acceptance_probability": 0.40083329684249275,
+        "raw_signed_accepted_vector_error": 0.0,
+        "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 1,
+        "source_inverse_calls": 0,
+        "total_source_calls": 1,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 0.0,
+        "signed_normalized_purification_error": 0.0,
+        "reduced_state_trace_distance_from_baseline": 0.0,
+        "reduced_state_trace_distance_from_polynomial": 2.765129631539419e-16,
+        "gibbs_trace_distance": 4.8789726252176615e-06,
+        "actual_energy": -0.6447692556988335,
+        "exact_gibbs_energy": -0.6447762922532222,
+        "energy_error": 7.03655438871742e-06,
+        "actual_density_real": [
+          [
+            0.12801773709682662,
+            -0.2479881752687821
+          ],
+          [
+            -0.2479881752687821,
+            0.8719822629031729
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            3.0814879110195774e-33
+          ],
+          [
+            -3.0814879110195774e-33,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 4.442418200294114e-16,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 56,
+      "coherent_dependency_depth": 43,
+      "exports": {
+        "coherent": {
+          "file": "beta-2-round-0-coherent.qasm",
+          "sha256": "06abc6b819e8c6e070976814dc768c8bfbd727e0271ac6dfa0e20f6c8f4cd9e8",
+          "compiled_global_phase_radians": 0.7853981633974483,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-2-round-0-trial-X.qasm",
+          "sha256": "daa2b6307d08af6662b9c2142ddd1cfa716b6138261d1e4c87f4b9dd93a26725",
+          "compiled_global_phase_radians": 0.39269908169872414,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-2-round-0-trial-Z.qasm",
+          "sha256": "c660425e8b800e3b00263839402e8ae541e93a4953c5938a5f120d8389fd05d9",
+          "compiled_global_phase_radians": 0.7853981633974483,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-2-round-1",
+      "beta": 2.0,
+      "degree": 6,
+      "rounds": 1,
+      "validation": {
+        "beta": 2.0,
+        "degree": 6,
+        "rounds": 1,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.40083329684249275,
+        "signed_amplification_factor": 1.3966668126300288,
+        "expected_global_sign": 1,
+        "model_success_probability_from_actual_baseline_p": 0.781896768173548,
+        "actual_acceptance_probability": 0.7818967681735449,
+        "raw_signed_accepted_vector_error": 1.6374551299050684e-15,
+        "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 2,
+        "source_inverse_calls": 1,
+        "total_source_calls": 3,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 2.5759871563256663e-16,
+        "signed_normalized_purification_error": 3.0401402513068694e-16,
+        "reduced_state_trace_distance_from_baseline": 2.566310627127044e-16,
+        "reduced_state_trace_distance_from_polynomial": 1.0288495004196849e-16,
+        "gibbs_trace_distance": 4.878972625009815e-06,
+        "actual_energy": -0.6447692556988338,
+        "exact_gibbs_energy": -0.6447762922532222,
+        "energy_error": 7.036554388384353e-06,
+        "actual_density_real": [
+          [
+            0.12801773709682657,
+            -0.2479881752687821
+          ],
+          [
+            -0.2479881752687821,
+            0.8719822629031734
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            5.88164275598712e-17
+          ],
+          [
+            -5.88164275598712e-17,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 1.6586119558535532e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 202,
+      "coherent_dependency_depth": 150,
+      "exports": {
+        "coherent": {
+          "file": "beta-2-round-1-coherent.qasm",
+          "sha256": "0ab0d0b74de8fb1742cfe93425f26d8689d1e21c599a06b0a3f1c6d59e4b6361",
+          "compiled_global_phase_radians": 5.301437602932777,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-2-round-1-trial-X.qasm",
+          "sha256": "496787d8395444a6f17ff17362f6ce2fdfe5c04cab1835dcc70487d35549eece",
+          "compiled_global_phase_radians": 4.908738521234053,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-2-round-1-trial-Z.qasm",
+          "sha256": "326ef716abc8f6fd883dbeacbc37067638ef60df13e049577531798d1897cdd2",
+          "compiled_global_phase_radians": 5.301437602932777,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-2-round-2",
+      "beta": 2.0,
+      "degree": 6,
+      "rounds": 2,
+      "validation": {
+        "beta": 2.0,
+        "degree": 6,
+        "rounds": 2,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.40083329684249275,
+        "signed_amplification_factor": -0.4459886271279045,
+        "expected_global_sign": -1,
+        "model_success_probability_from_actual_baseline_p": 0.07972808983233755,
+        "actual_acceptance_probability": 0.0797280898323377,
+        "raw_signed_accepted_vector_error": 3.4826032172277455e-16,
+        "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 3,
+        "source_inverse_calls": 2,
+        "total_source_calls": 5,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 6.709297124514995e-16,
+        "signed_normalized_purification_error": 7.064902703092213e-16,
+        "reduced_state_trace_distance_from_baseline": 5.826669460378463e-16,
+        "reduced_state_trace_distance_from_polynomial": 6.240050925791392e-16,
+        "gibbs_trace_distance": 4.878972625013664e-06,
+        "actual_energy": -0.6447692556988337,
+        "exact_gibbs_energy": -0.6447762922532222,
+        "energy_error": 7.036554388495375e-06,
+        "actual_density_real": [
+          [
+            0.12801773709682698,
+            -0.24798817526878267
+          ],
+          [
+            -0.24798817526878267,
+            0.871982262903173
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            -1.25506758198817e-16
+          ],
+          [
+            1.25506758198817e-16,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 1.8004211574881974e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 348,
+      "coherent_dependency_depth": 257,
+      "exports": {
+        "coherent": {
+          "file": "beta-2-round-2-coherent.qasm",
+          "sha256": "809d42106c976ffd69c3c754edef378f5e40bcdf40b73557a5214f337e3ab86f",
+          "compiled_global_phase_radians": 3.534291735288517,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-2-round-2-trial-X.qasm",
+          "sha256": "2feb4e77e37952d310687d3feca5a1aa3d3e0e671a64125adcf03565fbb62aa8",
+          "compiled_global_phase_radians": 3.1415926535897927,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-2-round-2-trial-Z.qasm",
+          "sha256": "9080c69d03dad6cbf942eb4d1a0c1094d20f6fb6eea180265fe77717f5266a69",
+          "compiled_global_phase_radians": 3.534291735288517,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-2-round-3",
+      "beta": 2.0,
+      "degree": 6,
+      "rounds": 3,
+      "validation": {
+        "beta": 2.0,
+        "degree": 6,
+        "rounds": 3,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.40083329684249275,
+        "signed_amplification_factor": -1.573575699822097,
+        "expected_global_sign": -1,
+        "model_success_probability_from_actual_baseline_p": 0.9925195532743523,
+        "actual_acceptance_probability": 0.9925195532743432,
+        "raw_signed_accepted_vector_error": 4.510425071923676e-15,
+        "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 4,
+        "source_inverse_calls": 3,
+        "total_source_calls": 7,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 2.254490801103593e-16,
+        "signed_normalized_purification_error": 2.723269239594986e-16,
+        "reduced_state_trace_distance_from_baseline": 1.2842674356932937e-16,
+        "reduced_state_trace_distance_from_polynomial": 2.59124267488027e-16,
+        "gibbs_trace_distance": 4.87897262514453e-06,
+        "actual_energy": -0.6447692556988336,
+        "exact_gibbs_energy": -0.6447762922532222,
+        "energy_error": 7.0365543886063975e-06,
+        "actual_density_real": [
+          [
+            0.1280177370968267,
+            -0.24798817526878222
+          ],
+          [
+            -0.24798817526878222,
+            0.871982262903173
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            -6.304667973260173e-17
+          ],
+          [
+            6.304667973260173e-17,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 1.9033597294395513e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 494,
+      "coherent_dependency_depth": 364,
+      "exports": {
+        "coherent": {
+          "file": "beta-2-round-3-coherent.qasm",
+          "sha256": "6986c9e8712425472ee933dc40defd2f48ada4f9d72f0858285898f508dcc997",
+          "compiled_global_phase_radians": 1.7671458676442584,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-2-round-3-trial-X.qasm",
+          "sha256": "d186692fb234f58714395dcd5b60fdd8049495dc1a33415bcee6c2d98f0b52d1",
+          "compiled_global_phase_radians": 1.3744467859455343,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-2-round-3-trial-Z.qasm",
+          "sha256": "ba39df03589fbc6718d19b93908405a85025be7a57a24aa0a30d8173b8ff71ee",
+          "compiled_global_phase_radians": 1.7671458676442584,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    },
+    {
+      "case_id": "beta-2-round-4",
+      "beta": 2.0,
+      "degree": 6,
+      "rounds": 4,
+      "validation": {
+        "beta": 2.0,
+        "degree": 6,
+        "rounds": 4,
+        "n_system": 1,
+        "n_reference": 1,
+        "n_index": 2,
+        "total_qubits": 4,
+        "baseline_acceptance_probability": 0.40083329684249275,
+        "signed_amplification_factor": -0.17819663015259385,
+        "expected_global_sign": -1,
+        "model_success_probability_from_actual_baseline_p": 0.012728076139529336,
+        "actual_acceptance_probability": 0.012728076139528683,
+        "raw_signed_accepted_vector_error": 2.9037531663958426e-15,
+        "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
+        "conditional_state_scope": "before final system readout; reference traced out without conditioning",
+        "conditional_state_defined": true,
+        "source_forward_calls": 5,
+        "source_inverse_calls": 4,
+        "total_source_calls": 9,
+        "model_scope": "exact known-input amplitude-amplification identity; floating circuit check, no formal certificate",
+        "acceptance_certified": false,
+        "phase_invariant_purification_error": 2.6818602839432006e-15,
+        "signed_normalized_purification_error": 2.7095753260789647e-15,
+        "reduced_state_trace_distance_from_baseline": 1.096541640019536e-15,
+        "reduced_state_trace_distance_from_polynomial": 9.811346952485793e-16,
+        "gibbs_trace_distance": 4.878972624459408e-06,
+        "actual_energy": -0.6447692556988346,
+        "exact_gibbs_energy": -0.6447762922532222,
+        "energy_error": 7.036554387607197e-06,
+        "actual_density_real": [
+          [
+            0.12801773709682654,
+            -0.247988175268783
+          ],
+          [
+            -0.247988175268783,
+            0.8719822629031735
+          ]
+        ],
+        "actual_density_imag": [
+          [
+            0.0,
+            -5.582660378508057e-16
+          ],
+          [
+            5.582660378508057e-16,
+            0.0
+          ]
+        ],
+        "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
+      },
+      "whole_unitary_source_primitive_max_entry_error": 2.577814162415622e-15,
+      "validation_performed": true,
+      "coherent_primitive_gate_count": 640,
+      "coherent_dependency_depth": 471,
+      "exports": {
+        "coherent": {
+          "file": "beta-2-round-4-coherent.qasm",
+          "sha256": "8997c1983359a10bb85d0261c268b4dc111fc4f0e7abadf1e7cc3bbca6068ee1",
+          "compiled_global_phase_radians": 0.0,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-X": {
+          "file": "beta-2-round-4-trial-X.qasm",
+          "sha256": "0571f3b48a805d96054738eac30ceccce2edeeaefff61433c5b51efe8689fc2d",
+          "compiled_global_phase_radians": 5.8904862254808625,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        },
+        "trial-Z": {
+          "file": "beta-2-round-4-trial-Z.qasm",
+          "sha256": "b32bc115a9017e7c2146fa9b2b89cce0a93b4689938e93055d5eac58c082838b",
+          "compiled_global_phase_radians": 0.0,
+          "phase_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration."
+        }
+      }
+    }
+  ],
+  "ancilla_only_contrast": {
+    "rounds": 1,
+    "actual_acceptance_probability": 0.4235580132368375,
+    "trace_distance_from_original_thermal_polynomial_state": 0.8132562547291979,
+    "gibbs_trace_distance": 0.8132566480929597,
+    "scope": "ancilla-only contrast demonstrates distortion of a nonunitary filter; not the known-input preparation algorithm"
+  },
+  "reflection_scaling_rows": [
+    {
+      "n_system": 1,
+      "n_reference": 1,
+      "label_qubits": 2,
+      "total_qubits": 4,
+      "aggregated_pauli_terms": 3,
+      "source_top_level_instructions": 24,
+      "source_coherent_primitive_gates": 56,
+      "source_coherent_dependency_depth": 43,
+      "unamplified_full_X_trial_primitive_operations": 65,
+      "unamplified_full_Z_trial_primitive_operations": 64,
+      "unamplified_full_trial_initial_resets": 4,
+      "unamplified_full_trial_reference_resets": 1,
+      "unamplified_full_trial_label_measurements": 2,
+      "unamplified_full_trial_system_measurements": 1,
+      "energy_coefficient_abs_sum": 1.0,
+      "accepted_energy_shot_workload": "n>1 unimplemented; one-qubit helper not extrapolated to fixed absolute energy error",
+      "precision_scaling_scope": "fixed beta/degree, generation only; no equal-error thermal or fault-tolerant comparison",
+      "full_initial_reflection_primitive_gates": 37,
+      "full_initial_reflection_depth": 28,
+      "good_label_reflection_primitive_gates": 5,
+      "good_label_reflection_depth": 3,
+      "status": "access/reflection generation and lowering only; family-row state simulation unperformed",
+      "classical_structure": "independent local X/Z spins; classically factorized Gibbs reference is available, no advantage benchmark"
+    },
+    {
+      "n_system": 2,
+      "n_reference": 2,
+      "label_qubits": 4,
+      "total_qubits": 8,
+      "aggregated_pauli_terms": 9,
+      "source_top_level_instructions": 142,
+      "source_coherent_primitive_gates": 1200,
+      "source_coherent_dependency_depth": 966,
+      "unamplified_full_X_trial_primitive_operations": 1010,
+      "unamplified_full_Z_trial_primitive_operations": 1008,
+      "unamplified_full_trial_initial_resets": 8,
+      "unamplified_full_trial_reference_resets": 2,
+      "unamplified_full_trial_label_measurements": 4,
+      "unamplified_full_trial_system_measurements": 2,
+      "energy_coefficient_abs_sum": 2.0,
+      "accepted_energy_shot_workload": "n>1 unimplemented; one-qubit helper not extrapolated to fixed absolute energy error",
+      "precision_scaling_scope": "fixed beta/degree, generation only; no equal-error thermal or fault-tolerant comparison",
+      "full_initial_reflection_primitive_gates": 391,
+      "full_initial_reflection_depth": 162,
+      "good_label_reflection_primitive_gates": 37,
+      "good_label_reflection_depth": 28,
+      "status": "access/reflection generation and lowering only; family-row state simulation unperformed",
+      "classical_structure": "independent local X/Z spins; classically factorized Gibbs reference is available, no advantage benchmark"
+    },
+    {
+      "n_system": 3,
+      "n_reference": 3,
+      "label_qubits": 5,
+      "total_qubits": 11,
+      "aggregated_pauli_terms": 27,
+      "source_top_level_instructions": 518,
+      "source_coherent_primitive_gates": 7608,
+      "source_coherent_dependency_depth": 5914,
+      "unamplified_full_X_trial_primitive_operations": 5710,
+      "unamplified_full_Z_trial_primitive_operations": 5707,
+      "unamplified_full_trial_initial_resets": 11,
+      "unamplified_full_trial_reference_resets": 3,
+      "unamplified_full_trial_label_measurements": 5,
+      "unamplified_full_trial_system_measurements": 3,
+      "energy_coefficient_abs_sum": 3.0,
+      "accepted_energy_shot_workload": "n>1 unimplemented; one-qubit helper not extrapolated to fixed absolute energy error",
+      "precision_scaling_scope": "fixed beta/degree, generation only; no equal-error thermal or fault-tolerant comparison",
+      "full_initial_reflection_primitive_gates": 799,
+      "full_initial_reflection_depth": 246,
+      "good_label_reflection_primitive_gates": 62,
+      "good_label_reflection_depth": 53,
+      "status": "access/reflection generation and lowering only; family-row state simulation unperformed",
+      "classical_structure": "independent local X/Z spins; classically factorized Gibbs reference is available, no advantage benchmark"
+    }
+  ],
+  "scaling_generation_performed": true,
+  "scaling_family_model": {
+    "Hamiltonian": "sum_i(.6 Zi+.4 Xi)",
+    "beta": 1.25,
+    "degree": 6,
+    "state_validation_performed": false,
+    "note": "fixed family coefficients; CLI z/x controls the one-qubit validation model"
+  },
+  "direction_scope": "signed raw branch checked before phase-invariant purification/reduced-state comparisons; negative accepted factors change only global sign",
+  "round_selection_scope": "fixed integer rounds selected from tiny classical checks; no general probability-learning/adaptive protocol",
+  "classical_preprocessing": {
+    "access_construction_wall_seconds": 0.0031414949999089004,
+    "full_circuit_materialization_lowering_wall_seconds": 0.37981868899987603,
+    "aggregation": "bounded algebraic Pauli aggregation may be exponential; no eigenvector or matrix gate loading"
+  },
+  "sampling_performed": false,
+  "physical_resource_estimate": null,
+  "qasm_export_policy": "Qiskit OpenQASM3 export omits an overall compiled circuit phase. The measured-trial files preserve outcome probabilities and are not phase-preserving coherently controlled oracles. In-memory circuits retain phase for the signed branch and whole-unitary equivalence checks. Coherent reuse requires the source modules or explicit phase restoration.",
+  "provenance": {
+    "source_hashes": {
+      "preparation_amplification.py": "d0f59fbeed12c054b6696cf7a9680e3e1508595fa55f0072607d3a607244793b",
+      "thermal_filter.py": "2d58a96bb1bfe37f804bd8f60f54110d9ba617424b95f0bd37a0745eef92848b",
+      "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "generate_simulation_preparation_amplification.py": "7301dc43a875e994f68b34d16bd758a11ed4ad3e7172fde6cee60884e9ecbf5f"
+    },
+    "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "revision_note": "hashes identify working-tree source bytes if generation precedes commit",
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU",
+    "randomness": "none; exact ideal checks",
+    "transpiler_seed": 7,
+    "optimization_level": 1,
+    "qubits_initially_zero": false
+  }
+}

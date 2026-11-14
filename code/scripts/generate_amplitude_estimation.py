@@ -13,6 +13,20 @@ import sys
 import tempfile
 from pathlib import Path
 
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
@@ -156,13 +170,7 @@ def main():
         "device": "CPU", "random_seed": 8127,
         "seed_explanation": "Exact deterministic statevector plus separately labeled classical categorical median coverage check",
     }
-    try:
-        base_commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, check=True,
-                                     capture_output=True, text=True).stdout.strip()
-    except (OSError, subprocess.CalledProcessError):
-        # The curated public source package deliberately has no .git directory.
-        # Its explicit source/lock hashes remain the reproducibility identifiers.
-        base_commit = None
+    base_commit = git_revision(ROOT)
     record["source_base_commit"] = base_commit
     record["source_base_commit_is_full_current_source_commit"] = False
     record["generator_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()

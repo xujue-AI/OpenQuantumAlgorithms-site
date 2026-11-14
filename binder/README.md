@@ -2,8 +2,14 @@
 
 This Binder recipe is published beside the generated website in the public
 `xujue-AI/OpenQuantumAlgorithms-site` repository's `gh-pages` branch. It uses
-Python 3.12 and pins the scientific demo libraries used by the notebooks.
-`postBuild` installs the public example package and retains the standalone Grover download, so a
+Python 3.12.14. The site's `code` directory is a source preview; the complete
+package remains in `assets/generated/openquantum-code.zip`. Before installing
+dependencies, `postBuild` checks the ZIP digest and complete file manifest,
+then replaces the preview with the full verified extraction. A failed check
+stops the build before installation. It installs the canonical
+`requirements-lock.txt`, then the public example package without resolving
+another dependency set. It
+also retains the standalone Grover download, so a
 public reader needs no access to the private development repository.
 
 Launch:
@@ -16,11 +22,12 @@ probability. The website reuses saved notebook outputs. Its browser explorer
 uses the analytic probability formula; live Python controls run in Binder or a
 local Jupyter kernel.
 
-This is a demo environment. It excludes the QDK resource estimator, and the
-Conda/JupyterLab and repo2docker base dependencies are not a full environment
-lock. Surface-code resource reports use the separate locked build environment
-and scripts in the development project. A configured recipe is not evidence of
-a successful live Binder build. Hamiltonian and optimization notebooks are
-also published and import the same installed public package. Quantum-resource
-estimation requires the separate full environment, which is included in the
-public code download.
+The locked Python packages include the QDK estimator, pandas and synthesis
+dependencies used by the Hamiltonian, optimization and resource notebooks.
+The Conda/JupyterLab and repo2docker base layers remain separately managed;
+installing the Python lock does not certify the entire hosted container.
+These notebook checks have run in the locked checkout and standalone Python
+environments. A successful hosted Binder build/launch has not been observed.
+Static notebook outputs and browser controls work independently of Binder.
+Large simulations and new physical searches retain their explicit limits;
+a live kernel does not establish hardware execution or a resource guarantee.

@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "status": "computed_bounded_finite_channel_evidence",
+  "quantity_contract": "Saved finite-channel evidence; absolute Z target and full-state diagnostics are distinct",
+  "all_components_verified": false,
+  "continuum_bridge": "unavailable",
+  "physical_budgets": "unallocated/uncomputed",
+  "rows": [
+    {
+      "mode": "thermal",
+      "channel": "T17",
+      "target_Z": -0.46211715726000985,
+      "label": "thermal/T17",
+      "status": null,
+      "final_Z": -0.4505592849840573,
+      "final_Z_target_residual": 0.011557872275952563,
+      "final_state": {
+        "real": [
+          [
+            0.27472035748758217,
+            -7.630244644185768e-17
+          ],
+          [
+            -7.630244644185768e-17,
+            0.7252796424716395
+          ]
+        ],
+        "imag": [
+          [
+            5.5179060439733054e-33,
+            3.764045218807117e-17
+          ],
+          [
+            -3.764045218807117e-17,
+            3.517996888338942e-33
+          ]
+        ]
+      },
+      "final_state_trace_norm_target_distance": 0.011557872275952563,
+      "fixedpoint_Z": -0.45056159889031044,
+      "fixedpoint_Z_target_residual": 0.011555558369699404,
+      "fixedpoint_state": {
+        "real": [
+          [
+            0.2747192005548448,
+            -7.625151794936058e-17
+          ],
+          [
+            -7.625151794936058e-17,
+            0.7252807994451552
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            3.765636700711547e-17
+          ],
+          [
+            -3.765636700711547e-17,
+            0.0
+          ]
+        ]
+      },
+      "mixing_bound_192": 0.0014263791693516993,
+      "actual_input0_mixing_trace_norm": 2.313906253159637e-06,
+      "ground_population": 0.7252796424716395,
+      "excited_population": 0.27472035748758217
+    },
+    {
+      "mode": "thermal",
+      "channel": "Q17_hat",
+      "target_Z": -0.46211715726000985,
+      "label": "thermal/Q17_hat",
+      "status": null,
+      "final_Z": -0.4505593966049306,
+      "final_Z_target_residual": 0.011557760655079241,
+      "final_state": {
+        "real": [
+          [
+            0.27472030168714123,
+            0.0
+          ],
+          [
+            0.0,
+            0.7252796982920718
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "final_state_trace_norm_target_distance": 0.011557760655079241,
+      "fixedpoint_Z": -0.450561710594428,
+      "fixedpoint_Z_target_residual": 0.011555446665581837,
+      "fixedpoint_state": {
+        "real": [
+          [
+            0.274719144702786,
+            0.0
+          ],
+          [
+            0.0,
+            0.725280855297214
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "mixing_bound_192": 0.0014264035464116639,
+      "actual_input0_mixing_trace_norm": 2.313989497348956e-06,
+      "ground_population": 0.7252796982920718,
+      "excited_population": 0.27472030168714123
+    },
+    {
+      "mode": "thermal",
+      "channel": "C65_hat",
+      "target_Z": -0.46211715726000985,
+      "label": "thermal/C65_hat",
+      "status": null,
+      "final_Z": -0.450559396604966,
+      "final_Z_target_residual": 0.011557760655043825,
+      "final_state": {
+        "real": [
+          [
+            0.27472030168715933,
+            0.0
+          ],
+          [
+            0.0,
+            0.7252796982921254
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "final_state_trace_norm_target_distance": 0.011557760655043825,
+      "fixedpoint_Z": -0.4505617105944339,
+      "fixedpoint_Z_target_residual": 0.011555446665575952,
+      "fixedpoint_state": {
+        "real": [
+          [
+            0.274719144702783,
+            0.0
+          ],
+          [
+            0.0,
+            0.725280855297217
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "mixing_bound_192": 0.0014264035464116676,
+      "actual_input0_mixing_trace_norm": 2.313989467928046e-06,
+      "ground_population": 0.7252796982921254,
+      "excited_population": 0.27472030168715933
+    },
+    {
+      "mode": "ground",
+      "channel": "T17",
+      "target_Z": -1.0,
+      "label": "ground/T17",
+      "status": null,
+      "final_Z": -0.9955185814468179,
+      "final_Z_target_residual": 0.0044814185531820705,
+      "final_state": {
+        "real": [
+          [
+            0.0022407092562072295,
+            -4.9060333912500155e-17
+          ],
+          [
+            -4.9060333912500155e-17,
+            0.9977592907030252
+          ]
+        ],
+        "imag": [
+          [
+            -3.673420211360745e-33,
+            3.83009399683121e-17
+          ],
+          [
+            -3.83009399683121e-17,
+            -1.2129722255904425e-31
+          ]
+        ]
+      },
+      "final_state_trace_norm_target_distance": 0.0044814185531820705,
+      "fixedpoint_Z": -0.9955217646765258,
+      "fixedpoint_Z_target_residual": 0.0044782353234742445,
+      "fixedpoint_state": {
+        "real": [
+          [
+            0.0022391176617371222,
+            -4.8994155664873615e-17
+          ],
+          [
+            -4.8994155664873615e-17,
+            0.9977608823382629
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            3.8318513327433587e-17
+          ],
+          [
+            -3.8318513327433587e-17,
+            0.0
+          ]
+        ]
+      },
+      "mixing_bound_192": 0.001962254260212068,
+      "actual_input0_mixing_trace_norm": 3.1832297078260297e-06,
+      "ground_population": 0.9977592907030252,
+      "excited_population": 0.0022407092562072295
+    },
+    {
+      "mode": "ground",
+      "channel": "Q17_hat",
+      "target_Z": -1.0,
+      "label": "ground/Q17_hat",
+      "status": null,
+      "final_Z": -0.9955187922818172,
+      "final_Z_target_residual": 0.004481207718182834,
+      "final_state": {
+        "real": [
+          [
+            0.0022406038430946573,
+            0.0
+          ],
+          [
+            0.0,
+            0.9977593961249118
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "final_state_trace_norm_target_distance": 0.004481207718182834,
+      "fixedpoint_Z": -0.995521975629355,
+      "fixedpoint_Z_target_residual": 0.0044780243706450396,
+      "fixedpoint_state": {
+        "real": [
+          [
+            0.0022390121853225198,
+            0.0
+          ],
+          [
+            0.0,
+            0.9977609878146775
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "mixing_bound_192": 0.0019622878517960574,
+      "actual_input0_mixing_trace_norm": 3.1833475377940346e-06,
+      "ground_population": 0.9977593961249118,
+      "excited_population": 0.0022406038430946573
+    },
+    {
+      "mode": "ground",
+      "channel": "C65_hat",
+      "target_Z": -1.0,
+      "label": "ground/C65_hat",
+      "status": null,
+      "final_Z": -0.9955187922819723,
+      "final_Z_target_residual": 0.004481207718027735,
+      "final_state": {
+        "real": [
+          [
+            0.0022406038430947683,
+            0.0
+          ],
+          [
+            0.0,
+            0.997759396125067
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "final_state_trace_norm_target_distance": 0.004481207718027735,
+      "fixedpoint_Z": -0.9955219756293682,
+      "fixedpoint_Z_target_residual": 0.004478024370631828,
+      "fixedpoint_state": {
+        "real": [
+          [
+            0.002239012185315914,
+            0.0
+          ],
+          [
+            0.0,
+            0.997760987814684
+          ]
+        ],
+        "imag": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "mixing_bound_192": 0.0019622878517961853,
+      "actual_input0_mixing_trace_norm": 3.183347395852021e-06,
+      "ground_population": 0.997759396125067,
+      "excited_population": 0.0022406038430947683
+    }
+  ]
+}

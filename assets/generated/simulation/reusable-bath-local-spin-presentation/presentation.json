@@ -1,0 +1,26 @@
+{
+  "kind": "presentation_excerpt_from_saved_qasm",
+  "source_file": "assets/generated/simulation/reusable-bath-local-spin/source-exports/n2-ground.qasm",
+  "source_sha256": "6191f3555e5c23ac9f0d82afd29b7c2e45fe6baedaa0dfe21e2a0c80bc703eb2",
+  "system_wires": 2,
+  "bath_wire": 2,
+  "classical_bits": 2,
+  "initial_resets": 3,
+  "unitary_instructions": 19,
+  "counts": {
+    "reset": 3,
+    "rz": 9,
+    "cx": 6,
+    "h": 4
+  },
+  "scope": "First Strang step of the saved n2-ground source; rounded drawer labels",
+  "new_source_generation": false,
+  "new_quantum_or_reference_execution": false,
+  "packages": {
+    "qiskit": "2.6.2",
+    "matplotlib": "3.11.2"
+  },
+  "figure_sha256": {
+    "first-step.svg": "c584592e8d26f077d3e34f15759ffdc4c3ca790efafc4c00a11c15a255ef114b"
+  }
+}

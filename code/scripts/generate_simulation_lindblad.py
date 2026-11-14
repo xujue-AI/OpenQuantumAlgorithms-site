@@ -13,6 +13,20 @@ from pathlib import Path
 import subprocess
 import sys
 
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 SOURCE = ROOT / "src"
@@ -139,7 +153,7 @@ def generate(output: Path, time: float = 1.0, rate: float = 0.8,
         sampling = {"performed": True, "kind": "seeded classical draw from actual split-circuit probabilities",
                     "seed": 43, "shots": shots, "zero_count": zero_count, "estimated_Z": 2*zero_count/shots-1,
                     "scope": "one illustrative iid draw; it does not establish the confidence bound"}
-    revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip() if REPOSITORY else None
+    revision = git_revision(ROOT) if REPOSITORY else None
     report = {
         "status": "checked one-qubit Lindblad Lie/Strang circuits" if performed else "generated measured circuits; validation not performed",
         "instance": {"time": time, "rate": rate, "hx": hx, "hz": hz, "steps": steps, "order": order,

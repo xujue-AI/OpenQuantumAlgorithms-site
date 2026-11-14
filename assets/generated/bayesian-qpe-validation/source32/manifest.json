@@ -1,0 +1,45 @@
+{
+  "schema": "openquantum-bayesian-qpe-files-v1",
+  "files": {
+    "source-only.qasm": {
+      "bytes": 495915,
+      "sha256": "3ef6796a31d3cc19888631901c18c0a3553ddfd3825202326effcae2ccba0e84"
+    },
+    "source-only-lowered.qasm": {
+      "bytes": 508204,
+      "sha256": "a4649c75e72cbc24df7b41a68b77dcf652e9731cee28817b0f416d713a0e04fe"
+    },
+    "results.json": {
+      "bytes": 1903,
+      "sha256": "f62cde374a8de0af26cde4bd0664ee0226579929210ff7661907c6c5f181a782"
+    },
+    "bayesian_qpe.py": {
+      "bytes": 26319,
+      "sha256": "019345eac507bb2c6d3190fbfb622d11294f0aaffded03015399d9eb5297ce97"
+    },
+    "generate_bayesian_qpe.py": {
+      "bytes": 22809,
+      "sha256": "7664935974c74ac848a025ed8d85d3f685dbdd2a69ffb88a24556ce215149ef7"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "README.md": {
+      "bytes": 593,
+      "sha256": "5d5664f7966af3e39e2ee3f6c78002869c3872962544b131dded6a258643dfb4"
+    }
+  },
+  "source_sha256": {
+    "bayesian_qpe.py": "019345eac507bb2c6d3190fbfb622d11294f0aaffded03015399d9eb5297ce97",
+    "generate_bayesian_qpe.py": "7664935974c74ac848a025ed8d85d3f685dbdd2a69ffb88a24556ce215149ef7",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+  },
+  "payload_bytes": 1058810,
+  "scope": "bounded scientific source/data; private execution controls and logs are excluded"
+}

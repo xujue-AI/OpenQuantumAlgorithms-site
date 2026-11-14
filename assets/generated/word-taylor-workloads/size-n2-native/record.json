@@ -1,0 +1,390 @@
+{
+  "case_id": "size-n2-native",
+  "slice": "size",
+  "plan": {
+    "n": 2,
+    "mode": "native",
+    "degree": 4,
+    "segments": 3,
+    "J": {
+      "numerator": "3",
+      "denominator": "5",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.6
+    },
+    "h": {
+      "numerator": "7",
+      "denominator": "20",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.35
+    },
+    "total_time": {
+      "numerator": "1",
+      "denominator": "1",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.0
+    },
+    "total_accuracy": {
+      "numerator": "1",
+      "denominator": "20",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.05
+    },
+    "alpha_binary_coefficients": {
+      "numerator": "11709359031163289",
+      "denominator": "9007199254740992",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.2999999999999998
+    },
+    "segment_exposure": {
+      "numerator": "70312353292659116630351092174029",
+      "denominator": "162259276829213363391578010288128",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.4333333333333333
+    },
+    "binary_segment_time": {
+      "numerator": "6004799503160661",
+      "denominator": "18014398509481984",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.3333333333333333
+    },
+    "terms": [
+      {
+        "coefficient": {
+          "numerator": "3",
+          "denominator": "5",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.6
+        },
+        "pauli": "ZZ",
+        "binary_coefficient": {
+          "numerator": "5404319552844595",
+          "denominator": "9007199254740992",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.6
+        },
+        "binary_hex": "0x1.3333333333333p-1"
+      },
+      {
+        "coefficient": {
+          "numerator": "7",
+          "denominator": "20",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "pauli": "IX",
+        "binary_coefficient": {
+          "numerator": "3152519739159347",
+          "denominator": "9007199254740992",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "binary_hex": "0x1.6666666666666p-2"
+      },
+      {
+        "coefficient": {
+          "numerator": "7",
+          "denominator": "20",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "pauli": "XI",
+        "binary_coefficient": {
+          "numerator": "3152519739159347",
+          "denominator": "9007199254740992",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "binary_hex": "0x1.6666666666666p-2"
+      }
+    ],
+    "uniform_ideal_bounds": {
+      "segment_tail": {
+        "numerator": "572844718627340920082397057058958907954989289596071075825417498630355882096018950494206792365111278825035483942244819879984984591032314118291102320737751660383",
+        "denominator": "4173992242715076678738094618975240371301401283854783969556507874283872063912377061361270899945034313929836277029136385593140424587256155530487309497593017988546560",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.00013724144303984615
+      },
+      "native_taylor_normalization": {
+        "numerator": "8552317072014762233536603147091238166833387378990786959721526530878349014367648937302121454902621429859292535580379963000144254171",
+        "denominator": "5545339388241629719156828368286167406872874150751633150340959161229242615611251246079948812208279156194782421922807143657948315648",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 1.5422531378600823
+      },
+      "segment_comparison_operator_error": {
+        "numerator": "572844718627340920082397057058958907954989289596071075825417498630355882096018950494206792365111278825035483942244819879984984591032314118291102320737751660383",
+        "denominator": "4173992242715076678738094618975240371301401283854783969556507874283872063912377061361270899945034313929836277029136385593140424587256155530487309497593017988546560",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.00013724144303984615
+      },
+      "composition_comparison_error": {
+        "numerator": "29944774378853131699624573763575132432674971754843103036515954818757866628493940614183019252189069616729849213061590860126349764023164872698321812807833681257030725710762532427398526663993314083353873007863922182716874754701388213491921008776735889727921225232362413471268686829636927367651945836142695336978815035106985437542983061163074563322223697377279601362492739299144710895080785488584792596082563040604205815570922549792544368019730758704153401428602583692526974156980486027807",
+        "denominator": "72720174576076682535213223984460436673982686939066532058838182638303937787278410679295326034166944814987651710345381388227062078671331818835843232733527946726864168558797920730478650849214657094051641806873376547185633488596599046142717983722404726892596033013948054138764709601470212550038093356606678488606699421475820166886860026499832042882062183054277041111234899865592447250446736315376181383680546934802059196725649535339059650409474494273129136156121991025996760640405075132416000",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.00041178083734557335
+      },
+      "target_exposure_error": {
+        "numerator": "112589990684262397",
+        "denominator": "811296384146066816957890051440640",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 1.3877787807814457e-16
+      },
+      "full_comparison_operator_error": {
+        "numerator": "29944774378863223651145713921468368206875966578770008407378391967761706383098429165521039249819294062332469148901123689514301477573898678947757245245821821308031871151759115468153451514401708395386631964385084906525557908390595905821757397206798012043224775445976615442940561677264080189259297248142739681706954395265298909713492190421336711185079013843502240285477487293359799787268163700945310673250347973970950074305379447313093513482853524740974758347268870900604524157011414104607",
+        "denominator": "72720174576076682535213223984460436673982686939066532058838182638303937787278410679295326034166944814987651710345381388227062078671331818835843232733527946726864168558797920730478650849214657094051641806873376547185633488596599046142717983722404726892596033013948054138764709601470212550038093356606678488606699421475820166886860026499832042882062183054277041111234899865592447250446736315376181383680546934802059196725649535339059650409474494273129136156121991025996760640405075132416000",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.00041178083734571213
+      },
+      "acceptance_lower": {
+        "numerator": "338167648551912912576517347959093390845379726658436397652900280250398973788106063351094244208113388305280188286002116196077707084785181496888824972710579335076125388625161100914068947881475189678372652659942148111087283138338546366159053100939771632901506398525397526077898069366539135621051436742057544948931509956861526099326302505802663120958247264973160440205541041455640187909120240919698511895301636351168276654558307390397778185090715278199757714926353429637249436876402909982386887462169956176024653683718776225717079072135613207717127385989173053823703491648422882378966224362764413370253265682247217767577635875083175872691447156525220763564703117529736749258856318179144929628602279256347296374508589588531620075278518320829955726842624586109677348428221931929584342899354201652033274168053692065999091468274255871294409494883510550456189073946641241898542984592038678791757239506132317989891490362927747327215638138464627943473990475940062091812963745662723187535936",
+        "denominator": "4554322439328431112890395220479238329914526083361530382121057841938214032993735331217453685683862315442901450409115669222686153947134363499640042561318388560655984030444410337391921730133180224528517202468298724198625473517067582484201235466335600112303885708132734282113616072995564077419452080109267092937412550039998420424241033526642414667213385618799747561778840275951650320477868948216067672527461135716679797159421749748299385454350556057438364326335963825300187536948963390950173182292429530148340015295297508966022244937441021066334942856158383019106362019037701762514191611648651290852199602319971706698944124873726024777872472413822593703108944288820341799051445616013502958183483567825040962056876117546603699655451052768834653851085147386604256555527732093342073352202673005167378153566161570105957243300658990719998899723196594050157548157717421059860550517143964511038599239376863000997854004682811752809419873047925481517532366472382509895306558203271097932640625",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.07425202169080024
+      },
+      "conditional_pauli_bias": {
+        "numerator": "119779097515452894604582855685873472827503866315080033629513567871046825532393716662084156999277176249329876595604494758057205910295594715791028980983287285232127484607036461872613806057606833581546527857540339626102231633562383623287029588827192048172899101783906461771762246709056320757037188992570958726827817581061195638853968761685346844740316055374008961141909949173439199149072654803781242693001391895883800297221517789252374053931414098963899033389075483602418096628045656418428",
+        "denominator": "72690229801697819311562078270538968305775810972487762050430804246336176080895312250129804994917125520925319241196480264537547777193757920156895475488282124905556136687646161615010497397700255385656255174908991462279107930688208450236896226325197928880552808238502077523321769039792948469848834059358535748924992467080554867977146534309410706170877104040433538870949422378299087450659468151675236073007296586828088246651344155891746556895991640748388161397774722155096156116248063718311393",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.0016478018826218545
+      }
+    },
+    "operator_comparison_map": "Native operator errors compare unnormalized T_K and T_K^r with U; the accepted maps are T_K/s_K and T_K^r/s_K^r. These are not error bounds for the attenuated accepted maps versus U.",
+    "pre_amplification_source_block_normalization_per_segment": {
+      "numerator": "8552317072014762233536603147091238166833387378990786959721526530878349014367648937302121454902621429859292535580379963000144254171",
+      "denominator": "5545339388241629719156828368286167406872874150751633150340959161229242615611251246079948812208279156194782421922807143657948315648",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.5422531378600823
+    },
+    "error_allocation": {
+      "ideal_algorithm_bias": {
+        "numerator": "1",
+        "denominator": "100",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.01
+      },
+      "reserved_synthesis_bias_unimplemented": {
+        "numerator": "1",
+        "denominator": "100",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.01
+      },
+      "statistical_error": {
+        "numerator": "3",
+        "denominator": "100",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.03
+      },
+      "statistical_failure": {
+        "numerator": "1",
+        "denominator": "250",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.004
+      },
+      "acceptance_failure": {
+        "numerator": "1",
+        "denominator": "1000",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.001
+      },
+      "physical_fault_allowance_unmodeled": {
+        "numerator": "1",
+        "denominator": "200",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.005
+      },
+      "ideal_output_error_bound_if_exact_access": {
+        "numerator": "1",
+        "denominator": "25",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.04
+      },
+      "ideal_bad_output_or_cap_exhaustion_failure_bound_if_exact_access": {
+        "numerator": "1",
+        "denominator": "200",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.005
+      },
+      "hardware_combined_guarantee": false
+    },
+    "workload": {
+      "accepted_slots": 13811,
+      "full_attempt_cap_per_slot": 214,
+      "charged_complete_attempts": 2955554,
+      "retry_probability_lower_rounded_down_64_bits": {
+        "numerator": "1369708041085722349",
+        "denominator": "18446744073709551616",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.07425202169080024
+      },
+      "uncapped_expected_attempts_upper_bound": {
+        "numerator": "62899747209564962100129248390038760574449519737306096107473929855008674009676478659444252852979822438581911931600296507634518472163872694293528627814368264411219795444467751169719831014869352080963351083289673679907216414744220381689303263025560973151028965515021193170271151584141735473240052678389087820558604728602418184479192914036458388968884068781243313575727563051168242576119848043812110625276765745383064678568773785773762812510035529709281249711025996391220890072802133392412841820640744240878723951243353896329733224830997941947151895786403427876877965844929699042083500348479522977959728707641129241219117308631030128207196716507303841633637629572897740586699515402762489355472091555231640726967516059436143695941434489790375404337336970556391387288393507941147375067271116874366659678902257444733375487225401320833904804077068160426725897606235302257734063192275293861954094095033854906781361658674313118050897866664898825238639513350074844164078875345377133547699671875",
+        "denominator": "338167648551912912576517347959093390845379726658436397652900280250398973788106063351094244208113388305280188286002116196077707084785181496888824972710579335076125388625161100914068947881475189678372652659942148111087283138338546366159053100939771632901506398525397526077898069366539135621051436742057544948931509956861526099326302505802663120958247264973160440205541041455640187909120240919698511895301636351168276654558307390397778185090715278199757714926353429637249436876402909982386887462169956176024653683718776225717079072135613207717127385989173053823703491648422882378966224362764413370253265682247217767577635875083175872691447156525220763564703117529736749258856318179144929628602279256347296374508589588531620075278518320829955726842624586109677348428221931929584342899354201652033274168053692065999091468274255871294409494883510550456189073946641241898542984592038678791757239506132317989891490362927747327215638138464627943473990475940062091812963745662723187535936",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 186001.66952371577
+      },
+      "sampling_performed": false,
+      "retry_policy": "All segments run on every attempt; fresh basis input for every retry",
+      "retry_cap_rule": "Round p_lower down to 64 dyadic bits, then ceil(log_upper(M/delta_acceptance)/log_lower(1/(1-p_lower))); p_lower=1 uses one attempt",
+      "log_upper_series_terms": 64,
+      "retry_log_lower_series_terms": 8
+    },
+    "policy": "Smallest r enforcing exact binary exposure <=1/2; smallest K<=8 meeting ideal Pauli-bias allocation",
+    "guarantee_scope": "Any normalized input for ideal exact access at the binary constants, with an exact rational target-exposure correction",
+    "implemented_trial_input": "Fresh all-zero basis input; it is not a protocol for copying an unknown specimen",
+    "not_certified": [
+      "floating normalization/probability/angle construction",
+      "primitive compiler arithmetic",
+      "rotation synthesis",
+      "physical gates/reset/readout",
+      "hardware confidence"
+    ],
+    "bound_source": {
+      "method": "Simulating Hamiltonian Dynamics with a Truncated Taylor Series",
+      "doi": "10.1103/PhysRevLett.114.090502",
+      "arxiv": "https://arxiv.org/abs/1412.4687",
+      "access": "Existing original degree/term PREPARE, signed SELECT and unprepare",
+      "bound_derivation": "Original exact-rational tail, contraction/composition and normalization ledger",
+      "oaa_identity": "One round has block 3F-4FF\u2020F; padding F=T/2 gives 3T/2-TT\u2020T/2"
+    }
+  },
+  "circuit_generation": {
+    "performed": true,
+    "measured_qasm_sha256": "6148ae7a90182ab2f89bb415f4c47eb29147d69064ccc4bb0f11ec0203ed7ab2",
+    "coherent_source_qasm_sha256": "9122838a6fb7dd04ffd2cde20e58a0de0904ebb930edcaf2946a4cf9dc9fa199",
+    "compiled_global_phase_radians": 5.105088062083417,
+    "coherent_source_global_phase_radians": 0.0,
+    "qasm_phase_scope": "Pinned QASM exporter may omit global phase; measured-trial probabilities are the export contract",
+    "source_access_normalization_float": 1.5422531378600821,
+    "source_access_alpha_float": 1.2999999999999998,
+    "transpilation": {
+      "optimization_level": 1,
+      "seed": 7,
+      "qubits_initially_zero": false
+    },
+    "source_hashes": {
+      "word_taylor_workloads.py": "2257812cde76ac864108ff8f2c703fd7b8e0d629b9342eccf21c56db3ba77282",
+      "word_taylor.py": "f6c051233d27e41cd4971de564f1d0b77cc49f7f34f9c509ed65c512b03a27af",
+      "amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+      "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+      "source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+      "generate_word_taylor_workloads.py": "7a0e09bd42d6e72b32ca186875e241b4f1aa32a165ff76cea03a64454ec8d3a5",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    }
+  },
+  "numerical_validation": {
+    "performed": false,
+    "reason": "12-total/3-data-wire independent-check cap"
+  },
+  "physical_estimation": {
+    "performed": false,
+    "reason": "general-width reset instrument is not implemented"
+  },
+  "sampling": {
+    "performed": false
+  },
+  "logical_resources": {
+    "logical_qubits": 13,
+    "classical_readout_bits": 35,
+    "source_instructions": 1078,
+    "source_dependency_depth": 393,
+    "primitive_gate_counts_per_attempt": {
+      "cx": 3588,
+      "tdg": 1920,
+      "t": 1920,
+      "h": 1562,
+      "x": 261,
+      "ry": 162,
+      "rz": 84,
+      "reset": 35,
+      "measure": 35,
+      "rx": 15
+    },
+    "primitive_operations_per_attempt": 9582,
+    "primitive_dependency_depth_per_attempt": 8906,
+    "primitive_gate_counts_full_cap": {
+      "cx": 10604527752,
+      "tdg": 5674663680,
+      "t": 5674663680,
+      "h": 4616575348,
+      "x": 771399594,
+      "ry": 478799748,
+      "rz": 248266536,
+      "reset": 103444390,
+      "measure": 103444390,
+      "rx": 44333310
+    },
+    "primitive_operations_full_cap": 28320118428,
+    "serial_dependency_layers_full_cap": 26322163924,
+    "exact_T_Tdag_per_attempt": 3840,
+    "arbitrary_rotations_per_attempt": 261,
+    "source_access_and_schedule_metadata": {
+      "n_system": 2,
+      "time": 0.3333333333333333,
+      "degree": 4,
+      "alpha": 1.2999999999999998,
+      "accepted_branch_normalization": 1.5422531378600821,
+      "n_degree": 3,
+      "n_term": 2,
+      "term_registers": 4,
+      "n_ancillas": 11,
+      "degree_coefficient_count": 5,
+      "term_coefficient_count": 3,
+      "word_enumeration_performed": false,
+      "SELECT_slot_degree_term_predicates": 30,
+      "SELECT_signed_Pauli_gates": 40,
+      "SELECT_negative_coefficient_phase_calls": 0,
+      "SELECT_degree_phase_calls": 4,
+      "PREPARE_degree_calls": 1,
+      "PREPARE_term_calls": 4,
+      "UNPREPARE_degree_calls": 1,
+      "UNPREPARE_term_calls": 4,
+      "PREPARE_total_calls": 1,
+      "SELECT_total_calls": 1,
+      "UNPREPARE_total_calls": 1,
+      "source_instruction_count": 336,
+      "register_order": "data, degree, slot0 term, ..., slot(K-1) term",
+      "inactive_terms": "prepared independently and not selected; their projected weights sum to1",
+      "primitive_rotations_synthesized": false,
+      "segments": 3,
+      "initial_basis": 0,
+      "forward_A_calls_per_attempt": 3,
+      "inverse_A_calls_per_attempt": 0,
+      "total_A_or_inverse_calls_per_attempt": 3,
+      "zero_ancilla_reflections_per_attempt": 0,
+      "degree_prepare_or_inverse_calls_per_attempt": 6,
+      "term_prepare_or_inverse_calls_per_attempt": 24,
+      "SELECT_or_inverse_calls_per_attempt": 3,
+      "SELECT_predicates_or_inverse_per_attempt": 90,
+      "SELECT_signed_Paulis_or_inverse_per_attempt": 120,
+      "padding_signal_and_sign_prepare_or_inverse_calls_per_attempt": 0,
+      "padding_zero_LCU_CZ_or_inverse_calls_per_attempt": 0,
+      "acceptance": "all measured degree+word ancillary bits are zero",
+      "schedule": "run all segments; reset ancillary wires between segments; final Z data readout"
+    },
+    "synthesis": {
+      "performed": false,
+      "T_cost_inferred_from_rotations": false
+    },
+    "physical_resource_estimate": null,
+    "physical_scope": "The current small instrument model does not cover these general-width measured Taylor schedules",
+    "time_scope": "Dependency layers and measured CPU generation time are not fault-tolerant runtime",
+    "included": [
+      "all input resets",
+      "degree and term PREPARE/unprepare",
+      "actual signed SELECT",
+      "actual forward/inverse OAA calls where selected",
+      "all ancilla reflections and zero-LCU padding where selected",
+      "every segment ancilla measurement/reset",
+      "final system Z readout",
+      "all rejected complete attempts and capped accepted-shot workload"
+    ],
+    "excluded": [
+      "rotation synthesis",
+      "physical fault/timing/routing/factory/code model",
+      "classical coefficient/readout wall time",
+      "executed sampling"
+    ]
+  },
+  "cpu_generation_and_check_seconds": 0.3093451700001424
+}

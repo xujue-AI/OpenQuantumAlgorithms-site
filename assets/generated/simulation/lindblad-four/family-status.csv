@@ -1,0 +1,4 @@
+n_system,steps,status,physical_status,complete_trials,synthesis_performed,status_scope,new_slice_source_preflight_completed,new_slice_clifford_t_completed,new_slice_physical_status,rejection_reproduced,density_checker_status,density_width_rejection_reproduced,density_required_wires,density_supported_wires,allocation_reassigned
+2,69,preserved_prior_n2_result,prior_result_preserved,15756,False,preserved prior bundle,False,False,prior_result_preserved,False,,False,,,False
+3,134,preserved_prior_n3_result,prior_result_preserved,15756,False,preserved prior bundle,False,False,prior_result_preserved,False,,False,,,False
+4,211,ensemble_branch_cap_exceeded,historical_unimplemented_reserved_allocation_preserved,15756,True,historical rejected APIs; new n4 source/synthesis/model assessment is recorded separately,True,True,infeasible_declared_controller_model;infeasible_declared_controller_model,True,density_width_cap_exceeded,True,8,6,False

@@ -1,0 +1,592 @@
+{
+  "task": "structured Pauli-word Taylor dynamics with explicit degree and independent term registers",
+  "parameters": {
+    "n": 2,
+    "J": 0.6,
+    "h": 0.35,
+    "time": 1,
+    "hbar": 1,
+    "initial_basis": 0,
+    "observable": "Z(q0)",
+    "degree": 3,
+    "terms": [
+      [
+        0.6,
+        "ZZ"
+      ],
+      [
+        0.35,
+        "IX"
+      ],
+      [
+        0.35,
+        "XI"
+      ]
+    ],
+    "segments": [
+      1,
+      2,
+      4
+    ],
+    "rounds": [
+      0,
+      1
+    ]
+  },
+  "records": [
+    {
+      "segments": 1,
+      "rounds_per_segment": 0,
+      "normalization2_padding": false,
+      "degree": 3,
+      "normalization_per_segment": 3.511166666666666,
+      "degree_probabilities": [
+        0.28480562016423794,
+        0.37024730621350926,
+        0.240660749038781,
+        0.10428632458347176
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 1,
+        "degree": 3,
+        "rounds_per_segment": 0,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 3.511166666666666,
+        "accepted_branch_normalization_per_segment": 3.511166666666666,
+        "normalization2_padding": false,
+        "actual_source_block_error_vs_matrix_taylor": 2.124258144784693e-14,
+        "actual_amplified_block_error_vs_general_polynomial": 2.124258144784693e-14,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 0.721487680859716,
+        "unnormalized_Taylor_operator_error_full_time": 0.02976536035779488,
+        "conditional_state_vector_error": 0.01690034549572188,
+        "conditional_state_infidelity": 0.0002237730404092142,
+        "conditional_state_error_vs_independent_polynomial": 7.473713094436587e-16,
+        "actual_observable": 0.7825622444876241,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 0.008948236096197326,
+        "full_attempt_acceptance_probability": 0.07897877481168862,
+        "independent_full_attempt_acceptance_probability": 0.07897877481170011,
+        "per_segment_conditional_probabilities": [
+          0.07897877481168862
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.07761421809535052,
+        "finite_H_numerical_maximum_acceptance": 0.08034333152802633,
+        "acceptance_input_dependence_span": 0.002729113432675817,
+        "full_attempts_for_one_accepted_trial_99_percent": 56,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 3.493522453088682e-14
+      }
+    },
+    {
+      "segments": 1,
+      "rounds_per_segment": 1,
+      "normalization2_padding": false,
+      "degree": 3,
+      "normalization_per_segment": 3.511166666666666,
+      "degree_probabilities": [
+        0.28480562016423794,
+        0.37024730621350926,
+        0.240660749038781,
+        0.10428632458347176
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 1,
+        "degree": 3,
+        "rounds_per_segment": 1,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 3.511166666666666,
+        "accepted_branch_normalization_per_segment": 3.511166666666666,
+        "normalization2_padding": false,
+        "actual_source_block_error_vs_matrix_taylor": 2.124258144784693e-14,
+        "actual_amplified_block_error_vs_general_polynomial": 1.7035074555234441e-13,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 0.2513371903463542,
+        "unnormalized_Taylor_operator_error_full_time": 0.02976536035779488,
+        "conditional_state_vector_error": 0.015970198259116112,
+        "conditional_state_infidelity": 0.00019302750212979447,
+        "conditional_state_error_vs_independent_polynomial": 1.2695646894090663e-15,
+        "actual_observable": 0.7826107655981255,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 0.008899714985695972,
+        "full_attempt_acceptance_probability": 0.5689500862310373,
+        "independent_full_attempt_acceptance_probability": 0.5689500862312878,
+        "per_segment_conditional_probabilities": [
+          0.5689500862310373
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.5614334860757112,
+        "finite_H_numerical_maximum_acceptance": 0.5764666863863568,
+        "acceptance_input_dependence_span": 0.01503320031064559,
+        "full_attempts_for_one_accepted_trial_99_percent": 6,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 9.638013384888389e-14
+      }
+    },
+    {
+      "segments": 2,
+      "rounds_per_segment": 0,
+      "normalization2_padding": false,
+      "degree": 3,
+      "normalization_per_segment": 1.9070208333333332,
+      "degree_probabilities": [
+        0.5243781203229295,
+        0.3408457782099042,
+        0.11077487791821884,
+        0.024001223548947414
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 2,
+        "degree": 3,
+        "rounds_per_segment": 0,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 1.9070208333333332,
+        "accepted_branch_normalization_per_segment": 1.9070208333333332,
+        "normalization2_padding": false,
+        "actual_source_block_error_vs_matrix_taylor": 3.9268341279312405e-14,
+        "actual_amplified_block_error_vs_general_polynomial": 3.9268341279312405e-14,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 0.725989367322482,
+        "unnormalized_Taylor_operator_error_full_time": 0.003749094426663341,
+        "conditional_state_vector_error": 0.0017196556259424247,
+        "conditional_state_infidelity": 2.686135061602535e-06,
+        "conditional_state_error_vs_independent_polynomial": 1.0298858404570814e-15,
+        "actual_observable": 0.7909302963981537,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 0.0005801841856677425,
+        "full_attempt_acceptance_probability": 0.07529643303924498,
+        "independent_full_attempt_acceptance_probability": 0.07529643303926678,
+        "per_segment_conditional_probabilities": [
+          0.27440167709852625,
+          0.2744022333806989
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.07508201678305151,
+        "finite_H_numerical_maximum_acceptance": 0.07551084929543772,
+        "acceptance_input_dependence_span": 0.0004288325123862069,
+        "full_attempts_for_one_accepted_trial_99_percent": 59,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 3.529979918335643e-14
+      }
+    },
+    {
+      "segments": 2,
+      "rounds_per_segment": 1,
+      "normalization2_padding": false,
+      "degree": 3,
+      "normalization_per_segment": 1.9070208333333332,
+      "degree_probabilities": [
+        0.5243781203229295,
+        0.3408457782099042,
+        0.11077487791821884,
+        0.024001223548947414
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 2,
+        "degree": 3,
+        "rounds_per_segment": 1,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 1.9070208333333332,
+        "accepted_branch_normalization_per_segment": 1.9070208333333332,
+        "normalization2_padding": false,
+        "actual_source_block_error_vs_matrix_taylor": 3.9268341279312405e-14,
+        "actual_amplified_block_error_vs_general_polynomial": 2.2415959347197784e-13,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 0.007133908268870837,
+        "unnormalized_Taylor_operator_error_full_time": 0.003749094426663341,
+        "conditional_state_vector_error": 0.000989687665658569,
+        "conditional_state_infidelity": 7.077849799586033e-07,
+        "conditional_state_error_vs_independent_polynomial": 2.7640532738411225e-15,
+        "actual_observable": 0.7909334272633186,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 0.0005770533205028405,
+        "full_attempt_acceptance_probability": 0.9862189001496423,
+        "independent_full_attempt_acceptance_probability": 0.9862189001505107,
+        "per_segment_conditional_probabilities": [
+          0.9930855213837996,
+          0.9930855690811109
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.9857866283329568,
+        "finite_H_numerical_maximum_acceptance": 0.986651171966311,
+        "acceptance_input_dependence_span": 0.0008645436333541978,
+        "full_attempts_for_one_accepted_trial_99_percent": 2,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 9.771526955148718e-14
+      }
+    },
+    {
+      "segments": 2,
+      "rounds_per_segment": 1,
+      "normalization2_padding": true,
+      "degree": 3,
+      "normalization_per_segment": 1.9070208333333332,
+      "degree_probabilities": [
+        0.5243781203229295,
+        0.3408457782099042,
+        0.11077487791821884,
+        0.024001223548947414
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 2,
+        "degree": 3,
+        "rounds_per_segment": 1,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 1.9070208333333332,
+        "accepted_branch_normalization_per_segment": 2.0,
+        "normalization2_padding": true,
+        "actual_source_block_error_vs_matrix_taylor": 6.020404935007292e-15,
+        "actual_amplified_block_error_vs_general_polynomial": 3.6898358893995135e-14,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 0.001355312383394481,
+        "unnormalized_Taylor_operator_error_full_time": 0.003749094426663341,
+        "conditional_state_vector_error": 0.0009650230249739271,
+        "conditional_state_infidelity": 6.596568542516223e-07,
+        "conditional_state_error_vs_independent_polynomial": 1.2188925830258382e-15,
+        "actual_observable": 0.7909335032084235,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 0.000576977375397969,
+        "full_attempt_acceptance_probability": 0.9999904987669923,
+        "independent_full_attempt_acceptance_probability": 0.9999904987671275,
+        "per_segment_conditional_probabilities": [
+          0.9999952493624035,
+          0.9999952493820203
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.9999816407206972,
+        "finite_H_numerical_maximum_acceptance": 0.9999993568132726,
+        "acceptance_input_dependence_span": 1.771609257539275e-05,
+        "full_attempts_for_one_accepted_trial_99_percent": 1,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 1.620377775623948e-13
+      }
+    },
+    {
+      "segments": 4,
+      "rounds_per_segment": 0,
+      "normalization2_padding": false,
+      "degree": 3,
+      "normalization_per_segment": 1.3835338541666666,
+      "degree_probabilities": [
+        0.722786794835839,
+        0.23490570832164762,
+        0.03817217760226773,
+        0.004135319240245671
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 4,
+        "degree": 3,
+        "rounds_per_segment": 0,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 1.3835338541666666,
+        "accepted_branch_normalization_per_segment": 1.3835338541666666,
+        "normalization2_padding": false,
+        "actual_source_block_error_vs_matrix_taylor": 5.404053245779174e-14,
+        "actual_amplified_block_error_vs_general_polynomial": 5.404053245779174e-14,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 0.7272026497023509,
+        "unnormalized_Taylor_operator_error_full_time": 0.0004699631231460165,
+        "conditional_state_vector_error": 0.00019888123455814757,
+        "conditional_state_infidelity": 3.845863305595998e-08,
+        "conditional_state_error_vs_independent_polynomial": 3.4166498303828477e-15,
+        "actual_observable": 0.7914737536642791,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 3.6726919542373615e-05,
+        "full_attempt_acceptance_probability": 0.07444656249922678,
+        "independent_full_attempt_acceptance_probability": 0.0744465624992699,
+        "per_segment_conditional_probabilities": [
+          0.5223494677590084,
+          0.522349472432545,
+          0.5223494771060833,
+          0.5223494817796216
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.07441839508974107,
+        "finite_H_numerical_maximum_acceptance": 0.0744747299087109,
+        "acceptance_input_dependence_span": 5.6334818969827616e-05,
+        "full_attempts_for_one_accepted_trial_99_percent": 60,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 3.468605314182986e-14
+      }
+    },
+    {
+      "segments": 4,
+      "rounds_per_segment": 1,
+      "normalization2_padding": false,
+      "degree": 3,
+      "normalization_per_segment": 1.3835338541666666,
+      "degree_probabilities": [
+        0.722786794835839,
+        0.23490570832164762,
+        0.03817217760226773,
+        0.004135319240245671
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 4,
+        "degree": 3,
+        "rounds_per_segment": 1,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 1.3835338541666666,
+        "accepted_branch_normalization_per_segment": 1.3835338541666666,
+        "normalization2_padding": false,
+        "actual_source_block_error_vs_matrix_taylor": 5.404053245779174e-14,
+        "actual_amplified_block_error_vs_general_polynomial": 1.4960292840141397e-13,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 0.812525570747786,
+        "unnormalized_Taylor_operator_error_full_time": 0.0004699631231460165,
+        "conditional_state_vector_error": 0.0006817404491654587,
+        "conditional_state_infidelity": 4.636735531082792e-07,
+        "conditional_state_error_vs_independent_polynomial": 6.624393080711243e-15,
+        "actual_observable": 0.791473080574274,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 3.740000954743916e-05,
+        "full_attempt_acceptance_probability": 0.03519445364511145,
+        "independent_full_attempt_acceptance_probability": 0.03519445364517339,
+        "per_segment_conditional_probabilities": [
+          0.43313021582615663,
+          0.43313026574462643,
+          0.433130315663085,
+          0.43313036558152196
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.03514666162785425,
+        "finite_H_numerical_maximum_acceptance": 0.03524224566236682,
+        "acceptance_input_dependence_span": 9.558403451256914e-05,
+        "full_attempts_for_one_accepted_trial_99_percent": 129,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 9.6188961597271e-14
+      }
+    },
+    {
+      "segments": 4,
+      "rounds_per_segment": 1,
+      "normalization2_padding": true,
+      "degree": 3,
+      "normalization_per_segment": 1.3835338541666666,
+      "degree_probabilities": [
+        0.722786794835839,
+        0.23490570832164762,
+        0.03817217760226773,
+        0.004135319240245671
+      ],
+      "term_probabilities": [
+        0.46153846153846156,
+        0.2692307692307693,
+        0.2692307692307693
+      ],
+      "simulation": {
+        "segments": 4,
+        "degree": 3,
+        "rounds_per_segment": 1,
+        "total_time": 1.0,
+        "source_normalization_per_segment": 1.3835338541666666,
+        "accepted_branch_normalization_per_segment": 2.0,
+        "normalization2_padding": true,
+        "actual_source_block_error_vs_matrix_taylor": 5.935804012460709e-15,
+        "actual_amplified_block_error_vs_general_polynomial": 3.622083127738381e-14,
+        "actual_whole_attempt_accepted_map_operator_error_vs_exact_U": 8.619593093035449e-05,
+        "unnormalized_Taylor_operator_error_full_time": 0.0004699631231460165,
+        "conditional_state_vector_error": 6.136655166221823e-05,
+        "conditional_state_infidelity": 2.6704536360000475e-09,
+        "conditional_state_error_vs_independent_polynomial": 2.760695029564915e-15,
+        "actual_observable": 0.7914738103157348,
+        "exact_observable": 0.7915104805838215,
+        "observable_error": 3.667026808662488e-05,
+        "full_attempt_acceptance_probability": 0.9999999173056241,
+        "independent_full_attempt_acceptance_probability": 0.9999999173058862,
+        "per_segment_conditional_probabilities": [
+          0.9999999793264045,
+          0.9999999793264058,
+          0.9999999793264057,
+          0.9999999793264054
+        ],
+        "finite_H_numerical_minimum_acceptance": 0.9999998398711345,
+        "finite_H_numerical_maximum_acceptance": 0.9999999947400846,
+        "acceptance_input_dependence_span": 1.5486895010852209e-07,
+        "full_attempts_for_one_accepted_trial_99_percent": 1,
+        "acceptance_certificate": false,
+        "success_formula": "actual instrument and K p_r(K\u2020K); not assumed sin((2r+1)asin(1/s))\u00b2",
+        "conditional_state_scope": "accepted state before final data Z readout",
+        "physical_resource_estimate": null,
+        "performed": true,
+        "primitive_full_state_error_seed7": 1.6338622804350897e-13
+      }
+    }
+  ],
+  "fixed_degree_step_scaling": [
+    {
+      "n": 1,
+      "terms": 1,
+      "degree": 3,
+      "segments": 4,
+      "logical_qubits": 3,
+      "SELECT_predicates_per_segment": 6,
+      "source_operations_per_segment": 29,
+      "primitive_operations_per_attempt": 416,
+      "cx_per_attempt": 152,
+      "rotation_count_per_attempt": 91,
+      "normalization_per_segment": 1.0914397786458334,
+      "numerical_evaluation_of_segment_Taylor_remainder_bound": 2.4857971183678274e-06,
+      "numerical_evaluation_of_full_unnormalized_operator_bound": 9.943262623903396e-06,
+      "simulation_performed": false
+    },
+    {
+      "n": 2,
+      "terms": 3,
+      "degree": 3,
+      "segments": 4,
+      "logical_qubits": 10,
+      "SELECT_predicates_per_segment": 18,
+      "source_operations_per_segment": 155,
+      "primitive_operations_per_attempt": 5420,
+      "cx_per_attempt": 2024,
+      "rotation_count_per_attempt": 243,
+      "normalization_per_segment": 1.3835338541666666,
+      "numerical_evaluation_of_segment_Taylor_remainder_bound": 0.000496791814084796,
+      "numerical_evaluation_of_full_unnormalized_operator_bound": 0.001990130353172524,
+      "simulation_performed": false
+    },
+    {
+      "n": 3,
+      "terms": 5,
+      "degree": 3,
+      "segments": 4,
+      "logical_qubits": 14,
+      "SELECT_predicates_per_segment": 30,
+      "source_operations_per_segment": 329,
+      "primitive_operations_per_attempt": 13534,
+      "cx_per_attempt": 5192,
+      "rotation_count_per_attempt": 556,
+      "normalization_per_segment": 1.7503662109375,
+      "numerical_evaluation_of_segment_Taylor_remainder_bound": 0.004688446022798498,
+      "numerical_evaluation_of_full_unnormalized_operator_bound": 0.019018801047632206,
+      "simulation_performed": false
+    },
+    {
+      "n": 4,
+      "terms": 7,
+      "degree": 3,
+      "segments": 4,
+      "logical_qubits": 15,
+      "SELECT_predicates_per_segment": 42,
+      "source_operations_per_segment": 431,
+      "primitive_operations_per_attempt": 19415,
+      "cx_per_attempt": 7448,
+      "rotation_count_per_attempt": 866,
+      "normalization_per_segment": 2.205333333333333,
+      "numerical_evaluation_of_segment_Taylor_remainder_bound": 0.020207595159134506,
+      "numerical_evaluation_of_full_unnormalized_operator_bound": 0.08583023095728286,
+      "simulation_performed": false
+    },
+    {
+      "n": 6,
+      "terms": 11,
+      "degree": 3,
+      "segments": 4,
+      "logical_qubits": 20,
+      "SELECT_predicates_per_segment": 66,
+      "source_operations_per_segment": 863,
+      "primitive_operations_per_attempt": 42025,
+      "cx_per_attempt": 16904,
+      "rotation_count_per_attempt": 2806,
+      "normalization_per_segment": 3.4332578125,
+      "numerical_evaluation_of_segment_Taylor_remainder_bound": 0.1454435976015791,
+      "numerical_evaluation_of_full_unnormalized_operator_bound": 0.8743306984645012,
+      "simulation_performed": false
+    },
+    {
+      "n": 8,
+      "terms": 15,
+      "degree": 3,
+      "segments": 4,
+      "logical_qubits": 22,
+      "SELECT_predicates_per_segment": 90,
+      "source_operations_per_segment": 1079,
+      "primitive_operations_per_attempt": 57891,
+      "cx_per_attempt": 23288,
+      "rotation_count_per_attempt": 3942,
+      "normalization_per_segment": 5.174479166666667,
+      "numerical_evaluation_of_segment_Taylor_remainder_bound": 0.5801235093390638,
+      "numerical_evaluation_of_full_unnormalized_operator_bound": 9.154899070091547,
+      "simulation_performed": false
+    }
+  ],
+  "scaling_scope": "generated circuits at fixed degree and4 segments; no equal-accuracy performance claim; analytic tail expressions evaluated numerically",
+  "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+  "source_hashes": {
+    "word_taylor.py": "f6c051233d27e41cd4971de564f1d0b77cc49f7f34f9c509ed65c512b03a27af",
+    "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+    "hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+    "generate_simulation_word_taylor.py": "a132f2a79d9d5ea9965351537892841d80bb20ac0376e9f863779bc89d58bae7"
+  },
+  "license_sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+  "repository_mode": true,
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU",
+    "backend": "Qiskit ideal Statevector",
+    "seed": 7
+  },
+  "generation_and_checks_seconds": 20.37451758100042,
+  "word_enumeration_performed": false,
+  "coefficient_aggregation_performed": false,
+  "gate_implementation": "binary-tree controlled RY; degree/one-slot equality predicates; signed Pauli SELECT; full uncomputation",
+  "formal_proof_integrated": false
+}

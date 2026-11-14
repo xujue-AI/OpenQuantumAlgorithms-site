@@ -1,0 +1,275 @@
+{
+  "method_id": "local-spin-full-xx-reusable-bath-v1",
+  "schedules": {
+    "n1-ground": {
+      "case_id": "n1-ground",
+      "seed": 2026111301,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "frequency_indices": [
+        0,
+        2,
+        0,
+        2
+      ],
+      "bath_bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 0,
+        "total": 8
+      }
+    },
+    "n1-thermal": {
+      "case_id": "n1-thermal",
+      "seed": 2026111302,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "frequency_indices": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "bath_bits": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 4,
+        "total": 12
+      }
+    },
+    "n2-ground": {
+      "case_id": "n2-ground",
+      "seed": 2026111303,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "frequency_indices": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "bath_bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 0,
+        "total": 8
+      }
+    },
+    "n2-thermal": {
+      "case_id": "n2-thermal",
+      "seed": 2026111304,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "frequency_indices": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "bath_bits": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 4,
+        "total": 12
+      }
+    },
+    "n4-thermal-generation": {
+      "case_id": "n4-thermal-generation",
+      "seed": 2026111404,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "frequency_indices": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "bath_bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 4,
+        "total": 12
+      }
+    },
+    "n8-thermal-generation": {
+      "case_id": "n8-thermal-generation",
+      "seed": 2026111408,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        6,
+        3,
+        4,
+        0
+      ],
+      "frequency_indices": [
+        0,
+        2,
+        1,
+        2
+      ],
+      "bath_bits": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 4,
+        "total": 12
+      }
+    },
+    "n16-thermal-generation": {
+      "case_id": "n16-thermal-generation",
+      "seed": 2026111416,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        10,
+        13,
+        3,
+        10
+      ],
+      "frequency_indices": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "bath_bits": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 4,
+        "total": 12
+      }
+    },
+    "n32-thermal-generation": {
+      "case_id": "n32-thermal-generation",
+      "seed": 2026111432,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        1,
+        14,
+        13,
+        6
+      ],
+      "frequency_indices": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "bath_bits": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 4,
+        "total": 12
+      }
+    },
+    "n64-thermal-generation": {
+      "case_id": "n64-thermal-generation",
+      "seed": 2026111464,
+      "rng": "random.Random(MT19937)",
+      "choice_order": "site/frequency/bath_bit",
+      "sites": [
+        42,
+        58,
+        41,
+        35
+      ],
+      "frequency_indices": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "bath_bits": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "logical_rng_calls": {
+        "site": 4,
+        "frequency": 4,
+        "bath_bit": 4,
+        "total": 12
+      }
+    }
+  }
+}

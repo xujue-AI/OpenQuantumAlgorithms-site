@@ -1,0 +1,53 @@
+{
+  "per_output": {
+    "target_qubits": 1,
+    "logical_qubits": 2,
+    "levels": 6,
+    "shots_per_fringe": 329,
+    "distinct_experiment_circuits": 12,
+    "complete_fresh_preparations": 3948,
+    "maximum_controlled_U_power": 32,
+    "shot_weighted_controlled_U_calls": 41454,
+    "source_gate_counts_all_trials": {
+      "p": 124362,
+      "cx": 82908,
+      "h": 7896,
+      "x": 3948,
+      "sdg": 1974,
+      "reset": 7896,
+      "measure": 3948
+    },
+    "ideal_phase_radius_exact": "1/256",
+    "ideal_failure_upper_bound_exact": "4519976474872543820458068806409342980200633700644627369203618838552200459760454070014973003017675983548485852411509945897053924591626059180644060985282511417505572082774255173151109696781673722893729668942862714873733182772968288303806457492675804985125199244080652072271890868908135022685917180223333667004054849412310678023214340761461051626715599979151360000000000000000000000000000000/5495599493078409279254870343858253101952050244253590520779844781375450935450756264120822821306619308046759588037126080671387744918441566109248466781547969350918122839891275828631900286801827612374329458702417316561301654992839988649966761517445253323036164977556138620163352706368215461535622623948016494247712455882753345407101786672557521926414661408246175799098593507064475839211680331933",
+    "controlled_power_scope": "literal repeated controlled product-P calls; no analytic power shortcut",
+    "interrogation_time_scope": "dimensionless base-U calls; not physical wall time",
+    "initialization_scope": "actual ideal resets then n X gates for every fresh measured trial",
+    "physical_estimate_performed": false,
+    "synthesis_performed": false,
+    "exclusions": [
+      "physical zero initialization/reset error and time",
+      "rotation synthesis and hardware faults",
+      "routing/factory/controller schedules",
+      "classical compilation/communication latency"
+    ],
+    "reference_scope": "commuting product phase gates on |1>^n are classically easy; no application advantage"
+  },
+  "whole_study": {
+    "outputs": 12,
+    "complete_fresh_preparations": 47376,
+    "shot_weighted_controlled_U_calls": 497448,
+    "source_gate_counts": {
+      "p": 1492344,
+      "cx": 994896,
+      "h": 94752,
+      "x": 47376,
+      "sdg": 23688,
+      "reset": 94752,
+      "measure": 47376
+    },
+    "workload_status": "sampled ideal counts"
+  },
+  "classical_cpu_seconds": 0.0058912099921144545,
+  "physical_estimate_performed": false,
+  "synthesis_performed": false
+}

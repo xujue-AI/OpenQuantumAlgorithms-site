@@ -1,0 +1,530 @@
+{
+  "status": "executed bounded fixed-total-Pauli-norm complex QSP sweep; state checks on listed sizes, full operators only where total wires <=8",
+  "family": {
+    "system_sizes_materialized": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "system_sizes_simulated": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "system_sizes_operator_validated": [
+      1,
+      2,
+      3
+    ],
+    "J_n": "4.1/((n-1)+0.7*n)",
+    "h_n": "0.7*J_n",
+    "time": 1.0,
+    "alpha": 4.1,
+    "term_count": "2*n-1",
+    "index_width": "ceil(log2(2*n-1))",
+    "logical_width": "n+ceil(log2(2*n-1))+2",
+    "norm_scope": "constant total Pauli coefficient norm, not fixed local coupling; n=3 reproduces J=1,h=0.7",
+    "interpretation": "conditional logical scaling for this changing-coupling family; no physical advantage or fixed-local-coupling scaling claim"
+  },
+  "bounds": {
+    "executed_sweep_max_system_qubits": 5,
+    "sweep_primitive_operation_cap_including_final_measurements_excluding_barriers": 200000,
+    "full_operator_max_total_qubits": 8,
+    "statevector_max_total_qubits": 12,
+    "independent_dense_hamiltonian_max_system_qubits": 8,
+    "scalable_constructor_max_system_qubits": 16,
+    "scalable_constructor_max_pauli_terms": 32,
+    "scalable_constructor_max_phase_degree": 32,
+    "scalable_constructor_max_source_operations": 50000,
+    "generator_scope": "scalable build_qsp_evolution constructs explicit access without dense H; this bounded sweep separately simulates its five outputs"
+  },
+  "instances": [
+    {
+      "parameters": {
+        "n_system": 1,
+        "J": 5.857142857142857,
+        "h": 4.1,
+        "time": 1.0,
+        "hbar": 1,
+        "boundary": "open chain",
+        "alpha": 4.1,
+        "term_count": 1,
+        "terms": [
+          [
+            4.1,
+            "X"
+          ]
+        ],
+        "input_state": "|0>",
+        "observable": "Z(q0)"
+      },
+      "checks": {
+        "encoded_block_error": 1.800677414521633e-09,
+        "decoded_linear_map_operator_error": 7.202709658086532e-09,
+        "conditional_state_check_scope": "accepted data state before final system readout",
+        "conditional_state_vector_error": 5.34678648613785e-09,
+        "conditional_state_infidelity": 0.0,
+        "observable_exact": -0.3391548609838353,
+        "observable_conditional": -0.33915485092406433,
+        "observable_error": 1.0059770960690884e-08,
+        "acceptance_probability": 0.06250000060325805,
+        "accepted_block_singular_values": [
+          0.2500000012065161,
+          0.2500000012065161
+        ],
+        "finite_H_numerical_minimum_acceptance_probability": 0.06250000060325805,
+        "finite_H_numerical_maximum_acceptance_probability": 0.06250000060325805,
+        "acceptance_certified": false,
+        "operator_validation_performed": true,
+        "validation_scope": "actual accepted block/operator plus fixed-zero-input conditional state and observable",
+        "max_entry_error_source_vs_primitive_operator": 3.885780586188048e-16,
+        "source_vs_primitive_check_scope": "full Operator without global-phase alignment",
+        "max_entry_error_source_vs_primitive_zero_input_state": null,
+        "classical_reference": "independent Kronecker Pauli Hamiltonian and scipy.linalg.expm(-1j*H)",
+        "state_validation_performed": true,
+        "certified": false
+      },
+      "qasm_file": "evolution-n1.qasm"
+    },
+    {
+      "parameters": {
+        "n_system": 2,
+        "J": 1.7083333333333333,
+        "h": 1.1958333333333333,
+        "time": 1.0,
+        "hbar": 1,
+        "boundary": "open chain",
+        "alpha": 4.1,
+        "term_count": 3,
+        "terms": [
+          [
+            1.7083333333333333,
+            "ZZ"
+          ],
+          [
+            1.1958333333333333,
+            "IX"
+          ],
+          [
+            1.1958333333333333,
+            "XI"
+          ]
+        ],
+        "input_state": "|00>",
+        "observable": "Z(q0)"
+      },
+      "checks": {
+        "encoded_block_error": 1.771667537023323e-09,
+        "decoded_linear_map_operator_error": 7.086670148093292e-09,
+        "conditional_state_check_scope": "accepted data state before final system readout",
+        "conditional_state_vector_error": 5.65111051898996e-09,
+        "conditional_state_infidelity": 2.220446049250313e-16,
+        "observable_exact": 0.2500775486878819,
+        "observable_conditional": 0.25007755332142834,
+        "observable_error": 4.6335464354285705e-09,
+        "acceptance_probability": 0.062500000425871,
+        "accepted_block_singular_values": [
+          0.25000000168713443,
+          0.2500000016871341,
+          0.25000000001634987,
+          0.25000000001634987
+        ],
+        "finite_H_numerical_minimum_acceptance_probability": 0.06250000000817493,
+        "finite_H_numerical_maximum_acceptance_probability": 0.06250000084356722,
+        "acceptance_certified": false,
+        "operator_validation_performed": true,
+        "validation_scope": "actual accepted block/operator plus fixed-zero-input conditional state and observable",
+        "max_entry_error_source_vs_primitive_operator": 1.3165625507162629e-14,
+        "source_vs_primitive_check_scope": "full Operator without global-phase alignment",
+        "max_entry_error_source_vs_primitive_zero_input_state": null,
+        "classical_reference": "independent Kronecker Pauli Hamiltonian and scipy.linalg.expm(-1j*H)",
+        "state_validation_performed": true,
+        "certified": false
+      },
+      "qasm_file": "evolution-n2.qasm"
+    },
+    {
+      "parameters": {
+        "n_system": 3,
+        "J": 1.0,
+        "h": 0.7,
+        "time": 1.0,
+        "hbar": 1,
+        "boundary": "open chain",
+        "alpha": 4.1,
+        "term_count": 5,
+        "terms": [
+          [
+            1.0,
+            "IZZ"
+          ],
+          [
+            1.0,
+            "ZZI"
+          ],
+          [
+            0.7,
+            "IIX"
+          ],
+          [
+            0.7,
+            "IXI"
+          ],
+          [
+            0.7,
+            "XII"
+          ]
+        ],
+        "input_state": "|000>",
+        "observable": "Z(q0)"
+      },
+      "checks": {
+        "encoded_block_error": 1.6985487047665132e-09,
+        "decoded_linear_map_operator_error": 6.794194819066053e-09,
+        "conditional_state_check_scope": "accepted data state before final system readout",
+        "conditional_state_vector_error": 6.066763962082188e-09,
+        "conditional_state_infidelity": 0.0,
+        "observable_exact": 0.4042558572873547,
+        "observable_conditional": 0.4042558584362674,
+        "observable_error": 1.1489126872099575e-09,
+        "acceptance_probability": 0.062499999939346025,
+        "accepted_block_singular_values": [
+          0.2500000013967767,
+          0.2500000013967763,
+          0.25000000126692296,
+          0.2500000012669221,
+          0.24999999907253878,
+          0.2499999990725383,
+          0.24999999893811234,
+          0.24999999893811203
+        ],
+        "finite_H_numerical_minimum_acceptance_probability": 0.06249999946905602,
+        "finite_H_numerical_maximum_acceptance_probability": 0.06250000069838835,
+        "acceptance_certified": false,
+        "operator_validation_performed": true,
+        "validation_scope": "actual accepted block/operator plus fixed-zero-input conditional state and observable",
+        "max_entry_error_source_vs_primitive_operator": 2.565612271316326e-14,
+        "source_vs_primitive_check_scope": "full Operator without global-phase alignment",
+        "max_entry_error_source_vs_primitive_zero_input_state": null,
+        "classical_reference": "independent Kronecker Pauli Hamiltonian and scipy.linalg.expm(-1j*H)",
+        "state_validation_performed": true,
+        "certified": false
+      },
+      "qasm_file": "evolution-n3.qasm"
+    },
+    {
+      "parameters": {
+        "n_system": 4,
+        "J": 0.7068965517241379,
+        "h": 0.4948275862068965,
+        "time": 1.0,
+        "hbar": 1,
+        "boundary": "open chain",
+        "alpha": 4.1,
+        "term_count": 7,
+        "terms": [
+          [
+            0.7068965517241379,
+            "IIZZ"
+          ],
+          [
+            0.7068965517241379,
+            "IZZI"
+          ],
+          [
+            0.7068965517241379,
+            "ZZII"
+          ],
+          [
+            0.4948275862068965,
+            "IIIX"
+          ],
+          [
+            0.4948275862068965,
+            "IIXI"
+          ],
+          [
+            0.4948275862068965,
+            "IXII"
+          ],
+          [
+            0.4948275862068965,
+            "XIII"
+          ]
+        ],
+        "input_state": "|0000>",
+        "observable": "Z(q0)"
+      },
+      "checks": {
+        "operator_validation_performed": false,
+        "validation_scope": "fixed-zero-input conditional Statevector and Z only; full accepted block/operator not computed",
+        "encoded_block_error": null,
+        "decoded_linear_map_operator_error": null,
+        "accepted_block_singular_values": null,
+        "finite_H_numerical_minimum_acceptance_probability": null,
+        "finite_H_numerical_maximum_acceptance_probability": null,
+        "conditional_state_check_scope": "accepted data state before final system readout",
+        "conditional_state_vector_error": 3.733117596301233e-09,
+        "conditional_state_infidelity": 0.0,
+        "observable_exact": 0.6181181857981752,
+        "observable_conditional": 0.6181181863455039,
+        "observable_error": 5.47328626865351e-10,
+        "acceptance_probability": 0.0625000001307134,
+        "max_entry_error_source_vs_primitive_operator": null,
+        "max_entry_error_source_vs_primitive_zero_input_state": 6.026230852770425e-14,
+        "source_vs_primitive_check_scope": "full Statevector on the fixed zero input without global-phase alignment; not operator equivalence",
+        "acceptance_certified": false,
+        "classical_reference": "independent Kronecker Pauli Hamiltonian and scipy.linalg.expm(-1j*H)",
+        "state_validation_performed": true,
+        "certified": false
+      },
+      "qasm_file": "evolution-n4.qasm"
+    },
+    {
+      "parameters": {
+        "n_system": 5,
+        "J": 0.5466666666666666,
+        "h": 0.3826666666666666,
+        "time": 1.0,
+        "hbar": 1,
+        "boundary": "open chain",
+        "alpha": 4.1,
+        "term_count": 9,
+        "terms": [
+          [
+            0.5466666666666666,
+            "IIIZZ"
+          ],
+          [
+            0.5466666666666666,
+            "IIZZI"
+          ],
+          [
+            0.5466666666666666,
+            "IZZII"
+          ],
+          [
+            0.5466666666666666,
+            "ZZIII"
+          ],
+          [
+            0.3826666666666666,
+            "IIIIX"
+          ],
+          [
+            0.3826666666666666,
+            "IIIXI"
+          ],
+          [
+            0.3826666666666666,
+            "IIXII"
+          ],
+          [
+            0.3826666666666666,
+            "IXIII"
+          ],
+          [
+            0.3826666666666666,
+            "XIIII"
+          ]
+        ],
+        "input_state": "|00000>",
+        "observable": "Z(q0)"
+      },
+      "checks": {
+        "operator_validation_performed": false,
+        "validation_scope": "fixed-zero-input conditional Statevector and Z only; full accepted block/operator not computed",
+        "encoded_block_error": null,
+        "decoded_linear_map_operator_error": null,
+        "accepted_block_singular_values": null,
+        "finite_H_numerical_minimum_acceptance_probability": null,
+        "finite_H_numerical_maximum_acceptance_probability": null,
+        "conditional_state_check_scope": "accepted data state before final system readout",
+        "conditional_state_vector_error": 3.231852559342536e-09,
+        "conditional_state_infidelity": 4.440892098500626e-16,
+        "observable_exact": 0.7475838143508906,
+        "observable_conditional": 0.747583814856875,
+        "observable_error": 5.0598436551752e-10,
+        "acceptance_probability": 0.06250000021884661,
+        "max_entry_error_source_vs_primitive_operator": null,
+        "max_entry_error_source_vs_primitive_zero_input_state": 1.0984515480863883e-13,
+        "source_vs_primitive_check_scope": "full Statevector on the fixed zero input without global-phase alignment; not operator equivalence",
+        "acceptance_certified": false,
+        "classical_reference": "independent Kronecker Pauli Hamiltonian and scipy.linalg.expm(-1j*H)",
+        "state_validation_performed": true,
+        "certified": false
+      },
+      "qasm_file": "evolution-n5.qasm"
+    }
+  ],
+  "phase_error_contract": {
+    "cosine_filter": {
+      "degree": 14,
+      "tau": 4.1,
+      "target": "cos(tau*x)/2 on [-1,1]",
+      "target_chebyshev_coefficients": [
+        -0.19433483991792688,
+        0.0,
+        -0.33829248093471304,
+        0.0,
+        0.29582659598483724,
+        0.0,
+        -0.0551683399912241,
+        0.0,
+        0.004793961928170195,
+        0.0,
+        -0.0002449654943330311,
+        0.0,
+        8.291745826477384e-06,
+        0.0,
+        -2.0016191719920836e-07
+      ],
+      "achieved_chebyshev_coefficients": [
+        -0.19433483991792683,
+        1.387778780781446e-16,
+        -0.3382924809347128,
+        -8.283304597789255e-17,
+        0.29582659598483724,
+        -9.62771529167128e-17,
+        -0.055168339991223996,
+        2.862293735361732e-17,
+        0.004793961928170163,
+        2.168404344971009e-19,
+        -0.00024496549433300496,
+        -3.4260788650541946e-17,
+        8.29174582648402e-06,
+        7.155734338404331e-18,
+        -2.001619172212807e-07
+      ],
+      "phase_fit_max_residual_10001_point_grid": 1.27675647831893e-15,
+      "target_max_residual_10001_point_grid": 3.67690589087033e-09,
+      "numerically_reconstructed_coefficient_l1_discrepancy": 8.558458221446689e-16,
+      "analytic_chebyshev_truncation_bound": 6.03681854918507e-09,
+      "coefficient_reconstruction_guard": 1e-12,
+      "verification_scope": "analytic Bessel-tail bound plus floating coefficient reconstruction and dense-grid checks; no formal interval proof",
+      "conditional_numerical_uniform_error_projection": 6.037819405030892e-09,
+      "certified": false
+    },
+    "sine_filter": {
+      "degree": 15,
+      "tau": 4.1,
+      "target": "sin(tau*x)/2 on [-1,1]",
+      "target_chebyshev_coefficients": [
+        0.0,
+        -0.10327325774733853,
+        0.0,
+        -0.43331470256169274,
+        0.0,
+        0.14390792375018524,
+        0.0,
+        -0.017560388419251186,
+        0.0,
+        0.0011477556906812911,
+        0.0,
+        -4.7197940211544785e-05,
+        0.0,
+        1.3391085288105354e-06,
+        0.0,
+        -2.785090572063941e-08
+      ],
+      "achieved_chebyshev_coefficients": [
+        -1.9626155733547187e-17,
+        -0.10327325774733853,
+        7.632783294297952e-17,
+        -0.4333147025616927,
+        1.457167719820518e-16,
+        0.14390792375018527,
+        9.71445146547012e-17,
+        -0.017560388419251033,
+        -9.714451465470117e-17,
+        0.001147755690681193,
+        5.204170427930421e-17,
+        -4.719794021156715e-05,
+        -3.469446951953614e-18,
+        1.3391085289179985e-06,
+        -2.25514051876985e-16,
+        -2.785090573442784e-08
+      ],
+      "phase_fit_max_residual_10001_point_grid": 1.27675647831893e-15,
+      "target_max_residual_10001_point_grid": 4.4885958838669637e-10,
+      "numerically_reconstructed_coefficient_l1_discrepancy": 1.1945392074316054e-15,
+      "analytic_chebyshev_truncation_bound": 7.169890045414424e-10,
+      "coefficient_reconstruction_guard": 1e-12,
+      "conditional_numerical_uniform_error_projection": 7.179901990806498e-10,
+      "certified": false,
+      "verification_scope": "analytic tail bound plus floating coefficient reconstruction and dense-grid check; no formal interval proof"
+    },
+    "conditional_numerical_U_over_4_operator_error_projection": 3.377904802055771e-09,
+    "conditional_numerical_4K_minus_U_operator_error_projection": 1.3511619208223083e-08,
+    "conditional_numerical_acceptance_probability_projection": 0.06249999831104762,
+    "ideal_exact_scaled_unitary_acceptance_probability": 0.0625,
+    "complete_attempts_for_conditional_acceptance_projection": 72,
+    "acceptance_failure_target": 0.01,
+    "coherent_synthesis_error": "excluded; all primitive continuous rotations remain unsynthesized",
+    "physical_faults": "excluded; separate physical-fault budget is pending",
+    "statistical_error": "distinct from approximation and acceptance; observable shots accounted separately",
+    "certified": false,
+    "accuracy_bound_scope": "conditional numerical projections use analytic Bessel tails plus assumed floating coefficient guard; no certified coefficient, gate or acceptance bound"
+  },
+  "prominent_exclusions": [
+    "fresh initialization/reset gates and initialization/reset time; every attempt assumes all wires start at zero",
+    "arbitrary rotation synthesis and synthesis-induced conditional-state/acceptance changes",
+    "physical faults, error correction, code cycles, factories, physical qubits and runtime",
+    "physical scheduling and measurement/readout duration",
+    "classical coefficient/phase preprocessing, rejection bookkeeping and readout/postprocessing time",
+    "amplitude amplification and deterministic evolution"
+  ],
+  "certified": false,
+  "source_git_commit_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+  "source_git_commit_scope": "repository HEAD only; SHA256 identifies the exact copied source bytes, including uncommitted worker changes",
+  "source_sha256": {
+    "hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+    "qsp_evolution.py": "b7636da8257c6f85133ba98d88bd13aa54d065058a54e56df7418ce58d77429e",
+    "qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+    "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "generate_simulation_qsp_scaling.py": "9904e9792173f0a58b8e5afe4e03128f77b29104b23019f1f3d78ffc88897f5c",
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+  },
+  "qasm_sha256": {
+    "evolution-n1.qasm": "f49f2421c4f62b7b55a53072791d497aff6db5a4065f65e253d723b26707b09d",
+    "evolution-n2.qasm": "a6bbe3bb3edee1c251a7ec193886db344df5e9a0a646a8f24fa3b9667d9260c6",
+    "evolution-n3.qasm": "f33b836995b9dda32677184530c0cdabbd290a8a592fe4a4da34d8d1a9d37107",
+    "evolution-n4.qasm": "e7086bbf8594bfc1c41e20e8a40015c66ab58df1442ee8e95a92517190953a43",
+    "evolution-n5.qasm": "0f6a4877b82061b4c15881bd68856d7ea0be20e46908a06017a2d7381230001c"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "machine_architecture": "x86_64",
+    "backend": "CPU Qiskit Operator/Statevector complex128 and SciPy dense expm; no GPU",
+    "transpilation": {
+      "optimization_level": 1,
+      "seed_transpiler": 7,
+      "basis_gates": [
+        "h",
+        "x",
+        "z",
+        "s",
+        "sdg",
+        "t",
+        "tdg",
+        "rx",
+        "ry",
+        "rz",
+        "cx"
+      ],
+      "qubits_initially_zero": false
+    },
+    "simulation_random_seed": null,
+    "simulation_seed_scope": "deterministic exact ideal-state calculations; no Monte Carlo sampling"
+  }
+}

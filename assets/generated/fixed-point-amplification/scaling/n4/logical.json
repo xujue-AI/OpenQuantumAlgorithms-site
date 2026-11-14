@@ -1,0 +1,130 @@
+{
+  "parameters": {
+    "n_data": 4,
+    "threshold": 4,
+    "exact_preparation_success": 0.25,
+    "promise_satisfied": true
+  },
+  "schedule": {
+    "success_lower_bound_promised": 0.1,
+    "failure_amplitude_delta": 0.05,
+    "ideal_failure_probability_bound": 0.0025000000000000005,
+    "length_L": 13,
+    "rounds": 6,
+    "gamma": 0.9610608071377158,
+    "numerical_threshold_width": 0.07636212498380203,
+    "alpha_phases_radians": [
+      2.8535354950918146,
+      2.3799881988515037,
+      0.8280052253462918,
+      4.400973551821518,
+      3.621774737947665,
+      3.277604484183301
+    ],
+    "beta_phases_radians": [
+      -3.277604484183301,
+      -3.621774737947665,
+      -4.400973551821518,
+      -0.8280052253462918,
+      -2.3799881988515037,
+      -2.8535354950918146
+    ],
+    "phase_convention": "G=-A S0(-alpha) A\u2020 Sgood(beta); chronological beta,A\u2020,-alpha,A,global pi",
+    "phase_construction": "binary64 analytic angles; not an interval or synthesis certificate",
+    "ideal_theorem_scope": "exact phase functions and unitary preparation, promised input success p>=lower_bound",
+    "hardware_success_certified": false
+  },
+  "access_ledger": {
+    "success_lower_bound_promised": 0.1,
+    "failure_amplitude_delta": 0.05,
+    "ideal_failure_probability_bound": 0.0025000000000000005,
+    "length_L": 13,
+    "rounds": 6,
+    "gamma": 0.9610608071377158,
+    "numerical_threshold_width": 0.07636212498380203,
+    "alpha_phases_radians": [
+      2.8535354950918146,
+      2.3799881988515037,
+      0.8280052253462918,
+      4.400973551821518,
+      3.621774737947665,
+      3.277604484183301
+    ],
+    "beta_phases_radians": [
+      -3.277604484183301,
+      -3.621774737947665,
+      -4.400973551821518,
+      -0.8280052253462918,
+      -2.3799881988515037,
+      -2.8535354950918146
+    ],
+    "phase_convention": "G=-A S0(-alpha) A\u2020 Sgood(beta); chronological beta,A\u2020,-alpha,A,global pi",
+    "phase_construction": "binary64 analytic angles; not an interval or synthesis certificate",
+    "ideal_theorem_scope": "exact phase functions and unitary preparation, promised input success p>=lower_bound",
+    "hardware_success_certified": false,
+    "good_qubits": [
+      4
+    ],
+    "good_state": 1,
+    "good_state_bit_order": "good_qubits[0] is the least significant selected bit",
+    "source_preparation_operations": 9,
+    "preparation_calls": 7,
+    "inverse_preparation_calls": 6,
+    "good_projector_phases": 6,
+    "initial_zero_projector_phases": 6,
+    "logical_initialization_qubits_assumed": 5,
+    "physical_initialization_cost_included": false,
+    "source_preflight_proxy": 1749
+  },
+  "source_gate_counts": {
+    "x": 112,
+    "h": 52,
+    "ccx": 13,
+    "p": 6,
+    "mcphase": 6,
+    "measure": 5,
+    "barrier": 1
+  },
+  "primitive_gate_counts": {
+    "cx": 342,
+    "t": 196,
+    "h": 150,
+    "tdg": 147,
+    "x": 112,
+    "rz": 96,
+    "measure": 5,
+    "barrier": 1
+  },
+  "algorithm_qubits": 5,
+  "primitive_qubits": 5,
+  "primitive_unitary_operations": 1043,
+  "primitive_operations_with_readout": 1048,
+  "primitive_dependency_depth": 614,
+  "output_measurements": 5,
+  "independent_chebyshev_success": 0.9979791728712227,
+  "simulation": {
+    "performed": true,
+    "method": "bounded ideal Qiskit statevector",
+    "success_probability": 0.9979791728711771,
+    "lowered_state_max_abs_error": 2.554870205610692e-15,
+    "full_operator_max_abs_error": null
+  },
+  "qasm_sha256": "7dd43849ce8741b8984b734a82cafda70e53442ca5b27a0869a9b6763a28de61",
+  "qasm_scope": "complete measured trial; QASM global phase is irrelevant for this output and is not a controlled-oracle specification",
+  "generation_lowering_reference_wall_time_s": 0.14473727999984476,
+  "included_quantum_work": [
+    "initial A",
+    "every good phase",
+    "every A inverse",
+    "every full zero-state phase",
+    "every forward A",
+    "all data and flag measurements"
+  ],
+  "exclusions": [
+    "physical initialization/reset protocol",
+    "external data loading",
+    "classical verification/control/decoding latency",
+    "compilation time in modeled quantum runtime",
+    "certified per-angle synthesis and runtime-tail bounds"
+  ]
+}

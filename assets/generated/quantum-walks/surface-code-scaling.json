@@ -1,0 +1,898 @@
+{
+  "status": "computed_conditional_model",
+  "queries": [
+    {
+      "model": "coined",
+      "n": 2,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n2/surface-code-p-0.001.json",
+      "pareto_points": 6,
+      "qasm_sha256": "3214776f969fa89d4f8e88cd67521b144e65a21c11881b1834f15dd1511bebf7"
+    },
+    {
+      "model": "coined",
+      "n": 2,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n2/surface-code-p-0.0001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "3214776f969fa89d4f8e88cd67521b144e65a21c11881b1834f15dd1511bebf7"
+    },
+    {
+      "model": "continuous-time",
+      "n": 2,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n2/surface-code-p-0.001.json",
+      "pareto_points": 3,
+      "qasm_sha256": "1dc4321a0720b3f08d8a75d194f2bedc7f4bd9cab76db3f69e2b973ba2b5c919"
+    },
+    {
+      "model": "continuous-time",
+      "n": 2,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n2/surface-code-p-0.0001.json",
+      "pareto_points": 3,
+      "qasm_sha256": "1dc4321a0720b3f08d8a75d194f2bedc7f4bd9cab76db3f69e2b973ba2b5c919"
+    },
+    {
+      "model": "coined",
+      "n": 3,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n3/surface-code-p-0.001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "c7b5622e8549e2f5f4378f9446f64d541ea1ac238bc06f86958c50bd4f0e4a28"
+    },
+    {
+      "model": "coined",
+      "n": 3,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n3/surface-code-p-0.0001.json",
+      "pareto_points": 6,
+      "qasm_sha256": "c7b5622e8549e2f5f4378f9446f64d541ea1ac238bc06f86958c50bd4f0e4a28"
+    },
+    {
+      "model": "continuous-time",
+      "n": 3,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n3/surface-code-p-0.001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "9a4e7c3b3df9115686ce29f7d006143003bdf7c758e5136c14c193506603becc"
+    },
+    {
+      "model": "continuous-time",
+      "n": 3,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n3/surface-code-p-0.0001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "9a4e7c3b3df9115686ce29f7d006143003bdf7c758e5136c14c193506603becc"
+    },
+    {
+      "model": "coined",
+      "n": 4,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n4/surface-code-p-0.001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "a5759942ebded55ade9a27b3602725f1f2c504b9766919804d95e31cd7c4a11e"
+    },
+    {
+      "model": "coined",
+      "n": 4,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n4/surface-code-p-0.0001.json",
+      "pareto_points": 7,
+      "qasm_sha256": "a5759942ebded55ade9a27b3602725f1f2c504b9766919804d95e31cd7c4a11e"
+    },
+    {
+      "model": "continuous-time",
+      "n": 4,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n4/surface-code-p-0.001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "b2bb5b65b2ac1bb23068462e62aa87195b49030b63a73fccb1ede77c589f5859"
+    },
+    {
+      "model": "continuous-time",
+      "n": 4,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n4/surface-code-p-0.0001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "b2bb5b65b2ac1bb23068462e62aa87195b49030b63a73fccb1ede77c589f5859"
+    },
+    {
+      "model": "coined",
+      "n": 5,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n5/surface-code-p-0.001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "a4b3dd5040482f6d8b7c4e3bbdabbc1cdb3ce09de377dcd243f980b9b59f1f16"
+    },
+    {
+      "model": "coined",
+      "n": 5,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n5/surface-code-p-0.0001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "a4b3dd5040482f6d8b7c4e3bbdabbc1cdb3ce09de377dcd243f980b9b59f1f16"
+    },
+    {
+      "model": "continuous-time",
+      "n": 5,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n5/surface-code-p-0.001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "ba8a787fa9ae046444bf6733f79d4f68b777546d143c5bbb01bee1217a4e4345"
+    },
+    {
+      "model": "continuous-time",
+      "n": 5,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n5/surface-code-p-0.0001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "ba8a787fa9ae046444bf6733f79d4f68b777546d143c5bbb01bee1217a4e4345"
+    },
+    {
+      "model": "coined",
+      "n": 6,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n6/surface-code-p-0.001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "bcf0af9b444369b5fe70545feb78e3339f4745448fe461ff6c20052975548fe6"
+    },
+    {
+      "model": "coined",
+      "n": 6,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n6/surface-code-p-0.0001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "bcf0af9b444369b5fe70545feb78e3339f4745448fe461ff6c20052975548fe6"
+    },
+    {
+      "model": "continuous-time",
+      "n": 6,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n6/surface-code-p-0.001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "1192e0145a6661e917356550170a45e18f043d420eb0abe8edba63878d70c5ae"
+    },
+    {
+      "model": "continuous-time",
+      "n": 6,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n6/surface-code-p-0.0001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "1192e0145a6661e917356550170a45e18f043d420eb0abe8edba63878d70c5ae"
+    },
+    {
+      "model": "coined",
+      "n": 8,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n8/surface-code-p-0.001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "140fb66cc3479fef9de961e7f47dd7d07fe925ed40fb4b0fe79bd6dd2abd3de3"
+    },
+    {
+      "model": "coined",
+      "n": 8,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/coined-n8/surface-code-p-0.0001.json",
+      "pareto_points": 7,
+      "qasm_sha256": "140fb66cc3479fef9de961e7f47dd7d07fe925ed40fb4b0fe79bd6dd2abd3de3"
+    },
+    {
+      "model": "continuous-time",
+      "n": 8,
+      "profile": {
+        "name": "surface-code-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n8/surface-code-p-0.001.json",
+      "pareto_points": 4,
+      "qasm_sha256": "67ea79c553894a963913ce8c4f01547c403c3484fcea88dfed4f851a80994404"
+    },
+    {
+      "model": "continuous-time",
+      "n": 8,
+      "profile": {
+        "name": "surface-code-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "report": "scaling/continuous-time-n8/surface-code-p-0.0001.json",
+      "pareto_points": 5,
+      "qasm_sha256": "67ea79c553894a963913ce8c4f01547c403c3484fcea88dfed4f851a80994404"
+    }
+  ],
+  "query_count": 24,
+  "summary_choices": [
+    {
+      "model": "coined",
+      "n": 2,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 239684,
+      "data_code_distance": 25,
+      "serial_runtime_seconds": 4.910275,
+      "peak_times_runtime_qubit_seconds": 1176914.3531,
+      "modeled_physical_fault_score_all_shots": 0.004033922782827168
+    },
+    {
+      "model": "coined",
+      "n": 2,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 398606,
+      "data_code_distance": 15,
+      "serial_runtime_seconds": 2.946165,
+      "peak_times_runtime_qubit_seconds": 1174359.04599,
+      "modeled_physical_fault_score_all_shots": 0.004740995312031169
+    },
+    {
+      "model": "coined",
+      "n": 2,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 17624,
+      "data_code_distance": 13,
+      "serial_runtime_seconds": 2.553343,
+      "peak_times_runtime_qubit_seconds": 45000.117032,
+      "modeled_physical_fault_score_all_shots": 0.0004036086670796
+    },
+    {
+      "model": "coined",
+      "n": 2,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 28324,
+      "data_code_distance": 7,
+      "serial_runtime_seconds": 1.374877,
+      "peak_times_runtime_qubit_seconds": 38942.016148,
+      "modeled_physical_fault_score_all_shots": 0.00111068756
+    },
+    {
+      "model": "continuous-time",
+      "n": 2,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 183169,
+      "data_code_distance": 21,
+      "serial_runtime_seconds": 1.188453,
+      "peak_times_runtime_qubit_seconds": 217687.747557,
+      "modeled_physical_fault_score_all_shots": 0.004873143001099996
+    },
+    {
+      "model": "continuous-time",
+      "n": 2,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 469993,
+      "data_code_distance": 13,
+      "serial_runtime_seconds": 0.735709,
+      "peak_times_runtime_qubit_seconds": 345778.080037,
+      "modeled_physical_fault_score_all_shots": 0.004741761019999994
+    },
+    {
+      "model": "continuous-time",
+      "n": 2,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 22653,
+      "data_code_distance": 17,
+      "serial_runtime_seconds": 0.962081,
+      "peak_times_runtime_qubit_seconds": 21794.020893,
+      "modeled_physical_fault_score_all_shots": 0.0001873894100152745
+    },
+    {
+      "model": "continuous-time",
+      "n": 2,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 51313,
+      "data_code_distance": 7,
+      "serial_runtime_seconds": 0.396151,
+      "peak_times_runtime_qubit_seconds": 20327.696263,
+      "modeled_physical_fault_score_all_shots": 0.00034019050999999924
+    },
+    {
+      "model": "coined",
+      "n": 3,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 398075,
+      "data_code_distance": 25,
+      "serial_runtime_seconds": 148.1405,
+      "peak_times_runtime_qubit_seconds": 58971029.5375,
+      "modeled_physical_fault_score_all_shots": 0.0036273848722854587
+    },
+    {
+      "model": "coined",
+      "n": 3,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 819635,
+      "data_code_distance": 17,
+      "serial_runtime_seconds": 100.73554,
+      "peak_times_runtime_qubit_seconds": 82566374.3279,
+      "modeled_physical_fault_score_all_shots": 0.0049065224289054745
+    },
+    {
+      "model": "coined",
+      "n": 3,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 33355,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 112.58678,
+      "peak_times_runtime_qubit_seconds": 3755332.0469,
+      "modeled_physical_fault_score_all_shots": 0.0003703472552266549
+    },
+    {
+      "model": "coined",
+      "n": 3,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 50715,
+      "data_code_distance": 9,
+      "serial_runtime_seconds": 53.33058,
+      "peak_times_runtime_qubit_seconds": 2704660.3647,
+      "modeled_physical_fault_score_all_shots": 0.0006370001551999893
+    },
+    {
+      "model": "continuous-time",
+      "n": 3,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 369772,
+      "data_code_distance": 21,
+      "serial_runtime_seconds": 1.328271,
+      "peak_times_runtime_qubit_seconds": 491157.424212,
+      "modeled_physical_fault_score_all_shots": 0.004820852733600003
+    },
+    {
+      "model": "continuous-time",
+      "n": 3,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 1234845,
+      "data_code_distance": 13,
+      "serial_runtime_seconds": 0.822263,
+      "peak_times_runtime_qubit_seconds": 1015367.354235,
+      "modeled_physical_fault_score_all_shots": 0.0025975098865931084
+    },
+    {
+      "model": "continuous-time",
+      "n": 3,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 29972,
+      "data_code_distance": 21,
+      "serial_runtime_seconds": 1.328271,
+      "peak_times_runtime_qubit_seconds": 39810.938412,
+      "modeled_physical_fault_score_all_shots": 0.0002810841150000152
+    },
+    {
+      "model": "continuous-time",
+      "n": 3,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 76824,
+      "data_code_distance": 7,
+      "serial_runtime_seconds": 0.442757,
+      "peak_times_runtime_qubit_seconds": 34014.363768,
+      "modeled_physical_fault_score_all_shots": 0.0005087877150000182
+    },
+    {
+      "model": "coined",
+      "n": 4,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 734620,
+      "data_code_distance": 25,
+      "serial_runtime_seconds": 343.303125,
+      "peak_times_runtime_qubit_seconds": 252197341.6875,
+      "modeled_physical_fault_score_all_shots": 0.0036398499584745234
+    },
+    {
+      "model": "coined",
+      "n": 4,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 947898,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 260.910375,
+      "peak_times_runtime_qubit_seconds": 247316422.64175,
+      "modeled_physical_fault_score_all_shots": 0.004380643173724522
+    },
+    {
+      "model": "coined",
+      "n": 4,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 38398,
+      "data_code_distance": 21,
+      "serial_runtime_seconds": 288.374625,
+      "peak_times_runtime_qubit_seconds": 11073008.85075,
+      "modeled_physical_fault_score_all_shots": 0.0009603539148007453
+    },
+    {
+      "model": "coined",
+      "n": 4,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 57638,
+      "data_code_distance": 9,
+      "serial_runtime_seconds": 123.589125,
+      "peak_times_runtime_qubit_seconds": 7123429.98675,
+      "modeled_physical_fault_score_all_shots": 0.0017018886647999915
+    },
+    {
+      "model": "continuous-time",
+      "n": 4,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 649735,
+      "data_code_distance": 23,
+      "serial_runtime_seconds": 1.607907,
+      "peak_times_runtime_qubit_seconds": 1044713.454645,
+      "modeled_physical_fault_score_all_shots": 0.0037458103345075354
+    },
+    {
+      "model": "continuous-time",
+      "n": 4,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 1389295,
+      "data_code_distance": 13,
+      "serial_runtime_seconds": 0.908817,
+      "peak_times_runtime_qubit_seconds": 1262614.914015,
+      "modeled_physical_fault_score_all_shots": 0.0035732035154575083
+    },
+    {
+      "model": "continuous-time",
+      "n": 4,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 36035,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 1.328271,
+      "peak_times_runtime_qubit_seconds": 47864.245485,
+      "modeled_physical_fault_score_all_shots": 0.000374778820000321
+    },
+    {
+      "model": "continuous-time",
+      "n": 4,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 102335,
+      "data_code_distance": 7,
+      "serial_runtime_seconds": 0.489363,
+      "peak_times_runtime_qubit_seconds": 50078.962605,
+      "modeled_physical_fault_score_all_shots": 0.0006893693199999957
+    },
+    {
+      "model": "coined",
+      "n": 5,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 878180,
+      "data_code_distance": 25,
+      "serial_runtime_seconds": 625.269425,
+      "peak_times_runtime_qubit_seconds": 549099103.6465,
+      "modeled_physical_fault_score_all_shots": 0.0007051796851374812
+    },
+    {
+      "model": "coined",
+      "n": 5,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 1152020,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 475.204763,
+      "peak_times_runtime_qubit_seconds": 547445391.07126,
+      "modeled_physical_fault_score_all_shots": 0.002204325658517482
+    },
+    {
+      "model": "coined",
+      "n": 5,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 40520,
+      "data_code_distance": 17,
+      "serial_runtime_seconds": 425.183209,
+      "peak_times_runtime_qubit_seconds": 17228423.62868,
+      "modeled_physical_fault_score_all_shots": 0.001830744948606458
+    },
+    {
+      "model": "coined",
+      "n": 5,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 57960,
+      "data_code_distance": 9,
+      "serial_runtime_seconds": 225.096993,
+      "peak_times_runtime_qubit_seconds": 13046621.71428,
+      "modeled_physical_fault_score_all_shots": 0.0033313915535999813
+    },
+    {
+      "model": "continuous-time",
+      "n": 5,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 950726,
+      "data_code_distance": 23,
+      "serial_runtime_seconds": 1.837608,
+      "peak_times_runtime_qubit_seconds": 1747061.703408,
+      "modeled_physical_fault_score_all_shots": 0.0005752526838789787
+    },
+    {
+      "model": "continuous-time",
+      "n": 5,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 1869466,
+      "data_code_distance": 13,
+      "serial_runtime_seconds": 1.038648,
+      "peak_times_runtime_qubit_seconds": 1941717.121968,
+      "modeled_physical_fault_score_all_shots": 0.004889593540038977
+    },
+    {
+      "model": "continuous-time",
+      "n": 5,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 40138,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 1.518024,
+      "peak_times_runtime_qubit_seconds": 60930.447312,
+      "modeled_physical_fault_score_all_shots": 0.0005045099500004182
+    },
+    {
+      "model": "continuous-time",
+      "n": 5,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 106991,
+      "data_code_distance": 7,
+      "serial_runtime_seconds": 0.559272,
+      "peak_times_runtime_qubit_seconds": 59837.070552,
+      "modeled_physical_fault_score_all_shots": 0.0009359483499999882
+    },
+    {
+      "model": "coined",
+      "n": 6,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 1024127,
+      "data_code_distance": 25,
+      "serial_runtime_seconds": 857.966525,
+      "peak_times_runtime_qubit_seconds": 878666683.3486749,
+      "modeled_physical_fault_score_all_shots": 0.0011330954843913861
+    },
+    {
+      "model": "coined",
+      "n": 6,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 1343783,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 652.054559,
+      "peak_times_runtime_qubit_seconds": 876219831.456697,
+      "modeled_physical_fault_score_all_shots": 0.0034987151057823936
+    },
+    {
+      "model": "coined",
+      "n": 6,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 48691,
+      "data_code_distance": 17,
+      "serial_runtime_seconds": 583.417237,
+      "peak_times_runtime_qubit_seconds": 28407168.686767,
+      "modeled_physical_fault_score_all_shots": 0.0029417867228798715
+    },
+    {
+      "model": "coined",
+      "n": 6,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 124203,
+      "data_code_distance": 9,
+      "serial_runtime_seconds": 308.867949,
+      "peak_times_runtime_qubit_seconds": 38362325.869647,
+      "modeled_physical_fault_score_all_shots": 0.004207936721591992
+    },
+    {
+      "model": "continuous-time",
+      "n": 6,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 1135660,
+      "data_code_distance": 21,
+      "serial_runtime_seconds": 1.817634,
+      "peak_times_runtime_qubit_seconds": 2064214.22844,
+      "modeled_physical_fault_score_all_shots": 0.0006907707720467627
+    },
+    {
+      "model": "continuous-time",
+      "n": 6,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 2245060,
+      "data_code_distance": 15,
+      "serial_runtime_seconds": 1.29831,
+      "peak_times_runtime_qubit_seconds": 2914783.8486,
+      "modeled_physical_fault_score_all_shots": 0.0012095754480467734
+    },
+    {
+      "model": "continuous-time",
+      "n": 6,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 44780,
+      "data_code_distance": 21,
+      "serial_runtime_seconds": 1.817634,
+      "peak_times_runtime_qubit_seconds": 81393.65052,
+      "modeled_physical_fault_score_all_shots": 0.00060541194000001
+    },
+    {
+      "model": "continuous-time",
+      "n": 6,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 83420,
+      "data_code_distance": 7,
+      "serial_runtime_seconds": 0.605878,
+      "peak_times_runtime_qubit_seconds": 50542.34276,
+      "modeled_physical_fault_score_all_shots": 0.001124735940000021
+    },
+    {
+      "model": "coined",
+      "n": 8,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 1314772,
+      "data_code_distance": 25,
+      "serial_runtime_seconds": 1286.242375,
+      "peak_times_runtime_qubit_seconds": 1691115459.8635,
+      "modeled_physical_fault_score_all_shots": 0.002158006104388042
+    },
+    {
+      "model": "coined",
+      "n": 8,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 1942988,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 977.544205,
+      "peak_times_runtime_qubit_seconds": 1899356659.78454,
+      "modeled_physical_fault_score_all_shots": 0.004567587770728046
+    },
+    {
+      "model": "coined",
+      "n": 8,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 92148,
+      "data_code_distance": 21,
+      "serial_runtime_seconds": 1080.443595,
+      "peak_times_runtime_qubit_seconds": 99560716.39206,
+      "modeled_physical_fault_score_all_shots": 0.0035045310059963293
+    },
+    {
+      "model": "coined",
+      "n": 8,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 414908,
+      "data_code_distance": 9,
+      "serial_runtime_seconds": 463.047255,
+      "peak_times_runtime_qubit_seconds": 192122010.47754,
+      "modeled_physical_fault_score_all_shots": 0.0043766346328465424
+    },
+    {
+      "model": "continuous-time",
+      "n": 8,
+      "physical_error_rate": 0.001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 1225667,
+      "data_code_distance": 23,
+      "serial_runtime_seconds": 2.29701,
+      "peak_times_runtime_qubit_seconds": 2815369.35567,
+      "modeled_physical_fault_score_all_shots": 0.0009204101665623214
+    },
+    {
+      "model": "continuous-time",
+      "n": 8,
+      "physical_error_rate": 0.001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 2321841,
+      "data_code_distance": 15,
+      "serial_runtime_seconds": 1.49805,
+      "peak_times_runtime_qubit_seconds": 3478233.91005,
+      "modeled_physical_fault_score_all_shots": 0.0016693602640623232
+    },
+    {
+      "model": "continuous-time",
+      "n": 8,
+      "physical_error_rate": 0.0001,
+      "choice": "fewest qubits",
+      "peak_physical_qubits": 54885,
+      "data_code_distance": 19,
+      "serial_runtime_seconds": 1.89753,
+      "peak_times_runtime_qubit_seconds": 104145.93405,
+      "modeled_physical_fault_score_all_shots": 0.0008072159200007504
+    },
+    {
+      "model": "continuous-time",
+      "n": 8,
+      "physical_error_rate": 0.0001,
+      "choice": "shortest runtime",
+      "peak_physical_qubits": 111065,
+      "data_code_distance": 7,
+      "serial_runtime_seconds": 0.69909,
+      "peak_times_runtime_qubit_seconds": 77644.43085,
+      "modeled_physical_fault_score_all_shots": 0.0015562409200000015
+    }
+  ],
+  "observable_contract": {
+    "absolute_error_target": 0.0301,
+    "algorithm_bias_bound": 0,
+    "synthesis_bias_allowance": 0.0001,
+    "sampling_error_allowance": 0.03,
+    "sampling_failure_probability": 0.005,
+    "physical_failure_probability": 0.005,
+    "outcome_min": 0,
+    "outcome_max": 1,
+    "kind": "one_bounded_scalar_mean",
+    "shots_required": 3329,
+    "confidence_status": "conditional_only; independent approximation evidence is required",
+    "certified_confidence_lower_bound": null,
+    "conditional_confidence_lower_bound": 0.99,
+    "assumptions": [
+      "Independent identically distributed bounded shots at one fixed circuit/parameter setting",
+      "The caller independently establishes the algorithm_bias_bound",
+      "The synthesis model scalar upper-bounds output-distribution total variation; this module does not certify it",
+      "The declared physical-fault model upper-bounds faults and the classical measurement interpretation is correct"
+    ],
+    "does_not_cover": [
+      "optimizer convergence",
+      "noncommuting observable grouping",
+      "multiple parameter settings",
+      "adaptive stopping"
+    ]
+  },
+  "physical_time_boundary": "quantum model only; preparation/reset/control/communication costs excluded",
+  "spacetime_metric": "peak times serial model runtime, not occupancy integral",
+  "provenance": {
+    "source_commit_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_commit_scope": "source hashes identify code if generation precedes a commit",
+    "sha256": {
+      "src/openquantum/quantum_walks.py": "8dcd4a28ebe982e48f3360a1e9c17fc8ea94f84cc4c0b1b0cedebd40e98ba0f6",
+      "src/openquantum/quantum_walks_continuous.py": "c380f3185a3fdb333f68852f5c1326f61deb2eca43ed99ebc09e32955cb09966",
+      "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+      "scripts/generate_quantum_walks.py": "8c42b76f31478888c7b3c99970e71bd22198ac02bfeb6177519038d4c687867c",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "python": "3.12.14",
+    "device": "CPU",
+    "seed": 731,
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "qdk": "1.34.0"
+    }
+  }
+}

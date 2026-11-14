@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "kind": "local-spin-public-reproduction-saved-evidence",
+  "interface_id": "local-spin-bath-public-reproduction-v1",
+  "source_commit": "0ae33efcc5fd200004acc8bcc14b3e8e70f6e06b",
+  "accepted_input_manifest_sha256": "63f43d784d7f6dfec8f743843961df1d072c049469068582a26696fb410938a7",
+  "all_components_verified": false,
+  "new_algorithm_result": false,
+  "algorithm_accuracy_certificate": false,
+  "files": {
+    "events.ndjson": {
+      "bytes": 6926,
+      "sha256": "20d8db3cf957d472d1d421ab48542fcfd17830728122e168b9302fea65b12863"
+    },
+    "finite-reference.json": {
+      "bytes": 766297,
+      "sha256": "2382ee6d1a2248f072a110f92139f7fbf3b31f7708771ada36c88637b7dc12b2"
+    },
+    "interface-validation.json": {
+      "bytes": 1880,
+      "sha256": "dfc5226c5bd66e2351685960484d8c48683803d32d48b05120b8c5dfa6390afc"
+    },
+    "provenance.json": {
+      "bytes": 4251,
+      "sha256": "92f528cf3c9efb9a717eb71c3a5dabd5cef14582a4bad29462ea5274c6657d53"
+    },
+    "reproduction.json": {
+      "bytes": 2586,
+      "sha256": "eaa97f7972d29e4ccaaf9be2f5a8c52388b792abe127549a506f54145042e2c3"
+    },
+    "source-contracts.json": {
+      "bytes": 1792,
+      "sha256": "1f52d403e57ff7213f901f788a6e19da4bcd1e9d31b50d337be28e06d13ff4c6"
+    },
+    "source/reusable_bath_local_spin_checks.py": {
+      "bytes": 27321,
+      "sha256": "ec7c6e300a867a6a89a3a9df9f3e3b027ab8f5ff5efbd204fdd37f3554707ee5"
+    },
+    "source/reusable_bath_local_spin_reproduce.py": {
+      "bytes": 39665,
+      "sha256": "4ca3e2f22c5c4ca5dad5a5d3f94f4762a3c2382cba6c39e560953830fd5c38b9"
+    }
+  }
+}

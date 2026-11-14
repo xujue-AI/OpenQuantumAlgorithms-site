@@ -1,0 +1,785 @@
+{
+  "basis": {
+    "certified": false,
+    "evidence": [
+      {
+        "label": "local",
+        "sha256": "d8b0960232cd414e6c24b291cd96a267697f4fb615090efdf689105428d3c168"
+      },
+      {
+        "label": "linux",
+        "sha256": "827233aac44465c19dee454dbf3fbc799ce8bb674335816938c768b7786eb5d9"
+      }
+    ],
+    "guard_rule": "nextafter_observed_summary_toward_positive_infinity"
+  },
+  "cases": {
+    "dynamics-n1-Z": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.06250051161538336
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "shape": [
+              2
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.7648418453870576
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 3.045423615412416e-22,
+                "upper": 3.0454236154124164e-22
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 2.117582368135751e-22,
+                "upper": 2.1175823681357513e-22
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 5.392465778533591e-23,
+                "upper": 5.392465778533592e-23
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 2.117582368135751e-22,
+                "upper": 2.1175823681357513e-22
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 1,
+        "primitive_operations": 15772
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": 0.7648421872844885
+      },
+      "saved_exact_reference_mean": 0.7648421872844885,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 2.7755575615628914e-17,
+                "upper": 2.775557561562892e-17
+              }
+            },
+            "saved": 0.06250000940769829
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 4.163336342344337e-16,
+                "upper": 4.1633363423443375e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 3.3306690738754696e-16,
+                "upper": 3.33066907387547e-16
+              }
+            },
+            "shape": [
+              2
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.440892098500626e-16,
+                "upper": 4.440892098500627e-16
+              }
+            },
+            "saved": 0.7648422199569628
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 3.8242790408248196e-16,
+                "upper": 3.82427904082482e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 3.3306690738754696e-16,
+                "upper": 3.33066907387547e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 3.3306690738754696e-16,
+                "upper": 3.33066907387547e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 1,
+        "primitive_operations": 48
+      },
+      "source_bias": {
+        "frozen": 3.2587523871718945e-07,
+        "mode": "frozen_upper_bound"
+      }
+    },
+    "dynamics-n2-Z": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.062499960702209395
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              }
+            },
+            "shape": [
+              2
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              }
+            },
+            "saved": 0.783634754297777
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.3029178960748876e-16,
+                "upper": 1.302917896074888e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.1113745915354772e-16,
+                "upper": 1.1113745915354774e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 5.551115123125783e-17,
+                "upper": 5.551115123125784e-17
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 1.1102230246251565e-16,
+                "upper": 1.1102230246251568e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 1,
+        "primitive_operations": 80998
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": 0.7836360900724648
+      },
+      "saved_exact_reference_mean": 0.7836360900724648,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.8041124150158794e-16,
+                "upper": 1.8041124150158796e-16
+              }
+            },
+            "saved": 0.06250000870777488
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 5.551115123125783e-16,
+                "upper": 5.551115123125784e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 3.3306690738754696e-16,
+                "upper": 3.33066907387547e-16
+              }
+            },
+            "shape": [
+              2
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 5.551115123125783e-16,
+                "upper": 5.551115123125784e-16
+              }
+            },
+            "saved": 0.7836357872574782
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.1301708447858056e-15,
+                "upper": 1.1301708447858058e-15
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 7.473417450352271e-16,
+                "upper": 7.473417450352272e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 7.216449660063518e-16,
+                "upper": 7.2164496600635185e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 3.3306690738754696e-16,
+                "upper": 3.33066907387547e-16
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 1,
+        "primitive_operations": 948
+      },
+      "source_bias": {
+        "frozen": 3.429588053916739e-06,
+        "mode": "frozen_upper_bound"
+      }
+    },
+    "thermal-n1-X": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.042185788687024176
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "shape": [
+              2
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": -0.16854291180599315
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 6.025002251935624e-17,
+                "upper": 6.025002251935626e-17
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.361545714040345e-17,
+                "upper": 4.3615457140403456e-17
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 1.4538508368342372e-17,
+                "upper": 1.4538508368342375e-17
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 4.1121039334992606e-17,
+                "upper": 4.112103933499261e-17
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 2,
+        "primitive_operations": 14162
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": -0.16854242942750775
+      },
+      "saved_exact_reference_mean": -0.16854242942750775,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 1.3877787807814457e-17,
+                "upper": 1.387778780781446e-17
+              }
+            },
+            "saved": 0.04218555356506441
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 5.551115123125783e-17,
+                "upper": 5.551115123125784e-17
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 5.551115123125783e-17,
+                "upper": 5.551115123125784e-17
+              }
+            },
+            "shape": [
+              2
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 5.551115123125783e-17,
+                "upper": 5.551115123125784e-17
+              }
+            },
+            "saved": -0.16854243131196342
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.2887652117865593e-16,
+                "upper": 1.2887652117865596e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 8.224253704772541e-17,
+                "upper": 8.224253704772543e-17
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 4.565377911698611e-33,
+                "upper": 4.5653779116986115e-33
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 8.224253704772541e-17,
+                "upper": 8.224253704772543e-17
+              }
+            },
+            "shape": [
+              2,
+              2
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 2,
+        "primitive_operations": 52
+      },
+      "source_bias": {
+        "frozen": 2.030898618653388e-08,
+        "mode": "frozen_upper_bound"
+      }
+    },
+    "thermal-n2-X": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.01579150066116861
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "shape": [
+              4
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": -0.2795013675835542
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "shape": [
+              4,
+              4
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 4,
+        "primitive_operations": 80376
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": -0.279501653765432
+      },
+      "saved_exact_reference_mean": -0.279501653765432,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 7.28583859910259e-17,
+                "upper": 7.285838599102591e-17
+              }
+            },
+            "saved": 0.015791502530715415
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 1.7069679003611782e-15,
+                "upper": 1.7069679003611784e-15
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.996003610813204e-16,
+                "upper": 4.996003610813205e-16
+              }
+            },
+            "shape": [
+              4
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 6.661338147750939e-16,
+                "upper": 6.66133814775094e-16
+              }
+            },
+            "saved": -0.2795016254678731
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.240533452715831e-15,
+                "upper": 1.2405334527158312e-15
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.996003610813204e-16,
+                "upper": 4.996003610813205e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 2.943250612618554e-16,
+                "upper": 2.9432506126185544e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 4.996003610813204e-16,
+                "upper": 4.996003610813205e-16
+              }
+            },
+            "shape": [
+              4,
+              4
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 4,
+        "primitive_operations": 957
+      },
+      "source_bias": {
+        "frozen": 4.807279597761717e-07,
+        "mode": "frozen_upper_bound"
+      }
+    },
+    "thermal-n2-Z": {
+      "compiled": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": 0.015791500661168613
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "shape": [
+              4
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "saved": -0.3787567295986138
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 0.0,
+                "upper": 5e-324
+              }
+            },
+            "shape": [
+              4,
+              4
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 4,
+        "primitive_operations": 80374
+      },
+      "reference": {
+        "absolute_difference": {
+          "observed_maximum": 0.0,
+          "upper": 5e-324
+        },
+        "baseline": -0.3787563384836264
+      },
+      "saved_exact_reference_mean": -0.3787563384836264,
+      "source": {
+        "fields": {
+          "acceptance_probability": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 7.632783294297951e-17,
+                "upper": 7.632783294297952e-17
+              }
+            },
+            "saved": 0.01579150253071542
+          },
+          "joint_probabilities": {
+            "kind": "real_vector",
+            "limits": {
+              "l1_difference": {
+                "observed_maximum": 9.992007221626409e-16,
+                "upper": 9.99200722162641e-16
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.3021142204224816e-16,
+                "upper": 4.302114220422482e-16
+              }
+            },
+            "shape": [
+              4
+            ]
+          },
+          "mean": {
+            "kind": "scalar",
+            "limits": {
+              "maximum_absolute_difference": {
+                "observed_maximum": 4.440892098500626e-16,
+                "upper": 4.440892098500627e-16
+              }
+            },
+            "saved": -0.3787563467838736
+          },
+          "reduced_before_output": {
+            "kind": "complex_matrix",
+            "limits": {
+              "frobenius_difference": {
+                "observed_maximum": 1.223469625743139e-15,
+                "upper": 1.2234696257431391e-15
+              },
+              "maximum_absolute_difference": {
+                "observed_maximum": 6.193447699145065e-16,
+                "upper": 6.193447699145066e-16
+              },
+              "maximum_imaginary_absolute_difference": {
+                "observed_maximum": 3.6016450495757713e-16,
+                "upper": 3.601645049575772e-16
+              },
+              "maximum_real_absolute_difference": {
+                "observed_maximum": 5.828670879282072e-16,
+                "upper": 5.828670879282073e-16
+              }
+            },
+            "shape": [
+              4,
+              4
+            ]
+          }
+        },
+        "numerical_method": "unnormalized pure-state Kraus ensemble",
+        "peak_branches": 4,
+        "primitive_operations": 955
+      },
+      "source_bias": {
+        "frozen": 4.120525369510042e-07,
+        "mode": "frozen_upper_bound"
+      }
+    }
+  },
+  "helper_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+  "kind": "complete",
+  "lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+  "runtime": {
+    "machines": [
+      "arm64",
+      "x86_64"
+    ],
+    "packages": {
+      "numpy": "2.5.4",
+      "qiskit": "2.6.2",
+      "scipy": "1.18.1"
+    },
+    "python_version": "3.12.14"
+  },
+  "schema": "openquantum-tail-numerical-policy-v1",
+  "status": "reviewed_observed_reproduction"
+}

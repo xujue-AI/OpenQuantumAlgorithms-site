@@ -1,0 +1,3114 @@
+{
+  "status": "checked_small_finite_diagonal_channel",
+  "paper": {
+    "doi": "10.1038/s41586-025-09583-x",
+    "weak_round_equations": [
+      28,
+      29
+    ],
+    "spectral_correction_equation": 19,
+    "coherent_correction": "exactly zero for the declared diagonal-Pauli family"
+  },
+  "source_commit": "4f54f1944c2b031a0b1bfe105fcc70d3b8d20824",
+  "source_dirty": false,
+  "source_revision_is_exact": true,
+  "environment": {
+    "python": "3.12.14",
+    "qiskit": "2.6.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "device": "CPU",
+    "seed": null,
+    "random_sampling_performed": false
+  },
+  "caps": {
+    "source_rounds": 256,
+    "primitive_operations_each": 100000,
+    "reference_system_wires": 1,
+    "reference_clock_bits": 4,
+    "reference_total_wires": 7,
+    "output_bytes": 8388608
+  },
+  "source_files": {
+    "detailed_balance_channel.py": {
+      "bytes": 24362,
+      "sha256": "99ac8dbfacf6ee484caeb6ad328fe145f150871e4272538dd279f67cc2573a8b"
+    },
+    "detailed_balance_access.py": {
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    "generate_detailed_balance_channel.py": {
+      "bytes": 11583,
+      "sha256": "f215acff31d87b3ecf8b0e6b7fa7de033c5754791bb15885a78b9737feb704c2"
+    }
+  },
+  "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+  "wall_seconds": 0.838212750000821,
+  "cases": [
+    {
+      "name": "n1-m2-beta1-delta0.0625",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 567,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 575,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 8,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 4602,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 8,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 575,
+        "total_resets": 65,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 1920,
+        "t": 800,
+        "tdg": 600,
+        "h": 520,
+        "rz": 384,
+        "ry": 184,
+        "p": 96,
+        "reset": 65,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 3367,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 2,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.0625,
+          "eta": 0.9775450868978823,
+          "weak_flag": 4,
+          "access_operations": 54,
+          "weak_operations": 8,
+          "controlled_inverse_operations": 505,
+          "source_operations": 567,
+          "preflight_upper_bound": 930,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 240,
+          "t": 100,
+          "tdg": 75,
+          "h": 65,
+          "rz": 48,
+          "ry": 23,
+          "p": 12,
+          "x": 4
+        },
+        "depth": 425,
+        "actual_vs_independent_kraus_max_entry_error": 1.554442050918829e-14,
+        "actual_vs_independent_channel_frobenius_error": 5.893948461961824e-14,
+        "trace_preservation_max_entry_error": 3.1641356201824295e-14,
+        "minimum_choi_eigenvalue": 0.005341454547600557,
+        "nonzero_environment_nojump_weight": 0.0001470948134386056,
+        "finite_first_order_channel_error": 0.00020803123540044676,
+        "finite_semigroup_one_round_error": 0.002292638416347473,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.03921113887496868,
+        "finite_round_gibbs_residual": 0.0024506961797028273,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.1705360469976847,
+          0.8294639530023153
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.051333124975567065,
+        "finite_stationary_channel_residual": 2.679816882141266e-14,
+        "bloch_contraction_norm": 0.9662419950449149,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 1.969757690289955e-12,
+            "minimum_eigenvalue": 0.26264369474694854,
+            "gibbs_trace_distance": 0.14344077272581585,
+            "finite_stationary_trace_distance": 0.09210764775024877,
+            "numerical_contraction_estimate_to_finite_stationary": 0.09210764775000091
+          },
+          {
+            "trace_error": 2.020383860213175e-12,
+            "minimum_eigenvalue": 0.1515989080311325,
+            "gibbs_trace_distance": 0.03239598601002508,
+            "finite_stationary_trace_distance": 0.018937138965541986,
+            "numerical_contraction_estimate_to_finite_stationary": 0.01893713896662709
+          },
+          {
+            "trace_error": 1.9960699759736635e-12,
+            "minimum_eigenvalue": 0.20654276574441133,
+            "gibbs_trace_distance": 0.0898268204244717,
+            "finite_stationary_trace_distance": 0.04095970063174201,
+            "numerical_contraction_estimate_to_finite_stationary": 0.06649223265276076
+          },
+          {
+            "trace_error": 1.993516463017026e-12,
+            "minimum_eigenvalue": 0.20686879820044357,
+            "gibbs_trace_distance": 0.08875590571384136,
+            "finite_stationary_trace_distance": 0.03855450955927163,
+            "numerical_contraction_estimate_to_finite_stationary": 0.06649223265276076
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 1416960,
+          "t": 590400,
+          "tdg": 442800,
+          "h": 383760,
+          "rz": 283392,
+          "ry": 135792,
+          "p": 70848,
+          "reset": 47970,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m2-beta1-delta0.125",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 567,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 575,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 8,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 4602,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 8,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 575,
+        "total_resets": 65,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 1920,
+        "t": 800,
+        "tdg": 600,
+        "h": 520,
+        "rz": 384,
+        "ry": 184,
+        "p": 96,
+        "reset": 65,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 3367,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 2,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.125,
+          "eta": 0.9775450868978823,
+          "weak_flag": 4,
+          "access_operations": 54,
+          "weak_operations": 8,
+          "controlled_inverse_operations": 505,
+          "source_operations": 567,
+          "preflight_upper_bound": 930,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 240,
+          "t": 100,
+          "tdg": 75,
+          "h": 65,
+          "rz": 48,
+          "ry": 23,
+          "p": 12,
+          "x": 4
+        },
+        "depth": 425,
+        "actual_vs_independent_kraus_max_entry_error": 1.4545809018817907e-14,
+        "actual_vs_independent_channel_frobenius_error": 5.577868249191816e-14,
+        "trace_preservation_max_entry_error": 3.030908857282668e-14,
+        "minimum_choi_eigenvalue": 0.010682909095201122,
+        "nonzero_environment_nojump_weight": 0.0006080399691912467,
+        "finite_first_order_channel_error": 0.0008613397739837012,
+        "finite_semigroup_one_round_error": 0.00905619156228893,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.03921113887496868,
+        "finite_round_gibbs_residual": 0.004901392359387097,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.1705360469976847,
+          0.8294639530023153
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.051333124975567065,
+        "finite_stationary_channel_residual": 2.529068346109649e-14,
+        "bloch_contraction_norm": 0.9324839900898616,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 1.91779925273772e-12,
+            "minimum_eigenvalue": 0.17999506603395077,
+            "gibbs_trace_distance": 0.06079214401279206,
+            "finite_stationary_trace_distance": 0.009459019037224986,
+            "numerical_contraction_estimate_to_finite_stationary": 0.009459019036813099
+          },
+          {
+            "trace_error": 1.911582003801881e-12,
+            "minimum_eigenvalue": 0.16859129254583788,
+            "gibbs_trace_distance": 0.04938837052467608,
+            "finite_stationary_trace_distance": 0.0019447544508909842,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0019447544517390144
+          },
+          {
+            "trace_error": 1.915467784386051e-12,
+            "minimum_eigenvalue": 0.1742927074593054,
+            "gibbs_trace_distance": 0.05509304677579484,
+            "finite_stationary_trace_distance": 0.003797815184148181,
+            "numerical_contraction_estimate_to_finite_stationary": 0.006828437266949826
+          },
+          {
+            "trace_error": 1.9138024498491134e-12,
+            "minimum_eigenvalue": 0.17429309800743123,
+            "gibbs_trace_distance": 0.05509073782812535,
+            "finite_stationary_trace_distance": 0.0037641720975962983,
+            "numerical_contraction_estimate_to_finite_stationary": 0.006828437266949826
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 1416960,
+          "t": 590400,
+          "tdg": 442800,
+          "h": 383760,
+          "rz": 283392,
+          "ry": 135792,
+          "p": 70848,
+          "reset": 47970,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m2-beta1-delta0.25",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 567,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 575,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 8,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 2,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9775450868978823,
+        "weak_flag": 4,
+        "access_operations": 54,
+        "weak_operations": 8,
+        "controlled_inverse_operations": 505,
+        "source_operations": 4602,
+        "preflight_upper_bound": 930,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 8,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 575,
+        "total_resets": 65,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 1920,
+        "t": 800,
+        "tdg": 600,
+        "h": 520,
+        "rz": 384,
+        "ry": 184,
+        "p": 96,
+        "reset": 65,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 3367,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 2,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.25,
+          "eta": 0.9775450868978823,
+          "weak_flag": 4,
+          "access_operations": 54,
+          "weak_operations": 8,
+          "controlled_inverse_operations": 505,
+          "source_operations": 567,
+          "preflight_upper_bound": 930,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 240,
+          "t": 100,
+          "tdg": 75,
+          "h": 65,
+          "rz": 48,
+          "ry": 23,
+          "p": 12,
+          "x": 4
+        },
+        "depth": 425,
+        "actual_vs_independent_kraus_max_entry_error": 1.4655136119444247e-14,
+        "actual_vs_independent_channel_frobenius_error": 5.287225636305249e-14,
+        "trace_preservation_max_entry_error": 3.042011087474402e-14,
+        "minimum_choi_eigenvalue": 0.021365818190402203,
+        "nonzero_environment_nojump_weight": 0.0026119246212114563,
+        "finite_first_order_channel_error": 0.0037127415947511427,
+        "finite_semigroup_one_round_error": 0.03538535743191185,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.03921113887496868,
+        "finite_round_gibbs_residual": 0.009802784718758534,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.1705360469976842,
+          0.8294639530023158
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.051333124975566594,
+        "finite_stationary_channel_residual": 2.571164883742056e-14,
+        "bloch_contraction_norm": 0.8649679801797532,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 1.9348966873178303e-12,
+            "minimum_eigenvalue": 0.17061310176058,
+            "gibbs_trace_distance": 0.05141017973942982,
+            "finite_stationary_trace_distance": 7.705476386322963e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 7.705476333724167e-05
+          },
+          {
+            "trace_error": 1.9393375794152533e-12,
+            "minimum_eigenvalue": 0.1705202046998375,
+            "gibbs_trace_distance": 0.05131728267868957,
+            "finite_stationary_trace_distance": 1.5842296877024986e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 1.5842297628713228e-05
+          },
+          {
+            "trace_error": 1.9380053117860477e-12,
+            "minimum_eigenvalue": 0.17056665323011805,
+            "gibbs_trace_distance": 0.051363731209640745,
+            "finite_stationary_trace_distance": 3.060720811333368e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 5.562560090116171e-05
+          },
+          {
+            "trace_error": 1.937339177971273e-12,
+            "minimum_eigenvalue": 0.17056665323020706,
+            "gibbs_trace_distance": 0.0513637312090705,
+            "finite_stationary_trace_distance": 3.060625151083448e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 5.562560090116171e-05
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 1416960,
+          "t": 590400,
+          "tdg": 442800,
+          "h": 383760,
+          "rz": 283392,
+          "ry": 135792,
+          "p": 70848,
+          "reset": 47970,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m3-beta1-delta0.0625",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 935,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 945,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 7562,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 945,
+        "total_resets": 81,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 3160,
+        "t": 1312,
+        "tdg": 984,
+        "h": 800,
+        "rz": 576,
+        "ry": 328,
+        "p": 288,
+        "reset": 81,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 5591,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 3,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.0625,
+          "eta": 0.9993007127044315,
+          "weak_flag": 5,
+          "access_operations": 89,
+          "weak_operations": 16,
+          "controlled_inverse_operations": 830,
+          "source_operations": 935,
+          "preflight_upper_bound": 1533,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 395,
+          "t": 164,
+          "tdg": 123,
+          "h": 100,
+          "rz": 72,
+          "ry": 41,
+          "p": 36,
+          "x": 4
+        },
+        "depth": 703,
+        "actual_vs_independent_kraus_max_entry_error": 2.109598073126637e-14,
+        "actual_vs_independent_channel_frobenius_error": 8.284478180698621e-14,
+        "trace_preservation_max_entry_error": 4.2854608750531263e-14,
+        "minimum_choi_eigenvalue": 0.003979375706036642,
+        "nonzero_environment_nojump_weight": 0.0001716633586327874,
+        "finite_first_order_channel_error": 0.00025380732288639155,
+        "finite_semigroup_one_round_error": 0.0023949401087178606,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.00324059597066701,
+        "finite_round_gibbs_residual": 0.0002025372481893367,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.12339188057167702,
+          0.876608119428323
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.004188958549559418,
+        "finite_stationary_channel_residual": 3.734741595061168e-14,
+        "bloch_contraction_norm": 0.965811201059316,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 2.717159830467614e-12,
+            "minimum_eigenvalue": 0.21799570893110337,
+            "gibbs_trace_distance": 0.09879278691034431,
+            "finite_stationary_trace_distance": 0.0946038283607849,
+            "numerical_contraction_estimate_to_finite_stationary": 0.09460382836031477
+          },
+          {
+            "trace_error": 2.7008395520056203e-12,
+            "minimum_eigenvalue": 0.11007538939144726,
+            "gibbs_trace_distance": 0.009127532629319951,
+            "finite_stationary_trace_distance": 0.01331649117887937,
+            "numerical_contraction_estimate_to_finite_stationary": 0.013316491180446038
+          },
+          {
+            "trace_error": 2.7082780462706105e-12,
+            "minimum_eigenvalue": 0.1636125719616295,
+            "gibbs_trace_distance": 0.04789941514489676,
+            "finite_stationary_trace_distance": 0.044003378409324174,
+            "numerical_contraction_estimate_to_finite_stationary": 0.06755447164258177
+          },
+          {
+            "trace_error": 2.7099433808075482e-12,
+            "minimum_eigenvalue": 0.16382009076212287,
+            "gibbs_trace_distance": 0.04641964674726503,
+            "finite_stationary_trace_distance": 0.042387815989407635,
+            "numerical_contraction_estimate_to_finite_stationary": 0.06755447164258177
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 2332080,
+          "t": 968256,
+          "tdg": 726192,
+          "h": 590400,
+          "rz": 425088,
+          "ry": 242064,
+          "p": 212544,
+          "reset": 59778,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m3-beta1-delta0.125",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 935,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 945,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 7562,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 945,
+        "total_resets": 81,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 3160,
+        "t": 1312,
+        "tdg": 984,
+        "h": 800,
+        "rz": 576,
+        "ry": 328,
+        "p": 288,
+        "reset": 81,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 5591,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 3,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.125,
+          "eta": 0.9993007127044315,
+          "weak_flag": 5,
+          "access_operations": 89,
+          "weak_operations": 16,
+          "controlled_inverse_operations": 830,
+          "source_operations": 935,
+          "preflight_upper_bound": 1533,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 395,
+          "t": 164,
+          "tdg": 123,
+          "h": 100,
+          "rz": 72,
+          "ry": 41,
+          "p": 36,
+          "x": 4
+        },
+        "depth": 703,
+        "actual_vs_independent_kraus_max_entry_error": 2.1205773970739154e-14,
+        "actual_vs_independent_channel_frobenius_error": 8.057081724512294e-14,
+        "trace_preservation_max_entry_error": 4.263256414561012e-14,
+        "minimum_choi_eigenvalue": 0.00795875141207329,
+        "nonzero_environment_nojump_weight": 0.0007112908724103777,
+        "finite_first_order_channel_error": 0.001052608316304605,
+        "finite_semigroup_one_round_error": 0.009468413098133718,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.00324059597066701,
+        "finite_round_gibbs_residual": 0.0004050744963564861,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.12339188057167699,
+          0.8766081194283231
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.004188958549559349,
+        "finite_stationary_channel_residual": 3.767281459482663e-14,
+        "bloch_contraction_norm": 0.9316224021186745,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 2.7270408153867845e-12,
+            "minimum_eigenvalue": 0.1328142596523576,
+            "gibbs_trace_distance": 0.013611337631603507,
+            "finite_stationary_trace_distance": 0.009422379082044158,
+            "numerical_contraction_estimate_to_finite_stationary": 0.009422379081325049
+          },
+          {
+            "trace_error": 2.726707748479385e-12,
+            "minimum_eigenvalue": 0.12206558088451563,
+            "gibbs_trace_distance": 0.0028626588637614,
+            "finite_stationary_trace_distance": 0.0013262996857979492,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0013262996871327762
+          },
+          {
+            "trace_error": 2.7287061499237118e-12,
+            "minimum_eigenvalue": 0.12743963901893898,
+            "gibbs_trace_distance": 0.00824970938165519,
+            "finite_stationary_trace_distance": 0.0040738421848447596,
+            "numerical_contraction_estimate_to_finite_stationary": 0.006728309535609515
+          },
+          {
+            "trace_error": 2.7267077484793865e-12,
+            "minimum_eigenvalue": 0.1274398531096965,
+            "gibbs_trace_distance": 0.008240035283176857,
+            "finite_stationary_trace_distance": 0.004054215920897268,
+            "numerical_contraction_estimate_to_finite_stationary": 0.006728309535609515
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 2332080,
+          "t": 968256,
+          "tdg": 726192,
+          "h": 590400,
+          "rz": 425088,
+          "ry": 242064,
+          "p": 212544,
+          "reset": 59778,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m3-beta1-delta0.25",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 935,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 945,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 7562,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 945,
+        "total_resets": 81,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 3160,
+        "t": 1312,
+        "tdg": 984,
+        "h": 800,
+        "rz": 576,
+        "ry": 328,
+        "p": 288,
+        "reset": 81,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 5591,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 3,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.25,
+          "eta": 0.9993007127044315,
+          "weak_flag": 5,
+          "access_operations": 89,
+          "weak_operations": 16,
+          "controlled_inverse_operations": 830,
+          "source_operations": 935,
+          "preflight_upper_bound": 1533,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 395,
+          "t": 164,
+          "tdg": 123,
+          "h": 100,
+          "rz": 72,
+          "ry": 41,
+          "p": 36,
+          "x": 4
+        },
+        "depth": 703,
+        "actual_vs_independent_kraus_max_entry_error": 2.0317244034713272e-14,
+        "actual_vs_independent_channel_frobenius_error": 7.206303473921588e-14,
+        "trace_preservation_max_entry_error": 4.1855408028369134e-14,
+        "minimum_choi_eigenvalue": 0.015917502824146515,
+        "nonzero_environment_nojump_weight": 0.003071533894568454,
+        "finite_first_order_channel_error": 0.0045537250833218735,
+        "finite_semigroup_one_round_error": 0.03707026343836272,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.00324059597066701,
+        "finite_round_gibbs_residual": 0.0008101489926896758,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.12339188057167687,
+          0.8766081194283232
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.004188958549559231,
+        "finite_stationary_channel_residual": 3.7207603152898355e-14,
+        "bloch_contraction_norm": 0.8632448042373931,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 2.6720847756678296e-12,
+            "minimum_eigenvalue": 0.12346355756230282,
+            "gibbs_trace_distance": 0.0042606355415212155,
+            "finite_stationary_trace_distance": 7.167699196198446e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 7.167699110818764e-05
+          },
+          {
+            "trace_error": 2.678746113815596e-12,
+            "minimum_eigenvalue": 0.12338179127544434,
+            "gibbs_trace_distance": 0.004178869254666102,
+            "finite_stationary_trace_distance": 1.0089294893128598e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 1.008929605599945e-05
+          },
+          {
+            "trace_error": 2.677080779278649e-12,
+            "minimum_eigenvalue": 0.12342267441884176,
+            "gibbs_trace_distance": 0.004219752400913679,
+            "finite_stationary_trace_distance": 3.0794234882515446e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 5.118293150818677e-05
+          },
+          {
+            "trace_error": 2.675193400136786e-12,
+            "minimum_eigenvalue": 0.12342267441887243,
+            "gibbs_trace_distance": 0.004219752398200855,
+            "finite_stationary_trace_distance": 3.079386323650077e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 5.118293150818677e-05
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 2332080,
+          "t": 968256,
+          "tdg": 726192,
+          "h": 590400,
+          "rz": 425088,
+          "ry": 242064,
+          "p": 212544,
+          "reset": 59778,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m4-beta1-delta0.0625",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 1493,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 1505,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 12,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.0625,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 12042,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 12,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 1505,
+        "total_resets": 97,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 5048,
+        "t": 2112,
+        "tdg": 1584,
+        "h": 1224,
+        "rz": 768,
+        "ry": 600,
+        "p": 576,
+        "reset": 97,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 8895,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 4,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.0625,
+          "eta": 0.9999990647377959,
+          "weak_flag": 6,
+          "access_operations": 140,
+          "weak_operations": 32,
+          "controlled_inverse_operations": 1321,
+          "source_operations": 1493,
+          "preflight_upper_bound": 2416,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 631,
+          "t": 264,
+          "tdg": 198,
+          "h": 153,
+          "rz": 96,
+          "ry": 75,
+          "p": 72,
+          "x": 4
+        },
+        "depth": 1116,
+        "actual_vs_independent_kraus_max_entry_error": 3.9635140366344234e-14,
+        "actual_vs_independent_channel_frobenius_error": 1.5492540329196242e-13,
+        "trace_preservation_max_entry_error": 8.026912468039882e-14,
+        "minimum_choi_eigenvalue": 0.003898123525491355,
+        "nonzero_environment_nojump_weight": 0.00019618980758464045,
+        "finite_first_order_channel_error": 0.00026107524687498247,
+        "finite_semigroup_one_round_error": 0.0024394521221063202,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.000572948206868815,
+        "finite_round_gibbs_residual": 3.580926297257201e-05,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.11993708632467293,
+          0.880062913675327
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.0007341643025553651,
+        "finite_stationary_channel_residual": 7.11447000196906e-14,
+        "bloch_contraction_norm": 0.9655104823830366,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 5.116129742077646e-12,
+            "minimum_eigenvalue": 0.21303957390190006,
+            "gibbs_trace_distance": 0.09383665188234053,
+            "finite_stationary_trace_distance": 0.09310248757978515,
+            "numerical_contraction_estimate_to_finite_stationary": 0.09310248757887628
+          },
+          {
+            "trace_error": 5.1277870838362105e-12,
+            "minimum_eigenvalue": 0.10724885583945468,
+            "gibbs_trace_distance": 0.01195406618009906,
+            "finite_stationary_trace_distance": 0.012688230482654425,
+            "numerical_contraction_estimate_to_finite_stationary": 0.012688230485642207
+          },
+          {
+            "trace_error": 5.125788682391885e-12,
+            "minimum_eigenvalue": 0.1597506884503228,
+            "gibbs_trace_distance": 0.04408887370391246,
+            "finite_stationary_trace_distance": 0.04340797749583794,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0664419460367012
+          },
+          {
+            "trace_error": 5.125677660089423e-12,
+            "minimum_eigenvalue": 0.15994480337567357,
+            "gibbs_trace_distance": 0.04256490955776775,
+            "finite_stationary_trace_distance": 0.041859231376848965,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0664419460367012
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 3725424,
+          "t": 1558656,
+          "tdg": 1168992,
+          "h": 903312,
+          "rz": 566784,
+          "ry": 442800,
+          "p": 425088,
+          "reset": 71586,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m4-beta1-delta0.125",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 1493,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 1505,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 12,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.125,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 12042,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 12,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 1505,
+        "total_resets": 97,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 5048,
+        "t": 2112,
+        "tdg": 1584,
+        "h": 1224,
+        "rz": 768,
+        "ry": 600,
+        "p": 576,
+        "reset": 97,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 8895,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 4,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.125,
+          "eta": 0.9999990647377959,
+          "weak_flag": 6,
+          "access_operations": 140,
+          "weak_operations": 32,
+          "controlled_inverse_operations": 1321,
+          "source_operations": 1493,
+          "preflight_upper_bound": 2416,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 631,
+          "t": 264,
+          "tdg": 198,
+          "h": 153,
+          "rz": 96,
+          "ry": 75,
+          "p": 72,
+          "x": 4
+        },
+        "depth": 1116,
+        "actual_vs_independent_kraus_max_entry_error": 3.930213482014788e-14,
+        "actual_vs_independent_channel_frobenius_error": 1.499518223567643e-13,
+        "trace_preservation_max_entry_error": 8.004708007547379e-14,
+        "minimum_choi_eigenvalue": 0.007796247050982655,
+        "nonzero_environment_nojump_weight": 0.0008141223832361753,
+        "finite_first_order_channel_error": 0.0010830946481582965,
+        "finite_semigroup_one_round_error": 0.00964401048667613,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.000572948206868815,
+        "finite_round_gibbs_residual": 7.161852590184873e-05,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.11993708632467218,
+          0.8800629136753277
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.0007341643025546019,
+        "finite_stationary_channel_residual": 7.103198961964787e-14,
+        "bloch_contraction_norm": 0.9310209647661534,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 5.108580225510195e-12,
+            "minimum_eigenvalue": 0.12901360269410989,
+            "gibbs_trace_distance": 0.00981068067454656,
+            "finite_stationary_trace_distance": 0.009076516371991958,
+            "numerical_contraction_estimate_to_finite_stationary": 0.009076516370622841
+          },
+          {
+            "trace_error": 5.1165738312874964e-12,
+            "minimum_eigenvalue": 0.11870011688643624,
+            "gibbs_trace_distance": 0.0005028051331230979,
+            "finite_stationary_trace_distance": 0.0012369694356776997,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0012369694381964586
+          },
+          {
+            "trace_error": 5.114353385238246e-12,
+            "minimum_eigenvalue": 0.1238566152019198,
+            "gibbs_trace_distance": 0.004673664225831745,
+            "finite_stationary_trace_distance": 0.003943174427264126,
+            "numerical_contraction_estimate_to_finite_stationary": 0.006477393102948334
+          },
+          {
+            "trace_error": 5.1133541845160835e-12,
+            "minimum_eigenvalue": 0.12385680207473611,
+            "gibbs_trace_distance": 0.004658600152782491,
+            "finite_stationary_trace_distance": 0.0039253079690026805,
+            "numerical_contraction_estimate_to_finite_stationary": 0.006477393102948334
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 3725424,
+          "t": 1558656,
+          "tdg": 1168992,
+          "h": 903312,
+          "rz": 566784,
+          "ry": 442800,
+          "p": 425088,
+          "reset": 71586,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m4-beta1-delta0.25",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 1493,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 1505,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 12,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 4,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 1.0,
+        "delta": 0.25,
+        "eta": 0.9999990647377959,
+        "weak_flag": 6,
+        "access_operations": 140,
+        "weak_operations": 32,
+        "controlled_inverse_operations": 1321,
+        "source_operations": 12042,
+        "preflight_upper_bound": 2416,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 12,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 1505,
+        "total_resets": 97,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 5048,
+        "t": 2112,
+        "tdg": 1584,
+        "h": 1224,
+        "rz": 768,
+        "ry": 600,
+        "p": 576,
+        "reset": 97,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 8895,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 4,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 1.0,
+          "delta": 0.25,
+          "eta": 0.9999990647377959,
+          "weak_flag": 6,
+          "access_operations": 140,
+          "weak_operations": 32,
+          "controlled_inverse_operations": 1321,
+          "source_operations": 1493,
+          "preflight_upper_bound": 2416,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 631,
+          "t": 264,
+          "tdg": 198,
+          "h": 153,
+          "rz": 96,
+          "ry": 75,
+          "p": 72,
+          "x": 4
+        },
+        "depth": 1116,
+        "actual_vs_independent_kraus_max_entry_error": 3.685996242908919e-14,
+        "actual_vs_independent_channel_frobenius_error": 1.3504768433155943e-13,
+        "trace_preservation_max_entry_error": 7.827072323607354e-14,
+        "minimum_choi_eigenvalue": 0.015592494101965426,
+        "nonzero_environment_nojump_weight": 0.003526861745773624,
+        "finite_first_order_channel_error": 0.0046889330203949255,
+        "finite_semigroup_one_round_error": 0.03775643475428193,
+        "continuum_generator_gibbs_residual": 1.5515838457795457e-17,
+        "finite_generator_gibbs_residual": 0.000572948206868815,
+        "finite_round_gibbs_residual": 0.0001432370517587143,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.11993708632467319,
+          0.8800629136753267
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.000734164302555608,
+        "finite_stationary_channel_residual": 6.79320243754562e-14,
+        "bloch_contraction_norm": 0.8620419295323889,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 4.9144022185032554e-12,
+            "minimum_eigenvalue": 0.12000290220536915,
+            "gibbs_trace_distance": 0.0007999801857087249,
+            "finite_stationary_trace_distance": 6.581588315311693e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 6.581588156466467e-05
+          },
+          {
+            "trace_error": 4.9004134083929785e-12,
+            "minimum_eigenvalue": 0.11992811677780181,
+            "gibbs_trace_distance": 0.000725194758134394,
+            "finite_stationary_trace_distance": 8.969544421214004e-06,
+            "numerical_contraction_estimate_to_finite_stationary": 8.969546559993304e-06
+          },
+          {
+            "trace_error": 4.909628259497367e-12,
+            "minimum_eigenvalue": 0.1199655094915621,
+            "gibbs_trace_distance": 0.0007625874834394245,
+            "finite_stationary_trace_distance": 2.842347836386572e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 4.696904854405646e-05
+          },
+          {
+            "trace_error": 4.906852701935804e-12,
+            "minimum_eigenvalue": 0.11996550949158469,
+            "gibbs_trace_distance": 0.0007625874723458868,
+            "finite_stationary_trace_distance": 2.8423180755400213e-05,
+            "numerical_contraction_estimate_to_finite_stationary": 4.696904854405646e-05
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 3725424,
+          "t": 1558656,
+          "tdg": 1168992,
+          "h": 903312,
+          "rz": 566784,
+          "ry": 442800,
+          "p": 425088,
+          "reset": 71586,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m3-beta0.5-delta0.125",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 0.5,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 935,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 0.5,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 945,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 0.5,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 7562,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 945,
+        "total_resets": 81,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 3160,
+        "t": 1312,
+        "tdg": 984,
+        "h": 800,
+        "rz": 576,
+        "ry": 328,
+        "p": 288,
+        "reset": 81,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 5591,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 3,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 0.5,
+          "delta": 0.125,
+          "eta": 0.9993007127044315,
+          "weak_flag": 5,
+          "access_operations": 89,
+          "weak_operations": 16,
+          "controlled_inverse_operations": 830,
+          "source_operations": 935,
+          "preflight_upper_bound": 1533,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 395,
+          "t": 164,
+          "tdg": 123,
+          "h": 100,
+          "rz": 72,
+          "ry": 41,
+          "p": 36,
+          "x": 4
+        },
+        "depth": 703,
+        "actual_vs_independent_kraus_max_entry_error": 2.0540360576988758e-14,
+        "actual_vs_independent_channel_frobenius_error": 7.839908965021198e-14,
+        "trace_preservation_max_entry_error": 4.141131881851904e-14,
+        "minimum_choi_eigenvalue": 0.008837019422337729,
+        "nonzero_environment_nojump_weight": 0.000628637824502312,
+        "finite_first_order_channel_error": 0.0003640966405429485,
+        "finite_semigroup_one_round_error": 0.009830288504719932,
+        "continuum_generator_gibbs_residual": 5.551115123125783e-17,
+        "finite_generator_gibbs_residual": 0.01657183262427104,
+        "finite_round_gibbs_residual": 0.002071479078047488,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.28936081099254635,
+          0.7106391890074536
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.02041938962255127,
+        "finite_stationary_channel_residual": 3.177128923338632e-14,
+        "bloch_contraction_norm": 0.9282663718044237,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 2.650213382082713e-12,
+            "minimum_eigenvalue": 0.29542393820016044,
+            "gibbs_trace_distance": 0.02648251683149044,
+            "finite_stationary_trace_distance": 0.006063127208939173,
+            "numerical_contraction_estimate_to_finite_stationary": 0.006063127208667168
+          },
+          {
+            "trace_error": 2.649658270570415e-12,
+            "minimum_eigenvalue": 0.2868920034262715,
+            "gibbs_trace_distance": 0.01795058205760125,
+            "finite_stationary_trace_distance": 0.002468807564950021,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0024688075657942183
+          },
+          {
+            "trace_error": 2.650435426687644e-12,
+            "minimum_eigenvalue": 0.29115298055505223,
+            "gibbs_trace_distance": 0.022263410462162347,
+            "finite_stationary_trace_distance": 0.0023052461062883526,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0046290669872998454
+          },
+          {
+            "trace_error": 2.6498803151753313e-12,
+            "minimum_eigenvalue": 0.29115796289322077,
+            "gibbs_trace_distance": 0.02221662389468214,
+            "finite_stationary_trace_distance": 0.0017980799430510398,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0046290669872998454
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 2332080,
+          "t": 968256,
+          "tdg": 726192,
+          "h": 590400,
+          "rz": 425088,
+          "ry": 242064,
+          "p": 212544,
+          "reset": 59778,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    },
+    {
+      "name": "n1-m3-beta2-delta0.125",
+      "terms": [
+        [
+          1.0,
+          "Z"
+        ]
+      ],
+      "proposals": [
+        "X",
+        "Z"
+      ],
+      "dilation": {
+        "milestone": "finite_diagonal_weak_dilation",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 2.0,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 935,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false
+      },
+      "reset_round": {
+        "milestone": "finite_diagonal_weak_reset_channel",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 2.0,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 945,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "arbitrary caller system; explicit environment reset before and after round"
+      },
+      "preparation": {
+        "milestone": "finite_diagonal_preparation_source",
+        "n_system": 1,
+        "clock_bits": 3,
+        "proposal_count": 2,
+        "proposal_bits": 1,
+        "beta": 2.0,
+        "delta": 0.125,
+        "eta": 0.9993007127044315,
+        "weak_flag": 5,
+        "access_operations": 89,
+        "weak_operations": 16,
+        "controlled_inverse_operations": 830,
+        "source_operations": 7562,
+        "preflight_upper_bound": 1533,
+        "hamiltonian": [
+          [
+            1.0,
+            "Z"
+          ]
+        ],
+        "proposals": [
+          "X",
+          "Z"
+        ],
+        "product_steps": 1,
+        "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+        "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+        "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+        "finite_mesh_exact_kms": false,
+        "general_coherent_correction_implemented": false,
+        "rotations_synthesized": false,
+        "physical_resources_computed": false,
+        "formal_proof_reproduced": false,
+        "resets_per_round": 10,
+        "initialization": "explicit known system reset and optional X/H; environment initialized and discarded each round",
+        "rounds": 8,
+        "initial": "zero",
+        "readout": true,
+        "full_round_operations": 945,
+        "total_resets": 81,
+        "mixing_certificate": "none; bounded channel-power checks may be supplied separately",
+        "repetitions": "each observable draw reruns all rounds; no accepted-only branch or algorithm retry factor"
+      },
+      "preparation_primitive_counts": {
+        "cx": 3160,
+        "t": 1312,
+        "tdg": 984,
+        "h": 800,
+        "rz": 576,
+        "ry": 328,
+        "p": 288,
+        "reset": 81,
+        "x": 32,
+        "measure": 1
+      },
+      "preparation_depth": 5591,
+      "numerical_checks_performed": true,
+      "check": {
+        "status": "checked_small_finite_diagonal_weak_channel",
+        "metadata": {
+          "milestone": "finite_diagonal_weak_dilation",
+          "n_system": 1,
+          "clock_bits": 3,
+          "proposal_count": 2,
+          "proposal_bits": 1,
+          "beta": 2.0,
+          "delta": 0.125,
+          "eta": 0.9993007127044315,
+          "weak_flag": 5,
+          "access_operations": 89,
+          "weak_operations": 16,
+          "controlled_inverse_operations": 830,
+          "source_operations": 935,
+          "preflight_upper_bound": 1533,
+          "hamiltonian": [
+            [
+              1.0,
+              "Z"
+            ]
+          ],
+          "proposals": [
+            "X",
+            "Z"
+          ],
+          "product_steps": 1,
+          "zero_correction_reason": "I/Z Hamiltonian; each Pauli proposal has a fixed computational permutation, so every B_dagger_B is diagonal",
+          "environment_outcomes": "all frequency/proposal and both weak flag outcomes retained",
+          "nonjump_inverse": "complete primitive U inverse conditional on flag zero, including global phase",
+          "finite_mesh_exact_kms": false,
+          "general_coherent_correction_implemented": false,
+          "rotations_synthesized": false,
+          "physical_resources_computed": false,
+          "formal_proof_reproduced": false
+        },
+        "primitive_counts": {
+          "cx": 395,
+          "t": 164,
+          "tdg": 123,
+          "h": 100,
+          "rz": 72,
+          "ry": 41,
+          "p": 36,
+          "x": 4
+        },
+        "depth": 703,
+        "actual_vs_independent_kraus_max_entry_error": 2.2981659780609207e-14,
+        "actual_vs_independent_channel_frobenius_error": 8.70940349969167e-14,
+        "trace_preservation_max_entry_error": 4.6851411639181606e-14,
+        "minimum_choi_eigenvalue": 0.0014545710359600225,
+        "nonzero_environment_nojump_weight": 0.0007860877399226469,
+        "finite_first_order_channel_error": 0.0014144375219593928,
+        "finite_semigroup_one_round_error": 0.009436028728517681,
+        "continuum_generator_gibbs_residual": 1.734723475976807e-17,
+        "finite_generator_gibbs_residual": 0.0034883176286778965,
+        "finite_round_gibbs_residual": 0.00043603970361664736,
+        "decay_commutator": 0.0,
+        "finite_stationary_populations": [
+          0.02281177260539768,
+          0.9771882273946024
+        ],
+        "finite_stationary_gibbs_trace_distance": 0.004825562643306075,
+        "finite_stationary_channel_residual": 4.586471535423875e-14,
+        "bloch_contraction_norm": 0.9361055582400825,
+        "contraction_scope": "floating-point small-channel diagnostic with stationary-residual accumulation; no certified rounding enclosure or general mixing certificate",
+        "rounds": 64,
+        "spanning_input_channel_power_checks": [
+          {
+            "trace_error": 2.983058244865394e-12,
+            "minimum_eigenvalue": 0.037093046799579955,
+            "gibbs_trace_distance": 0.019106836838979915,
+            "finite_stationary_trace_distance": 0.01428127419567384,
+            "numerical_contraction_estimate_to_finite_stationary": 0.014281274194610933
+          },
+          {
+            "trace_error": 3.000377724049486e-12,
+            "minimum_eigenvalue": 0.02247838629315191,
+            "gibbs_trace_distance": 0.004492176332560546,
+            "finite_stationary_trace_distance": 0.00033338631074552975,
+            "numerical_contraction_estimate_to_finite_stationary": 0.0003333863125393192
+          },
+          {
+            "trace_error": 2.9932722966919015e-12,
+            "minimum_eigenvalue": 0.02978556240729662,
+            "gibbs_trace_distance": 0.011805647482259363,
+            "finite_stationary_trace_distance": 0.006984328952760426,
+            "numerical_contraction_estimate_to_finite_stationary": 0.010101137041419888
+          },
+          {
+            "trace_error": 2.993827408204214e-12,
+            "minimum_eigenvalue": 0.029785580025395605,
+            "gibbs_trace_distance": 0.011804945739252011,
+            "finite_stationary_trace_distance": 0.006983142727430979,
+            "numerical_contraction_estimate_to_finite_stationary": 0.010101137041419888
+          }
+        ],
+        "channel_power_scope": "iterate actual full one-round channel after independent Kraus checks; no full statevector/density simulation of the large repeated circuit",
+        "remaining": [
+          "general noncommuting coherent-correction circuit",
+          "uniform finite mesh/window/aliasing error bound",
+          "general mixing guarantee",
+          "rotation synthesis and complete frozen surface-code model",
+          "mechanized proof bridge"
+        ]
+      },
+      "logical_readout_contract": {
+        "observable": "Z on q0 after the finite circuit's explicit K rounds",
+        "mean_additive_sampling_error": 0.1,
+        "sampling_failure_probability": 0.05,
+        "independent_complete_preparations": 738,
+        "hoeffding_formula": "ceil(2*ln(2/failure)/epsilon^2), Z in[-1,1]",
+        "total_primitive_counts": {
+          "cx": 2332080,
+          "t": 968256,
+          "tdg": 726192,
+          "h": 590400,
+          "rz": 425088,
+          "ry": 242064,
+          "p": 212544,
+          "reset": 59778,
+          "x": 23616,
+          "measure": 738
+        },
+        "total_rounds": 5904,
+        "synthesis_and_physical_faults_included": false,
+        "continuum_gibbs_accuracy_certificate": false,
+        "exclusions": [
+          "arbitrary rotation synthesis",
+          "physical code/factory/reset/controller model",
+          "general mixing and finite mesh certificate",
+          "classical preprocessing timing"
+        ]
+      }
+    }
+  ],
+  "scope": "complete finite weak reset channel in a restricted zero-C family; all outcomes retained; channel-power checks separately labeled",
+  "exact_finite_kms": false,
+  "general_sampler_implemented": false,
+  "rotations_synthesized": false,
+  "physical_resources_computed": false,
+  "formal_proof_reproduced": false
+}

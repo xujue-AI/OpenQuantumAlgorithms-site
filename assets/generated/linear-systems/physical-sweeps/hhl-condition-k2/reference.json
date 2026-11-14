@@ -1,0 +1,39 @@
+{
+  "actual_condition_number": 2.0000000000000004,
+  "conditional_state_trace_distance": 2.51340013467619e-16,
+  "conditional_z_mean": 0.9350649350649352,
+  "expected_polynomial_branch_trace_distance": 2.51340013467619e-16,
+  "independent_expected_probability": 0.5347222222222222,
+  "input_bytes_sha256": "193102fb2674025fa8eb7c45c183b77a90d87d59b612b7b8962d863abdd86668",
+  "matrix_bytes_sha256": "cf71af65be681954727bcc3f9eec227e17dfcee01e37d20f4dd5b672f7f163f7",
+  "matrix_eigenvalues": [
+    0.24999999999999992,
+    0.375,
+    0.375,
+    0.49999999999999994
+  ],
+  "method": "complete Qiskit gate statevectors versus independently assembled dense matrix powers/solve and analytic input amplitudes",
+  "normalization_alpha": 1.0,
+  "normalized_classical_solution_z_mean": 0.9350649350649349,
+  "performed": true,
+  "physical_attempts_executed": 0,
+  "reference_classical_residual_norm": 3.3860451414858995e-17,
+  "reference_equation": "A x=b; expected accepted branch C x",
+  "reference_identity_sha256": "5e00969b9a82a0c68e36180bc47b7c3a55f4dd72f28e4a74e929614cf52b7e90",
+  "reference_solution_imag": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "reference_solution_real": [
+    0.9686648999069225,
+    0.17094086468945693,
+    0.17094086468945693,
+    0.05698028822981897
+  ],
+  "scope": "bounded ideal-angle numerical verification; no synthesized operator-error or hardware confidence certificate",
+  "source_primitive_joint_probability_max_error": 3.219646771412954e-15,
+  "source_success_probability": 0.534722222222221,
+  "z_absolute_bias": 2.220446049250313e-16
+}

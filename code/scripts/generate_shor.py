@@ -11,6 +11,20 @@ import platform
 from pathlib import Path
 import subprocess
 import sys
+
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,7 +91,7 @@ def generate(output: Path, modulus: int, base: int, phase_bits: int, *, simulate
         "qasm_sha256": hashlib.sha256(qasm.encode()).hexdigest(),
         "implementation_sha256": hashlib.sha256(source_bytes).hexdigest(),
         "environment": {"python": platform.python_version(), "packages": {name: importlib.metadata.version(name) for name in ("qiskit", "numpy", "matplotlib")}, "device": "CPU", "seed": 20261112},
-        "source_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+        "source_commit": git_revision(ROOT),
         "source_commit_scope": "base checkout at generation; source hash above identifies working implementation",
         "simulation": {"performed": False, "reason": "explicitly disabled"},
     }

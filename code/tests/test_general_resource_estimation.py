@@ -1,6 +1,9 @@
 """Shared FT adapter checks without changing the frozen Grover baseline."""
 
+import copy
+import gc
 import math
+import weakref
 
 import numpy as np
 import pytest
@@ -87,7 +90,16 @@ def test_unaudited_work_is_rejected_before_estimation():
         prepare_measured_circuit(mid_measure)
 
 
-def test_actual_rx_rz_estimation_separates_native_base_error_from_physical_faults(tmp_path):
+@pytest.mark.parametrize("value", [None, 0, 1, "false"])
+def test_context_isolation_requires_an_explicit_boolean(tmp_path, value):
+    with pytest.raises(ValueError, match="isolate_context must be a bool"):
+        estimate_circuit_resources(
+            QuantumCircuit(1), budget=CircuitResourceBudget(0.0001, 0.0005),
+            cache_dir=tmp_path, isolate_context=value,
+        )
+
+
+def test_actual_rx_rz_estimation_separates_native_base_error_from_physical_faults(tmp_path, monkeypatch):
     circuit = QuantumCircuit(2)
     circuit.h(0)
     circuit.cx(0, 1)
@@ -115,3 +127,51 @@ def test_actual_rx_rz_estimation_separates_native_base_error_from_physical_fault
             point["synthesis_model_error_per_execution"] + point["physical_failure_model_per_execution"]
         )
         assert point["model_properties"]["NUM_TS_PER_ROTATION"] == synthesis["fixed_num_ts_per_rotation"]
+
+    import qdk
+    import qdk.qre
+    from qdk import _interpreter
+
+    global_context = _interpreter._default_context
+    global_names = {key: id(value) for key, value in vars(qdk.code).items()}
+    global_imports = {key: id(value) for key, value in vars(qdk.code.qasm_import).items()}
+    original_context = qdk.Context
+    original_estimate = qdk.qre.estimate
+    contexts = []
+    bindings = []
+
+    def tracked_context():
+        context = original_context()
+        contexts.append(weakref.ref(context))
+        return context
+
+    def check_binding(application, *args, **kwargs):
+        context = application.program._qdk_context
+        assert context is contexts[-1]()
+        assert not context._is_global_context
+        assert application.program is context.code.qasm_import.ResourceEstimate
+        bindings.append(True)
+        return original_estimate(application, *args, **kwargs)
+
+    monkeypatch.setattr(qdk, "Context", tracked_context)
+    monkeypatch.setattr(qdk.qre, "estimate", check_binding)
+    isolated = estimate_circuit_resources(
+        circuit, budget=budget, profile=SurfaceCodeProfile(),
+        # Match the legacy cold-cache state; serialized frontier reloads can
+        # otherwise round factory metadata at the final floating-point bit.
+        cache_dir=tmp_path / "isolated-factory-cache", isolate_context=True,
+    )
+    assert bindings == [True]
+    assert _interpreter._default_context is global_context
+    assert {key: id(value) for key, value in vars(qdk.code).items()} == global_names
+    assert {key: id(value) for key, value in vars(qdk.code.qasm_import).items()} == global_imports
+    gc.collect()
+    assert contexts[0]() is None
+
+    def mathematical_payload(value):
+        value = copy.deepcopy(value)
+        for point in value["pareto_points"]:
+            point["model_properties"].pop("EVALUATION_TIME", None)
+        return value
+
+    assert mathematical_payload(isolated) == mathematical_payload(report)

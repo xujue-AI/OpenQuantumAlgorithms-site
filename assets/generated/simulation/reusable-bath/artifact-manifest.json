@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "status": "computed_bounded_finite_channel_evidence",
+  "kind": "portable_saved_reusable_bath_evidence",
+  "protocol_sha256": "3482c732f1b268b3b3f7b9498fcf19b5978e26e1e5387737c88b6c368a8ed5fb",
+  "portable_protocol_sha256": "ea7a010d4aac3365361ef8741ee68f94271646411a76d752d3e823c0299c97c7",
+  "source_commit": "4b8752975543137effaffe654e08431fe4bc890a",
+  "environment": {
+    "python": "3.12.14",
+    "device": "local CPU",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "qiskit": "2.6.2",
+      "matplotlib": "3.11.2",
+      "pytest": "9.2.0",
+      "nbclient": "0.11.0",
+      "nbformat": "5.11.1",
+      "ipykernel": "7.4.0"
+    }
+  },
+  "environment_record_source": "saved run metadata",
+  "replay_contract": "Notebook reads/hash-checks these saved files; it performs no reference, circuit or Native run",
+  "all_components_verified": false,
+  "continuum_bridge": "unavailable",
+  "physical_budgets": "unallocated/uncomputed",
+  "files": {
+    "source-thermal.qasm": {
+      "bytes": 9269280,
+      "sha256": "3c4212e34adc4e5ddda8b7d2701258b9f5110863a65871da6a9a3bd5d1872e0f"
+    },
+    "source-ground.qasm": {
+      "bytes": 9307240,
+      "sha256": "c9ac12149c2a4e2a69af4e37a0691ed6ab475bb56894fedc9fd0af9d29b7f4a1"
+    },
+    "sampled-schedules.json": {
+      "bytes": 1326284,
+      "sha256": "d6a9c87d77a1b1fb007a19eacfb9f0021057616ec68ced23690b4e080d0f9c88"
+    },
+    "source-exports.json": {
+      "bytes": 5914,
+      "sha256": "bf4615fdb2e92e82f990194f6f8b7a55ccc3774d06431a6de275b28c148d29e8"
+    },
+    "fixture-operations.json": {
+      "bytes": 5186,
+      "sha256": "43ca57fc057e1fab1a1d7bf5280eae6c769fe570e71ccc32c27c08c748c78d56"
+    },
+    "results.json": {
+      "bytes": 230803,
+      "sha256": "6c08a3e6c4cd3006166fa7b06d2a4dc433d6eb58f2c16a2fd4b83af464d29655"
+    },
+    "endpoints.json": {
+      "bytes": 8700,
+      "sha256": "87580a0f2ff50ab4560c26592e7e9612efecbc5011ec8d75101322e8e9af467f"
+    },
+    "primitive-ledger.json": {
+      "bytes": 7637,
+      "sha256": "8c888aa07e7ed168dfcd683c84edbb758c2d5458c1defe3380505d8616dc86e1"
+    },
+    "fixture-thermal.svg": {
+      "bytes": 9950,
+      "sha256": "15ac80cf269bf921331c02cb8e91e6ab1a8439ba4627b2b5e060aacedb823343"
+    },
+    "fixture-ground.svg": {
+      "bytes": 9669,
+      "sha256": "7ecb54e2cd6a1ffdb8b78a20084d84d8b14c92fd024c41a6257077992c7f442b"
+    },
+    "endpoints.png": {
+      "bytes": 141912,
+      "sha256": "c9ce6299aa409845bb00b2adb60f40d710bf54e67f4cf4b45e935bb55b53b4f2"
+    },
+    "endpoints.svg": {
+      "bytes": 109479,
+      "sha256": "4735408f6a0d7f3c08305789870a63fec9e28b42cf5b6991de275cb9ee9b9c0e"
+    },
+    "source/reusable_bath.py": {
+      "bytes": 24037,
+      "sha256": "54374f0c2b0a821b05e587a117353168f6e7d75389dd62570303e0890c072639"
+    },
+    "source/reusable_bath_reference.py": {
+      "bytes": 35332,
+      "sha256": "aebc39b6953d00880b309265ee169dac4e1f1e581b2f21dfee776b2d32ccf24d"
+    },
+    "source/requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "source/LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "source/reusable_bath_protocol.json": {
+      "bytes": 87596,
+      "sha256": "ea7a010d4aac3365361ef8741ee68f94271646411a76d752d3e823c0299c97c7"
+    },
+    "source/PROTOCOL-NOTE.md": {
+      "bytes": 683,
+      "sha256": "64be256c2ceea685616f36baf7b79b11f1ee9199fc73ba852586325aa6ddd4cf"
+    }
+  },
+  "manifest_self_hash": "Excluded to avoid self-reference; parent run manifest seals this file"
+}

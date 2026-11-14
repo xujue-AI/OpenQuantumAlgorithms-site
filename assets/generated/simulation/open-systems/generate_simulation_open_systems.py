@@ -17,6 +17,20 @@ from pathlib import Path
 import subprocess
 import sys
 
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 SOURCE = ROOT / "src"
@@ -139,7 +153,7 @@ def generate(output: Path, rate: float = 0.8, time: float = 1.0,
         }
     revision = None
     if REPOSITORY:
-        revision = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+        revision = git_revision(ROOT)
     report = {
         "status": "checked one-qubit amplitude-damping channel; general open-system algorithms planned" if performed else "generated independent-damping circuit only; simulation not performed",
         "instance": {"n_system": n_system, "rate": rate, "time": time,

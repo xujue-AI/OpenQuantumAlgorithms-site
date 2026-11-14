@@ -13,6 +13,20 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
@@ -29,7 +43,7 @@ from openquantum.hamiltonian_simulation import (
 
 
 def source_revision():
-    return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+    return git_revision(ROOT)
 
 
 def circuit_ledger(n=3, time=1.0, steps=32, order=2, J=1.0, h=0.7):

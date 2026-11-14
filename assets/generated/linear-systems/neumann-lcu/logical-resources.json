@@ -1,0 +1,296 @@
+{
+  "algorithm": "Neumann-series inverse via classically aggregated explicit Pauli LCU",
+  "n_system": 2,
+  "degree": 12,
+  "alpha": 1.0,
+  "alpha_exact": "1",
+  "delta": 0.5,
+  "delta_exact": "1/2",
+  "gamma": 0.5,
+  "gamma_exact": "1/2",
+  "promised_normalized_spectrum": [
+    0.5,
+    1.0
+  ],
+  "promised_condition_upper": 2.0,
+  "normalization": 0.9755625004445,
+  "normalization_exact": "1951125000889/2000000000000",
+  "input_terms_exact": [
+    [
+      "3/4",
+      "II"
+    ],
+    [
+      "-1/10",
+      "IX"
+    ],
+    [
+      "-1/20",
+      "XX"
+    ],
+    [
+      "-1/10",
+      "ZI"
+    ]
+  ],
+  "polynomial_terms_exact": [
+    [
+      "1391254283371/2000000000000",
+      "II"
+    ],
+    [
+      "38814240633/400000000000",
+      "IX"
+    ],
+    [
+      "25755322231/2000000000000",
+      "XI"
+    ],
+    [
+      "4808892461/100000000000",
+      "XX"
+    ],
+    [
+      "4808892461/50000000000",
+      "ZI"
+    ],
+    [
+      "25755322231/1000000000000",
+      "ZX"
+    ]
+  ],
+  "polynomial": "T_K=delta*sum_(k=0..K)(I-A/alpha)^k",
+  "term_count": 6,
+  "scaled_inverse_operator_error_bound": 0.0001220703125,
+  "scaled_inverse_operator_error_bound_exact": "1/8192",
+  "unscaled_B_inverse_error_bound": 0.000244140625,
+  "conditional_state_trace_distance_bound": 6.103888176768603e-05,
+  "conditional_Pauli_bias_bound": 0.00012207776353537206,
+  "success_probability_lower_bound": 0.26268169643368994,
+  "coefficient_normalization_upper_bound": 0.9998779296875,
+  "analytical_scope": "exact rational input/polynomial and ideal exact-angle Pauli LCU; uniform spectral bound, not a floating/synthesis certificate",
+  "classical_aggregation": "exact Fraction coefficients; Hermitian anticommutator products; capped256 terms anddegree64",
+  "rational_precision_limits": {
+    "input_numerator_denominator_bits": 512,
+    "normalized_common_denominator_bits": 128,
+    "literal_characters": 192,
+    "scientific_exponent_magnitude": 128
+  },
+  "rotation_synthesis": "not generated or certified",
+  "schema_version": 1,
+  "matrix_dimension": 4,
+  "input": "RY(0.63) then RZ(0.41) on q0, RY(0.37) on q(n-1), clean zeros initially",
+  "input_preparation_counts": {
+    "ry": 2,
+    "rz": 1
+  },
+  "postselection": "all Pauli labels zero, data values unrestricted",
+  "observable": "one fixed conditional Z(q0) mean",
+  "amplification_rounds": 0,
+  "amplification_kind": "known prepared input; full initial-zero reflection, not oblivious inverse amplification",
+  "full_source_calls": 1,
+  "forward_source_calls": 1,
+  "inverse_source_calls": 0,
+  "good_reflections": 0,
+  "initial_zero_reflections": 0,
+  "source_gate_counts": {
+    "x": 42,
+    "mcx": 7,
+    "ccry": 6,
+    "ry": 4,
+    "h": 4,
+    "cry": 2,
+    "rz": 1
+  },
+  "source_dependency_depth": 42,
+  "logical_qubits": 5,
+  "primitive_gate_counts_per_complete_attempt": {
+    "cx": 150,
+    "rz": 106,
+    "ry": 45,
+    "x": 13,
+    "rx": 5,
+    "measure": 5,
+    "h": 1,
+    "barrier": 1
+  },
+  "primitive_dependency_depth": 269,
+  "arbitrary_rotations_per_attempt": 156,
+  "classical_work_measured": {
+    "exact_coefficient_preprocessing_seconds": 0.0015625659998477204,
+    "source_generation_and_primitive_lowering_seconds": 0.03160845000002155,
+    "scope": "one CPU run; generation recomputes coefficients internally, so these are separately measured activities rather than disjoint total-time components",
+    "excluded_from_physical_runtime": true
+  },
+  "validation": {
+    "performed": true,
+    "logical_qubits": 5,
+    "system_qubits": 2,
+    "degree": 12,
+    "matrix_eigenvalues": [
+      0.5381966011250103,
+      0.7381966011250104,
+      0.7618033988749894,
+      0.9618033988749894
+    ],
+    "normalized_eigenvalues": [
+      0.5381966011250103,
+      0.7381966011250104,
+      0.7618033988749894,
+      0.9618033988749894
+    ],
+    "actual_condition_number": 1.787085605640206,
+    "unamplified_success_probability": 0.8009422555701236,
+    "success_probability": 0.8009422555701203,
+    "amplification_prediction": 0.8009422555701236,
+    "amplification_rounds": 0,
+    "conditional_state_trace_distance_to_classical_solution": 1.4601083531898247e-05,
+    "conditional_state_trace_distance_to_unamplified_polynomial": 3.388125485427988e-16,
+    "z_quantum": 0.6403780032369315,
+    "z_classical_solution": 0.6403572985864838,
+    "z_absolute_bias": 2.070465044767822e-05,
+    "scaled_inverse_operator_error": 4.036190711547322e-05,
+    "analytic_operator_error_bound": 0.0001220703125,
+    "analytic_conditional_trace_distance_bound": 6.103888176768603e-05,
+    "analytic_conditional_Pauli_bias_bound": 0.00012207776353537206,
+    "solution_state_real": [
+      0.877353697205763,
+      0.40933814216640707,
+      0.1520404512231878,
+      0.1070845083889638
+    ],
+    "solution_state_imag": [
+      -0.16370486457016403,
+      0.027674705417115524,
+      -0.022889083113086857,
+      -0.004505828720477985
+    ],
+    "classical_solution_state_real": [
+      0.8773482708383487,
+      0.40935039613450697,
+      0.15204124923070172,
+      0.10708700861367774
+    ],
+    "classical_solution_state_imag": [
+      -0.1637016105841643,
+      0.02767072961134579,
+      -0.022888909426177398,
+      -0.004506351099313024
+    ],
+    "classical_residual_norm": 1.7609793119219942e-16,
+    "classical_reference_equation": "(A/alpha)y=b; normalized y equals normalized A^-1b; residual uses normalized system",
+    "scope": "bounded numerical circuits and independent matrices; analytic approximation bound assumes exact rational gates, not certified synthesis",
+    "analytic_bound_checks": {
+      "operator_error_within_bound_with_1e_12_numerical_guard": true,
+      "state_error_within_bound_with_1e_12_numerical_guard": true,
+      "observable_error_within_bound_with_2e_12_numerical_guard": true,
+      "amplification_prediction_within_1e_12": true
+    }
+  },
+  "retry_acceptance_kind": "numerically known prepared-input acceptance in the ideal gate model",
+  "retry_and_sampling_proposal": {
+    "status": "unexecuted numerical-ideal workload proposal",
+    "accepted_samples": 13315,
+    "statistical_error": 0.03,
+    "statistical_failure": 0.005,
+    "acceptance_failure": 0.005,
+    "success_probability_used": 0.8009422555701203,
+    "attempt_cap_per_accepted_slot": 10,
+    "total_capped_attempts": 133150,
+    "numerical_expected_attempts_until_success_without_cap": 16624.169729342375,
+    "assumptions": [
+      "IID fresh prepared inputs",
+      "ideal numerical acceptance remains applicable",
+      "one fixed Pauli mean",
+      "all failures pay full attempt schedule"
+    ],
+    "certified_synthesis_or_physical_success_guarantee": false
+  },
+  "workload_status": "unexecuted ideal capped workload proposal; no hardware confidence certificate",
+  "amplified_uniform_retry_lower_bound": "unavailable; integer amplification is nonmonotone in input acceptance",
+  "initialization": "fresh clean logical zero inputs assumed per attempt; reset timing and faults excluded",
+  "included_in_attempt": [
+    "actual complex input preparation",
+    "explicit coefficient PREPARE",
+    "signed label-controlled Pauli SELECT",
+    "PREPARE inverse",
+    "all source/inverse calls and both reflection types if selected",
+    "all final data/label measurements",
+    "every failed full attempt"
+  ],
+  "excluded": [
+    "clean initialization timing/faults",
+    "concrete coherent Clifford+T synthesis certificate",
+    "classical readout/reference/postprocessing timing",
+    "general sparse matrix or arbitrary-vector loading"
+  ],
+  "synthesis_and_conditioning": "The analytic bound covers the exact rational polynomial and ideal angle gates. Numerical coefficient loading and QDK mean-fit synthesis do not supply an operator-norm certificate or physical/postselected confidence guarantee.",
+  "qasm_export_policy": {
+    "scope": "complete measured trials, not phase-preserving coherently controlled oracle",
+    "compiled_global_phase_radians": 4.51603943953533,
+    "pinned_exporter": "may omit overall global phase; measured probabilities unchanged"
+  },
+  "physical_estimate": {
+    "status": "conditional_mean_fit_resource_projection",
+    "report": "surface-code.json",
+    "pareto_points": 7,
+    "profile": {
+      "name": "illustrative-p-1e-4",
+      "physical_error_rate": 0.0001,
+      "gate_time_ns": 100,
+      "measurement_time_ns": 500
+    },
+    "budget": {
+      "synthesis_model_error_per_execution": 1e-06,
+      "physical_failure_probability": 0.005,
+      "executions": 133150
+    }
+  },
+  "provenance": {
+    "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "implementation_sha256": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+    "qasm_sha256": "c41aed067c55f52dbe7cf17b35ce08f3c327f487b1b738b52f6bcc1242618966",
+    "source_note": "commit plus exact module hash identifies working-tree code; generation can precede commit",
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "seed": 7,
+    "device": "CPU",
+    "command": "python scripts/generate_linear_inverse_lcu.py ",
+    "shared_access_sources": {
+      "simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "linear_systems_qsvt.py": "c4735e188c9e80fb6fb60dc34c00558b17ab8f2c48c110a30b732aee9c105590"
+    }
+  },
+  "gate_loading_normalization": 0.9755625004445,
+  "coefficient_conversion_l1_error_bound": 1.2900266753490543e-17,
+  "coefficient_conversion_l1_error_bound_exact": "907775571/70368744177664000000000000",
+  "conversion_adjusted_trace_bound_exact_angle_model": 6.103888176771182e-05,
+  "conversion_bound_scope": "coefficient-to-float l1 error only; probability normalization/libm angle implementation and synthesis need a separate coherent eta certificate",
+  "capped_primitive_gate_counts_proposal": {
+    "cx": 19972500,
+    "rz": 14113900,
+    "ry": 5991750,
+    "x": 1730950,
+    "rx": 665750,
+    "measure": 665750,
+    "h": 133150,
+    "barrier": 133150
+  },
+  "scaling": {
+    "width": "actual generated circuits for the fixed three-word algebra; only marked rows simulated; structured access can be classically tractable",
+    "condition": "promised gap changed while actual reference eigenvalues and chosen degree are recorded",
+    "degree": "fixed matrix and complex input, actual errors versus analytic uniform bound",
+    "physical_scaling_computed": false
+  },
+  "additional_amplified_export": {
+    "rounds": 1,
+    "file": "amplified-trial.qasm",
+    "compiled_global_phase_radians": 4.221515128261297,
+    "scope": "measured probabilities only, source includes known preparation and both reflections"
+  }
+}

@@ -1,0 +1,1161 @@
+{
+  "schema_version": 1,
+  "recipe_id": "quality-scaling-v1",
+  "fixed_published_recipe": true,
+  "design": "predetermined before study execution; no quality-target retuning",
+  "cases": [
+    {
+      "case_id": "qaoa-path-n3-p1",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 3,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 6,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-path-n3-p2",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 3,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 7,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-path-n4-p1",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 4,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 8,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-path-n4-p2",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 4,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 9,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-path-n5-p1",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 5,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 10,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-path-n5-p2",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 5,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 11,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-path-n6-p1",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 6,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 12,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-path-n6-p2",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 6,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 13,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-path-n8-p1",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 8,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 14,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-path-n8-p2",
+      "algorithm": "qaoa",
+      "graph_family": "path",
+      "n_qubits": 8,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 15,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p1",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 3,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 16,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p2",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 3,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 17,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p1",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 4,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 18,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p2",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 4,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 19,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p1",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 5,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 20,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p2",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 5,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 21,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p1",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 6,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 22,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p2",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 6,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 23,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p1",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 8,
+      "p": 1,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 24,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 35968,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 52352
+      }
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p2",
+      "algorithm": "qaoa",
+      "graph_family": "cycle",
+      "n_qubits": 8,
+      "p": 2,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      "initial": [
+        0.2,
+        0.1,
+        0.2,
+        0.1
+      ],
+      "parameter_order": "gamma0,beta0,gamma1,beta1,...",
+      "stream_id": 25,
+      "groups": [
+        "all_z"
+      ],
+      "target": {
+        "kind": "post_training_ideal_expected_cut_ratio",
+        "ratio_at_least": 0.8,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 64640,
+        "holdout_shots_per_seed": 16384,
+        "total_shots_per_seed": 81024
+      }
+    },
+    {
+      "case_id": "vqe-open-chain-n2",
+      "algorithm": "vqe",
+      "graph_family": "open-chain",
+      "n_qubits": 2,
+      "p": 1,
+      "hamiltonian": "-sum_i Z_i+0.5 sum_i X_i X_(i+1)",
+      "ansatz": "one RY per qubit followed by ascending nearest-neighbor CX chain",
+      "initial": [
+        0.6,
+        0.6
+      ],
+      "parameter_order": "theta0,theta1,...",
+      "stream_id": 26,
+      "groups": [
+        "all_z",
+        "all_x"
+      ],
+      "target": {
+        "kind": "post_training_ideal_ground_energy_density_gap",
+        "density_gap_at_most": 0.05,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 61,
+        "training_shots_per_seed": 71936,
+        "holdout_shots_per_seed": 32768,
+        "total_shots_per_seed": 104704
+      }
+    },
+    {
+      "case_id": "vqe-open-chain-n3",
+      "algorithm": "vqe",
+      "graph_family": "open-chain",
+      "n_qubits": 3,
+      "p": 1,
+      "hamiltonian": "-sum_i Z_i+0.5 sum_i X_i X_(i+1)",
+      "ansatz": "one RY per qubit followed by ascending nearest-neighbor CX chain",
+      "initial": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "parameter_order": "theta0,theta1,...",
+      "stream_id": 27,
+      "groups": [
+        "all_z",
+        "all_x"
+      ],
+      "target": {
+        "kind": "post_training_ideal_ground_energy_density_gap",
+        "density_gap_at_most": 0.05,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 85,
+        "training_shots_per_seed": 100608,
+        "holdout_shots_per_seed": 32768,
+        "total_shots_per_seed": 133376
+      }
+    },
+    {
+      "case_id": "vqe-open-chain-n4",
+      "algorithm": "vqe",
+      "graph_family": "open-chain",
+      "n_qubits": 4,
+      "p": 1,
+      "hamiltonian": "-sum_i Z_i+0.5 sum_i X_i X_(i+1)",
+      "ansatz": "one RY per qubit followed by ascending nearest-neighbor CX chain",
+      "initial": [
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ],
+      "parameter_order": "theta0,theta1,...",
+      "stream_id": 28,
+      "groups": [
+        "all_z",
+        "all_x"
+      ],
+      "target": {
+        "kind": "post_training_ideal_ground_energy_density_gap",
+        "density_gap_at_most": 0.05,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 109,
+        "training_shots_per_seed": 129280,
+        "holdout_shots_per_seed": 32768,
+        "total_shots_per_seed": 162048
+      }
+    },
+    {
+      "case_id": "vqe-open-chain-n6",
+      "algorithm": "vqe",
+      "graph_family": "open-chain",
+      "n_qubits": 6,
+      "p": 1,
+      "hamiltonian": "-sum_i Z_i+0.5 sum_i X_i X_(i+1)",
+      "ansatz": "one RY per qubit followed by ascending nearest-neighbor CX chain",
+      "initial": [
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ],
+      "parameter_order": "theta0,theta1,...",
+      "stream_id": 29,
+      "groups": [
+        "all_z",
+        "all_x"
+      ],
+      "target": {
+        "kind": "post_training_ideal_ground_energy_density_gap",
+        "density_gap_at_most": 0.05,
+        "selection": "predetermined"
+      },
+      "planned": {
+        "training_calls_per_seed": 157,
+        "training_shots_per_seed": 186624,
+        "holdout_shots_per_seed": 32768,
+        "total_shots_per_seed": 219392
+      }
+    }
+  ],
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "schedule": [
+    [
+      0.4,
+      256,
+      4
+    ],
+    [
+      0.2,
+      512,
+      4
+    ],
+    [
+      0.1,
+      1024,
+      4
+    ]
+  ],
+  "initial_shots_per_group": 128,
+  "comparison_z": 2.0,
+  "validation_shots_per_group": 16384,
+  "validation_failure_all_final_groups": 0.05,
+  "validation_failure_per_group": 0.0005952380952380953,
+  "normalized_holdout_precision_target": 0.05,
+  "planned": {
+    "runs": 72,
+    "training_calls": 6336,
+    "validation_calls": 72,
+    "objective_calls": 6408,
+    "training_groups": 7572,
+    "validation_groups": 84,
+    "group_batches": 7656,
+    "training_shots": 4483584,
+    "validation_shots": 1376256,
+    "total_shots": 5859840
+  },
+  "bounds": {
+    "simulation_max_qubits": 8,
+    "dense_reference_max_qubits": 8,
+    "group_batches": 10000,
+    "total_shots": 10000000,
+    "workflow_wall_seconds": 120.0,
+    "unitary_gates_per_circuit": 100000
+  },
+  "workload_comparison": "same per-call schedule/sweeps; p2 and larger VQE parameter vectors consume more calls/shots",
+  "statistical_scope": "union bound for independent final fixed-state groups conditional on training; no optimizer guarantee"
+}

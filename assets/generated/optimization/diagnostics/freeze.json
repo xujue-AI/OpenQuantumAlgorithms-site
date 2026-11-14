@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "recipe_and_producers_frozen_before_execution",
+  "identity": {
+    "recipe_sha256": "3b991eaece34b43116afbbbc85d5e8da9e76fe7c9ff217a45c254989c40f5dd9",
+    "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+    "generator_sha256": "0c0f3ff0f177dca99a00cc611261c3b6c82ce39be251e8d3a54026b0f5346f3e",
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "recipe_file": "recipe.json",
+  "implementation_file": "optimization.py",
+  "generator_file": "generate_optimization_diagnostics.py",
+  "environment_lock_file": "requirements-lock.txt",
+  "captured_at_utc": "2026-11-12T17:10:41.783549+00:00",
+  "source_commit_at_capture": "1fee031206f64492b536662680e670af6424b76e",
+  "note": "Captured byte hashes are authoritative; numerical execution records its own checkout revision"
+}

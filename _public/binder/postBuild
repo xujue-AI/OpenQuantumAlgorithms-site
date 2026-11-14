@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-# The publication repository contains the executed notebook and its standalone
-# implementation download, so Binder needs no private development repository.
-install -m 644 assets/generated/grover/grover.py notebooks/grover.py
-install -m 644 assets/generated/grover/LICENSE.txt notebooks/LICENSE-grover.txt
-python -m pip install --no-deps ./code

@@ -1,0 +1,5341 @@
+{
+  "schema_version": 1,
+  "kind": "sampled",
+  "key": "qaoa-cycle-4-p1-alternate-seed-41",
+  "identity": {
+    "recipe_sha256": "3b991eaece34b43116afbbbc85d5e8da9e76fe7c9ff217a45c254989c40f5dd9",
+    "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+    "generator_sha256": "0c0f3ff0f177dca99a00cc611261c3b6c82ce39be251e8d3a54026b0f5346f3e",
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "status": "completed",
+  "run": {
+    "parameters": [
+      0.7999999999999998,
+      0.3999999999999999
+    ],
+    "initial": [
+      0.6,
+      0.4
+    ],
+    "seed": 41,
+    "final_training_estimate": -2.9935897435897436,
+    "final_training_standard_error": 0.026132670252219565,
+    "evaluations": [
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.96875,
+        "estimated_standard_error": 0.0914245714443307,
+        "groups": [
+          {
+            "shots": 128,
+            "counts": {
+              "0000": 1,
+              "0001": 3,
+              "0010": 3,
+              "0011": 7,
+              "0100": 4,
+              "0101": 29,
+              "0110": 7,
+              "0111": 6,
+              "1000": 6,
+              "1001": 8,
+              "1010": 34,
+              "1011": 5,
+              "1100": 8,
+              "1101": 5,
+              "1110": 2
+            },
+            "estimate": 2.96875,
+            "sample_variance": 1.0698818897637796,
+            "estimated_standard_error": 0.0914245714443307,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                0,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                0,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 512,
+            "group_evaluation_seconds": 0.0004431670004123589,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 128,
+        "evaluation_wall_seconds": 0.0005117920009070076,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 0,
+        "role": "initial",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.952991452991453,
+        "estimated_standard_error": 0.05039085741280146,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 5,
+              "0001": 16,
+              "0010": 17,
+              "0011": 33,
+              "0100": 16,
+              "0101": 110,
+              "0110": 28,
+              "0111": 9,
+              "1000": 19,
+              "1001": 26,
+              "1010": 124,
+              "1011": 7,
+              "1100": 31,
+              "1101": 8,
+              "1110": 13,
+              "1111": 6
+            },
+            "estimate": 2.952991452991453,
+            "sample_variance": 1.1883636230531307,
+            "estimated_standard_error": 0.05039085741280146,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                1,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                1,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00036225000076228753,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0004247500000928994,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 1,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.2948717948717947,
+        "estimated_standard_error": 0.04544174508891801,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 14,
+              "0001": 20,
+              "0010": 30,
+              "0011": 30,
+              "0100": 31,
+              "0101": 45,
+              "0110": 26,
+              "0111": 27,
+              "1000": 29,
+              "1001": 31,
+              "1010": 51,
+              "1011": 34,
+              "1100": 30,
+              "1101": 22,
+              "1110": 35,
+              "1111": 13
+            },
+            "estimate": 2.2948717948717947,
+            "sample_variance": 0.9663976280678636,
+            "estimated_standard_error": 0.04544174508891801,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                2,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                2,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.000334458998622722,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0003884170000674203,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 2,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9017094017094016,
+        "estimated_standard_error": 0.05641057530689019,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 16,
+              "0001": 3,
+              "0010": 2,
+              "0011": 49,
+              "0100": 2,
+              "0101": 123,
+              "0110": 43,
+              "0111": 1,
+              "1000": 3,
+              "1001": 39,
+              "1010": 117,
+              "1011": 3,
+              "1100": 48,
+              "1101": 4,
+              "1110": 2,
+              "1111": 13
+            },
+            "estimate": 2.9017094017094016,
+            "sample_variance": 1.4892476070206262,
+            "estimated_standard_error": 0.05641057530689019,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                3,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                3,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00033149999944726005,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00038279100044746883,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 3,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.0
+        ],
+        "objective_estimate": -2.0,
+        "estimated_standard_error": 0.04567736624014042,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 30,
+              "0001": 23,
+              "0010": 27,
+              "0011": 27,
+              "0100": 35,
+              "0101": 28,
+              "0110": 34,
+              "0111": 26,
+              "1000": 38,
+              "1001": 41,
+              "1010": 29,
+              "1011": 30,
+              "1100": 19,
+              "1101": 28,
+              "1110": 26,
+              "1111": 27
+            },
+            "estimate": 2.0,
+            "sample_variance": 0.9764453961456103,
+            "estimated_standard_error": 0.04567736624014042,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                4,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                4,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003644159987743478,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0004301669996493729,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 4,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7999999999999998
+        ],
+        "objective_estimate": -2.0213675213675213,
+        "estimated_standard_error": 0.06416354158517705,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 52,
+              "0001": 25,
+              "0010": 26,
+              "0011": 2,
+              "0100": 32,
+              "0101": 49,
+              "0110": 6,
+              "0111": 24,
+              "1000": 22,
+              "1001": 5,
+              "1010": 66,
+              "1011": 37,
+              "1100": 2,
+              "1101": 26,
+              "1110": 36,
+              "1111": 58
+            },
+            "estimate": 2.0213675213675213,
+            "sample_variance": 1.926737312176284,
+            "estimated_standard_error": 0.06416354158517705,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                5,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                5,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003317909995530499,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00038804100040579215,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 5,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9188034188034186,
+        "estimated_standard_error": 0.04768255090456795,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 1,
+              "0001": 12,
+              "0010": 11,
+              "0011": 41,
+              "0100": 11,
+              "0101": 116,
+              "0110": 28,
+              "0111": 22,
+              "1000": 11,
+              "1001": 31,
+              "1010": 103,
+              "1011": 12,
+              "1100": 35,
+              "1101": 14,
+              "1110": 17,
+              "1111": 3
+            },
+            "estimate": 2.9188034188034186,
+            "sample_variance": 1.064056809238822,
+            "estimated_standard_error": 0.04768255090456795,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                6,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                6,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00033925000025192276,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00039033299981383607,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 6,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.423076923076923,
+        "estimated_standard_error": 0.04648317383843443,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 9,
+              "0001": 23,
+              "0010": 27,
+              "0011": 32,
+              "0100": 27,
+              "0101": 62,
+              "0110": 30,
+              "0111": 28,
+              "1000": 24,
+              "1001": 25,
+              "1010": 57,
+              "1011": 25,
+              "1100": 24,
+              "1101": 35,
+              "1110": 29,
+              "1111": 11
+            },
+            "estimate": 2.423076923076923,
+            "sample_variance": 1.0112007906440457,
+            "estimated_standard_error": 0.04648317383843443,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                7,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                7,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00035229199966124725,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00041245800093747675,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 7,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.8290598290598292,
+        "estimated_standard_error": 0.05700948500983593,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 19,
+              "0001": 2,
+              "0010": 7,
+              "0011": 47,
+              "0100": 1,
+              "0101": 114,
+              "0110": 49,
+              "0111": 1,
+              "1000": 2,
+              "1001": 55,
+              "1010": 112,
+              "1011": 3,
+              "1100": 40,
+              "1110": 3,
+              "1111": 13
+            },
+            "estimate": 2.8290598290598292,
+            "sample_variance": 1.521038086348579,
+            "estimated_standard_error": 0.05700948500983593,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                8,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                8,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00034716600021056365,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00039983300121093635,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 8,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.0
+        ],
+        "objective_estimate": -1.9102564102564104,
+        "estimated_standard_error": 0.045286573916706,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 31,
+              "0001": 29,
+              "0010": 35,
+              "0011": 32,
+              "0100": 33,
+              "0101": 21,
+              "0110": 27,
+              "0111": 27,
+              "1000": 30,
+              "1001": 18,
+              "1010": 25,
+              "1011": 38,
+              "1100": 28,
+              "1101": 31,
+              "1110": 27,
+              "1111": 36
+            },
+            "estimate": 1.9102564102564104,
+            "sample_variance": 0.9598089276890134,
+            "estimated_standard_error": 0.045286573916706,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                9,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                9,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0004137500000069849,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0004659160003939178,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 9,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7999999999999998
+        ],
+        "objective_estimate": -2.0256410256410255,
+        "estimated_standard_error": 0.06515092872168263,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 57,
+              "0001": 34,
+              "0010": 27,
+              "0011": 2,
+              "0100": 31,
+              "0101": 66,
+              "0110": 4,
+              "0111": 28,
+              "1000": 26,
+              "1001": 4,
+              "1010": 53,
+              "1011": 24,
+              "1100": 3,
+              "1101": 29,
+              "1110": 24,
+              "1111": 56
+            },
+            "estimate": 2.0256410256410255,
+            "sample_variance": 1.9864931642233568,
+            "estimated_standard_error": 0.06515092872168263,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                10,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                10,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00036262499997974373,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0004158339997957228,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 10,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.888888888888889,
+        "estimated_standard_error": 0.049068550086382744,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 3,
+              "0001": 21,
+              "0010": 4,
+              "0011": 31,
+              "0100": 10,
+              "0101": 109,
+              "0110": 33,
+              "0111": 15,
+              "1000": 13,
+              "1001": 34,
+              "1010": 107,
+              "1011": 14,
+              "1100": 42,
+              "1101": 15,
+              "1110": 12,
+              "1111": 5
+            },
+            "estimate": 2.888888888888889,
+            "sample_variance": 1.1268141803473708,
+            "estimated_standard_error": 0.049068550086382744,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                11,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                11,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003414590009924723,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00039491600000474136,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 11,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.376068376068376,
+        "estimated_standard_error": 0.0486748558700607,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 17,
+              "0001": 23,
+              "0010": 33,
+              "0011": 31,
+              "0100": 24,
+              "0101": 57,
+              "0110": 30,
+              "0111": 29,
+              "1000": 20,
+              "1001": 28,
+              "1010": 60,
+              "1011": 35,
+              "1100": 26,
+              "1101": 21,
+              "1110": 22,
+              "1111": 12
+            },
+            "estimate": 2.376068376068376,
+            "sample_variance": 1.1088050659785136,
+            "estimated_standard_error": 0.0486748558700607,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                12,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                12,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003505419990688097,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00040824999996402767,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 12,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.7948717948717947,
+        "estimated_standard_error": 0.055791922143069834,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 13,
+              "0001": 8,
+              "0010": 1,
+              "0011": 49,
+              "0100": 3,
+              "0101": 109,
+              "0110": 52,
+              "0111": 1,
+              "1000": 3,
+              "1001": 54,
+              "1010": 106,
+              "1011": 1,
+              "1100": 48,
+              "1101": 2,
+              "1110": 2,
+              "1111": 16
+            },
+            "estimate": 2.7948717948717947,
+            "sample_variance": 1.4567616537637953,
+            "estimated_standard_error": 0.055791922143069834,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                13,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                13,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003455420010141097,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0004041659994982183,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 13,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.0
+        ],
+        "objective_estimate": -2.0,
+        "estimated_standard_error": 0.046863988942649315,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 29,
+              "0001": 28,
+              "0010": 32,
+              "0011": 32,
+              "0100": 16,
+              "0101": 23,
+              "0110": 35,
+              "0111": 32,
+              "1000": 33,
+              "1001": 27,
+              "1010": 37,
+              "1011": 34,
+              "1100": 31,
+              "1101": 26,
+              "1110": 22,
+              "1111": 31
+            },
+            "estimate": 2.0,
+            "sample_variance": 1.0278372591006424,
+            "estimated_standard_error": 0.046863988942649315,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                14,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                14,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003466660000412958,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00039887500133772846,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 14,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7999999999999998
+        ],
+        "objective_estimate": -1.9188034188034189,
+        "estimated_standard_error": 0.06319816878254074,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 56,
+              "0001": 23,
+              "0010": 20,
+              "0011": 4,
+              "0100": 30,
+              "0101": 52,
+              "0110": 9,
+              "0111": 32,
+              "1000": 35,
+              "1001": 2,
+              "1010": 48,
+              "1011": 29,
+              "1100": 2,
+              "1101": 27,
+              "1110": 36,
+              "1111": 63
+            },
+            "estimate": 1.9188034188034189,
+            "sample_variance": 1.8691959955343251,
+            "estimated_standard_error": 0.06319816878254074,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                15,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                15,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003677500008052448,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0004209160015307134,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 15,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9017094017094016,
+        "estimated_standard_error": 0.048376270149746346,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 6,
+              "0001": 11,
+              "0010": 17,
+              "0011": 38,
+              "0100": 20,
+              "0101": 114,
+              "0110": 35,
+              "0111": 14,
+              "1000": 10,
+              "1001": 30,
+              "1010": 103,
+              "1011": 8,
+              "1100": 36,
+              "1101": 14,
+              "1110": 12
+            },
+            "estimate": 2.9017094017094016,
+            "sample_variance": 1.09524332436538,
+            "estimated_standard_error": 0.048376270149746346,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                16,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                16,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.0003476670008240035,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0004009160002169665,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 16,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.393162393162393,
+        "estimated_standard_error": 0.046454981431244415,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 10,
+              "0001": 25,
+              "0010": 34,
+              "0011": 34,
+              "0100": 28,
+              "0101": 56,
+              "0110": 30,
+              "0111": 20,
+              "1000": 28,
+              "1001": 22,
+              "1010": 58,
+              "1011": 31,
+              "1100": 27,
+              "1101": 26,
+              "1110": 27,
+              "1111": 12
+            },
+            "estimate": 2.393162393162393,
+            "sample_variance": 1.0099745602957593,
+            "estimated_standard_error": 0.046454981431244415,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                17,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                17,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00034795800092979334,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00040379199890594464,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 17,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.0,
+        "estimated_standard_error": 0.057872757199873885,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 14,
+              "0010": 1,
+              "0011": 37,
+              "0100": 2,
+              "0101": 113,
+              "0110": 46,
+              "0111": 1,
+              "1000": 2,
+              "1001": 39,
+              "1010": 154,
+              "1011": 2,
+              "1100": 34,
+              "1101": 2,
+              "1110": 2,
+              "1111": 19
+            },
+            "estimate": 3.0,
+            "sample_variance": 1.5674518201284797,
+            "estimated_standard_error": 0.057872757199873885,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                18,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                18,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00034191600025224034,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.000399124999603373,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 18,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.0
+        ],
+        "objective_estimate": -1.9871794871794872,
+        "estimated_standard_error": 0.04424879894040009,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 30,
+              "0001": 39,
+              "0010": 27,
+              "0011": 30,
+              "0100": 26,
+              "0101": 24,
+              "0110": 40,
+              "0111": 30,
+              "1000": 40,
+              "1001": 23,
+              "1010": 28,
+              "1011": 17,
+              "1100": 31,
+              "1101": 28,
+              "1110": 30,
+              "1111": 25
+            },
+            "estimate": 1.9871794871794872,
+            "sample_variance": 0.9163235051886015,
+            "estimated_standard_error": 0.04424879894040009,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                19,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                19,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00034587499976623803,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.0003995830011263024,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 19,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7999999999999998
+        ],
+        "objective_estimate": -1.9444444444444444,
+        "estimated_standard_error": 0.061793993016786605,
+        "groups": [
+          {
+            "shots": 468,
+            "counts": {
+              "0000": 61,
+              "0001": 29,
+              "0010": 33,
+              "0011": 5,
+              "0100": 39,
+              "0101": 37,
+              "0110": 5,
+              "0111": 29,
+              "1000": 28,
+              "1001": 4,
+              "1010": 61,
+              "1011": 38,
+              "1100": 3,
+              "1101": 19,
+              "1110": 27,
+              "1111": 50
+            },
+            "estimate": 1.9444444444444444,
+            "sample_variance": 1.7870568641446583,
+            "estimated_standard_error": 0.061793993016786605,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                20,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                20,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 1872,
+            "group_evaluation_seconds": 0.00035229199966124725,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 468,
+        "evaluation_wall_seconds": 0.00040904199886426795,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 20,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.91025641025641,
+        "estimated_standard_error": 0.034214019559239736,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 7,
+              "0001": 31,
+              "0010": 20,
+              "0011": 66,
+              "0100": 29,
+              "0101": 218,
+              "0110": 71,
+              "0111": 37,
+              "1000": 35,
+              "1001": 61,
+              "1010": 220,
+              "1011": 22,
+              "1100": 65,
+              "1101": 22,
+              "1110": 27,
+              "1111": 5
+            },
+            "estimate": 2.91025641025641,
+            "sample_variance": 1.0956807897984369,
+            "estimated_standard_error": 0.034214019559239736,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                21,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                21,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00038950000089243986,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.00044187499952386133,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 21,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.3999999999999999,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.7542735042735043,
+        "estimated_standard_error": 0.03324894889279977,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 5,
+              "0001": 43,
+              "0010": 48,
+              "0011": 62,
+              "0100": 37,
+              "0101": 185,
+              "0110": 61,
+              "0111": 39,
+              "1000": 35,
+              "1001": 56,
+              "1010": 179,
+              "1011": 44,
+              "1100": 59,
+              "1101": 33,
+              "1110": 44,
+              "1111": 6
+            },
+            "estimate": 2.7542735042735043,
+            "sample_variance": 1.0347410759175466,
+            "estimated_standard_error": 0.03324894889279977,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                22,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                22,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00036454200017033145,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004163749999861466,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 22,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9957264957264957,
+        "estimated_standard_error": 0.03871866356013625,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 22,
+              "0001": 8,
+              "0010": 13,
+              "0011": 70,
+              "0100": 17,
+              "0101": 238,
+              "0110": 68,
+              "0111": 10,
+              "1000": 13,
+              "1001": 64,
+              "1010": 275,
+              "1011": 17,
+              "1100": 70,
+              "1101": 9,
+              "1110": 17,
+              "1111": 25
+            },
+            "estimate": 2.9957264957264957,
+            "sample_variance": 1.4031902737785091,
+            "estimated_standard_error": 0.03871866356013625,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                23,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                23,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00035966700124845374,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004137500000069849,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 23,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.19999999999999973
+        ],
+        "objective_estimate": -2.732905982905983,
+        "estimated_standard_error": 0.032373866091094196,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 3,
+              "0001": 40,
+              "0010": 43,
+              "0011": 55,
+              "0100": 39,
+              "0101": 179,
+              "0110": 73,
+              "0111": 46,
+              "1000": 37,
+              "1001": 61,
+              "1010": 170,
+              "1011": 43,
+              "1100": 61,
+              "1101": 42,
+              "1110": 41,
+              "1111": 3
+            },
+            "estimate": 2.732905982905983,
+            "sample_variance": 0.9809909045203162,
+            "estimated_standard_error": 0.032373866091094196,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                24,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                24,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00034579199927975424,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004052500007674098,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 24,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996
+        ],
+        "objective_estimate": -2.6175213675213675,
+        "estimated_standard_error": 0.04199034636406809,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 45,
+              "0001": 35,
+              "0010": 41,
+              "0011": 31,
+              "0100": 40,
+              "0101": 181,
+              "0110": 36,
+              "0111": 48,
+              "1000": 48,
+              "1001": 29,
+              "1010": 201,
+              "1011": 36,
+              "1100": 27,
+              "1101": 43,
+              "1110": 47,
+              "1111": 48
+            },
+            "estimate": 2.6175213675213675,
+            "sample_variance": 1.6503450797568446,
+            "estimated_standard_error": 0.04199034636406809,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                25,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                25,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.0003553749993443489,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004134170012548566,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 25,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9444444444444446,
+        "estimated_standard_error": 0.03402395610451756,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 1,
+              "0001": 20,
+              "0010": 22,
+              "0011": 62,
+              "0100": 21,
+              "0101": 205,
+              "0110": 70,
+              "0111": 31,
+              "1000": 28,
+              "1001": 67,
+              "1010": 247,
+              "1011": 28,
+              "1100": 76,
+              "1101": 22,
+              "1110": 27,
+              "1111": 9
+            },
+            "estimate": 2.9444444444444446,
+            "sample_variance": 1.083541295306001,
+            "estimated_standard_error": 0.03402395610451756,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                26,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                26,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00034983399928023573,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.00040741699922364205,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 26,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.3999999999999999,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.72008547008547,
+        "estimated_standard_error": 0.033508766259009226,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 10,
+              "0001": 50,
+              "0010": 52,
+              "0011": 59,
+              "0100": 43,
+              "0101": 188,
+              "0110": 59,
+              "0111": 34,
+              "1000": 34,
+              "1001": 56,
+              "1010": 164,
+              "1011": 40,
+              "1100": 62,
+              "1101": 42,
+              "1110": 38,
+              "1111": 5
+            },
+            "estimate": 2.72008547008547,
+            "sample_variance": 1.0509758215640568,
+            "estimated_standard_error": 0.033508766259009226,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                27,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                27,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.000352625000232365,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.000409040998420096,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 27,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.0448717948717947,
+        "estimated_standard_error": 0.03700032958483452,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 15,
+              "0001": 6,
+              "0010": 15,
+              "0011": 70,
+              "0100": 14,
+              "0101": 252,
+              "0110": 66,
+              "0111": 15,
+              "1000": 15,
+              "1001": 67,
+              "1010": 270,
+              "1011": 9,
+              "1100": 75,
+              "1101": 14,
+              "1110": 15,
+              "1111": 18
+            },
+            "estimate": 3.0448717948717947,
+            "sample_variance": 1.2814068284656521,
+            "estimated_standard_error": 0.03700032958483452,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                28,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                28,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.0003653330004453892,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004163749999861466,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 28,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.19999999999999973
+        ],
+        "objective_estimate": -2.606837606837607,
+        "estimated_standard_error": 0.03169777783030834,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 5,
+              "0001": 39,
+              "0010": 43,
+              "0011": 71,
+              "0100": 37,
+              "0101": 139,
+              "0110": 67,
+              "0111": 44,
+              "1000": 43,
+              "1001": 69,
+              "1010": 156,
+              "1011": 55,
+              "1100": 80,
+              "1101": 29,
+              "1110": 53,
+              "1111": 6
+            },
+            "estimate": 2.606837606837607,
+            "sample_variance": 0.9404451757392933,
+            "estimated_standard_error": 0.03169777783030834,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                29,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                29,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.0003535840005497448,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004153749996476108,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 29,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996
+        ],
+        "objective_estimate": -2.58974358974359,
+        "estimated_standard_error": 0.041046203540185275,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 39,
+              "0001": 41,
+              "0010": 43,
+              "0011": 32,
+              "0100": 37,
+              "0101": 187,
+              "0110": 32,
+              "0111": 49,
+              "1000": 40,
+              "1001": 35,
+              "1010": 176,
+              "1011": 48,
+              "1100": 37,
+              "1101": 50,
+              "1110": 42,
+              "1111": 48
+            },
+            "estimate": 2.58974358974359,
+            "sample_variance": 1.57696421225833,
+            "estimated_standard_error": 0.041046203540185275,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                30,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                30,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00034329200025240425,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.00039974999890546314,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 30,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9209401709401708,
+        "estimated_standard_error": 0.03542313698890859,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 8,
+              "0001": 21,
+              "0010": 33,
+              "0011": 57,
+              "0100": 25,
+              "0101": 226,
+              "0110": 65,
+              "0111": 21,
+              "1000": 31,
+              "1001": 66,
+              "1010": 226,
+              "1011": 24,
+              "1100": 67,
+              "1101": 31,
+              "1110": 22,
+              "1111": 13
+            },
+            "estimate": 2.9209401709401708,
+            "sample_variance": 1.1744915215503449,
+            "estimated_standard_error": 0.03542313698890859,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                31,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                31,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.0003476250003586756,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004080420003447216,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 31,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.3999999999999999,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.7542735042735043,
+        "estimated_standard_error": 0.03324894889279977,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 9,
+              "0001": 44,
+              "0010": 42,
+              "0011": 54,
+              "0100": 44,
+              "0101": 188,
+              "0110": 56,
+              "0111": 41,
+              "1000": 44,
+              "1001": 75,
+              "1010": 176,
+              "1011": 44,
+              "1100": 50,
+              "1101": 39,
+              "1110": 28,
+              "1111": 2
+            },
+            "estimate": 2.7542735042735043,
+            "sample_variance": 1.0347410759175466,
+            "estimated_standard_error": 0.03324894889279977,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                32,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                32,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.0003460829993855441,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004031670014228439,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 32,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.0277777777777777,
+        "estimated_standard_error": 0.0357622809636781,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 13,
+              "0001": 16,
+              "0010": 16,
+              "0011": 80,
+              "0100": 15,
+              "0101": 259,
+              "0110": 90,
+              "0111": 10,
+              "1000": 13,
+              "1001": 64,
+              "1010": 245,
+              "1011": 18,
+              "1100": 57,
+              "1101": 14,
+              "1110": 16,
+              "1111": 10
+            },
+            "estimate": 3.0277777777777777,
+            "sample_variance": 1.1970885323826501,
+            "estimated_standard_error": 0.0357622809636781,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                33,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                33,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00040579199958301615,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.000456584000858129,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 33,
+        "role": "proposal",
+        "accepted": true,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.19999999999999973
+        ],
+        "objective_estimate": -2.6901709401709404,
+        "estimated_standard_error": 0.03138683893907852,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 1,
+              "0001": 39,
+              "0010": 42,
+              "0011": 65,
+              "0100": 26,
+              "0101": 175,
+              "0110": 70,
+              "0111": 47,
+              "1000": 37,
+              "1001": 62,
+              "1010": 150,
+              "1011": 41,
+              "1100": 81,
+              "1101": 40,
+              "1110": 59,
+              "1111": 1
+            },
+            "estimate": 2.6901709401709404,
+            "sample_variance": 0.9220851044380457,
+            "estimated_standard_error": 0.03138683893907852,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                34,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                34,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00035708399991563056,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004097080000065034,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 34,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5999999999999996
+        ],
+        "objective_estimate": -2.6645299145299144,
+        "estimated_standard_error": 0.04043196520650772,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 45,
+              "0001": 53,
+              "0010": 35,
+              "0011": 31,
+              "0100": 49,
+              "0101": 197,
+              "0110": 27,
+              "0111": 27,
+              "1000": 56,
+              "1001": 32,
+              "1010": 189,
+              "1011": 41,
+              "1100": 35,
+              "1101": 45,
+              "1110": 44,
+              "1111": 30
+            },
+            "estimate": 2.6645299145299144,
+            "sample_variance": 1.5301202065907948,
+            "estimated_standard_error": 0.04043196520650772,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                35,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                35,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.0003585419999581063,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.00040995800009113736,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 35,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.002136752136752,
+        "estimated_standard_error": 0.03739781431433429,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 20,
+              "0001": 13,
+              "0010": 9,
+              "0011": 71,
+              "0100": 8,
+              "0101": 259,
+              "0110": 68,
+              "0111": 14,
+              "1000": 15,
+              "1001": 65,
+              "1010": 246,
+              "1011": 15,
+              "1100": 92,
+              "1101": 14,
+              "1110": 11,
+              "1111": 16
+            },
+            "estimate": 3.002136752136752,
+            "sample_variance": 1.3090863384981033,
+            "estimated_standard_error": 0.03739781431433429,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                36,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                36,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00034670799868763424,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.00040462500146531966,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 36,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.5999999999999996,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9743589743589745,
+        "estimated_standard_error": 0.03406211098231136,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 4,
+              "0001": 26,
+              "0010": 23,
+              "0011": 65,
+              "0100": 25,
+              "0101": 243,
+              "0110": 61,
+              "0111": 28,
+              "1000": 25,
+              "1001": 70,
+              "1010": 223,
+              "1011": 25,
+              "1100": 59,
+              "1101": 21,
+              "1110": 32,
+              "1111": 6
+            },
+            "estimate": 2.9743589743589745,
+            "sample_variance": 1.085972850678733,
+            "estimated_standard_error": 0.03406211098231136,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                37,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                37,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00033929200071725063,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.00039775000004738104,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 37,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.888888888888889,
+        "estimated_standard_error": 0.03971602147340651,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 24,
+              "0001": 6,
+              "0010": 8,
+              "0011": 98,
+              "0100": 5,
+              "0101": 227,
+              "0110": 78,
+              "0111": 7,
+              "1000": 9,
+              "1001": 80,
+              "1010": 246,
+              "1011": 4,
+              "1100": 94,
+              "1101": 9,
+              "1110": 8,
+              "1111": 33
+            },
+            "estimate": 2.888888888888889,
+            "sample_variance": 1.4764111705288174,
+            "estimated_standard_error": 0.03971602147340651,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                38,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                38,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.0003479999995761318,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004080830003658775,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 38,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.19999999999999973
+        ],
+        "objective_estimate": -2.7414529914529915,
+        "estimated_standard_error": 0.03355594839605695,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 6,
+              "0001": 40,
+              "0010": 49,
+              "0011": 65,
+              "0100": 22,
+              "0101": 181,
+              "0110": 68,
+              "0111": 36,
+              "1000": 34,
+              "1001": 75,
+              "1010": 180,
+              "1011": 30,
+              "1100": 63,
+              "1101": 44,
+              "1110": 35,
+              "1111": 8
+            },
+            "estimate": 2.7414529914529915,
+            "sample_variance": 1.0539375657022716,
+            "estimated_standard_error": 0.03355594839605695,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                39,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                39,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00035687499985215254,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.0004142079997109249,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 39,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5999999999999996
+        ],
+        "objective_estimate": -2.6816239316239314,
+        "estimated_standard_error": 0.043932612288969844,
+        "groups": [
+          {
+            "shots": 936,
+            "counts": {
+              "0000": 56,
+              "0001": 39,
+              "0010": 43,
+              "0011": 30,
+              "0100": 35,
+              "0101": 217,
+              "0110": 31,
+              "0111": 31,
+              "1000": 42,
+              "1001": 23,
+              "1010": 208,
+              "1011": 32,
+              "1100": 30,
+              "1101": 32,
+              "1110": 37,
+              "1111": 50
+            },
+            "estimate": 2.6816239316239314,
+            "sample_variance": 1.806549659490836,
+            "estimated_standard_error": 0.043932612288969844,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                40,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                40,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 3744,
+            "group_evaluation_seconds": 0.00034450000021024607,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 936,
+        "evaluation_wall_seconds": 0.00039591699896845967,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 40,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.001068376068376,
+        "estimated_standard_error": 0.026393981445448765,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 40,
+              "0001": 21,
+              "0010": 31,
+              "0011": 125,
+              "0100": 28,
+              "0101": 516,
+              "0110": 156,
+              "0111": 29,
+              "1000": 29,
+              "1001": 143,
+              "1010": 492,
+              "1011": 34,
+              "1100": 142,
+              "1101": 28,
+              "1110": 27,
+              "1111": 31
+            },
+            "estimate": 3.001068376068376,
+            "sample_variance": 1.3041143042479226,
+            "estimated_standard_error": 0.026393981445448765,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                41,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                41,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00035429200033831876,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004066660003445577,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 41,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.6999999999999997,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9722222222222223,
+        "estimated_standard_error": 0.025008481361991644,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 16,
+              "0001": 32,
+              "0010": 39,
+              "0011": 142,
+              "0100": 37,
+              "0101": 455,
+              "0110": 155,
+              "0111": 37,
+              "1000": 41,
+              "1001": 159,
+              "1010": 495,
+              "1011": 39,
+              "1100": 128,
+              "1101": 39,
+              "1110": 34,
+              "1111": 24
+            },
+            "estimate": 2.9722222222222223,
+            "sample_variance": 1.1707939901419324,
+            "estimated_standard_error": 0.025008481361991644,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                42,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                42,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003350829992996296,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0003927080015273532,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 42,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.8999999999999995,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.0427350427350426,
+        "estimated_standard_error": 0.026070639450971024,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 36,
+              "0001": 10,
+              "0010": 23,
+              "0011": 160,
+              "0100": 20,
+              "0101": 528,
+              "0110": 173,
+              "0111": 20,
+              "1000": 16,
+              "1001": 155,
+              "1010": 512,
+              "1011": 20,
+              "1100": 137,
+              "1101": 16,
+              "1110": 18,
+              "1111": 28
+            },
+            "estimate": 3.0427350427350426,
+            "sample_variance": 1.27235766786809,
+            "estimated_standard_error": 0.026070639450971024,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                43,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                43,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00034454199885658454,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.00040091700066113845,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 43,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.2999999999999998
+        ],
+        "objective_estimate": -2.927350427350427,
+        "estimated_standard_error": 0.024358214992388494,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 12,
+              "0001": 46,
+              "0010": 32,
+              "0011": 175,
+              "0100": 30,
+              "0101": 434,
+              "0110": 153,
+              "0111": 45,
+              "1000": 43,
+              "1001": 150,
+              "1010": 461,
+              "1011": 42,
+              "1100": 161,
+              "1101": 37,
+              "1110": 36,
+              "1111": 15
+            },
+            "estimate": 2.927350427350427,
+            "sample_variance": 1.1106999776160653,
+            "estimated_standard_error": 0.024358214992388494,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                44,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                44,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003513329993438674,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004085830005351454,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 44,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_estimate": -2.9017094017094016,
+        "estimated_standard_error": 0.028505004279043112,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 47,
+              "0001": 44,
+              "0010": 49,
+              "0011": 115,
+              "0100": 41,
+              "0101": 489,
+              "0110": 92,
+              "0111": 38,
+              "1000": 50,
+              "1001": 112,
+              "1010": 479,
+              "1011": 42,
+              "1100": 114,
+              "1101": 39,
+              "1110": 44,
+              "1111": 77
+            },
+            "estimate": 2.9017094017094016,
+            "sample_variance": 1.5210660234711544,
+            "estimated_standard_error": 0.028505004279043112,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                45,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                45,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00039370800004689954,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.00044549999984155875,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 45,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9583333333333335,
+        "estimated_standard_error": 0.026246194700002782,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 39,
+              "0001": 32,
+              "0010": 29,
+              "0011": 150,
+              "0100": 26,
+              "0101": 488,
+              "0110": 153,
+              "0111": 29,
+              "1000": 21,
+              "1001": 143,
+              "1010": 477,
+              "1011": 31,
+              "1100": 158,
+              "1101": 36,
+              "1110": 31,
+              "1111": 29
+            },
+            "estimate": 2.9583333333333335,
+            "sample_variance": 1.28955104222341,
+            "estimated_standard_error": 0.026246194700002782,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                46,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                46,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00036012500095239375,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.00041237499863200355,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 46,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.6999999999999997,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.0096153846153846,
+        "estimated_standard_error": 0.024368218600473317,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 14,
+              "0001": 42,
+              "0010": 36,
+              "0011": 138,
+              "0100": 40,
+              "0101": 488,
+              "0110": 145,
+              "0111": 38,
+              "1000": 41,
+              "1001": 139,
+              "1010": 483,
+              "1011": 44,
+              "1100": 123,
+              "1101": 47,
+              "1110": 42,
+              "1111": 12
+            },
+            "estimate": 3.0096153846153846,
+            "sample_variance": 1.1116124655675697,
+            "estimated_standard_error": 0.024368218600473317,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                47,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                47,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00035520799974619877,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.00040712499867368024,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 47,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.8999999999999995,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9743589743589745,
+        "estimated_standard_error": 0.02651685681549139,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 44,
+              "0001": 25,
+              "0010": 17,
+              "0011": 153,
+              "0100": 21,
+              "0101": 500,
+              "0110": 173,
+              "0111": 22,
+              "1000": 17,
+              "1001": 167,
+              "1010": 486,
+              "1011": 19,
+              "1100": 168,
+              "1101": 9,
+              "1110": 21,
+              "1111": 30
+            },
+            "estimate": 2.9743589743589745,
+            "sample_variance": 1.3162849977387656,
+            "estimated_standard_error": 0.02651685681549139,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                48,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                48,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00034433300061209593,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004012499994132668,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 48,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.2999999999999998
+        ],
+        "objective_estimate": -2.9594017094017095,
+        "estimated_standard_error": 0.02411551756352204,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 14,
+              "0001": 44,
+              "0010": 42,
+              "0011": 171,
+              "0100": 37,
+              "0101": 467,
+              "0110": 134,
+              "0111": 40,
+              "1000": 28,
+              "1001": 153,
+              "1010": 452,
+              "1011": 43,
+              "1100": 173,
+              "1101": 34,
+              "1110": 33,
+              "1111": 7
+            },
+            "estimate": 2.9594017094017095,
+            "sample_variance": 1.088676926731443,
+            "estimated_standard_error": 0.02411551756352204,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                49,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                49,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00034729199978755787,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.00040495900066161994,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 49,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_estimate": -2.9604700854700856,
+        "estimated_standard_error": 0.02805656232660091,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 67,
+              "0001": 38,
+              "0010": 40,
+              "0011": 113,
+              "0100": 38,
+              "0101": 520,
+              "0110": 95,
+              "0111": 35,
+              "1000": 44,
+              "1001": 94,
+              "1010": 490,
+              "1011": 50,
+              "1100": 107,
+              "1101": 50,
+              "1110": 47,
+              "1111": 44
+            },
+            "estimate": 2.9604700854700856,
+            "sample_variance": 1.4735835309058185,
+            "estimated_standard_error": 0.02805656232660091,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                50,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                50,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003467500009719515,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004035829988424666,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 50,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -3.0213675213675213,
+        "estimated_standard_error": 0.026128421147606582,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 24,
+              "0001": 29,
+              "0010": 26,
+              "0011": 137,
+              "0100": 30,
+              "0101": 489,
+              "0110": 137,
+              "0111": 25,
+              "1000": 22,
+              "1001": 149,
+              "1010": 532,
+              "1011": 32,
+              "1100": 153,
+              "1101": 25,
+              "1110": 21,
+              "1111": 41
+            },
+            "estimate": 3.0213675213675213,
+            "sample_variance": 1.2780039012000528,
+            "estimated_standard_error": 0.026128421147606582,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                51,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                51,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00035320799906912725,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004092500003025634,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 51,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.6999999999999997,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.950854700854701,
+        "estimated_standard_error": 0.025932821367546356,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 26,
+              "0001": 35,
+              "0010": 48,
+              "0011": 120,
+              "0100": 35,
+              "0101": 472,
+              "0110": 133,
+              "0111": 43,
+              "1000": 38,
+              "1001": 133,
+              "1010": 479,
+              "1011": 37,
+              "1100": 151,
+              "1101": 40,
+              "1110": 47,
+              "1111": 35
+            },
+            "estimate": 2.950854700854701,
+            "sample_variance": 1.258941011479761,
+            "estimated_standard_error": 0.025932821367546356,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                52,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                52,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003524999992805533,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.000402458001190098,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 52,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.8999999999999995,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9594017094017095,
+        "estimated_standard_error": 0.026976637774101156,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 39,
+              "0001": 20,
+              "0010": 20,
+              "0011": 164,
+              "0100": 8,
+              "0101": 494,
+              "0110": 186,
+              "0111": 16,
+              "1000": 23,
+              "1001": 138,
+              "1010": 489,
+              "1011": 23,
+              "1100": 168,
+              "1101": 22,
+              "1110": 16,
+              "1111": 46
+            },
+            "estimate": 2.9594017094017095,
+            "sample_variance": 1.362327381033955,
+            "estimated_standard_error": 0.026976637774101156,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                53,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                53,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003587080009310739,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.00041091599996434525,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 53,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.2999999999999998
+        ],
+        "objective_estimate": -2.9305555555555554,
+        "estimated_standard_error": 0.023985275751526012,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 7,
+              "0001": 29,
+              "0010": 40,
+              "0011": 157,
+              "0100": 47,
+              "0101": 456,
+              "0110": 154,
+              "0111": 37,
+              "1000": 37,
+              "1001": 167,
+              "1010": 434,
+              "1011": 48,
+              "1100": 156,
+              "1101": 34,
+              "1110": 57,
+              "1111": 12
+            },
+            "estimate": 2.9305555555555554,
+            "sample_variance": 1.0769493437852604,
+            "estimated_standard_error": 0.023985275751526012,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                54,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                54,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00034287500056962017,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.00039974999890546314,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 54,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_estimate": -2.923076923076923,
+        "estimated_standard_error": 0.028298972153867376,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 59,
+              "0001": 40,
+              "0010": 54,
+              "0011": 90,
+              "0100": 56,
+              "0101": 506,
+              "0110": 101,
+              "0111": 39,
+              "1000": 39,
+              "1001": 118,
+              "1010": 476,
+              "1011": 29,
+              "1100": 120,
+              "1101": 39,
+              "1110": 47,
+              "1111": 59
+            },
+            "estimate": 2.923076923076923,
+            "sample_variance": 1.499157176335156,
+            "estimated_standard_error": 0.028298972153867376,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                55,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                55,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.00034329200025240425,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.000398915999539895,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 55,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9935897435897436,
+        "estimated_standard_error": 0.026132670252219565,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 33,
+              "0001": 30,
+              "0010": 30,
+              "0011": 133,
+              "0100": 32,
+              "0101": 462,
+              "0110": 145,
+              "0111": 27,
+              "1000": 35,
+              "1001": 146,
+              "1010": 533,
+              "1011": 23,
+              "1100": 139,
+              "1101": 33,
+              "1110": 39,
+              "1111": 32
+            },
+            "estimate": 2.9935897435897436,
+            "sample_variance": 1.2784196028450439,
+            "estimated_standard_error": 0.026132670252219565,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                56,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                56,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003513330011628568,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004072920000908198,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 56,
+        "role": "incumbent",
+        "accepted": false
+      },
+      {
+        "parameters": [
+          0.6999999999999997,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.986111111111111,
+        "estimated_standard_error": 0.024785339759420055,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 19,
+              "0001": 36,
+              "0010": 44,
+              "0011": 143,
+              "0100": 57,
+              "0101": 490,
+              "0110": 134,
+              "0111": 41,
+              "1000": 39,
+              "1001": 143,
+              "1010": 468,
+              "1011": 36,
+              "1100": 120,
+              "1101": 45,
+              "1110": 41,
+              "1111": 16
+            },
+            "estimate": 2.986111111111111,
+            "sample_variance": 1.1499940614050714,
+            "estimated_standard_error": 0.024785339759420055,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                57,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                57,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003908750004484318,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004439999993337551,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 57,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.8999999999999995,
+          0.3999999999999999
+        ],
+        "objective_estimate": -2.9882478632478633,
+        "estimated_standard_error": 0.02794780533410754,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 54,
+              "0001": 19,
+              "0010": 23,
+              "0011": 138,
+              "0100": 20,
+              "0101": 494,
+              "0110": 138,
+              "0111": 15,
+              "1000": 20,
+              "1001": 152,
+              "1010": 539,
+              "1011": 10,
+              "1100": 161,
+              "1101": 21,
+              "1110": 14,
+              "1111": 54
+            },
+            "estimate": 2.9882478632478633,
+            "sample_variance": 1.4621814286432138,
+            "estimated_standard_error": 0.02794780533410754,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                58,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                58,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003650409998954274,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004187079994153464,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 58,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.2999999999999998
+        ],
+        "objective_estimate": -2.9551282051282053,
+        "estimated_standard_error": 0.02448745734152972,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 19,
+              "0001": 27,
+              "0010": 37,
+              "0011": 157,
+              "0100": 49,
+              "0101": 431,
+              "0110": 139,
+              "0111": 42,
+              "1000": 36,
+              "1001": 148,
+              "1010": 492,
+              "1011": 48,
+              "1100": 161,
+              "1101": 44,
+              "1110": 32,
+              "1111": 10
+            },
+            "estimate": 2.9551282051282053,
+            "sample_variance": 1.1225177815236609,
+            "estimated_standard_error": 0.02448745734152972,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                59,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                59,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003588330000638962,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.0004110829995624954,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 59,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_estimate": -2.9166666666666665,
+        "estimated_standard_error": 0.02869012928179937,
+        "groups": [
+          {
+            "shots": 1872,
+            "counts": {
+              "0000": 62,
+              "0001": 40,
+              "0010": 38,
+              "0011": 108,
+              "0100": 46,
+              "0101": 468,
+              "0110": 103,
+              "0111": 47,
+              "1000": 45,
+              "1001": 116,
+              "1010": 518,
+              "1011": 41,
+              "1100": 92,
+              "1101": 40,
+              "1110": 42,
+              "1111": 66
+            },
+            "estimate": 2.9166666666666665,
+            "sample_variance": 1.540887226082309,
+            "estimated_standard_error": 0.02869012928179937,
+            "rng": {
+              "bit_generator": "PCG64",
+              "entropy": [
+                41,
+                31
+              ],
+              "spawn_key": [
+                0,
+                60,
+                0
+              ],
+              "stream_key": [
+                41,
+                31,
+                0,
+                60,
+                0
+              ]
+            },
+            "circuit_gate_counts": {
+              "cx": 8,
+              "h": 4,
+              "rz": 4,
+              "rx": 4,
+              "measure": 4,
+              "barrier": 1
+            },
+            "circuit_depth": 15,
+            "logical_qubits": 4,
+            "measured_qubit_readouts": 7488,
+            "group_evaluation_seconds": 0.0003451669999776641,
+            "method": "ideal circuit-sampling simulation; no QPU execution",
+            "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+            "group": "all_z",
+            "observable": "joint raw cut C",
+            "outcome_min": 0,
+            "outcome_max": 4
+          }
+        ],
+        "total_shots": 1872,
+        "evaluation_wall_seconds": 0.000402291998398141,
+        "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+        "method": "ideal finite-shot circuit sampling",
+        "index": 60,
+        "role": "proposal",
+        "accepted": false,
+        "axis": 1,
+        "direction": 1
+      }
+    ],
+    "iterations": [
+      {
+        "index": 0,
+        "step": 0.4,
+        "shots_per_group": 468,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 1,
+        "proposal_evaluations": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "best_proposal_evaluation": 3,
+        "accepted": false,
+        "sampled_improvement": -0.051282051282051544,
+        "comparison_margin": 0.1512797609365062
+      },
+      {
+        "index": 1,
+        "step": 0.4,
+        "shots_per_group": 468,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 6,
+        "proposal_evaluations": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "best_proposal_evaluation": 8,
+        "accepted": false,
+        "sampled_improvement": -0.08974358974358942,
+        "comparison_margin": 0.14864329170000806
+      },
+      {
+        "index": 2,
+        "step": 0.4,
+        "shots_per_group": 468,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 11,
+        "proposal_evaluations": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "best_proposal_evaluation": 13,
+        "accepted": false,
+        "sampled_improvement": -0.09401709401709413,
+        "comparison_margin": 0.1485996121663609
+      },
+      {
+        "index": 3,
+        "step": 0.4,
+        "shots_per_group": 468,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 16,
+        "proposal_evaluations": [
+          17,
+          18,
+          19,
+          20
+        ],
+        "best_proposal_evaluation": 18,
+        "accepted": false,
+        "sampled_improvement": 0.09829059829059839,
+        "comparison_margin": 0.15085780774645766
+      },
+      {
+        "index": 4,
+        "step": 0.2,
+        "shots_per_group": 936,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 21,
+        "proposal_evaluations": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "best_proposal_evaluation": 23,
+        "accepted": false,
+        "sampled_improvement": 0.08547008547008561,
+        "comparison_margin": 0.10333893830077918
+      },
+      {
+        "index": 5,
+        "step": 0.2,
+        "shots_per_group": 936,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 26,
+        "proposal_evaluations": [
+          27,
+          28,
+          29,
+          30
+        ],
+        "best_proposal_evaluation": 28,
+        "accepted": false,
+        "sampled_improvement": 0.10042735042735007,
+        "comparison_margin": 0.10053166622290746
+      },
+      {
+        "index": 6,
+        "step": 0.2,
+        "shots_per_group": 936,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 31,
+        "proposal_evaluations": [
+          32,
+          33,
+          34,
+          35
+        ],
+        "best_proposal_evaluation": 33,
+        "accepted": true,
+        "sampled_improvement": 0.1068376068376069,
+        "comparison_margin": 0.10067252602095643
+      },
+      {
+        "index": 7,
+        "step": 0.2,
+        "shots_per_group": 936,
+        "parameters_before": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 36,
+        "proposal_evaluations": [
+          37,
+          38,
+          39,
+          40
+        ],
+        "best_proposal_evaluation": 37,
+        "accepted": false,
+        "sampled_improvement": -0.02777777777777768,
+        "comparison_margin": 0.10116963813438738
+      },
+      {
+        "index": 8,
+        "step": 0.1,
+        "shots_per_group": 1872,
+        "parameters_before": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 41,
+        "proposal_evaluations": [
+          42,
+          43,
+          44,
+          45
+        ],
+        "best_proposal_evaluation": 43,
+        "accepted": false,
+        "sampled_improvement": 0.04166666666666652,
+        "comparison_margin": 0.074197587505935
+      },
+      {
+        "index": 9,
+        "step": 0.1,
+        "shots_per_group": 1872,
+        "parameters_before": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 46,
+        "proposal_evaluations": [
+          47,
+          48,
+          49,
+          50
+        ],
+        "best_proposal_evaluation": 47,
+        "accepted": false,
+        "sampled_improvement": 0.0512820512820511,
+        "comparison_margin": 0.07162884374303156
+      },
+      {
+        "index": 10,
+        "step": 0.1,
+        "shots_per_group": 1872,
+        "parameters_before": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 51,
+        "proposal_evaluations": [
+          52,
+          53,
+          54,
+          55
+        ],
+        "best_proposal_evaluation": 53,
+        "accepted": false,
+        "sampled_improvement": -0.061965811965811746,
+        "comparison_margin": 0.07511147388413454
+      },
+      {
+        "index": 11,
+        "step": 0.1,
+        "shots_per_group": 1872,
+        "parameters_before": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7999999999999998,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 56,
+        "proposal_evaluations": [
+          57,
+          58,
+          59,
+          60
+        ],
+        "best_proposal_evaluation": 58,
+        "accepted": false,
+        "sampled_improvement": -0.005341880341880323,
+        "comparison_margin": 0.0765244085897934
+      }
+    ],
+    "objective_evaluations": 61,
+    "iteration_count": 12,
+    "total_shots": 65648,
+    "accepted_proposals": 1,
+    "rejected_proposals": 47,
+    "stop_reason": "fixed_schedule_exhausted",
+    "convergence_certified": false,
+    "optimizer_wall_seconds": 0.025557708000633284,
+    "objective_wall_seconds": 0.025084911001613364,
+    "classical_control_seconds": 0.0004727969990199199,
+    "settings": {
+      "schedule": [
+        {
+          "step": 0.4,
+          "shots_per_group": 468,
+          "sweeps": 4
+        },
+        {
+          "step": 0.2,
+          "shots_per_group": 936,
+          "sweeps": 4
+        },
+        {
+          "step": 0.1,
+          "shots_per_group": 1872,
+          "sweeps": 4
+        }
+      ],
+      "initial_shots_per_group": 128,
+      "comparison_z": 2.0,
+      "periodic_domain": "[-pi,pi)",
+      "polling_order": "axis ascending, minus then plus; fresh incumbent each sweep",
+      "acceptance_semantics": "descriptive heuristic, not simultaneous confidence/convergence"
+    },
+    "diagnostic": {
+      "cut_values": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "classical_optimum": 4,
+      "optimal_bitstrings": [
+        "0101",
+        "1010"
+      ],
+      "exact_expected_cut": 2.9991473878973762,
+      "exact_approximation_ratio": 0.7497868469743441,
+      "exact_optimal_cut_probability": 0.5345238332266062,
+      "enumeration_seconds": 8.582999726058915e-06,
+      "evolution_seconds": 4.537499989964999e-05,
+      "reference_wall_seconds": 5.412500104284845e-05,
+      "method": "independent all-assignment XOR enumeration and algebraic phase/bit-pair mixer evolution",
+      "source_state_max_phase_aligned_error": 2.897767167584095e-16,
+      "source_state_audit_wall_seconds": 0.00035366600059205666,
+      "audit_performed_after_training": true,
+      "zero_assignment_cut": 0,
+      "uniform_assignment_mean_cut": 2.0
+    },
+    "target_met_audit": false,
+    "case_id": "qaoa-cycle-4-p1",
+    "start_id": "alternate",
+    "stream_id": 31,
+    "run_id": "qaoa-cycle-4-p1-alternate-seed-41",
+    "validation": {
+      "parameters": [
+        0.7999999999999998,
+        0.3999999999999999
+      ],
+      "objective_estimate": -3.005126953125,
+      "estimated_standard_error": 0.00889206291708633,
+      "groups": [
+        {
+          "shots": 16384,
+          "counts": {
+            "0000": 286,
+            "0001": 214,
+            "0010": 246,
+            "0011": 1239,
+            "0100": 246,
+            "0101": 4418,
+            "0110": 1285,
+            "0111": 215,
+            "1000": 242,
+            "1001": 1284,
+            "1010": 4421,
+            "1011": 251,
+            "1100": 1306,
+            "1101": 204,
+            "1110": 208,
+            "1111": 319
+          },
+          "estimate": 3.005126953125,
+          "sample_variance": 1.2954629393845756,
+          "estimated_standard_error": 0.00889206291708633,
+          "rng": {
+            "bit_generator": "PCG64",
+            "entropy": [
+              41,
+              31
+            ],
+            "spawn_key": [
+              1,
+              0,
+              0
+            ],
+            "stream_key": [
+              41,
+              31,
+              1,
+              0,
+              0
+            ]
+          },
+          "circuit_gate_counts": {
+            "cx": 8,
+            "h": 4,
+            "rz": 4,
+            "rx": 4,
+            "measure": 4,
+            "barrier": 1
+          },
+          "circuit_depth": 15,
+          "logical_qubits": 4,
+          "measured_qubit_readouts": 65536,
+          "group_evaluation_seconds": 0.00034662500002013985,
+          "method": "ideal circuit-sampling simulation; no QPU execution",
+          "shot_weighted_counts_semantics": "modeled preparations/operations, not measured hardware consumption",
+          "group": "all_z",
+          "observable": "joint raw cut C",
+          "outcome_min": 0,
+          "outcome_max": 4
+        }
+      ],
+      "total_shots": 16384,
+      "evaluation_wall_seconds": 0.0004042920008942019,
+      "objective_convention": "minimize negative sample mean of joint cut; optimum not used in decisions",
+      "method": "ideal finite-shot circuit sampling",
+      "role": "independent_final_validation",
+      "confidence_scope": "conditional on fixed final parameters",
+      "quality_bound": {
+        "normalized_estimate": 0.75128173828125,
+        "normalized_standard_error": 0.0022230157292715824,
+        "simultaneous_radius": 0.01518931684515765,
+        "per_run_95_radius": 0.01061016809172359,
+        "simultaneous_interval": [
+          0.7360924214360923,
+          0.7664710551264077
+        ],
+        "group_failure_allocation": 0.0010416666666666667,
+        "target_status": "missed",
+        "precision_target": 0.05,
+        "precision_supported": true,
+        "scope": "fixed final states, conditional on training; simultaneous ideal-sampling union bound over every final group",
+        "excludes": "optimizer convergence, physical faults and coherent synthesis approximation"
+      }
+    },
+    "total_shots_including_validation": 82032,
+    "quantum_preparations": 82032,
+    "exact_diagnostics_used_for_optimization": false,
+    "kind": "sampled",
+    "run_wall_seconds": 0.02642270900105359
+  }
+}

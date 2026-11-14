@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "status": "frozen_computed_conditional_energy_record",
+  "files": {
+    "LICENSE.txt": {
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+      "bytes": 1093
+    },
+    "access-comparison.json": {
+      "sha256": "bfdad6aec444badd9c2670cf130153745b64f9bdc1dba0fcc8e729278db38831",
+      "bytes": 5844
+    },
+    "analytic-powers/logical-resources.json": {
+      "sha256": "3122f3fb9233bfb51fc79b4a09ad87b64875a72957912e7bcfe16c0332014753",
+      "bytes": 3945
+    },
+    "analytic-powers/measured-group.qasm": {
+      "sha256": "6040d3524bdea71c540d6325db4fdec16c319d6f188598928e2d8d3125881906",
+      "bytes": 392521
+    },
+    "analytic-powers/surface-code.json": {
+      "sha256": "bb31dc57b5c86ceba4e7ea93f136c9ed893fca13885acff1a12b035e086daefd",
+      "bytes": 426775
+    },
+    "dimer-access.svg": {
+      "sha256": "6af05cf49414b9ecf987f8078e2a81b88004ddc0446096202a2b8e61f691bf50",
+      "bytes": 35146
+    },
+    "energy-distributions.svg": {
+      "sha256": "72de3d7c5bbe2e8601fd6fd29437f21ae7f4b91351de112eaf67d932662e3a37",
+      "bytes": 64570
+    },
+    "energy_estimation.py": {
+      "sha256": "8f10d8ae76ad472884910ebf7f7e3de90a9a58f0b8e9801c14310fdc68fcf9ae",
+      "bytes": 25499
+    },
+    "generate_energy_estimation.py": {
+      "sha256": "054e3c2b2e2b1811f3b5170de3376378e6155e4a985289efa4a1acf0e1066f36",
+      "bytes": 21971
+    },
+    "logical-resources.json": {
+      "sha256": "eb8585fb4ffac3f961b480dd188b93de9b06971e713ade3fd49a2897d790359b",
+      "bytes": 4391
+    },
+    "measured-group.qasm": {
+      "sha256": "c4e37a098fdb25ff2a4b3ebef9da67a450466a76d2cbcd732ce11e3d1088baae",
+      "bytes": 2328955
+    },
+    "molecular-fixture.json": {
+      "sha256": "2cb91e02485fe9d82939ae302927443aba815245338228a56570ed4ae3f99abc",
+      "bytes": 2073
+    },
+    "n2/logical-resources.json": {
+      "sha256": "7b4fda04dd2978c3c2cc6e43d4b68b6f14a9f2a4eb94688ed77500a5a90f4d5f",
+      "bytes": 3931
+    },
+    "n2/measured-group.qasm": {
+      "sha256": "b498d73f7b1aa494c5a389ef62019c793afa17fdee440714cb66fc98c593419f",
+      "bytes": 528247
+    },
+    "n2/surface-code.json": {
+      "sha256": "3881eed60b30ca33b77bb6afeb099f1a3043926ddd05d5703a5b2680e59fda34",
+      "bytes": 571155
+    },
+    "n4/logical-resources.json": {
+      "sha256": "10f7971747d28ad406dc9ae725c72331fbdfb82c813cc2f25749adcc41ccc9cb",
+      "bytes": 3937
+    },
+    "n4/measured-group.qasm": {
+      "sha256": "bc9c6374c919fab9ac391d60435a355b9910fbf4ae70b50b308550c5dca002ab",
+      "bytes": 2243919
+    },
+    "n4/surface-code.json": {
+      "sha256": "75460812c7b03da72049479e83e6b6f15bc2bbbf3f1fc1a0cbf4bf89faccf2b7",
+      "bytes": 2400375
+    },
+    "n6/logical-resources.json": {
+      "sha256": "5d27ae1685ae5b53602eec76ceb3f0d93063b8948dc1286badc6e75946ad3dbe",
+      "bytes": 3946
+    },
+    "n6/measured-group.qasm": {
+      "sha256": "e5179dec80bd6f5c9571e6cc5d6bf7bc2107d3dae4ad9fe57e3ec9f3f3107fe6",
+      "bytes": 6996358
+    },
+    "n6/surface-code.json": {
+      "sha256": "c8b3e19e8f1025b675c3fe10a2128eee00c3b6ae55ba82cebc987290711efb2b",
+      "bytes": 7462644
+    },
+    "n8/logical-resources.json": {
+      "sha256": "00b865be1ef572cbc52edc0bce40f7c05cbeec5edd87da23633f5f7d3dbff300",
+      "bytes": 3945
+    },
+    "n8/measured-group.qasm": {
+      "sha256": "93fa0c88abcda37a4956ecb09ec870b4ce81f124823a91eb1793c9339ce6496d",
+      "bytes": 9455518
+    },
+    "n8/surface-code.json": {
+      "sha256": "c50ea0e098757148cd745b854dc6ee4033cd652ecdcd256aa340e99948444eaa",
+      "bytes": 10073796
+    },
+    "qft_qpe.py": {
+      "sha256": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab",
+      "bytes": 18558
+    },
+    "recycled-clock-resources.json": {
+      "sha256": "04b172c9b6cc3794a8606ec4a70b269798ab41fdc840cd56229c0ee016c5ce78",
+      "bytes": 1875
+    },
+    "recycled-clock.qasm": {
+      "sha256": "1c06d5f616fbf8f4873dee62d91dfb63c295f912310e6de5314a02276ee5d0fb",
+      "bytes": 2757838
+    },
+    "recycled-clock.svg": {
+      "sha256": "841fc0894641966f24f8411e0a1ec5594cd316994fe57001e25f2c1781a89f16",
+      "bytes": 77790
+    },
+    "resource_estimation.py": {
+      "sha256": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+      "bytes": 19854
+    },
+    "results.json": {
+      "sha256": "0c2ec2b9318177346724611fbb1ea9f18fb655d5f2b939a2bfce95c83cbe9242",
+      "bytes": 8642
+    },
+    "scaling.csv": {
+      "sha256": "d5ee9e75094ef560040a674e50369c5b53becb3a14006f1c3547c2622b73212e",
+      "bytes": 589
+    },
+    "scaling.svg": {
+      "sha256": "87d41da7138e4c71b8fe1fe54f9820625e78b87c110902d9f56ef58a18dd1389",
+      "bytes": 43919
+    },
+    "small-qpe.svg": {
+      "sha256": "0a5cd08de4a9efbb7cb9cd0336d4ce3490545501ed5ec900749ef74f0766c372",
+      "bytes": 52967
+    },
+    "surface-code-scaling.json": {
+      "sha256": "4028d10eeddaca21369f3f1ff8d103b0a2a48fbb34f2fb11e0b561e1ae73589a",
+      "bytes": 14273
+    },
+    "surface-code.json": {
+      "sha256": "7b0b3fd1e274e261e0b137e7c0e419798e49b421f02290149665cf7ac667789e",
+      "bytes": 2491292
+    }
+  },
+  "sources": {
+    "scripts/generate_energy_estimation.py": "054e3c2b2e2b1811f3b5170de3376378e6155e4a985289efa4a1acf0e1066f36",
+    "scripts/source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+    "src/openquantum/__init__.py": "af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663",
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "src/openquantum/energy_estimation.py": "8f10d8ae76ad472884910ebf7f7e3de90a9a58f0b8e9801c14310fdc68fcf9ae",
+    "src/openquantum/qft_qpe.py": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab",
+    "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "LICENSE": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+  },
+  "verifier_sources": {
+    "scripts/verify_energy_estimation.py": "2a981633a4b6109778a223e07bd89e91a875a456cca80e7aa1417f4996a7b563",
+    "scripts/freeze_energy_estimation.py": "46c78e8d5b26d6defc8d6b3029ea3e2c219b5eb32c8f3451ab42298d3f97bd86",
+    "scripts/energy_physical_records.py": "d1dfcdf57aca15e4784d23a6d5a1360c00a51af68a43caad31b919766da48187"
+  },
+  "physical_profile": {
+    "name": "illustrative-p-1e-4",
+    "physical_error_rate": 0.0001,
+    "gate_time_ns": 100,
+    "measurement_time_ns": 500
+  },
+  "native_execution": {
+    "producer_commit": "8aab74299e371ba1ad7f8fb0b0a7332a3b98a6ad",
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "qdk": "1.34.0"
+    },
+    "device": "CPU",
+    "seed": 20261112,
+    "complete_default_producer": true,
+    "native_estimation_performed": true,
+    "exit_status": 0,
+    "wall_seconds": 91.59719146601856,
+    "peak_rss_kib": 12803256
+  },
+  "physical_validation": {
+    "status": "validated_frozen_conditional_records",
+    "native_estimates_run": false,
+    "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
+    "physical_profile": {
+      "name": "illustrative-p-1e-4",
+      "physical_error_rate": 0.0001,
+      "gate_time_ns": 100,
+      "measurement_time_ns": 500
+    },
+    "cases": {
+      "default": {
+        "points": [
+          {
+            "peak_physical_qubits": 57243,
+            "data_code_distance": 9,
+            "runtime_per_execution_ns": 3489363000.0,
+            "serial_runtime_all_executions_ns": 6978726000.0,
+            "qdk_combined_error_score_per_execution": 0.001133413622237876,
+            "synthesis_model_error_per_execution": 2.880609237875873e-06,
+            "physical_failure_model_per_execution": 0.0011305330130000001,
+            "physical_failure_union_bound_all_executions": 0.0022610660260000003,
+            "factories": {
+              "T": {
+                "copies": 11,
+                "runs": 38344,
+                "states": 402382,
+                "error_rate": 2.165e-09
+              }
+            },
+            "model_properties": {
+              "LOGICAL_MEMORY_QUBITS": 0,
+              "EVALUATION_TIME": 343402084,
+              "NUM_TS_PER_ROTATION": 22,
+              "ALGORITHM_COMPUTE_QUBITS": 97,
+              "PHYSICAL_COMPUTE_QUBITS": 35903,
+              "ALGORITHM_MEMORY_QUBITS": 0,
+              "LOGICAL_COMPUTE_QUBITS": 223,
+              "PHYSICAL_FACTORY_QUBITS": 21340
+            },
+            "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+          }
+        ],
+        "width": 97,
+        "operations": 153903,
+        "power_calls": 1178,
+        "qasm_sha256": "c4e37a098fdb25ff2a4b3ebef9da67a450466a76d2cbcd732ce11e3d1088baae",
+        "num_rotations": 15656,
+        "num_ts_per_rotation": 22,
+        "logical_depth": 387707
+      },
+      "n2": {
+        "points": [
+          {
+            "peak_physical_qubits": 44041,
+            "data_code_distance": 9,
+            "runtime_per_execution_ns": 732060000.0,
+            "serial_runtime_all_executions_ns": 1464120000.0,
+            "qdk_combined_error_score_per_execution": 0.00022391660306475582,
+            "synthesis_model_error_per_execution": 8.844863064755817e-06,
+            "physical_failure_model_per_execution": 0.00021507174,
+            "physical_failure_union_bound_all_executions": 0.00043014348,
+            "factories": {
+              "T": {
+                "copies": 11,
+                "runs": 8044,
+                "states": 83448,
+                "error_rate": 2.165e-09
+              }
+            },
+            "model_properties": {
+              "LOGICAL_MEMORY_QUBITS": 0,
+              "EVALUATION_TIME": 75875813,
+              "NUM_TS_PER_ROTATION": 20,
+              "ALGORITHM_COMPUTE_QUBITS": 59,
+              "PHYSICAL_COMPUTE_QUBITS": 22701,
+              "ALGORITHM_MEMORY_QUBITS": 0,
+              "LOGICAL_COMPUTE_QUBITS": 141,
+              "PHYSICAL_FACTORY_QUBITS": 21340
+            },
+            "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+          }
+        ],
+        "width": 59,
+        "operations": 34963,
+        "power_calls": 266,
+        "qasm_sha256": "b498d73f7b1aa494c5a389ef62019c793afa17fdee440714cb66fc98c593419f",
+        "num_rotations": 3515,
+        "num_ts_per_rotation": 20,
+        "logical_depth": 81340
+      },
+      "n4": {
+        "points": [
+          {
+            "peak_physical_qubits": 53387,
+            "data_code_distance": 9,
+            "runtime_per_execution_ns": 3185964000.0,
+            "serial_runtime_all_executions_ns": 6371928000.0,
+            "qdk_combined_error_score_per_execution": 0.001036678454262966,
+            "synthesis_model_error_per_execution": 2.7582532629660966e-06,
+            "physical_failure_model_per_execution": 0.001033920201,
+            "physical_failure_union_bound_all_executions": 0.002067840402,
+            "factories": {
+              "T": {
+                "copies": 12,
+                "runs": 35010,
+                "states": 385833,
+                "error_rate": 2.165e-09
+              }
+            },
+            "model_properties": {
+              "LOGICAL_MEMORY_QUBITS": 0,
+              "EVALUATION_TIME": 327076229,
+              "NUM_TS_PER_ROTATION": 22,
+              "ALGORITHM_COMPUTE_QUBITS": 80,
+              "PHYSICAL_COMPUTE_QUBITS": 30107,
+              "ALGORITHM_MEMORY_QUBITS": 0,
+              "LOGICAL_COMPUTE_QUBITS": 187,
+              "PHYSICAL_FACTORY_QUBITS": 23280
+            },
+            "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+          }
+        ],
+        "width": 80,
+        "operations": 148263,
+        "power_calls": 570,
+        "qasm_sha256": "bc9c6374c919fab9ac391d60435a355b9910fbf4ae70b50b308550c5dca002ab",
+        "num_rotations": 14991,
+        "num_ts_per_rotation": 22,
+        "logical_depth": 353996
+      },
+      "n6": {
+        "points": [
+          {
+            "peak_physical_qubits": 85652,
+            "data_code_distance": 9,
+            "runtime_per_execution_ns": 9948051000.0,
+            "serial_runtime_all_executions_ns": 19896102000.0,
+            "qdk_combined_error_score_per_execution": 0.0008449213644537205,
+            "synthesis_model_error_per_execution": 8.51597585372042e-06,
+            "physical_failure_model_per_execution": 0.0008364053886000001,
+            "physical_failure_union_bound_all_executions": 0.0016728107772000002,
+            "factories": {
+              "T": {
+                "copies": 15,
+                "runs": 85026,
+                "states": 1191642,
+                "error_rate": 5.6300000000000015e-11
+              }
+            },
+            "model_properties": {
+              "LOGICAL_MEMORY_QUBITS": 0,
+              "EVALUATION_TIME": 1008174977,
+              "NUM_TS_PER_ROTATION": 22,
+              "ALGORITHM_COMPUTE_QUBITS": 101,
+              "PHYSICAL_COMPUTE_QUBITS": 37352,
+              "ALGORITHM_MEMORY_QUBITS": 0,
+              "LOGICAL_COMPUTE_QUBITS": 232,
+              "PHYSICAL_FACTORY_QUBITS": 48300
+            },
+            "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+          }
+        ],
+        "width": 101,
+        "operations": 457833,
+        "power_calls": 1178,
+        "qasm_sha256": "e5179dec80bd6f5c9571e6cc5d6bf7bc2107d3dae4ad9fe57e3ec9f3f3107fe6",
+        "num_rotations": 46284,
+        "num_ts_per_rotation": 22,
+        "logical_depth": 1105339
+      },
+      "n8": {
+        "points": [
+          {
+            "peak_physical_qubits": 86296,
+            "data_code_distance": 9,
+            "runtime_per_execution_ns": 13660308000.0,
+            "serial_runtime_all_executions_ns": 27320616000.0,
+            "qdk_combined_error_score_per_execution": 0.0011704506844496668,
+            "synthesis_model_error_per_execution": 3.0647074496665094e-06,
+            "physical_failure_model_per_execution": 0.0011673859770000004,
+            "physical_failure_union_bound_all_executions": 0.0023347719540000008,
+            "factories": {
+              "T": {
+                "copies": 15,
+                "runs": 116754,
+                "states": 1647870,
+                "error_rate": 5.6300000000000015e-11
+              }
+            },
+            "model_properties": {
+              "LOGICAL_MEMORY_QUBITS": 0,
+              "EVALUATION_TIME": 1345070576,
+              "NUM_TS_PER_ROTATION": 23,
+              "ALGORITHM_COMPUTE_QUBITS": 103,
+              "PHYSICAL_COMPUTE_QUBITS": 37996,
+              "ALGORITHM_MEMORY_QUBITS": 0,
+              "LOGICAL_COMPUTE_QUBITS": 236,
+              "PHYSICAL_FACTORY_QUBITS": 48300
+            },
+            "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+          }
+        ],
+        "width": 103,
+        "operations": 609798,
+        "power_calls": 1178,
+        "qasm_sha256": "93fa0c88abcda37a4956ecb09ec870b4ce81f124823a91eb1793c9339ce6496d",
+        "num_rotations": 61598,
+        "num_ts_per_rotation": 23,
+        "logical_depth": 1517812
+      },
+      "analytic-powers": {
+        "points": [
+          {
+            "peak_physical_qubits": 57243,
+            "data_code_distance": 9,
+            "runtime_per_execution_ns": 547065000.0,
+            "serial_runtime_all_executions_ns": 1094130000.0,
+            "qdk_combined_error_score_per_execution": 0.00019015042545180463,
+            "synthesis_model_error_per_execution": 7.075890451804653e-06,
+            "physical_failure_model_per_execution": 0.00018307453499999998,
+            "physical_failure_union_bound_all_executions": 0.00036614906999999996,
+            "factories": {
+              "T": {
+                "copies": 11,
+                "runs": 6011,
+                "states": 65778,
+                "error_rate": 2.165e-09
+              }
+            },
+            "model_properties": {
+              "LOGICAL_MEMORY_QUBITS": 0,
+              "EVALUATION_TIME": 58899537,
+              "NUM_TS_PER_ROTATION": 20,
+              "ALGORITHM_COMPUTE_QUBITS": 97,
+              "PHYSICAL_COMPUTE_QUBITS": 35903,
+              "ALGORITHM_MEMORY_QUBITS": 0,
+              "LOGICAL_COMPUTE_QUBITS": 223,
+              "PHYSICAL_FACTORY_QUBITS": 21340
+            },
+            "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)"
+          }
+        ],
+        "width": 97,
+        "operations": 25881,
+        "power_calls": 190,
+        "qasm_sha256": "6040d3524bdea71c540d6325db4fdec16c319d6f188598928e2d8d3125881906",
+        "num_rotations": 2812,
+        "num_ts_per_rotation": 20,
+        "logical_depth": 60785
+      }
+    },
+    "factory_choice_status": "trusted immutable native result; factory/Pareto search not rerun",
+    "hardware_energy_confidence_certified": false,
+    "limitations": [
+      "The caller must verify immutable source/file/run bindings and replay simulation evidence",
+      "Canonical logical counts are bound to frozen QDK traces, not independently rederived from QASM",
+      "Factory summaries omit full distillation internals; their native choice and search frontier are trusted frozen records",
+      "Arithmetic consistency does not certify native execution, concrete synthesis or hardware success"
+    ]
+  },
+  "contract": "Native models computed separately; routine CI replays logical work and validates recorded models, without native re-estimation or factory search."
+}

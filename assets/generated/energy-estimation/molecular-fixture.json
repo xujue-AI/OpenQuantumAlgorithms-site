@@ -1,0 +1,65 @@
+{
+  "model": {
+    "electronic_identity": -1.0523732457728605,
+    "z0": 0.39793742484317896,
+    "z1": -0.39793742484317896,
+    "zz": -0.01128010425623538,
+    "xx": 0.18093119978423122,
+    "nuclear_repulsion": 0.7199689944489797
+  },
+  "provenance": {
+    "molecule": "H2",
+    "coordinates_angstrom": [
+      [
+        "H",
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        "H",
+        0.0,
+        0.0,
+        0.735
+      ]
+    ],
+    "basis": "sto3g",
+    "charge": 0,
+    "spin": 0,
+    "method": "RHF",
+    "mapper": "ParityMapper(num_particles=(1,1))",
+    "spin_orbital_order": "alpha block then beta block",
+    "fixed_z_symmetry_values": [
+      -1,
+      1
+    ],
+    "reduced_hf_displayed_bits": "01",
+    "fixture_repository": "qiskit-community/qiskit-nature",
+    "fixture_checkout_tag": "0.7.2",
+    "fixture_checkout_commit": "d86d4a0306f8f4af8918c9eb9e3eae4622192f45",
+    "fixture_mapper_notebook_sha256": "560c1b4c4863cabef7b2cf8b2d5975695bfc0782fd1cbed2156aed6b778374bd",
+    "fixture_electronic_structure_notebook_sha256": "d22a8646af6af5d83218c9351832e2b0f3e8dd21f6ae15896b205ab35d0bb33f",
+    "fixture_release_date": "2024-02-23",
+    "source_notebook_cell_indexing": "zero-based",
+    "coefficient_source": "docs/tutorials/06_qubit_mappers.ipynb cell 12",
+    "nuclear_source": "docs/tutorials/01_electronic_structure.ipynb cell 12",
+    "removed_original_parity_wires": [
+      1,
+      3
+    ],
+    "fixed_particle_numbers": {
+      "alpha": 1,
+      "beta": 1
+    },
+    "mapped_space_is_singlet_only": false,
+    "stored_execution_qiskit_nature_version": "0.6.0",
+    "stored_execution_python_version": "3.9.16",
+    "stored_execution_date": "2023-04-06",
+    "particle_number_selection_scope": "parity tapering selects exact one-alpha/one-beta occupation only in this four-spin-orbital fixture",
+    "pyscf_version_in_stored_output": null,
+    "fresh_scf_or_mapping_executed_here": false,
+    "upstream_license": "Apache-2.0",
+    "electronic_identity_excludes_nuclear_repulsion": true,
+    "pauli_label_order": "q1 q0"
+  }
+}

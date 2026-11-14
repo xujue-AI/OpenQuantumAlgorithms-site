@@ -24,6 +24,20 @@ import platform
 import struct
 import subprocess
 import sys
+
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
 from time import perf_counter
 
 import numpy as np
@@ -689,7 +703,7 @@ def generate(runs_path: Path, implementation_path: Path, output: Path, cache_dir
                                            "shared_resource_adapter_sha256": sha_file(ROOT / "src/openquantum/resource_estimation.py"),
                                            "trajectory_generator_sha256": sha_file(Path(__file__).resolve()),
                                            "environment_lock_sha256": sha_file(ROOT / "requirements-lock.txt"),
-                                           "source_commit_at_generation": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+                                           "source_commit_at_generation": git_revision(ROOT),
                                            "python": platform.python_version(), "packages": {p: importlib.metadata.version(p) for p in ("qdk", "qiskit", "numpy")}},
                      "operator_equivalence_checks": len(ledger["mapping"]),
                      "cost_canonicalization_instrumentation_audit": EVALUATION_TIME_AUDIT,

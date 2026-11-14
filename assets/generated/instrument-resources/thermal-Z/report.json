@@ -1,0 +1,1617 @@
+{
+  "task": "thermal-Z",
+  "instance": {
+    "Hamiltonian": ".6Z+.4X",
+    "beta": 1.25,
+    "degree": 6,
+    "observable": "Z",
+    "energy_weight": 0.6
+  },
+  "output_clbit": 2,
+  "acceptance_clbits": {
+    "0": 0,
+    "1": 0
+  },
+  "actual_synthesis": {
+    "qiskit_version": "2.6.2",
+    "limits": {
+      "max_qubits": 5,
+      "source_operations": 10000,
+      "synthesized_operations": 100000,
+      "validation_operations": 100000,
+      "validation_branches": 256
+    },
+    "preserve_full_unitary": false,
+    "transpiler_qubits_initially_zero": true,
+    "method": "actual ancilla-free Ross--Selinger gridsynth_unitary",
+    "native_synthesis_backend": {
+      "repository": "https://github.com/qiskit-community/rsgridsynth",
+      "qiskit_262_cargo_lock_version": "0.2.2",
+      "upstream_tag_commit": "0e94e5638c42624f4ec358f5eab079942462d2bf",
+      "cargo_checksum": "133fdfbe9489a7c448e35e82c8443c9097ed6b5c22a492c3c78c19a472cacfad",
+      "license": "MIT",
+      "identity_scope": "Qiskit 2.6.2 Cargo.lock dependency; installed wheel exposes no direct native-crate version certificate",
+      "seed": null,
+      "seed_note": "gridsynth_unitary exposes no seed argument; exact generated sequences and hashes are saved"
+    },
+    "routing": "bidirectional logical line; fixed initial layout; SABRE seed 7; optimization level 0",
+    "event_order": "all-wire compiler barriers preserve every source reset/measurement boundary; barriers have zero additional modeled serial cost",
+    "source_counts": {
+      "x": 12,
+      "reset": 5,
+      "h": 3,
+      "measure": 3,
+      "ry": 2,
+      "cry": 2,
+      "mcphase": 2,
+      "ccx": 2,
+      "cx": 1
+    },
+    "routed_counts": {
+      "cx": 36,
+      "barrier": 16,
+      "x": 12,
+      "t": 8,
+      "h": 7,
+      "ry": 6,
+      "rz": 6,
+      "tdg": 6,
+      "reset": 5,
+      "measure": 3
+    },
+    "clifford_t_counts": {
+      "h": 393,
+      "t": 376,
+      "s": 224,
+      "cx": 36,
+      "x": 18,
+      "barrier": 16,
+      "tdg": 6,
+      "reset": 5,
+      "measure": 3
+    },
+    "unique_rotation_targets": 6,
+    "rotation_occurrences": 12,
+    "operator_error_allowance": 0.0001,
+    "guarded_numerical_operator_error_upper_estimate": 5.103673174286628e-06,
+    "per_matrix_frobenius_guard": 1e-12,
+    "formal_interval_certificate": false,
+    "actual_synthesis_sequences_generated": true,
+    "approximants": [
+      {
+        "gate": "ry",
+        "angle_hex": "0x1.cda8be25f53edp-2",
+        "epsilon_requested": 2.0833333333333334e-06,
+        "guarded_frobenius_error": 7.575517468975824e-07,
+        "gate_counts": {
+          "h": 63,
+          "t": 60,
+          "s": 33,
+          "x": 1
+        },
+        "global_phase": 3.9269908169872414
+      },
+      {
+        "gate": "ry",
+        "angle_hex": "0x1.f5f75c802c796p-1",
+        "epsilon_requested": 2.0833333333333334e-06,
+        "guarded_frobenius_error": 1.0367300917104366e-06,
+        "gate_counts": {
+          "h": 61,
+          "t": 58,
+          "s": 36,
+          "x": 1
+        },
+        "global_phase": 5.497787143782138
+      },
+      {
+        "gate": "ry",
+        "angle_hex": "-0x1.cda8be25f53edp-2",
+        "epsilon_requested": 2.0833333333333334e-06,
+        "guarded_frobenius_error": 7.575517468975824e-07,
+        "gate_counts": {
+          "h": 63,
+          "t": 60,
+          "s": 33,
+          "x": 1
+        },
+        "global_phase": 3.9269908169872414
+      },
+      {
+        "gate": "rz",
+        "angle_hex": "0x1.921fb54442d18p+0",
+        "epsilon_requested": 2.0833333333333334e-06,
+        "guarded_frobenius_error": 1.000576888805915e-12,
+        "gate_counts": {
+          "s": 4,
+          "t": 2,
+          "h": 2
+        },
+        "global_phase": 5.497787143782138
+      },
+      {
+        "gate": "rz",
+        "angle_hex": "-0x1.921fb54442d18p+0",
+        "epsilon_requested": 2.0833333333333334e-06,
+        "guarded_frobenius_error": 1.0004839349969133e-12,
+        "gate_counts": {
+          "t": 2,
+          "s": 2,
+          "h": 2
+        },
+        "global_phase": 0.7853981633974483
+      },
+      {
+        "gate": "ry",
+        "angle_hex": "-0x1.f5f75c802c796p-1",
+        "epsilon_requested": 2.0833333333333334e-06,
+        "guarded_frobenius_error": 1.0367300917104366e-06,
+        "gate_counts": {
+          "h": 61,
+          "t": 58,
+          "s": 36,
+          "x": 1
+        },
+        "global_phase": 5.497787143782138
+      }
+    ],
+    "compiled_global_phase": 1.5707963267948957,
+    "qasm_export_scope": "complete measured trials; exporter omits the overall phase, so not a phase-preserving controlled-oracle specification"
+  },
+  "ideal_instrument": {
+    "acceptance_probability": 0.46859023873714173,
+    "mean": -0.596556900957804,
+    "reduced_before_output": {
+      "real": [
+        [
+          0.20172154952109794,
+          -0.19885230031926798
+        ],
+        [
+          -0.19885230031926796,
+          0.798278450478902
+        ]
+      ],
+      "imag": [
+        [
+          3.222713135478791e-33,
+          -3.288041081824748e-33
+        ],
+        [
+          -3.288041081824748e-33,
+          -3.3533690281707056e-33
+        ]
+      ]
+    },
+    "output_kind": "one accepted or unconditional measured +/-1 mean"
+  },
+  "clifford_t_instrument": {
+    "acceptance_probability": 0.46859047954767274,
+    "mean": -0.5965557221032711,
+    "reduced_before_output": {
+      "real": [
+        [
+          0.20172213894836438,
+          -0.19885245816924033
+        ],
+        [
+          -0.19885245816924027,
+          0.7982778610516356
+        ]
+      ],
+      "imag": [
+        [
+          -8.847787756137649e-16,
+          -1.0940833180760551e-07
+        ],
+        [
+          1.0940833245545608e-07,
+          1.0273059005557313e-16
+        ]
+      ]
+    },
+    "output_kind": "one accepted or unconditional measured +/-1 mean"
+  },
+  "source_qasm_sha256": "02925bbabc832c236b27b6f7a06a9080e1a861eb35eb4bc7dd1e20610b8bedee",
+  "clifford_t_qasm_sha256": "8805293d254a0d4c00a0d0a902554c8e20024cf4902ec7aa1118def5f9ad2cfc",
+  "classical_synthesis_wall_seconds_this_machine": 0.030487792000712943,
+  "workload": {
+    "accepted_samples": 16396,
+    "retry_cap_per_accepted_sample": 26,
+    "complete_attempts": 426296,
+    "numerical_acceptance_lower_estimate": 0.46858325146190444,
+    "postselection_failure_upper_estimate": 0.0011913903928208415,
+    "statistical_failure_budget": 0.00125,
+    "physical_failure_budget": 0.00125,
+    "factory_availability_budget": 0.00125,
+    "acceptance_failure_budget": 0.00125,
+    "conditional_failure_budget_sum": 0.005,
+    "statistical_absolute_error": 0.03,
+    "algorithm_bias_numerical": 6.545968674886993e-07,
+    "synthesis_bias_guarded_numerical_upper_estimate": 2.9822649756936887e-05,
+    "conditional_absolute_error_upper_estimate": 0.030030477246624426,
+    "formal_confidence_certificate": false,
+    "measured_hardware_run": false,
+    "scope": "one fixed mean; thermal X/Z groups are combined with declared weights and separate budgets"
+  },
+  "physical_profiles": [
+    {
+      "schema_version": 1,
+      "status": "computed_conditional_instrument_surface_code_model",
+      "limits": {
+        "max_qubits": 5,
+        "source_operations": 10000,
+        "synthesized_operations": 100000,
+        "validation_operations": 100000,
+        "validation_branches": 256
+      },
+      "profile": {
+        "physical_error_rate": 0.001,
+        "physical_gate_time_ns": 100,
+        "physical_measurement_time_ns": 500,
+        "physical_initialization_time_ns": 100,
+        "code_cycle_time_ns": 1000,
+        "reaction_time_ns": 10000,
+        "controller_failure_per_decision": 1e-15,
+        "memory_prefactor": 0.1,
+        "initialization_residual_prefactor": 0.1,
+        "memory_threshold": 0.01,
+        "factory_pipeline_failure_bound": 0.01,
+        "factory_feedback_rounds_reserved": 3,
+        "maximum_code_distance": 49
+      },
+      "complete_algorithm_attempts": 426296,
+      "physical_failure_budget": 0.00125,
+      "factory_availability_budget": 0.00125,
+      "source_event_counts": {
+        "x": 12,
+        "reset": 5,
+        "h": 3,
+        "measure": 3,
+        "ry": 2,
+        "cry": 2,
+        "mcphase": 2,
+        "ccx": 2,
+        "cx": 1
+      },
+      "synthesized_event_counts": {
+        "h": 393,
+        "t": 376,
+        "s": 224,
+        "cx": 36,
+        "x": 18,
+        "barrier": 16,
+        "tdg": 6,
+        "reset": 5,
+        "measure": 3
+      },
+      "workspace_initializations_per_attempt": 11,
+      "actual_synthesis": {
+        "qiskit_version": "2.6.2",
+        "limits": {
+          "max_qubits": 5,
+          "source_operations": 10000,
+          "synthesized_operations": 100000,
+          "validation_operations": 100000,
+          "validation_branches": 256
+        },
+        "preserve_full_unitary": false,
+        "transpiler_qubits_initially_zero": true,
+        "method": "actual ancilla-free Ross--Selinger gridsynth_unitary",
+        "native_synthesis_backend": {
+          "repository": "https://github.com/qiskit-community/rsgridsynth",
+          "qiskit_262_cargo_lock_version": "0.2.2",
+          "upstream_tag_commit": "0e94e5638c42624f4ec358f5eab079942462d2bf",
+          "cargo_checksum": "133fdfbe9489a7c448e35e82c8443c9097ed6b5c22a492c3c78c19a472cacfad",
+          "license": "MIT",
+          "identity_scope": "Qiskit 2.6.2 Cargo.lock dependency; installed wheel exposes no direct native-crate version certificate",
+          "seed": null,
+          "seed_note": "gridsynth_unitary exposes no seed argument; exact generated sequences and hashes are saved"
+        },
+        "routing": "bidirectional logical line; fixed initial layout; SABRE seed 7; optimization level 0",
+        "event_order": "all-wire compiler barriers preserve every source reset/measurement boundary; barriers have zero additional modeled serial cost",
+        "source_counts": {
+          "x": 12,
+          "reset": 5,
+          "h": 3,
+          "measure": 3,
+          "ry": 2,
+          "cry": 2,
+          "mcphase": 2,
+          "ccx": 2,
+          "cx": 1
+        },
+        "routed_counts": {
+          "cx": 36,
+          "barrier": 16,
+          "x": 12,
+          "t": 8,
+          "h": 7,
+          "ry": 6,
+          "rz": 6,
+          "tdg": 6,
+          "reset": 5,
+          "measure": 3
+        },
+        "clifford_t_counts": {
+          "h": 393,
+          "t": 376,
+          "s": 224,
+          "cx": 36,
+          "x": 18,
+          "barrier": 16,
+          "tdg": 6,
+          "reset": 5,
+          "measure": 3
+        },
+        "unique_rotation_targets": 6,
+        "rotation_occurrences": 12,
+        "operator_error_allowance": 0.0001,
+        "guarded_numerical_operator_error_upper_estimate": 5.103673174286628e-06,
+        "per_matrix_frobenius_guard": 1e-12,
+        "formal_interval_certificate": false,
+        "actual_synthesis_sequences_generated": true,
+        "approximants": [
+          {
+            "gate": "ry",
+            "angle_hex": "0x1.cda8be25f53edp-2",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 7.575517468975824e-07,
+            "gate_counts": {
+              "h": 63,
+              "t": 60,
+              "s": 33,
+              "x": 1
+            },
+            "global_phase": 3.9269908169872414
+          },
+          {
+            "gate": "ry",
+            "angle_hex": "0x1.f5f75c802c796p-1",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.0367300917104366e-06,
+            "gate_counts": {
+              "h": 61,
+              "t": 58,
+              "s": 36,
+              "x": 1
+            },
+            "global_phase": 5.497787143782138
+          },
+          {
+            "gate": "ry",
+            "angle_hex": "-0x1.cda8be25f53edp-2",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 7.575517468975824e-07,
+            "gate_counts": {
+              "h": 63,
+              "t": 60,
+              "s": 33,
+              "x": 1
+            },
+            "global_phase": 3.9269908169872414
+          },
+          {
+            "gate": "rz",
+            "angle_hex": "0x1.921fb54442d18p+0",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.000576888805915e-12,
+            "gate_counts": {
+              "s": 4,
+              "t": 2,
+              "h": 2
+            },
+            "global_phase": 5.497787143782138
+          },
+          {
+            "gate": "rz",
+            "angle_hex": "-0x1.921fb54442d18p+0",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.0004839349969133e-12,
+            "gate_counts": {
+              "t": 2,
+              "s": 2,
+              "h": 2
+            },
+            "global_phase": 0.7853981633974483
+          },
+          {
+            "gate": "ry",
+            "angle_hex": "-0x1.f5f75c802c796p-1",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.0367300917104366e-06,
+            "gate_counts": {
+              "h": 61,
+              "t": 58,
+              "s": 36,
+              "x": 1
+            },
+            "global_phase": 5.497787143782138
+          }
+        ],
+        "compiled_global_phase": 1.5707963267948957,
+        "qasm_export_scope": "complete measured trials; exporter omits the overall phase, so not a phase-preserving controlled-oracle specification"
+      },
+      "pareto_points": [
+        {
+          "data_code_distance": 31,
+          "reserved_logical_patches": 15,
+          "peak_physical_qubits": 720375,
+          "data_workspace_physical_qubits": 28815,
+          "factory_physical_qubits": 691560,
+          "runtime_per_complete_attempt_ns": 3632535100,
+          "worst_case_runtime_all_attempts_ns": 1548535182989600,
+          "code_cycles_per_complete_attempt": 3632536,
+          "full_physical_failure_model": 0.00025943187901442263,
+          "failure_components_all_attempts": {
+            "data_workspace_code_exposure": 0.0002322803349984002,
+            "factory_output_handoff_storage": 1.9801960755200015e-06,
+            "logical_readout_scenario": 4.923958948994709e-07,
+            "logical_initialization_scenario": 1.1017620120000009e-07,
+            "controller_scenario": 2.4565307e-05,
+            "factory_output_quality_model": 3.4688444029866195e-09
+          },
+          "factory_supply": {
+            "output_error": 2.130150062500276e-17,
+            "pipeline_time_ns": 806000,
+            "fixed_logical_distillation_distance": 31,
+            "native_qec_crossing_prefactor": 0.03,
+            "native_qec_threshold": 0.01,
+            "native_code_cycle_time_ns": 1000,
+            "quality_calibration_scope": "QDK factory model; distinct from the Litinski per-cycle data-exposure fit",
+            "full_pipeline_retry_cap_per_state": 6,
+            "states_all_complete_attempts": 162845072,
+            "worst_case_pipeline_attempts": 977070432,
+            "availability_failure_union_bound": 0.000162845072,
+            "retry_cap_arithmetic": "exact Fraction search over decimal input strings; smallest cap in 1..16",
+            "pipeline_feedback_rounds_reserved": 3,
+            "extra_init_readout_feedback_dispatch_ns_per_pipeline": 41800,
+            "extra_output_port_hold_ns_per_state": 1215100
+          },
+          "macro_ledger_per_complete_attempt": [
+            {
+              "operation": "cx",
+              "count": 36,
+              "time_ns": 391100,
+              "readouts": 3,
+              "preparations": 6,
+              "decisions": 11,
+              "event_failure_model": 1.132439562044728e-14
+            },
+            {
+              "operation": "h",
+              "count": 393,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "initial_reset",
+              "count": 15,
+              "time_ns": 41100,
+              "readouts": 0,
+              "preparations": 1,
+              "decisions": 1,
+              "event_failure_model": 1.01e-15
+            },
+            {
+              "operation": "measure",
+              "count": 3,
+              "time_ns": 123700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 3,
+              "event_failure_model": 3.1081318734824264e-15
+            },
+            {
+              "operation": "reset",
+              "count": 1,
+              "time_ns": 174700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 5,
+              "event_failure_model": 5.1081318734824266e-15
+            },
+            {
+              "operation": "s",
+              "count": 224,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "t_q2",
+              "count": 250,
+              "time_ns": 9059400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 137,
+              "event_failure_model": 1.4034208807795522e-13
+            },
+            {
+              "operation": "t_q3",
+              "count": 126,
+              "time_ns": 10232700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 170,
+              "event_failure_model": 1.7431527493929705e-13
+            },
+            {
+              "operation": "tdg_q2",
+              "count": 4,
+              "time_ns": 9069400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 138,
+              "event_failure_model": 1.4134208807795522e-13
+            },
+            {
+              "operation": "tdg_q3",
+              "count": 2,
+              "time_ns": 10242700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 171,
+              "event_failure_model": 1.7531527493929704e-13
+            },
+            {
+              "operation": "trial_control",
+              "count": 1,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "x",
+              "count": 18,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            }
+          ],
+          "accounting_trace_sha256": "4b3caa2cafa5000a272e08cf3004e70aa8fde53510b58d7f6771e6d906f562e3",
+          "native_backend": "QDK direct Trace + explicit custom ISA; no import, PSSPC, LatticeSurgery or branch sampling"
+        },
+        {
+          "data_code_distance": 31,
+          "reserved_logical_patches": 15,
+          "peak_physical_qubits": 1079602,
+          "data_workspace_physical_qubits": 28815,
+          "factory_physical_qubits": 1050787,
+          "runtime_per_complete_attempt_ns": 3490431100,
+          "worst_case_runtime_all_attempts_ns": 1487956816205600,
+          "code_cycles_per_complete_attempt": 3490432,
+          "full_physical_failure_model": 0.0002503451239968226,
+          "failure_components_all_attempts": {
+            "data_workspace_code_exposure": 0.00022319357998080018,
+            "factory_output_handoff_storage": 1.9801960755200015e-06,
+            "logical_readout_scenario": 4.923958948994709e-07,
+            "logical_initialization_scenario": 1.1017620120000009e-07,
+            "controller_scenario": 2.4565307e-05,
+            "factory_output_quality_model": 3.4688444029866195e-09
+          },
+          "factory_supply": {
+            "output_error": 2.130150062500276e-17,
+            "pipeline_time_ns": 744000,
+            "fixed_logical_distillation_distance": 31,
+            "native_qec_crossing_prefactor": 0.03,
+            "native_qec_threshold": 0.01,
+            "native_code_cycle_time_ns": 1000,
+            "quality_calibration_scope": "QDK factory model; distinct from the Litinski per-cycle data-exposure fit",
+            "full_pipeline_retry_cap_per_state": 6,
+            "states_all_complete_attempts": 162845072,
+            "worst_case_pipeline_attempts": 977070432,
+            "availability_failure_union_bound": 0.000162845072,
+            "retry_cap_arithmetic": "exact Fraction search over decimal input strings; smallest cap in 1..16",
+            "pipeline_feedback_rounds_reserved": 3,
+            "extra_init_readout_feedback_dispatch_ns_per_pipeline": 41800,
+            "extra_output_port_hold_ns_per_state": 1215100
+          },
+          "macro_ledger_per_complete_attempt": [
+            {
+              "operation": "cx",
+              "count": 36,
+              "time_ns": 391100,
+              "readouts": 3,
+              "preparations": 6,
+              "decisions": 11,
+              "event_failure_model": 1.132439562044728e-14
+            },
+            {
+              "operation": "h",
+              "count": 393,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "initial_reset",
+              "count": 15,
+              "time_ns": 41100,
+              "readouts": 0,
+              "preparations": 1,
+              "decisions": 1,
+              "event_failure_model": 1.01e-15
+            },
+            {
+              "operation": "measure",
+              "count": 3,
+              "time_ns": 123700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 3,
+              "event_failure_model": 3.1081318734824264e-15
+            },
+            {
+              "operation": "reset",
+              "count": 1,
+              "time_ns": 174700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 5,
+              "event_failure_model": 5.1081318734824266e-15
+            },
+            {
+              "operation": "s",
+              "count": 224,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "t_q2",
+              "count": 250,
+              "time_ns": 8687400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 137,
+              "event_failure_model": 1.4034208807795522e-13
+            },
+            {
+              "operation": "t_q3",
+              "count": 126,
+              "time_ns": 9860700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 170,
+              "event_failure_model": 1.7431527493929705e-13
+            },
+            {
+              "operation": "tdg_q2",
+              "count": 4,
+              "time_ns": 8697400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 138,
+              "event_failure_model": 1.4134208807795522e-13
+            },
+            {
+              "operation": "tdg_q3",
+              "count": 2,
+              "time_ns": 9870700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 171,
+              "event_failure_model": 1.7531527493929704e-13
+            },
+            {
+              "operation": "trial_control",
+              "count": 1,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "x",
+              "count": 18,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            }
+          ],
+          "accounting_trace_sha256": "44a77edb827047cee9134dcef68cdd107051f1ede4a4088efeeda5390e90308f",
+          "native_backend": "QDK direct Trace + explicit custom ISA; no import, PSSPC, LatticeSurgery or branch sampling"
+        },
+        {
+          "data_code_distance": 31,
+          "reserved_logical_patches": 15,
+          "peak_physical_qubits": 1100733,
+          "data_workspace_physical_qubits": 28815,
+          "factory_physical_qubits": 1071918,
+          "runtime_per_complete_attempt_ns": 3348327100,
+          "worst_case_runtime_all_attempts_ns": 1427378449421600,
+          "code_cycles_per_complete_attempt": 3348328,
+          "full_physical_failure_model": 0.00024125836897922264,
+          "failure_components_all_attempts": {
+            "data_workspace_code_exposure": 0.0002141068249632002,
+            "factory_output_handoff_storage": 1.9801960755200015e-06,
+            "logical_readout_scenario": 4.923958948994709e-07,
+            "logical_initialization_scenario": 1.1017620120000009e-07,
+            "controller_scenario": 2.4565307e-05,
+            "factory_output_quality_model": 3.4688444029866195e-09
+          },
+          "factory_supply": {
+            "output_error": 2.130150062500276e-17,
+            "pipeline_time_ns": 682000,
+            "fixed_logical_distillation_distance": 31,
+            "native_qec_crossing_prefactor": 0.03,
+            "native_qec_threshold": 0.01,
+            "native_code_cycle_time_ns": 1000,
+            "quality_calibration_scope": "QDK factory model; distinct from the Litinski per-cycle data-exposure fit",
+            "full_pipeline_retry_cap_per_state": 6,
+            "states_all_complete_attempts": 162845072,
+            "worst_case_pipeline_attempts": 977070432,
+            "availability_failure_union_bound": 0.000162845072,
+            "retry_cap_arithmetic": "exact Fraction search over decimal input strings; smallest cap in 1..16",
+            "pipeline_feedback_rounds_reserved": 3,
+            "extra_init_readout_feedback_dispatch_ns_per_pipeline": 41800,
+            "extra_output_port_hold_ns_per_state": 1215100
+          },
+          "macro_ledger_per_complete_attempt": [
+            {
+              "operation": "cx",
+              "count": 36,
+              "time_ns": 391100,
+              "readouts": 3,
+              "preparations": 6,
+              "decisions": 11,
+              "event_failure_model": 1.132439562044728e-14
+            },
+            {
+              "operation": "h",
+              "count": 393,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "initial_reset",
+              "count": 15,
+              "time_ns": 41100,
+              "readouts": 0,
+              "preparations": 1,
+              "decisions": 1,
+              "event_failure_model": 1.01e-15
+            },
+            {
+              "operation": "measure",
+              "count": 3,
+              "time_ns": 123700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 3,
+              "event_failure_model": 3.1081318734824264e-15
+            },
+            {
+              "operation": "reset",
+              "count": 1,
+              "time_ns": 174700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 5,
+              "event_failure_model": 5.1081318734824266e-15
+            },
+            {
+              "operation": "s",
+              "count": 224,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "t_q2",
+              "count": 250,
+              "time_ns": 8315400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 137,
+              "event_failure_model": 1.4034208807795522e-13
+            },
+            {
+              "operation": "t_q3",
+              "count": 126,
+              "time_ns": 9488700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 170,
+              "event_failure_model": 1.7431527493929705e-13
+            },
+            {
+              "operation": "tdg_q2",
+              "count": 4,
+              "time_ns": 8325400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 138,
+              "event_failure_model": 1.4134208807795522e-13
+            },
+            {
+              "operation": "tdg_q3",
+              "count": 2,
+              "time_ns": 9498700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 171,
+              "event_failure_model": 1.7531527493929704e-13
+            },
+            {
+              "operation": "trial_control",
+              "count": 1,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "x",
+              "count": 18,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            }
+          ],
+          "accounting_trace_sha256": "70f277d3bb193b7a5d8073b2e099b49222453da22dcfa61a3f700b1a0de4a23f",
+          "native_backend": "QDK direct Trace + explicit custom ISA; no import, PSSPC, LatticeSurgery or branch sampling"
+        }
+      ],
+      "feasible_candidate_count": 70,
+      "comparison_scope": "separate serialized instrument model; not the frozen Grover/PSSPC baseline",
+      "assumptions": [
+        "All complete algorithm attempts run the entire supplied schedule, including rejected trials",
+        "Data/workspace logical faults use Litinski's per-patch per-cycle scenario, homogeneously during active/idle/reset operations",
+        "Readout uses a majority-of-disjoint-paths independent-error scenario; not an optimized decoder calibration",
+        "Residual initialization error has a separately assumed code-distance prefactor in addition to code-volume exposure; it is not inferred from readout or hardware-calibrated",
+        "Local Clifford frames are tracked with charged controller work; adjacent CNOT uses three protected Pauli-measurement slots supporting tracked Pauli bases",
+        "Tracked Pauli bases, axis orientation at the magic port and protected parity geometry are conditional interface assumptions, not a certified lattice layout; T-dagger adds a charged inverse Clifford-frame decision",
+        "Scratch initialization and recycling are charged separately; no favorable overlap is assumed",
+        "One factory supplies states just in time; transport uses explicit neighboring logical SWAPs and injection uses CNOT/readout/conditional S plus port reinitialization",
+        "QDK native factory output quality is conditional on its model; final logical stages use the declared distance, and compatible handoff is assumed",
+        "Factory output quality already incorporates its quantum operations; no duplicate factory-memory fault term is added",
+        "Additional output-port residence outside native supply time is charged separately; native factory init/readout timing remains a leading-order macro plus a declared round overhead reserve",
+        "Independent complete factory retries use the QDK source-level 1% pipeline failure requirement; up to three feedback delays/decisions are reserved per pipeline",
+        "Factory controller decisions are aggregate round-level decisions, not a count of every syndrome bit operation",
+        "One trial accept/retry/counter dispatch interval is charged per complete algorithm attempt, and one retry dispatch interval per complete factory attempt",
+        "Controller reliability/latency and logical macro geometry are scenario parameters, not measured hardware calibration",
+        "Guarded floating synthesis and small instrument checks are numerical evidence, not formal interval certificates"
+      ],
+      "excluded": [
+        "offline classical coefficient/circuit/synthesis preprocessing and final statistical reporting wall time",
+        "factory/data interface layout certification",
+        "measured hardware and decoder throughput validation"
+      ],
+      "unsupported": [
+        "source-level arbitrary if/else or adaptive quantum feedback; only fixed source schedules plus reset/T-correction and factory/trial dispatch macros are modeled"
+      ],
+      "sources": [
+        "https://quantum-journal.org/papers/q-2019-03-05-128/",
+        "https://arxiv.org/abs/1111.4022",
+        "https://arxiv.org/abs/1403.2975",
+        "https://github.com/Qiskit/qiskit/blob/2.6.2/qiskit/synthesis/discrete_basis/ross_selinger.py",
+        "https://github.com/qiskit-community/rsgridsynth/tree/v0.2.2",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qdk_package/qdk/qre/models/factories/_round_based.py",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace.rs"
+      ],
+      "reference_keys": [
+        "resource_litinski_2019",
+        "resource_horsman_2012",
+        "resource_ross_selinger_2014",
+        "resource_qiskit_262",
+        "resource_rsgridsynth_022",
+        "resource_qdk_134"
+      ]
+    },
+    {
+      "schema_version": 1,
+      "status": "computed_conditional_instrument_surface_code_model",
+      "limits": {
+        "max_qubits": 5,
+        "source_operations": 10000,
+        "synthesized_operations": 100000,
+        "validation_operations": 100000,
+        "validation_branches": 256
+      },
+      "profile": {
+        "physical_error_rate": 0.0001,
+        "physical_gate_time_ns": 100,
+        "physical_measurement_time_ns": 500,
+        "physical_initialization_time_ns": 100,
+        "code_cycle_time_ns": 1000,
+        "reaction_time_ns": 10000,
+        "controller_failure_per_decision": 1e-15,
+        "memory_prefactor": 0.1,
+        "initialization_residual_prefactor": 0.1,
+        "memory_threshold": 0.01,
+        "factory_pipeline_failure_bound": 0.01,
+        "factory_feedback_rounds_reserved": 3,
+        "maximum_code_distance": 49
+      },
+      "complete_algorithm_attempts": 426296,
+      "physical_failure_budget": 0.00125,
+      "factory_availability_budget": 0.00125,
+      "source_event_counts": {
+        "x": 12,
+        "reset": 5,
+        "h": 3,
+        "measure": 3,
+        "ry": 2,
+        "cry": 2,
+        "mcphase": 2,
+        "ccx": 2,
+        "cx": 1
+      },
+      "synthesized_event_counts": {
+        "h": 393,
+        "t": 376,
+        "s": 224,
+        "cx": 36,
+        "x": 18,
+        "barrier": 16,
+        "tdg": 6,
+        "reset": 5,
+        "measure": 3
+      },
+      "workspace_initializations_per_attempt": 11,
+      "actual_synthesis": {
+        "qiskit_version": "2.6.2",
+        "limits": {
+          "max_qubits": 5,
+          "source_operations": 10000,
+          "synthesized_operations": 100000,
+          "validation_operations": 100000,
+          "validation_branches": 256
+        },
+        "preserve_full_unitary": false,
+        "transpiler_qubits_initially_zero": true,
+        "method": "actual ancilla-free Ross--Selinger gridsynth_unitary",
+        "native_synthesis_backend": {
+          "repository": "https://github.com/qiskit-community/rsgridsynth",
+          "qiskit_262_cargo_lock_version": "0.2.2",
+          "upstream_tag_commit": "0e94e5638c42624f4ec358f5eab079942462d2bf",
+          "cargo_checksum": "133fdfbe9489a7c448e35e82c8443c9097ed6b5c22a492c3c78c19a472cacfad",
+          "license": "MIT",
+          "identity_scope": "Qiskit 2.6.2 Cargo.lock dependency; installed wheel exposes no direct native-crate version certificate",
+          "seed": null,
+          "seed_note": "gridsynth_unitary exposes no seed argument; exact generated sequences and hashes are saved"
+        },
+        "routing": "bidirectional logical line; fixed initial layout; SABRE seed 7; optimization level 0",
+        "event_order": "all-wire compiler barriers preserve every source reset/measurement boundary; barriers have zero additional modeled serial cost",
+        "source_counts": {
+          "x": 12,
+          "reset": 5,
+          "h": 3,
+          "measure": 3,
+          "ry": 2,
+          "cry": 2,
+          "mcphase": 2,
+          "ccx": 2,
+          "cx": 1
+        },
+        "routed_counts": {
+          "cx": 36,
+          "barrier": 16,
+          "x": 12,
+          "t": 8,
+          "h": 7,
+          "ry": 6,
+          "rz": 6,
+          "tdg": 6,
+          "reset": 5,
+          "measure": 3
+        },
+        "clifford_t_counts": {
+          "h": 393,
+          "t": 376,
+          "s": 224,
+          "cx": 36,
+          "x": 18,
+          "barrier": 16,
+          "tdg": 6,
+          "reset": 5,
+          "measure": 3
+        },
+        "unique_rotation_targets": 6,
+        "rotation_occurrences": 12,
+        "operator_error_allowance": 0.0001,
+        "guarded_numerical_operator_error_upper_estimate": 5.103673174286628e-06,
+        "per_matrix_frobenius_guard": 1e-12,
+        "formal_interval_certificate": false,
+        "actual_synthesis_sequences_generated": true,
+        "approximants": [
+          {
+            "gate": "ry",
+            "angle_hex": "0x1.cda8be25f53edp-2",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 7.575517468975824e-07,
+            "gate_counts": {
+              "h": 63,
+              "t": 60,
+              "s": 33,
+              "x": 1
+            },
+            "global_phase": 3.9269908169872414
+          },
+          {
+            "gate": "ry",
+            "angle_hex": "0x1.f5f75c802c796p-1",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.0367300917104366e-06,
+            "gate_counts": {
+              "h": 61,
+              "t": 58,
+              "s": 36,
+              "x": 1
+            },
+            "global_phase": 5.497787143782138
+          },
+          {
+            "gate": "ry",
+            "angle_hex": "-0x1.cda8be25f53edp-2",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 7.575517468975824e-07,
+            "gate_counts": {
+              "h": 63,
+              "t": 60,
+              "s": 33,
+              "x": 1
+            },
+            "global_phase": 3.9269908169872414
+          },
+          {
+            "gate": "rz",
+            "angle_hex": "0x1.921fb54442d18p+0",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.000576888805915e-12,
+            "gate_counts": {
+              "s": 4,
+              "t": 2,
+              "h": 2
+            },
+            "global_phase": 5.497787143782138
+          },
+          {
+            "gate": "rz",
+            "angle_hex": "-0x1.921fb54442d18p+0",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.0004839349969133e-12,
+            "gate_counts": {
+              "t": 2,
+              "s": 2,
+              "h": 2
+            },
+            "global_phase": 0.7853981633974483
+          },
+          {
+            "gate": "ry",
+            "angle_hex": "-0x1.f5f75c802c796p-1",
+            "epsilon_requested": 2.0833333333333334e-06,
+            "guarded_frobenius_error": 1.0367300917104366e-06,
+            "gate_counts": {
+              "h": 61,
+              "t": 58,
+              "s": 36,
+              "x": 1
+            },
+            "global_phase": 5.497787143782138
+          }
+        ],
+        "compiled_global_phase": 1.5707963267948957,
+        "qasm_export_scope": "complete measured trials; exporter omits the overall phase, so not a phase-preserving controlled-oracle specification"
+      },
+      "pareto_points": [
+        {
+          "data_code_distance": 15,
+          "reserved_logical_patches": 15,
+          "peak_physical_qubits": 159395,
+          "data_workspace_physical_qubits": 6735,
+          "factory_physical_qubits": 152660,
+          "runtime_per_complete_attempt_ns": 2061943100,
+          "worst_case_runtime_all_attempts_ns": 878998095757600,
+          "code_cycles_per_complete_attempt": 2061944,
+          "full_physical_failure_model": 0.00015780633178570611,
+          "failure_components_all_attempts": {
+            "data_workspace_code_exposure": 0.00013184977191360003,
+            "factory_output_handoff_storage": 1.2767053644800002e-06,
+            "logical_readout_scenario": 9.027063924624208e-10,
+            "logical_initialization_scenario": 1.1017620120000004e-07,
+            "controller_scenario": 2.4565307e-05,
+            "factory_output_quality_model": 3.4686000336002454e-09
+          },
+          "factory_supply": {
+            "output_error": 2.1300000000001506e-17,
+            "pipeline_time_ns": 390000,
+            "fixed_logical_distillation_distance": 15,
+            "native_qec_crossing_prefactor": 0.03,
+            "native_qec_threshold": 0.01,
+            "native_code_cycle_time_ns": 1000,
+            "quality_calibration_scope": "QDK factory model; distinct from the Litinski per-cycle data-exposure fit",
+            "full_pipeline_retry_cap_per_state": 6,
+            "states_all_complete_attempts": 162845072,
+            "worst_case_pipeline_attempts": 977070432,
+            "availability_failure_union_bound": 0.000162845072,
+            "retry_cap_arithmetic": "exact Fraction search over decimal input strings; smallest cap in 1..16",
+            "pipeline_feedback_rounds_reserved": 3,
+            "extra_init_readout_feedback_dispatch_ns_per_pipeline": 41800,
+            "extra_output_port_hold_ns_per_state": 783100
+          },
+          "macro_ledger_per_complete_attempt": [
+            {
+              "operation": "cx",
+              "count": 36,
+              "time_ns": 247100,
+              "readouts": 3,
+              "preparations": 6,
+              "decisions": 11,
+              "event_failure_model": 1.1060484714879204e-14
+            },
+            {
+              "operation": "h",
+              "count": 393,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "initial_reset",
+              "count": 15,
+              "time_ns": 25100,
+              "readouts": 0,
+              "preparations": 1,
+              "decisions": 1,
+              "event_failure_model": 1.01e-15
+            },
+            {
+              "operation": "measure",
+              "count": 3,
+              "time_ns": 75700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 3,
+              "event_failure_model": 3.0201615716264015e-15
+            },
+            {
+              "operation": "reset",
+              "count": 1,
+              "time_ns": 110700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 5,
+              "event_failure_model": 5.020161571626402e-15
+            },
+            {
+              "operation": "s",
+              "count": 224,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "t_q2",
+              "count": 250,
+              "time_ns": 5107400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 137,
+              "event_failure_model": 1.3761500872041846e-13
+            },
+            {
+              "operation": "t_q3",
+              "count": 126,
+              "time_ns": 5848700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 170,
+              "event_failure_model": 1.7079646286505607e-13
+            },
+            {
+              "operation": "tdg_q2",
+              "count": 4,
+              "time_ns": 5117400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 138,
+              "event_failure_model": 1.3861500872041846e-13
+            },
+            {
+              "operation": "tdg_q3",
+              "count": 2,
+              "time_ns": 5858700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 171,
+              "event_failure_model": 1.7179646286505606e-13
+            },
+            {
+              "operation": "trial_control",
+              "count": 1,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "x",
+              "count": 18,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            }
+          ],
+          "accounting_trace_sha256": "7f49cd3599b2b4b69b1f9b757188c14dceb72f88fc8d283730ccc52271e5d0a3",
+          "native_backend": "QDK direct Trace + explicit custom ISA; no import, PSSPC, LatticeSurgery or branch sampling"
+        },
+        {
+          "data_code_distance": 15,
+          "reserved_logical_patches": 15,
+          "peak_physical_qubits": 238419,
+          "data_workspace_physical_qubits": 6735,
+          "factory_physical_qubits": 231684,
+          "runtime_per_complete_attempt_ns": 1993183100,
+          "worst_case_runtime_all_attempts_ns": 849685982797600,
+          "code_cycles_per_complete_attempt": 1993184,
+          "full_physical_failure_model": 0.0001534095148417061,
+          "failure_components_all_attempts": {
+            "data_workspace_code_exposure": 0.00012745295496960002,
+            "factory_output_handoff_storage": 1.2767053644800002e-06,
+            "logical_readout_scenario": 9.027063924624208e-10,
+            "logical_initialization_scenario": 1.1017620120000004e-07,
+            "controller_scenario": 2.4565307e-05,
+            "factory_output_quality_model": 3.4686000336002454e-09
+          },
+          "factory_supply": {
+            "output_error": 2.1300000000001506e-17,
+            "pipeline_time_ns": 360000,
+            "fixed_logical_distillation_distance": 15,
+            "native_qec_crossing_prefactor": 0.03,
+            "native_qec_threshold": 0.01,
+            "native_code_cycle_time_ns": 1000,
+            "quality_calibration_scope": "QDK factory model; distinct from the Litinski per-cycle data-exposure fit",
+            "full_pipeline_retry_cap_per_state": 6,
+            "states_all_complete_attempts": 162845072,
+            "worst_case_pipeline_attempts": 977070432,
+            "availability_failure_union_bound": 0.000162845072,
+            "retry_cap_arithmetic": "exact Fraction search over decimal input strings; smallest cap in 1..16",
+            "pipeline_feedback_rounds_reserved": 3,
+            "extra_init_readout_feedback_dispatch_ns_per_pipeline": 41800,
+            "extra_output_port_hold_ns_per_state": 783100
+          },
+          "macro_ledger_per_complete_attempt": [
+            {
+              "operation": "cx",
+              "count": 36,
+              "time_ns": 247100,
+              "readouts": 3,
+              "preparations": 6,
+              "decisions": 11,
+              "event_failure_model": 1.1060484714879204e-14
+            },
+            {
+              "operation": "h",
+              "count": 393,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "initial_reset",
+              "count": 15,
+              "time_ns": 25100,
+              "readouts": 0,
+              "preparations": 1,
+              "decisions": 1,
+              "event_failure_model": 1.01e-15
+            },
+            {
+              "operation": "measure",
+              "count": 3,
+              "time_ns": 75700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 3,
+              "event_failure_model": 3.0201615716264015e-15
+            },
+            {
+              "operation": "reset",
+              "count": 1,
+              "time_ns": 110700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 5,
+              "event_failure_model": 5.020161571626402e-15
+            },
+            {
+              "operation": "s",
+              "count": 224,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "t_q2",
+              "count": 250,
+              "time_ns": 4927400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 137,
+              "event_failure_model": 1.3761500872041846e-13
+            },
+            {
+              "operation": "t_q3",
+              "count": 126,
+              "time_ns": 5668700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 170,
+              "event_failure_model": 1.7079646286505607e-13
+            },
+            {
+              "operation": "tdg_q2",
+              "count": 4,
+              "time_ns": 4937400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 138,
+              "event_failure_model": 1.3861500872041846e-13
+            },
+            {
+              "operation": "tdg_q3",
+              "count": 2,
+              "time_ns": 5678700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 171,
+              "event_failure_model": 1.7179646286505606e-13
+            },
+            {
+              "operation": "trial_control",
+              "count": 1,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "x",
+              "count": 18,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            }
+          ],
+          "accounting_trace_sha256": "9523f2a61a327234b59dd79bba1d19ae954bb67c63ab9c0809f6bf1ca8111300",
+          "native_backend": "QDK direct Trace + explicit custom ISA; no import, PSSPC, LatticeSurgery or branch sampling"
+        },
+        {
+          "data_code_distance": 15,
+          "reserved_logical_patches": 15,
+          "peak_physical_qubits": 243358,
+          "data_workspace_physical_qubits": 6735,
+          "factory_physical_qubits": 236623,
+          "runtime_per_complete_attempt_ns": 1924423100,
+          "worst_case_runtime_all_attempts_ns": 820373869837600,
+          "code_cycles_per_complete_attempt": 1924424,
+          "full_physical_failure_model": 0.0001490126978977061,
+          "failure_components_all_attempts": {
+            "data_workspace_code_exposure": 0.00012305613802560003,
+            "factory_output_handoff_storage": 1.2767053644800002e-06,
+            "logical_readout_scenario": 9.027063924624208e-10,
+            "logical_initialization_scenario": 1.1017620120000004e-07,
+            "controller_scenario": 2.4565307e-05,
+            "factory_output_quality_model": 3.4686000336002454e-09
+          },
+          "factory_supply": {
+            "output_error": 2.1300000000001506e-17,
+            "pipeline_time_ns": 330000,
+            "fixed_logical_distillation_distance": 15,
+            "native_qec_crossing_prefactor": 0.03,
+            "native_qec_threshold": 0.01,
+            "native_code_cycle_time_ns": 1000,
+            "quality_calibration_scope": "QDK factory model; distinct from the Litinski per-cycle data-exposure fit",
+            "full_pipeline_retry_cap_per_state": 6,
+            "states_all_complete_attempts": 162845072,
+            "worst_case_pipeline_attempts": 977070432,
+            "availability_failure_union_bound": 0.000162845072,
+            "retry_cap_arithmetic": "exact Fraction search over decimal input strings; smallest cap in 1..16",
+            "pipeline_feedback_rounds_reserved": 3,
+            "extra_init_readout_feedback_dispatch_ns_per_pipeline": 41800,
+            "extra_output_port_hold_ns_per_state": 783100
+          },
+          "macro_ledger_per_complete_attempt": [
+            {
+              "operation": "cx",
+              "count": 36,
+              "time_ns": 247100,
+              "readouts": 3,
+              "preparations": 6,
+              "decisions": 11,
+              "event_failure_model": 1.1060484714879204e-14
+            },
+            {
+              "operation": "h",
+              "count": 393,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "initial_reset",
+              "count": 15,
+              "time_ns": 25100,
+              "readouts": 0,
+              "preparations": 1,
+              "decisions": 1,
+              "event_failure_model": 1.01e-15
+            },
+            {
+              "operation": "measure",
+              "count": 3,
+              "time_ns": 75700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 3,
+              "event_failure_model": 3.0201615716264015e-15
+            },
+            {
+              "operation": "reset",
+              "count": 1,
+              "time_ns": 110700,
+              "readouts": 1,
+              "preparations": 2,
+              "decisions": 5,
+              "event_failure_model": 5.020161571626402e-15
+            },
+            {
+              "operation": "s",
+              "count": 224,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "t_q2",
+              "count": 250,
+              "time_ns": 4747400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 137,
+              "event_failure_model": 1.3761500872041846e-13
+            },
+            {
+              "operation": "t_q3",
+              "count": 126,
+              "time_ns": 5488700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 170,
+              "event_failure_model": 1.7079646286505607e-13
+            },
+            {
+              "operation": "tdg_q2",
+              "count": 4,
+              "time_ns": 4757400,
+              "readouts": 31,
+              "preparations": 61,
+              "decisions": 138,
+              "event_failure_model": 1.3861500872041846e-13
+            },
+            {
+              "operation": "tdg_q3",
+              "count": 2,
+              "time_ns": 5498700,
+              "readouts": 40,
+              "preparations": 79,
+              "decisions": 171,
+              "event_failure_model": 1.7179646286505606e-13
+            },
+            {
+              "operation": "trial_control",
+              "count": 1,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            },
+            {
+              "operation": "x",
+              "count": 18,
+              "time_ns": 10000,
+              "readouts": 0,
+              "preparations": 0,
+              "decisions": 1,
+              "event_failure_model": 1e-15
+            }
+          ],
+          "accounting_trace_sha256": "d06493e867882673c6c7d7b41c2c78f8134d8969ec609d40918166fc5464634f",
+          "native_backend": "QDK direct Trace + explicit custom ISA; no import, PSSPC, LatticeSurgery or branch sampling"
+        }
+      ],
+      "feasible_candidate_count": 126,
+      "comparison_scope": "separate serialized instrument model; not the frozen Grover/PSSPC baseline",
+      "assumptions": [
+        "All complete algorithm attempts run the entire supplied schedule, including rejected trials",
+        "Data/workspace logical faults use Litinski's per-patch per-cycle scenario, homogeneously during active/idle/reset operations",
+        "Readout uses a majority-of-disjoint-paths independent-error scenario; not an optimized decoder calibration",
+        "Residual initialization error has a separately assumed code-distance prefactor in addition to code-volume exposure; it is not inferred from readout or hardware-calibrated",
+        "Local Clifford frames are tracked with charged controller work; adjacent CNOT uses three protected Pauli-measurement slots supporting tracked Pauli bases",
+        "Tracked Pauli bases, axis orientation at the magic port and protected parity geometry are conditional interface assumptions, not a certified lattice layout; T-dagger adds a charged inverse Clifford-frame decision",
+        "Scratch initialization and recycling are charged separately; no favorable overlap is assumed",
+        "One factory supplies states just in time; transport uses explicit neighboring logical SWAPs and injection uses CNOT/readout/conditional S plus port reinitialization",
+        "QDK native factory output quality is conditional on its model; final logical stages use the declared distance, and compatible handoff is assumed",
+        "Factory output quality already incorporates its quantum operations; no duplicate factory-memory fault term is added",
+        "Additional output-port residence outside native supply time is charged separately; native factory init/readout timing remains a leading-order macro plus a declared round overhead reserve",
+        "Independent complete factory retries use the QDK source-level 1% pipeline failure requirement; up to three feedback delays/decisions are reserved per pipeline",
+        "Factory controller decisions are aggregate round-level decisions, not a count of every syndrome bit operation",
+        "One trial accept/retry/counter dispatch interval is charged per complete algorithm attempt, and one retry dispatch interval per complete factory attempt",
+        "Controller reliability/latency and logical macro geometry are scenario parameters, not measured hardware calibration",
+        "Guarded floating synthesis and small instrument checks are numerical evidence, not formal interval certificates"
+      ],
+      "excluded": [
+        "offline classical coefficient/circuit/synthesis preprocessing and final statistical reporting wall time",
+        "factory/data interface layout certification",
+        "measured hardware and decoder throughput validation"
+      ],
+      "unsupported": [
+        "source-level arbitrary if/else or adaptive quantum feedback; only fixed source schedules plus reset/T-correction and factory/trial dispatch macros are modeled"
+      ],
+      "sources": [
+        "https://quantum-journal.org/papers/q-2019-03-05-128/",
+        "https://arxiv.org/abs/1111.4022",
+        "https://arxiv.org/abs/1403.2975",
+        "https://github.com/Qiskit/qiskit/blob/2.6.2/qiskit/synthesis/discrete_basis/ross_selinger.py",
+        "https://github.com/qiskit-community/rsgridsynth/tree/v0.2.2",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qdk_package/qdk/qre/models/factories/_round_based.py",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace.rs"
+      ],
+      "reference_keys": [
+        "resource_litinski_2019",
+        "resource_horsman_2012",
+        "resource_ross_selinger_2014",
+        "resource_qiskit_262",
+        "resource_rsgridsynth_022",
+        "resource_qdk_134"
+      ]
+    }
+  ]
+}

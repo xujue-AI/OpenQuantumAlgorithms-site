@@ -1,0 +1,92 @@
+{
+  "artifact_archive": {
+    "bytes": 139691,
+    "file": "measured-and-artifacts.zip",
+    "flat_source_snapshots_are_not_an_installed_package": true,
+    "members": 31,
+    "sha256": "5a59abd65c47f26d62539f51e44c516e0c74b63998ec4f1eb5688832b902e3c9"
+  },
+  "dedicated_module_tests": {
+    "passed": 109,
+    "repeated_in_producer_notebook_pass": false,
+    "tested_source_commit": "1aa95c14057b48b68900280ef5a8fb637e653fd6",
+    "tests_sha256": "daf1576ffc92123ecae08e09dbe255de98201480c885425b896c1a06dc0bbbda"
+  },
+  "device": "CPU",
+  "excluded": [
+    "physical code/factories/runtime/fault success",
+    "controller/reset/readout hardware calibration",
+    "generic factoring success and classical processing time",
+    "P/CP synthesis in order circuits",
+    "optimized 4w-4 Gidney adder",
+    "mechanized proof and uniform floating enclosure"
+  ],
+  "generated_large_circuits_simulated": false,
+  "hardware_execution": false,
+  "lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+  "mechanized_formal_proof": false,
+  "module_sha256": "9149bee02a0cdef1d3dde60e4aea21f1f909b257a0e2885266172b00ad9e05fd",
+  "notebook": {
+    "actual_exit": 0,
+    "code_cell_ids": [
+      "measured-and-imports",
+      "measured-and-counts",
+      "measured-and-circuit",
+      "measured-and-check",
+      "measured-and-gadget",
+      "measured-and-record",
+      "measured-and-scaling"
+    ],
+    "diagram_png": {
+      "bytes": 99149,
+      "height": 1874,
+      "sha256": "801a0ec12d2e128652fecfca5b83b676f4d8bfcd5bbf0df77de27d6a4c221678",
+      "width": 1634
+    },
+    "error_cells": [],
+    "executed_sha256": "34c0c9b356c52bc14687d22952ff4c4220e3de27466b28fae6b68bee011d430f",
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "genuine_jupyter_kernel": true,
+    "ids_types_source_text_preserved": true,
+    "input_sha256": "8515f56b277688ed541109a079f6387c5242b0d179da87fc8fb5389239713844",
+    "normal_execution_timestamps_and_output_metadata_added": true,
+    "source_projection_sha256": "3c2fabb4c6fce6ec927bb9cbaddc43865c43b3e7a6c24bccd34aa48d60eb1097"
+  },
+  "physical_estimate": false,
+  "producer": {
+    "actual_exit": 0,
+    "addition_case_count": 6,
+    "generated_only_count": 4,
+    "manifest_payload_bytes": 4007958,
+    "manifest_payload_count": 30,
+    "manifest_sha256": "ed844b56c160ee61fa2645fb5121f9e5e9e38abaf521081694c8c58ef689a35c",
+    "max_addition_density_error": 5.9952069744605915e-15,
+    "order_case_count": 2,
+    "scaling_is_materialized_logical_counts": true,
+    "scaling_rows": 16,
+    "scaling_widths": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      16,
+      24,
+      31
+    ],
+    "study_sha256": "405800b680693f13ad981bd7e569ea14a94edab316a16e0d0ebcb0441f27c366"
+  },
+  "producer_sha256": "391fb9e1ea2256f1e29906cc88b02f3c3f492cab5096610c3f1396ff23dd4a06",
+  "schema": "openquantum-shor-measured-and-validation-v1",
+  "seed": null,
+  "source_commit": "c26a06207a70c4eaff235cfeba15321c9889c7c5",
+  "status": "executed_bounded_ideal_checks_and_genuine_notebook"
+}

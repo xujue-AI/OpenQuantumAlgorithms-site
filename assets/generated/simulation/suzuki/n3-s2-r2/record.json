@@ -1,0 +1,159 @@
+{
+  "case_id": "n3-s2-r2",
+  "logical_ledger": {
+    "hamiltonian": {
+      "qubits": 3,
+      "coupling_exact": "1",
+      "x_field_exact": "7/10",
+      "z_field_exact": "0",
+      "pauli_l1_norm_exact": "41/10",
+      "diagonal_terms": [
+        [
+          "1",
+          "IZZ"
+        ],
+        [
+          "1",
+          "ZZI"
+        ]
+      ],
+      "transverse_terms": [
+        [
+          "7/10",
+          "IIX"
+        ],
+        [
+          "7/10",
+          "IXI"
+        ],
+        [
+          "7/10",
+          "XII"
+        ]
+      ],
+      "boundary": "open",
+      "hbar": 1,
+      "normalization": "No rescaling of H or time. The Pauli l1 norm is a norm upper bound, not a block-encoding normalization.",
+      "coefficient_semantics": "Exact Fraction(str(value)); real ZZ/Z/X family only. Binary64 gates and numerical matrices are separate representations."
+    },
+    "time_exact": "1",
+    "repetitions": 2,
+    "order": 2,
+    "initial_basis": 0,
+    "system_qubits": 3,
+    "ancillas": 0,
+    "logical_qubits": 3,
+    "complete_measured_primitive_counts": {
+      "cx": 16,
+      "rz": 8,
+      "rx": 6,
+      "reset": 3,
+      "measure": 3
+    },
+    "arbitrary_rotations": 14,
+    "source_dependency_depth": 28,
+    "base_strang_blocks": 2,
+    "source_parameter_rounding": {
+      "root_bisection_bits": 160,
+      "normalized_leaves_per_macro_step": 1,
+      "normalized_signed_sum_exact_binary64": "1",
+      "normalized_signed_sum_defect_exact": "0",
+      "normalized_absolute_sum_exact_binary64": "1",
+      "actual_signed_substep_time_sum_exact": "1",
+      "actual_absolute_substep_time_sum_exact": "1",
+      "negative_normalized_leaves_per_step": 0,
+      "negative_actual_substeps": 0,
+      "coefficient_approximation_operator_bound_exact": "0",
+      "gate_angle_conversion_operator_bound_exact": "3/22517998136852480",
+      "total_source_parameter_operator_bound_exact": "3/22517998136852480",
+      "total_source_parameter_operator_bound_upper_float": 1.332267629550188e-16,
+      "scope": "Exact rational bounds on coefficient/angle representation in the ideal gate model, relative to mathematical Suzuki roots; no bound on algorithmic splitting, numerical simulation, synthesis or physical errors. No finite-coefficient order certificate.",
+      "leaf_parameter_records_one_macro_step": [
+        {
+          "normalized_coefficient_binary64_hex": "0x1.0000000000000p+0",
+          "normalized_coefficient_source_exact": "1",
+          "ideal_coefficient_enclosure": [
+            "1",
+            "1"
+          ],
+          "coefficient_absolute_error_bound_exact": "0",
+          "source_substep_time_exact": "1/2",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/45035996273704960",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 4,
+              "angle_target_exact": "1/2",
+              "binary64_angle_hex": "0x1.0000000000000p-1",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 3,
+              "angle_target_exact": "7/10",
+              "binary64_angle_hex": "0x1.6666666666666p-1",
+              "per_rotation_operator_conversion_bound_exact": "1/45035996273704960"
+            }
+          ]
+        }
+      ]
+    },
+    "resource_kind": "Complete deterministic measured trial before synthesis/fault tolerance; negative substeps retain all gates",
+    "physical_resource_estimate": null,
+    "measurement": "All n wires inZ; bit0 scores +1/-1",
+    "input_access": "Explicit real Pauli coefficients and local gates; no opaque Hamiltonian access or external data-loading oracle",
+    "exclusions": [
+      "Physical reset/readout/controller/routing/idle/factory time and faults",
+      "Concrete rotation synthesis and its coherent error certificate",
+      "Unmeasured classical hardware input/control/postprocessing latency"
+    ],
+    "planned_sampling_contract": {
+      "fresh_repreparations": true,
+      "observable": "Z0",
+      "epsilon_stat": 0.05,
+      "eta_stat": 0.05,
+      "required_trials_hoeffding": 2952,
+      "status": "Analytic independent-readout proposal; budgeted trials are not executed and algorithm/synthesis/physical allocations are not supplied"
+    }
+  },
+  "validation": {
+    "qubits": 3,
+    "order": 2,
+    "repetitions": 2,
+    "time_exact": "1",
+    "source_to_independent_dense_product_operator_error": 1.058231762631111e-15,
+    "source_to_qiskit_suzuki_operator_error": 2.490157199441178e-16,
+    "reset_prefix_density_error": 2.0519936548736007e-16,
+    "operator_error_vs_exact_evolution": 0.1385784234870846,
+    "state_vector_error_vs_exact_evolution": 0.11284180792965365,
+    "state_infidelity": 0.010984034177378144,
+    "circuit_z0": 0.3607492381314602,
+    "exact_z0": 0.40425585728735497,
+    "observable_bias": 0.043506619155894766,
+    "qiskit_reference_primitive_counts": {
+      "rzz": 8,
+      "rx": 6
+    },
+    "qiskit_reference_grouping": "Explicit nonempty commuting[A,B] groups; zero blocks omitted as a declared commuting-limit shortcut; source retains its S2 template.",
+    "verified_tolerance": 1e-10,
+    "formal_certificate": false,
+    "scope": "Bounded ideal numerical circuit/product/matrix-exponential comparisons; source parameter enclosures do not certify the large-system splitting error or a physical improvement"
+  },
+  "measured_qasm_sha256": "2f15fa5060308baa0129de703694532b25e2a5f734d910279041458ed00cff2d",
+  "cpu_timings_seconds": {
+    "source_construction_scalar_accounting_export": 0.005673792002198752,
+    "independent_and_qiskit_numerical_checks": 0.002849333999620285
+  },
+  "measurement_execution": {
+    "physical_measurements": false,
+    "finite_shot_samples": false,
+    "scope": "Actual reset/preparation circuit prefix simulated; final expectation calculated from its ideal state. Budgeted repeated trials are not executed."
+  }
+}

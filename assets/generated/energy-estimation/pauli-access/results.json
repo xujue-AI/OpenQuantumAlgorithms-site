@@ -1,0 +1,95 @@
+{
+  "phase_distribution": [
+    0.0021461414983876223,
+    0.003701692485333062,
+    0.013890534335248342,
+    0.9532528459810413,
+    0.012084424260544313,
+    0.010570713645682706,
+    0.0024708079614951008,
+    0.00188283983163502
+  ],
+  "reference_approximate_phase_distribution": [
+    0.0021461414983890157,
+    0.003701692485335484,
+    0.013890534335257169,
+    0.9532528459816443,
+    0.01208442426055184,
+    0.010570713645689532,
+    0.0024708079614965757,
+    0.0018828398316361604
+  ],
+  "distribution_max_error": 6.029621246739225e-13,
+  "access_gate_vs_product_reference_error": 4.662967683595027e-14,
+  "access_operator_error_against_exact_H": 0.00012652152481609186,
+  "analytic_product_formula_bound": {
+    "analytic_operator_error_bound": 0.00025018477641866854,
+    "uncapped_analytic_bound": 0.00025018477641866854,
+    "method": "symmetric nested-commutator triangle sum, O(t\u00b3/r\u00b2)",
+    "sum_commutator_norms": 0.2879971828636951,
+    "coefficient_sum_arithmetic": "exact Fraction of normalized binary64 input; incoming duplicate aggregation roundoff excluded; rounded upward on float export",
+    "includes_floating_gate_or_synthesis_error": false,
+    "formal_proof_artifact": null
+  },
+  "exact_energy_ground_reference": -1.1373060357534,
+  "approximate_unitary_ground_energy_reference": -1.137288270033261,
+  "ground_energy_bias_numeric": 1.7765720139006902e-05,
+  "spectral_neighbourhood_energy_bound_ideal_angles": 0.0003017408037660486,
+  "true_H_hf_ground_overlap_reference": 0.9875597343674857,
+  "approximate_V_hf_ground_weight_reference": 0.9875374834074064,
+  "numerical_ground_subspace_energy_tolerance": 2.1373060357534e-10,
+  "phase_grid_energy_width": 0.947246574608827,
+  "energy_encoding": {
+    "shift": -3.8795652845236566,
+    "span": 7.577972596870616,
+    "center": -0.09057898608834869,
+    "pauli_norm_bound": 1.894493149217654
+  },
+  "phase_eigenvalues_reference": [
+    0.44273045470276023,
+    0.4904692590052861,
+    0.3618747599618981,
+    0.5772791079012549
+  ],
+  "phase_eigenweights_reference": [
+    0.0,
+    0.0,
+    0.9875374834074064,
+    0.012462516592593169
+  ],
+  "sector_indices_reference": [
+    6,
+    5,
+    10,
+    9
+  ],
+  "sector_invariance_reference": {
+    "hamiltonian_leakage_norm": 0.0,
+    "approximate_unitary_leakage_norm": 0.0,
+    "numerical_validation_tolerance": 1e-12,
+    "formal_invariance_proof": false
+  },
+  "ground_confidence_guarantee": null,
+  "reference_method": "independent Pauli matrix factors and unitary Schur spectral law",
+  "control_strategy": "termwise",
+  "spectral_sample_contract": {
+    "kind": "one energy sample near some supplied-H eigenvalue",
+    "analytic_ideal_angle_contract_applies": true,
+    "phase_grid_error": 0.125,
+    "spectral_phase_bias_bound": 3.981814395721817e-05,
+    "energy_error_bound_ideal": 0.9475483154125931,
+    "one_shot_ideal_success_lower_bound": 0.8105694691387022,
+    "ground_energy_selection_guarantee": null,
+    "synthesis_or_physical_accuracy_certified": false,
+    "branch_margin_condition": "spectral phase perturbation<=1/4-1/M",
+    "exclusions": [
+      "floating coefficient/gate arithmetic beyond fixed normalized input",
+      "concrete gate synthesis errors",
+      "physical faults",
+      "ground-state overlap/selection"
+    ]
+  },
+  "simulation_width": 7,
+  "statevector_performed": true,
+  "simulation_wall_seconds": 0.5895000010000331
+}

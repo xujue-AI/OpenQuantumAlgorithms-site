@@ -1,0 +1,579 @@
+{
+  "parameters": {
+    "n": 3,
+    "steps": 4,
+    "time": 0.7,
+    "coupling": 1.0,
+    "initial_position": 0,
+    "initial_coin": "balanced"
+  },
+  "models": {
+    "coined": {
+      "algorithm": "coined",
+      "circuit_metadata": {
+        "model": "Hadamard coined cycle walk",
+        "position_qubits": 3,
+        "vertices": 8,
+        "steps": 4,
+        "initial_position": 0,
+        "initial_coin": "balanced",
+        "coin_wire": 3,
+        "step_chronology": "Hadamard coin, then +/-1 controlled shift",
+        "output_contract": "all measured coin/position outcomes; ignore coin for position mean",
+        "source_shift_operations_per_step": 8,
+        "scratch_qubits": 0
+      },
+      "logical_qubits": 4,
+      "source_gate_counts": {
+        "mcx": 8,
+        "ccx": 8,
+        "cx": 8,
+        "x": 8,
+        "h": 5,
+        "measure": 4,
+        "s": 1
+      },
+      "primitive_gate_counts": {
+        "cx": 160,
+        "rz": 124,
+        "t": 28,
+        "tdg": 24,
+        "h": 10,
+        "x": 5,
+        "measure": 4,
+        "ry": 3,
+        "rx": 1
+      },
+      "primitive_operations": 359,
+      "dependency_depth": 294,
+      "qasm_sha256": "c7b5622e8549e2f5f4378f9446f64d541ea1ac238bc06f86958c50bd4f0e4a28",
+      "compiled_global_phase_radians": 3.9269908169872414,
+      "qasm_scope": "complete measured trial; the pinned exporter may omit overall phase, not a controlled-oracle specification",
+      "observable_contract": {
+        "absolute_error_target": 0.0301,
+        "algorithm_bias_bound": 0,
+        "synthesis_bias_allowance": 0.0001,
+        "sampling_error_allowance": 0.03,
+        "sampling_failure_probability": 0.005,
+        "physical_failure_probability": 0.005,
+        "outcome_min": 0,
+        "outcome_max": 1,
+        "kind": "one_bounded_scalar_mean",
+        "shots_required": 3329,
+        "confidence_status": "conditional_only; independent approximation evidence is required",
+        "certified_confidence_lower_bound": null,
+        "conditional_confidence_lower_bound": 0.99,
+        "assumptions": [
+          "Independent identically distributed bounded shots at one fixed circuit/parameter setting",
+          "The caller independently establishes the algorithm_bias_bound",
+          "The synthesis model scalar upper-bounds output-distribution total variation; this module does not certify it",
+          "The declared physical-fault model upper-bounds faults and the classical measurement interpretation is correct"
+        ],
+        "does_not_cover": [
+          "optimizer convergence",
+          "noncommuting observable grouping",
+          "multiple parameter settings",
+          "adaptive stopping"
+        ]
+      },
+      "validation": {
+        "performed": true,
+        "probabilities": [
+          0.12499999999999944,
+          0.0,
+          0.3749999999999985,
+          0.0,
+          0.12499999999999942,
+          0.0,
+          0.374999999999998,
+          0.0
+        ],
+        "return_probability": 0.12499999999999944,
+        "norm": 0.9999999999999977,
+        "independent_dense_reference_performed": true,
+        "independent_amplitude_recurrence_max_error": 1.246531298897714e-15,
+        "state_amplitude_max_error": 1.1322097734007353e-15,
+        "reference_probabilities": [
+          0.12499999999999989,
+          0.0,
+          0.3749999999999997,
+          0.0,
+          0.12499999999999989,
+          0.0,
+          0.3749999999999997,
+          0.0
+        ],
+        "classical_categorical_draw": {
+          "seed": 731,
+          "shots": 3329,
+          "position_counts": [
+            399,
+            0,
+            1233,
+            0,
+            432,
+            0,
+            1265,
+            0
+          ],
+          "return_mean": 0.11985581255632322,
+          "method": "classical NumPy draws from validated ideal position marginal; not hardware or repeated quantum execution"
+        }
+      },
+      "shot_weighted_primitive_gate_counts": {
+        "cx": 532640,
+        "rz": 412796,
+        "t": 93212,
+        "tdg": 79896,
+        "h": 33290,
+        "x": 16645,
+        "measure": 13316,
+        "ry": 9987,
+        "rx": 3329
+      },
+      "included": [
+        "explicit basis/coin preparation gates",
+        "every shift/evolution gate",
+        "all final readouts",
+        "all declared independent measured trials"
+      ],
+      "excluded": [
+        "physical initialization/reset timing and faults",
+        "hardware-specific routing and classical communication",
+        "classical compilation/decoding/control latency",
+        "concrete rotation synthesis and accuracy certificate"
+      ],
+      "provenance": {
+        "source_commit_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+        "source_commit_scope": "source hashes identify code if generation precedes a commit",
+        "sha256": {
+          "src/openquantum/quantum_walks.py": "8dcd4a28ebe982e48f3360a1e9c17fc8ea94f84cc4c0b1b0cedebd40e98ba0f6",
+          "src/openquantum/quantum_walks_continuous.py": "c380f3185a3fdb333f68852f5c1326f61deb2eca43ed99ebc09e32955cb09966",
+          "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+          "scripts/generate_quantum_walks.py": "8c42b76f31478888c7b3c99970e71bd22198ac02bfeb6177519038d4c687867c",
+          "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+        },
+        "python": "3.12.14",
+        "device": "CPU",
+        "seed": 731,
+        "packages": {
+          "qiskit": "2.6.2",
+          "numpy": "2.5.4",
+          "scipy": "1.18.1",
+          "matplotlib": "3.11.2",
+          "qdk": "1.34.0"
+        }
+      },
+      "physical_report_status": "canonical sweep only if requested; it does not estimate arbitrary selected parameters",
+      "classical_cycle_comparator": [
+        0.375,
+        0.0,
+        0.25,
+        0.0,
+        0.125,
+        0.0,
+        0.25,
+        0.0
+      ]
+    },
+    "continuous-time": {
+      "algorithm": "continuous-time",
+      "circuit_metadata": {
+        "algorithm": "continuous_time_hypercube_walk",
+        "position_qubits": 3,
+        "vertices": 8,
+        "time": 0.7,
+        "coupling": 1.0,
+        "initial_position": 0,
+        "scaled_time_Jt": 0.7,
+        "hamiltonian": "H=J*sum_i X_i",
+        "normalization": "edge weight J; graph degree n; normalized adjacency uses J=1/n",
+        "source_preparation_X_gates": 0,
+        "source_RX_rotations": 3,
+        "final_position_measurements": 3,
+        "bit_order": "q[n-1]...q[0], q[0] least significant",
+        "approximation": "exact commuting factorization with floating analytic angles; no synthesis certificate",
+        "included": [
+          "computational-basis X preparation",
+          "all RX term evolutions",
+          "requested final position measurements"
+        ],
+        "excluded": [
+          "clean-state initialization timing/faults",
+          "physical angle synthesis",
+          "classical decoding/control latency"
+        ]
+      },
+      "logical_qubits": 3,
+      "source_gate_counts": {
+        "rx": 3,
+        "measure": 3
+      },
+      "primitive_gate_counts": {
+        "rx": 3,
+        "measure": 3
+      },
+      "primitive_operations": 6,
+      "dependency_depth": 2,
+      "qasm_sha256": "9a4e7c3b3df9115686ce29f7d006143003bdf7c758e5136c14c193506603becc",
+      "compiled_global_phase_radians": 0.0,
+      "qasm_scope": "complete measured trial; the pinned exporter may omit overall phase, not a controlled-oracle specification",
+      "observable_contract": {
+        "absolute_error_target": 0.0301,
+        "algorithm_bias_bound": 0.0,
+        "synthesis_bias_allowance": 0.0001,
+        "sampling_error_allowance": 0.03,
+        "sampling_failure_probability": 0.005,
+        "physical_failure_probability": 0.005,
+        "outcome_min": 0.0,
+        "outcome_max": 1.0,
+        "kind": "one_bounded_scalar_mean",
+        "shots_required": 3329,
+        "confidence_status": "conditional_only; independent approximation evidence is required",
+        "certified_confidence_lower_bound": null,
+        "conditional_confidence_lower_bound": 0.99,
+        "assumptions": [
+          "Independent identically distributed bounded shots at one fixed circuit/parameter setting",
+          "The caller independently establishes the algorithm_bias_bound",
+          "The synthesis model scalar upper-bounds output-distribution total variation; this module does not certify it",
+          "The declared physical-fault model upper-bounds faults and the classical measurement interpretation is correct"
+        ],
+        "does_not_cover": [
+          "optimizer convergence",
+          "noncommuting observable grouping",
+          "multiple parameter settings",
+          "adaptive stopping"
+        ]
+      },
+      "validation": {
+        "performed": true,
+        "statevector_method": "Qiskit circuit with actual X/RX gates",
+        "reference_method": "Hamming-distance product probabilities; bounded bit-flip adjacency expm",
+        "probabilities": [
+          0.20018475869221777,
+          0.14202102017432058,
+          0.14202102017432058,
+          0.10075677240926172,
+          0.14202102017432058,
+          0.10075677240926176,
+          0.10075677240926176,
+          0.0714818635570355
+        ],
+        "reference_probabilities": [
+          0.2001847586922178,
+          0.14202102017432056,
+          0.14202102017432056,
+          0.10075677240926173,
+          0.14202102017432056,
+          0.10075677240926173,
+          0.10075677240926173,
+          0.07148186355703548
+        ],
+        "probability_max_absolute_error": 2.7755575615628914e-17,
+        "return_probability": 0.20018475869221777,
+        "analytic_return_probability": 0.2001847586922178,
+        "probability_sum": 1.0000000000000002,
+        "dense_operator_check_performed": true,
+        "operator_max_absolute_error": 2.220446049250313e-16,
+        "state_max_absolute_error": 1.6653345369377348e-16,
+        "scope": "bounded numerical circuit checks; not formal proof or angle-synthesis certificate",
+        "numerical_tolerance": 1e-12,
+        "numerical_checks_passed": true,
+        "classical_categorical_draw": {
+          "seed": 731,
+          "shots": 3329,
+          "position_counts": [
+            644,
+            520,
+            460,
+            340,
+            482,
+            341,
+            335,
+            207
+          ],
+          "return_mean": 0.19345148693301292,
+          "method": "classical NumPy draws from validated ideal position marginal; not hardware or repeated quantum execution"
+        }
+      },
+      "shot_weighted_primitive_gate_counts": {
+        "rx": 9987,
+        "measure": 9987
+      },
+      "included": [
+        "explicit basis/coin preparation gates",
+        "every shift/evolution gate",
+        "all final readouts",
+        "all declared independent measured trials"
+      ],
+      "excluded": [
+        "physical initialization/reset timing and faults",
+        "hardware-specific routing and classical communication",
+        "classical compilation/decoding/control latency",
+        "concrete rotation synthesis and accuracy certificate"
+      ],
+      "provenance": {
+        "source_commit_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+        "source_commit_scope": "source hashes identify code if generation precedes a commit",
+        "sha256": {
+          "src/openquantum/quantum_walks.py": "8dcd4a28ebe982e48f3360a1e9c17fc8ea94f84cc4c0b1b0cedebd40e98ba0f6",
+          "src/openquantum/quantum_walks_continuous.py": "c380f3185a3fdb333f68852f5c1326f61deb2eca43ed99ebc09e32955cb09966",
+          "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+          "scripts/generate_quantum_walks.py": "8c42b76f31478888c7b3c99970e71bd22198ac02bfeb6177519038d4c687867c",
+          "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+        },
+        "python": "3.12.14",
+        "device": "CPU",
+        "seed": 731,
+        "packages": {
+          "qiskit": "2.6.2",
+          "numpy": "2.5.4",
+          "scipy": "1.18.1",
+          "matplotlib": "3.11.2",
+          "qdk": "1.34.0"
+        }
+      },
+      "physical_report_status": "canonical sweep only if requested; it does not estimate arbitrary selected parameters"
+    }
+  },
+  "scaling_rows": [
+    {
+      "model": "coined",
+      "n": 2,
+      "vertices": 4,
+      "steps": 4,
+      "time": null,
+      "logical_qubits": 3,
+      "primitive_operations": 118,
+      "cx": 48,
+      "continuous_rotations": 11,
+      "measurements": 3,
+      "depth": 87,
+      "shots": 3329,
+      "all_shot_operations": 392822,
+      "return_probability": 9.109782750329092e-35,
+      "simulation_performed": true,
+      "qasm_sha256": "3214776f969fa89d4f8e88cd67521b144e65a21c11881b1834f15dd1511bebf7"
+    },
+    {
+      "model": "continuous-time",
+      "n": 2,
+      "vertices": 4,
+      "steps": null,
+      "time": 0.7,
+      "logical_qubits": 2,
+      "primitive_operations": 4,
+      "cx": 0,
+      "continuous_rotations": 2,
+      "measurements": 2,
+      "depth": 2,
+      "shots": 3329,
+      "all_shot_operations": 13316,
+      "return_probability": 0.34220577886653836,
+      "simulation_performed": true,
+      "qasm_sha256": "1dc4321a0720b3f08d8a75d194f2bedc7f4bd9cab76db3f69e2b973ba2b5c919"
+    },
+    {
+      "model": "coined",
+      "n": 3,
+      "vertices": 8,
+      "steps": 4,
+      "time": null,
+      "logical_qubits": 4,
+      "primitive_operations": 359,
+      "cx": 160,
+      "continuous_rotations": 128,
+      "measurements": 4,
+      "depth": 294,
+      "shots": 3329,
+      "all_shot_operations": 1195111,
+      "return_probability": 0.12499999999999944,
+      "simulation_performed": true,
+      "qasm_sha256": "c7b5622e8549e2f5f4378f9446f64d541ea1ac238bc06f86958c50bd4f0e4a28"
+    },
+    {
+      "model": "continuous-time",
+      "n": 3,
+      "vertices": 8,
+      "steps": null,
+      "time": 0.7,
+      "logical_qubits": 3,
+      "primitive_operations": 6,
+      "cx": 0,
+      "continuous_rotations": 3,
+      "measurements": 3,
+      "depth": 2,
+      "shots": 3329,
+      "all_shot_operations": 19974,
+      "return_probability": 0.20018475869221777,
+      "simulation_performed": true,
+      "qasm_sha256": "9a4e7c3b3df9115686ce29f7d006143003bdf7c758e5136c14c193506603becc"
+    },
+    {
+      "model": "coined",
+      "n": 4,
+      "vertices": 16,
+      "steps": 4,
+      "time": null,
+      "logical_qubits": 5,
+      "primitive_operations": 1052,
+      "cx": 448,
+      "continuous_rotations": 344,
+      "measurements": 5,
+      "depth": 867,
+      "shots": 3329,
+      "all_shot_operations": 3502108,
+      "return_probability": 0.12499999999999375,
+      "simulation_performed": true,
+      "qasm_sha256": "a5759942ebded55ade9a27b3602725f1f2c504b9766919804d95e31cd7c4a11e"
+    },
+    {
+      "model": "continuous-time",
+      "n": 4,
+      "vertices": 16,
+      "steps": null,
+      "time": 0.7,
+      "logical_qubits": 4,
+      "primitive_operations": 8,
+      "cx": 0,
+      "continuous_rotations": 4,
+      "measurements": 4,
+      "depth": 2,
+      "shots": 3329,
+      "all_shot_operations": 26632,
+      "return_probability": 0.11710479508965412,
+      "simulation_performed": true,
+      "qasm_sha256": "b2bb5b65b2ac1bb23068462e62aa87195b49030b63a73fccb1ede77c589f5859"
+    },
+    {
+      "model": "coined",
+      "n": 5,
+      "vertices": 32,
+      "steps": 4,
+      "time": null,
+      "logical_qubits": 6,
+      "primitive_operations": 2290,
+      "cx": 976,
+      "continuous_rotations": 864,
+      "measurements": 6,
+      "depth": 1510,
+      "shots": 3329,
+      "all_shot_operations": 7623410,
+      "return_probability": 0.12499999999999302,
+      "simulation_performed": true,
+      "qasm_sha256": "a4b3dd5040482f6d8b7c4e3bbdabbc1cdb3ce09de377dcd243f980b9b59f1f16"
+    },
+    {
+      "model": "continuous-time",
+      "n": 5,
+      "vertices": 32,
+      "steps": null,
+      "time": 0.7,
+      "logical_qubits": 5,
+      "primitive_operations": 10,
+      "cx": 0,
+      "continuous_rotations": 5,
+      "measurements": 5,
+      "depth": 2,
+      "shots": 3329,
+      "all_shot_operations": 33290,
+      "return_probability": 0.06850438126548039,
+      "simulation_performed": true,
+      "qasm_sha256": "ba8a787fa9ae046444bf6733f79d4f68b777546d143c5bbb01bee1217a4e4345"
+    },
+    {
+      "model": "coined",
+      "n": 6,
+      "vertices": 64,
+      "steps": 4,
+      "time": null,
+      "logical_qubits": 7,
+      "primitive_operations": 3907,
+      "cx": 1632,
+      "continuous_rotations": 1332,
+      "measurements": 7,
+      "depth": 2358,
+      "shots": 3329,
+      "all_shot_operations": 13006403,
+      "return_probability": 0.1249999999999928,
+      "simulation_performed": true,
+      "qasm_sha256": "bcf0af9b444369b5fe70545feb78e3339f4745448fe461ff6c20052975548fe6"
+    },
+    {
+      "model": "continuous-time",
+      "n": 6,
+      "vertices": 64,
+      "steps": null,
+      "time": 0.7,
+      "logical_qubits": 6,
+      "primitive_operations": 12,
+      "cx": 0,
+      "continuous_rotations": 6,
+      "measurements": 6,
+      "depth": 2,
+      "shots": 3329,
+      "all_shot_operations": 39948,
+      "return_probability": 0.040073937612661446,
+      "simulation_performed": true,
+      "qasm_sha256": "1192e0145a6661e917356550170a45e18f043d420eb0abe8edba63878d70c5ae"
+    },
+    {
+      "model": "coined",
+      "n": 8,
+      "vertices": 256,
+      "steps": 4,
+      "time": null,
+      "logical_qubits": 9,
+      "primitive_operations": 7573,
+      "cx": 3168,
+      "continuous_rotations": 2324,
+      "measurements": 9,
+      "depth": 4390,
+      "shots": 3329,
+      "all_shot_operations": 25210517,
+      "return_probability": 0.12499999999999219,
+      "simulation_performed": true,
+      "qasm_sha256": "140fb66cc3479fef9de961e7f47dd7d07fe925ed40fb4b0fe79bd6dd2abd3de3"
+    },
+    {
+      "model": "continuous-time",
+      "n": 8,
+      "vertices": 256,
+      "steps": null,
+      "time": 0.7,
+      "logical_qubits": 8,
+      "primitive_operations": 16,
+      "cx": 0,
+      "continuous_rotations": 8,
+      "measurements": 8,
+      "depth": 2,
+      "shots": 3329,
+      "all_shot_operations": 53264,
+      "return_probability": 0.013713533032989878,
+      "simulation_performed": true,
+      "qasm_sha256": "67ea79c553894a963913ce8c4f01547c403c3484fcea88dfed4f851a80994404"
+    }
+  ],
+  "physical_query_count": 24,
+  "provenance": {
+    "source_commit_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_commit_scope": "source hashes identify code if generation precedes a commit",
+    "sha256": {
+      "src/openquantum/quantum_walks.py": "8dcd4a28ebe982e48f3360a1e9c17fc8ea94f84cc4c0b1b0cedebd40e98ba0f6",
+      "src/openquantum/quantum_walks_continuous.py": "c380f3185a3fdb333f68852f5c1326f61deb2eca43ed99ebc09e32955cb09966",
+      "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+      "scripts/generate_quantum_walks.py": "8c42b76f31478888c7b3c99970e71bd22198ac02bfeb6177519038d4c687867c",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "python": "3.12.14",
+    "device": "CPU",
+    "seed": 731,
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "qdk": "1.34.0"
+    }
+  }
+}

@@ -1,0 +1,794 @@
+{
+  "schema_version": 1,
+  "kind": "complete unsynthesized recorded source logical workload",
+  "recipe_id": "optimization-matched-preparations-v1",
+  "objective_calls": 3672,
+  "training_groups": 5232,
+  "validation_groups": 48,
+  "group_batches": 5280,
+  "training_shots": 2363328,
+  "validation_shots": 786432,
+  "total_shots": 3149760,
+  "measured_qubit_readouts": 15748800,
+  "cpu_control_evaluations": 2424,
+  "per_run": [
+    {
+      "case_id": "qaoa-cycle-4-p1",
+      "start_id": "original",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 656256,
+        "h": 328128,
+        "rz": 328128,
+        "rx": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.02691479199893365,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p1",
+      "start_id": "original",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 656256,
+        "h": 328128,
+        "rz": 328128,
+        "rx": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.02527087499947811,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p1",
+      "start_id": "original",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 656256,
+        "h": 328128,
+        "rz": 328128,
+        "rx": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.025200666999808163,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p1",
+      "start_id": "alternate",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 656256,
+        "h": 328128,
+        "rz": 328128,
+        "rx": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.025333915998999146,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p1",
+      "start_id": "alternate",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 656256,
+        "h": 328128,
+        "rz": 328128,
+        "rx": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.03666087500096182,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p1",
+      "start_id": "alternate",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 656256,
+        "h": 328128,
+        "rz": 328128,
+        "rx": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.025557708000633284,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p2",
+      "start_id": "original",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1312512,
+        "rz": 656256,
+        "rx": 656256,
+        "h": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.06981466599972919,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p2",
+      "start_id": "original",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1312512,
+        "rz": 656256,
+        "rx": 656256,
+        "h": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.06964933299968834,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p2",
+      "start_id": "original",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1312512,
+        "rz": 656256,
+        "rx": 656256,
+        "h": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.07003695800085552,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p2",
+      "start_id": "alternate",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1312512,
+        "rz": 656256,
+        "rx": 656256,
+        "h": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.07022566700106836,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p2",
+      "start_id": "alternate",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1312512,
+        "rz": 656256,
+        "rx": 656256,
+        "h": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.07245466600033978,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-4-p2",
+      "start_id": "alternate",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1312512,
+        "rz": 656256,
+        "rx": 656256,
+        "h": 328128,
+        "measure": 328128
+      },
+      "optimizer_wall_seconds": 0.07053904200074612,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p1",
+      "start_id": "original",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 984384,
+        "h": 492192,
+        "rz": 492192,
+        "rx": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.0375584159992286,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p1",
+      "start_id": "original",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 984384,
+        "h": 492192,
+        "rz": 492192,
+        "rx": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.03750495799977216,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p1",
+      "start_id": "original",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 984384,
+        "h": 492192,
+        "rz": 492192,
+        "rx": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.037438334000398754,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p1",
+      "start_id": "alternate",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 984384,
+        "h": 492192,
+        "rz": 492192,
+        "rx": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.037155959000301664,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p1",
+      "start_id": "alternate",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 984384,
+        "h": 492192,
+        "rz": 492192,
+        "rx": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.03739304200098559,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p1",
+      "start_id": "alternate",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 984384,
+        "h": 492192,
+        "rz": 492192,
+        "rx": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.03742045799845073,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p2",
+      "start_id": "original",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1968768,
+        "rz": 984384,
+        "rx": 984384,
+        "h": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.10304066600110673,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p2",
+      "start_id": "original",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1968768,
+        "rz": 984384,
+        "rx": 984384,
+        "h": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.1045181669996964,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p2",
+      "start_id": "original",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1968768,
+        "rz": 984384,
+        "rx": 984384,
+        "h": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.11538587500035646,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p2",
+      "start_id": "alternate",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1968768,
+        "rz": 984384,
+        "rx": 984384,
+        "h": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.1054943330000242,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p2",
+      "start_id": "alternate",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1968768,
+        "rz": 984384,
+        "rx": 984384,
+        "h": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.10350225000001956,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-6-p2",
+      "start_id": "alternate",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "training_preparations": 65648,
+      "validation_preparations": 16384,
+      "total_shots": 82032,
+      "weighted_gate_counts": {
+        "cx": 1968768,
+        "rz": 984384,
+        "rx": 984384,
+        "h": 492192,
+        "measure": 492192
+      },
+      "optimizer_wall_seconds": 0.11315558299975237,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-4",
+      "start_id": "original",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 393664,
+        "measure": 393664,
+        "cx": 295248,
+        "h": 196832
+      },
+      "optimizer_wall_seconds": 0.058310500000516186,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-4",
+      "start_id": "original",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 393664,
+        "measure": 393664,
+        "cx": 295248,
+        "h": 196832
+      },
+      "optimizer_wall_seconds": 0.05985537499873317,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-4",
+      "start_id": "original",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 393664,
+        "measure": 393664,
+        "cx": 295248,
+        "h": 196832
+      },
+      "optimizer_wall_seconds": 0.05764287499914644,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-4",
+      "start_id": "alternate",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 393664,
+        "measure": 393664,
+        "cx": 295248,
+        "h": 196832
+      },
+      "optimizer_wall_seconds": 0.05751779099955456,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-4",
+      "start_id": "alternate",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 393664,
+        "measure": 393664,
+        "cx": 295248,
+        "h": 196832
+      },
+      "optimizer_wall_seconds": 0.05638925000130257,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-4",
+      "start_id": "alternate",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 393664,
+        "measure": 393664,
+        "cx": 295248,
+        "h": 196832
+      },
+      "optimizer_wall_seconds": 0.05649570800051151,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-6",
+      "start_id": "original",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 590496,
+        "measure": 590496,
+        "cx": 492080,
+        "h": 295248
+      },
+      "optimizer_wall_seconds": 0.11351708300026075,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-6",
+      "start_id": "original",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 590496,
+        "measure": 590496,
+        "cx": 492080,
+        "h": 295248
+      },
+      "optimizer_wall_seconds": 0.11951045800014981,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-6",
+      "start_id": "original",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 590496,
+        "measure": 590496,
+        "cx": 492080,
+        "h": 295248
+      },
+      "optimizer_wall_seconds": 0.11313704199892527,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-6",
+      "start_id": "alternate",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 590496,
+        "measure": 590496,
+        "cx": 492080,
+        "h": 295248
+      },
+      "optimizer_wall_seconds": 0.12793691600018064,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-6",
+      "start_id": "alternate",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 590496,
+        "measure": 590496,
+        "cx": 492080,
+        "h": 295248
+      },
+      "optimizer_wall_seconds": 0.11208412499945553,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-6",
+      "start_id": "alternate",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": null,
+      "algorithm": "vqe",
+      "training_preparations": 65648,
+      "validation_preparations": 32768,
+      "total_shots": 98416,
+      "weighted_gate_counts": {
+        "ry": 590496,
+        "measure": 590496,
+        "cx": 492080,
+        "h": 295248
+      },
+      "optimizer_wall_seconds": 0.11477554100019915,
+      "hardware_feedback_seconds": null
+    }
+  ],
+  "total_preparations": 3149760,
+  "weighted_gate_counts": {
+    "cx": 34255488,
+    "h": 12796320,
+    "rz": 14765760,
+    "rx": 14765760,
+    "measure": 15748800,
+    "ry": 5904960
+  },
+  "logical_peak_qubits": 6,
+  "shot_weighted_source_unitary_gates": 82488288,
+  "cpu_controls": 24,
+  "cpu_control_final_audits": 24,
+  "cpu_control_quantum_preparations": 0,
+  "cpu_control_virtual_allocations_excluded": true,
+  "physical_resource_estimate": null,
+  "hardware_feedback_seconds": null,
+  "scaling": {
+    "qaoa": "H=n,RX=np,RZ=mp,CX=2mp,measure=n per group",
+    "vqe": "RY=n,CX=n-1,H=n for all-X,measure=n per group",
+    "calls": "1+(1+2D)*12 plus one holdout; g groups per call",
+    "training_preparations": "g*[initial+(1+2D)*28b]=65648",
+    "statevector_memory": "O(2^n)",
+    "dense_reference_memory": "O(4^n)"
+  },
+  "exclusions": [
+    "ideal CPU sampling only; no hardware-calibrated noise, predictive convergence or quantum advantage",
+    "matched training preparations do not match gate, synthesis or physical costs",
+    "CPU controls use exact moments, not zero-shot quantum algorithms or expected stochastic paths",
+    "no global ansatz optimum or infeasibility certified by failed local polling",
+    "holdout confidence is conditional on frozen final states and excludes adaptive training",
+    "source ledger excludes unmeasured physical reset, routing, synthesis, fault correction and feedback",
+    "Classical C4 reference coverage only"
+  ],
+  "provenance": {
+    "generated_at_utc": "2026-11-12T17:11:47.471348+00:00",
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "jupyter-book": "2.1.7",
+      "qdk": "1.34.0"
+    },
+    "device": {
+      "backend": "CPU Qiskit Statevector, NumPy PCG64 ideal sampling and independent dense references",
+      "architecture": "arm64",
+      "operating_system": "Darwin",
+      "accelerator": null
+    },
+    "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+    "generator_sha256": "0c0f3ff0f177dca99a00cc611261c3b6c82ce39be251e8d3a54026b0f5346f3e",
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "source_commit": "92b32c0fbe6700276612ea937c8942e2739b6355",
+    "dirty_owned_source": false,
+    "invocation": "python scripts/generate_optimization_diagnostics.py",
+    "git_provenance_helper_sha256": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+    "revision_note": "Checkout revision identifies the base; captured content hashes identify executed code",
+    "freeze_sha256": "2e18c7677ebd992a2642c754397e8d48fdea8287dd9aa65474fa3ef3cc76a3b7",
+    "recipe_sha256": "3b991eaece34b43116afbbbc85d5e8da9e76fe7c9ff217a45c254989c40f5dd9"
+  },
+  "numerical_input_sha256": "a8649f45dd948302f201654e9ad341824363357fd37f8ed343281cdf9d846688",
+  "artifact_status": "complete",
+  "circuit_manifest": {
+    "file": "circuit-manifest.json",
+    "sha256": "3ac01d8e8c60469a2ea0effadf11f21efa2fb747f3e61cc3d28ce67337ff1c94",
+    "total_groups": 5280,
+    "unique_circuit_count": 1147
+  }
+}

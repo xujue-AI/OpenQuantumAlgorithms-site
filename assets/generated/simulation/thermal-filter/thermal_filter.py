@@ -331,6 +331,21 @@ def _pauli_shots(error: float, failure: float) -> int:
     return max(1, math.ceil(math.exp(log_count)))
 
 
+def expected_trials_stopped_at_cap(acceptance_probability: float, cap: int) -> float:
+    """E[min(T, cap)] for an iid geometric trial count T, including exhaustion.
+
+    This is an unconditional stopped expectation for one requested slot, not
+    the unlimited 1/p expectation or an expectation conditional on acceptance.
+    log1p/expm1 retain the finite-cap limit when tiny p rounds 1-p to one.
+    """
+    p = _real(acceptance_probability, "acceptance_probability")
+    if not 0 < p <= 1 or isinstance(cap, bool) or not isinstance(cap, int) or cap < 1:
+        raise ValueError("need 0<p<=1 and a positive integer complete-trial cap")
+    if p == 1:
+        return 1.0
+    return -math.expm1(cap*math.log1p(-p))/p
+
+
 def thermal_energy_workload(acceptance_probability: float, terms=DEFAULT_TERMS,
                             statistical_error: float = .03, statistical_failure: float = .005,
                             acceptance_failure: float = .005, physical_failure: float = .005) -> dict:
@@ -339,7 +354,8 @@ def thermal_energy_workload(acceptance_probability: float, terms=DEFAULT_TERMS,
     No single Z-basis bitstring supplies a noncommuting X/Z energy. For each
     nonzero Pauli group, equal accepted-shot error statistical_error/sum|c|
     guarantees the weighted statistical error allocation by a triangle bound.
-    The returned trial caps are unexecuted resource proposals.
+    The returned trial caps and expectations are unexecuted resource proposals.
+    Every requested slot is attempted even if another slot exhausts its cap.
     """
     terms, _, n = _model(terms, 0)
     p = _real(acceptance_probability, "acceptance_probability")
@@ -361,23 +377,34 @@ def thermal_energy_workload(acceptance_probability: float, terms=DEFAULT_TERMS,
         raise ValueError("need positive statistical error and separate failure allowances summing below one")
     if not coefficients:
         return {"status": "known constant energy; no sampling required", "identity_offset": identity,
-                "groups": [], "total_accepted_shots": 0, "worst_case_complete_trials": 0}
+                "groups": [], "total_accepted_shots": 0, "worst_case_complete_trials": 0,
+                "expected_complete_trials": 0, "expected_complete_trials_uncapped": 0,
+                "expected_complete_trials_stopped_at_cap": 0,
+                "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p"}
     shots = _pauli_shots(error/weight, sf/len(coefficients))
     total = len(coefficients)*shots
     per_shot_acceptance_failure = af/total
     if per_shot_acceptance_failure == 0:
         raise ValueError("per-shot acceptance allocation underflowed")
     cap = postselection_attempts(p, per_shot_acceptance_failure)
+    stopped_per_slot = expected_trials_stopped_at_cap(p, cap)
     groups = [{"axis": axis, "coefficient": c, "accepted_shots": shots,
                "pauli_statistical_error": error/weight, "statistical_failure": sf/len(coefficients),
                "complete_trial_cap_per_accepted_shot": cap,
-               "worst_case_complete_trials": shots*cap, "expected_complete_trials": shots/p}
+               "worst_case_complete_trials": shots*cap, "expected_complete_trials": shots/p,
+               "expected_complete_trials_uncapped": shots/p,
+               "expected_complete_trials_stopped_at_cap": shots*stopped_per_slot,
+               "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p"}
               for axis, c in sorted(coefficients.items())]
     return {"status": "unexecuted grouped noncommuting energy-mean workload proposal",
             "identity_offset": identity, "groups": groups, "total_accepted_shots": total,
             "statistical_energy_error_allowance": error, "statistical_failure_probability": sf,
             "acceptance_failure_probability": af, "physical_failure_probability": pf,
             "worst_case_complete_trials": total*cap, "expected_complete_trials": total/p,
+            "expected_complete_trials_uncapped": total/p,
+            "expected_complete_trials_stopped_at_cap": total*stopped_per_slot,
+            "expected_complete_trials_scope": "legacy alias for uncapped geometric expectation M/p",
+            "stopped_expectation_scope": "M*(1-(1-p)^R)/p; every requested slot stops on acceptance or cap R, including exhausted slots; all M slots are attempted, without early abort or conditioning on workload success",
             "physical_failure_per_complete_trial_proposal": pf/(total*cap),
             "sampling_performed": False,
             "scope": "separate Pauli-basis accepted iid samples; every complete retry re-prepares Bell input/access and runs final readout"}

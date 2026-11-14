@@ -1,0 +1,7 @@
+name: openquantum-demo
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.14
+  - pip
+  - jupyterlab>=4,<5

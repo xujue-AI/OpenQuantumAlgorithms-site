@@ -1,0 +1,784 @@
+{
+  "modulus": 15,
+  "config": {
+    "seed": 20261112,
+    "max_base_draws": 3,
+    "shots_per_coprime_base": 1,
+    "max_quantum_trials": 3,
+    "phase_bits": null
+  },
+  "phase_bits": 8,
+  "precision_kind": "standard_2n_resolution",
+  "base_sampling": "uniform_with_replacement_2_through_N_minus_1",
+  "preliminary_checks": {
+    "decision": "quantum_needed",
+    "checks": [
+      "even",
+      "exact_perfect_power",
+      "bounded_miller_rabin_2_3"
+    ],
+    "factors": []
+  },
+  "trace": [
+    {
+      "kind": "base_draw",
+      "draw_index": 0,
+      "base": 14,
+      "gcd": 1,
+      "quantum_attempts": [
+        {
+          "modulus": 15,
+          "base": 14,
+          "phase_bits": 8,
+          "total_qubits": 11,
+          "bits_lsb_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "outcome": 0,
+          "selected_joint_probability": 0.5,
+          "steps": [
+            {
+              "output_bit": 0,
+              "power_bit": 7,
+              "multiplier": 1,
+              "previous_bits": [],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 1,
+              "power_bit": 6,
+              "multiplier": 1,
+              "previous_bits": [
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 2,
+              "power_bit": 5,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 3,
+              "power_bit": 4,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 4,
+              "power_bit": 3,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 5,
+              "power_bit": 2,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 6,
+              "power_bit": 1,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 7,
+              "power_bit": 0,
+              "multiplier": 14,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 0.5,
+              "selected_conditional_probability": 0.5,
+              "raw_norm_before_probability_normalization": 0.999999999999953,
+              "work_register_zero_probability": 1.0
+            }
+          ],
+          "quantum_execution": "ideal statevector evolution of actual arithmetic; explicit sampled projection and recycling",
+          "floating_point_norm_tolerance": 1e-10,
+          "order_reference_used": false,
+          "logical_ledger": {
+            "total_logical_qubits": 11,
+            "primitive_gate_counts": {
+              "rz": 2375,
+              "cx": 2060,
+              "h": 220,
+              "reset": 18,
+              "ry": 16,
+              "t": 16,
+              "tdg": 12,
+              "measure": 8,
+              "x": 1
+            },
+            "primitive_operations": 4726,
+            "dependency_depth": 2914,
+            "measurements": 8,
+            "initial_all_wire_resets": 11,
+            "recycling_resets": 7,
+            "executed_feedback_phases": 0,
+            "conditional_checks_in_dynamic_program": 28,
+            "scope": "entire observed ideal trajectory including resets/readouts; no hardware timing or physical projection",
+            "compiled_global_phase_radians": 3.1415926535897944
+          },
+          "shot_for_base": 0,
+          "verified_period_candidate": null,
+          "factors": [],
+          "failure_reason": "no_verified_period"
+        }
+      ]
+    },
+    {
+      "kind": "base_draw",
+      "draw_index": 1,
+      "base": 13,
+      "gcd": 1,
+      "quantum_attempts": [
+        {
+          "modulus": 15,
+          "base": 13,
+          "phase_bits": 8,
+          "total_qubits": 11,
+          "bits_lsb_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "outcome": 128,
+          "selected_joint_probability": 0.25,
+          "steps": [
+            {
+              "output_bit": 0,
+              "power_bit": 7,
+              "multiplier": 1,
+              "previous_bits": [],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 1,
+              "power_bit": 6,
+              "multiplier": 1,
+              "previous_bits": [
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 2,
+              "power_bit": 5,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 3,
+              "power_bit": 4,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 4,
+              "power_bit": 3,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 5,
+              "power_bit": 2,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 6,
+              "power_bit": 1,
+              "multiplier": 4,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 0.5,
+              "selected_conditional_probability": 0.5,
+              "raw_norm_before_probability_normalization": 0.9999999999999565,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 7,
+              "power_bit": 0,
+              "multiplier": 13,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 1,
+              "conditional_probability_zero": 0.5,
+              "selected_conditional_probability": 0.5,
+              "raw_norm_before_probability_normalization": 0.9999999999999541,
+              "work_register_zero_probability": 0.9999999999999999
+            }
+          ],
+          "quantum_execution": "ideal statevector evolution of actual arithmetic; explicit sampled projection and recycling",
+          "floating_point_norm_tolerance": 1e-10,
+          "order_reference_used": false,
+          "logical_ledger": {
+            "total_logical_qubits": 11,
+            "primitive_gate_counts": {
+              "rz": 4544,
+              "cx": 3940,
+              "h": 438,
+              "ry": 32,
+              "t": 32,
+              "tdg": 24,
+              "reset": 18,
+              "measure": 8,
+              "x": 1
+            },
+            "primitive_operations": 9037,
+            "dependency_depth": 5410,
+            "measurements": 8,
+            "initial_all_wire_resets": 11,
+            "recycling_resets": 7,
+            "executed_feedback_phases": 0,
+            "conditional_checks_in_dynamic_program": 28,
+            "scope": "entire observed ideal trajectory including resets/readouts; no hardware timing or physical projection",
+            "compiled_global_phase_radians": 1.0547118733938987e-14
+          },
+          "shot_for_base": 0,
+          "verified_period_candidate": null,
+          "factors": [],
+          "failure_reason": "no_verified_period"
+        }
+      ]
+    },
+    {
+      "kind": "base_draw",
+      "draw_index": 2,
+      "base": 14,
+      "gcd": 1,
+      "quantum_attempts": [
+        {
+          "modulus": 15,
+          "base": 14,
+          "phase_bits": 8,
+          "total_qubits": 11,
+          "bits_lsb_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "outcome": 0,
+          "selected_joint_probability": 0.5,
+          "steps": [
+            {
+              "output_bit": 0,
+              "power_bit": 7,
+              "multiplier": 1,
+              "previous_bits": [],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 1,
+              "power_bit": 6,
+              "multiplier": 1,
+              "previous_bits": [
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 2,
+              "power_bit": 5,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 3,
+              "power_bit": 4,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 4,
+              "power_bit": 3,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 5,
+              "power_bit": 2,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 6,
+              "power_bit": 1,
+              "multiplier": 1,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 1.0,
+              "selected_conditional_probability": 1.0,
+              "raw_norm_before_probability_normalization": 0.9999999999999996,
+              "work_register_zero_probability": 1.0
+            },
+            {
+              "output_bit": 7,
+              "power_bit": 0,
+              "multiplier": 14,
+              "previous_bits": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "feedback_angles": [],
+              "measured_bit": 0,
+              "conditional_probability_zero": 0.5,
+              "selected_conditional_probability": 0.5,
+              "raw_norm_before_probability_normalization": 0.999999999999953,
+              "work_register_zero_probability": 1.0
+            }
+          ],
+          "quantum_execution": "ideal statevector evolution of actual arithmetic; explicit sampled projection and recycling",
+          "floating_point_norm_tolerance": 1e-10,
+          "order_reference_used": false,
+          "logical_ledger": {
+            "total_logical_qubits": 11,
+            "primitive_gate_counts": {
+              "rz": 2375,
+              "cx": 2060,
+              "h": 220,
+              "reset": 18,
+              "ry": 16,
+              "t": 16,
+              "tdg": 12,
+              "measure": 8,
+              "x": 1
+            },
+            "primitive_operations": 4726,
+            "dependency_depth": 2914,
+            "measurements": 8,
+            "initial_all_wire_resets": 11,
+            "recycling_resets": 7,
+            "executed_feedback_phases": 0,
+            "conditional_checks_in_dynamic_program": 28,
+            "scope": "entire observed ideal trajectory including resets/readouts; no hardware timing or physical projection",
+            "compiled_global_phase_radians": 3.1415926535897944
+          },
+          "shot_for_base": 0,
+          "verified_period_candidate": null,
+          "factors": [],
+          "failure_reason": "no_verified_period"
+        }
+      ]
+    }
+  ],
+  "base_draws": 3,
+  "quantum_trials": 3,
+  "factors": [],
+  "status": "exhausted_base_draws",
+  "generic_success_certificate": null,
+  "quantum_emulation_wall_seconds": 0.28898525051772594,
+  "classical_postprocessing_wall_seconds": 2.4332664906978607e-05,
+  "logical_compilation_wall_seconds": 0.13603787496685982,
+  "classical_base_selection_and_gcd_wall_seconds": 6.0791149735450745e-05,
+  "classical_precheck_wall_seconds": 1.2458302080631256e-05,
+  "executed_quantum_primitive_counts": {
+    "rz": 9294,
+    "cx": 8060,
+    "h": 878,
+    "reset": 54,
+    "ry": 64,
+    "t": 64,
+    "tdg": 48,
+    "measure": 24,
+    "x": 3
+  },
+  "executed_quantum_primitive_operations": 18489,
+  "peak_logical_qubits": 11,
+  "resource_estimate_status": "actual ideal trajectory logical counts; adaptive reset/feedback physical projection pending",
+  "wall_seconds": 0.4252362083643675,
+  "numerical_policy_audit": {
+    "modulus": 15,
+    "config": {
+      "seed": 20261112,
+      "max_base_draws": 3,
+      "shots_per_coprime_base": 1,
+      "max_quantum_trials": 3,
+      "phase_bits": null
+    },
+    "is_certified_confidence_bound": false,
+    "scope": "independent numerical ideal reference for uniform random bases; not a hardware confidence or algorithm execution",
+    "assumptions": [
+      "fresh independent reset/preparation for every quantum trial",
+      "exact arithmetic and analytic-angle measurement/feedback",
+      "uniform independent base draws with replacement from2 throughN-1",
+      "same continued-fraction verification and global cap policy as driver"
+    ],
+    "reference_order_is_audit_only": true,
+    "status": "computed_numerical_ideal_policy",
+    "phase_bits": 8,
+    "ideal_failure_probability": 0.029130632680928543,
+    "ideal_success_probability": 0.9708693673190715,
+    "base_records": [
+      {
+        "base": 2,
+        "gcd": 1,
+        "classical_factor_success": false,
+        "quantum_factor_probability": 0.5
+      },
+      {
+        "base": 3,
+        "gcd": 3,
+        "classical_factor_success": true,
+        "quantum_factor_probability": null
+      },
+      {
+        "base": 4,
+        "gcd": 1,
+        "classical_factor_success": false,
+        "quantum_factor_probability": 0.5
+      },
+      {
+        "base": 5,
+        "gcd": 5,
+        "classical_factor_success": true,
+        "quantum_factor_probability": null
+      },
+      {
+        "base": 6,
+        "gcd": 3,
+        "classical_factor_success": true,
+        "quantum_factor_probability": null
+      },
+      {
+        "base": 7,
+        "gcd": 1,
+        "classical_factor_success": false,
+        "quantum_factor_probability": 0.5
+      },
+      {
+        "base": 8,
+        "gcd": 1,
+        "classical_factor_success": false,
+        "quantum_factor_probability": 0.5
+      },
+      {
+        "base": 9,
+        "gcd": 3,
+        "classical_factor_success": true,
+        "quantum_factor_probability": null
+      },
+      {
+        "base": 10,
+        "gcd": 5,
+        "classical_factor_success": true,
+        "quantum_factor_probability": null
+      },
+      {
+        "base": 11,
+        "gcd": 1,
+        "classical_factor_success": false,
+        "quantum_factor_probability": 0.5
+      },
+      {
+        "base": 12,
+        "gcd": 3,
+        "classical_factor_success": true,
+        "quantum_factor_probability": null
+      },
+      {
+        "base": 13,
+        "gcd": 1,
+        "classical_factor_success": false,
+        "quantum_factor_probability": 0.5
+      },
+      {
+        "base": 14,
+        "gcd": 1,
+        "classical_factor_success": false,
+        "quantum_factor_probability": 0.0
+      }
+    ],
+    "policy_recurrence": "average coprime failure**used_shots times continuation; early quantum cap is terminal except next base's prequantum gcd",
+    "global_quantum_cap_censoring_included": true
+  },
+  "adaptive_program_exports": [
+    {
+      "base": 14,
+      "phase_bits": 8,
+      "file": "adaptive-a14-t8.qasm",
+      "qasm_sha256": "a265d10907f68d9b6fec2c88215551c96908a876a0d738ae3764a437067ae78b",
+      "all_true_branch_primitive_counts": {
+        "reset": 18,
+        "x": 1,
+        "rz": 2403,
+        "h": 232,
+        "cx": 2060,
+        "measure": 8,
+        "ry": 16,
+        "tdg": 12,
+        "t": 16
+      },
+      "source_condition_checks": 28,
+      "count_scope": "source program upper ledger; full observed path costs in each actual trial",
+      "initial_all_wire_resets": 11,
+      "recycling_resets": 7,
+      "global_phase_policy": "overall and classically selected branch phases omitted by pinned exporter; measured instrument probabilities preserved, no coherent recontrol specification"
+    },
+    {
+      "base": 13,
+      "phase_bits": 8,
+      "file": "adaptive-a13-t8.qasm",
+      "qasm_sha256": "aacbe7f3f8fba7f8ee4da5fb782a054c905bab0214c412ec89767a82972a9720",
+      "all_true_branch_primitive_counts": {
+        "reset": 18,
+        "x": 1,
+        "rz": 4572,
+        "h": 448,
+        "cx": 3940,
+        "measure": 8,
+        "ry": 32,
+        "tdg": 24,
+        "t": 32
+      },
+      "source_condition_checks": 28,
+      "count_scope": "source program upper ledger; full observed path costs in each actual trial",
+      "initial_all_wire_resets": 11,
+      "recycling_resets": 7,
+      "global_phase_policy": "overall and classically selected branch phases omitted by pinned exporter; measured instrument probabilities preserved, no coherent recontrol specification"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2"
+    },
+    "device": "CPU",
+    "seed": 20261112
+  },
+  "source_sha256": {
+    "shor.py": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3",
+    "shor_driver.py": "a8affd1fff81b06917147dddd03f6efd18bf4824219da0fb575b7702ddd0e950"
+  },
+  "source_commit": "d507365156b686cbe208633dff265fcd988f4f9c",
+  "source_commit_scope": "checkout at generation; exact working module hashes recorded separately",
+  "artifact_generation_wall_seconds": 0.29810508247464895
+}

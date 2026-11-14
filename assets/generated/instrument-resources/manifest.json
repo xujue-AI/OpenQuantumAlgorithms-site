@@ -1,0 +1,108 @@
+{
+  "status": "complete measured-instrument conditional physical models computed",
+  "models": [
+    "damping-Z",
+    "lindblad-Z",
+    "thermal-Z",
+    "thermal-X"
+  ],
+  "source_sha256": {
+    "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "generate_instrument_resources.py": "0d385faadfda3615ac3f3da60e49ce50a7166b3249b8ba2b8eb54e7b20ded4a5",
+    "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+    "lindblad.py": "069ee82b310defbaba395b74111072553fc830487a09a81a1a44d782d593698f",
+    "thermal_filter.py": "2d58a96bb1bfe37f804bd8f60f54110d9ba617424b95f0bd37a0745eef92848b",
+    "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "references.bib": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "task_artifact_sha256": {
+    "damping-Z": {
+      "source-instrument.qasm": "0fcd45f0cb755a39f90318b63b6bdc573b2eccc5f43ad02b4c7ab6faeee58395",
+      "clifford-t-instrument.qasm": "34501996bb120b465d6988de8cdb499784a410cc11e1a2e4cf5b2ed7a8e34d25",
+      "report.json": "7b6a81da033ef2015132e346752ce0a94c7fba29628730b11547156a81cda6f4"
+    },
+    "lindblad-Z": {
+      "source-instrument.qasm": "399617a4398b9ed2a395731032cefd87c4f9b1c13cd8891029e9191b1412ccd5",
+      "clifford-t-instrument.qasm": "db1bc3ed3705d23fecc29242ef4c6c4060f74104e93c7be335e6a4aeb04a57fe",
+      "report.json": "80188830b9bca6c96ac58dcd7406f9bc00370205b455338bb445a35e6207817f"
+    },
+    "thermal-Z": {
+      "source-instrument.qasm": "02925bbabc832c236b27b6f7a06a9080e1a861eb35eb4bc7dd1e20610b8bedee",
+      "clifford-t-instrument.qasm": "8805293d254a0d4c00a0d0a902554c8e20024cf4902ec7aa1118def5f9ad2cfc",
+      "report.json": "d78d8d06e5c85812a02604e1fabfb951a0121613a8b656bda314c4e4e9563b75"
+    },
+    "thermal-X": {
+      "source-instrument.qasm": "5911ebddbfd683730ec2762f05941f91e0a60aba8459273ecd9616952384551b",
+      "clifford-t-instrument.qasm": "0d756addbe06ce08ae8c7b5676f91be2d47b40b31e395ae9df21ae5f64ea0571",
+      "report.json": "2447b61a6c36a393d02683242a544e68105c0a9ac43cda7ca7270374678fbae5"
+    }
+  },
+  "packages": {
+    "qiskit": "2.6.2",
+    "qdk": "1.34.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "runtime_environment": {
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "operating_system": "Darwin",
+    "architecture": "arm64",
+    "device": "CPU; deterministic small density-matrix checks; no GPU/hardware job",
+    "random_seed": null,
+    "seed_scope": "SABRE seed 7; gridsynth_unitary has no exposed synthesis seed"
+  },
+  "source_commit_at_generation": "d4d0aedafc5e92f9a33c3bff34a5e79d83a63af1",
+  "dirty_source_paths": [],
+  "revision_note": "Source SHA-256 identities are authoritative; Git revision is optional and records only a verified exact project root.",
+  "frozen_grover_baseline_changed": false,
+  "frozen_grover_baseline_fingerprints": {
+    "before": {
+      "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+      "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+      "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+      "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+      "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+    },
+    "after": {
+      "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+      "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+      "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+      "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+      "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+    },
+    "scope": "Only available canonical source/QASM/resource files are checked; absent files are null."
+  },
+  "summary_scope": "serialized line-layout and factory-supply baseline; not hardware-calibrated or formally certified",
+  "online_control": "reset/correction, factory retry and complete-trial accept/counter dispatch costs are charged",
+  "offline_classical_work": "actual synthesis wall time recorded separately; coefficient generation/final report wall time not included in conditional quantum runtime",
+  "thermal_energy_workload": {
+    "task": "noncommuting thermal energy .6Z+.4X",
+    "complete_attempts": 852592,
+    "total_accepted_samples": 32792,
+    "conditional_failure_budget_sum": 0.01,
+    "conditional_energy_error_upper_estimate": 0.030030389967042173,
+    "clifford_t_energy_mean": -0.5170153997973548,
+    "physical_profiles": [
+      {
+        "physical_error": 0.001,
+        "peak_physical_qubits_sequential_groups": 720375,
+        "worst_case_runtime_all_groups_ns": 3097074628939200,
+        "full_physical_failure_model_all_groups": 0.0005188648237688453,
+        "factory_availability_failure_model_all_groups": 0.000325690144,
+        "scope": "sequential groups with per-attempt initialization; peak reused hardware, not summed qubits"
+      },
+      {
+        "physical_error": 0.0001,
+        "peak_physical_qubits_sequential_groups": 159395,
+        "worst_case_runtime_all_groups_ns": 1758000454475200,
+        "full_physical_failure_model_all_groups": 0.0003156137293114122,
+        "factory_availability_failure_model_all_groups": 0.000325690144,
+        "scope": "sequential groups with per-attempt initialization; peak reused hardware, not summed qubits"
+      }
+    ],
+    "formal_confidence_certificate": false
+  }
+}

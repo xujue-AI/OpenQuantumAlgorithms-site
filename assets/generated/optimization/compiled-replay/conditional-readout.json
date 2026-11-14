@@ -1,0 +1,18 @@
+{
+  "sampling_family_failure": 0.04,
+  "sampling_group_failure": 0.0008333333333333334,
+  "family_group_count": 48,
+  "fixed_final_shots": 16384,
+  "compiled_vs_source_ratio_bias_upper_estimate": 1.1343240749927517e-08,
+  "normalized_precision_radius": 0.015411862204928689,
+  "saved_ideal_ratio_estimate": 0.9884033203125,
+  "illustrative_interval_if_compiled_estimator_had_saved_value": [
+    0.9729914581075713,
+    1.0038151825174286
+  ],
+  "lower_if_the_compiled_estimator_had_the_saved_value": 0.9729914581075713,
+  "source_exact_ratio": 0.988198949524447,
+  "compiled_exact_ratio": 0.9881989495144591,
+  "future_supported_interval_lower_on_concentration_event": 0.9573752364478424,
+  "scope": "prospective fixed-state concentration plus numerical mean-shift bound; saved counts were ideal and were not rerun on the compiled circuit"
+}

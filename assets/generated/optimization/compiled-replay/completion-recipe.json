@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "recipe_id": "qaoa-lossless-physical-completion-v1",
+  "original_identity": {
+    "recipe_sha256": "6f421cfef08d7b552433a9360ce5091f5fb4c8dc21f4ba0b14143da4f6ddd343",
+    "selected_transcript_sha256": "4a988dcc5651c15d994a256f01982a536227ba92549bf1e08cad4c3549b529ef",
+    "source_sha256": {
+      "optimization_compiled.py": "5802330c76ea71ec46fcd207018b805a2c1da29a91f9b1ee6deb5defcd36f5fc",
+      "generate_optimization_compiled.py": "6dafe1aa49c656a732b2d534cefb7aee99a68b215dc3322c769a20bf358e0ecb",
+      "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+      "parent_optimization.py": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+      "parent_generate_optimization_diagnostics.py": "0c0f3ff0f177dca99a00cc611261c3b6c82ce39be251e8d3a54026b0f5346f3e",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+      "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+      "references.bib": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b"
+    }
+  },
+  "original_recipe_sha256": "6f421cfef08d7b552433a9360ce5091f5fb4c8dc21f4ba0b14143da4f6ddd343",
+  "original_model_recipe": {
+    "schema_version": 1,
+    "recipe_id": "optimization-qaoa-actual-compiled-replay-v1",
+    "run_id": "qaoa-cycle-4-p2-alternate-seed-7",
+    "bindings": {
+      "parent_raw_sha256": "a8649f45dd948302f201654e9ad341824363357fd37f8ed343281cdf9d846688",
+      "parent_implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+      "parent_generator_sha256": "0c0f3ff0f177dca99a00cc611261c3b6c82ce39be251e8d3a54026b0f5346f3e",
+      "parent_recipe_sha256": "3b991eaece34b43116afbbbc85d5e8da9e76fe7c9ff217a45c254989c40f5dd9",
+      "selected_checkpoint_sha256": "7254bcde23f679b55cec00dae613c2dbccfcaefbfb7720ca3a5ed47f89b20cc8",
+      "selected_run_canonical_sha256": "19ef35c53979ac8e7f6a24084ce12d2023e8a371cf39f1eb1b81370514dc96fe",
+      "negative_controls_sha256": "ee9b9b57393c8cf0fee06d9cab938542eceb63521155c8eed7430983670a10dc",
+      "instrument_backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+      "lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "case_id": "qaoa-cycle-4-p2",
+    "output": {
+      "task": "fixed final-state mean cut / enumerated optimum",
+      "quality_at_least": 0.8,
+      "normalized_precision": 0.05,
+      "success_at_least": 0.95,
+      "n_qubits": 4,
+      "classical_optimum": 4
+    },
+    "budget": {
+      "sampling_failure_family": 0.04,
+      "sampling_final_group_count": 48,
+      "sampling_failure_per_group": 0.0008333333333333334,
+      "realization_static_transcript_tv": 0.005,
+      "physical_failure_whole_workload": 0.0025,
+      "factory_failure_whole_workload": 0.0025,
+      "reserved_total": 0.05,
+      "per_preparation_operator_allowance": 6.095182367856447e-08,
+      "final_ratio_bias_allowance": 6.095182367856447e-08,
+      "conditional_sampling_radius": 0.01541185086168794,
+      "saved_estimate": 0.9884033203125,
+      "conditional_ratio_lower": 0.9729914084989884,
+      "conditional_precision_radius": 0.015411911813511618,
+      "selection_coverage": "retain all-48-group sampling protection; selection is outcome-dependent",
+      "realization_scope": "conditional numerical operator bounds transfer fixed-script event probabilities; not a native physical failure or adaptive-path theorem"
+    },
+    "planned": {
+      "training_calls": 109,
+      "holdout_calls": 1,
+      "measured_groups": 110,
+      "unique_source_classes": 54,
+      "training_preparations": 65648,
+      "holdout_preparations": 16384,
+      "total_preparations": 82032,
+      "source_qubit_readouts": 328128,
+      "explicit_source_initializations": 328128,
+      "source_unitary_gates": 2953152,
+      "source_weighted_counts": {
+        "h": 328128,
+        "rx": 656256,
+        "rz": 656256,
+        "cx": 1312512,
+        "measure": 328128
+      }
+    },
+    "bounds": {
+      "source_qubits": 4,
+      "source_operations": 128,
+      "routed_operations": 1024,
+      "synthesized_operations": 10000,
+      "total_synthesized_operations": 540000,
+      "validation_qubits": 4,
+      "validation_operations": 10000,
+      "validation_branches": 256,
+      "rotation_occurrences_per_class": 16,
+      "synthesis_native_calls_per_class": 64,
+      "total_synthesis_native_calls": 3456,
+      "compilation_wall_seconds": 300,
+      "synthesis_wall_seconds_per_class": 20,
+      "physical_wall_seconds": 120,
+      "physical_top_level_calls": 64,
+      "factory_frontier_queries": 1536,
+      "factory_frontier_candidates": 52224,
+      "factory_pipeline_candidates": 52224,
+      "native_trace_queries": 52224,
+      "artifact_bytes": 16777216,
+      "decoded_record_bytes": 67108864,
+      "decoded_class_bytes": 4194304
+    },
+    "compiler": {
+      "preserve_full_unitary": true,
+      "basis": "actual Clifford+T plus reset/readout",
+      "routing": "bidirectional logical line, fixed initial layout, SABRE seed 7; frozen backend",
+      "phase": "restore exported global phase; undo measured output permutation for full operator checks",
+      "native_synthesis_seed": null,
+      "repeated_sequences": "preserve actual native synthesis bytes; do not regenerate checkpoints"
+    },
+    "physical_profile": "frozen InstrumentProfile defaults, physical error 1e-4; separate serialized instrument scenario",
+    "limitations": [
+      "compiled replay fixes every archived classical decision; no prediction of new hardware-driven optimization",
+      "original counts are ideal CPU samples, not samples from the newly synthesized circuit",
+      "guarded floating synthesis and tiny operator checks are numerical evidence, not formal certificates",
+      "physical code, factory, controller and interface assumptions are conditional and uncalibrated",
+      "common native factory cost identity does not certify an identical physical factory geometry",
+      "native factory internal preparations/readouts are abstracted by its time/space/output-error ISA, not exported as explicit operation counts",
+      "measured quantum hardware optimizer/scoring/communications/decoder latency is excluded",
+      "all VQE quality labels and negative controls remain unchanged; Classical C4 reference coverage only"
+    ]
+  },
+  "first_physical_timing_sha256": "42a62121c225890477e1d4fc24e317b68b4857e9f1a82420a807e721442bc8d3",
+  "original_failure_sha256": "1adced6a5fcacbddfdecd411a6d7b6dfe0b95edb81eb2914ca1af803796820dc",
+  "first_known_query_counts": {
+    "top_level_calls": 49,
+    "factory_frontier_queries": 1176,
+    "factory_frontier_candidates": 12348,
+    "factory_pipeline_candidates": 816,
+    "native_trace_queries": 6174
+  },
+  "first_physical_wall_seconds": 11.716274958002032,
+  "maximum_additional_physical_passes": 1,
+  "cumulative_query_caps": {
+    "top_level_calls": 128,
+    "factory_frontier_queries": 3072,
+    "factory_frontier_candidates": 52224,
+    "factory_pipeline_candidates": 52224,
+    "native_trace_queries": 52224
+  },
+  "second_attempt_effective_caps": {
+    "top_level_calls": 64,
+    "factory_frontier_queries": 1536,
+    "factory_frontier_candidates": 39876,
+    "factory_pipeline_candidates": 51408,
+    "native_trace_queries": 46050
+  },
+  "cumulative_physical_wall_cap_seconds": 120,
+  "second_remaining_wall_seconds": 108.28372504199797,
+  "decoded_transport_bytes": 67108864,
+  "private_producer_reference_bytes": 268435456,
+  "codec_limits": {
+    "max_encoded_bytes": 67108864,
+    "max_nodes": 500000,
+    "max_references": 4000000,
+    "max_depth": 128,
+    "max_container_items": 100000,
+    "max_scalar_bytes": 4194304,
+    "max_integer_digits": 1024
+  },
+  "routed_qasm_metadata_restoration": {
+    "known_ops_and_phase_only": true,
+    "restores_physical_wire_export_marker": true,
+    "gates_measurement_maps_global_phases_unchanged": true,
+    "all_54_exact_qasm_byte_compares": true,
+    "original_sabre_internal_layout_recreated": false,
+    "physical_geometry_certificate": false
+  },
+  "public_artifact_bytes": 16777216,
+  "representation": "lossless content-addressed JSON DAG with shared decoded subtrees",
+  "scientific_change": false,
+  "synthesis_or_optimizer_repeated": false,
+  "quantum_preparations": 82032,
+  "quantum_preparations_scope": "one fixed recorded workload; classical physical estimation repetition does not double it",
+  "scope": "first complete point/query records were not retained; no recovered-hash equivalence to that missing result is claimed"
+}

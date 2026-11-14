@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "local-spin-bath-saved-evidence",
+  "method_id": "local-spin-full-xx-reusable-bath-v1",
+  "source_commit": "b902bc5c0d43fa6e5cfbfcab0e041cb475840fc9",
+  "all_components_verified": false,
+  "n_above_two_scope": "generation_only",
+  "max_joint_dimension": 8,
+  "max_channel_dimension": 16,
+  "total_accuracy_certified": false,
+  "mixing_certificate": false,
+  "continuum_bridge": "unavailable",
+  "physical_budgets": "uncomputed",
+  "files": {
+    "cases.json": {
+      "bytes": 2888,
+      "sha256": "761c2ca3eafabf672a221d18abfdfbae91b024f25ee3a41df4b5c95de1d041f3"
+    },
+    "generation.json": {
+      "bytes": 45035,
+      "sha256": "a2a14e87faa2af214a36f785be276d18a2f150ddf9d0108a77b8cff6270ee540"
+    },
+    "schedules.json": {
+      "bytes": 4859,
+      "sha256": "f1b34aea9d2dccf7a311a31a78292a4f7723310f791309e442bbb96baa23a67e"
+    },
+    "reference.json": {
+      "bytes": 766297,
+      "sha256": "2382ee6d1a2248f072a110f92139f7fbf3b31f7708771ada36c88637b7dc12b2"
+    },
+    "validation.json": {
+      "bytes": 496,
+      "sha256": "2426242c0e08be6ce682a2541089298afc0fdf9408159834224747b043f2ea88"
+    },
+    "source-exports/n1-ground.qasm": {
+      "bytes": 6104,
+      "sha256": "0962615de1ca22e80e47cdcc6bee263ce49a3deee6f4f18e926b262eabc7cc22"
+    },
+    "source-exports/n1-thermal.qasm": {
+      "bytes": 5872,
+      "sha256": "0a113dcf14d1e3ee22b10e7d72898f1b29767b1d0d95419742ff3257fc6b1b6b"
+    },
+    "source-exports/n2-ground.qasm": {
+      "bytes": 10058,
+      "sha256": "6191f3555e5c23ac9f0d82afd29b7c2e45fe6baedaa0dfe21e2a0c80bc703eb2"
+    },
+    "source-exports/n2-thermal.qasm": {
+      "bytes": 9826,
+      "sha256": "5c593d4573cd54d6d80b69967f1ca2385ecc5b0d2950f34f1545550d82989f6d"
+    },
+    "source-exports/n4-thermal-generation.qasm": {
+      "bytes": 36662,
+      "sha256": "2d6af467c9e91436a19b46349d5e603f623c1bd0b6af631342ee0c2128446578"
+    },
+    "source-exports/n8-thermal-generation.qasm": {
+      "bytes": 71006,
+      "sha256": "5c152f68c543b5b7927f3182ad0fbefda00d028f069ea8f2e0331f87eb2f2f7f"
+    },
+    "source-exports/n16-thermal-generation.qasm": {
+      "bytes": 143385,
+      "sha256": "34e15e0f9117d8e724c354d3aab176c7f548e4e304249449f7588bddd35dc6e7"
+    },
+    "source-exports/n32-thermal-generation.qasm": {
+      "bytes": 290400,
+      "sha256": "a66f89066ae7fc9559d74f987fd7f8047ceac97c812cd3ed6d32378871b8482c"
+    },
+    "source-exports/n64-thermal-generation.qasm": {
+      "bytes": 585577,
+      "sha256": "b4af8287a044b0b30fbfa8730a4362ea640fe7f5742ed3962a944ecf39666583"
+    },
+    "source/reusable_bath_local_spin.py": {
+      "bytes": 32278,
+      "sha256": "218df15f55c4c9cb2b183e6fbf77fa83fe647aeb973af24a2eafb78e949f891f"
+    },
+    "source/reusable_bath_local_spin_reference.py": {
+      "bytes": 46424,
+      "sha256": "752071e4e668d6012312b7f03fdad27353009b37333297040c5c182916b107e2"
+    },
+    "source/cases.json": {
+      "bytes": 2888,
+      "sha256": "761c2ca3eafabf672a221d18abfdfbae91b024f25ee3a41df4b5c95de1d041f3"
+    },
+    "source/requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "source/LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    }
+  }
+}

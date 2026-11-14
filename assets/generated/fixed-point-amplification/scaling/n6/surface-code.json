@@ -1,0 +1,632 @@
+{
+  "status": "computed_conditional_mean_fit_projection",
+  "executions": 1,
+  "ideal_phase_failure_bound": 0.0025000000000000005,
+  "configured_synthesis_model_allowance_per_execution": 1e-05,
+  "physical_failure_allowance": 0.005,
+  "configured_conditional_full_failure_upper": 0.007510000000000001,
+  "certified_hardware_confidence": null,
+  "assumptions": [
+    "actual preparation success satisfies the supplied promise",
+    "the exact YLC phase theorem applies; binary64 angles are not certified enclosures",
+    "the QDK synthesis-model scalar upper-bounds joint output-distribution total variation",
+    "declared physical-fault/QEC/factory model bounds faults",
+    "classical data/flag verification is correct"
+  ],
+  "limitations": [
+    "no concrete Clifford+T sequence or per-angle approximation certificate",
+    "mean fallback work has no runtime-tail certificate",
+    "physical initialization and classical controller/decoder costs excluded",
+    "peak qubits times runtime is a rectangular proxy, not occupancy integration"
+  ],
+  "profiles": [
+    {
+      "schema_version": 1,
+      "status": "computed_conditional_model",
+      "resource_estimate_kind": "conditional_mean_fit_resource_projection",
+      "qdk_version": "1.34.0",
+      "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
+      "source_commit_is_package_release_commit": false,
+      "qiskit_version": "2.6.2",
+      "transpiler": {
+        "optimization_level": 1,
+        "seed_transpiler": 7,
+        "basis_gates": [
+          "h",
+          "x",
+          "z",
+          "s",
+          "sdg",
+          "t",
+          "tdg",
+          "rx",
+          "ry",
+          "rz",
+          "cx"
+        ]
+      },
+      "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[7] meas;\nqubit[7] q;\nx q[0];\nrz(-0.0445864921108096) q[0];\nx q[1];\nrz(-0.0445864921108096) q[1];\nx q[2];\nrz(-0.0891729842216192) q[2];\nx q[3];\nrz(-0.1783459684432384) q[3];\nry(pi/2) q[4];\nry(pi/2) q[5];\nh q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(3.0055808229962855) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.7849007167033157) q[4];\nry(pi/2) q[5];\nrz(2.4282087798168392) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.7133838737729536) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.7133838737729536) q[6];\ncx q[4], q[6];\nrz(0.3566919368864768) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.3566919368864768) q[6];\ncx q[3], q[6];\nrz(0.1783459684432384) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.1783459684432384) q[6];\ncx q[2], q[6];\nrz(0.0891729842216192) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.0891729842216192) q[6];\ncx q[1], q[6];\nrz(0.0445864921108096) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.0445864921108096) q[6];\ncx q[0], q[6];\nrz(0.0445864921108096) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.0445864921108096) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.0891729842216192) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.1783459684432384) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.3566919368864768) q[4];\nry(-pi/4) q[5];\nrz(-0.8574124530219436) q[5];\nrz(-0.0445864921108096) q[6];\ncx q[1], q[6];\nrz(-0.0445864921108096) q[6];\ncx q[1], q[6];\nrz(0.0445864921108096) q[6];\ncx q[2], q[6];\nrz(-0.0891729842216192) q[6];\ncx q[2], q[6];\nrz(0.0891729842216192) q[6];\ncx q[3], q[6];\nrz(-0.1783459684432384) q[6];\ncx q[3], q[6];\nrz(0.1783459684432384) q[6];\ncx q[4], q[6];\nrz(-0.3566919368864768) q[6];\ncx q[4], q[6];\nrz(0.3566919368864768) q[6];\ncx q[5], q[6];\nrz(-0.7133838737729536) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.03718731560705457) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.03718731560705457) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.07437463121410959) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.14874926242821918) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.7133838737729534) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(2.6614105692319217) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.8440941287333548) q[4];\nry(pi/2) q[5];\nrz(2.5465956038769173) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.5949970497128759) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.5949970497128759) q[6];\ncx q[4], q[6];\nrz(0.29749852485643796) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.29749852485643796) q[6];\ncx q[3], q[6];\nrz(0.14874926242821898) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.14874926242821898) q[6];\ncx q[2], q[6];\nrz(0.07437463121410949) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.07437463121410949) q[6];\ncx q[1], q[6];\nrz(0.037187315607054745) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.037187315607054745) q[6];\ncx q[0], q[6];\nrz(0.037187315607054745) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.037187315607054745) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.07437463121410949) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.14874926242821898) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.29749852485643796) q[4];\nry(-pi/4) q[5];\nrz(-0.9757992770820216) q[5];\nrz(-0.037187315607054745) q[6];\ncx q[1], q[6];\nrz(-0.037187315607054745) q[6];\ncx q[1], q[6];\nrz(0.037187315607054745) q[6];\ncx q[2], q[6];\nrz(-0.07437463121410949) q[6];\ncx q[2], q[6];\nrz(0.07437463121410949) q[6];\ncx q[3], q[6];\nrz(-0.14874926242821898) q[6];\ncx q[3], q[6];\nrz(0.14874926242821898) q[6];\ncx q[4], q[6];\nrz(-0.29749852485643796) q[6];\ncx q[4], q[6];\nrz(0.29749852485643796) q[6];\ncx q[5], q[6];\nrz(-0.5949970497128759) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.012937581646035756) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.012937581646035756) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.025875163292071512) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.051750326584143025) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.5949970497128758) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(1.8822117553580686) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(3.038092000421507) q[4];\nry(pi/2) q[5];\nrz(2.93459134725322) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.20700130633657296) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.20700130633657296) q[6];\ncx q[4], q[6];\nrz(0.10350065316828648) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.10350065316828648) q[6];\ncx q[3], q[6];\nrz(0.05175032658414324) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.05175032658414324) q[6];\ncx q[2], q[6];\nrz(0.02587516329207162) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.02587516329207162) q[6];\ncx q[1], q[6];\nrz(0.01293758164603581) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.01293758164603581) q[6];\ncx q[0], q[6];\nrz(0.01293758164603581) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.01293758164603581) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.02587516329207162) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.05175032658414324) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.10350065316828648) q[4];\nry(-pi/4) q[5];\nrz(-1.3637950204583227) q[5];\nrz(-0.01293758164603581) q[6];\ncx q[1], q[6];\nrz(-0.01293758164603581) q[6];\ncx q[1], q[6];\nrz(0.01293758164603581) q[6];\ncx q[2], q[6];\nrz(-0.02587516329207162) q[6];\ncx q[2], q[6];\nrz(0.02587516329207162) q[6];\ncx q[3], q[6];\nrz(-0.05175032658414324) q[6];\ncx q[3], q[6];\nrz(0.05175032658414324) q[6];\ncx q[4], q[6];\nrz(-0.10350065316828648) q[6];\ncx q[4], q[6];\nrz(0.10350065316828648) q[6];\ncx q[5], q[6];\nrz(-0.20700130633657296) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.06876521174721129) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.06876521174721129) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.13753042349442257) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.2750608469888447) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.207001306336573) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(-0.8280052253462918) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.591470959612103) q[4];\nry(pi/2) q[5];\nrz(2.0413492656344134) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(1.1002433879553795) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-1.1002433879553795) q[6];\ncx q[4], q[6];\nrz(0.5501216939776897) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.5501216939776897) q[6];\ncx q[3], q[6];\nrz(0.27506084698884486) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.27506084698884486) q[6];\ncx q[2], q[6];\nrz(0.13753042349442243) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.13753042349442243) q[6];\ncx q[1], q[6];\nrz(0.06876521174721122) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.06876521174721122) q[6];\ncx q[0], q[6];\nrz(0.06876521174721122) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.06876521174721122) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.13753042349442243) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.27506084698884486) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.5501216939776897) q[4];\nry(-pi/4) q[5];\nrz(-0.47055293883951776) q[5];\nrz(-0.06876521174721122) q[6];\ncx q[1], q[6];\nrz(-0.06876521174721122) q[6];\ncx q[1], q[6];\nrz(0.06876521174721122) q[6];\ncx q[2], q[6];\nrz(-0.13753042349442243) q[6];\ncx q[2], q[6];\nrz(0.13753042349442243) q[6];\ncx q[3], q[6];\nrz(-0.27506084698884486) q[6];\ncx q[3], q[6];\nrz(0.27506084698884486) q[6];\ncx q[4], q[6];\nrz(-0.5501216939776897) q[6];\ncx q[4], q[6];\nrz(0.5501216939776897) q[6];\ncx q[5], q[6];\nrz(-1.1002433879553795) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.05659023028043242) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.05659023028043242) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.1131804605608644) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.22636092112172923) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(1.1002433879553788) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(-2.3799881988515037) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.6888708113463355) q[4];\nry(pi/2) q[5];\nrz(2.236148969102877) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.9054436844869163) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.9054436844869163) q[6];\ncx q[4], q[6];\nrz(0.45272184224345813) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.45272184224345813) q[6];\ncx q[3], q[6];\nrz(0.22636092112172906) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.22636092112172906) q[6];\ncx q[2], q[6];\nrz(0.11318046056086453) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.11318046056086453) q[6];\ncx q[1], q[6];\nrz(0.056590230280432266) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.056590230280432266) q[6];\ncx q[0], q[6];\nrz(0.056590230280432266) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.056590230280432266) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.11318046056086453) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.22636092112172906) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.45272184224345813) q[4];\nry(-pi/4) q[5];\nrz(-0.6653526423079796) q[5];\nrz(-0.056590230280432266) q[6];\ncx q[1], q[6];\nrz(-0.056590230280432266) q[6];\ncx q[1], q[6];\nrz(0.056590230280432266) q[6];\ncx q[2], q[6];\nrz(-0.11318046056086453) q[6];\ncx q[2], q[6];\nrz(0.11318046056086453) q[6];\ncx q[3], q[6];\nrz(-0.22636092112172906) q[6];\ncx q[3], q[6];\nrz(0.22636092112172906) q[6];\ncx q[4], q[6];\nrz(-0.45272184224345813) q[6];\ncx q[4], q[6];\nrz(0.45272184224345813) q[6];\ncx q[5], q[6];\nrz(-0.9054436844869163) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.05121257006536428) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.05121257006536428) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.10242514013072812) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.20485028026145624) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.905443684486916) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(-2.8535354950918146) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.7318920930668806) q[4];\nry(pi/2) q[5];\nrz(2.322191532543968) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.8194011210458253) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.8194011210458253) q[6];\ncx q[4], q[6];\nrz(0.40970056052291265) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.40970056052291265) q[6];\ncx q[3], q[6];\nrz(0.20485028026145632) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.20485028026145632) q[6];\ncx q[2], q[6];\nrz(0.10242514013072816) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.10242514013072816) q[6];\ncx q[1], q[6];\nrz(0.05121257006536408) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.05121257006536408) q[6];\ncx q[0], q[6];\nrz(0.05121257006536408) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.05121257006536408) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.10242514013072816) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.20485028026145632) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.40970056052291265) q[4];\nry(-pi/4) q[5];\nrz(-0.7513952057490716) q[5];\nrz(-0.05121257006536408) q[6];\ncx q[1], q[6];\nrz(-0.05121257006536408) q[6];\ncx q[1], q[6];\nrz(0.05121257006536408) q[6];\ncx q[2], q[6];\nrz(-0.10242514013072816) q[6];\ncx q[2], q[6];\nrz(0.10242514013072816) q[6];\ncx q[3], q[6];\nrz(-0.20485028026145632) q[6];\ncx q[3], q[6];\nrz(0.20485028026145632) q[6];\ncx q[4], q[6];\nrz(-0.40970056052291265) q[6];\ncx q[4], q[6];\nrz(0.40970056052291265) q[6];\ncx q[5], q[6];\nrz(-0.8194011210458253) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nry(-pi/2) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(-pi/2) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nry(-pi/2) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nry(-pi/2) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.819401121045825) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nx q[4];\nx q[5];\nt q[6];\nh q[6];\nbarrier q[0], q[1], q[2], q[3], q[4], q[5], q[6];\nmeas[0] = measure q[0];\nmeas[1] = measure q[1];\nmeas[2] = measure q[2];\nmeas[3] = measure q[3];\nmeas[4] = measure q[4];\nmeas[5] = measure q[5];\nmeas[6] = measure q[6];\n",
+      "qasm_sha256": "4811409192306df4077fee53bbc707fe7b0b67ee28120aa76514b59e1bb0a781",
+      "source_gate_counts": {
+        "cx": 810,
+        "ry": 600,
+        "s": 300,
+        "sdg": 300,
+        "rz": 204,
+        "x": 136,
+        "h": 104,
+        "t": 52,
+        "tdg": 39,
+        "measure": 7,
+        "barrier": 1
+      },
+      "decomposed_gate_counts": {
+        "cx": 810,
+        "ry": 630,
+        "rz": 222,
+        "s": 60,
+        "sdg": 48,
+        "t": 40,
+        "tdg": 39,
+        "rx": 12,
+        "measure": 7,
+        "x": 6,
+        "h": 2,
+        "barrier": 1
+      },
+      "canonical_gate_counts": {
+        "T": 307,
+        "RZ": 564,
+        "MEAS_Z": 7
+      },
+      "canonical_application_trace": "@compute_qubits(7)\n{\n  repeat 264 {\n    RZ(0)\n    RZ(1)\n  }\n  repeat 36 {\n    RZ(0)\n  }\n  repeat 307 {\n    T(0)\n  }\n  repeat 7 {\n    MEAS_Z(0)\n  }\n}\n",
+      "synthesized_application_trace": "@compute_qubits(23)\n@base_error(0.000005248388945942619)\n@resource_state(T, 11023)\n{\n  repeat 6578 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)\n  }\n}\n",
+      "synthesis": {
+        "model": "QDK PSSPC mixed-fallback Clifford+T approximation",
+        "cost_semantics": "mean linear fit for random angles; not worst-case or certified per angle",
+        "fit_domain": "per-rotation modeled diamond-distance accuracy epsilon < 1e-4",
+        "num_arbitrary_rotations": 564,
+        "fixed_num_ts_per_rotation": 19,
+        "model_error_per_rotation": 9.305654159472729e-09,
+        "model_error_per_execution": 5.248388945942619e-06,
+        "actual_synthesis_sequence_generated": false,
+        "instance_approximation_certificate_verified": false
+      },
+      "budget": {
+        "synthesis_model_error_per_execution": 1e-05,
+        "physical_failure_probability": 0.005,
+        "executions": 1
+      },
+      "observable_contract": null,
+      "physical_profile": {
+        "name": "illustrative-p-0.001",
+        "physical_error_rate": 0.001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "error_composition": "UnionBound; approximation base and physical contribution explicitly separated",
+      "isa_graph_pruning": false,
+      "pareto_completeness": "enumerated ISA combinations; limited to declared models/domains",
+      "included": [
+        "all operations in supplied bound circuit",
+        "explicit input preparation and output basis changes if supplied",
+        "final measurements",
+        "serial executions",
+        "PSSPC logical layout",
+        "surface-code data qubits",
+        "round-based magic-state factories"
+      ],
+      "limitations": [
+        "The synthesis formula is a mean linear fit for random angles, not a worst-case bound or certified concrete Clifford+T implementation",
+        "The fit models expected fallback-protocol work; no synthesis runtime-tail or budget-overrun confidence is certified",
+        "The QDK trace abstracts Clifford work and scheduling into PSSPC rather than preserving an exact gate schedule",
+        "Physical reliability is conditional on the declared hardware/QEC/factory models",
+        "No algorithm approximation, optimizer convergence, or observable precision is inferred from the circuit",
+        "Classical optimizer/preprocessing/compilation/verification costs and external data loading are excluded",
+        "A bounded-observable contract covers one fixed scalar mean only when its declared assumptions hold"
+      ],
+      "sources": [
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace/transforms/psspc.rs",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace.rs",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/result.rs",
+        "https://learn.microsoft.com/en-us/azure/quantum/qre-estimation-results",
+        "https://arxiv.org/abs/2203.10064"
+      ],
+      "pareto_points": [
+        {
+          "peak_physical_qubits": 125127,
+          "data_code_distance": 25,
+          "runtime_per_execution_ns": 164450000.0,
+          "serial_runtime_all_executions_ns": 164450000.0,
+          "qdk_combined_error_score_per_execution": 0.002738952842827943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0027337044538820006,
+          "physical_failure_union_bound_all_executions": 0.0027337044538820006,
+          "factories": {
+            "T": {
+              "copies": 10,
+              "runs": 1150,
+              "states": 11023,
+              "error_rate": 2.4800000000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 28727,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 96400
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=25)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 20577.135150000002,
+          "conditional_ideal_phase_full_failure_upper": 0.005238952842827944
+        },
+        {
+          "peak_physical_qubits": 130351,
+          "data_code_distance": 23,
+          "runtime_per_execution_ns": 151294000.0,
+          "serial_runtime_all_executions_ns": 151294000.0,
+          "qdk_combined_error_score_per_execution": 0.002738956927765943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0027337085388200004,
+          "physical_failure_union_bound_all_executions": 0.0027337085388200004,
+          "factories": {
+            "T": {
+              "copies": 11,
+              "runs": 1058,
+              "states": 11023,
+              "error_rate": 2.4800000000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 24311,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 106040
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=23)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 19721.324194,
+          "conditional_ideal_phase_full_failure_upper": 0.005238956927765943
+        },
+        {
+          "peak_physical_qubits": 135943,
+          "data_code_distance": 21,
+          "runtime_per_execution_ns": 138138000.0,
+          "serial_runtime_all_executions_ns": 138138000.0,
+          "qdk_combined_error_score_per_execution": 0.002738997777145943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0027337493882000005,
+          "physical_failure_union_bound_all_executions": 0.0027337493882000005,
+          "factories": {
+            "T": {
+              "copies": 12,
+              "runs": 966,
+              "states": 11023,
+              "error_rate": 2.4800000000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 20263,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 115680
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=21)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 18778.894134000002,
+          "conditional_ideal_phase_full_failure_upper": 0.0052389977771459435
+        },
+        {
+          "peak_physical_qubits": 141903,
+          "data_code_distance": 19,
+          "runtime_per_execution_ns": 124982000.0,
+          "serial_runtime_all_executions_ns": 124982000.0,
+          "qdk_combined_error_score_per_execution": 0.002739406270945943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0027341578820000005,
+          "physical_failure_union_bound_all_executions": 0.0027341578820000005,
+          "factories": {
+            "T": {
+              "copies": 13,
+              "runs": 874,
+              "states": 11023,
+              "error_rate": 2.4800000000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 16583,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 125320
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=19)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 17735.320746,
+          "conditional_ideal_phase_full_failure_upper": 0.005239406270945943
+        },
+        {
+          "peak_physical_qubits": 157871,
+          "data_code_distance": 17,
+          "runtime_per_execution_ns": 111826000.0,
+          "serial_runtime_all_executions_ns": 111826000.0,
+          "qdk_combined_error_score_per_execution": 0.002743491208945943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0027382428200000003,
+          "physical_failure_union_bound_all_executions": 0.0027382428200000003,
+          "factories": {
+            "T": {
+              "copies": 15,
+              "runs": 782,
+              "states": 11023,
+              "error_rate": 2.4800000000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 13271,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 144600
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=17)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 17654.082446,
+          "conditional_ideal_phase_full_failure_upper": 0.005243491208945943
+        },
+        {
+          "peak_physical_qubits": 164567,
+          "data_code_distance": 15,
+          "runtime_per_execution_ns": 98670000.0,
+          "serial_runtime_all_executions_ns": 98670000.0,
+          "qdk_combined_error_score_per_execution": 0.002784340588945943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0027790922000000004,
+          "physical_failure_union_bound_all_executions": 0.0027790922000000004,
+          "factories": {
+            "T": {
+              "copies": 16,
+              "runs": 690,
+              "states": 11023,
+              "error_rate": 2.4800000000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 10327,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 154240
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=15)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 16237.825890000002,
+          "conditional_ideal_phase_full_failure_upper": 0.0052843405889459434
+        },
+        {
+          "peak_physical_qubits": 190911,
+          "data_code_distance": 13,
+          "runtime_per_execution_ns": 85514000.0,
+          "serial_runtime_all_executions_ns": 85514000.0,
+          "qdk_combined_error_score_per_execution": 0.003192834388945943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0031875860000000005,
+          "physical_failure_union_bound_all_executions": 0.0031875860000000005,
+          "factories": {
+            "T": {
+              "copies": 19,
+              "runs": 598,
+              "states": 11023,
+              "error_rate": 2.4800000000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 7751,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 183160
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=13)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 16325.563254,
+          "conditional_ideal_phase_full_failure_upper": 0.005692834388945944
+        },
+        {
+          "peak_physical_qubits": 544343,
+          "data_code_distance": 11,
+          "runtime_per_execution_ns": 72358000.0,
+          "serial_runtime_all_executions_ns": 72358000.0,
+          "qdk_combined_error_score_per_execution": 0.004953352378945944,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.004948103990000002,
+          "physical_failure_union_bound_all_executions": 0.004948103990000002,
+          "factories": {
+            "T": {
+              "copies": 30,
+              "runs": 371,
+              "states": 11023,
+              "error_rate": 3.713e-08
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8046556,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 5543,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 538800
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=11)\n  CNOT @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 39387.570794,
+          "conditional_ideal_phase_full_failure_upper": 0.007453352378945945
+        }
+      ],
+      "input_primitive_export_qasm_sha256": "728fbaade5bcd4d12703867478116672dd38181a3e145b533f4c66ee9c152f1b",
+      "estimated_qasm_scope": "same complete measured trial after the adapter's optimization-level-1 lowering",
+      "resource_adapter_lowering_state_max_abs_error": 2.0053283331865004e-15
+    },
+    {
+      "schema_version": 1,
+      "status": "computed_conditional_model",
+      "resource_estimate_kind": "conditional_mean_fit_resource_projection",
+      "qdk_version": "1.34.0",
+      "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
+      "source_commit_is_package_release_commit": false,
+      "qiskit_version": "2.6.2",
+      "transpiler": {
+        "optimization_level": 1,
+        "seed_transpiler": 7,
+        "basis_gates": [
+          "h",
+          "x",
+          "z",
+          "s",
+          "sdg",
+          "t",
+          "tdg",
+          "rx",
+          "ry",
+          "rz",
+          "cx"
+        ]
+      },
+      "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[7] meas;\nqubit[7] q;\nx q[0];\nrz(-0.0445864921108096) q[0];\nx q[1];\nrz(-0.0445864921108096) q[1];\nx q[2];\nrz(-0.0891729842216192) q[2];\nx q[3];\nrz(-0.1783459684432384) q[3];\nry(pi/2) q[4];\nry(pi/2) q[5];\nh q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(3.0055808229962855) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.7849007167033157) q[4];\nry(pi/2) q[5];\nrz(2.4282087798168392) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.7133838737729536) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.7133838737729536) q[6];\ncx q[4], q[6];\nrz(0.3566919368864768) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.3566919368864768) q[6];\ncx q[3], q[6];\nrz(0.1783459684432384) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.1783459684432384) q[6];\ncx q[2], q[6];\nrz(0.0891729842216192) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.0891729842216192) q[6];\ncx q[1], q[6];\nrz(0.0445864921108096) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.0445864921108096) q[6];\ncx q[0], q[6];\nrz(0.0445864921108096) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.0445864921108096) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.0891729842216192) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.1783459684432384) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.3566919368864768) q[4];\nry(-pi/4) q[5];\nrz(-0.8574124530219436) q[5];\nrz(-0.0445864921108096) q[6];\ncx q[1], q[6];\nrz(-0.0445864921108096) q[6];\ncx q[1], q[6];\nrz(0.0445864921108096) q[6];\ncx q[2], q[6];\nrz(-0.0891729842216192) q[6];\ncx q[2], q[6];\nrz(0.0891729842216192) q[6];\ncx q[3], q[6];\nrz(-0.1783459684432384) q[6];\ncx q[3], q[6];\nrz(0.1783459684432384) q[6];\ncx q[4], q[6];\nrz(-0.3566919368864768) q[6];\ncx q[4], q[6];\nrz(0.3566919368864768) q[6];\ncx q[5], q[6];\nrz(-0.7133838737729536) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.03718731560705457) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.03718731560705457) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.07437463121410959) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.14874926242821918) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.7133838737729534) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(2.6614105692319217) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.8440941287333548) q[4];\nry(pi/2) q[5];\nrz(2.5465956038769173) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.5949970497128759) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.5949970497128759) q[6];\ncx q[4], q[6];\nrz(0.29749852485643796) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.29749852485643796) q[6];\ncx q[3], q[6];\nrz(0.14874926242821898) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.14874926242821898) q[6];\ncx q[2], q[6];\nrz(0.07437463121410949) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.07437463121410949) q[6];\ncx q[1], q[6];\nrz(0.037187315607054745) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.037187315607054745) q[6];\ncx q[0], q[6];\nrz(0.037187315607054745) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.037187315607054745) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.07437463121410949) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.14874926242821898) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.29749852485643796) q[4];\nry(-pi/4) q[5];\nrz(-0.9757992770820216) q[5];\nrz(-0.037187315607054745) q[6];\ncx q[1], q[6];\nrz(-0.037187315607054745) q[6];\ncx q[1], q[6];\nrz(0.037187315607054745) q[6];\ncx q[2], q[6];\nrz(-0.07437463121410949) q[6];\ncx q[2], q[6];\nrz(0.07437463121410949) q[6];\ncx q[3], q[6];\nrz(-0.14874926242821898) q[6];\ncx q[3], q[6];\nrz(0.14874926242821898) q[6];\ncx q[4], q[6];\nrz(-0.29749852485643796) q[6];\ncx q[4], q[6];\nrz(0.29749852485643796) q[6];\ncx q[5], q[6];\nrz(-0.5949970497128759) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.012937581646035756) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.012937581646035756) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.025875163292071512) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.051750326584143025) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.5949970497128758) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(1.8822117553580686) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(3.038092000421507) q[4];\nry(pi/2) q[5];\nrz(2.93459134725322) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.20700130633657296) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.20700130633657296) q[6];\ncx q[4], q[6];\nrz(0.10350065316828648) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.10350065316828648) q[6];\ncx q[3], q[6];\nrz(0.05175032658414324) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.05175032658414324) q[6];\ncx q[2], q[6];\nrz(0.02587516329207162) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.02587516329207162) q[6];\ncx q[1], q[6];\nrz(0.01293758164603581) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.01293758164603581) q[6];\ncx q[0], q[6];\nrz(0.01293758164603581) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.01293758164603581) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.02587516329207162) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.05175032658414324) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.10350065316828648) q[4];\nry(-pi/4) q[5];\nrz(-1.3637950204583227) q[5];\nrz(-0.01293758164603581) q[6];\ncx q[1], q[6];\nrz(-0.01293758164603581) q[6];\ncx q[1], q[6];\nrz(0.01293758164603581) q[6];\ncx q[2], q[6];\nrz(-0.02587516329207162) q[6];\ncx q[2], q[6];\nrz(0.02587516329207162) q[6];\ncx q[3], q[6];\nrz(-0.05175032658414324) q[6];\ncx q[3], q[6];\nrz(0.05175032658414324) q[6];\ncx q[4], q[6];\nrz(-0.10350065316828648) q[6];\ncx q[4], q[6];\nrz(0.10350065316828648) q[6];\ncx q[5], q[6];\nrz(-0.20700130633657296) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.06876521174721129) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.06876521174721129) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.13753042349442257) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.2750608469888447) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.207001306336573) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(-0.8280052253462918) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.591470959612103) q[4];\nry(pi/2) q[5];\nrz(2.0413492656344134) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(1.1002433879553795) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-1.1002433879553795) q[6];\ncx q[4], q[6];\nrz(0.5501216939776897) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.5501216939776897) q[6];\ncx q[3], q[6];\nrz(0.27506084698884486) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.27506084698884486) q[6];\ncx q[2], q[6];\nrz(0.13753042349442243) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.13753042349442243) q[6];\ncx q[1], q[6];\nrz(0.06876521174721122) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.06876521174721122) q[6];\ncx q[0], q[6];\nrz(0.06876521174721122) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.06876521174721122) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.13753042349442243) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.27506084698884486) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.5501216939776897) q[4];\nry(-pi/4) q[5];\nrz(-0.47055293883951776) q[5];\nrz(-0.06876521174721122) q[6];\ncx q[1], q[6];\nrz(-0.06876521174721122) q[6];\ncx q[1], q[6];\nrz(0.06876521174721122) q[6];\ncx q[2], q[6];\nrz(-0.13753042349442243) q[6];\ncx q[2], q[6];\nrz(0.13753042349442243) q[6];\ncx q[3], q[6];\nrz(-0.27506084698884486) q[6];\ncx q[3], q[6];\nrz(0.27506084698884486) q[6];\ncx q[4], q[6];\nrz(-0.5501216939776897) q[6];\ncx q[4], q[6];\nrz(0.5501216939776897) q[6];\ncx q[5], q[6];\nrz(-1.1002433879553795) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.05659023028043242) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.05659023028043242) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.1131804605608644) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.22636092112172923) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(1.1002433879553788) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(-2.3799881988515037) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.6888708113463355) q[4];\nry(pi/2) q[5];\nrz(2.236148969102877) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.9054436844869163) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.9054436844869163) q[6];\ncx q[4], q[6];\nrz(0.45272184224345813) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.45272184224345813) q[6];\ncx q[3], q[6];\nrz(0.22636092112172906) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.22636092112172906) q[6];\ncx q[2], q[6];\nrz(0.11318046056086453) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.11318046056086453) q[6];\ncx q[1], q[6];\nrz(0.056590230280432266) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.056590230280432266) q[6];\ncx q[0], q[6];\nrz(0.056590230280432266) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.056590230280432266) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.11318046056086453) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.22636092112172906) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.45272184224345813) q[4];\nry(-pi/4) q[5];\nrz(-0.6653526423079796) q[5];\nrz(-0.056590230280432266) q[6];\ncx q[1], q[6];\nrz(-0.056590230280432266) q[6];\ncx q[1], q[6];\nrz(0.056590230280432266) q[6];\ncx q[2], q[6];\nrz(-0.11318046056086453) q[6];\ncx q[2], q[6];\nrz(0.11318046056086453) q[6];\ncx q[3], q[6];\nrz(-0.22636092112172906) q[6];\ncx q[3], q[6];\nrz(0.22636092112172906) q[6];\ncx q[4], q[6];\nrz(-0.45272184224345813) q[6];\ncx q[4], q[6];\nrz(0.45272184224345813) q[6];\ncx q[5], q[6];\nrz(-0.9054436844869163) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nrz(-0.05121257006536428) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(-0.05121257006536428) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(-0.10242514013072812) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(-0.20485028026145624) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.905443684486916) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nrz(pi/4) q[6];\nrx(-2.8535354950918146) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nry(pi/2) q[4];\nrz(2.7318920930668806) q[4];\nry(pi/2) q[5];\nrz(2.322191532543968) q[5];\nrz(pi/4) q[6];\nry(pi/2) q[6];\ncx q[5], q[6];\nrz(0.8194011210458253) q[6];\ncx q[5], q[6];\ns q[5];\nrz(-0.8194011210458253) q[6];\ncx q[4], q[6];\nrz(0.40970056052291265) q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\nrz(-0.40970056052291265) q[6];\ncx q[3], q[6];\nrz(0.20485028026145632) q[6];\ncx q[3], q[6];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\nrz(-0.20485028026145632) q[6];\ncx q[2], q[6];\nrz(0.10242514013072816) q[6];\ncx q[2], q[6];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\nrz(-0.10242514013072816) q[6];\ncx q[1], q[6];\nrz(0.05121257006536408) q[6];\ncx q[1], q[6];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\nrz(-0.05121257006536408) q[6];\ncx q[0], q[6];\nrz(0.05121257006536408) q[6];\ncx q[0], q[6];\ncx q[0], q[5];\nry(-pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(-pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(-pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(-pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(-pi/2) q[1];\ncx q[0], q[1];\nry(pi/2) q[1];\nsdg q[1];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nrz(0.05121257006536408) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nrz(0.10242514013072816) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nrz(0.20485028026145632) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(0.40970056052291265) q[4];\nry(-pi/4) q[5];\nrz(-0.7513952057490716) q[5];\nrz(-0.05121257006536408) q[6];\ncx q[1], q[6];\nrz(-0.05121257006536408) q[6];\ncx q[1], q[6];\nrz(0.05121257006536408) q[6];\ncx q[2], q[6];\nrz(-0.10242514013072816) q[6];\ncx q[2], q[6];\nrz(0.10242514013072816) q[6];\ncx q[3], q[6];\nrz(-0.20485028026145632) q[6];\ncx q[3], q[6];\nrz(0.20485028026145632) q[6];\ncx q[4], q[6];\nrz(-0.40970056052291265) q[6];\ncx q[4], q[6];\nrz(0.40970056052291265) q[6];\ncx q[5], q[6];\nrz(-0.8194011210458253) q[6];\ncx q[5], q[6];\ns q[5];\ncx q[4], q[5];\nry(-pi/4) q[5];\ncx q[4], q[5];\ns q[4];\nry(pi/4) q[5];\ncx q[3], q[5];\nry(-pi/8) q[5];\ncx q[3], q[5];\ncx q[3], q[4];\nry(-pi/4) q[4];\ncx q[3], q[4];\ns q[3];\nry(pi/4) q[4];\nry(pi/8) q[5];\ncx q[2], q[5];\nry(-pi/16) q[5];\ncx q[2], q[5];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[2], q[4];\ncx q[2], q[3];\nry(-pi/4) q[3];\ncx q[2], q[3];\ns q[2];\nry(pi/4) q[3];\nry(pi/8) q[4];\nry(pi/16) q[5];\ncx q[1], q[5];\nry(-pi/32) q[5];\ncx q[1], q[5];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[1], q[4];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[1], q[3];\ncx q[1], q[2];\nry(-pi/4) q[2];\ncx q[1], q[2];\ns q[1];\nry(pi/4) q[2];\nry(pi/8) q[3];\nry(pi/16) q[4];\nry(pi/32) q[5];\ncx q[0], q[5];\nry(pi/32) q[5];\ncx q[0], q[5];\ncx q[0], q[4];\nry(pi/16) q[4];\ncx q[0], q[4];\ncx q[0], q[3];\nry(pi/8) q[3];\ncx q[0], q[3];\ncx q[0], q[2];\nry(pi/4) q[2];\ncx q[0], q[2];\ncx q[0], q[1];\nry(pi/2) q[1];\ncx q[0], q[1];\nry(-pi/2) q[0];\nry(-pi/2) q[1];\nsdg q[1];\nry(-pi/4) q[2];\ncx q[1], q[2];\nry(pi/4) q[2];\ncx q[1], q[2];\nry(-pi/4) q[2];\nsdg q[2];\nry(-pi/8) q[3];\ncx q[1], q[3];\nry(pi/8) q[3];\ncx q[1], q[3];\nry(-pi/8) q[3];\ncx q[2], q[3];\nry(pi/4) q[3];\ncx q[2], q[3];\nry(-pi/4) q[3];\nsdg q[3];\nry(-pi/16) q[4];\ncx q[1], q[4];\nry(pi/16) q[4];\ncx q[1], q[4];\nry(-pi/16) q[4];\ncx q[2], q[4];\nry(pi/8) q[4];\ncx q[2], q[4];\nry(-pi/8) q[4];\ncx q[3], q[4];\nry(pi/4) q[4];\ncx q[3], q[4];\nry(-pi/4) q[4];\nsdg q[4];\nry(-pi/32) q[5];\ncx q[1], q[5];\nry(pi/32) q[5];\ncx q[1], q[5];\nry(-pi/2) q[1];\nry(-pi/32) q[5];\ncx q[2], q[5];\nry(pi/16) q[5];\ncx q[2], q[5];\nry(-pi/2) q[2];\nry(-pi/16) q[5];\ncx q[3], q[5];\nry(pi/8) q[5];\ncx q[3], q[5];\nry(-pi/2) q[3];\nry(-pi/8) q[5];\ncx q[4], q[5];\nry(pi/4) q[5];\ncx q[4], q[5];\nrz(-pi) q[4];\nry(-pi/2) q[4];\nrx(-pi/2) q[5];\nrz(3*pi/4) q[5];\nrz(0.819401121045825) q[6];\nry(-pi/2) q[6];\ncx q[5], q[6];\ntdg q[6];\ncx q[4], q[6];\nt q[6];\ncx q[5], q[6];\nt q[5];\ntdg q[6];\ncx q[4], q[6];\ncx q[4], q[5];\nt q[4];\ntdg q[5];\ncx q[4], q[5];\nx q[4];\nx q[5];\nt q[6];\nh q[6];\nbarrier q[0], q[1], q[2], q[3], q[4], q[5], q[6];\nmeas[0] = measure q[0];\nmeas[1] = measure q[1];\nmeas[2] = measure q[2];\nmeas[3] = measure q[3];\nmeas[4] = measure q[4];\nmeas[5] = measure q[5];\nmeas[6] = measure q[6];\n",
+      "qasm_sha256": "4811409192306df4077fee53bbc707fe7b0b67ee28120aa76514b59e1bb0a781",
+      "source_gate_counts": {
+        "cx": 810,
+        "ry": 600,
+        "s": 300,
+        "sdg": 300,
+        "rz": 204,
+        "x": 136,
+        "h": 104,
+        "t": 52,
+        "tdg": 39,
+        "measure": 7,
+        "barrier": 1
+      },
+      "decomposed_gate_counts": {
+        "cx": 810,
+        "ry": 630,
+        "rz": 222,
+        "s": 60,
+        "sdg": 48,
+        "t": 40,
+        "tdg": 39,
+        "rx": 12,
+        "measure": 7,
+        "x": 6,
+        "h": 2,
+        "barrier": 1
+      },
+      "canonical_gate_counts": {
+        "T": 307,
+        "RZ": 564,
+        "MEAS_Z": 7
+      },
+      "canonical_application_trace": "@compute_qubits(7)\n{\n  repeat 264 {\n    RZ(0)\n    RZ(1)\n  }\n  repeat 36 {\n    RZ(0)\n  }\n  repeat 307 {\n    T(0)\n  }\n  repeat 7 {\n    MEAS_Z(0)\n  }\n}\n",
+      "synthesized_application_trace": "@compute_qubits(23)\n@base_error(0.000005248388945942619)\n@resource_state(T, 11023)\n{\n  repeat 6578 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)\n  }\n}\n",
+      "synthesis": {
+        "model": "QDK PSSPC mixed-fallback Clifford+T approximation",
+        "cost_semantics": "mean linear fit for random angles; not worst-case or certified per angle",
+        "fit_domain": "per-rotation modeled diamond-distance accuracy epsilon < 1e-4",
+        "num_arbitrary_rotations": 564,
+        "fixed_num_ts_per_rotation": 19,
+        "model_error_per_rotation": 9.305654159472729e-09,
+        "model_error_per_execution": 5.248388945942619e-06,
+        "actual_synthesis_sequence_generated": false,
+        "instance_approximation_certificate_verified": false
+      },
+      "budget": {
+        "synthesis_model_error_per_execution": 1e-05,
+        "physical_failure_probability": 0.005,
+        "executions": 1
+      },
+      "observable_contract": null,
+      "physical_profile": {
+        "name": "illustrative-p-0.0001",
+        "physical_error_rate": 0.0001,
+        "gate_time_ns": 100,
+        "measurement_time_ns": 500
+      },
+      "error_composition": "UnionBound; approximation base and physical contribution explicitly separated",
+      "isa_graph_pruning": false,
+      "pareto_completeness": "enumerated ISA combinations; limited to declared models/domains",
+      "included": [
+        "all operations in supplied bound circuit",
+        "explicit input preparation and output basis changes if supplied",
+        "final measurements",
+        "serial executions",
+        "PSSPC logical layout",
+        "surface-code data qubits",
+        "round-based magic-state factories"
+      ],
+      "limitations": [
+        "The synthesis formula is a mean linear fit for random angles, not a worst-case bound or certified concrete Clifford+T implementation",
+        "The fit models expected fallback-protocol work; no synthesis runtime-tail or budget-overrun confidence is certified",
+        "The QDK trace abstracts Clifford work and scheduling into PSSPC rather than preserving an exact gate schedule",
+        "Physical reliability is conditional on the declared hardware/QEC/factory models",
+        "No algorithm approximation, optimizer convergence, or observable precision is inferred from the circuit",
+        "Classical optimizer/preprocessing/compilation/verification costs and external data loading are excluded",
+        "A bounded-observable contract covers one fixed scalar mean only when its declared assumptions hold"
+      ],
+      "sources": [
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace/transforms/psspc.rs",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/trace.rs",
+        "https://github.com/microsoft/qdk/blob/81de0d2e5347e1e9f10e05066320fffdb3b7058c/source/qre/src/result.rs",
+        "https://learn.microsoft.com/en-us/azure/quantum/qre-estimation-results",
+        "https://arxiv.org/abs/2203.10064"
+      ],
+      "pareto_points": [
+        {
+          "peak_physical_qubits": 15343,
+          "data_code_distance": 11,
+          "runtime_per_execution_ns": 72358000.0,
+          "serial_runtime_all_executions_ns": 72358000.0,
+          "qdk_combined_error_score_per_execution": 0.002353537732765943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0023482893438200006,
+          "physical_failure_union_bound_all_executions": 0.0023482893438200006,
+          "factories": {
+            "T": {
+              "copies": 10,
+              "runs": 1113,
+              "states": 11023,
+              "error_rate": 2.1303500000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8906379,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 5543,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 9800
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=11)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 1110.1887940000001,
+          "conditional_ideal_phase_full_failure_upper": 0.004853537732765943
+        },
+        {
+          "peak_physical_qubits": 16443,
+          "data_code_distance": 9,
+          "runtime_per_execution_ns": 59202000.0,
+          "serial_runtime_all_executions_ns": 59202000.0,
+          "qdk_combined_error_score_per_execution": 0.002353987075945943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0023487386870000007,
+          "physical_failure_union_bound_all_executions": 0.0023487386870000007,
+          "factories": {
+            "T": {
+              "copies": 13,
+              "runs": 910,
+              "states": 11023,
+              "error_rate": 2.1303500000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8906379,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 3703,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 12740
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=9)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 973.4584860000001,
+          "conditional_ideal_phase_full_failure_upper": 0.004853987075945944
+        },
+        {
+          "peak_physical_qubits": 17911,
+          "data_code_distance": 7,
+          "runtime_per_execution_ns": 46046000.0,
+          "serial_runtime_all_executions_ns": 46046000.0,
+          "qdk_combined_error_score_per_execution": 0.002398921393945943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.0023936730050000007,
+          "physical_failure_union_bound_all_executions": 0.0023936730050000007,
+          "factories": {
+            "T": {
+              "copies": 16,
+              "runs": 708,
+              "states": 11023,
+              "error_rate": 2.1303500000000005e-07
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8906379,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 2231,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 15680
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=7)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 824.729906,
+          "conditional_ideal_phase_full_failure_upper": 0.004898921393945944
+        },
+        {
+          "peak_physical_qubits": 61267,
+          "data_code_distance": 5,
+          "runtime_per_execution_ns": 32890000.0,
+          "serial_runtime_all_executions_ns": 32890000.0,
+          "qdk_combined_error_score_per_execution": 0.004567933183945943,
+          "synthesis_model_error_per_execution": 5.248388945942619e-06,
+          "physical_failure_model_per_execution": 0.004562684795000001,
+          "physical_failure_union_bound_all_executions": 0.004562684795000001,
+          "factories": {
+            "T": {
+              "copies": 31,
+              "runs": 361,
+              "states": 11023,
+              "error_rate": 2.165e-09
+            }
+          },
+          "model_properties": {
+            "LOGICAL_MEMORY_QUBITS": 0,
+            "EVALUATION_TIME": 8906379,
+            "NUM_TS_PER_ROTATION": 19,
+            "ALGORITHM_COMPUTE_QUBITS": 7,
+            "PHYSICAL_COMPUTE_QUBITS": 1127,
+            "ALGORITHM_MEMORY_QUBITS": 0,
+            "LOGICAL_COMPUTE_QUBITS": 23,
+            "PHYSICAL_FACTORY_QUBITS": 60140
+          },
+          "instruction_source_graph": "LATTICE_SURGERY @ SurfaceCode(crossing_prefactor=0.03, error_correction_threshold=0.01, one_qubit_gate_depth=1, two_qubit_gate_depth=4, code_cycle_override=None, code_cycle_offset=0, distance=5)\n  CNOT @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  H @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\n  MEAS_Z @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)\nT @ RoundBasedFactory(code_query=_ComponentQuery(component=<class 'qdk.qre.models.qec._surface_code.SurfaceCode'>, source=RootNode(), kwargs={}), physical_qubit_calculation=<built-in function sum>)\n  T @ GateBased(error_rate=0.0001, gate_time=100, measurement_time=500, two_qubit_gate_time=100)",
+          "peak_qubit_time_product_qubit_seconds": 2015.0716300000001,
+          "conditional_ideal_phase_full_failure_upper": 0.007067933183945944
+        }
+      ],
+      "input_primitive_export_qasm_sha256": "728fbaade5bcd4d12703867478116672dd38181a3e145b533f4c66ee9c152f1b",
+      "estimated_qasm_scope": "same complete measured trial after the adapter's optimization-level-1 lowering",
+      "resource_adapter_lowering_state_max_abs_error": 2.0053283331865004e-15
+    }
+  ]
+}

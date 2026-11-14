@@ -1,0 +1,403 @@
+{
+  "artifacts": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "dqi-structured.qasm": {
+      "bytes": 36471,
+      "sha256": "ce378eda8a35d5d7cd74adbb9613c9290a300f4bc7377668b1f1136fe24fef20"
+    },
+    "generate_optimization_dqi_structured.py": {
+      "bytes": 18210,
+      "sha256": "0d5a4ce113f63447a8e880891dd50a1079e942fd918b99f1dccc3cd0262ab36c"
+    },
+    "operations.ndjson": {
+      "bytes": 54412,
+      "sha256": "195635076dd95a3dba747ea6f8b7daf51a1ed2fce7b2384516adb876bfa1db73"
+    },
+    "optimization_dqi_structured.py": {
+      "bytes": 21438,
+      "sha256": "0daaf35c01fbf83bcdfad98c85f6af94420202d7b546c7892615bd18ff1ec028"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    }
+  },
+  "coherent_validation_performed": false,
+  "completion_is_provisional": true,
+  "elapsed_seconds_before_receipt": 0.07135390117764473,
+  "ell": 1,
+  "generated_at_utc": "2026-11-13T11:56:22.135879+00:00",
+  "instance": {
+    "bit_order": "integer bit j is x_j; display x_(n-1)..x_0",
+    "decoder_scope": "clean-workspace XOR on arbitrary clause targets; dirty target dependence for n>=3",
+    "domain_size": 10,
+    "ell": 1,
+    "family": "binary_identity_plus_all_ones_degree_one",
+    "kernel_minimum_distance": 9,
+    "m": 9,
+    "matrix": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "n": 8,
+    "prepared_domain": "vacuum and every clause singleton",
+    "signs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "workspace_input": "all n-1 workspace wires zero"
+  },
+  "invocation_acceptance": "requires raw CLI exit zero or normal API return; file status alone is insufficient",
+  "limits": {
+    "max_n": 8,
+    "max_operations": 4096,
+    "max_output_bytes": 262144,
+    "max_qubits": 24,
+    "time_guard": "entry-anchored POSIX CLI hard alarm plus operation/phase checks",
+    "time_limit_seconds": 10.0
+  },
+  "logical_resources": {
+    "accounting_scope": "one complete initialized draw, including preparation/sign/syndrome/decoder/uncompute/reset/readout",
+    "ccx_blocks": {
+      "decoder": 117,
+      "preparation": 56
+    },
+    "classical_readout_bits": 8,
+    "classical_work": {
+      "angle_generation": "O(n) classical coefficient/angle calculations, time unmeasured",
+      "family_input": "n specifies fixed B/v; an explicit B dump takes O(n^2) bits",
+      "hardware_input_delivery": "not measured or represented as a generic loading oracle",
+      "primitive_compilation": "O(n^2) emitted primitives, time separate from quantum runtime",
+      "scoring_per_assignment": "O(n) bit/parity work and output selection, time unmeasured"
+    },
+    "counts": {
+      "barrier": 7,
+      "cx": 1070,
+      "h": 354,
+      "measure": 8,
+      "reset": 24,
+      "ry": 17,
+      "t": 692,
+      "tdg": 519,
+      "x": 184,
+      "z": 1
+    },
+    "ell": 1,
+    "events_without_barriers": 2869,
+    "exclusions": [
+      "all RY synthesis and approximation allocation",
+      "routing/scheduling and physical faults",
+      "classical compilation, angle generation and input delivery time",
+      "classical objective scoring and output selection time"
+    ],
+    "execution_evidence": "external; formulas alone are not validation",
+    "explicit_t_tdg": 1211,
+    "m": 9,
+    "n": 8,
+    "physical_estimate_status": "pending",
+    "schedule_scope": "all unitary primitives serial; parallel/routed/physical scheduling pending",
+    "schema": "openquantum.dqi.structured_source_ledger.v1",
+    "source_operations": 2876,
+    "stage_intervals": {
+      "decoder": {
+        "barrier_index": 2857,
+        "operations": 1867,
+        "start": 990,
+        "stop": 2857
+      },
+      "hadamard": {
+        "barrier_index": 2866,
+        "operations": 8,
+        "start": 2858,
+        "stop": 2866
+      },
+      "preparation": {
+        "barrier_index": 970,
+        "operations": 945,
+        "start": 25,
+        "stop": 970
+      },
+      "readout": {
+        "barrier_index": 2875,
+        "operations": 8,
+        "start": 2867,
+        "stop": 2875
+      },
+      "reset": {
+        "barrier_index": 24,
+        "operations": 24,
+        "start": 0,
+        "stop": 24
+      },
+      "sign": {
+        "barrier_index": 972,
+        "operations": 1,
+        "start": 971,
+        "stop": 972
+      },
+      "syndrome": {
+        "barrier_index": 989,
+        "operations": 16,
+        "start": 973,
+        "stop": 989
+      }
+    },
+    "total_qubits": 24,
+    "unitary_gates": 2837,
+    "unitary_serial_layer_upper_bound": 2837,
+    "unsynthesized_ry": 17,
+    "workspace": {
+      "allocated_clean": 7,
+      "clean_target_law_requires_zero_input": true,
+      "decoder_peak_used": 6,
+      "preparation_peak_used": 7,
+      "restored_after_each_predicate": true,
+      "serial_reuse": true
+    }
+  },
+  "m": 9,
+  "n": 8,
+  "observed_operation_counts": {
+    "barrier": 7,
+    "cx": 1070,
+    "h": 354,
+    "measure": 8,
+    "reset": 24,
+    "ry": 17,
+    "t": 692,
+    "tdg": 519,
+    "x": 184,
+    "z": 1
+  },
+  "observed_stage_intervals": {
+    "decoder": {
+      "barrier_index": 2857,
+      "operations": 1867,
+      "start": 990,
+      "stop": 2857
+    },
+    "hadamard": {
+      "barrier_index": 2866,
+      "operations": 8,
+      "start": 2858,
+      "stop": 2866
+    },
+    "preparation": {
+      "barrier_index": 970,
+      "operations": 945,
+      "start": 25,
+      "stop": 970
+    },
+    "readout": {
+      "barrier_index": 2875,
+      "operations": 8,
+      "start": 2867,
+      "stop": 2875
+    },
+    "reset": {
+      "barrier_index": 24,
+      "operations": 24,
+      "start": 0,
+      "stop": 24
+    },
+    "sign": {
+      "barrier_index": 972,
+      "operations": 1,
+      "start": 971,
+      "stop": 972
+    },
+    "syndrome": {
+      "barrier_index": 989,
+      "operations": 16,
+      "start": 973,
+      "stop": 989
+    }
+  },
+  "operation_stream_sha256": "195635076dd95a3dba747ea6f8b7daf51a1ed2fce7b2384516adb876bfa1db73",
+  "provenance": {
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "generator_backend": "standard-library streaming primitive IR",
+    "generator_sha256": "0d5a4ce113f63447a8e880891dd50a1079e942fd918b99f1dccc3cd0262ab36c",
+    "python": "3.12.14",
+    "random_work_performed": false,
+    "source_module": "optimization_dqi_structured.py",
+    "source_sha256": "0daaf35c01fbf83bcdfad98c85f6af94420202d7b546c7892615bd18ff1ec028",
+    "upstream_code_adopted": false
+  },
+  "readout_map": [
+    [
+      9,
+      0
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      13,
+      4
+    ],
+    [
+      14,
+      5
+    ],
+    [
+      15,
+      6
+    ],
+    [
+      16,
+      7
+    ]
+  ],
+  "repetition_plan": {
+    "classical_baseline": "the all-zero assignment is an immediate optimum; no optimization advantage",
+    "classical_scoring": "n+1 binary constraints and output selection per draw; CPU time unmeasured",
+    "complete_counts": {
+      "barrier": 133,
+      "cx": 20330,
+      "h": 6726,
+      "measure": 152,
+      "reset": 456,
+      "ry": 323,
+      "t": 13148,
+      "tdg": 9861,
+      "x": 3496,
+      "z": 19
+    },
+    "complete_source_operations": 54644,
+    "complete_unitary_gates": 53903,
+    "draws_charged": 19,
+    "failure_probability_after_charged_draws": {
+      "denominator_hex": "22b1c8c1227a00000000000000",
+      "numerator_hex": "46058d38e7920e7ae7a1d65f"
+    },
+    "max_draws": 1024,
+    "minimum_required_draws_lower_bound": 19,
+    "optimal_probability": {
+      "denominator": 40,
+      "numerator": 9
+    },
+    "quality_feasible": true,
+    "quality_limit": "ideal law only; approximate/synthesized/physical draws need a justified probability lower bound",
+    "requested_failure": {
+      "denominator": 100,
+      "numerator": 1
+    },
+    "required_draws": 19,
+    "scope": "exact ideal independent-draw accounting only; no draws executed or sampled",
+    "serial_peak_qubits": 24,
+    "status": "feasible"
+  },
+  "schema": "openquantum.dqi.structured_generation.v1",
+  "scope": "actual streamed primitives only; no coherent validation or quantum sampling",
+  "simulation_performed": false,
+  "source_operations": 2876,
+  "status": "generation_only_exports_complete"
+}

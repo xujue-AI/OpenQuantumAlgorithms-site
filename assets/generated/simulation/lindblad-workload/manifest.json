@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "status": "checked bounded logical workloads",
+  "declared_family": [
+    2,
+    3,
+    4
+  ],
+  "generated_sizes": [
+    2,
+    3,
+    4
+  ],
+  "output_contract": {
+    "observable": "Z on system wire 0",
+    "score": "+1 for output bit 0, -1 for bit 1",
+    "initial": "product: +i on system0, + on every other system; actual H/S gates",
+    "family": [
+      2,
+      3,
+      4
+    ],
+    "splitting_bias_allowance": 0.01,
+    "statistical_absolute_error_per_output": 0.03,
+    "ideal_angle_absolute_error_per_output": 0.04,
+    "family_statistical_failure": 0.005,
+    "case_statistical_failure": 0.0016666666666666668,
+    "case_failure_exact": {
+      "numerator": 1,
+      "denominator": 600
+    },
+    "complete_trials_per_case": 15756,
+    "computed_hoeffding_tail_per_case": 0.0016664614056008233,
+    "hoeffding_threshold_exactly_verified": true,
+    "hoeffding_arithmetic": "positive exponential Taylor sum through degree32 proves exp(N*eps^2/2)>=2/delta using Fraction arithmetic",
+    "computed_family_union_bound": 0.00499938421680247,
+    "simultaneous_scope": "all three predeclared local means; error .04 for each output, family failure at most .005 in the ideal-angle model",
+    "trial_ensemble_executed": false,
+    "hardware_execution": false,
+    "finite_angle_confidence_certificate": false
+  },
+  "source_commit_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+  "dirty_owned_source": false,
+  "source_sha256": {
+    "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+    "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+    "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+    "generate_simulation_lindblad_workload.py": "c8f1bfdee12b73debfada7a342fe9c953389860b3dc5a06bf9ea0782dec29264",
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "references.bib": "62e4361da71a54631b98da7cbbfbd313103f702fb2c6cfa680bd68dfc6b1fd13",
+    "source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255"
+  },
+  "case_artifact_sha256": {
+    "n2": {
+      "source-trial.qasm": "3fdb92c3a613eca1b85ab1db182a17e4ffccbd470074dd6c60078895735ab5e2",
+      "rotation-basis-trial.qasm": "5d94b447e4fb5acca2b0ca97d6e56f280d6e5b37785a4979711746c92e515f86",
+      "report.json": "e29f067ce58f41911b399b2cf416b1f8a4930f6f59dd6f8f636b9f5285f30d44"
+    },
+    "n3": {
+      "source-trial.qasm": "e85cc8f6a6a0e07a1b2e964755287a176370a35eeb0ba73247e1998d8a8dfe5c",
+      "rotation-basis-trial.qasm": "b50016b26b1a084decad6ea54175bbec78ee2e2f7957e81f8ab9029de48b694f",
+      "report.json": "f11ead210120dee5ad90a89b4b431b8e62ea4aab37769e3da5dac7f892f27592"
+    },
+    "n4": {
+      "source-trial.qasm": "6924fce307bb11bb111e6588482a240f172c77c6dd5f9e14cfce98ce2857ce9b",
+      "rotation-basis-trial.qasm": "f53f9330c4ebbaa3a98965e4b414c92c563e1880f01f4cb39274159624a0e807",
+      "report.json": "1fe94d775bd32c0e84e9832f77b68e24d6cb63b8309a03f82bc9507f2502b840"
+    }
+  },
+  "packages": {
+    "qiskit": "2.6.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "execution": {
+    "python": "3.12.14",
+    "system": "Linux",
+    "architecture": "x86_64",
+    "device": "CPU; bounded dense channels, no GPU/hardware run",
+    "transpiler_seed": 7,
+    "lowering_optimization_level": 1,
+    "sampling_seed": null,
+    "sampling_note": "trial ensembles unexecuted"
+  },
+  "frozen_baseline_fingerprints": {
+    "before": {
+      "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+      "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+      "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+      "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+      "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+    },
+    "after": {
+      "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+      "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+      "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+      "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+      "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+    }
+  },
+  "frozen_baseline_changed": false,
+  "physical_report": "unavailable for this chain; default5 and no opt-in6/8 long repeated-reset validation used",
+  "numerical_checks_performed": true
+}

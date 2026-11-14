@@ -1,0 +1,319 @@
+{
+  "schema": "openquantum.dqi.public_validated_component.v1",
+  "status": "validated_coherent_component",
+  "coherent_component_complete": true,
+  "scope": "Validated fixed-default ideal CPU circuit and export component; reusable notebook execution is separate. No physical estimate or general optimization advantage is claimed.",
+  "focused_tests": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "started_at_utc": "2026-11-13T03:38:26.114124+00:00",
+  "completed_at_utc": "2026-11-13T03:38:28.912051+00:00",
+  "provenance": {
+    "source_commit": "76fadb0b308ea4ea27a21382ca328d349314b1c4",
+    "source_sha256": "370088484830c23140f14181a3892194fa936e4477327536946423854fcc1f99",
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "pytest": "9.2.0",
+      "nbclient": "0.11.0",
+      "nbformat": "5.11.1",
+      "ipykernel": "7.4.0"
+    },
+    "device": {
+      "backend": "Qiskit CPU Statevector/Operator; NumPy complex128",
+      "architecture": "arm64",
+      "operating_system": "Darwin",
+      "accelerator": null
+    },
+    "upstream_code_adopted": false,
+    "paper_doi": "10.1038/s41586-025-09527-5",
+    "validation_driver_sha256": "c9cbe1dc1fe6d6b842f4159bf81904c8f1321b48167cd268bdc8142f4c8ece41",
+    "producer_record_sha256": "6357673185c90876b371b1b2958e9a08d25588037377aa7984de70ad105da410",
+    "focused_junit_sha256": "0755f124f3f577b569ffcba7b271497fb9bf412a5cd76e875857b2b964cc8ff6"
+  },
+  "checks": {
+    "full_decoder": {
+      "basis_inputs_checked": 512,
+      "syndromes": 8,
+      "clause_values": 16,
+      "scratch_values": 4,
+      "maximum_complex_entry_error": 7.882822799840153e-15,
+      "phase_alignment_or_fitting": false
+    },
+    "preparation": {
+      "support_integers": [
+        0,
+        1,
+        2,
+        4,
+        8
+      ],
+      "maximum_complex_amplitude_error": 1.609823385706477e-15,
+      "workspace_zero_probability": 0.9999999999999932,
+      "norm_error": 6.8833827526759706e-15
+    },
+    "signed_syndrome_state": {
+      "maximum_complex_amplitude_error": 1.609823385706477e-15,
+      "norm_error": 6.8833827526759706e-15
+    },
+    "decoded_cleanup_state": {
+      "assignment_support": [
+        0,
+        1,
+        2,
+        4,
+        7
+      ],
+      "negative_assignment": 7,
+      "maximum_complex_amplitude_error": 4.884981308350689e-15,
+      "clause_and_workspace_zero_probability": 0.9999999999999785,
+      "norm_error": 2.1760371282653068e-14
+    },
+    "final_state_and_objective": {
+      "maximum_complex_amplitude_error": 5.2735593669694936e-15,
+      "maximum_probability_error": 5.023759186428833e-15,
+      "norm_error": 2.2093438190040615e-14,
+      "clause_and_workspace_zero_probability": 0.9999999999999779,
+      "statevector_amplitudes": 512,
+      "phase_alignment_or_fitting": false
+    },
+    "qasm": {
+      "primitive_operations_checked": 396,
+      "exact_numeric_parameter_roundtrip": true,
+      "scope": "Bounded primitive grammar and exact source chronology; not optional full OpenQASM conformance import"
+    }
+  },
+  "timings_seconds": {
+    "materialize_default_circuit": 0.013045624997175764,
+    "full_decoder_operator_check": 2.3260720839971327,
+    "preparation_state_check": 0.03158091699879151,
+    "signed_syndrome_state_check": 0.03776033400208689,
+    "decoded_cleanup_state_check": 0.09701291700184811,
+    "final_state_and_objective_check": 0.07284449999860954,
+    "qasm_and_original_figure_export": 0.037254583003232256,
+    "driver_total_before_final_write": 2.797894334005832
+  },
+  "sampling_performed": false,
+  "optimizer_or_fit_performed": false,
+  "rotation_synthesis_performed": false,
+  "native_or_factory_calls": false,
+  "gpu_or_remote_work": false,
+  "fixture": {
+    "n": 3,
+    "m": 4,
+    "ell": 1,
+    "matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "signs": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "objective": "number of satisfied binary equations",
+    "integer_order": "x0 is the least significant bit",
+    "display_order": "x2 x1 x0",
+    "initial_state": "all-zero, with nine source resets"
+  },
+  "numerical_contract": {
+    "absolute_elementwise_tolerance": 2e-12,
+    "relative_tolerance": 0,
+    "spectral_norm_certificate": false,
+    "formal_proof_or_interval_certificate": false,
+    "reset_model": "Initial deterministic all-zero resets removed analytically; final Born probabilities evaluated without sampling"
+  },
+  "circuit": {
+    "logical_qubits": 9,
+    "classical_bits": 3,
+    "source_operations": 396,
+    "primitive_counts": {
+      "cx": 144,
+      "t": 88,
+      "tdg": 66,
+      "h": 47,
+      "x": 24,
+      "reset": 9,
+      "barrier": 7,
+      "ry": 7,
+      "measure": 3,
+      "z": 1
+    },
+    "stages": [
+      {
+        "name": "input_reset",
+        "start": 0,
+        "stop": 9
+      },
+      {
+        "name": "weight_zero_one_preparation",
+        "start": 10,
+        "stop": 125
+      },
+      {
+        "name": "clause_sign_phase",
+        "start": 126,
+        "stop": 127
+      },
+      {
+        "name": "syndrome_B_transpose_y",
+        "start": 128,
+        "stop": 134
+      },
+      {
+        "name": "reversible_decoder_and_cleanup",
+        "start": 135,
+        "stop": 387
+      },
+      {
+        "name": "assignment_hadamards",
+        "start": 388,
+        "stop": 391
+      },
+      {
+        "name": "assignment_readout",
+        "start": 392,
+        "stop": 395
+      }
+    ],
+    "readout_map": [
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        2
+      ]
+    ],
+    "primitive_operations_sha256": "3f26c462bf884ee23514113e125c2c35a08edc501d66f1079ffab4543c2b5d09",
+    "preparation_angles_hex": [
+      "0x1.dac670561bb4fp-1",
+      "0x1.0c152382d7365p+0",
+      "0x1.3b2028082e8d5p+0",
+      "0x1.921fb54442d17p+0"
+    ],
+    "unsynthesized_ry": 7,
+    "explicit_t_tdg": 154,
+    "compiled_clifford_t_demand_known": false
+  },
+  "dense_array_accounting": {
+    "decoder_matrix_bytes": 4194304,
+    "comparison_column_bytes": 8192,
+    "explicit_live_decoder_arrays_bytes": 4202496,
+    "comparison_temporary_bytes_bound": 12288,
+    "cap_bytes": 33554432,
+    "scope": "Explicit retained matrix and column; comparison temporaries are bounded separately. Library temporaries are structurally bounded by pinned sequential contraction analysis; post-import NumPy-domain contraction/phase boundary observations are recorded separately. Observations are not a universal peak or RSS measurement."
+  },
+  "outcomes": [
+    {
+      "integer": 0,
+      "bits": "000",
+      "objective": 3,
+      "amplitude_real": 0.4743416490252516,
+      "amplitude_imag": 0.0,
+      "probability": 0.22499999999999498,
+      "analytic_probability": "9/40"
+    },
+    {
+      "integer": 1,
+      "bits": "001",
+      "objective": 3,
+      "amplitude_real": 0.47434164902525167,
+      "amplitude_imag": 0.0,
+      "probability": 0.22499999999999504,
+      "analytic_probability": "9/40"
+    },
+    {
+      "integer": 2,
+      "bits": "010",
+      "objective": 3,
+      "amplitude_real": 0.47434164902525167,
+      "amplitude_imag": 0.0,
+      "probability": 0.22499999999999504,
+      "analytic_probability": "9/40"
+    },
+    {
+      "integer": 3,
+      "bits": "011",
+      "objective": 1,
+      "amplitude_real": -0.1581138830084172,
+      "amplitude_imag": 0.0,
+      "probability": 0.02499999999999944,
+      "analytic_probability": "1/40"
+    },
+    {
+      "integer": 4,
+      "bits": "100",
+      "objective": 3,
+      "amplitude_real": 0.4743416490252516,
+      "amplitude_imag": 0.0,
+      "probability": 0.22499999999999498,
+      "analytic_probability": "9/40"
+    },
+    {
+      "integer": 5,
+      "bits": "101",
+      "objective": 1,
+      "amplitude_real": -0.15811388300841728,
+      "amplitude_imag": 0.0,
+      "probability": 0.024999999999999467,
+      "analytic_probability": "1/40"
+    },
+    {
+      "integer": 6,
+      "bits": "110",
+      "objective": 1,
+      "amplitude_real": -0.15811388300841728,
+      "amplitude_imag": 0.0,
+      "probability": 0.024999999999999467,
+      "analytic_probability": "1/40"
+    },
+    {
+      "integer": 7,
+      "bits": "111",
+      "objective": 1,
+      "amplitude_real": -0.15811388300841725,
+      "amplitude_imag": 0.0,
+      "probability": 0.024999999999999457,
+      "analytic_probability": "1/40"
+    }
+  ],
+  "quality": {
+    "expected_objective": 2.799999999999938,
+    "analytic_expected_objective": "14/5",
+    "maximum_objective": 3,
+    "maximum_draw_probability": 0.89999999999998,
+    "analytic_maximum_draw_probability": "9/10",
+    "scope": "Ideal CPU probability law before measurement; no sampled draw, hardware run or general advantage claim"
+  },
+  "accounting_status": "Seven RY rotations remain unsynthesized. The 154 explicit T/Tdg gates are not full compiled T demand. Synthesis and physical accounting remain planned."
+}

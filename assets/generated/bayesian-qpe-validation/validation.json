@@ -1,0 +1,87 @@
+{
+  "all_transcript_outcomes_and_errors_retained": true,
+  "date": "2026-11-13",
+  "device": "CPU",
+  "executed_notebook_code_cells": 5,
+  "executed_source_commit": "e39791a1aab8aed5c69de7f30a8449949d5321bb",
+  "first_attempt": {
+    "inputs_preserved": true,
+    "modeled_draws": 0,
+    "scientific_stages": 0,
+    "separately_retained": true,
+    "status": "runtime_reader_preclaim_failure"
+  },
+  "generator_sha256_at_execution": "7664935974c74ac848a025ed8d85d3f685dbdd2a69ffb88a24556ce215149ef7",
+  "grid_size": 512,
+  "hardware_execution": false,
+  "local_formal_proof": false,
+  "lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+  "logical_target_dense_limit": 3,
+  "maximum_batch_posterior_residual": 2.498001805406602e-16,
+  "maximum_full_operator_residual": 1.2658490090568385e-15,
+  "maximum_lowered_operator_residual": 5.19107246695111e-15,
+  "maximum_observed_circular_error": 0.0009704054691181407,
+  "maximum_probability_residual": 2.7200464103316335e-15,
+  "module_sha256": "019345eac507bb2c6d3190fbfb622d11294f0aaffded03015399d9eb5297ce97",
+  "native_estimator_calls": 0,
+  "notebook_new_draws": 0,
+  "notebook_sha256": "c46062c42e018a89db4b54ec55e287d736c49be943158876004ce922b76a8d0b",
+  "observations_per_output": 48,
+  "phases": [
+    0.3,
+    0.995,
+    0.125,
+    0.5
+  ],
+  "physical_estimate_performed": false,
+  "private_validation_measurements": {
+    "owned_pass_wall_seconds": 16.57459439523518,
+    "sampled_cumulative_cpu_seconds": 23.39369,
+    "sampled_full_tree_rss_bytes": 309497856,
+    "sampling_scope": "bounded classical validation process tree; not quantum hardware resources or a continuous memory peak certificate"
+  },
+  "python": "3.12.14",
+  "replay_manifest_sha256": "bbda8cd67eff72cf6afd45a5093e363e8f855415bd5ca77bb8ec05940a9b4670",
+  "root_seeds": [
+    7,
+    19
+  ],
+  "saved_seed_label_note": "The original producer label first63bits is shorthand; actual integer seeds and captured code specify the exact mask.",
+  "schema": "openquantum-bayesian-qpe-validation-v1",
+  "scope": "Original fixed-grid single-eigenphase heuristic checked on a classically easy product-phase family; no application advantage, confidence coverage or physical co-design gain claimed.",
+  "seed_derivation": "SHA256 namespace original-grid-bayes:root_seed:phase_index; first eight digest bytes big-endian, masked by (2**63-1)",
+  "source32_manifest_sha256": "b46db9a7d1494ce1c8cbe82edad9724801e49a71723d64b3be2bee9d6d490776",
+  "source_only_companions": [
+    {
+      "dense_validation": false,
+      "literal_power": 32,
+      "source_operations": 1301,
+      "target_qubits": 8,
+      "total_wires": 9
+    },
+    {
+      "dense_validation": false,
+      "literal_power": 128,
+      "source_operations": 20549,
+      "target_qubits": 32,
+      "total_wires": 33
+    }
+  ],
+  "standalone_modeled_draws": 48,
+  "standalone_scientific_match": true,
+  "standalone_scientific_match_exclusions": [
+    "classical_timing_seconds"
+  ],
+  "status": "executed_bounded_ideal_model",
+  "study_literal_controlled_U_calls": 10446,
+  "study_manifest_sha256": "1c1744f03972d1340b7e13bfa89d252a484ae51c7a160ce3ac3db5eaadb595ad",
+  "study_modeled_draws": 384,
+  "study_outputs": 8,
+  "synthesis_calls": 0,
+  "test_modeled_draws": 24,
+  "tests_deselected": 0,
+  "tests_passed": 99,
+  "tests_skipped": 0,
+  "total_validation_modeled_draws": 456,
+  "uniform_confidence_certificate": false
+}

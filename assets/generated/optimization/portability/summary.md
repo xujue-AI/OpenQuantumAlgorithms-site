@@ -8,12 +8,12 @@ Seeds 7, 19 and 41 use the same fixed initialization for each task: QAOA (0.2, 0
 
 | Task / seed | Initial angles | Final angles (radians) | Training calls / shots | Fresh validation shots | Total modeled shots | Training optimizer wall (s) | Classical control (s) |
 |---|---|---|---:|---:|---:|---:|---:|
-| QAOA / 7 | 0.2, 0.1 | 0.60000000, 0.30000000 | 161 / 153856 | 4096 | 157952 | 0.164955 | 0.003530 |
-| QAOA / 19 | 0.2, 0.1 | 0.60000000, 0.30000000 | 161 / 153856 | 4096 | 157952 | 0.160522 | 0.003424 |
-| QAOA / 41 | 0.2, 0.1 | 0.60000000, 0.30000000 | 161 / 153856 | 4096 | 157952 | 0.186291 | 0.003439 |
-| VQE / 7 | 0.6 | -0.25000000 | 97 / 184832 | 8192 | 193024 | 0.093062 | 0.001948 |
-| VQE / 19 | 0.6 | -0.30000000 | 97 / 184832 | 8192 | 193024 | 0.092410 | 0.001884 |
-| VQE / 41 | 0.6 | -0.30000000 | 97 / 184832 | 8192 | 193024 | 0.093030 | 0.001718 |
+| QAOA / 7 | 0.2, 0.1 | 0.60000000, 0.30000000 | 161 / 153856 | 4096 | 157952 | 0.247952 | 0.004968 |
+| QAOA / 19 | 0.2, 0.1 | 0.60000000, 0.30000000 | 161 / 153856 | 4096 | 157952 | 0.244153 | 0.004721 |
+| QAOA / 41 | 0.2, 0.1 | 0.60000000, 0.30000000 | 161 / 153856 | 4096 | 157952 | 0.280157 | 0.004767 |
+| VQE / 7 | 0.6 | -0.25000000 | 97 / 184832 | 8192 | 193024 | 0.135932 | 0.002416 |
+| VQE / 19 | 0.6 | -0.30000000 | 97 / 184832 | 8192 | 193024 | 0.135932 | 0.002436 |
+| VQE / 41 | 0.6 | -0.30000000 | 97 / 184832 | 8192 | 193024 | 0.138767 | 0.002744 |
 
 Fresh validation estimates the energy or expected cut of the final, already selected state. The estimated standard error includes within-group covariance; it is not a rigorous interval. A zero empirical standard error can occur when a finite sample contains only one score and does not certify the exact mean. The separate Hoeffding radius is an ideal-sampling 95% bound for each validation row, not simultaneous table coverage.
 
@@ -34,4 +34,4 @@ QAOA seed 19: fresh validation observed best cut 2 (classical optimum 2); the sa
 
 QAOA seed 41: fresh validation observed best cut 2 (classical optimum 2); the sampled optimal-cut fraction was 0.999512. The fixed final state's exact optimal-cut probability, audited after training, was 0.999526.
 
-The complete record contains **780 sampled objective calls** including six fresh validations and **1,052,928 modeled circuit shots**. The full CPU workflow took 0.799086 s. Simulator/probability generation and classical search work are software timings rather than quantum runtime. Logical counts repeat every preparation, measurement basis change, and readout for all training and validation shots. Arbitrary rotations remain unsynthesized. Physical reset/measurement timing, routing, faults, error correction, factories, hardware latency, noise and mitigation are excluded; physical resource estimates remain pending.
+The complete record contains **780 sampled objective calls** including six fresh validations and **1,052,928 modeled circuit shots**. The full CPU workflow took 1.196467 s. Simulator/probability generation and classical search work are software timings rather than quantum runtime. Logical counts repeat every preparation, measurement basis change, and readout for all training and validation shots. Arbitrary rotations remain unsynthesized. Physical reset/measurement timing, routing, faults, error correction, factories, hardware latency, noise and mitigation are excluded; physical resource estimates remain pending.

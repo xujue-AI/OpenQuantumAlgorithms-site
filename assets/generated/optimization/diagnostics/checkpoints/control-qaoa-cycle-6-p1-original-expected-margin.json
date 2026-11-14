@@ -1,0 +1,2921 @@
+{
+  "schema_version": 1,
+  "kind": "control",
+  "key": "qaoa-cycle-6-p1-original-expected-margin",
+  "identity": {
+    "recipe_sha256": "3b991eaece34b43116afbbbc85d5e8da9e76fe7c9ff217a45c254989c40f5dd9",
+    "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+    "generator_sha256": "0c0f3ff0f177dca99a00cc611261c3b6c82ce39be251e8d3a54026b0f5346f3e",
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "status": "completed",
+  "run": {
+    "case_id": "qaoa-cycle-6-p1",
+    "algorithm": "qaoa",
+    "n_qubits": 6,
+    "p": 1,
+    "start_id": "original",
+    "mode": "expected-margin",
+    "seed": null,
+    "kind": "cpu-control",
+    "run_id": "qaoa-cycle-6-p1-original-expected-margin",
+    "initial": [
+      0.2,
+      0.1
+    ],
+    "parameters": [
+      0.7000000000000002,
+      0.3999999999999999
+    ],
+    "final_parameters": [
+      0.7000000000000002,
+      0.3999999999999999
+    ],
+    "final_exact_objective": -4.477544305831264,
+    "final_effective_standard_error": 0.02288858366107654,
+    "final_expected_standard_error": 0.02288858366107654,
+    "final_evaluation": 56,
+    "evaluations": [
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.2274699679896264,
+        "expected_standard_error": 0.10748541294659002,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.2274699679896264,
+            "population_variance": 1.4787985915262696,
+            "variance_of_mean": 0.011553113996298981,
+            "virtual_sampling_shots": 128,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 0.00010520799878577236,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 0.00012100000000003774,
+        "index": 0,
+        "role": "initial",
+        "iteration_index": null,
+        "accepted": false,
+        "virtual_shots_per_group": 128,
+        "virtual_preparations": 128,
+        "effective_standard_error": 0.10748541294659002,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.2274699679896264,
+        "expected_standard_error": 0.0562123300555119,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.2274699679896264,
+            "population_variance": 1.4787985915262696,
+            "variance_of_mean": 0.0031598260502698067,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 8.350000098289456e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 9.799999999993148e-05,
+        "index": 1,
+        "role": "incumbent",
+        "iteration_index": 0,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.0562123300555119,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          -0.19999999999999973,
+          0.10000000000000009
+        ],
+        "objective_mean": -2.7725300320103745,
+        "expected_standard_error": 0.05621233005551191,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 2.7725300320103745,
+            "population_variance": 1.47879859152627,
+            "variance_of_mean": 0.0031598260502698075,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 7.999999979801942e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 9.399999999981645e-05,
+        "index": 2,
+        "role": "proposal",
+        "iteration_index": 0,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05621233005551191,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.5444296737363414,
+        "expected_standard_error": 0.05448499703863756,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5444296737363414,
+            "population_variance": 1.3893117742765608,
+            "variance_of_mean": 0.0029686149023003434,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 7.295900104509201e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 8.399999999975094e-05,
+        "index": 3,
+        "role": "proposal",
+        "iteration_index": 0,
+        "accepted": true,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05448499703863756,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          -0.2999999999999998
+        ],
+        "objective_mean": -2.4555703262636595,
+        "expected_standard_error": 0.05448499703863757,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 2.4555703262636595,
+            "population_variance": 1.3893117742765613,
+            "variance_of_mean": 0.0029686149023003447,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.083300104364753e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.00000000000145e-05,
+        "index": 4,
+        "role": "proposal",
+        "iteration_index": 0,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05448499703863757,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.5
+        ],
+        "objective_mean": -3.5311456449299676,
+        "expected_standard_error": 0.05550106820778669,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5311456449299676,
+            "population_variance": 1.4416124917921227,
+            "variance_of_mean": 0.0030803685722053903,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.050000047252979e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.00000000000145e-05,
+        "index": 5,
+        "role": "proposal",
+        "iteration_index": 0,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05550106820778669,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.5444296737363414,
+        "expected_standard_error": 0.05448499703863756,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5444296737363414,
+            "population_variance": 1.3893117742765608,
+            "variance_of_mean": 0.0029686149023003434,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.983399933029432e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.899999999987472e-05,
+        "index": 6,
+        "role": "incumbent",
+        "iteration_index": 1,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05448499703863756,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.2274699679896264,
+        "expected_standard_error": 0.0562123300555119,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.2274699679896264,
+            "population_variance": 1.4787985915262696,
+            "variance_of_mean": 0.0031598260502698067,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.9374999182182364e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.899999999987472e-05,
+        "index": 7,
+        "role": "proposal",
+        "iteration_index": 1,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.0562123300555119,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.5311456449299685,
+        "expected_standard_error": 0.0555010682077867,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5311456449299685,
+            "population_variance": 1.4416124917921231,
+            "variance_of_mean": 0.003080368572205391,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.91669995628763e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 8,
+        "role": "proposal",
+        "iteration_index": 1,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.0555010682077867,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          -0.2999999999999998
+        ],
+        "objective_mean": -1.6969547133440663,
+        "expected_standard_error": 0.044828235208725385,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 1.6969547133440663,
+            "population_variance": 0.9404790744626812,
+            "variance_of_mean": 0.002009570671928806,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.862500074726995e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.799999999973494e-05,
+        "index": 9,
+        "role": "proposal",
+        "iteration_index": 1,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.044828235208725385,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.052557718250726304,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0027623137477227285,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.874999988009222e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 10,
+        "role": "proposal",
+        "iteration_index": 1,
+        "accepted": true,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.052557718250726304,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.052557718250726304,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0027623137477227285,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.875000169908162e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 11,
+        "role": "incumbent",
+        "iteration_index": 2,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.052557718250726304,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.5
+        ],
+        "objective_mean": -3.5311456449299676,
+        "expected_standard_error": 0.05550106820778669,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5311456449299676,
+            "population_variance": 1.4416124917921227,
+            "variance_of_mean": 0.0030803685722053903,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8292000176152214e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 12,
+        "role": "proposal",
+        "iteration_index": 2,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05550106820778669,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.5
+        ],
+        "objective_mean": -4.240232715647711,
+        "expected_standard_error": 0.06300794528351321,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.240232715647711,
+            "population_variance": 1.8579605470218914,
+            "variance_of_mean": 0.003970001168850195,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.812499875901267e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.699999999959516e-05,
+        "index": 13,
+        "role": "proposal",
+        "iteration_index": 2,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.06300794528351321,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.5444296737363414,
+        "expected_standard_error": 0.05448499703863756,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5444296737363414,
+            "population_variance": 1.3893117742765608,
+            "variance_of_mean": 0.0029686149023003434,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.816699922434054e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 14,
+        "role": "proposal",
+        "iteration_index": 2,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05448499703863756,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.9000000000000004
+        ],
+        "objective_mean": -2.3813304757644786,
+        "expected_standard_error": 0.06664388412382508,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 2.3813304757644786,
+            "population_variance": 2.078578612239397,
+            "variance_of_mean": 0.004441407291109823,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.783300002804026e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 15,
+        "role": "proposal",
+        "iteration_index": 2,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.06664388412382508,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.052557718250726304,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0027623137477227285,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.920799958403222e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.899999999987472e-05,
+        "index": 16,
+        "role": "incumbent",
+        "iteration_index": 3,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.052557718250726304,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.20000000000000018,
+          0.5
+        ],
+        "objective_mean": -3.5311456449299676,
+        "expected_standard_error": 0.05550106820778669,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5311456449299676,
+            "population_variance": 1.4416124917921227,
+            "variance_of_mean": 0.0030803685722053903,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.7875000493368134e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 17,
+        "role": "proposal",
+        "iteration_index": 3,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05550106820778669,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          1.0,
+          0.5
+        ],
+        "objective_mean": -4.240232715647711,
+        "expected_standard_error": 0.06300794528351321,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.240232715647711,
+            "population_variance": 1.8579605470218914,
+            "variance_of_mean": 0.003970001168850195,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.820800106448587e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.699999999959516e-05,
+        "index": 18,
+        "role": "proposal",
+        "iteration_index": 3,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.06300794528351321,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.10000000000000009
+        ],
+        "objective_mean": -3.5444296737363414,
+        "expected_standard_error": 0.05448499703863756,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.5444296737363414,
+            "population_variance": 1.3893117742765608,
+            "variance_of_mean": 0.0029686149023003434,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.80830001126742e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 19,
+        "role": "proposal",
+        "iteration_index": 3,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.05448499703863756,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.9000000000000004
+        ],
+        "objective_mean": -2.3813304757644786,
+        "expected_standard_error": 0.06664388412382508,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 2.3813304757644786,
+            "population_variance": 2.078578612239397,
+            "variance_of_mean": 0.004441407291109823,
+            "virtual_sampling_shots": 468,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.858300028194208e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 20,
+        "role": "proposal",
+        "iteration_index": 3,
+        "accepted": false,
+        "virtual_shots_per_group": 468,
+        "virtual_preparations": 468,
+        "effective_standard_error": 0.06664388412382508,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.03716391897878054,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0013811568738613643,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 7.516699952248018e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 0.0001229999999998732,
+        "index": 21,
+        "role": "incumbent",
+        "iteration_index": 4,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.03716391897878054,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.3999999999999999,
+          0.5
+        ],
+        "objective_mean": -3.978435071358998,
+        "expected_standard_error": 0.0376410249162199,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.978435071358998,
+            "population_variance": 1.3261685643119039,
+            "variance_of_mean": 0.0014168467567434871,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.991699956415687e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 8.500000000033481e-05,
+        "index": 22,
+        "role": "proposal",
+        "iteration_index": 4,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0376410249162199,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_mean": -4.363364557752774,
+        "expected_standard_error": 0.0395566875093133,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.363364557752774,
+            "population_variance": 1.4645887090000573,
+            "variance_of_mean": 0.001564731526709463,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 7.145900053728838e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 8.300000000005525e-05,
+        "index": 23,
+        "role": "proposal",
+        "iteration_index": 4,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0395566875093133,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.2999999999999998
+        ],
+        "objective_mean": -4.303045286655934,
+        "expected_standard_error": 0.031698349104715265,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.303045286655934,
+            "population_variance": 0.9404790744626812,
+            "variance_of_mean": 0.001004785335964403,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.987499935145024e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.00000000000145e-05,
+        "index": 24,
+        "role": "proposal",
+        "iteration_index": 4,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.031698349104715265,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7000000000000002
+        ],
+        "objective_mean": -3.468333073921742,
+        "expected_standard_error": 0.04820912531458204,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.468333073921742,
+            "population_variance": 2.175376098726862,
+            "variance_of_mean": 0.002324119763597075,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.854200026078615e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.799999999973494e-05,
+        "index": 25,
+        "role": "proposal",
+        "iteration_index": 4,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.04820912531458204,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.03716391897878054,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0013811568738613643,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.0541000493685715e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.100000000015427e-05,
+        "index": 26,
+        "role": "incumbent",
+        "iteration_index": 5,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.03716391897878054,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.3999999999999999,
+          0.5
+        ],
+        "objective_mean": -3.978435071358998,
+        "expected_standard_error": 0.0376410249162199,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.978435071358998,
+            "population_variance": 1.3261685643119039,
+            "variance_of_mean": 0.0014168467567434871,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.9333000535843894e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.00000000000145e-05,
+        "index": 27,
+        "role": "proposal",
+        "iteration_index": 5,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0376410249162199,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_mean": -4.363364557752774,
+        "expected_standard_error": 0.0395566875093133,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.363364557752774,
+            "population_variance": 1.4645887090000573,
+            "variance_of_mean": 0.001564731526709463,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.862499892828055e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.699999999959516e-05,
+        "index": 28,
+        "role": "proposal",
+        "iteration_index": 5,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0395566875093133,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.2999999999999998
+        ],
+        "objective_mean": -4.303045286655934,
+        "expected_standard_error": 0.031698349104715265,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.303045286655934,
+            "population_variance": 0.9404790744626812,
+            "variance_of_mean": 0.001004785335964403,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.866699939360842e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 29,
+        "role": "proposal",
+        "iteration_index": 5,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.031698349104715265,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7000000000000002
+        ],
+        "objective_mean": -3.468333073921742,
+        "expected_standard_error": 0.04820912531458204,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.468333073921742,
+            "population_variance": 2.175376098726862,
+            "variance_of_mean": 0.002324119763597075,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8707999414764345e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.799999999973494e-05,
+        "index": 30,
+        "role": "proposal",
+        "iteration_index": 5,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.04820912531458204,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.03716391897878054,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0013811568738613643,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.9333000535843894e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.899999999987472e-05,
+        "index": 31,
+        "role": "incumbent",
+        "iteration_index": 6,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.03716391897878054,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.3999999999999999,
+          0.5
+        ],
+        "objective_mean": -3.978435071358998,
+        "expected_standard_error": 0.0376410249162199,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.978435071358998,
+            "population_variance": 1.3261685643119039,
+            "variance_of_mean": 0.0014168467567434871,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.833400064148009e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 32,
+        "role": "proposal",
+        "iteration_index": 6,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0376410249162199,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_mean": -4.363364557752774,
+        "expected_standard_error": 0.0395566875093133,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.363364557752774,
+            "population_variance": 1.4645887090000573,
+            "variance_of_mean": 0.001564731526709463,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.899999996472616e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.799999999973494e-05,
+        "index": 33,
+        "role": "proposal",
+        "iteration_index": 6,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0395566875093133,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.2999999999999998
+        ],
+        "objective_mean": -4.303045286655934,
+        "expected_standard_error": 0.031698349104715265,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.303045286655934,
+            "population_variance": 0.9404790744626812,
+            "variance_of_mean": 0.001004785335964403,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8166000599157996e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.599999999989947e-05,
+        "index": 34,
+        "role": "proposal",
+        "iteration_index": 6,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.031698349104715265,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7000000000000002
+        ],
+        "objective_mean": -3.468333073921742,
+        "expected_standard_error": 0.04820912531458204,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.468333073921742,
+            "population_variance": 2.175376098726862,
+            "variance_of_mean": 0.002324119763597075,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.849999979545828e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 35,
+        "role": "proposal",
+        "iteration_index": 6,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.04820912531458204,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.03716391897878054,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0013811568738613643,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8917001297231764e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.899999999987472e-05,
+        "index": 36,
+        "role": "incumbent",
+        "iteration_index": 7,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.03716391897878054,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.3999999999999999,
+          0.5
+        ],
+        "objective_mean": -3.978435071358998,
+        "expected_standard_error": 0.0376410249162199,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.978435071358998,
+            "population_variance": 1.3261685643119039,
+            "variance_of_mean": 0.0014168467567434871,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8290999731980264e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 37,
+        "role": "proposal",
+        "iteration_index": 7,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0376410249162199,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7999999999999998,
+          0.5
+        ],
+        "objective_mean": -4.363364557752774,
+        "expected_standard_error": 0.0395566875093133,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.363364557752774,
+            "population_variance": 1.4645887090000573,
+            "variance_of_mean": 0.001564731526709463,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.841599886480253e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.799999999973494e-05,
+        "index": 38,
+        "role": "proposal",
+        "iteration_index": 7,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.0395566875093133,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.2999999999999998
+        ],
+        "objective_mean": -4.303045286655934,
+        "expected_standard_error": 0.031698349104715265,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.303045286655934,
+            "population_variance": 0.9404790744626812,
+            "variance_of_mean": 0.001004785335964403,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.762499858974479e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.600000000034356e-05,
+        "index": 39,
+        "role": "proposal",
+        "iteration_index": 7,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.031698349104715265,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.7000000000000002
+        ],
+        "objective_mean": -3.468333073921742,
+        "expected_standard_error": 0.04820912531458204,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.468333073921742,
+            "population_variance": 2.175376098726862,
+            "variance_of_mean": 0.002324119763597075,
+            "virtual_sampling_shots": 936,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.812500057800207e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.599999999989947e-05,
+        "index": 40,
+        "role": "proposal",
+        "iteration_index": 7,
+        "accepted": false,
+        "virtual_shots_per_group": 936,
+        "virtual_preparations": 936,
+        "effective_standard_error": 0.04820912531458204,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.026278859125363152,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0006905784369306821,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8417001127963886e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 41,
+        "role": "incumbent",
+        "iteration_index": 8,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.026278859125363152,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.5,
+          0.5
+        ],
+        "objective_mean": -4.14772110185144,
+        "expected_standard_error": 0.02624960762673978,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.14772110185144,
+            "population_variance": 1.2898864378441925,
+            "variance_of_mean": 0.0006890419005577952,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.7792000006884336e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.599999999989947e-05,
+        "index": 42,
+        "role": "proposal",
+        "iteration_index": 8,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02624960762673978,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.5
+        ],
+        "objective_mean": -4.344100355616854,
+        "expected_standard_error": 0.026841882485451756,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.344100355616854,
+            "population_variance": 1.348751018839165,
+            "variance_of_mean": 0.0007204866553628018,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.795900142402388e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 43,
+        "role": "proposal",
+        "iteration_index": 8,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.026841882485451756,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.397462501003657,
+        "expected_standard_error": 0.02282609115682777,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.397462501003657,
+            "population_variance": 0.975368978999646,
+            "variance_of_mean": 0.0005210304374998109,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.983299888612237e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.899999999987472e-05,
+        "index": 44,
+        "role": "proposal",
+        "iteration_index": 8,
+        "accepted": true,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02282609115682777,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.6000000000000001
+        ],
+        "objective_mean": -3.944337128108115,
+        "expected_standard_error": 0.030748593378175763,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 3.944337128108115,
+            "population_variance": 1.76993106214653,
+            "variance_of_mean": 0.0009454759947363943,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.837500066263601e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 45,
+        "role": "proposal",
+        "iteration_index": 8,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.030748593378175763,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.397462501003657,
+        "expected_standard_error": 0.02282609115682777,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.397462501003657,
+            "population_variance": 0.975368978999646,
+            "variance_of_mean": 0.0005210304374998109,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8583998907124624e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.799999999973494e-05,
+        "index": 46,
+        "role": "incumbent",
+        "iteration_index": 9,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02282609115682777,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.5,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.26166827620897,
+        "expected_standard_error": 0.02354700439593037,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.26166827620897,
+            "population_variance": 1.037951770793117,
+            "variance_of_mean": 0.0005544614160219642,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.812500057800207e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 47,
+        "role": "proposal",
+        "iteration_index": 9,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02354700439593037,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.477544305831264,
+        "expected_standard_error": 0.02288858366107654,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.477544305831264,
+            "population_variance": 0.9807169544829072,
+            "variance_of_mean": 0.0005238872620101,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.8250001529813744e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 48,
+        "role": "proposal",
+        "iteration_index": 9,
+        "accepted": true,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02288858366107654,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.2999999999999998
+        ],
+        "objective_mean": -4.303045286655934,
+        "expected_standard_error": 0.022414117604362693,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.303045286655934,
+            "population_variance": 0.9404790744626812,
+            "variance_of_mean": 0.0005023926679822015,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.358300015563145e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.199999999984996e-05,
+        "index": 49,
+        "role": "proposal",
+        "iteration_index": 9,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.022414117604362693,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.5
+        ],
+        "objective_mean": -4.271251113856438,
+        "expected_standard_error": 0.026278859125363152,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.271251113856438,
+            "population_variance": 1.292762833934237,
+            "variance_of_mean": 0.0006905784369306821,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.500000017695129e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.399999999968543e-05,
+        "index": 50,
+        "role": "proposal",
+        "iteration_index": 9,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.026278859125363152,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.477544305831264,
+        "expected_standard_error": 0.02288858366107654,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.477544305831264,
+            "population_variance": 0.9807169544829072,
+            "variance_of_mean": 0.0005238872620101,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.212500011315569e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.199999999984996e-05,
+        "index": 51,
+        "role": "incumbent",
+        "iteration_index": 10,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02288858366107654,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.397462501003657,
+        "expected_standard_error": 0.02282609115682777,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.397462501003657,
+            "population_variance": 0.975368978999646,
+            "variance_of_mean": 0.0005210304374998109,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.758299994340632e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 52,
+        "role": "proposal",
+        "iteration_index": 10,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02282609115682777,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.8000000000000003,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.498721081846065,
+        "expected_standard_error": 0.023864909630749675,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.498721081846065,
+            "population_variance": 1.0661674826721645,
+            "variance_of_mean": 0.0005695339116838485,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.79999996261904e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.599999999989947e-05,
+        "index": 53,
+        "role": "proposal",
+        "iteration_index": 10,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.023864909630749675,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.2999999999999998
+        ],
+        "objective_mean": -4.377716498407642,
+        "expected_standard_error": 0.02218843336659078,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.377716498407642,
+            "population_variance": 0.9216353488935323,
+            "variance_of_mean": 0.000492326575263639,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.862500074726995e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.899999999987472e-05,
+        "index": 54,
+        "role": "proposal",
+        "iteration_index": 10,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02218843336659078,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.5
+        ],
+        "objective_mean": -4.344100355616854,
+        "expected_standard_error": 0.026841882485451756,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.344100355616854,
+            "population_variance": 1.348751018839165,
+            "variance_of_mean": 0.0007204866553628018,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.929100007051602e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.800000000017903e-05,
+        "index": 55,
+        "role": "proposal",
+        "iteration_index": 10,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.026841882485451756,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.477544305831264,
+        "expected_standard_error": 0.02288858366107654,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.477544305831264,
+            "population_variance": 0.9807169544829072,
+            "variance_of_mean": 0.0005238872620101,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.57500004308531e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.699999999966067e-05,
+        "index": 56,
+        "role": "incumbent",
+        "iteration_index": 11,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02288858366107654,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples"
+      },
+      {
+        "parameters": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.397462501003657,
+        "expected_standard_error": 0.02282609115682777,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.397462501003657,
+            "population_variance": 0.975368978999646,
+            "variance_of_mean": 0.0005210304374998109,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 6.491699969046749e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.50000000002693e-05,
+        "index": 57,
+        "role": "proposal",
+        "iteration_index": 11,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02282609115682777,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.8000000000000003,
+          0.3999999999999999
+        ],
+        "objective_mean": -4.498721081846065,
+        "expected_standard_error": 0.023864909630749675,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.498721081846065,
+            "population_variance": 1.0661674826721645,
+            "variance_of_mean": 0.0005695339116838485,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.945900011283811e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 7.00000000000145e-05,
+        "index": 58,
+        "role": "proposal",
+        "iteration_index": 11,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.023864909630749675,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 0,
+        "direction": 1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.2999999999999998
+        ],
+        "objective_mean": -4.377716498407642,
+        "expected_standard_error": 0.02218843336659078,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.377716498407642,
+            "population_variance": 0.9216353488935323,
+            "variance_of_mean": 0.000492326575263639,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.7499999456922524e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.599999999989947e-05,
+        "index": 59,
+        "role": "proposal",
+        "iteration_index": 11,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.02218843336659078,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": -1
+      },
+      {
+        "parameters": [
+          0.7000000000000002,
+          0.5
+        ],
+        "objective_mean": -4.344100355616854,
+        "expected_standard_error": 0.026841882485451756,
+        "groups": [
+          {
+            "group": "all_z",
+            "mean": 4.344100355616854,
+            "population_variance": 1.348751018839165,
+            "variance_of_mean": 0.0007204866553628018,
+            "virtual_sampling_shots": 1872,
+            "outcome_min": 0.0,
+            "outcome_max": 6.0,
+            "quantum_preparations": 0,
+            "count_samples": null,
+            "joint_term_covariance_retained": true,
+            "allocation_scope": "virtual CPU-control annotation; no measurement draws"
+          }
+        ],
+        "quantum_preparations": 0,
+        "count_samples": null,
+        "seed": null,
+        "evaluation_wall_seconds": 5.7499999456922524e-05,
+        "method": "independent ideal population moments; virtual allocations only; CPU diagnostic",
+        "evaluation_process_cpu_seconds": 6.700000000003925e-05,
+        "index": 60,
+        "role": "proposal",
+        "iteration_index": 11,
+        "accepted": false,
+        "virtual_shots_per_group": 1872,
+        "virtual_preparations": 1872,
+        "effective_standard_error": 0.026841882485451756,
+        "hardware_wall_seconds": null,
+        "effective_standard_error_scope": "population-based hypothetical mean SE under virtual allocation; no samples",
+        "axis": 1,
+        "direction": 1
+      }
+    ],
+    "iterations": [
+      {
+        "index": 0,
+        "step": 0.4,
+        "virtual_shots_per_group": 468,
+        "parameters_before": [
+          0.20000000000000018,
+          0.10000000000000009
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.10000000000000009
+        ],
+        "incumbent_evaluation": 1,
+        "proposal_evaluations": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "best_proposal_evaluation": 3,
+        "accepted": true,
+        "exact_improvement": 0.31695970574671506,
+        "comparison_margin": 0.1565687191308679,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 1,
+        "step": 0.4,
+        "virtual_shots_per_group": 468,
+        "parameters_before": [
+          0.6000000000000001,
+          0.10000000000000009
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.5
+        ],
+        "incumbent_evaluation": 6,
+        "proposal_evaluations": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "best_proposal_evaluation": 10,
+        "accepted": true,
+        "exact_improvement": 0.726821440120097,
+        "comparison_margin": 0.15140579447330374,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 2,
+        "step": 0.4,
+        "virtual_shots_per_group": 468,
+        "parameters_before": [
+          0.6000000000000001,
+          0.5
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.5
+        ],
+        "incumbent_evaluation": 11,
+        "proposal_evaluations": [
+          12,
+          13,
+          14,
+          15
+        ],
+        "best_proposal_evaluation": 13,
+        "accepted": false,
+        "exact_improvement": -0.03101839820872776,
+        "comparison_margin": 0.16410137009267076,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 3,
+        "step": 0.4,
+        "virtual_shots_per_group": 468,
+        "parameters_before": [
+          0.6000000000000001,
+          0.5
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.5
+        ],
+        "incumbent_evaluation": 16,
+        "proposal_evaluations": [
+          17,
+          18,
+          19,
+          20
+        ],
+        "best_proposal_evaluation": 18,
+        "accepted": false,
+        "exact_improvement": -0.03101839820872776,
+        "comparison_margin": 0.16410137009267076,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 4,
+        "step": 0.2,
+        "virtual_shots_per_group": 936,
+        "parameters_before": [
+          0.6000000000000001,
+          0.5
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.5
+        ],
+        "incumbent_evaluation": 21,
+        "proposal_evaluations": [
+          22,
+          23,
+          24,
+          25
+        ],
+        "best_proposal_evaluation": 23,
+        "accepted": false,
+        "exact_improvement": 0.09211344389633602,
+        "comparison_margin": 0.10855207783494202,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 5,
+        "step": 0.2,
+        "virtual_shots_per_group": 936,
+        "parameters_before": [
+          0.6000000000000001,
+          0.5
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.5
+        ],
+        "incumbent_evaluation": 26,
+        "proposal_evaluations": [
+          27,
+          28,
+          29,
+          30
+        ],
+        "best_proposal_evaluation": 28,
+        "accepted": false,
+        "exact_improvement": 0.09211344389633602,
+        "comparison_margin": 0.10855207783494202,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 6,
+        "step": 0.2,
+        "virtual_shots_per_group": 936,
+        "parameters_before": [
+          0.6000000000000001,
+          0.5
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.5
+        ],
+        "incumbent_evaluation": 31,
+        "proposal_evaluations": [
+          32,
+          33,
+          34,
+          35
+        ],
+        "best_proposal_evaluation": 33,
+        "accepted": false,
+        "exact_improvement": 0.09211344389633602,
+        "comparison_margin": 0.10855207783494202,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 7,
+        "step": 0.2,
+        "virtual_shots_per_group": 936,
+        "parameters_before": [
+          0.6000000000000001,
+          0.5
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.5
+        ],
+        "incumbent_evaluation": 36,
+        "proposal_evaluations": [
+          37,
+          38,
+          39,
+          40
+        ],
+        "best_proposal_evaluation": 38,
+        "accepted": false,
+        "exact_improvement": 0.09211344389633602,
+        "comparison_margin": 0.10855207783494202,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 8,
+        "step": 0.1,
+        "virtual_shots_per_group": 1872,
+        "parameters_before": [
+          0.6000000000000001,
+          0.5
+        ],
+        "parameters_after": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 41,
+        "proposal_evaluations": [
+          42,
+          43,
+          44,
+          45
+        ],
+        "best_proposal_evaluation": 44,
+        "accepted": true,
+        "exact_improvement": 0.1262113871472188,
+        "comparison_margin": 0.06961634504713654,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 9,
+        "step": 0.1,
+        "virtual_shots_per_group": 1872,
+        "parameters_before": [
+          0.6000000000000001,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 46,
+        "proposal_evaluations": [
+          47,
+          48,
+          49,
+          50
+        ],
+        "best_proposal_evaluation": 48,
+        "accepted": true,
+        "exact_improvement": 0.08008180482760707,
+        "comparison_margin": 0.06465037353364358,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 10,
+        "step": 0.1,
+        "virtual_shots_per_group": 1872,
+        "parameters_before": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 51,
+        "proposal_evaluations": [
+          52,
+          53,
+          54,
+          55
+        ],
+        "best_proposal_evaluation": 53,
+        "accepted": false,
+        "exact_improvement": 0.021176776014800502,
+        "comparison_margin": 0.06613383925628237,
+        "quantum_preparations": 0,
+        "count_samples": null
+      },
+      {
+        "index": 11,
+        "step": 0.1,
+        "virtual_shots_per_group": 1872,
+        "parameters_before": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "parameters_after": [
+          0.7000000000000002,
+          0.3999999999999999
+        ],
+        "incumbent_evaluation": 56,
+        "proposal_evaluations": [
+          57,
+          58,
+          59,
+          60
+        ],
+        "best_proposal_evaluation": 58,
+        "accepted": false,
+        "exact_improvement": 0.021176776014800502,
+        "comparison_margin": 0.06613383925628237,
+        "quantum_preparations": 0,
+        "count_samples": null
+      }
+    ],
+    "objective_evaluations": 61,
+    "oracle_evaluations": 61,
+    "oracle_evaluation_scope": "exact bounded CPU polling-objective calls; final audit counted separately; no quantum oracle calls",
+    "final_audit_count": 1,
+    "iteration_count": 12,
+    "accepted_proposals": 4,
+    "rejected_proposals": 44,
+    "virtual_training_preparations": 65648,
+    "planned_virtual_training_preparations": 65648,
+    "virtual_budget_scope": "CPU-control annotations only; no real or modeled quantum shot consumption",
+    "quantum_preparations": 0,
+    "count_samples": null,
+    "hardware_wall_seconds": null,
+    "hardware_feedback_seconds": null,
+    "stop_reason": "fixed_schedule_exhausted",
+    "convergence_certified": false,
+    "method": "deterministic exact-moment CPU control; no sampling or QPU execution",
+    "optimizer_wall_seconds": 0.004623499999070191,
+    "objective_wall_seconds": 0.003754084003958269,
+    "classical_control_seconds": 0.0008694159951119218,
+    "optimizer_process_cpu_seconds": 0.004623000000000044,
+    "objective_process_cpu_seconds": 0.004382999999997583,
+    "classical_control_process_cpu_seconds": 0.00024000000000246047,
+    "final_audit_wall_seconds": 0.0006614159992750501,
+    "workflow_wall_seconds": 0.0052938339995307615,
+    "final_audit_process_cpu_seconds": 0.0006609999999995786,
+    "process_cpu_seconds": 0.005294000000000132,
+    "timing_scope": "measured CPU reference and controller times; no hardware performance measurement",
+    "settings": {
+      "schedule": [
+        {
+          "step": 0.4,
+          "virtual_shots_per_group": 468,
+          "sweeps": 4
+        },
+        {
+          "step": 0.2,
+          "virtual_shots_per_group": 936,
+          "sweeps": 4
+        },
+        {
+          "step": 0.1,
+          "virtual_shots_per_group": 1872,
+          "sweeps": 4
+        }
+      ],
+      "initial_virtual_shots_per_group": 128,
+      "comparison_z": 2.0,
+      "periodic_domain": "[-pi,pi)",
+      "polling_order": "axis ascending, minus then plus; fresh incumbent each sweep",
+      "tie_break": "first minimum in frozen polling order",
+      "acceptance_semantics": "strict exact reduction exceeds descriptive margin; no confidence/convergence claim",
+      "limits": {
+        "qubits": 8,
+        "parameters": 8,
+        "source_unitary_gates": 100000,
+        "workflow_wall_seconds": 120.0
+      }
+    },
+    "limitations": [
+      "deterministic exact-reference CPU controls; no RNG, counts or quantum preparations",
+      "virtual allocations enter only the expected-margin annotation",
+      "fixed schedule exhaustion supplies no convergence or hardware-performance certificate",
+      "population variances remain state properties even when effective comparison SE is zero"
+    ],
+    "diagnostic": {
+      "cut_values": [
+        0,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        6,
+        4,
+        4,
+        2,
+        4,
+        4,
+        4,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        4,
+        2,
+        4,
+        4,
+        4,
+        2,
+        4,
+        4,
+        6,
+        4,
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        4,
+        2,
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "classical_optimum": 6,
+      "optimal_bitstrings": [
+        "010101",
+        "101010"
+      ],
+      "exact_expected_cut": 4.477544305831264,
+      "exact_approximation_ratio": 0.7462573843052107,
+      "exact_optimal_cut_probability": 0.27028664368948246,
+      "enumeration_seconds": 1.9791999875451438e-05,
+      "evolution_seconds": 3.174999983457383e-05,
+      "reference_wall_seconds": 5.158400017535314e-05,
+      "method": "independent all-assignment XOR enumeration and algebraic phase/bit-pair mixer evolution",
+      "source_state_max_phase_aligned_error": 2.0014830212433607e-16,
+      "source_state_audit_wall_seconds": 0.0005962499999441206,
+      "audit_performed_after_training": true,
+      "zero_assignment_cut": 0,
+      "uniform_assignment_mean_cut": 3.0
+    },
+    "target_met_audit": false,
+    "run_wall_seconds": 0.00533374999940861
+  }
+}

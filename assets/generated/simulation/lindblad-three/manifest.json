@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "source_commit_at_generation": "8b922fd0d3bbf78c25c655132be21269b23cce73",
+  "dirty_source_paths": [
+    "?? scripts/generate_simulation_lindblad_three.py",
+    "?? src/openquantum/simulation/bounded_density_instrument.py",
+    "?? src/openquantum/simulation/lindblad_three_physical.py"
+  ],
+  "revision_scope": "optional verified exact-root Git; source hashes are authoritative",
+  "source_sha256": {
+    "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+    "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+    "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+    "bounded_density_instrument.py": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517",
+    "lindblad_three_physical.py": "ee9b6a207811b9217cb679fad3ddf6ceaac6542774005d1a7226138926cf6d91",
+    "generate_simulation_lindblad_three.py": "9dd09a8e60fe5071bb8642b5b9604e7112b773b1ea12ddb350cb8cc68f9ee962",
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "references.bib": "7bd314a90054ec17e348ca5f4cf748b0100150f6c3f4eac6732335f077a6bc4a"
+  },
+  "artifacts_sha256": {
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "README.md": "a32d969e538651ce5c1ad1c728ca6af054669b9a9830b2b7a775db8d3773cac6",
+    "artifact-inventory.csv": "f648727dd1d3fa03164318eeba990488c46720a98838b2c8009268c0312ad6d5",
+    "artifact-inventory.json": "c53ee5c339e8b5256b3ec1c23ced4899d0e8ab3a6f0eeabf9d0000bce414798d",
+    "bounded_density_instrument.py": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517",
+    "clifford-t-trial.qasm": "2883ae69d5c197323a585561c1ff2532461ba017ec96c2ed31d5e1793b9022da",
+    "counts.svg": "b73ca31c73361509395ee2015bfa58fe62c2cacb7f62779b1e547f554cb83a02",
+    "error-budget.svg": "d787f58e661bbb603229b4e7bbaff07daaa4c78ed4433eff5bdc44952e8fd91d",
+    "failures.svg": "330bb84179abba6de935d06f01f6e9d0ee6e446b20e993940252c5cf6740ca06",
+    "family-status.csv": "7b0767710cba1f62462c1d95f118fbf20797ba0633b603e7b3c0123c91585720",
+    "generate_simulation_lindblad_three.py": "9dd09a8e60fe5071bb8642b5b9604e7112b773b1ea12ddb350cb8cc68f9ee962",
+    "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "lindblad_three_physical.py": "ee9b6a207811b9217cb679fad3ddf6ceaac6542774005d1a7226138926cf6d91",
+    "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+    "one-step.svg": "7e401e682faad1ae8a36f898da98e8d8131abade82606a873b6c4df048992b3c",
+    "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+    "references.bib": "7bd314a90054ec17e348ca5f4cf748b0100150f6c3f4eac6732335f077a6bc4a",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "results.json": "d45bc3a1d494e7280958c3414e48da29b9634bc668612fc82e979364df40154d",
+    "routed-rotation-trial.qasm": "f51b3d81dac3d40decae9a7e9788f141659dd1b6e68d12858ceadee4a5cac727",
+    "source-trial.qasm": "e85cc8f6a6a0e07a1b2e964755287a176370a35eeb0ba73247e1998d8a8dfe5c",
+    "space-time.svg": "117afd684f067d9e3ec62ac60d46b61f189840e07a825de71e9bbcc94587d4af",
+    "summary.csv": "fdeb9902f70698b39b975d0116b18817c7eec196192f9f2b75fd2c21e938a037",
+    "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34"
+  },
+  "python": "3.12.14",
+  "packages": {
+    "qiskit": "2.6.2",
+    "qdk": "1.34.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "device": "local CPU; bounded ideal density checks and native conditional models; no hardware/GPU run",
+  "transpiler_seed": 7,
+  "synthesis_seed": null,
+  "synthesis_seed_scope": "native backend has no seed API; saved actual sequences/QASM hashes identify realization",
+  "run_caps": {
+    "physical_cases": 1,
+    "prepared_synthesis_stages": 1,
+    "native_rotation_synthesis_attempts_upper_bound": 10720,
+    "native_rotation_synthesis_attempts_scope": "actual gridsynth_unitary calls including up to four attempts per unique bound rotation target; at most 2680 targets",
+    "physical_profiles": 2,
+    "source_instructions": 20000,
+    "routed_and_synthesized_instructions": 1000000,
+    "density_validation_instructions": 1000000,
+    "density_wires": 6,
+    "density_matrix_entries": 4096,
+    "density_matrix_bytes": 65536,
+    "density_storage_scope": "largest retained six-wire complex128 density matrix; not a measured process peak-memory claim",
+    "unused_family_ensemble_branches": 256,
+    "family_diagnostic_seconds": 60,
+    "prepare_seconds": 1200,
+    "physical_seconds_per_profile": 180,
+    "parent_seconds": 1800,
+    "factory_queries_per_profile": 24,
+    "surface_code_queries_per_profile": 24,
+    "factory_candidates_per_query": 1000,
+    "factory_candidates_per_profile": 24000,
+    "managed_json_qasm_bytes": 33554432,
+    "private_checkpoint_bytes": 134217728,
+    "query_scope": "top-level instrument adapter loop over odd distances 3..49: one factory and one surface-code query per distance; internal native factory construction is timeout-bounded and not included in these top-level query counts; no candidate truncation"
+  },
+  "execution": {
+    "run_caps": {
+      "physical_cases": 1,
+      "prepared_synthesis_stages": 1,
+      "native_rotation_synthesis_attempts_upper_bound": 10720,
+      "native_rotation_synthesis_attempts_scope": "actual gridsynth_unitary calls including up to four attempts per unique bound rotation target; at most 2680 targets",
+      "physical_profiles": 2,
+      "source_instructions": 20000,
+      "routed_and_synthesized_instructions": 1000000,
+      "density_validation_instructions": 1000000,
+      "density_wires": 6,
+      "density_matrix_entries": 4096,
+      "density_matrix_bytes": 65536,
+      "density_storage_scope": "largest retained six-wire complex128 density matrix; not a measured process peak-memory claim",
+      "unused_family_ensemble_branches": 256,
+      "family_diagnostic_seconds": 60,
+      "prepare_seconds": 1200,
+      "physical_seconds_per_profile": 180,
+      "parent_seconds": 1800,
+      "factory_queries_per_profile": 24,
+      "surface_code_queries_per_profile": 24,
+      "factory_candidates_per_query": 1000,
+      "factory_candidates_per_profile": 24000,
+      "managed_json_qasm_bytes": 33554432,
+      "private_checkpoint_bytes": 134217728,
+      "query_scope": "top-level instrument adapter loop over odd distances 3..49: one factory and one surface-code query per distance; internal native factory construction is timeout-bounded and not included in these top-level query counts; no candidate truncation"
+    },
+    "stage_status": {
+      "family": {
+        "status": "completed",
+        "wall_seconds": 0.09599120799975935
+      },
+      "prepare": {
+        "status": "completed",
+        "wall_seconds": 6.243001957998786,
+        "prepared_checkpoint_sha256": "b472aecd18cf2b69847f177f6d05ac9d214b7d0345542afbb3e62fd3f0c43341",
+        "checkpoint_schema": "literal-n3-density-v1",
+        "checkpoint_identity": "53be5260375630e46c25adf4bd8c7b64201a5c0c08c4b1d1e1464bd2860a0491"
+      },
+      "p1e-03": {
+        "status": "completed",
+        "wall_seconds": 2.8849385829998937
+      },
+      "p1e-04": {
+        "status": "completed",
+        "wall_seconds": 2.4481254999991506
+      }
+    },
+    "repeated_trials_executed": false,
+    "whole_family_physical_completed": false
+  },
+  "wall_seconds": 21.972517291997065,
+  "artifact_inventory": {
+    "payload_files": 22,
+    "payload_bytes": 7704844,
+    "excluded_metadata": [
+      "artifact-inventory.csv",
+      "artifact-inventory.json",
+      "manifest.json",
+      "progress.json"
+    ],
+    "baseline_local_inventory": {
+      "tracked_generated_assets_files_at_start": 7133,
+      "tracked_generated_assets_bytes_at_start": 351242875,
+      "preserved_n2_files": 26,
+      "preserved_n2_total_bytes": 3505619,
+      "scope": "local tracked generated source assets at worktree creation; not public hosting occupancy"
+    }
+  },
+  "frozen_before": {
+    "src/openquantum/instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+    "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+    "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+  },
+  "frozen_after": {
+    "src/openquantum/instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+    "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+    "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+  },
+  "private_cache_distributed": false,
+  "whole_family_physical_completed": false
+}

@@ -1,0 +1,269 @@
+{
+  "task": {
+    "n_system": 2,
+    "time": 1.0,
+    "J": 0.6,
+    "hx": 0.35,
+    "rate0": 0.8,
+    "other_rate": 0.5
+  },
+  "output_contract": {
+    "observable": "Z on system wire 0",
+    "score": "+1 for output bit 0, -1 for bit 1",
+    "initial": "product: +i on system0, + on every other system; actual H/S gates",
+    "family": [
+      2,
+      3,
+      4
+    ],
+    "splitting_bias_allowance": 0.01,
+    "statistical_absolute_error_per_output": 0.03,
+    "ideal_angle_absolute_error_per_output": 0.04,
+    "family_statistical_failure": 0.005,
+    "case_statistical_failure": 0.0016666666666666668,
+    "case_failure_exact": {
+      "numerator": 1,
+      "denominator": 600
+    },
+    "complete_trials_per_case": 15756,
+    "computed_hoeffding_tail_per_case": 0.0016664614056008233,
+    "hoeffding_threshold_exactly_verified": true,
+    "hoeffding_arithmetic": "positive exponential Taylor sum through degree32 proves exp(N*eps^2/2)>=2/delta using Fraction arithmetic",
+    "computed_family_union_bound": 0.00499938421680247,
+    "simultaneous_scope": "all three predeclared local means; error .04 for each output, family failure at most .005 in the ideal-angle model",
+    "trial_ensemble_executed": false,
+    "hardware_execution": false,
+    "finite_angle_confidence_certificate": false
+  },
+  "selected_steps": 69,
+  "uniform_bound": {
+    "display": 0.009844430441783939,
+    "numerator": 17576,
+    "denominator": 1785375,
+    "kind": "all-input analytic exact-angle Hermitian trace-norm bound; not a finite-angle/Lean certificate",
+    "generator_norm_envelope": 5.2,
+    "previous_step_bound": 0.0101361014994233
+  },
+  "logical_ledger": {
+    "logical_qubits": 4,
+    "source_counts": {
+      "cx": 483,
+      "rx": 276,
+      "reset": 209,
+      "cry": 207,
+      "rz": 138,
+      "measure": 4,
+      "h": 2,
+      "s": 1
+    },
+    "primitive_counts_per_complete_trial": {
+      "cx": 761,
+      "ry": 414,
+      "rx": 276,
+      "reset": 209,
+      "rz": 70,
+      "measure": 4,
+      "h": 2,
+      "s": 1
+    },
+    "primitive_counts_all_trials": {
+      "cx": 11990316,
+      "ry": 6522984,
+      "rx": 4348656,
+      "reset": 3293004,
+      "rz": 1102920,
+      "measure": 63024,
+      "h": 31512,
+      "s": 15756
+    },
+    "complete_trials": 15756,
+    "algorithm_retry_cap": 1,
+    "postselection": "none",
+    "system_initializations_per_trial": 2,
+    "environment_initializations_per_trial": [
+      138,
+      69
+    ],
+    "environment_discard_resets_before_reuse_per_trial": [
+      137,
+      68
+    ],
+    "system_readouts_per_trial": 2,
+    "ignored_environment_readouts_per_trial": 2,
+    "output_clbit": 0,
+    "other_system_bits_ignored": [
+      1
+    ],
+    "basis_rotation": "none for the fixed Z0 mean; all systems are measured in Z",
+    "compiler_event_barriers": 426,
+    "dependency_depth_without_barriers": 1042,
+    "logical_qubit_layer_volume_all_trials": 65671008,
+    "volume_scope": "dependency-layer proxy; no physical qubit-seconds or hardware time",
+    "rotation_count_per_trial": 760,
+    "actual_clifford_t_synthesis": false,
+    "classical_online_work": "one Z0 score and accumulator/counter update per full trial; wall time unmeasured",
+    "excluded": [
+      "offline circuit/angle preparation and final statistics wall time",
+      "coherent Clifford+T synthesis",
+      "physical routing and schedule",
+      "surface-code distance/decoder calibration",
+      "magic-state factories and transport",
+      "physical initialization/reset/readout/feedback fault and timing model"
+    ]
+  },
+  "qasm_sha256": {
+    "source-trial.qasm": "3fdb92c3a613eca1b85ab1db182a17e4ffccbd470074dd6c60078895735ab5e2",
+    "rotation-basis-trial.qasm": "5d94b447e4fb5acca2b0ca97d6e56f280d6e5b37785a4979711746c92e515f86"
+  },
+  "cpu_circuit_build_lower_seconds": 0.05987220899987733,
+  "numerical_checks_performed": true,
+  "selected_numerical_check": {
+    "n_system": 2,
+    "steps": 69,
+    "generator_norm_envelope": 5.2,
+    "uniform_trace_norm_bound_exact": {
+      "numerator": 17576,
+      "denominator": 1785375
+    },
+    "uniform_trace_norm_bound_display": 0.009844430441783939,
+    "observed_trace_norm_error": 3.591957834231238e-05,
+    "observed_trace_distance": 1.795978917115619e-05,
+    "observed_Z0_mean": 0.7911400046530407,
+    "reference_Z0_mean": 0.7911337403681944,
+    "observed_Z0_bias": 6.264284846291268e-06,
+    "trace_real": 1.0000000000000042,
+    "minimum_eigenvalue": 0.0056473793736952806,
+    "actual_density": {
+      "real": [
+        [
+          0.680622720037244,
+          -0.10752940745496374,
+          0.2236323960559668,
+          0.05405137667028813
+        ],
+        [
+          -0.10752940745496495,
+          0.05418454169985645,
+          -0.054051376670288136,
+          -0.015017028989148442
+        ],
+        [
+          0.22363239605596932,
+          -0.05405137667028861,
+          0.21494728228927845,
+          0.07377186803912741
+        ],
+        [
+          0.0540513766702887,
+          -0.015017028989148513,
+          0.07377186803912729,
+          0.050245455973625335
+        ]
+      ],
+      "imag": [
+        [
+          -3.5388358909926865e-16,
+          0.0007935683831656309,
+          -0.17412729273800245,
+          -0.12019683185538281
+        ],
+        [
+          -0.0007935683831648832,
+          -2.220446049250313e-16,
+          0.034143375524494646,
+          0.03762173637874165
+        ],
+        [
+          0.1741272927380048,
+          -0.03414337552449595,
+          5.082739784612045e-16,
+          -0.020343818534288436
+        ],
+        [
+          0.12019683185538316,
+          -0.03762173637874229,
+          0.020343818534288474,
+          5.724587470723463e-17
+        ]
+      ]
+    },
+    "reference_density": {
+      "real": [
+        [
+          0.6806285568221102,
+          -0.10753625329848641,
+          0.22362090353446878,
+          0.05405321983757559
+        ],
+        [
+          -0.10753625329848633,
+          0.05418748836347767,
+          -0.05405321983757563,
+          -0.01501766908424015
+        ],
+        [
+          0.22362090353446873,
+          -0.05405321983757563,
+          0.21493831336198674,
+          0.07377210859931016
+        ],
+        [
+          0.05405321983757563,
+          -0.015017669084240137,
+          0.07377210859931019,
+          0.05024564145242488
+        ]
+      ],
+      "imag": [
+        [
+          -1.734723475976807e-17,
+          0.0007991369653772909,
+          -0.17412993063596405,
+          -0.12019768310295839
+        ],
+        [
+          -0.000799136965377284,
+          -6.938893903907228e-18,
+          0.0341447342168556,
+          0.03762287496000721
+        ],
+        [
+          0.1741299306359641,
+          -0.03414473421685552,
+          -5.204170427930421e-18,
+          -0.02034247556764402
+        ],
+        [
+          0.12019768310295847,
+          -0.037622874960007206,
+          0.02034247556764395,
+          3.469446951953614e-18
+        ]
+      ]
+    },
+    "numerical_check_kind": "full reduced schedule composed from actual gate-derived channels; independent full GKSL exponential",
+    "whole_2n_wire_density_simulation": false,
+    "uniform_bound_scope": "all-input exact-angle evolution trace norm; preparation/roundoff/synthesis/physical faults excluded",
+    "floating_interval_certificate": false,
+    "formal_lean_certificate": false
+  },
+  "whole_circuit_short_check": {
+    "steps": 2,
+    "full_qubits": 4,
+    "trace_norm_residual": 1.6815589515543708e-15,
+    "scope": "short whole-circuit verification; selected workload uses gate-contracted channel powers"
+  },
+  "numerical_reference_seconds": 0.02673671899992769,
+  "physical_estimation": {
+    "status": "unavailable",
+    "existing_instrument_source_width_limit": 5,
+    "task_source_width": 4,
+    "generic_width_supported": true,
+    "actual_common_accuracy_physical_report": false,
+    "missing": [
+      "actual coherent synthesis and whole-workload fault/error allocation",
+      "chain-specific opt-in6/8-wire long repeated-reset validation and physical routing; this wrapper uses no such validation",
+      "data/factory geometry and controller/reset/readout/idle-fault schedule"
+    ]
+  }
+}

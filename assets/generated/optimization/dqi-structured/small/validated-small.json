@@ -1,0 +1,636 @@
+{
+  "cases": [
+    {
+      "absolute_tolerance": 2e-12,
+      "actual_ledger": {
+        "compiled_clifford_t_demand_known": false,
+        "events_excluding_barriers": 109,
+        "explicit_t_tdg": 35,
+        "primitive_counts": {
+          "barrier": 7,
+          "cx": 38,
+          "h": 12,
+          "measure": 2,
+          "reset": 6,
+          "ry": 5,
+          "t": 20,
+          "tdg": 15,
+          "x": 10,
+          "z": 1
+        },
+        "source_operations": 116,
+        "stages": [
+          {
+            "barrier_index": 6,
+            "name": "reset",
+            "start": 0,
+            "stop": 6
+          },
+          {
+            "barrier_index": 52,
+            "name": "preparation",
+            "start": 7,
+            "stop": 52
+          },
+          {
+            "barrier_index": 54,
+            "name": "sign",
+            "start": 53,
+            "stop": 54
+          },
+          {
+            "barrier_index": 59,
+            "name": "syndrome",
+            "start": 55,
+            "stop": 59
+          },
+          {
+            "barrier_index": 109,
+            "name": "decoder",
+            "start": 60,
+            "stop": 109
+          },
+          {
+            "barrier_index": 112,
+            "name": "hadamard",
+            "start": 110,
+            "stop": 112
+          },
+          {
+            "barrier_index": 115,
+            "name": "readout",
+            "start": 113,
+            "stop": 115
+          }
+        ],
+        "unitary_primitives": 101,
+        "unsynthesized_ry": 5,
+        "workspace": {
+          "allocated_clean_wires": 1,
+          "arbitrary_dirty_target_action_validated": false,
+          "decoder_peak_clean_wires": 0,
+          "preparation_peak_clean_wires": 1
+        }
+      },
+      "coherent_state_transitions": 4,
+      "decoded_state": {
+        "clause_workspace_zero_probability": 0.9999999999999949,
+        "max_complex_error": 1.4432899320127035e-15
+      },
+      "decoder": {
+        "arbitrary_clause_targets": true,
+        "clean_basis_columns": 32,
+        "clean_workspace_only": true,
+        "complex_phase_retained": true,
+        "max_complex_entry_error": 1.4432899320127035e-15,
+        "off_domain_syndromes": [],
+        "operator_dimension": 64,
+        "relative_tolerance": 0,
+        "tolerance": 2e-12
+      },
+      "decoder_operator_constructions": 1,
+      "ell": 1,
+      "family_spec": {
+        "bit_order": "integer bit j is x_j; display x_(n-1)..x_0",
+        "ell": 1,
+        "family": "binary_identity_plus_all_ones_degree_one",
+        "m": 3,
+        "matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "n": 2,
+        "registers": {
+          "assignment": [
+            3,
+            4
+          ],
+          "classical": [
+            0,
+            1
+          ],
+          "clause": [
+            0,
+            1,
+            2
+          ],
+          "total_qubits": 6,
+          "workspace": [
+            5
+          ]
+        },
+        "signs": [
+          0,
+          0,
+          1
+        ]
+      },
+      "final_state": {
+        "clause_workspace_zero_probability": 0.9999999999999947,
+        "max_complex_error": 1.4988010832439613e-15,
+        "max_probability_error": 1.4988010832439613e-15,
+        "outcomes": [
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": 0.49999999999999883,
+            "bitstring": "00",
+            "integer": 0,
+            "probability": 0.24999999999999883,
+            "reference_denominator_squared": 16,
+            "reference_probability": [
+              1,
+              4
+            ],
+            "reference_signed_numerator": 2,
+            "satisfied": 2
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": 0.49999999999999867,
+            "bitstring": "01",
+            "integer": 1,
+            "probability": 0.24999999999999867,
+            "reference_denominator_squared": 16,
+            "reference_probability": [
+              1,
+              4
+            ],
+            "reference_signed_numerator": 2,
+            "satisfied": 2
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": 0.4999999999999985,
+            "bitstring": "10",
+            "integer": 2,
+            "probability": 0.2499999999999985,
+            "reference_denominator_squared": 16,
+            "reference_probability": [
+              1,
+              4
+            ],
+            "reference_signed_numerator": 2,
+            "satisfied": 2
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": -0.4999999999999986,
+            "bitstring": "11",
+            "integer": 3,
+            "probability": 0.2499999999999986,
+            "reference_denominator_squared": 16,
+            "reference_probability": [
+              1,
+              4
+            ],
+            "reference_signed_numerator": -2,
+            "satisfied": 0
+          }
+        ]
+      },
+      "limits": {
+        "clean_basis_columns": 32,
+        "conservative_quantum_ndarray_bytes": 294912,
+        "dimension": 64,
+        "ndarray_scope": "Structural quantum buffers; not total RSS or an allocator peak",
+        "qubits": 6
+      },
+      "m": 3,
+      "max_error": 7.993605777301127e-15,
+      "n": 2,
+      "outcomes_sampled": false,
+      "preparation": {
+        "amplitude_error": 7.216449660063518e-16,
+        "support_count": 4,
+        "workspace_zero_probability": 0.9999999999999974
+      },
+      "quality": {
+        "expected_satisfied": 1.499999999999992,
+        "maximum_probability": 0.749999999999996,
+        "maximum_satisfied": 2,
+        "reference_expected_satisfied": [
+          3,
+          2
+        ],
+        "reference_maximum_probability": [
+          3,
+          4
+        ]
+      },
+      "relative_tolerance": 0,
+      "reset_readout_scope": "Actual primitives counted; ideal coherent calculation starts in zero inputs",
+      "signed_syndrome": {
+        "max_complex_error": 7.216449660063518e-16,
+        "workspace_zero_probability": 0.9999999999999974
+      }
+    },
+    {
+      "absolute_tolerance": 2e-12,
+      "actual_ledger": {
+        "compiled_clifford_t_demand_known": false,
+        "events_excluding_barriers": 329,
+        "explicit_t_tdg": 126,
+        "primitive_counts": {
+          "barrier": 7,
+          "cx": 120,
+          "h": 39,
+          "measure": 3,
+          "reset": 9,
+          "ry": 7,
+          "t": 72,
+          "tdg": 54,
+          "x": 24,
+          "z": 1
+        },
+        "source_operations": 336,
+        "stages": [
+          {
+            "barrier_index": 9,
+            "name": "reset",
+            "start": 0,
+            "stop": 9
+          },
+          {
+            "barrier_index": 125,
+            "name": "preparation",
+            "start": 10,
+            "stop": 125
+          },
+          {
+            "barrier_index": 127,
+            "name": "sign",
+            "start": 126,
+            "stop": 127
+          },
+          {
+            "barrier_index": 134,
+            "name": "syndrome",
+            "start": 128,
+            "stop": 134
+          },
+          {
+            "barrier_index": 327,
+            "name": "decoder",
+            "start": 135,
+            "stop": 327
+          },
+          {
+            "barrier_index": 331,
+            "name": "hadamard",
+            "start": 328,
+            "stop": 331
+          },
+          {
+            "barrier_index": 335,
+            "name": "readout",
+            "start": 332,
+            "stop": 335
+          }
+        ],
+        "unitary_primitives": 317,
+        "unsynthesized_ry": 7,
+        "workspace": {
+          "allocated_clean_wires": 2,
+          "arbitrary_dirty_target_action_validated": false,
+          "decoder_peak_clean_wires": 1,
+          "preparation_peak_clean_wires": 2
+        }
+      },
+      "coherent_state_transitions": 4,
+      "decoded_state": {
+        "clause_workspace_zero_probability": 0.9999999999999822,
+        "max_complex_error": 4.107825191113079e-15
+      },
+      "decoder": {
+        "arbitrary_clause_targets": true,
+        "clean_basis_columns": 128,
+        "clean_workspace_only": true,
+        "complex_phase_retained": true,
+        "max_complex_entry_error": 5.551115123125783e-15,
+        "off_domain_syndromes": [
+          3,
+          5,
+          6
+        ],
+        "operator_dimension": 512,
+        "relative_tolerance": 0,
+        "tolerance": 2e-12
+      },
+      "decoder_operator_constructions": 1,
+      "ell": 1,
+      "family_spec": {
+        "bit_order": "integer bit j is x_j; display x_(n-1)..x_0",
+        "ell": 1,
+        "family": "binary_identity_plus_all_ones_degree_one",
+        "m": 4,
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "n": 3,
+        "registers": {
+          "assignment": [
+            4,
+            5,
+            6
+          ],
+          "classical": [
+            0,
+            1,
+            2
+          ],
+          "clause": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "total_qubits": 9,
+          "workspace": [
+            7,
+            8
+          ]
+        },
+        "signs": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "final_state": {
+        "clause_workspace_zero_probability": 0.9999999999999817,
+        "max_complex_error": 4.440892098500626e-15,
+        "max_probability_error": 4.246603069191224e-15,
+        "outcomes": [
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": 0.4743416490252526,
+            "bitstring": "000",
+            "integer": 0,
+            "probability": 0.22499999999999593,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              9,
+              40
+            ],
+            "reference_signed_numerator": 3,
+            "satisfied": 3
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": 0.4743416490252526,
+            "bitstring": "001",
+            "integer": 1,
+            "probability": 0.22499999999999593,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              9,
+              40
+            ],
+            "reference_signed_numerator": 3,
+            "satisfied": 3
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": 0.47434164902525244,
+            "bitstring": "010",
+            "integer": 2,
+            "probability": 0.22499999999999576,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              9,
+              40
+            ],
+            "reference_signed_numerator": 3,
+            "satisfied": 3
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": -0.15811388300841758,
+            "bitstring": "011",
+            "integer": 3,
+            "probability": 0.02499999999999956,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              1,
+              40
+            ],
+            "reference_signed_numerator": -1,
+            "satisfied": 1
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": 0.4743416490252525,
+            "bitstring": "100",
+            "integer": 4,
+            "probability": 0.22499999999999581,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              9,
+              40
+            ],
+            "reference_signed_numerator": 3,
+            "satisfied": 3
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": -0.15811388300841747,
+            "bitstring": "101",
+            "integer": 5,
+            "probability": 0.024999999999999526,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              1,
+              40
+            ],
+            "reference_signed_numerator": -1,
+            "satisfied": 1
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": -0.1581138830084176,
+            "bitstring": "110",
+            "integer": 6,
+            "probability": 0.02499999999999957,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              1,
+              40
+            ],
+            "reference_signed_numerator": -1,
+            "satisfied": 1
+          },
+          {
+            "amplitude_imag": 0.0,
+            "amplitude_real": -0.15811388300841764,
+            "bitstring": "111",
+            "integer": 7,
+            "probability": 0.02499999999999958,
+            "reference_denominator_squared": 40,
+            "reference_probability": [
+              1,
+              40
+            ],
+            "reference_signed_numerator": -1,
+            "satisfied": 1
+          }
+        ]
+      },
+      "limits": {
+        "clean_basis_columns": 128,
+        "conservative_quantum_ndarray_bytes": 17039360,
+        "dimension": 512,
+        "ndarray_scope": "Structural quantum buffers; not total RSS or an allocator peak",
+        "qubits": 9
+      },
+      "m": 4,
+      "max_error": 5.10702591327572e-14,
+      "n": 3,
+      "outcomes_sampled": false,
+      "preparation": {
+        "amplitude_error": 1.4988010832439613e-15,
+        "support_count": 5,
+        "workspace_zero_probability": 0.9999999999999936
+      },
+      "quality": {
+        "expected_satisfied": 2.7999999999999488,
+        "maximum_probability": 0.8999999999999835,
+        "maximum_satisfied": 3,
+        "reference_expected_satisfied": [
+          14,
+          5
+        ],
+        "reference_maximum_probability": [
+          9,
+          10
+        ]
+      },
+      "relative_tolerance": 0,
+      "reset_readout_scope": "Actual primitives counted; ideal coherent calculation starts in zero inputs",
+      "signed_syndrome": {
+        "max_complex_error": 1.4988010832439613e-15,
+        "workspace_zero_probability": 0.9999999999999936
+      }
+    }
+  ],
+  "coherent_validation_performed": true,
+  "completion_is_provisional": true,
+  "elapsed_seconds_before_final_receipt": 0.9298968110233545,
+  "files": {
+    "n2/circuit.txt": {
+      "bytes": 16549,
+      "sha256": "3c226fe1c655e44268d0db0b7877dd9df9ce9595d227d2abe00bdc2a3d61a280"
+    },
+    "n2/dqi.qasm": {
+      "bytes": 1693,
+      "sha256": "af09988e10bce0969e32527515b0a3a09a5105e35f0a253872dfa7730decd432"
+    },
+    "n2/ledger.json": {
+      "bytes": 4529,
+      "sha256": "94c4ad862c3939e0583dc23e116c2a7a29580730c32a9650c7e73030c2e4dad1"
+    },
+    "n2/operations.ndjson": {
+      "bytes": 2247,
+      "sha256": "6fa145372a48336ce4761ae142c16a3da50235f2355268c10823cbb45ed9ca8a"
+    },
+    "n3/dqi.qasm": {
+      "bytes": 4299,
+      "sha256": "e85801409197e7195f9320ecba963e72dcf3f5c4d4b7bec52ff78941c7a9f23a"
+    },
+    "n3/ledger.json": {
+      "bytes": 4584,
+      "sha256": "fb7d69f2b6cad7f550cfbacab0eaa660afdc917f24afaf7b95a0dda4c483429c"
+    },
+    "n3/operations.ndjson": {
+      "bytes": 6191,
+      "sha256": "3a9a0ddfefd2b4f468100458e784012593a2404691e3f1b53bd318b409b2cfaf"
+    }
+  },
+  "hardware_or_synthesis_performed": false,
+  "invocation_acceptance": "Requires normal API return or raw CLI exit zero; file status alone is insufficient",
+  "large_generation_performed": false,
+  "max_output_bytes": 196608,
+  "old_default_reexecuted": false,
+  "provenance": {
+    "backend": "Qiskit ideal CPU Statevector/Operator",
+    "dependency_source_files": {
+      "numpy/_core/einsumfunc.py": {
+        "bytes": 57834,
+        "sha256": "4b4fc2d54ebe6b533f680fde2fa468d30449c2d44afc73041b6debb6e302dedf"
+      },
+      "qiskit/quantum_info/operators/operator.py": {
+        "bytes": 35037,
+        "sha256": "45ccc994f579615a913e5b15264ceb2e674fd5113fe6c682a5ed00bcca3d62b7"
+      },
+      "qiskit/quantum_info/states/statevector.py": {
+        "bytes": 40057,
+        "sha256": "e36f4b204202cd2538b729a66d753aa7418f2b67fb63d987723fd4969e189ef5"
+      }
+    },
+    "environment_files": {
+      "LICENSE.txt": {
+        "bytes": 1093,
+        "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+      },
+      "requirements-lock.txt": {
+        "bytes": 1974,
+        "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+      }
+    },
+    "packages": {
+      "numpy": "2.5.4",
+      "qiskit": "2.6.2"
+    },
+    "platform": "linux",
+    "python": "3.12.14",
+    "python_implementation": "cpython",
+    "source_files": {
+      "optimization_dqi_structured.py": {
+        "bytes": 21438,
+        "sha256": "0daaf35c01fbf83bcdfad98c85f6af94420202d7b546c7892615bd18ff1ec028"
+      },
+      "optimization_dqi_structured_validation.py": {
+        "bytes": 35511,
+        "sha256": "5994818be957a7c89c9ace46354676acc18f61ae6fc327536d8aad9e84096256"
+      },
+      "validate_optimization_dqi_structured.py": {
+        "bytes": 5705,
+        "sha256": "089ee9b3aaccd8ad61904ceb8d35803e0af2cb3d176a08e272129e13f14332cc"
+      }
+    }
+  },
+  "schema": "openquantum.dqi.structured.validated_small.v1",
+  "scope": "New degree-one clean-workspace n=2/3 coherent checks only",
+  "source_commit": "223fa8780791aca3b4b76ffaf8c16ea05a21da75",
+  "status": "complete",
+  "time_limit_seconds": 29.947334988042712
+}

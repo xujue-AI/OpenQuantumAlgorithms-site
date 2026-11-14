@@ -40,14 +40,14 @@
       -0.25
     ],
     "achieved_chebyshev_coefficients": [
-      3.562668962314354e-17,
+      3.9252311467094385e-17,
       0.5000000000000001,
-      6.430397387805922e-17,
-      -0.2500000000000001
+      8.326672684688674e-17,
+      -0.25000000000000033
     ],
-    "coefficient_l1_discrepancy": 3.2197526842623405e-16,
+    "coefficient_l1_discrepancy": 5.666082481640438e-16,
     "dense_grid_max_phase_error": 4.440892098500626e-16,
-    "uniform_phase_discrepancy_with_numerical_guard": 1.0003219752684262e-12,
+    "uniform_phase_discrepancy_with_numerical_guard": 1.000566608248164e-12,
     "floating_reconstruction_guard": 1e-12,
     "analytic_polynomial_max_magnitude": 0.537914353639919,
     "reciprocal_max_error_interval_0_5_to_1": 0.1822959075956836,
@@ -70,10 +70,10 @@
     "condition_number": 2.0,
     "acceptance_probability": 0.15624999999999997,
     "ideal_cubic_acceptance_probability": 0.15625000000000003,
-    "accepted_branch_error_vs_cubic": 5.661242917770707e-17,
+    "accepted_branch_error_vs_cubic": 1.21359413633714e-16,
     "solution_state_fidelity": 0.9999999999999996,
-    "solution_state_trace_distance": 1.1337087123394658e-16,
-    "solution_state_phase_invariant_error": 1.1337087123394658e-16,
+    "solution_state_trace_distance": 1.9952296899071819e-16,
+    "solution_state_phase_invariant_error": 1.9952296899071819e-16,
     "z_actual": 0.7999999999999994,
     "z_classical_solution": 0.7999999999999998,
     "z_absolute_bias": 4.440892098500626e-16,
@@ -82,8 +82,8 @@
       0.31622776601683794
     ],
     "solution_state_imag": [
-      2.2652280646185847e-17,
-      -1.6647559291586663e-17
+      -2.5821439683995023e-16,
+      8.867744476571437e-17
     ],
     "classical_solution_state_real": [
       0.9486832980505138,
@@ -192,11 +192,11 @@
     }
   },
   "provenance": {
-    "source_revision_at_generation": "76033515484638fb9fb047bb4329719be895baf5",
+    "source_revision_at_generation": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
     "implementation_sha256": "c4735e188c9e80fb6fb60dc34c00558b17ab8f2c48c110a30b732aee9c105590",
     "qasm_sha256": "bc85a3402cad25eb94cf26f42b62f8cb29855e97a86dea11a08ebd9fbae0eb3f",
     "source_note": "source hash identifies working tree code if generation precedes commit",
-    "python": "3.12.16",
+    "python": "3.12.14",
     "packages": {
       "qiskit": "2.6.2",
       "numpy": "2.5.4",
@@ -227,7 +227,7 @@
         "measurements": 3,
         "analytic_acceptance": 0.15625,
         "simulation_performed": true,
-        "solution_trace_distance": 1.1337087123394658e-16
+        "solution_trace_distance": 1.9952296899071819e-16
       },
       {
         "n": 2,

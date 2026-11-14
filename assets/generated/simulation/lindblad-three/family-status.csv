@@ -1,0 +1,4 @@
+n_system,steps,status,physical_status,complete_trials,synthesis_performed,rejection_reproduced,density_checker_status,density_width_rejection_reproduced,density_required_wires,density_supported_wires,allocation_reassigned
+2,69,preserved_prior_n2_result,prior_result_preserved,15756,False,False,,False,,,False
+3,134,implemented_six_wire_density_slice,computed_conditional_profiles,15756,True,False,,False,,,False
+4,211,ensemble_branch_cap_exceeded,unimplemented_reserved_allocation,15756,False,True,density_width_cap_exceeded,True,8,6,False

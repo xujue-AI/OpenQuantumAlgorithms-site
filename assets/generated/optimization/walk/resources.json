@@ -1,0 +1,354 @@
+{
+  "mode": "logical resource ledger; separate physical estimate in main chapter",
+  "layout": {
+    "dimension": 4,
+    "vertices": 16,
+    "coin_qubits": 2,
+    "position_qubits": 4,
+    "active_qubits": 6,
+    "workspace_qubits": 5,
+    "total_qubits": 11,
+    "coin_wires": [
+      0,
+      1
+    ],
+    "position_wires": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "workspace_wires": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "encoding": "integer = coin + 2**r * position + 2**(d+r) * workspace"
+  },
+  "circuits": {
+    "source": {
+      "file": "walk-source.qasm",
+      "sha256": "d159f757a1fd846a01c80b4e538292658e13a6593e1df20f3a7ecc4f3f981405",
+      "logical_qubits": 11,
+      "gate_counts": {
+        "x": 80,
+        "ccx": 56,
+        "h": 38,
+        "measure": 11,
+        "z": 4,
+        "cz": 4,
+        "barrier": 1
+      },
+      "depth": 118,
+      "global_phase_radians": 0.0
+    },
+    "clifford_t": {
+      "file": "walk-clifford-t.qasm",
+      "sha256": "8136d61ee1cf43d8b20f613d95277d1695c53c03487bbf69098a6efb7a51da5f",
+      "logical_qubits": 11,
+      "gate_counts": {
+        "cx": 340,
+        "t": 224,
+        "tdg": 168,
+        "h": 158,
+        "x": 80,
+        "measure": 11,
+        "z": 4,
+        "barrier": 1
+      },
+      "depth": 594,
+      "global_phase_radians": 0.0
+    }
+  },
+  "per_preparation": {
+    "circuit_preparations": 1,
+    "oracle_calls": 4,
+    "coin_calls": 4,
+    "shift_calls": 4,
+    "individual_qubit_measurements": 11,
+    "t_count": 392,
+    "cx_count": 340
+  },
+  "full_readout_workload": {
+    "circuit_preparations": 12288,
+    "oracle_calls": 49152,
+    "coin_calls": 49152,
+    "shift_calls": 49152,
+    "individual_qubit_measurements": 135168,
+    "t_count": 4816896,
+    "cx_count": 4177920
+  },
+  "fixed_state_repetition_workload": {
+    "circuit_preparations": 10,
+    "oracle_calls": 40,
+    "coin_calls": 40,
+    "shift_calls": 40,
+    "individual_qubit_measurements": 110,
+    "t_count": 3920,
+    "cx_count": 3400
+  },
+  "full_readout_source_gate_totals": {
+    "x": 983040,
+    "ccx": 688128,
+    "h": 466944,
+    "measure": 135168,
+    "z": 49152,
+    "cz": 49152
+  },
+  "full_readout_clifford_t_gate_totals": {
+    "cx": 4177920,
+    "t": 2752512,
+    "tdg": 2064384,
+    "h": 1941504,
+    "x": 983040,
+    "measure": 135168,
+    "z": 49152
+  },
+  "synthesis": {
+    "arbitrary_rotations": 0,
+    "approximation_error": 0,
+    "method": "exact standard CCX and CZ lowering; Qiskit opt0 fixed seed7",
+    "clifford_t_basis": [
+      "h",
+      "x",
+      "z",
+      "s",
+      "sdg",
+      "t",
+      "tdg",
+      "cx"
+    ]
+  },
+  "source_only_scalability_exports": [
+    {
+      "dimension": 8,
+      "marked_vertex": 5,
+      "steps": 4,
+      "layout": {
+        "dimension": 8,
+        "vertices": 256,
+        "coin_qubits": 3,
+        "position_qubits": 8,
+        "active_qubits": 11,
+        "workspace_qubits": 10,
+        "total_qubits": 21,
+        "coin_wires": [
+          0,
+          1,
+          2
+        ],
+        "position_wires": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "workspace_wires": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "encoding": "integer = coin + 2**r * position + 2**(d+r) * workspace"
+      },
+      "simulation_executed": false,
+      "validated_success_probability": null,
+      "primitive_cap_cost": 3139,
+      "source": {
+        "file": "d8-source.qasm",
+        "sha256": "5f1450b6906c44f4c53b2dd4afbcba9b7f01cbc98dcfcc8a1f2675017bad1269",
+        "logical_qubits": 21,
+        "gate_counts": {
+          "x": 192,
+          "ccx": 192,
+          "h": 59,
+          "measure": 21,
+          "z": 8,
+          "barrier": 1
+        },
+        "depth": 274,
+        "global_phase_radians": 0.0
+      },
+      "clifford_t": {
+        "file": "d8-clifford-t.qasm",
+        "sha256": "b4a2bb28637bd25f360618e28d3417a0aa27940f3969f37d2aec7b424431552a",
+        "logical_qubits": 21,
+        "gate_counts": {
+          "cx": 1152,
+          "t": 768,
+          "tdg": 576,
+          "h": 443,
+          "x": 192,
+          "measure": 21,
+          "z": 8,
+          "barrier": 1
+        },
+        "depth": 1850,
+        "global_phase_radians": 0.0
+      }
+    },
+    {
+      "dimension": 16,
+      "marked_vertex": 5,
+      "steps": 4,
+      "layout": {
+        "dimension": 16,
+        "vertices": 65536,
+        "coin_qubits": 4,
+        "position_qubits": 16,
+        "active_qubits": 20,
+        "workspace_qubits": 19,
+        "total_qubits": 39,
+        "coin_wires": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "position_wires": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "workspace_wires": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "encoding": "integer = coin + 2**r * position + 2**(d+r) * workspace"
+      },
+      "simulation_executed": false,
+      "validated_success_probability": null,
+      "primitive_cap_cost": 7964,
+      "source": {
+        "file": "d16-source.qasm",
+        "sha256": "71b3d57f6202611eb52cb7f6f76f9f3e112fa175513a826d3521046c6c290715",
+        "logical_qubits": 39,
+        "gate_counts": {
+          "ccx": 496,
+          "x": 432,
+          "h": 84,
+          "measure": 39,
+          "z": 8,
+          "barrier": 1
+        },
+        "depth": 618,
+        "global_phase_radians": 0.0
+      },
+      "clifford_t": {
+        "file": "d16-clifford-t.qasm",
+        "sha256": "7f2bd2c204a092e30fc98e4237b1b159ba47c503d96e50745577927978ed1daf",
+        "logical_qubits": 39,
+        "gate_counts": {
+          "cx": 2976,
+          "t": 1984,
+          "tdg": 1488,
+          "h": 1076,
+          "x": 432,
+          "measure": 39,
+          "z": 8,
+          "barrier": 1
+        },
+        "depth": 4650,
+        "global_phase_radians": 0.0
+      }
+    }
+  ],
+  "exclusions": [
+    "physical faults, code distance, factories, routing and physical timing (separate resource analysis)",
+    "classical equality-check runtime after readout",
+    "input-data acquisition beyond supplied target bits"
+  ],
+  "provenance": {
+    "generated_at_utc": "2026-11-14T06:56:16.047202+00:00",
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2",
+      "jupyter-book": "2.1.7"
+    },
+    "device": {
+      "backend": "CPU Qiskit Statevector and NumPy PCG64 ideal measurement draws",
+      "architecture": "x86_64",
+      "operating_system": "Linux",
+      "accelerator": null
+    },
+    "implementation_sha256": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+    "generator_sha256": "c315442288b8280a920dac96b7d510ac9bbfe6a315db67de1ebc871f51ef9ffa",
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "dirty_owned_source": false,
+    "invocation": "python scripts/generate_optimization_walk.py",
+    "upstream": [
+      {
+        "package": "Qiskit",
+        "version": "2.6.2",
+        "repository": "https://github.com/Qiskit/qiskit",
+        "license": "Apache-2.0"
+      },
+      {
+        "package": "NumPy",
+        "version": "2.5.4",
+        "repository": "https://github.com/numpy/numpy",
+        "license": "BSD-3-Clause"
+      }
+    ],
+    "algorithm_reference": {
+      "authors": [
+        "Neil Shenvi",
+        "Julia Kempe",
+        "K. Birgitta Whaley"
+      ],
+      "title": "Quantum random-walk search algorithm",
+      "journal": "Physical Review A",
+      "volume": 67,
+      "article": "052307",
+      "year": 2003,
+      "doi": "10.1103/PhysRevA.67.052307",
+      "arxiv": "quant-ph/0210064"
+    },
+    "revision_note": "source_commit identifies the checkout base at generation; content hashes identify the implementation and generator actually executed"
+  }
+}

@@ -1,0 +1,955 @@
+{
+  "case_id": "n1-s6-r4",
+  "logical_ledger": {
+    "hamiltonian": {
+      "qubits": 1,
+      "coupling_exact": "1",
+      "x_field_exact": "7/10",
+      "z_field_exact": "0",
+      "pauli_l1_norm_exact": "7/10",
+      "diagonal_terms": [],
+      "transverse_terms": [
+        [
+          "7/10",
+          "X"
+        ]
+      ],
+      "boundary": "open",
+      "hbar": 1,
+      "normalization": "No rescaling of H or time. The Pauli l1 norm is a norm upper bound, not a block-encoding normalization.",
+      "coefficient_semantics": "Exact Fraction(str(value)); real ZZ/Z/X family only. Binary64 gates and numerical matrices are separate representations."
+    },
+    "time_exact": "1",
+    "repetitions": 4,
+    "order": 6,
+    "initial_basis": 0,
+    "system_qubits": 1,
+    "ancillas": 0,
+    "logical_qubits": 1,
+    "complete_measured_primitive_counts": {
+      "rx": 100,
+      "reset": 1,
+      "measure": 1
+    },
+    "arbitrary_rotations": 100,
+    "source_dependency_depth": 102,
+    "base_strang_blocks": 100,
+    "source_parameter_rounding": {
+      "root_bisection_bits": 160,
+      "normalized_leaves_per_macro_step": 25,
+      "normalized_signed_sum_exact_binary64": "9007199254740991/9007199254740992",
+      "normalized_signed_sum_defect_exact": "1/9007199254740992",
+      "normalized_absolute_sum_exact_binary64": "41397242223795171/9007199254740992",
+      "actual_signed_substep_time_sum_exact": "9007199254740991/9007199254740992",
+      "actual_absolute_substep_time_sum_exact": "41397242223795171/9007199254740992",
+      "negative_normalized_leaves_per_step": 8,
+      "negative_actual_substeps": 32,
+      "coefficient_approximation_operator_bound_exact": "104465439584391259088396748574046986285628028545978971786672133375950875948258984345238788498729820705074349860056722954992650574077624198461377569361681073999973437205626407398981783757740391087/477401547373183216186404024244969984668294802330436979597033416846502951863529329610562058897418297891225878892410576011371206164478517677394534098839756837850176674048741983072596859380354559253782544504586240",
+      "gate_angle_conversion_operator_bound_exact": "7/45035996273704960",
+      "total_source_parameter_operator_bound_exact": "35733709233669043760497592190574086339079905746745166149409314487377534096285336835811456923693981000795060772363846501094404699837580869936924768715176707596041298168819924425905563781262569649/95480309474636643237280804848993996933658960466087395919406683369300590372705865922112411779483659578245175778482115202274241232895703535478906819767951367570035334809748396614519371876070911850756508900917248",
+      "total_source_parameter_operator_bound_upper_float": 3.742521304160764e-16,
+      "scope": "Exact rational bounds on coefficient/angle representation in the ideal gate model, relative to mathematical Suzuki roots; no bound on algorithmic splitting, numerical simulation, synthesis or physical errors. No finite-coefficient order certificate.",
+      "leaf_parameter_records_one_macro_step": [
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-61906293349692757/720575940379279360",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-61906293349692757/720575940379279360",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-51458857041996873/720575940379279360",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-51458857041996873/720575940379279360",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.4baa1af5addcap-2",
+          "normalized_coefficient_source_exact": "2917351564340965/9007199254740992",
+          "ideal_coefficient_enclosure": [
+            "1491337779427346677953079391062624682698348088063163532633490281028093257448727028733984423036219/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707",
+            "1118503334570510008464809543296968512023761066048434762527272207060649602810911034616048001629949/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "965493920643138975113300968396499485353145255821465253898502330827955423846245499121336399448007/41473127982885169650566773189259251332789196628273470916864805689726537251550880517711513377531751066822554681344",
+          "source_substep_time_exact": "2917351564340965/36028797018963968",
+          "one_occurrence_gate_angle_conversion_bound_exact": "0",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "4084292190077351/36028797018963968",
+              "binary64_angle_hex": "0x1.d0548c24c034ep-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-51458857041996873/720575940379279360",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-51458857041996873/720575940379279360",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-61906293349692757/720575940379279360",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/1441151880758558720",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "-61906293349692757/720575940379279360",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-4",
+              "per_rotation_operator_conversion_bound_exact": "3/1441151880758558720"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/144115188075855872",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/720575940379279360",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 1,
+              "angle_target_exact": "38998521056122453/720575940379279360",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-5",
+              "per_rotation_operator_conversion_bound_exact": "1/720575940379279360"
+            }
+          ]
+        }
+      ]
+    },
+    "resource_kind": "Complete deterministic measured trial before synthesis/fault tolerance; negative substeps retain all gates",
+    "physical_resource_estimate": null,
+    "measurement": "All n wires inZ; bit0 scores +1/-1",
+    "input_access": "Explicit real Pauli coefficients and local gates; no opaque Hamiltonian access or external data-loading oracle",
+    "exclusions": [
+      "Physical reset/readout/controller/routing/idle/factory time and faults",
+      "Concrete rotation synthesis and its coherent error certificate",
+      "Unmeasured classical hardware input/control/postprocessing latency"
+    ],
+    "planned_sampling_contract": {
+      "fresh_repreparations": true,
+      "observable": "Z0",
+      "epsilon_stat": 0.05,
+      "eta_stat": 0.05,
+      "required_trials_hoeffding": 2952,
+      "status": "Analytic independent-readout proposal; budgeted trials are not executed and algorithm/synthesis/physical allocations are not supplied"
+    }
+  },
+  "validation": {
+    "qubits": 1,
+    "order": 6,
+    "repetitions": 4,
+    "time_exact": "1",
+    "source_to_independent_dense_product_operator_error": 5.9787339602818175e-16,
+    "source_to_qiskit_suzuki_operator_error": 1.1102230246251565e-16,
+    "reset_prefix_density_error": 2.4609673266272275e-15,
+    "operator_error_vs_exact_evolution": 2.1761565036347047e-15,
+    "state_vector_error_vs_exact_evolution": 2.0014830212433605e-15,
+    "state_infidelity": 0.0,
+    "circuit_z0": 0.16996714290024206,
+    "exact_z0": 0.16996714290024095,
+    "observable_bias": 1.1102230246251565e-15,
+    "qiskit_reference_primitive_counts": {
+      "rx": 100
+    },
+    "qiskit_reference_grouping": "Explicit nonempty commuting[A,B] groups; zero blocks omitted as a declared commuting-limit shortcut; source retains its S2 template.",
+    "verified_tolerance": 1e-10,
+    "formal_certificate": false,
+    "scope": "Bounded ideal numerical circuit/product/matrix-exponential comparisons; source parameter enclosures do not certify the large-system splitting error or a physical improvement"
+  },
+  "measured_qasm_sha256": "2437ee8bc1f09d4bde521a0fd0818c7d5443fb3687242b06aa2681e1cb276022",
+  "cpu_timings_seconds": {
+    "source_construction_scalar_accounting_export": 0.0047930830041877925,
+    "independent_and_qiskit_numerical_checks": 0.007418375003908295
+  },
+  "measurement_execution": {
+    "physical_measurements": false,
+    "finite_shot_samples": false,
+    "scope": "Actual reset/preparation circuit prefix simulated; final expectation calculated from its ideal state. Budgeted repeated trials are not executed."
+  }
+}

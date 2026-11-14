@@ -1,0 +1,1434 @@
+{
+  "schema_version": 1,
+  "kind": "complete recorded source logical workload",
+  "recipe_id": "quality-scaling-v1",
+  "fixed_published_recipe": true,
+  "per_run": [
+    {
+      "case_id": "qaoa-path-n3-p1",
+      "seed": 7,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 209408,
+        "h": 157056,
+        "rx": 157056,
+        "measure": 157056,
+        "rz": 104704
+      },
+      "optimizer_wall_seconds": 0.02404074999981276,
+      "classical_control_seconds": 0.0005878359982034453,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n3-p1",
+      "seed": 19,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 209408,
+        "h": 157056,
+        "rx": 157056,
+        "measure": 157056,
+        "rz": 104704
+      },
+      "optimizer_wall_seconds": 0.020154832999878636,
+      "classical_control_seconds": 0.0004917039993870276,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n3-p1",
+      "seed": 41,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 209408,
+        "h": 157056,
+        "rx": 157056,
+        "measure": 157056,
+        "rz": 104704
+      },
+      "optimizer_wall_seconds": 0.01979604199982532,
+      "classical_control_seconds": 0.00047799700018913427,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n3-p2",
+      "seed": 7,
+      "n_qubits": 3,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 648192,
+        "rx": 486144,
+        "rz": 324096,
+        "h": 243072,
+        "measure": 243072
+      },
+      "optimizer_wall_seconds": 0.0475371670002005,
+      "classical_control_seconds": 0.0008267459993476223,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n3-p2",
+      "seed": 19,
+      "n_qubits": 3,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 648192,
+        "rx": 486144,
+        "rz": 324096,
+        "h": 243072,
+        "measure": 243072
+      },
+      "optimizer_wall_seconds": 0.058497417000126006,
+      "classical_control_seconds": 0.0008862880019933073,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n3-p2",
+      "seed": 41,
+      "n_qubits": 3,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 648192,
+        "rx": 486144,
+        "rz": 324096,
+        "h": 243072,
+        "measure": 243072
+      },
+      "optimizer_wall_seconds": 0.04702612500000214,
+      "classical_control_seconds": 0.0008524150011908205,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n4-p1",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 314112,
+        "h": 209408,
+        "rx": 209408,
+        "measure": 209408,
+        "rz": 157056
+      },
+      "optimizer_wall_seconds": 0.02366462500003763,
+      "classical_control_seconds": 0.0004792079992057552,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n4-p1",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 314112,
+        "h": 209408,
+        "rx": 209408,
+        "measure": 209408,
+        "rz": 157056
+      },
+      "optimizer_wall_seconds": 0.02380654099988533,
+      "classical_control_seconds": 0.0004689109998707863,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n4-p1",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 314112,
+        "h": 209408,
+        "rx": 209408,
+        "measure": 209408,
+        "rz": 157056
+      },
+      "optimizer_wall_seconds": 0.023838415999989593,
+      "classical_control_seconds": 0.0004765419985233166,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n4-p2",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 972288,
+        "rx": 648192,
+        "rz": 486144,
+        "h": 324096,
+        "measure": 324096
+      },
+      "optimizer_wall_seconds": 0.06313899999986461,
+      "classical_control_seconds": 0.0008870879989899549,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n4-p2",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 972288,
+        "rx": 648192,
+        "rz": 486144,
+        "h": 324096,
+        "measure": 324096
+      },
+      "optimizer_wall_seconds": 0.06294066700002077,
+      "classical_control_seconds": 0.0008565019991237932,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n4-p2",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 972288,
+        "rx": 648192,
+        "rz": 486144,
+        "h": 324096,
+        "measure": 324096
+      },
+      "optimizer_wall_seconds": 0.06279108300009284,
+      "classical_control_seconds": 0.0009284120001211704,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n5-p1",
+      "seed": 7,
+      "n_qubits": 5,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 418816,
+        "h": 261760,
+        "rx": 261760,
+        "measure": 261760,
+        "rz": 209408
+      },
+      "optimizer_wall_seconds": 0.030196166999985508,
+      "classical_control_seconds": 0.0004999180007416726,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n5-p1",
+      "seed": 19,
+      "n_qubits": 5,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 418816,
+        "h": 261760,
+        "rx": 261760,
+        "measure": 261760,
+        "rz": 209408
+      },
+      "optimizer_wall_seconds": 0.03289412499998434,
+      "classical_control_seconds": 0.00058287100000598,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n5-p1",
+      "seed": 41,
+      "n_qubits": 5,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 418816,
+        "h": 261760,
+        "rx": 261760,
+        "measure": 261760,
+        "rz": 209408
+      },
+      "optimizer_wall_seconds": 0.03239566700017349,
+      "classical_control_seconds": 0.0005931250002504385,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n5-p2",
+      "seed": 7,
+      "n_qubits": 5,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1296384,
+        "rx": 810240,
+        "rz": 648192,
+        "h": 405120,
+        "measure": 405120
+      },
+      "optimizer_wall_seconds": 0.08314404200018544,
+      "classical_control_seconds": 0.0009925820006628783,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n5-p2",
+      "seed": 19,
+      "n_qubits": 5,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1296384,
+        "rx": 810240,
+        "rz": 648192,
+        "h": 405120,
+        "measure": 405120
+      },
+      "optimizer_wall_seconds": 0.08016304099987792,
+      "classical_control_seconds": 0.0009442089999538439,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n5-p2",
+      "seed": 41,
+      "n_qubits": 5,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1296384,
+        "rx": 810240,
+        "rz": 648192,
+        "h": 405120,
+        "measure": 405120
+      },
+      "optimizer_wall_seconds": 0.07929583300006016,
+      "classical_control_seconds": 0.0009001639994039579,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n6-p1",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 523520,
+        "h": 314112,
+        "rx": 314112,
+        "measure": 314112,
+        "rz": 261760
+      },
+      "optimizer_wall_seconds": 0.037131708000060826,
+      "classical_control_seconds": 0.0005435010002656782,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n6-p1",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 523520,
+        "h": 314112,
+        "rx": 314112,
+        "measure": 314112,
+        "rz": 261760
+      },
+      "optimizer_wall_seconds": 0.035716957999966326,
+      "classical_control_seconds": 0.0005059990005520376,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n6-p1",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 523520,
+        "h": 314112,
+        "rx": 314112,
+        "measure": 314112,
+        "rz": 261760
+      },
+      "optimizer_wall_seconds": 0.03572324999981902,
+      "classical_control_seconds": 0.0005245830004696472,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n6-p2",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1620480,
+        "rx": 972288,
+        "rz": 810240,
+        "h": 486144,
+        "measure": 486144
+      },
+      "optimizer_wall_seconds": 0.09696333300007609,
+      "classical_control_seconds": 0.0009333770017292409,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n6-p2",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1620480,
+        "rx": 972288,
+        "rz": 810240,
+        "h": 486144,
+        "measure": 486144
+      },
+      "optimizer_wall_seconds": 0.09683225000003404,
+      "classical_control_seconds": 0.0009269160000258125,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n6-p2",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1620480,
+        "rx": 972288,
+        "rz": 810240,
+        "h": 486144,
+        "measure": 486144
+      },
+      "optimizer_wall_seconds": 0.10872245800010205,
+      "classical_control_seconds": 0.0009680419989308575,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n8-p1",
+      "seed": 7,
+      "n_qubits": 8,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 732928,
+        "h": 418816,
+        "rx": 418816,
+        "measure": 418816,
+        "rz": 366464
+      },
+      "optimizer_wall_seconds": 0.05431854200014641,
+      "classical_control_seconds": 0.0005463690010856226,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n8-p1",
+      "seed": 19,
+      "n_qubits": 8,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 732928,
+        "h": 418816,
+        "rx": 418816,
+        "measure": 418816,
+        "rz": 366464
+      },
+      "optimizer_wall_seconds": 0.0539013329998852,
+      "classical_control_seconds": 0.0005372479995457979,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n8-p1",
+      "seed": 41,
+      "n_qubits": 8,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 732928,
+        "h": 418816,
+        "rx": 418816,
+        "measure": 418816,
+        "rz": 366464
+      },
+      "optimizer_wall_seconds": 0.05418925000003583,
+      "classical_control_seconds": 0.0005404550001912867,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n8-p2",
+      "seed": 7,
+      "n_qubits": 8,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 2268672,
+        "rx": 1296384,
+        "rz": 1134336,
+        "h": 648192,
+        "measure": 648192
+      },
+      "optimizer_wall_seconds": 0.17230591700013065,
+      "classical_control_seconds": 0.001372488999095367,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n8-p2",
+      "seed": 19,
+      "n_qubits": 8,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 2268672,
+        "rx": 1296384,
+        "rz": 1134336,
+        "h": 648192,
+        "measure": 648192
+      },
+      "optimizer_wall_seconds": 0.15573362500003896,
+      "classical_control_seconds": 0.0011557840000477881,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-path-n8-p2",
+      "seed": 41,
+      "n_qubits": 8,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 2268672,
+        "rx": 1296384,
+        "rz": 1134336,
+        "h": 648192,
+        "measure": 648192
+      },
+      "optimizer_wall_seconds": 0.14662566600009086,
+      "classical_control_seconds": 0.001007123997396775,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p1",
+      "seed": 7,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 314112,
+        "h": 157056,
+        "rz": 157056,
+        "rx": 157056,
+        "measure": 157056
+      },
+      "optimizer_wall_seconds": 0.02170804100001078,
+      "classical_control_seconds": 0.0004952080003022274,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p1",
+      "seed": 19,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 314112,
+        "h": 157056,
+        "rz": 157056,
+        "rx": 157056,
+        "measure": 157056
+      },
+      "optimizer_wall_seconds": 0.021495666999953755,
+      "classical_control_seconds": 0.0004942480009049177,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p1",
+      "seed": 41,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 314112,
+        "h": 157056,
+        "rz": 157056,
+        "rx": 157056,
+        "measure": 157056
+      },
+      "optimizer_wall_seconds": 0.02135612500001116,
+      "classical_control_seconds": 0.0004756230000566575,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p2",
+      "seed": 7,
+      "n_qubits": 3,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 972288,
+        "rz": 486144,
+        "rx": 486144,
+        "h": 243072,
+        "measure": 243072
+      },
+      "optimizer_wall_seconds": 0.05748241600008441,
+      "classical_control_seconds": 0.0008642450002298574,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p2",
+      "seed": 19,
+      "n_qubits": 3,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 972288,
+        "rz": 486144,
+        "rx": 486144,
+        "h": 243072,
+        "measure": 243072
+      },
+      "optimizer_wall_seconds": 0.057474375000083455,
+      "classical_control_seconds": 0.0008959599995250755,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n3-p2",
+      "seed": 41,
+      "n_qubits": 3,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 972288,
+        "rz": 486144,
+        "rx": 486144,
+        "h": 243072,
+        "measure": 243072
+      },
+      "optimizer_wall_seconds": 0.05693883399999322,
+      "classical_control_seconds": 0.0008656730017264636,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p1",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 418816,
+        "h": 209408,
+        "rz": 209408,
+        "rx": 209408,
+        "measure": 209408
+      },
+      "optimizer_wall_seconds": 0.02691275000006499,
+      "classical_control_seconds": 0.0005034959999647981,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p1",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 418816,
+        "h": 209408,
+        "rz": 209408,
+        "rx": 209408,
+        "measure": 209408
+      },
+      "optimizer_wall_seconds": 0.027161334000084025,
+      "classical_control_seconds": 0.0005121659999076655,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p1",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 418816,
+        "h": 209408,
+        "rz": 209408,
+        "rx": 209408,
+        "measure": 209408
+      },
+      "optimizer_wall_seconds": 0.02628887500009114,
+      "classical_control_seconds": 0.0004894560011052818,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p2",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1296384,
+        "rz": 648192,
+        "rx": 648192,
+        "h": 324096,
+        "measure": 324096
+      },
+      "optimizer_wall_seconds": 0.07153566700003466,
+      "classical_control_seconds": 0.0008903759985514625,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p2",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1296384,
+        "rz": 648192,
+        "rx": 648192,
+        "h": 324096,
+        "measure": 324096
+      },
+      "optimizer_wall_seconds": 0.07126062499992258,
+      "classical_control_seconds": 0.0008845819993439363,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n4-p2",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1296384,
+        "rz": 648192,
+        "rx": 648192,
+        "h": 324096,
+        "measure": 324096
+      },
+      "optimizer_wall_seconds": 0.07189537499994003,
+      "classical_control_seconds": 0.000879791000215846,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p1",
+      "seed": 7,
+      "n_qubits": 5,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 523520,
+        "h": 261760,
+        "rz": 261760,
+        "rx": 261760,
+        "measure": 261760
+      },
+      "optimizer_wall_seconds": 0.03246758399995997,
+      "classical_control_seconds": 0.000515292001182388,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p1",
+      "seed": 19,
+      "n_qubits": 5,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 523520,
+        "h": 261760,
+        "rz": 261760,
+        "rx": 261760,
+        "measure": 261760
+      },
+      "optimizer_wall_seconds": 0.03233787499993923,
+      "classical_control_seconds": 0.0005302090007717197,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p1",
+      "seed": 41,
+      "n_qubits": 5,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 523520,
+        "h": 261760,
+        "rz": 261760,
+        "rx": 261760,
+        "measure": 261760
+      },
+      "optimizer_wall_seconds": 0.045709625000199594,
+      "classical_control_seconds": 0.000529501999835702,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p2",
+      "seed": 7,
+      "n_qubits": 5,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1620480,
+        "rz": 810240,
+        "rx": 810240,
+        "h": 405120,
+        "measure": 405120
+      },
+      "optimizer_wall_seconds": 0.09110804200008715,
+      "classical_control_seconds": 0.0009326310012056638,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p2",
+      "seed": 19,
+      "n_qubits": 5,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1620480,
+        "rz": 810240,
+        "rx": 810240,
+        "h": 405120,
+        "measure": 405120
+      },
+      "optimizer_wall_seconds": 0.09021833299993887,
+      "classical_control_seconds": 0.0009436659997845709,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n5-p2",
+      "seed": 41,
+      "n_qubits": 5,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1620480,
+        "rz": 810240,
+        "rx": 810240,
+        "h": 405120,
+        "measure": 405120
+      },
+      "optimizer_wall_seconds": 0.08756208299996615,
+      "classical_control_seconds": 0.0009192099987558322,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p1",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 628224,
+        "h": 314112,
+        "rz": 314112,
+        "rx": 314112,
+        "measure": 314112
+      },
+      "optimizer_wall_seconds": 0.038356291999889436,
+      "classical_control_seconds": 0.0005132130015681469,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p1",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 628224,
+        "h": 314112,
+        "rz": 314112,
+        "rx": 314112,
+        "measure": 314112
+      },
+      "optimizer_wall_seconds": 0.039066125000090324,
+      "classical_control_seconds": 0.0005181250003261084,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p1",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 628224,
+        "h": 314112,
+        "rz": 314112,
+        "rx": 314112,
+        "measure": 314112
+      },
+      "optimizer_wall_seconds": 0.03972008300002017,
+      "classical_control_seconds": 0.0005513320018053491,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p2",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1944576,
+        "rz": 972288,
+        "rx": 972288,
+        "h": 486144,
+        "measure": 486144
+      },
+      "optimizer_wall_seconds": 0.10924666599999,
+      "classical_control_seconds": 0.0010303329997896071,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p2",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1944576,
+        "rz": 972288,
+        "rx": 972288,
+        "h": 486144,
+        "measure": 486144
+      },
+      "optimizer_wall_seconds": 0.1067502500000046,
+      "classical_control_seconds": 0.0009514620003301388,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n6-p2",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 1944576,
+        "rz": 972288,
+        "rx": 972288,
+        "h": 486144,
+        "measure": 486144
+      },
+      "optimizer_wall_seconds": 0.107066666000037,
+      "classical_control_seconds": 0.0009705450015644601,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p1",
+      "seed": 7,
+      "n_qubits": 8,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 837632,
+        "h": 418816,
+        "rz": 418816,
+        "rx": 418816,
+        "measure": 418816
+      },
+      "optimizer_wall_seconds": 0.05906983299996682,
+      "classical_control_seconds": 0.0006134579998615663,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p1",
+      "seed": 19,
+      "n_qubits": 8,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 837632,
+        "h": 418816,
+        "rz": 418816,
+        "rx": 418816,
+        "measure": 418816
+      },
+      "optimizer_wall_seconds": 0.05768349999993916,
+      "classical_control_seconds": 0.0005588379988239467,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p1",
+      "seed": 41,
+      "n_qubits": 8,
+      "p": 1,
+      "algorithm": "qaoa",
+      "group_batches": 62,
+      "total_shots": 52352,
+      "weighted_gate_counts": {
+        "cx": 837632,
+        "h": 418816,
+        "rz": 418816,
+        "rx": 418816,
+        "measure": 418816
+      },
+      "optimizer_wall_seconds": 0.05762383299997964,
+      "classical_control_seconds": 0.0005672059994594747,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p2",
+      "seed": 7,
+      "n_qubits": 8,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 2592768,
+        "rz": 1296384,
+        "rx": 1296384,
+        "h": 648192,
+        "measure": 648192
+      },
+      "optimizer_wall_seconds": 0.15665100000001075,
+      "classical_control_seconds": 0.0010300860008101154,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p2",
+      "seed": 19,
+      "n_qubits": 8,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 2592768,
+        "rz": 1296384,
+        "rx": 1296384,
+        "h": 648192,
+        "measure": 648192
+      },
+      "optimizer_wall_seconds": 0.1731440419998762,
+      "classical_control_seconds": 0.0012871680000898778,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "qaoa-cycle-n8-p2",
+      "seed": 41,
+      "n_qubits": 8,
+      "p": 2,
+      "algorithm": "qaoa",
+      "group_batches": 110,
+      "total_shots": 81024,
+      "weighted_gate_counts": {
+        "cx": 2592768,
+        "rz": 1296384,
+        "rx": 1296384,
+        "h": 648192,
+        "measure": 648192
+      },
+      "optimizer_wall_seconds": 0.15634004200001073,
+      "classical_control_seconds": 0.0010343370024656906,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n2",
+      "seed": 7,
+      "n_qubits": 2,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 124,
+      "total_shots": 104704,
+      "weighted_gate_counts": {
+        "ry": 209408,
+        "measure": 209408,
+        "cx": 104704,
+        "h": 104704
+      },
+      "optimizer_wall_seconds": 0.022354374999849824,
+      "classical_control_seconds": 0.00038800200013611175,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n2",
+      "seed": 19,
+      "n_qubits": 2,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 124,
+      "total_shots": 104704,
+      "weighted_gate_counts": {
+        "ry": 209408,
+        "measure": 209408,
+        "cx": 104704,
+        "h": 104704
+      },
+      "optimizer_wall_seconds": 0.021468458000072133,
+      "classical_control_seconds": 0.0003752960001293104,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n2",
+      "seed": 41,
+      "n_qubits": 2,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 124,
+      "total_shots": 104704,
+      "weighted_gate_counts": {
+        "ry": 209408,
+        "measure": 209408,
+        "cx": 104704,
+        "h": 104704
+      },
+      "optimizer_wall_seconds": 0.037945541999988563,
+      "classical_control_seconds": 0.00038991699966572924,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n3",
+      "seed": 7,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 172,
+      "total_shots": 133376,
+      "weighted_gate_counts": {
+        "ry": 400128,
+        "measure": 400128,
+        "cx": 266752,
+        "h": 200064
+      },
+      "optimizer_wall_seconds": 0.039125459000160845,
+      "classical_control_seconds": 0.0005783370004337485,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n3",
+      "seed": 19,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 172,
+      "total_shots": 133376,
+      "weighted_gate_counts": {
+        "ry": 400128,
+        "measure": 400128,
+        "cx": 266752,
+        "h": 200064
+      },
+      "optimizer_wall_seconds": 0.03788966700017227,
+      "classical_control_seconds": 0.000539130000561272,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n3",
+      "seed": 41,
+      "n_qubits": 3,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 172,
+      "total_shots": 133376,
+      "weighted_gate_counts": {
+        "ry": 400128,
+        "measure": 400128,
+        "cx": 266752,
+        "h": 200064
+      },
+      "optimizer_wall_seconds": 0.03804766700000073,
+      "classical_control_seconds": 0.0005354610009362659,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n4",
+      "seed": 7,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 220,
+      "total_shots": 162048,
+      "weighted_gate_counts": {
+        "ry": 648192,
+        "measure": 648192,
+        "cx": 486144,
+        "h": 324096
+      },
+      "optimizer_wall_seconds": 0.05907112499994582,
+      "classical_control_seconds": 0.0007064610006182193,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n4",
+      "seed": 19,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 220,
+      "total_shots": 162048,
+      "weighted_gate_counts": {
+        "ry": 648192,
+        "measure": 648192,
+        "cx": 486144,
+        "h": 324096
+      },
+      "optimizer_wall_seconds": 0.058524667000028785,
+      "classical_control_seconds": 0.0006950419981421874,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n4",
+      "seed": 41,
+      "n_qubits": 4,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 220,
+      "total_shots": 162048,
+      "weighted_gate_counts": {
+        "ry": 648192,
+        "measure": 648192,
+        "cx": 486144,
+        "h": 324096
+      },
+      "optimizer_wall_seconds": 0.058682791999899564,
+      "classical_control_seconds": 0.0007009540015587845,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n6",
+      "seed": 7,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 316,
+      "total_shots": 219392,
+      "weighted_gate_counts": {
+        "ry": 1316352,
+        "measure": 1316352,
+        "cx": 1096960,
+        "h": 658176
+      },
+      "optimizer_wall_seconds": 0.11682479199998852,
+      "classical_control_seconds": 0.0010267869977269584,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n6",
+      "seed": 19,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 316,
+      "total_shots": 219392,
+      "weighted_gate_counts": {
+        "ry": 1316352,
+        "measure": 1316352,
+        "cx": 1096960,
+        "h": 658176
+      },
+      "optimizer_wall_seconds": 0.11686658300004638,
+      "classical_control_seconds": 0.0010395689996585133,
+      "hardware_feedback_seconds": null
+    },
+    {
+      "case_id": "vqe-open-chain-n6",
+      "seed": 41,
+      "n_qubits": 6,
+      "p": 1,
+      "algorithm": "vqe",
+      "group_batches": 316,
+      "total_shots": 219392,
+      "weighted_gate_counts": {
+        "ry": 1316352,
+        "measure": 1316352,
+        "cx": 1096960,
+        "h": 658176
+      },
+      "optimizer_wall_seconds": 0.11761520800018843,
+      "classical_control_seconds": 0.0010358260026350763,
+      "hardware_feedback_seconds": null
+    }
+  ],
+  "objective_calls": 6408,
+  "training_groups": 7572,
+  "validation_groups": 84,
+  "group_batches": 7656,
+  "total_preparations": 5859840,
+  "measured_qubit_readouts": 28528896,
+  "weighted_gate_counts": {
+    "cx": 66324480,
+    "h": 24667776,
+    "rx": 33446400,
+    "measure": 28528896,
+    "rz": 30230400,
+    "ry": 7722240
+  },
+  "logical_peak_qubits": 8,
+  "hardware_feedback_seconds": null,
+  "physical_resource_estimate": null,
+  "scaling": {
+    "qaoa_source": "H=n,RX=np,RZ=mp,CX=2mp,measure=n per group",
+    "vqe_source": "RY=n,CX=n-1,basis H=n for all-X only,measure=n per group",
+    "training_calls": "1+(1+2d)*S for d parameters and S prescribed sweeps",
+    "total_shots": "sum each recorded group allocation including initial, rejected candidates, and final validation",
+    "score_cost": "O(m) QAOA or O(n) joint VQE score per readout",
+    "classical_statevector_memory": "O(2^n)",
+    "dense_reference_memory": "O(4^n)"
+  },
+  "exclusions": [
+    "small deterministic ideal CPU study; no hardware noise or advantage claim",
+    "descriptive fixed-budget polling margin, not a convergence theorem",
+    "post-training exact diagnostics do not drive optimizer decisions",
+    "simultaneous holdout coverage excludes adaptive training queries",
+    "VQE restricted ansatz may not contain the ground state; no global ansatz optimum certified",
+    "physical initialization/reset, routing and feedback timing unmeasured",
+    "conditional synthesis and fault models require a separate complete recorded-workload report",
+    "existing Lean proof covers classical C4 only, not these families or quantum dynamics"
+  ],
+  "provenance": {
+    "generated_at_utc": "2026-11-12T13:20:28.569862+00:00",
+    "python": "3.12.14",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "jupyter-book": "2.1.7"
+    },
+    "device": {
+      "backend": "CPU Qiskit Statevector and NumPy PCG64 ideal group sampling; dense classical references",
+      "architecture": "arm64",
+      "operating_system": "Darwin",
+      "accelerator": null
+    },
+    "implementation_sha256": "b959c0852ddddcdba4de20dddec2df09bdcd14dae2bd2ef277fde032eab0f392",
+    "generator_sha256": "55202cf674f486e9c641eb83dbc5e1d658a16663335d0bd98b1fec41b6091861",
+    "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "source_commit": null,
+    "dirty_owned_source": null,
+    "invocation": "python scripts/generate_optimization_quality_scaling.py",
+    "git_provenance_helper_sha256": null,
+    "revision_note": "source_commit identifies the checkout base at generation; content hashes identify the implementation and generator actually executed",
+    "source_changed_during_generation": false
+  },
+  "recorded_numerical_input_sha256": "92352b6e962b78509c3312594ffd95a0b0befd25664301fc1968048f7c71072e",
+  "circuit_manifest": {
+    "file": "circuit-manifest.json",
+    "sha256": "2a7a2c437dd88562c619a5476cd5bf382352ddb455c07c029346e9f044eb5ff9",
+    "unique_circuit_count": 1873,
+    "total_groups": 7656
+  },
+  "artifact_status": "complete"
+}

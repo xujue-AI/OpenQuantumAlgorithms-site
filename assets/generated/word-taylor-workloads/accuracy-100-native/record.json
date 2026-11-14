@@ -1,0 +1,409 @@
+{
+  "case_id": "accuracy-100-native",
+  "slice": "accuracy",
+  "plan": {
+    "n": 2,
+    "mode": "native",
+    "degree": 3,
+    "segments": 3,
+    "J": {
+      "numerator": "3",
+      "denominator": "5",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.6
+    },
+    "h": {
+      "numerator": "7",
+      "denominator": "20",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.35
+    },
+    "total_time": {
+      "numerator": "1",
+      "denominator": "1",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.0
+    },
+    "total_accuracy": {
+      "numerator": "1",
+      "denominator": "10",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.1
+    },
+    "alpha_binary_coefficients": {
+      "numerator": "11709359031163289",
+      "denominator": "9007199254740992",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.2999999999999998
+    },
+    "segment_exposure": {
+      "numerator": "70312353292659116630351092174029",
+      "denominator": "162259276829213363391578010288128",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.4333333333333333
+    },
+    "binary_segment_time": {
+      "numerator": "6004799503160661",
+      "denominator": "18014398509481984",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 0.3333333333333333
+    },
+    "terms": [
+      {
+        "coefficient": {
+          "numerator": "3",
+          "denominator": "5",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.6
+        },
+        "pauli": "ZZ",
+        "binary_coefficient": {
+          "numerator": "5404319552844595",
+          "denominator": "9007199254740992",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.6
+        },
+        "binary_hex": "0x1.3333333333333p-1"
+      },
+      {
+        "coefficient": {
+          "numerator": "7",
+          "denominator": "20",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "pauli": "IX",
+        "binary_coefficient": {
+          "numerator": "3152519739159347",
+          "denominator": "9007199254740992",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "binary_hex": "0x1.6666666666666p-2"
+      },
+      {
+        "coefficient": {
+          "numerator": "7",
+          "denominator": "20",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "pauli": "XI",
+        "binary_coefficient": {
+          "numerator": "3152519739159347",
+          "denominator": "9007199254740992",
+          "integer_encoding": "decimal",
+          "approximate_decimal": 0.35
+        },
+        "binary_hex": "0x1.6666666666666p-2"
+      }
+    ],
+    "uniform_ideal_bounds": {
+      "segment_tail": {
+        "numerator": "40735709430959135488422962190437827503173350398459844530916524152146660027337965527862167592994271363266047985826785734705752135",
+        "denominator": "25323716539636775974006327389616715027835944326830180099308806302472859627091944333034320195069628033581346492304728752394103422976",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.001608599170947102
+      },
+      "native_taylor_normalization": {
+        "numerator": "13164378174694088357777228852940987335260426285380537034278284355571256110306448809166198190319687",
+        "denominator": "8543948143683640329580086824678208458410818089426611079788166431288878903122562200091848347746304",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 1.5407839506172838
+      },
+      "segment_comparison_operator_error": {
+        "numerator": "40735709430959135488422962190437827503173350398459844530916524152146660027337965527862167592994271363266047985826785734705752135",
+        "denominator": "25323716539636775974006327389616715027835944326830180099308806302472859627091944333034320195069628033581346492304728752394103422976",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.001608599170947102
+      },
+      "composition_comparison_error": {
+        "numerator": "78496418967801437922339707108151078004146119565089232726748068319928422764357607035347212950874850092120287900730293080283208495279579818045636754436521490604519032834861941473046950330486638555935506878326255970790786824879599334827713406762641912434809965714944511616459491902863671868498050159586997880649497380838759945800454508432342804842640705076635288290957390932553539537834962455",
+        "denominator": "16239861864704007515886210839522851540387221218926340410316322682315448565495004678026407390129739367822016593029275216134841197579214217437863550927813571951470189967241959016429722144546127800685495617307451889250929667119803070598042811765962991032599396024479459073641551828153390618505974821659550368182778553303098719676669495497194114308878232248572489534139782124984146422158826930176",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.00483356444911683
+      },
+      "target_exposure_error": {
+        "numerator": "112589990684262397",
+        "denominator": "811296384146066816957890051440640",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 1.3877787807814457e-16
+      },
+      "full_comparison_operator_error": {
+        "numerator": "392482094839018458279547864551673571106574462770164140405464943129824457857120395668357514890157889404401199993300973449629720721468240864739159896368798637389641273206086756512624732120583421788423552358465617855544128033699399304348568585718313006204016831122901526465036341613410232816096273707545324502498138244954719715466485381944333096269296142844777689564920588234547152124318262899",
+        "denominator": "81199309323520037579431054197614257701936106094631702051581613411577242827475023390132036950648696839110082965146376080674205987896071087189317754639067859757350949836209795082148610722730639003427478086537259446254648335599015352990214058829814955162996980122397295368207759140766953092529874108297751840913892766515493598383347477485970571544391161242862447670698910624920732110794134650880",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.004833564449116969
+      },
+      "acceptance_lower": {
+        "numerator": "261189733070636238963150565144910864425752900416298389319525855489107946908871510088339347024148391664193606863897112927202045017578889878714774603457262119055968360862092514569596446329291253456372362177153753965205934941751326691905544212966709120661987742983879924390203500789454750197664487790895145457244568899581717871128468917537162315084859765102237014259720491685765760923076124115863363703487143534345490249186171330044149908755311973722255771287446117859562102717566148984336134376720240257241065096603498312159444023873759797533158661534989852941747743855053971959290663070982014030536735885307412306471399948217789780454137023069877042465297752834108460110636944522699978720628454079310379592672626843745649308743549410268161739353496936460972277440785747817999505933841",
+        "denominator": "3528703253333943996801546141273731215145159055529226541154381073613751004758158928531924575064128500626642895278706853008668878642265385890061794860814830453111182461043899888642334845694644765285728916794295627625430654783593273551374079519528311284212269809749504635190561873061627088656297237394416985928579610960314975830628924378583695579289313432461269842594803284824268661057192716278563478714400756373581698494374322966086134791873027505095530149237528246574569287899957938878541760001300790937420848990756428433789278547080688479402486973848874893313249999006045557797871632953429547321444611518588785276552054433239395648125094835908140828586541473103174699552003029026668499349898193521879407587101533356281694549204739564464973737192958276624983321871972310069798406754304",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.07401861656229164
+      },
+      "conditional_pauli_bias": {
+        "numerator": "1569928379356073833118191458206694284426297851080656561621859772519297831428481582673430059560631557617604799973203893798518882885872963458956639585475194549558565092824347026050498928482333687153694209433862471422176512134797597217394274342873252024816067324491606105860145366453640931264385094830181298009992552979818878861865941527777332385077184571379110758259682352938188608497273051596",
+        "denominator": "80806827228681019121151506333062584130829531631861537911176148468447418369617902994463679435758538949705681765153075107224576267174602846324578594742699061119961308563003708325635985990610055581639054534178793828399104207565315953685865490244096642156792963291274393841742722799153542859713777834590206516411394628270538878667880992104026238448121865100017669981133990036686184958669816387981",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.019428165084532045
+      }
+    },
+    "operator_comparison_map": "Native operator errors compare unnormalized T_K and T_K^r with U; the accepted maps are T_K/s_K and T_K^r/s_K^r. These are not error bounds for the attenuated accepted maps versus U.",
+    "pre_amplification_source_block_normalization_per_segment": {
+      "numerator": "13164378174694088357777228852940987335260426285380537034278284355571256110306448809166198190319687",
+      "denominator": "8543948143683640329580086824678208458410818089426611079788166431288878903122562200091848347746304",
+      "integer_encoding": "decimal",
+      "approximate_decimal": 1.5407839506172838
+    },
+    "error_allocation": {
+      "ideal_algorithm_bias": {
+        "numerator": "1",
+        "denominator": "50",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.02
+      },
+      "reserved_synthesis_bias_unimplemented": {
+        "numerator": "1",
+        "denominator": "50",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.02
+      },
+      "statistical_error": {
+        "numerator": "3",
+        "denominator": "50",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.06
+      },
+      "statistical_failure": {
+        "numerator": "1",
+        "denominator": "250",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.004
+      },
+      "acceptance_failure": {
+        "numerator": "1",
+        "denominator": "1000",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.001
+      },
+      "physical_fault_allowance_unmodeled": {
+        "numerator": "1",
+        "denominator": "200",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.005
+      },
+      "ideal_output_error_bound_if_exact_access": {
+        "numerator": "2",
+        "denominator": "25",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.08
+      },
+      "ideal_bad_output_or_cap_exhaustion_failure_bound_if_exact_access": {
+        "numerator": "1",
+        "denominator": "200",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.005
+      },
+      "hardware_combined_guarantee": false
+    },
+    "workload": {
+      "accepted_slots": 3453,
+      "full_attempt_cap_per_slot": 196,
+      "charged_complete_attempts": 676788,
+      "retry_probability_lower_rounded_down_64_bits": {
+        "numerator": "1365402476414632865",
+        "denominator": "18446744073709551616",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 0.07401861656229164
+      },
+      "uncapped_expected_attempts_upper_bound": {
+        "numerator": "12184612333762108620955738825818193885896234218742419246606077847188282219429922780220735557696435712663797917397374763438933637951742377478383377654393609554592913037984586315481982222183608374531621949690702802190612050967747573572894696580931258864384967653065039505313010147681798337130194360722921852411385396645967611543161675879249500835285999282288764766479855742498199686630486449309879692000825811757977604901074537201895423436337563975094865605317185035421987751118554762947604697284491631106914191565081947381874378823069617319376787520700165006610652246567875311076050748588192226900948243573687075559934243957975633172975952468390810281109327706625262237553066459229086328255198462231049594398261594679240691278403965716097554314527284929186067410423920386671013898522611712",
+        "denominator": "261189733070636238963150565144910864425752900416298389319525855489107946908871510088339347024148391664193606863897112927202045017578889878714774603457262119055968360862092514569596446329291253456372362177153753965205934941751326691905544212966709120661987742983879924390203500789454750197664487790895145457244568899581717871128468917537162315084859765102237014259720491685765760923076124115863363703487143534345490249186171330044149908755311973722255771287446117859562102717566148984336134376720240257241065096603498312159444023873759797533158661534989852941747743855053971959290663070982014030536735885307412306471399948217789780454137023069877042465297752834108460110636944522699978720628454079310379592672626843745649308743549410268161739353496936460972277440785747817999505933841",
+        "integer_encoding": "decimal",
+        "approximate_decimal": 46650.426073473944
+      },
+      "sampling_performed": false,
+      "retry_policy": "All segments run on every attempt; fresh basis input for every retry",
+      "retry_cap_rule": "Round p_lower down to 64 dyadic bits, then ceil(log_upper(M/delta_acceptance)/log_lower(1/(1-p_lower))); p_lower=1 uses one attempt",
+      "log_upper_series_terms": 64,
+      "retry_log_lower_series_terms": 8
+    },
+    "policy": "Smallest r enforcing exact binary exposure <=1/2; smallest K<=8 meeting ideal Pauli-bias allocation",
+    "guarantee_scope": "Any normalized input for ideal exact access at the binary constants, with an exact rational target-exposure correction",
+    "implemented_trial_input": "Fresh all-zero basis input; it is not a protocol for copying an unknown specimen",
+    "not_certified": [
+      "floating normalization/probability/angle construction",
+      "primitive compiler arithmetic",
+      "rotation synthesis",
+      "physical gates/reset/readout",
+      "hardware confidence"
+    ],
+    "bound_source": {
+      "method": "Simulating Hamiltonian Dynamics with a Truncated Taylor Series",
+      "doi": "10.1103/PhysRevLett.114.090502",
+      "arxiv": "https://arxiv.org/abs/1412.4687",
+      "access": "Existing original degree/term PREPARE, signed SELECT and unprepare",
+      "bound_derivation": "Original exact-rational tail, contraction/composition and normalization ledger",
+      "oaa_identity": "One round has block 3F-4FF\u2020F; padding F=T/2 gives 3T/2-TT\u2020T/2"
+    }
+  },
+  "circuit_generation": {
+    "performed": true,
+    "measured_qasm_sha256": "5d5b987208296cfea3d61744b5ab1e66fedf8590f06003d77e18c9f85d789c5c",
+    "coherent_source_qasm_sha256": "136eceb317c9cc2fcc383c50e701ea45bdf7ac5091e7d515d9e62fa8dec5c217",
+    "compiled_global_phase_radians": 2.7488935718910597,
+    "coherent_source_global_phase_radians": 0.0,
+    "qasm_phase_scope": "Pinned QASM exporter may omit global phase; measured-trial probabilities are the export contract",
+    "source_access_normalization_float": 1.5407839506172838,
+    "source_access_alpha_float": 1.2999999999999998,
+    "transpilation": {
+      "optimization_level": 1,
+      "seed": 7,
+      "qubits_initially_zero": false
+    },
+    "source_hashes": {
+      "word_taylor_workloads.py": "2257812cde76ac864108ff8f2c703fd7b8e0d629b9342eccf21c56db3ba77282",
+      "word_taylor.py": "f6c051233d27e41cd4971de564f1d0b77cc49f7f34f9c509ed65c512b03a27af",
+      "amplification.py": "b72735f026641bd77c5c81d764513f0c763e3b5cfe2a1bc9d1b9b500ee796e78",
+      "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+      "source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+      "generate_word_taylor_workloads.py": "7a0e09bd42d6e72b32ca186875e241b4f1aa32a165ff76cea03a64454ec8d3a5",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    }
+  },
+  "numerical_validation": {
+    "performed": true,
+    "source_block_residual_vs_independent_polynomial": 4.8577145710166536e-14,
+    "complete_measured_branch_probability_residual": 1.2836953722228372e-14,
+    "coherent_lowering_random_full_register_residual": 3.489712292228875e-14,
+    "independent_expm_eigh_residual": 7.930878485573286e-16,
+    "actual_known_input_acceptance": 0.07464398844253947,
+    "actual_known_input_Z_mean": 0.7913948099458656,
+    "independent_target_Z_mean": 0.7915104805838215,
+    "actual_known_input_Z_bias": 0.00011567063795581145,
+    "actual_full_map_minimum_acceptance": 0.07457808447366514,
+    "numerical_probability_guard": 5e-10,
+    "seed": 20261112,
+    "uniform_hardware_certificate": false,
+    "measured_check": {
+      "acceptance_bits_checked": 24,
+      "data_readout_map": {
+        "0": 24,
+        "1": 25
+      },
+      "rejected_branches_enumerated": false,
+      "method": "Unnormalized all-zero ancillary branch of actual primitive events"
+    },
+    "scope": "Tiny numerical gate/access/instrument check; analytic bounds remain an ideal-access statement"
+  },
+  "physical_estimation": {
+    "performed": false,
+    "reason": "general-width reset instrument is not implemented"
+  },
+  "sampling": {
+    "performed": false
+  },
+  "logical_resources": {
+    "logical_qubits": 10,
+    "classical_readout_bits": 26,
+    "source_instructions": 517,
+    "source_dependency_depth": 213,
+    "primitive_gate_counts_per_attempt": {
+      "cx": 1518,
+      "t": 864,
+      "tdg": 793,
+      "h": 508,
+      "x": 150,
+      "rz": 98,
+      "ry": 84,
+      "reset": 26,
+      "measure": 26
+    },
+    "primitive_operations_per_attempt": 4067,
+    "primitive_dependency_depth_per_attempt": 3726,
+    "primitive_gate_counts_full_cap": {
+      "cx": 1027364184,
+      "t": 584744832,
+      "tdg": 536692884,
+      "h": 343808304,
+      "x": 101518200,
+      "rz": 66325224,
+      "ry": 56850192,
+      "reset": 17596488,
+      "measure": 17596488
+    },
+    "primitive_operations_full_cap": 2752496796,
+    "serial_dependency_layers_full_cap": 2521712088,
+    "exact_T_Tdag_per_attempt": 1657,
+    "arbitrary_rotations_per_attempt": 182,
+    "source_access_and_schedule_metadata": {
+      "n_system": 2,
+      "time": 0.3333333333333333,
+      "degree": 3,
+      "alpha": 1.2999999999999998,
+      "accepted_branch_normalization": 1.5407839506172838,
+      "n_degree": 2,
+      "n_term": 2,
+      "term_registers": 3,
+      "n_ancillas": 8,
+      "degree_coefficient_count": 4,
+      "term_coefficient_count": 3,
+      "word_enumeration_performed": false,
+      "SELECT_slot_degree_term_predicates": 18,
+      "SELECT_signed_Pauli_gates": 24,
+      "SELECT_negative_coefficient_phase_calls": 0,
+      "SELECT_degree_phase_calls": 3,
+      "PREPARE_degree_calls": 1,
+      "PREPARE_term_calls": 3,
+      "UNPREPARE_degree_calls": 1,
+      "UNPREPARE_term_calls": 3,
+      "PREPARE_total_calls": 1,
+      "SELECT_total_calls": 1,
+      "UNPREPARE_total_calls": 1,
+      "source_instruction_count": 155,
+      "register_order": "data, degree, slot0 term, ..., slot(K-1) term",
+      "inactive_terms": "prepared independently and not selected; their projected weights sum to1",
+      "primitive_rotations_synthesized": false,
+      "segments": 3,
+      "initial_basis": 0,
+      "forward_A_calls_per_attempt": 3,
+      "inverse_A_calls_per_attempt": 0,
+      "total_A_or_inverse_calls_per_attempt": 3,
+      "zero_ancilla_reflections_per_attempt": 0,
+      "degree_prepare_or_inverse_calls_per_attempt": 6,
+      "term_prepare_or_inverse_calls_per_attempt": 18,
+      "SELECT_or_inverse_calls_per_attempt": 3,
+      "SELECT_predicates_or_inverse_per_attempt": 54,
+      "SELECT_signed_Paulis_or_inverse_per_attempt": 72,
+      "padding_signal_and_sign_prepare_or_inverse_calls_per_attempt": 0,
+      "padding_zero_LCU_CZ_or_inverse_calls_per_attempt": 0,
+      "acceptance": "all measured degree+word ancillary bits are zero",
+      "schedule": "run all segments; reset ancillary wires between segments; final Z data readout"
+    },
+    "synthesis": {
+      "performed": false,
+      "T_cost_inferred_from_rotations": false
+    },
+    "physical_resource_estimate": null,
+    "physical_scope": "The current small instrument model does not cover these general-width measured Taylor schedules",
+    "time_scope": "Dependency layers and measured CPU generation time are not fault-tolerant runtime",
+    "included": [
+      "all input resets",
+      "degree and term PREPARE/unprepare",
+      "actual signed SELECT",
+      "actual forward/inverse OAA calls where selected",
+      "all ancilla reflections and zero-LCU padding where selected",
+      "every segment ancilla measurement/reset",
+      "final system Z readout",
+      "all rejected complete attempts and capped accepted-shot workload"
+    ],
+    "excluded": [
+      "rotation synthesis",
+      "physical fault/timing/routing/factory/code model",
+      "classical coefficient/readout wall time",
+      "executed sampling"
+    ]
+  },
+  "cpu_generation_and_check_seconds": 0.9230434569999488
+}

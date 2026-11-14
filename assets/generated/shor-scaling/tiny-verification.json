@@ -1,0 +1,67 @@
+{
+  "actual_full_circuit_case": {
+    "base": 2,
+    "modulus": 3,
+    "phase_bits": 2
+  },
+  "coherent_multipliers": {
+    "fourier": {
+      "max_complex_amplitude_error": 5.5522127693042435e-15,
+      "tested_modulus": 3,
+      "tested_multiplier": 2
+    },
+    "ripple": {
+      "max_complex_amplitude_error": 0.0,
+      "tested_modulus": 3,
+      "tested_multiplier": 2
+    }
+  },
+  "coverage": "Actual tiny phase and coherent-control checks; not simulation or proof of larger materialized circuits",
+  "fourier": {
+    "classical_reference_order": 2,
+    "max_probability_error": 7.716050021144838e-15,
+    "probabilities": [
+      0.4999999999999923,
+      6.671741795687449e-35,
+      0.4999999999999923,
+      6.671741795687449e-35
+    ],
+    "reference_probabilities": [
+      0.5,
+      1.874699728327322e-33,
+      0.5,
+      1.874699728327322e-33
+    ],
+    "total_qubits": 8,
+    "work_register_zero_probability": 0.9999999999999846
+  },
+  "ripple": {
+    "base": 2,
+    "dirty_work_probability": 0.0,
+    "maximum_probability_error": 3.3306690738754696e-16,
+    "maximum_qiskit_complex_amplitude_error": 1.6258839764163445e-17,
+    "method": "bounded source-gate complex sparse statevector; actual H/phase/Boolean primitives",
+    "modulus": 3,
+    "norm": 0.9999999999999993,
+    "peak_nonzero_amplitudes": 4,
+    "performed": true,
+    "phase_bits": 2,
+    "probabilities": [
+      0.49999999999999967,
+      0.0,
+      0.49999999999999967,
+      0.0
+    ],
+    "qiskit_dense_check_performed": true,
+    "reference_probabilities": [
+      0.5,
+      1.874699728327322e-33,
+      0.5,
+      1.874699728327322e-33
+    ],
+    "source_gate_state_applications": 1800,
+    "total_qubits": 12
+  },
+  "status": "checked",
+  "variant_probability_difference": 7.382983113757291e-15
+}

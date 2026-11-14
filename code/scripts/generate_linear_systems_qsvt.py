@@ -12,6 +12,20 @@ import platform
 import subprocess
 import sys
 
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
+
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"src"))
 import matplotlib
@@ -76,7 +90,7 @@ def main():
             "compiled_global_phase_radians":float(measured.global_phase),
             "pinned_exporter_global_phase":"may omit global phase; measurement probabilities unaffected"},
         "physical_estimate":None,
-        "provenance":{"source_revision_at_generation":subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),
+        "provenance":{"source_revision_at_generation":git_revision(ROOT),
             "implementation_sha256":hashlib.sha256(source).hexdigest(),"qasm_sha256":hashlib.sha256(qasm.encode()).hexdigest(),
             "source_note":"source hash identifies working tree code if generation precedes commit",
             "python":platform.python_version(),"packages":{p:importlib.metadata.version(p) for p in ("qiskit","numpy","scipy","matplotlib")},

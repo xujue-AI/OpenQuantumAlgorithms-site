@@ -1,0 +1,60 @@
+{
+  "logical_qubits": 7,
+  "source_counts": {
+    "cEnergy U": 589,
+    "h": 190,
+    "cp": 190,
+    "reset": 97,
+    "measure": 95,
+    "swap": 38,
+    "x": 1
+  },
+  "primitive_counts": {
+    "cx": 66462,
+    "rz": 49457,
+    "t": 32984,
+    "tdg": 24738,
+    "rx": 18848,
+    "h": 16682,
+    "reset": 97,
+    "measure": 95,
+    "x": 1
+  },
+  "source_resets_per_group": 97,
+  "measurement_bits_per_group": 95,
+  "same_ideal_energy_contract": {
+    "kind": "minimum_of_retained-target_medians",
+    "dimers": 1,
+    "data_qubits": 2,
+    "phase_bits": 5,
+    "phase_width": 32,
+    "encoding": {
+      "shift": -2.30857655877753,
+      "span": 3.952344614907298
+    },
+    "energy_absolute_error_ideal": 0.12351076921585306,
+    "ground_overlap_lower_bound": 0.9875597343674858,
+    "overlap_promise_source": "analytic two-parity dimer family; not generic chemistry state preparation",
+    "independent_groups": 2,
+    "qpe_rounds_per_retained_target": 19,
+    "one_round_phase_success_lower_bound": 0.8105694691387022,
+    "median_failure_bound_per_group": 0.0010171187434588472,
+    "no_ground_group_failure_bound": 0.00015476020900751427,
+    "ideal_failure_union_bound": 0.0021889976959252088,
+    "ideal_confidence_lower_bound": 0.9978110023040748,
+    "requested_ideal_failure": 0.005,
+    "total_qpe_rounds": 38,
+    "total_base_U_equivalent_calls": 1178,
+    "assumptions": [
+      "exact analytic-angle Hamiltonian access",
+      "independent HF preparations across groups",
+      "same target retained for all median rounds within each group",
+      "spectrum maps into [1/4,3/4]",
+      "correct classical median/min decoding",
+      "no physical faults or synthesis error"
+    ],
+    "hardware_or_synthesis_confidence_certified": false
+  },
+  "physical_estimate": null,
+  "physical_status": "reset/measurement instrument unsupported by current static importer"
+}

@@ -13,6 +13,20 @@ import platform
 import subprocess
 import sys
 
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"src"))
 import matplotlib
@@ -135,7 +149,7 @@ def main():
     source=(ROOT/"src/openquantum/linear_systems.py").read_bytes()
     (output/"linear_systems.py").write_bytes(source);(output/"LICENSE.txt").write_bytes((ROOT/"LICENSE").read_bytes())
     ledger["provenance"]={
-        "source_revision_at_generation":subprocess.check_output(["git","rev-parse","HEAD"],cwd=ROOT,text=True).strip(),
+        "source_revision_at_generation":git_revision(ROOT),
         "implementation_sha256":hashlib.sha256(source).hexdigest(),"qasm_sha256":hashlib.sha256(qasm.encode()).hexdigest(),
         "source_note":"commit plus canonical source hash identify working tree code; generation can precede commit",
         "python":platform.python_version(),"packages":{p:importlib.metadata.version(p) for p in ("qiskit","numpy","scipy","matplotlib")},

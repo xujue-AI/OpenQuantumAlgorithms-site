@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "source_commit_at_generation": "d4d0aedafc5e92f9a33c3bff34a5e79d83a63af1",
+  "dirty_source_paths": [],
+  "revision_scope": "optional verified exact checkout root; source SHA-256 identities are authoritative",
+  "packages": {
+    "qiskit": "2.6.2",
+    "qdk": "1.34.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "python_version": "3.12.14",
+  "device": "local CPU; ideal bounded numerical instrument checks",
+  "transpiler_seed": 7,
+  "synthesis_seed": null,
+  "synthesis_seed_scope": "native backend has no seed API; exact actual sequences/QASM hashes saved",
+  "source_sha256": {
+    "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+    "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "retargetable_qsp.py": "7a618be07163c209fb975450d0d3119a8236c9dc414f68f507ffa8f439a36687",
+    "thermal_spectral.py": "0b00d54c84483f7543507a037801396415ec6b814d195d5a4287b66d29571103",
+    "qsp_phase_generation.py": "733aa0c768227d4edc810d7e975a9e65ee9eac57dfc33cf14a2081802102bc1c",
+    "qsp_certificate.py": "8ab587c8a67b1e25893bca11bd6ccb6b38f867491f941f495779e541971fe58c",
+    "complete_resource_workloads.py": "3d4c93402114bdb5b42d9e1455c561feec1803dd69c06322b795c183223008c2",
+    "generate_simulation_complete_resources.py": "e47df08eb6c26bfadaaa57e064a85f9ac116bd6d2d72e0a8d3a4082e90506776",
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "references.bib": "7bd314a90054ec17e348ca5f4cf748b0100150f6c3f4eac6732335f077a6bc4a"
+  },
+  "artifacts_sha256": {
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "README.md": "a6466023241e4568e84cec9692cf45f91bb7c5bf9d3beb2a1543ba9616c6e5dd",
+    "accuracy.svg": "4fd67f493bdf6d94cf5de1b0aed89a72554f7889c122199ac3a2da1ac26b2d70",
+    "attempts.svg": "8011f275f83ef86dcdd11d893525228941b6b1a34b9152fa01528506409a3dd2",
+    "complete_resource_workloads.py": "3d4c93402114bdb5b42d9e1455c561feec1803dd69c06322b795c183223008c2",
+    "dynamics-n1-Z/clifford-t-instrument.qasm": "58b55f801f1309cab3b765413f8f3c4f5ae516b6783d637e7d47a09e77375008",
+    "dynamics-n1-Z/report.json": "5d8d40167f3f526e16f4f21c6843f937066de171ae412f6bcc7ed7059d0e94a7",
+    "dynamics-n1-Z/source-instrument.qasm": "1dded98194013d633434ccfdca23be77e7e95724b428b57d167f2bdd9a1cf137",
+    "dynamics-n2-Z/clifford-t-instrument.qasm": "ec01001126ecbfa19e803ad0905b30197027783e77f825b9f378055ff2dc41f7",
+    "dynamics-n2-Z/report.json": "1ba4b564a8d979de0af173d684b87a04724d194d8cb547d3066628b00ba08bd6",
+    "dynamics-n2-Z/source-instrument.qasm": "6cf1c75f377bf00e29e0e51496af54e1c63bbb71c487ca3046833793f17c7cca",
+    "generate_simulation_complete_resources.py": "e47df08eb6c26bfadaaa57e064a85f9ac116bd6d2d72e0a8d3a4082e90506776",
+    "hamiltonian_simulation.py": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
+    "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "qsp_certificate.py": "8ab587c8a67b1e25893bca11bd6ccb6b38f867491f941f495779e541971fe58c",
+    "qsp_phase_generation.py": "733aa0c768227d4edc810d7e975a9e65ee9eac57dfc33cf14a2081802102bc1c",
+    "references.bib": "7bd314a90054ec17e348ca5f4cf748b0100150f6c3f4eac6732335f077a6bc4a",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "results.json": "d3561abfbe866856a235ee08a9da215b10375b920adf14bdd51cb580133a9713",
+    "retargetable_qsp.py": "7a618be07163c209fb975450d0d3119a8236c9dc414f68f507ffa8f439a36687",
+    "space-time.svg": "83c67d036598d3946c178418ccdedb92e6bf8d92b7a69c2331efade9cd47d1b0",
+    "summary.csv": "f3925bbc3306ee102dced0fd742a7edf6428910eeb9c9b36666d239064acf915",
+    "summary.md": "214e08fab524b505e1bad9e8afb076769a9cb9d8aac40951d4697a120b060bb8",
+    "thermal-n1-X/clifford-t-instrument.qasm": "7dc6c1a4aad6965bd5177e2f71fe2643c76aef0f7d9f35889256ac2092ec4d8f",
+    "thermal-n1-X/report.json": "58f1f5db46199e70479a158ba80841c07ca5ddcf80980cf0d0232a91d71c16b8",
+    "thermal-n1-X/source-instrument.qasm": "b02eced669d3449fc2ea488bb6a2b8f0d111f4f9245d3da0e360c8e01457fdf1",
+    "thermal-n2-X/clifford-t-instrument.qasm": "112ff0a7eea4b6791090384fc66e2828ebbde9f65a4f021552d244a032928dec",
+    "thermal-n2-X/report.json": "0875ca7ab0b6469c3c21961f4261ce1c3e1a2213e0dad784294da7e195649278",
+    "thermal-n2-X/source-instrument.qasm": "d1e0491cab6fdd3e5a8b1ba0da6f66150ffd9fe631e446be52c01c42e541dccf",
+    "thermal-n2-Z/clifford-t-instrument.qasm": "17a8ff312acb3e7155882624706f6f8616dabf91529141d5aa0b85895fcdf8be",
+    "thermal-n2-Z/report.json": "83300c768c4f956b96fd9a02d711be073f4b5500cb6e92ea5b9a5b0fbcd3e6bb",
+    "thermal-n2-Z/source-instrument.qasm": "bae974c841f3badff551be445542c70252f69fe6e3a18fcb9d6a91b8d221c9d8",
+    "thermal_spectral.py": "0b00d54c84483f7543507a037801396415ec6b814d195d5a4287b66d29571103"
+  },
+  "case_ids": [
+    "dynamics-n1-Z",
+    "dynamics-n2-Z",
+    "thermal-n1-X",
+    "thermal-n2-X",
+    "thermal-n2-Z"
+  ],
+  "plots": [
+    "attempts.svg",
+    "space-time.svg",
+    "accuracy.svg"
+  ],
+  "limits": {
+    "max_qubits": 8,
+    "source_operations": 20000,
+    "synthesized_operations": 500000,
+    "validation_operations": 500000,
+    "validation_branches": 256
+  },
+  "frozen_baseline_before": {
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+    "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+    "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+    "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+  },
+  "frozen_baseline_after": {
+    "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+    "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+    "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+    "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+    "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8"
+  },
+  "public_bundle_contains_private_cache": false,
+  "repeated_workloads_executed": false
+}

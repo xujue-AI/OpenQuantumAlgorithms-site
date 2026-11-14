@@ -1,0 +1,85 @@
+{
+  "schema": "openquantum-fixed-multiproduct-bundle-v1",
+  "source": {
+    "source_commit": null,
+    "owned_source_dirty": null,
+    "source_sha256": {
+      "multiproduct.py": "810f4c8431845f8d8310ab56dc84564fd521bc5ccb6c7d6d7ac6e398ad1b211a",
+      "generate_simulation_multiproduct.py": "bd68b40ad9c3745241094c4e52707c0e2b17230db9fb1f01ba08579a3d2d6489"
+    },
+    "source_scope": "two actual algorithm/generator source files; standalone exports never borrow ancestor Git",
+    "python": "3.12.14",
+    "device": "CPU",
+    "seed": 17,
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "qiskit": "2.6.2"
+    }
+  },
+  "files": {
+    "multiproduct.py": {
+      "bytes": 34741,
+      "sha256": "810f4c8431845f8d8310ab56dc84564fd521bc5ccb6c7d6d7ac6e398ad1b211a"
+    },
+    "generate_simulation_multiproduct.py": {
+      "bytes": 19251,
+      "sha256": "bd68b40ad9c3745241094c4e52707c0e2b17230db9fb1f01ba08579a3d2d6489"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "n32-r1-lcu.qasm": {
+      "bytes": 28666,
+      "sha256": "a68cb07d1dc5d54df03d835466e6e9b8d960b5c5f9e76a065b5c0da5b952bc92"
+    },
+    "n32-r1-oaa.qasm": {
+      "bytes": 83591,
+      "sha256": "28d768aa59c2bb5c6549de24ccb7a74b3a4852ba52362677577292466931c784"
+    },
+    "n32-r1-oaa-channel.qasm": {
+      "bytes": 83561,
+      "sha256": "d603f13459dd485209ff363ac16c3675b5d26c718a2974b950df7cd6527709dc"
+    },
+    "n32-r1-fine.qasm": {
+      "bytes": 8012,
+      "sha256": "2d0b2aeb0baa37063627427368851f932fa66e1bd0d48a381ace938ff97cb955"
+    },
+    "n32-r1-coarse.qasm": {
+      "bytes": 4598,
+      "sha256": "458fc0d8ea908d25e230f0ddb621f8a345c8a63bcdffef714c7a134c80505c6e"
+    },
+    "state-n32-r1-lcu.qasm": {
+      "bytes": 27946,
+      "sha256": "4912ef6c347853be7ede8303117e68db96733afcdbebf062578f281ee59439ae"
+    },
+    "state-n32-r1-oaa.qasm": {
+      "bytes": 82871,
+      "sha256": "c9a4baefff24727c882e61d575b73a2c1c3a3402da034e590d1eb09d98b592b6"
+    },
+    "state-n32-r1-oaa-channel.qasm": {
+      "bytes": 82834,
+      "sha256": "af9ce525948e4985898bd109f2ba379b3f2150bf3493a2686fc2ebe0df741757"
+    },
+    "study.json": {
+      "bytes": 42684,
+      "sha256": "07166009fa8719da75a177555495cb1871b62265371ea8ad74276886c2f394c1"
+    },
+    "scalar-scaling.json": {
+      "bytes": 14257,
+      "sha256": "edec58f6dc8d417d11a264afd2a2c63014573dcaddf954be6becc4ed0f06a83a"
+    },
+    "README.md": {
+      "bytes": 1640,
+      "sha256": "19f8864d665cebf2d7820dd96273deb1b76c479fe440b69ac0ca0845a3838b7c"
+    }
+  },
+  "source_parameters_fixed_for_grid": false,
+  "exports_bytes_without_manifest": 517719,
+  "scope": "scientific source/QASM/numericalrecords; no private controllers, logs or credentials"
+}

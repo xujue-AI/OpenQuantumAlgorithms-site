@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "phase": "completed_bounded_generation",
+  "execution": {
+    "run_caps": {
+      "physical_cases": 1,
+      "prepared_synthesis_stages": 1,
+      "native_rotation_synthesis_attempts_upper_bound": 10720,
+      "native_rotation_synthesis_attempts_scope": "actual gridsynth_unitary calls including up to four attempts per unique bound rotation target; at most 2680 targets",
+      "physical_profiles": 2,
+      "source_instructions": 20000,
+      "routed_and_synthesized_instructions": 1000000,
+      "density_validation_instructions": 1000000,
+      "density_wires": 6,
+      "density_matrix_entries": 4096,
+      "density_matrix_bytes": 65536,
+      "density_storage_scope": "largest retained six-wire complex128 density matrix; not a measured process peak-memory claim",
+      "unused_family_ensemble_branches": 256,
+      "family_diagnostic_seconds": 60,
+      "prepare_seconds": 1200,
+      "physical_seconds_per_profile": 180,
+      "parent_seconds": 1800,
+      "factory_queries_per_profile": 24,
+      "surface_code_queries_per_profile": 24,
+      "factory_candidates_per_query": 1000,
+      "factory_candidates_per_profile": 24000,
+      "managed_json_qasm_bytes": 33554432,
+      "private_checkpoint_bytes": 134217728,
+      "query_scope": "top-level instrument adapter loop over odd distances 3..49: one factory and one surface-code query per distance; internal native factory construction is timeout-bounded and not included in these top-level query counts; no candidate truncation"
+    },
+    "stage_status": {
+      "family": {
+        "status": "completed",
+        "wall_seconds": 0.09599120799975935
+      },
+      "prepare": {
+        "status": "completed",
+        "wall_seconds": 6.243001957998786,
+        "prepared_checkpoint_sha256": "b472aecd18cf2b69847f177f6d05ac9d214b7d0345542afbb3e62fd3f0c43341",
+        "checkpoint_schema": "literal-n3-density-v1",
+        "checkpoint_identity": "53be5260375630e46c25adf4bd8c7b64201a5c0c08c4b1d1e1464bd2860a0491"
+      },
+      "p1e-03": {
+        "status": "completed",
+        "wall_seconds": 2.8849385829998937
+      },
+      "p1e-04": {
+        "status": "completed",
+        "wall_seconds": 2.4481254999991506
+      }
+    },
+    "repeated_trials_executed": false,
+    "whole_family_physical_completed": false
+  },
+  "wall_seconds": 21.907134332999703
+}

@@ -1,0 +1,10 @@
+OPENQASM 3.0;
+include "stdgates.inc";
+bit[1] c;
+qubit[1] q;
+reset q[0];
+rx(0.35) q[0];
+rx(0.35) q[0];
+rx(0.35) q[0];
+rx(0.35) q[0];
+c[0] = measure q[0];

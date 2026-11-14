@@ -1,0 +1,5082 @@
+{
+  "hamiltonian": {
+    "qubits": 1,
+    "terms": [
+      {
+        "coefficient_exact": "7/10",
+        "pauli_qiskit_order": "X"
+      },
+      {
+        "coefficient_exact": "3/10",
+        "pauli_qiskit_order": "Z"
+      }
+    ],
+    "lambda_exact": "1",
+    "probabilities_exact": [
+      "7/10",
+      "3/10"
+    ],
+    "integer_weights": [
+      7,
+      3
+    ],
+    "total_integer_weight": 10,
+    "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+  },
+  "time_exact": "1/2",
+  "steps": 8,
+  "initial_basis": 0,
+  "master_seed": 20261113,
+  "trajectories": 32,
+  "sample_kind": "Seeded pseudorandom classical simulation; one final bit sampled from each freshly compiled ideal trajectory; no QPU execution",
+  "randomness_scope": "Distinct PRNG seeds record reproducible streams, not a proof of ideal independence. Channel and confidence statements assume independent ideal categorical draws and readout.",
+  "records": [
+    {
+      "trajectory_seed": 336588732259638391,
+      "readout_seed": 2409587501154181921,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 9.494374705426607e-16,
+      "source_to_independent_state_error": 1.0160682785565041e-15,
+      "actual_reset_prefix_density_error": 8.183050304888502e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.6409968581633252,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 336588732259638391,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 14,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 24,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-000.qasm",
+        "measured_qasm_sha256": "602ff068397ad711e05bd9950f84e741116c8182b6781c9c6af2a00a52ccdb7f"
+      }
+    },
+    {
+      "trajectory_seed": 16954246813973755810,
+      "readout_seed": 16818811485394256990,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "source_to_independent_operator_error": 8.498657996376976e-16,
+      "source_to_independent_state_error": 1.0745432284970008e-15,
+      "actual_reset_prefix_density_error": 4.441434757841256e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999979,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7322580244448493,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "trajectory_seed": 16954246813973755810,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-001.qasm",
+        "measured_qasm_sha256": "f32f68857e4ffed49abc626eb3cf624ca4df3c5336900bc0714a2e855f00a3a1"
+      }
+    },
+    {
+      "trajectory_seed": 8447433126257792666,
+      "readout_seed": 9506794721386772824,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 8.360017416006748e-16,
+      "source_to_independent_state_error": 8.420845210931106e-16,
+      "actual_reset_prefix_density_error": 8.449864904644062e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7326143174239577,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 8447433126257792666,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-002.qasm",
+        "measured_qasm_sha256": "36a0c06ca0fa74f8a2e81b83d4ed31dae3f0d3a5417bccf3d49efb0b01b4dc9f"
+      }
+    },
+    {
+      "trajectory_seed": 1753064939077757499,
+      "readout_seed": 7221327402023353270,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "source_to_independent_operator_error": 4.874171680422408e-16,
+      "source_to_independent_state_error": 5.903465596571414e-16,
+      "actual_reset_prefix_density_error": 8.289389749317195e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999983,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8128212940440391,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "trajectory_seed": 1753064939077757499,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-003.qasm",
+        "measured_qasm_sha256": "45442318f63e020ab5b9134ff27b19465ab5b9bec14d60b731618acfc2785dcb"
+      }
+    },
+    {
+      "trajectory_seed": 10191153324214404655,
+      "readout_seed": 11071248688131476266,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 1.2471799980104917e-15,
+      "source_to_independent_state_error": 1.4448669624987113e-15,
+      "actual_reset_prefix_density_error": 5.543444089337938e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999968,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.6423669509541559,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 10191153324214404655,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 14,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 24,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-004.qasm",
+        "measured_qasm_sha256": "5e24c32cedab7f412db1bbbe0bb5a1d554c08a792fde8716dc505c15ea1ef2bf"
+      }
+    },
+    {
+      "trajectory_seed": 573194229120546031,
+      "readout_seed": 16344862989585644519,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 8.538087083130848e-16,
+      "source_to_independent_state_error": 1.0460141623549264e-15,
+      "actual_reset_prefix_density_error": 4.529663764524342e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999976,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7350641061753902,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 573194229120546031,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-005.qasm",
+        "measured_qasm_sha256": "d266cd857c50b4cb5616454804d2dd0b81018769073f49d8abab6e3e3f8fba2f"
+      }
+    },
+    {
+      "trajectory_seed": 258716471141337338,
+      "readout_seed": 12535161286550842378,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 5.243142518590461e-16,
+      "source_to_independent_state_error": 5.323340365389152e-16,
+      "actual_reset_prefix_density_error": 8.835862806030872e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999982,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8137801911007725,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 258716471141337338,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-006.qasm",
+        "measured_qasm_sha256": "b3d5f21d28863e0eca16c6827d797df84758a3456f0ef1018b8ffebd324db30e"
+      }
+    },
+    {
+      "trajectory_seed": 15893036941668624369,
+      "readout_seed": 5599903059259194765,
+      "schedule_indices": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "source_to_independent_operator_error": 7.787652659739907e-16,
+      "source_to_independent_state_error": 8.596390635966833e-16,
+      "actual_reset_prefix_density_error": 7.319444159201835e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8128212940440394,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "trajectory_seed": 15893036941668624369,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-007.qasm",
+        "measured_qasm_sha256": "f87f4101f848e10192bc3955ba6936aca8f1733032ed59344c342a36d8540424"
+      }
+    },
+    {
+      "trajectory_seed": 12920904114222191608,
+      "readout_seed": 8007742008027393165,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 5.388885740805781e-16,
+      "source_to_independent_state_error": 5.963974516958686e-16,
+      "actual_reset_prefix_density_error": 9.143263287704012e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999981,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7336611742777084,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 12920904114222191608,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-008.qasm",
+        "measured_qasm_sha256": "7374c429a6331e16f43125adeaf1b20b48ed32913cea8aae6f6c82ed74329cd0"
+      }
+    },
+    {
+      "trajectory_seed": 4826233112353653241,
+      "readout_seed": 864746867687747707,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 1.0023760032975755e-15,
+      "source_to_independent_state_error": 1.1054422416904925e-15,
+      "actual_reset_prefix_density_error": 2.392344421414564e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999971,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7341089499356221,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 4826233112353653241,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-009.qasm",
+        "measured_qasm_sha256": "bf3c92838e8052323117e4af5fd1f1c347457cbebc5e736ed8284f79041dc5a4"
+      }
+    },
+    {
+      "trajectory_seed": 15633820657641359048,
+      "readout_seed": 7276019686139289522,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 1.1230777166524823e-15,
+      "source_to_independent_state_error": 1.085404709794381e-15,
+      "actual_reset_prefix_density_error": 7.315911262074675e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.6423669509541559,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 15633820657641359048,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 14,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 24,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-010.qasm",
+        "measured_qasm_sha256": "fd929d2a91a6d4fd37ba27b00d80550d8428517f39c61aa83b254f2a1c741c89"
+      }
+    },
+    {
+      "trajectory_seed": 12621561883843619002,
+      "readout_seed": 5216220260650493319,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "source_to_independent_operator_error": 6.038033938895208e-16,
+      "source_to_independent_state_error": 6.0380339388952075e-16,
+      "actual_reset_prefix_density_error": 8.458805963465309e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999983,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8126141377937328,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "trajectory_seed": 12621561883843619002,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-011.qasm",
+        "measured_qasm_sha256": "55e838fb1a36170edfbf37af885b5bc34bd39983e4b6fa77e8444534f731e0ba"
+      }
+    },
+    {
+      "trajectory_seed": 14836951734195903696,
+      "readout_seed": 16588672992321876995,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "source_to_independent_operator_error": 6.203619517162375e-16,
+      "source_to_independent_state_error": 6.052768157389327e-16,
+      "actual_reset_prefix_density_error": 4.977090598781128e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999982,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8835843363489697,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "trajectory_seed": 14836951734195903696,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 8,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 18,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-012.qasm",
+        "measured_qasm_sha256": "11ab9f06d858c3d7c51241c16ce337f1e60ba4cdc610dc3898df0c17f333aef5"
+      }
+    },
+    {
+      "trajectory_seed": 16174388679083138352,
+      "readout_seed": 6592234149184342291,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "source_to_independent_operator_error": 5.238125290117901e-16,
+      "source_to_independent_state_error": 8.006124720886115e-16,
+      "actual_reset_prefix_density_error": 4.563863331697194e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999978,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8128435564402783,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "trajectory_seed": 16174388679083138352,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-013.qasm",
+        "measured_qasm_sha256": "6557d00e4b712ceb02deccaf334ebe2ed96160844a47032e89a1c3742ae45424"
+      }
+    },
+    {
+      "trajectory_seed": 13859186161418323814,
+      "readout_seed": 17022243522592638032,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 8.360017416006748e-16,
+      "source_to_independent_state_error": 8.420845210931106e-16,
+      "actual_reset_prefix_density_error": 8.449864904644062e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7326143174239577,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 13859186161418323814,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-014.qasm",
+        "measured_qasm_sha256": "36a0c06ca0fa74f8a2e81b83d4ed31dae3f0d3a5417bccf3d49efb0b01b4dc9f"
+      }
+    },
+    {
+      "trajectory_seed": 4976068283848524004,
+      "readout_seed": 7290240327258367917,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "source_to_independent_operator_error": 3.4839881564810975e-16,
+      "source_to_independent_state_error": 4.657336792487875e-16,
+      "actual_reset_prefix_density_error": 7.833577383828162e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999986,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.9305076219123143,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "trajectory_seed": 4976068283848524004,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "rz": 8,
+          "h": 6,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 16,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-015.qasm",
+        "measured_qasm_sha256": "d16b363526252865032c30a3fa1a5a3f6c6c712076acbd329a69927de2f8588f"
+      }
+    },
+    {
+      "trajectory_seed": 9682951466067845633,
+      "readout_seed": 9550631077392434633,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "source_to_independent_operator_error": 6.271547200591599e-16,
+      "source_to_independent_state_error": 9.770051323749142e-16,
+      "actual_reset_prefix_density_error": 4.536629478889878e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999977,
+      "classically_sampled_basis_outcome": 1,
+      "readout_bitstring_qiskit_order": "1",
+      "circuit_z0_expectation": 0.7316888688738208,
+      "classically_sampled_z0": -1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "trajectory_seed": 9682951466067845633,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-016.qasm",
+        "measured_qasm_sha256": "d204952c15e474cd8237c8ef5967d68dc9166f87dc2676cfc33be0b7ebfe2902"
+      }
+    },
+    {
+      "trajectory_seed": 12206679639921833679,
+      "readout_seed": 7707500093522490357,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 1.1230777166524823e-15,
+      "source_to_independent_state_error": 1.085404709794381e-15,
+      "actual_reset_prefix_density_error": 7.315911262074675e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.6423669509541559,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 12206679639921833679,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 14,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 24,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-017.qasm",
+        "measured_qasm_sha256": "fd929d2a91a6d4fd37ba27b00d80550d8428517f39c61aa83b254f2a1c741c89"
+      }
+    },
+    {
+      "trajectory_seed": 10015225791405530044,
+      "readout_seed": 1821187940779693618,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "source_to_independent_operator_error": 3.7649494539356115e-16,
+      "source_to_independent_state_error": 4.941739743737033e-16,
+      "actual_reset_prefix_density_error": 1.1346195107601525e-15,
+      "state_probability_norm_before_normalization": 0.9999999999999989,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8790021739740319,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "trajectory_seed": 10015225791405530044,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 8,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 18,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-018.qasm",
+        "measured_qasm_sha256": "6db6c9d23a3cbd008ba2e439d91fd9ae58854237c83874101c7665df4d009abf"
+      }
+    },
+    {
+      "trajectory_seed": 15451131907852869028,
+      "readout_seed": 489602418676891424,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 7.113043184549629e-16,
+      "source_to_independent_state_error": 5.640706195813817e-16,
+      "actual_reset_prefix_density_error": 9.288741330522418e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999982,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7353762217592679,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 15451131907852869028,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-019.qasm",
+        "measured_qasm_sha256": "fc4e7edad639c9eb1f90975cf64fa21801aa12e1454b7d81f004e691ef998fff"
+      }
+    },
+    {
+      "trajectory_seed": 13681209569373688745,
+      "readout_seed": 12917490747603531406,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 7.2126330931833445e-16,
+      "source_to_independent_state_error": 5.959602043214372e-16,
+      "actual_reset_prefix_density_error": 6.970886227891877e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999988,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8850755764670348,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 13681209569373688745,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 8,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 18,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-020.qasm",
+        "measured_qasm_sha256": "7309cc171188e55cd2d6306eb21f5b2db4eccccfdc696db2750a07773b066d63"
+      }
+    },
+    {
+      "trajectory_seed": 12462346818386425938,
+      "readout_seed": 17593679617889622550,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 1.0023760032975755e-15,
+      "source_to_independent_state_error": 1.1054422416904925e-15,
+      "actual_reset_prefix_density_error": 2.392344421414564e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999971,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7341089499356221,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 12462346818386425938,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-021.qasm",
+        "measured_qasm_sha256": "bf3c92838e8052323117e4af5fd1f1c347457cbebc5e736ed8284f79041dc5a4"
+      }
+    },
+    {
+      "trajectory_seed": 2311330881549836065,
+      "readout_seed": 8746284660464991985,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 1.0577432830999945e-15,
+      "source_to_independent_state_error": 1.046301452086498e-15,
+      "actual_reset_prefix_density_error": 2.458338942754842e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999971,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7326143174239577,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 2311330881549836065,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-022.qasm",
+        "measured_qasm_sha256": "6b5c0a9d17b97c19d9879d18dd51fb3f7d64f958ac5bd78d4e22728ac57987a3"
+      }
+    },
+    {
+      "trajectory_seed": 6853637128391307905,
+      "readout_seed": 2665835330927669130,
+      "schedule_indices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "source_to_independent_operator_error": 4.730200001635504e-16,
+      "source_to_independent_state_error": 5.389604659547905e-16,
+      "actual_reset_prefix_density_error": 3.846994974457266e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999983,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.9305076219123141,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "trajectory_seed": 6853637128391307905,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "rz": 8,
+          "h": 6,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 16,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-023.qasm",
+        "measured_qasm_sha256": "0907d9a05cb3911e1887ba2b2b832e87d1290a9d3629aec7e35f7bdd41e75de4"
+      }
+    },
+    {
+      "trajectory_seed": 4033836606616883363,
+      "readout_seed": 5862572425883973222,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 1.1230777166524823e-15,
+      "source_to_independent_state_error": 1.085404709794381e-15,
+      "actual_reset_prefix_density_error": 7.315911262074675e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.6423669509541559,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 4033836606616883363,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 14,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 24,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-024.qasm",
+        "measured_qasm_sha256": "fd929d2a91a6d4fd37ba27b00d80550d8428517f39c61aa83b254f2a1c741c89"
+      }
+    },
+    {
+      "trajectory_seed": 4457808179326169119,
+      "readout_seed": 7728740422511496529,
+      "schedule_indices": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 9.455500137132698e-16,
+      "source_to_independent_state_error": 9.459572931221152e-16,
+      "actual_reset_prefix_density_error": 4.1830144346868185e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999973,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8128435564402783,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 4457808179326169119,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-025.qasm",
+        "measured_qasm_sha256": "e006719612c5d82eb93809e52a75de19dce77a184984d8563a3dbc68701599de"
+      }
+    },
+    {
+      "trajectory_seed": 1728326022771605912,
+      "readout_seed": 10707825450897611353,
+      "schedule_indices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 9.22324919123322e-16,
+      "source_to_independent_state_error": 7.954042913708769e-16,
+      "actual_reset_prefix_density_error": 4.510112758499985e-16,
+      "state_probability_norm_before_normalization": 0.999999999999998,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8116701456306608,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 1728326022771605912,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-026.qasm",
+        "measured_qasm_sha256": "55afaa24106c3169631db11480d4274ff8e49870ac5f0814e8dac80324736d68"
+      }
+    },
+    {
+      "trajectory_seed": 17723771944254323119,
+      "readout_seed": 1683078003468652384,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "source_to_independent_operator_error": 9.595326190268211e-16,
+      "source_to_independent_state_error": 9.45785493509392e-16,
+      "actual_reset_prefix_density_error": 4.933199390469086e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999981,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7340118633567214,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "trajectory_seed": 17723771944254323119,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-027.qasm",
+        "measured_qasm_sha256": "c320f995062b0172e31b8676ffae7727d0b1557371f21d4aa37e9e2ffae058b0"
+      }
+    },
+    {
+      "trajectory_seed": 9609442223023617702,
+      "readout_seed": 15216672460105607503,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 9.494374705426607e-16,
+      "source_to_independent_state_error": 1.0160682785565041e-15,
+      "actual_reset_prefix_density_error": 8.183050304888502e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999974,
+      "classically_sampled_basis_outcome": 1,
+      "readout_bitstring_qiskit_order": "1",
+      "circuit_z0_expectation": 0.6409968581633252,
+      "classically_sampled_z0": -1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "trajectory_seed": 9609442223023617702,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 14,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 24,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-028.qasm",
+        "measured_qasm_sha256": "602ff068397ad711e05bd9950f84e741116c8182b6781c9c6af2a00a52ccdb7f"
+      }
+    },
+    {
+      "trajectory_seed": 4586225326051305272,
+      "readout_seed": 9288763814646781496,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 5.388885740805781e-16,
+      "source_to_independent_state_error": 5.963974516958686e-16,
+      "actual_reset_prefix_density_error": 9.143263287704012e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999981,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.7336611742777084,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 4586225326051305272,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 12,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 22,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-029.qasm",
+        "measured_qasm_sha256": "7374c429a6331e16f43125adeaf1b20b48ed32913cea8aae6f6c82ed74329cd0"
+      }
+    },
+    {
+      "trajectory_seed": 15044874800251687420,
+      "readout_seed": 13139549853505506025,
+      "schedule_indices": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "source_to_independent_operator_error": 5.007675267240983e-16,
+      "source_to_independent_state_error": 4.230449622465488e-16,
+      "actual_reset_prefix_density_error": 8.98036168693198e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999992,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.9690336995260687,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "trajectory_seed": 15044874800251687420,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "rz": 8,
+          "h": 4,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 14,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-030.qasm",
+        "measured_qasm_sha256": "4f716de1147bff94dbf453b15100ce2ff88bb2b33aa83ec6aed70d6fe3079174"
+      }
+    },
+    {
+      "trajectory_seed": 13558906925116268342,
+      "readout_seed": 14921712260643267445,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source_to_independent_operator_error": 7.217783939387126e-16,
+      "source_to_independent_state_error": 7.217783939387125e-16,
+      "actual_reset_prefix_density_error": 1.6928747191526075e-16,
+      "state_probability_norm_before_normalization": 0.9999999999999977,
+      "classically_sampled_basis_outcome": 0,
+      "readout_bitstring_qiskit_order": "0",
+      "circuit_z0_expectation": 0.8133248900854357,
+      "classically_sampled_z0": 1,
+      "logical_ledger": {
+        "hamiltonian": {
+          "qubits": 1,
+          "terms": [
+            {
+              "coefficient_exact": "7/10",
+              "pauli_qiskit_order": "X"
+            },
+            {
+              "coefficient_exact": "3/10",
+              "pauli_qiskit_order": "Z"
+            }
+          ],
+          "lambda_exact": "1",
+          "probabilities_exact": [
+            "7/10",
+            "3/10"
+          ],
+          "integer_weights": [
+            7,
+            3
+          ],
+          "total_integer_weight": 10,
+          "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+        },
+        "time_exact": "1/2",
+        "steps_requested": 8,
+        "categorical_draws": 8,
+        "schedule_indices": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "trajectory_seed": 13558906925116268342,
+        "initial_basis": 0,
+        "system_qubits": 1,
+        "ancillas": 0,
+        "logical_qubits": 1,
+        "complete_primitive_counts": {
+          "h": 10,
+          "rz": 8,
+          "reset": 1,
+          "measure": 1
+        },
+        "source_dependency_depth": 20,
+        "arbitrary_rotations": 8,
+        "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+        "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+        "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+        "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+        "global_phase_radians": 0.0,
+        "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+        "physical_resource_estimate": null,
+        "excluded_costs": [
+          "Physical reset, decoder, routing, factory and gate durations/faults",
+          "Concrete Clifford+T synthesis and its coherent error certificate",
+          "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+        ],
+        "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+        "measured_qasm_file": "trial-031.qasm",
+        "measured_qasm_sha256": "e66d11761222c28b5a4291837334aec2658f38a5499101f5e761d5bd882484ad"
+      }
+    }
+  ],
+  "sample_mean": 0.875,
+  "mean_of_fixed_trajectory_expectations": 0.7698023094116196,
+  "empirical_to_ensemble_hs_superoperator_error": 0.027598301679076363,
+  "ensemble_reference": {
+    "steps": 8,
+    "time_exact": "1/2",
+    "hs_induced_superoperator_error": 0.025914965361466032,
+    "normalized_choi_trace_distance": 0.012967004642785277,
+    "fixed_input_trace_distance": 0.00984022555576326,
+    "ensemble_observable": 0.7564041065849472,
+    "exact_observable": 0.7666150837167226,
+    "observable_bias": 0.01021097713177549,
+    "metric_scope": "HS-induced2->2 superoperator norm, normalized Choi and fixed-input diagnostics; none is a computed diamond norm or certified floating-point bound",
+    "channel_diagnostics": {
+      "spanning_matrix_units": 4,
+      "trace_preservation_max_error": 9.992061497566619e-16,
+      "hermiticity_preservation_max_error": 2.604660726522853e-16,
+      "unitality_error": 1.1004986252445164e-15,
+      "normalized_choi_trace": 0.9999999999999993,
+      "normalized_choi_hermitian_error": 2.0414382252078136e-16,
+      "normalized_choi_min_eigenvalue": 7.20012412345501e-06,
+      "scope": "Numerical diagnostics of an analytically CP/TP mixture of ideal unitaries; no formal or interval certificate"
+    }
+  },
+  "complete_workload": {
+    "fresh_preparations": 32,
+    "term_draws": 256,
+    "primitive_counts": {
+      "h": 348,
+      "rz": 256,
+      "reset": 32,
+      "measure": 32
+    },
+    "zero_state_resets": 32,
+    "final_measurements": 32,
+    "readout_samples_used": 32,
+    "rational_weight_table_builds": 1,
+    "classical_objective_scores": 32
+  },
+  "ideal_iid_hoeffding": {
+    "failure_probability": 0.05,
+    "absolute_radius": 0.48016139565996035,
+    "target": "The averaged-channel Z0 mean, not the expectation of one fixed trajectory",
+    "scope": "Analytic iid +/-1 bound; displayed PRNG sample does not validate coverage"
+  },
+  "physical_resource_estimate": null,
+  "logical_ledgers": [
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 336588732259638391,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 14,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 24,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-000.qasm",
+      "measured_qasm_sha256": "602ff068397ad711e05bd9950f84e741116c8182b6781c9c6af2a00a52ccdb7f"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trajectory_seed": 16954246813973755810,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-001.qasm",
+      "measured_qasm_sha256": "f32f68857e4ffed49abc626eb3cf624ca4df3c5336900bc0714a2e855f00a3a1"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 8447433126257792666,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-002.qasm",
+      "measured_qasm_sha256": "36a0c06ca0fa74f8a2e81b83d4ed31dae3f0d3a5417bccf3d49efb0b01b4dc9f"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "trajectory_seed": 1753064939077757499,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-003.qasm",
+      "measured_qasm_sha256": "45442318f63e020ab5b9134ff27b19465ab5b9bec14d60b731618acfc2785dcb"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 10191153324214404655,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 14,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 24,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-004.qasm",
+      "measured_qasm_sha256": "5e24c32cedab7f412db1bbbe0bb5a1d554c08a792fde8716dc505c15ea1ef2bf"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 573194229120546031,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-005.qasm",
+      "measured_qasm_sha256": "d266cd857c50b4cb5616454804d2dd0b81018769073f49d8abab6e3e3f8fba2f"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 258716471141337338,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-006.qasm",
+      "measured_qasm_sha256": "b3d5f21d28863e0eca16c6827d797df84758a3456f0ef1018b8ffebd324db30e"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "trajectory_seed": 15893036941668624369,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-007.qasm",
+      "measured_qasm_sha256": "f87f4101f848e10192bc3955ba6936aca8f1733032ed59344c342a36d8540424"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 12920904114222191608,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-008.qasm",
+      "measured_qasm_sha256": "7374c429a6331e16f43125adeaf1b20b48ed32913cea8aae6f6c82ed74329cd0"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 4826233112353653241,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-009.qasm",
+      "measured_qasm_sha256": "bf3c92838e8052323117e4af5fd1f1c347457cbebc5e736ed8284f79041dc5a4"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 15633820657641359048,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 14,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 24,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-010.qasm",
+      "measured_qasm_sha256": "fd929d2a91a6d4fd37ba27b00d80550d8428517f39c61aa83b254f2a1c741c89"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trajectory_seed": 12621561883843619002,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-011.qasm",
+      "measured_qasm_sha256": "55e838fb1a36170edfbf37af885b5bc34bd39983e4b6fa77e8444534f731e0ba"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trajectory_seed": 14836951734195903696,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 8,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 18,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-012.qasm",
+      "measured_qasm_sha256": "11ab9f06d858c3d7c51241c16ce337f1e60ba4cdc610dc3898df0c17f333aef5"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "trajectory_seed": 16174388679083138352,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-013.qasm",
+      "measured_qasm_sha256": "6557d00e4b712ceb02deccaf334ebe2ed96160844a47032e89a1c3742ae45424"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 13859186161418323814,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-014.qasm",
+      "measured_qasm_sha256": "36a0c06ca0fa74f8a2e81b83d4ed31dae3f0d3a5417bccf3d49efb0b01b4dc9f"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "trajectory_seed": 4976068283848524004,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "rz": 8,
+        "h": 6,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 16,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-015.qasm",
+      "measured_qasm_sha256": "d16b363526252865032c30a3fa1a5a3f6c6c712076acbd329a69927de2f8588f"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "trajectory_seed": 9682951466067845633,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-016.qasm",
+      "measured_qasm_sha256": "d204952c15e474cd8237c8ef5967d68dc9166f87dc2676cfc33be0b7ebfe2902"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 12206679639921833679,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 14,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 24,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-017.qasm",
+      "measured_qasm_sha256": "fd929d2a91a6d4fd37ba27b00d80550d8428517f39c61aa83b254f2a1c741c89"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "trajectory_seed": 10015225791405530044,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 8,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 18,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-018.qasm",
+      "measured_qasm_sha256": "6db6c9d23a3cbd008ba2e439d91fd9ae58854237c83874101c7665df4d009abf"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 15451131907852869028,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-019.qasm",
+      "measured_qasm_sha256": "fc4e7edad639c9eb1f90975cf64fa21801aa12e1454b7d81f004e691ef998fff"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 13681209569373688745,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 8,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 18,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-020.qasm",
+      "measured_qasm_sha256": "7309cc171188e55cd2d6306eb21f5b2db4eccccfdc696db2750a07773b066d63"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 12462346818386425938,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-021.qasm",
+      "measured_qasm_sha256": "bf3c92838e8052323117e4af5fd1f1c347457cbebc5e736ed8284f79041dc5a4"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 2311330881549836065,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-022.qasm",
+      "measured_qasm_sha256": "6b5c0a9d17b97c19d9879d18dd51fb3f7d64f958ac5bd78d4e22728ac57987a3"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "trajectory_seed": 6853637128391307905,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "rz": 8,
+        "h": 6,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 16,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-023.qasm",
+      "measured_qasm_sha256": "0907d9a05cb3911e1887ba2b2b832e87d1290a9d3629aec7e35f7bdd41e75de4"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 4033836606616883363,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 14,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 24,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-024.qasm",
+      "measured_qasm_sha256": "fd929d2a91a6d4fd37ba27b00d80550d8428517f39c61aa83b254f2a1c741c89"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 4457808179326169119,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-025.qasm",
+      "measured_qasm_sha256": "e006719612c5d82eb93809e52a75de19dce77a184984d8563a3dbc68701599de"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 1728326022771605912,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-026.qasm",
+      "measured_qasm_sha256": "55afaa24106c3169631db11480d4274ff8e49870ac5f0814e8dac80324736d68"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "trajectory_seed": 17723771944254323119,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-027.qasm",
+      "measured_qasm_sha256": "c320f995062b0172e31b8676ffae7727d0b1557371f21d4aa37e9e2ffae058b0"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "trajectory_seed": 9609442223023617702,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 14,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 24,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-028.qasm",
+      "measured_qasm_sha256": "602ff068397ad711e05bd9950f84e741116c8182b6781c9c6af2a00a52ccdb7f"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 4586225326051305272,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 12,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 22,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-029.qasm",
+      "measured_qasm_sha256": "7374c429a6331e16f43125adeaf1b20b48ed32913cea8aae6f6c82ed74329cd0"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "trajectory_seed": 15044874800251687420,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "rz": 8,
+        "h": 4,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 14,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-030.qasm",
+      "measured_qasm_sha256": "4f716de1147bff94dbf453b15100ce2ff88bb2b33aa83ec6aed70d6fe3079174"
+    },
+    {
+      "hamiltonian": {
+        "qubits": 1,
+        "terms": [
+          {
+            "coefficient_exact": "7/10",
+            "pauli_qiskit_order": "X"
+          },
+          {
+            "coefficient_exact": "3/10",
+            "pauli_qiskit_order": "Z"
+          }
+        ],
+        "lambda_exact": "1",
+        "probabilities_exact": [
+          "7/10",
+          "3/10"
+        ],
+        "integer_weights": [
+          7,
+          3
+        ],
+        "total_integer_weight": 10,
+        "coefficient_semantics": "Exact Fraction(str(value)); repeated labels combined exactly; zero coefficients omitted. Identity terms are retained and carry global phase."
+      },
+      "time_exact": "1/2",
+      "steps_requested": 8,
+      "categorical_draws": 8,
+      "schedule_indices": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "trajectory_seed": 13558906925116268342,
+      "initial_basis": 0,
+      "system_qubits": 1,
+      "ancillas": 0,
+      "logical_qubits": 1,
+      "complete_primitive_counts": {
+        "h": 10,
+        "rz": 8,
+        "reset": 1,
+        "measure": 1
+      },
+      "source_dependency_depth": 20,
+      "arbitrary_rotations": 8,
+      "magnitude_rz_angle_hex": "0x1.0000000000000p-3",
+      "per_exponential_scalar_angle_conversion_operator_bound_exact": "0",
+      "trajectory_scalar_angle_conversion_operator_bound_exact": "0",
+      "angle_bound_scope": "Sum of binary64 scalar angle conversions only; not a full compiler/synthesis certificate. Qiskit global-phase accumulation/reduction for identity terms is unbounded by this field and irrelevant to the measured channel.",
+      "global_phase_radians": 0.0,
+      "resource_kind": "Complete measured trial before rotation synthesis and error correction",
+      "physical_resource_estimate": null,
+      "excluded_costs": [
+        "Physical reset, decoder, routing, factory and gate durations/faults",
+        "Concrete Clifford+T synthesis and its coherent error certificate",
+        "Classical input/sampling/scoring hardware time outside recorded CPU generation/check measurements"
+      ],
+      "qasm_phase_scope": "Measured-trial specification. Qiskit exporter may omit overall phase; restore the recorded phase before treating this as a coherently controlled oracle.",
+      "measured_qasm_file": "trial-031.qasm",
+      "measured_qasm_sha256": "e66d11761222c28b5a4291837334aec2658f38a5499101f5e761d5bd882484ad"
+    }
+  ],
+  "validation": {
+    "performed": true,
+    "trajectories_checked": 32,
+    "full_channel_spanning_tests": 4,
+    "numerical_tolerance": 1e-11,
+    "formal_certificate": false
+  }
+}

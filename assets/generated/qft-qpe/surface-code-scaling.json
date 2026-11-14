@@ -36,6 +36,23 @@
         "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
         "source_commit_is_package_release_commit": false,
         "qiskit_version": "2.6.2",
+        "transpiler": {
+          "optimization_level": 1,
+          "seed_transpiler": 7,
+          "basis_gates": [
+            "h",
+            "x",
+            "z",
+            "s",
+            "sdg",
+            "t",
+            "tdg",
+            "rx",
+            "ry",
+            "rz",
+            "cx"
+          ]
+        },
         "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[3] c;\nqubit[4] q;\nh q[0];\nrz(3*pi/10) q[0];\nh q[1];\nrz(3*pi/10) q[1];\nh q[2];\nrz(3*pi/10) q[2];\nx q[3];\ncx q[0], q[3];\nrz(-3*pi/10) q[3];\ncx q[0], q[3];\nrz(3*pi/10) q[3];\ncx q[1], q[3];\nrz(-3*pi/10) q[3];\ncx q[1], q[3];\nrz(3*pi/10) q[1];\nrz(3*pi/10) q[3];\ncx q[1], q[3];\nrz(-3*pi/10) q[3];\ncx q[1], q[3];\nrz(3*pi/10) q[3];\ncx q[2], q[3];\nrz(-3*pi/10) q[3];\ncx q[2], q[3];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[3];\ncx q[2], q[3];\nrz(-3*pi/10) q[3];\ncx q[2], q[3];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[3];\ncx q[2], q[3];\nrz(-3*pi/10) q[3];\ncx q[2], q[3];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[3];\ncx q[2], q[3];\nrz(-3*pi/10) q[3];\ncx q[2], q[3];\ncx q[0], q[2];\ncx q[2], q[0];\ncx q[0], q[2];\nh q[0];\nrz(-pi/4) q[0];\ncx q[0], q[1];\nrz(pi/4) q[1];\ncx q[0], q[1];\nrz(-pi/8) q[0];\ncx q[0], q[2];\nrz(-pi/4) q[1];\nh q[1];\nrz(-pi/4) q[1];\nrz(pi/8) q[2];\ncx q[0], q[2];\nrz(-pi/8) q[2];\ncx q[1], q[2];\nrz(pi/4) q[2];\ncx q[1], q[2];\nrz(-pi/4) q[2];\nh q[2];\nrz(3*pi/10) q[3];\nc[0] = measure q[0];\nc[1] = measure q[1];\nc[2] = measure q[2];\n",
         "qasm_sha256": "2644518e3a74ae7fd3884de9cc4b3a38844eefafb56ff6a3bba2a6511c5b5cb8",
         "source_gate_counts": {
@@ -131,7 +148,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 259852,
+              "EVALUATION_TIME": 383132,
               "NUM_TS_PER_ROTATION": 17,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 2415,
@@ -160,7 +177,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 259852,
+              "EVALUATION_TIME": 383132,
               "NUM_TS_PER_ROTATION": 17,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 1455,
@@ -189,7 +206,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 259852,
+              "EVALUATION_TIME": 383132,
               "NUM_TS_PER_ROTATION": 17,
               "ALGORITHM_COMPUTE_QUBITS": 4,
               "PHYSICAL_COMPUTE_QUBITS": 735,
@@ -225,6 +242,23 @@
         "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
         "source_commit_is_package_release_commit": false,
         "qiskit_version": "2.6.2",
+        "transpiler": {
+          "optimization_level": 1,
+          "seed_transpiler": 7,
+          "basis_gates": [
+            "h",
+            "x",
+            "z",
+            "s",
+            "sdg",
+            "t",
+            "tdg",
+            "rx",
+            "ry",
+            "rz",
+            "cx"
+          ]
+        },
         "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[4] c;\nqubit[5] q;\nh q[0];\nrz(3*pi/10) q[0];\nh q[1];\nrz(3*pi/10) q[1];\nh q[2];\nrz(3*pi/10) q[2];\nh q[3];\nrz(3*pi/10) q[3];\nx q[4];\ncx q[0], q[4];\nrz(-3*pi/10) q[4];\ncx q[0], q[4];\nrz(3*pi/10) q[4];\ncx q[1], q[4];\nrz(-3*pi/10) q[4];\ncx q[1], q[4];\nrz(3*pi/10) q[1];\nrz(3*pi/10) q[4];\ncx q[1], q[4];\nrz(-3*pi/10) q[4];\ncx q[1], q[4];\nrz(3*pi/10) q[4];\ncx q[2], q[4];\nrz(-3*pi/10) q[4];\ncx q[2], q[4];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[4];\ncx q[2], q[4];\nrz(-3*pi/10) q[4];\ncx q[2], q[4];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[4];\ncx q[2], q[4];\nrz(-3*pi/10) q[4];\ncx q[2], q[4];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[4];\ncx q[2], q[4];\nrz(-3*pi/10) q[4];\ncx q[2], q[4];\ncx q[1], q[2];\ncx q[2], q[1];\ncx q[1], q[2];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[4];\ncx q[3], q[4];\nrz(-3*pi/10) q[4];\ncx q[3], q[4];\ncx q[0], q[3];\ncx q[3], q[0];\ncx q[0], q[3];\nh q[0];\nrz(-pi/4) q[0];\ncx q[0], q[1];\nrz(pi/4) q[1];\ncx q[0], q[1];\nrz(-pi/8) q[0];\ncx q[0], q[2];\nrz(-pi/4) q[1];\nh q[1];\nrz(-pi/4) q[1];\nrz(pi/8) q[2];\ncx q[0], q[2];\nrz(-pi/16) q[0];\ncx q[0], q[3];\nrz(-pi/8) q[2];\ncx q[1], q[2];\nrz(pi/4) q[2];\ncx q[1], q[2];\nrz(-pi/8) q[1];\nrz(-pi/4) q[2];\nh q[2];\nrz(-pi/4) q[2];\nrz(pi/16) q[3];\ncx q[0], q[3];\nrz(-pi/16) q[3];\ncx q[1], q[3];\nrz(pi/8) q[3];\ncx q[1], q[3];\nrz(-pi/8) q[3];\ncx q[2], q[3];\nrz(pi/4) q[3];\ncx q[2], q[3];\nrz(-pi/4) q[3];\nh q[3];\nrz(3*pi/10) q[4];\nc[0] = measure q[0];\nc[1] = measure q[1];\nc[2] = measure q[2];\nc[3] = measure q[3];\n",
         "qasm_sha256": "9646751f60a5e2240c8ed1b9f8f5645cc5d6e685c2ca019aacd16870f8b59817",
         "source_gate_counts": {
@@ -320,7 +354,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 479412,
+              "EVALUATION_TIME": 675947,
               "NUM_TS_PER_ROTATION": 17,
               "ALGORITHM_COMPUTE_QUBITS": 5,
               "PHYSICAL_COMPUTE_QUBITS": 4338,
@@ -349,7 +383,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 479412,
+              "EVALUATION_TIME": 675947,
               "NUM_TS_PER_ROTATION": 17,
               "ALGORITHM_COMPUTE_QUBITS": 5,
               "PHYSICAL_COMPUTE_QUBITS": 2898,
@@ -378,7 +412,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 479412,
+              "EVALUATION_TIME": 675947,
               "NUM_TS_PER_ROTATION": 17,
               "ALGORITHM_COMPUTE_QUBITS": 5,
               "PHYSICAL_COMPUTE_QUBITS": 1746,
@@ -414,6 +448,23 @@
         "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
         "source_commit_is_package_release_commit": false,
         "qiskit_version": "2.6.2",
+        "transpiler": {
+          "optimization_level": 1,
+          "seed_transpiler": 7,
+          "basis_gates": [
+            "h",
+            "x",
+            "z",
+            "s",
+            "sdg",
+            "t",
+            "tdg",
+            "rx",
+            "ry",
+            "rz",
+            "cx"
+          ]
+        },
         "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[5] c;\nqubit[6] q;\nh q[0];\nrz(3*pi/10) q[0];\nh q[1];\nrz(3*pi/10) q[1];\nh q[2];\nrz(3*pi/10) q[2];\nh q[3];\nrz(3*pi/10) q[3];\nh q[4];\nrz(3*pi/10) q[4];\nx q[5];\ncx q[0], q[5];\nrz(-3*pi/10) q[5];\ncx q[0], q[5];\nrz(3*pi/10) q[5];\ncx q[1], q[5];\nrz(-3*pi/10) q[5];\ncx q[1], q[5];\nrz(3*pi/10) q[1];\nrz(3*pi/10) q[5];\ncx q[1], q[5];\nrz(-3*pi/10) q[5];\ncx q[1], q[5];\nrz(3*pi/10) q[5];\ncx q[2], q[5];\nrz(-3*pi/10) q[5];\ncx q[2], q[5];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[5];\ncx q[2], q[5];\nrz(-3*pi/10) q[5];\ncx q[2], q[5];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[5];\ncx q[2], q[5];\nrz(-3*pi/10) q[5];\ncx q[2], q[5];\nrz(3*pi/10) q[2];\nrz(3*pi/10) q[5];\ncx q[2], q[5];\nrz(-3*pi/10) q[5];\ncx q[2], q[5];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\nrz(3*pi/10) q[3];\nrz(3*pi/10) q[5];\ncx q[3], q[5];\nrz(-3*pi/10) q[5];\ncx q[3], q[5];\ncx q[1], q[3];\ncx q[3], q[1];\ncx q[1], q[3];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\nrz(3*pi/10) q[4];\nrz(3*pi/10) q[5];\ncx q[4], q[5];\nrz(-3*pi/10) q[5];\ncx q[4], q[5];\ncx q[0], q[4];\ncx q[4], q[0];\ncx q[0], q[4];\nh q[0];\nrz(-pi/4) q[0];\ncx q[0], q[1];\nrz(pi/4) q[1];\ncx q[0], q[1];\nrz(-pi/8) q[0];\ncx q[0], q[2];\nrz(-pi/4) q[1];\nh q[1];\nrz(-pi/4) q[1];\nrz(pi/8) q[2];\ncx q[0], q[2];\nrz(-pi/16) q[0];\ncx q[0], q[3];\nrz(-pi/8) q[2];\ncx q[1], q[2];\nrz(pi/4) q[2];\ncx q[1], q[2];\nrz(-pi/8) q[1];\nrz(-pi/4) q[2];\nh q[2];\nrz(-pi/4) q[2];\nrz(pi/16) q[3];\ncx q[0], q[3];\nrz(-pi/32) q[0];\ncx q[0], q[4];\nrz(-pi/16) q[3];\ncx q[1], q[3];\nrz(pi/8) q[3];\ncx q[1], q[3];\nrz(-pi/16) q[1];\nrz(-pi/8) q[3];\ncx q[2], q[3];\nrz(pi/4) q[3];\ncx q[2], q[3];\nrz(-pi/8) q[2];\nrz(-pi/4) q[3];\nh q[3];\nrz(-pi/4) q[3];\nrz(pi/32) q[4];\ncx q[0], q[4];\nrz(-pi/32) q[4];\ncx q[1], q[4];\nrz(pi/16) q[4];\ncx q[1], q[4];\nrz(-pi/16) q[4];\ncx q[2], q[4];\nrz(pi/8) q[4];\ncx q[2], q[4];\nrz(-pi/8) q[4];\ncx q[3], q[4];\nrz(pi/4) q[4];\ncx q[3], q[4];\nrz(-pi/4) q[4];\nh q[4];\nrz(3*pi/10) q[5];\nc[0] = measure q[0];\nc[1] = measure q[1];\nc[2] = measure q[2];\nc[3] = measure q[3];\nc[4] = measure q[4];\n",
         "qasm_sha256": "a05f2b58b314f90ebe9c982e3ea92a15a62f487e673526e39843a5f6d6093617",
         "source_gate_counts": {
@@ -509,7 +560,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 892295,
+              "EVALUATION_TIME": 1245386,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 6740,
@@ -538,7 +589,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 892295,
+              "EVALUATION_TIME": 1245386,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 4820,
@@ -567,7 +618,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 892295,
+              "EVALUATION_TIME": 1245386,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 3220,
@@ -596,7 +647,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 892295,
+              "EVALUATION_TIME": 1245386,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 1940,
@@ -632,6 +683,23 @@
         "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
         "source_commit_is_package_release_commit": false,
         "qiskit_version": "2.6.2",
+        "transpiler": {
+          "optimization_level": 1,
+          "seed_transpiler": 7,
+          "basis_gates": [
+            "h",
+            "x",
+            "z",
+            "s",
+            "sdg",
+            "t",
+            "tdg",
+            "rx",
+            "ry",
+            "rz",
+            "cx"
+          ]
+        },
         "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[4] c;\nqubit[6] q;\nh q[0];\nrz(3*pi/20) q[0];\nh q[1];\nrz(3*pi/20) q[1];\nh q[2];\nrz(3*pi/20) q[2];\nh q[3];\nrz(3*pi/20) q[3];\nx q[4];\ncx q[0], q[4];\nrz(-3*pi/20) q[4];\ncx q[0], q[4];\nrz(3*pi/20) q[0];\nrz(3*pi/20) q[4];\ncx q[1], q[4];\nrz(-3*pi/20) q[4];\ncx q[1], q[4];\nrz(3*pi/20) q[1];\nrz(3*pi/20) q[4];\nx q[5];\ncx q[0], q[5];\nrz(-3*pi/20) q[5];\ncx q[0], q[5];\nrz(3*pi/20) q[5];\ncx q[1], q[5];\nrz(-3*pi/20) q[5];\ncx q[1], q[5];\nrz(3*pi/20) q[1];\ncx q[1], q[4];\nrz(-3*pi/20) q[4];\ncx q[1], q[4];\nrz(3*pi/20) q[1];\nrz(3*pi/20) q[4];\ncx q[2], q[4];\nrz(-3*pi/20) q[4];\ncx q[2], q[4];\nrz(3*pi/20) q[2];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[1], q[5];\nrz(-3*pi/20) q[5];\ncx q[1], q[5];\nrz(3*pi/20) q[5];\ncx q[2], q[5];\nrz(-3*pi/20) q[5];\ncx q[2], q[5];\nrz(3*pi/20) q[2];\ncx q[2], q[4];\nrz(-3*pi/20) q[4];\ncx q[2], q[4];\nrz(3*pi/20) q[2];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[2], q[5];\nrz(-3*pi/20) q[5];\ncx q[2], q[5];\nrz(3*pi/20) q[2];\ncx q[2], q[4];\nrz(-3*pi/20) q[4];\ncx q[2], q[4];\nrz(3*pi/20) q[2];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[2], q[5];\nrz(-3*pi/20) q[5];\ncx q[2], q[5];\nrz(3*pi/20) q[2];\ncx q[2], q[4];\nrz(-3*pi/20) q[4];\ncx q[2], q[4];\nrz(3*pi/20) q[2];\nrz(3*pi/20) q[4];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[2], q[5];\nrz(-3*pi/20) q[5];\ncx q[2], q[5];\ncx q[1], q[2];\ncx q[2], q[1];\ncx q[1], q[2];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\nrz(3*pi/20) q[3];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\nrz(3*pi/20) q[3];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\nrz(3*pi/20) q[3];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\nrz(3*pi/20) q[3];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\nrz(3*pi/20) q[3];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\nrz(3*pi/20) q[3];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\nrz(3*pi/20) q[3];\ncx q[3], q[4];\nrz(-3*pi/20) q[4];\ncx q[3], q[4];\nrz(3*pi/20) q[3];\nrz(3*pi/20) q[4];\nrz(3*pi/20) q[5];\ncx q[3], q[5];\nrz(-3*pi/20) q[5];\ncx q[3], q[5];\ncx q[0], q[3];\ncx q[3], q[0];\ncx q[0], q[3];\nh q[0];\nrz(-pi/4) q[0];\ncx q[0], q[1];\nrz(pi/4) q[1];\ncx q[0], q[1];\nrz(-pi/8) q[0];\ncx q[0], q[2];\nrz(-pi/4) q[1];\nh q[1];\nrz(-pi/4) q[1];\nrz(pi/8) q[2];\ncx q[0], q[2];\nrz(-pi/16) q[0];\ncx q[0], q[3];\nrz(-pi/8) q[2];\ncx q[1], q[2];\nrz(pi/4) q[2];\ncx q[1], q[2];\nrz(-pi/8) q[1];\nrz(-pi/4) q[2];\nh q[2];\nrz(-pi/4) q[2];\nrz(pi/16) q[3];\ncx q[0], q[3];\nrz(-pi/16) q[3];\ncx q[1], q[3];\nrz(pi/8) q[3];\ncx q[1], q[3];\nrz(-pi/8) q[3];\ncx q[2], q[3];\nrz(pi/4) q[3];\ncx q[2], q[3];\nrz(-pi/4) q[3];\nh q[3];\nrz(3*pi/20) q[5];\nc[0] = measure q[0];\nc[1] = measure q[1];\nc[2] = measure q[2];\nc[3] = measure q[3];\n",
         "qasm_sha256": "ef574cdd8ccbfd739f75a9281c449d4ff5b0ebcf80a2daae7bc52d8fbbcf5f2b",
         "source_gate_counts": {
@@ -727,7 +795,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 761718,
+              "EVALUATION_TIME": 1077995,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 8980,
@@ -756,7 +824,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 761718,
+              "EVALUATION_TIME": 1077995,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 6740,
@@ -785,7 +853,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 761718,
+              "EVALUATION_TIME": 1077995,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 4820,
@@ -814,7 +882,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 761718,
+              "EVALUATION_TIME": 1077995,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 3220,
@@ -843,7 +911,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 761718,
+              "EVALUATION_TIME": 1077995,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 6,
               "PHYSICAL_COMPUTE_QUBITS": 1940,
@@ -879,6 +947,23 @@
         "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
         "source_commit_is_package_release_commit": false,
         "qiskit_version": "2.6.2",
+        "transpiler": {
+          "optimization_level": 1,
+          "seed_transpiler": 7,
+          "basis_gates": [
+            "h",
+            "x",
+            "z",
+            "s",
+            "sdg",
+            "t",
+            "tdg",
+            "rx",
+            "ry",
+            "rz",
+            "cx"
+          ]
+        },
         "qasm3": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nbit[4] c;\nqubit[8] q;\nh q[0];\nrz(3*pi/40) q[0];\nh q[1];\nrz(3*pi/40) q[1];\nh q[2];\nrz(3*pi/40) q[2];\nh q[3];\nrz(3*pi/40) q[3];\nx q[4];\ncx q[0], q[4];\nrz(-3*pi/40) q[4];\ncx q[0], q[4];\nrz(3*pi/40) q[0];\nrz(3*pi/40) q[4];\ncx q[1], q[4];\nrz(-3*pi/40) q[4];\ncx q[1], q[4];\nrz(3*pi/40) q[1];\nrz(3*pi/40) q[4];\nx q[5];\ncx q[0], q[5];\nrz(-3*pi/40) q[5];\ncx q[0], q[5];\nrz(3*pi/40) q[0];\nrz(3*pi/40) q[5];\ncx q[1], q[5];\nrz(-3*pi/40) q[5];\ncx q[1], q[5];\nrz(3*pi/40) q[1];\nrz(3*pi/40) q[5];\nx q[6];\ncx q[0], q[6];\nrz(-3*pi/40) q[6];\ncx q[0], q[6];\nrz(3*pi/40) q[0];\nrz(3*pi/40) q[6];\ncx q[1], q[6];\nrz(-3*pi/40) q[6];\ncx q[1], q[6];\nrz(3*pi/40) q[1];\nrz(3*pi/40) q[6];\nx q[7];\ncx q[0], q[7];\nrz(-3*pi/40) q[7];\ncx q[0], q[7];\nrz(3*pi/40) q[7];\ncx q[1], q[7];\nrz(-3*pi/40) q[7];\ncx q[1], q[7];\nrz(3*pi/40) q[1];\ncx q[1], q[4];\nrz(-3*pi/40) q[4];\ncx q[1], q[4];\nrz(3*pi/40) q[1];\ncx q[1], q[5];\nrz(3*pi/40) q[4];\ncx q[2], q[4];\nrz(-3*pi/40) q[4];\ncx q[2], q[4];\nrz(3*pi/40) q[2];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[1], q[5];\nrz(3*pi/40) q[1];\ncx q[1], q[6];\nrz(3*pi/40) q[5];\ncx q[2], q[5];\nrz(-3*pi/40) q[5];\ncx q[2], q[5];\nrz(3*pi/40) q[2];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[1], q[6];\nrz(3*pi/40) q[1];\nrz(3*pi/40) q[6];\ncx q[2], q[6];\nrz(-3*pi/40) q[6];\ncx q[2], q[6];\nrz(3*pi/40) q[2];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[1], q[7];\nrz(-3*pi/40) q[7];\ncx q[1], q[7];\nrz(3*pi/40) q[7];\ncx q[2], q[7];\nrz(-3*pi/40) q[7];\ncx q[2], q[7];\nrz(3*pi/40) q[2];\ncx q[2], q[4];\nrz(-3*pi/40) q[4];\ncx q[2], q[4];\nrz(3*pi/40) q[2];\ncx q[2], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[2], q[5];\nrz(3*pi/40) q[2];\ncx q[2], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[2], q[6];\nrz(3*pi/40) q[2];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[2], q[7];\nrz(-3*pi/40) q[7];\ncx q[2], q[7];\nrz(3*pi/40) q[2];\ncx q[2], q[4];\nrz(-3*pi/40) q[4];\ncx q[2], q[4];\nrz(3*pi/40) q[2];\ncx q[2], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[2], q[5];\nrz(3*pi/40) q[2];\ncx q[2], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[2], q[6];\nrz(3*pi/40) q[2];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[2], q[7];\nrz(-3*pi/40) q[7];\ncx q[2], q[7];\nrz(3*pi/40) q[2];\ncx q[2], q[4];\nrz(-3*pi/40) q[4];\ncx q[2], q[4];\nrz(3*pi/40) q[2];\ncx q[2], q[5];\nrz(3*pi/40) q[4];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[2], q[5];\nrz(3*pi/40) q[2];\ncx q[2], q[6];\nrz(3*pi/40) q[5];\ncx q[3], q[5];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[2], q[6];\nrz(3*pi/40) q[2];\nrz(3*pi/40) q[6];\ncx q[3], q[6];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[2], q[7];\nrz(-3*pi/40) q[7];\ncx q[2], q[7];\ncx q[1], q[2];\ncx q[2], q[1];\ncx q[1], q[2];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\nrz(3*pi/40) q[3];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\ncx q[3], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\ncx q[3], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\nrz(3*pi/40) q[3];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\ncx q[3], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\ncx q[3], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\nrz(3*pi/40) q[3];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\ncx q[3], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\ncx q[3], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\nrz(3*pi/40) q[3];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\ncx q[3], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\ncx q[3], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\nrz(3*pi/40) q[3];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\ncx q[3], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\ncx q[3], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\nrz(3*pi/40) q[3];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\ncx q[3], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\ncx q[3], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\nrz(3*pi/40) q[3];\ncx q[3], q[4];\nrz(-3*pi/40) q[4];\ncx q[3], q[4];\nrz(3*pi/40) q[3];\ncx q[3], q[5];\nrz(3*pi/40) q[4];\nrz(-3*pi/40) q[5];\ncx q[3], q[5];\nrz(3*pi/40) q[3];\ncx q[3], q[6];\nrz(3*pi/40) q[5];\nrz(-3*pi/40) q[6];\ncx q[3], q[6];\nrz(3*pi/40) q[3];\nrz(3*pi/40) q[6];\nrz(3*pi/40) q[7];\ncx q[3], q[7];\nrz(-3*pi/40) q[7];\ncx q[3], q[7];\ncx q[0], q[3];\ncx q[3], q[0];\ncx q[0], q[3];\nh q[0];\nrz(-pi/4) q[0];\ncx q[0], q[1];\nrz(pi/4) q[1];\ncx q[0], q[1];\nrz(-pi/8) q[0];\ncx q[0], q[2];\nrz(-pi/4) q[1];\nh q[1];\nrz(-pi/4) q[1];\nrz(pi/8) q[2];\ncx q[0], q[2];\nrz(-pi/16) q[0];\ncx q[0], q[3];\nrz(-pi/8) q[2];\ncx q[1], q[2];\nrz(pi/4) q[2];\ncx q[1], q[2];\nrz(-pi/8) q[1];\nrz(-pi/4) q[2];\nh q[2];\nrz(-pi/4) q[2];\nrz(pi/16) q[3];\ncx q[0], q[3];\nrz(-pi/16) q[3];\ncx q[1], q[3];\nrz(pi/8) q[3];\ncx q[1], q[3];\nrz(-pi/8) q[3];\ncx q[2], q[3];\nrz(pi/4) q[3];\ncx q[2], q[3];\nrz(-pi/4) q[3];\nh q[3];\nrz(3*pi/40) q[7];\nc[0] = measure q[0];\nc[1] = measure q[1];\nc[2] = measure q[2];\nc[3] = measure q[3];\n",
         "qasm_sha256": "531582d7cda09a67f313ca511000d2cfeb5095c723788eed9e63a8bec382acfc",
         "source_gate_counts": {
@@ -974,7 +1059,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 1388664,
+              "EVALUATION_TIME": 1915562,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 8,
               "PHYSICAL_COMPUTE_QUBITS": 8425,
@@ -1003,7 +1088,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 1388664,
+              "EVALUATION_TIME": 1915562,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 8,
               "PHYSICAL_COMPUTE_QUBITS": 6025,
@@ -1032,7 +1117,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 1388664,
+              "EVALUATION_TIME": 1915562,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 8,
               "PHYSICAL_COMPUTE_QUBITS": 4025,
@@ -1061,7 +1146,7 @@
             },
             "model_properties": {
               "LOGICAL_MEMORY_QUBITS": 0,
-              "EVALUATION_TIME": 1388664,
+              "EVALUATION_TIME": 1915562,
               "NUM_TS_PER_ROTATION": 18,
               "ALGORITHM_COMPUTE_QUBITS": 8,
               "PHYSICAL_COMPUTE_QUBITS": 2425,

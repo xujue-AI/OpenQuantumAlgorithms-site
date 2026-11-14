@@ -1,0 +1,128 @@
+{
+  "cache_policy": "Recognized ordinary Python bytecode caches are not evidence; they are counted in the local byte cap and not read by this verifier",
+  "completion_scope": "invocation-accepted saved artifact graph only; notebook, guardian and publication completion are separate",
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "kind": "file",
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "generate_optimization_dqi_structured.py": {
+      "bytes": 18210,
+      "kind": "file",
+      "sha256": "0d5a4ce113f63447a8e880891dd50a1079e942fd918b99f1dccc3cd0262ab36c"
+    },
+    "invocation-acceptance.json": {
+      "bytes": 869,
+      "kind": "file",
+      "sha256": "022c2153544207e23c70e6562659a32b4bb85d7eb1f9ea82f62a0c9269258e4d"
+    },
+    "large/LICENSE.txt": {
+      "bytes": 1093,
+      "kind": "file",
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "large/dqi-structured-generation.json": {
+      "bytes": 9327,
+      "kind": "file",
+      "sha256": "ee8a6dc7a1ef2ab0699ba8814f56d5bd643d971e75926f8310aedd6730f1723d"
+    },
+    "large/dqi-structured.qasm": {
+      "bytes": 36471,
+      "kind": "file",
+      "sha256": "ce378eda8a35d5d7cd74adbb9613c9290a300f4bc7377668b1f1136fe24fef20"
+    },
+    "large/generate_optimization_dqi_structured.py": {
+      "bytes": 18210,
+      "kind": "file",
+      "sha256": "0d5a4ce113f63447a8e880891dd50a1079e942fd918b99f1dccc3cd0262ab36c"
+    },
+    "large/operations.ndjson": {
+      "bytes": 54412,
+      "kind": "file",
+      "sha256": "195635076dd95a3dba747ea6f8b7daf51a1ed2fce7b2384516adb876bfa1db73"
+    },
+    "large/optimization_dqi_structured.py": {
+      "bytes": 21438,
+      "kind": "file",
+      "sha256": "0daaf35c01fbf83bcdfad98c85f6af94420202d7b546c7892615bd18ff1ec028"
+    },
+    "large/requirements-lock.txt": {
+      "bytes": 1974,
+      "kind": "file",
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "optimization_dqi_structured.ipynb": {
+      "kind": "notebook_sources",
+      "source_sha256": "a9901953d3fda742ee07cd2315bb654686c4a941c8153f0a127da3493ac114c8"
+    },
+    "optimization_dqi_structured.py": {
+      "bytes": 21438,
+      "kind": "file",
+      "sha256": "0daaf35c01fbf83bcdfad98c85f6af94420202d7b546c7892615bd18ff1ec028"
+    },
+    "optimization_dqi_structured_validation.py": {
+      "bytes": 35511,
+      "kind": "file",
+      "sha256": "5994818be957a7c89c9ace46354676acc18f61ae6fc327536d8aad9e84096256"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "kind": "file",
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "small/n2/circuit.txt": {
+      "bytes": 16549,
+      "kind": "file",
+      "sha256": "3c226fe1c655e44268d0db0b7877dd9df9ce9595d227d2abe00bdc2a3d61a280"
+    },
+    "small/n2/dqi.qasm": {
+      "bytes": 1693,
+      "kind": "file",
+      "sha256": "af09988e10bce0969e32527515b0a3a09a5105e35f0a253872dfa7730decd432"
+    },
+    "small/n2/ledger.json": {
+      "bytes": 4529,
+      "kind": "file",
+      "sha256": "94c4ad862c3939e0583dc23e116c2a7a29580730c32a9650c7e73030c2e4dad1"
+    },
+    "small/n2/operations.ndjson": {
+      "bytes": 2247,
+      "kind": "file",
+      "sha256": "6fa145372a48336ce4761ae142c16a3da50235f2355268c10823cbb45ed9ca8a"
+    },
+    "small/n3/dqi.qasm": {
+      "bytes": 4299,
+      "kind": "file",
+      "sha256": "e85801409197e7195f9320ecba963e72dcf3f5c4d4b7bec52ff78941c7a9f23a"
+    },
+    "small/n3/ledger.json": {
+      "bytes": 4584,
+      "kind": "file",
+      "sha256": "fb7d69f2b6cad7f550cfbacab0eaa660afdc917f24afaf7b95a0dda4c483429c"
+    },
+    "small/n3/operations.ndjson": {
+      "bytes": 6191,
+      "kind": "file",
+      "sha256": "3a9a0ddfefd2b4f468100458e784012593a2404691e3f1b53bd318b409b2cfaf"
+    },
+    "small/validated-small.json": {
+      "bytes": 17715,
+      "kind": "file",
+      "sha256": "e7aeadafbb838e00c22dbef400b7d0bf637d45a7aad4ff107dac79f7662b7d42"
+    },
+    "validate_optimization_dqi_structured.py": {
+      "bytes": 5705,
+      "kind": "file",
+      "sha256": "089ee9b3aaccd8ad61904ceb8d35803e0af2cb3d176a08e272129e13f14332cc"
+    },
+    "verify_dqi_structured_saved.py": {
+      "bytes": 43729,
+      "kind": "file",
+      "sha256": "8677e965b63833c39db0593cc516e2ee429008f79299e94ebc237f4d15c3f639"
+    }
+  },
+  "schema": "openquantum.dqi.structured_saved_bundle.v1",
+  "scope": "Saved n=2/3 clean-workspace coherent checks and n=8 generation-only; no hardware, synthesis or physical estimate",
+  "status": "complete"
+}

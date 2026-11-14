@@ -20,6 +20,20 @@ from pathlib import Path
 import platform
 import subprocess
 import sys
+
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
 from time import perf_counter
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,7 +73,7 @@ def provenance(runs_path: Path) -> dict:
         "environment_lock": ROOT / "requirements-lock.txt",
         "sampled_runs": runs_path,
     }
-    commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+    commit = git_revision(ROOT)
     return {
         "source_commit_at_generation": commit,
         "source_content_sha256": {name: sha256(path) for name, path in paths.items()},

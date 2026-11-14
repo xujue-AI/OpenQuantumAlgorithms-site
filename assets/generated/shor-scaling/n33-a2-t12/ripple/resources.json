@@ -1,0 +1,128 @@
+{
+  "case": {
+    "base": 2,
+    "id": "n33-a2-t12",
+    "integer_bits": 6,
+    "modulus": 33,
+    "phase_bits": 12,
+    "phase_bits_selected_using_order": false,
+    "phase_grid_spacing": 0.000244140625,
+    "standard_2n_resolution": true
+  },
+  "compilation_wall_ns": 957833647,
+  "compiled_global_phase_radians": 6.282801811982747,
+  "construction_wall_ns": 73084263,
+  "controlled_multiplier_constants": [
+    2,
+    4,
+    16,
+    25,
+    31,
+    4,
+    16,
+    25,
+    31,
+    4,
+    16,
+    25
+  ],
+  "data_readouts_per_trial": 12,
+  "declared_qubits": 34,
+  "dependency_depth": 126692,
+  "hardware_initialization": "All wires assumed initially logical zero; no calibrated physical initialization/reset protocol",
+  "included": [
+    "logical-zero input assumption; X prepares modular register1",
+    "t Hadamards prepare exponent superposition",
+    "every defined controlled modular multiply and inverse cleanup",
+    "all work/constant/carry/borrow registers",
+    "full inverse QFT",
+    "all t exponent measurements"
+  ],
+  "method": "ripple",
+  "nonidentity_multipliers": 12,
+  "physical": {
+    "reason": "Zero ideal factor success",
+    "status": "not_estimated_unsupported_retry_contract"
+  },
+  "primitive_gate_counts": {
+    "cx": 97346,
+    "h": 23045,
+    "measure": 12,
+    "ry": 297,
+    "rz": 1370,
+    "t": 49564,
+    "tdg": 38052,
+    "x": 1720
+  },
+  "primitive_operations_per_trial": 211406,
+  "qasm_global_phase_scope": "Pinned exporter omits overall global phase; complete measured-trial probabilities retained, not reusable controlled-oracle phase",
+  "qasm_relative_path": "n33-a2-t12/ripple/circuit.qasm",
+  "qasm_sha256": "62cb6d275481071df2341e8f996e627eaa06f9c88da55e61860816ef3be3ed55",
+  "readout_mapping": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      7,
+      7
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      9,
+      9
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      11,
+      11
+    ]
+  ],
+  "source_gate_counts": {
+    "QFT12_dg": 1,
+    "h": 12,
+    "measure": 12,
+    "rM16": 3,
+    "rM2": 1,
+    "rM25": 3,
+    "rM31": 2,
+    "rM4": 3,
+    "x": 1
+  },
+  "source_structural_sha256": "1e3c127ba3c070d242b2a7b8b8851c9c580f2f38e141f3f4753f3c1cd0d6c58a",
+  "status": "actual_circuit_materialized",
+  "transpiler": {
+    "optimization_level": 1,
+    "seed_transpiler": 7
+  }
+}

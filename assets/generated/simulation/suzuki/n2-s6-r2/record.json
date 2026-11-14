@@ -1,0 +1,967 @@
+{
+  "case_id": "n2-s6-r2",
+  "logical_ledger": {
+    "hamiltonian": {
+      "qubits": 2,
+      "coupling_exact": "1",
+      "x_field_exact": "7/10",
+      "z_field_exact": "0",
+      "pauli_l1_norm_exact": "12/5",
+      "diagonal_terms": [
+        [
+          "1",
+          "ZZ"
+        ]
+      ],
+      "transverse_terms": [
+        [
+          "7/10",
+          "IX"
+        ],
+        [
+          "7/10",
+          "XI"
+        ]
+      ],
+      "boundary": "open",
+      "hbar": 1,
+      "normalization": "No rescaling of H or time. The Pauli l1 norm is a norm upper bound, not a block-encoding normalization.",
+      "coefficient_semantics": "Exact Fraction(str(value)); real ZZ/Z/X family only. Binary64 gates and numerical matrices are separate representations."
+    },
+    "time_exact": "1",
+    "repetitions": 2,
+    "order": 6,
+    "initial_basis": 0,
+    "system_qubits": 2,
+    "ancillas": 0,
+    "logical_qubits": 2,
+    "complete_measured_primitive_counts": {
+      "cx": 200,
+      "rz": 100,
+      "rx": 100,
+      "reset": 2,
+      "measure": 2
+    },
+    "arbitrary_rotations": 200,
+    "source_dependency_depth": 352,
+    "base_strang_blocks": 50,
+    "source_parameter_rounding": {
+      "root_bisection_bits": 160,
+      "normalized_leaves_per_macro_step": 25,
+      "normalized_signed_sum_exact_binary64": "9007199254740991/9007199254740992",
+      "normalized_signed_sum_defect_exact": "1/9007199254740992",
+      "normalized_absolute_sum_exact_binary64": "41397242223795171/9007199254740992",
+      "actual_signed_substep_time_sum_exact": "9007199254740991/9007199254740992",
+      "actual_absolute_substep_time_sum_exact": "41397242223795171/9007199254740992",
+      "negative_normalized_leaves_per_step": 8,
+      "negative_actual_substeps": 16,
+      "coefficient_approximation_operator_bound_exact": "44770902679024825323598606531734422693840583662562416480002342875407518263539564719388052213741351730746149940024309837853993103176124656483447529726434745999988615945268460313849335896174453323/59675193421647902023300503030621248083536850291304622449629177105812868982941166201320257362177287236403234861551322001421400770559814709674316762354969604731272084256092747884074607422544319906722818063073280",
+      "gate_angle_conversion_operator_bound_exact": "7/22517998136852480",
+      "total_source_parameter_operator_bound_exact": "25328671730005326100848563850576113618513383483799652488038381056256686758732595871137070497470549122188555376185974890189534533781477877715703639311994144798018751741954705598594337873327027045/23870077368659160809320201212248499233414740116521848979851670842325147593176466480528102944870914894561293944620528800568560308223925883869726704941987841892508833702437099153629842969017727962689127225229312",
+      "total_source_parameter_operator_bound_upper_float": 1.0611055565015165e-15,
+      "scope": "Exact rational bounds on coefficient/angle representation in the ideal gate model, relative to mathematical Suzuki roots; no bound on algorithmic splitting, numerical simulation, synthesis or physical errors. No finite-coefficient order certificate.",
+      "leaf_parameter_records_one_macro_step": [
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-8843756192813251/72057594037927936",
+              "binary64_angle_hex": "-0x1.f6b59725a50c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-61906293349692757/360287970189639680",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-8843756192813251/72057594037927936",
+              "binary64_angle_hex": "-0x1.f6b59725a50c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-61906293349692757/360287970189639680",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-7351265291713839/72057594037927936",
+              "binary64_angle_hex": "-0x1.a1defd45cbd2fp-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-51458857041996873/360287970189639680",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-7351265291713839/72057594037927936",
+              "binary64_angle_hex": "-0x1.a1defd45cbd2fp-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-51458857041996873/360287970189639680",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.4baa1af5addcap-2",
+          "normalized_coefficient_source_exact": "2917351564340965/9007199254740992",
+          "ideal_coefficient_enclosure": [
+            "1491337779427346677953079391062624682698348088063163532633490281028093257448727028733984423036219/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707",
+            "1118503334570510008464809543296968512023761066048434762527272207060649602810911034616048001629949/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "965493920643138975113300968396499485353145255821465253898502330827955423846245499121336399448007/41473127982885169650566773189259251332789196628273470916864805689726537251550880517711513377531751066822554681344",
+          "source_substep_time_exact": "2917351564340965/18014398509481984",
+          "one_occurrence_gate_angle_conversion_bound_exact": "0",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "2917351564340965/18014398509481984",
+              "binary64_angle_hex": "0x1.4baa1af5addcap-3",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "4084292190077351/18014398509481984",
+              "binary64_angle_hex": "0x1.d0548c24c034ep-3",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-7351265291713839/72057594037927936",
+              "binary64_angle_hex": "-0x1.a1defd45cbd2fp-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-51458857041996873/360287970189639680",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.a1defd45cbd2fp-3",
+          "normalized_coefficient_source_exact": "-7351265291713839/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-704612947801496776569886107151531395317620075101080787232875185446332847841906758838872774279168/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-939483930401995702093181476202041860423493433467620549098056612955709235511636917445278388191232/4604442158982499050453226850849658561591803599219282596351466373377385427229189276156108665275707"
+          ],
+          "coefficient_absolute_error_bound_exact": "4794117788386400486137425818606008215580969491524932961832470071867974832985687646255443380880597/165892511931540678602267092757037005331156786513093883667459222758906149006203522070846053510127004267290218725376",
+          "source_substep_time_exact": "-7351265291713839/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-7351265291713839/72057594037927936",
+              "binary64_angle_hex": "-0x1.a1defd45cbd2fp-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-51458857041996873/360287970189639680",
+              "binary64_angle_hex": "-0x1.24827e1741e07p-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-8843756192813251/72057594037927936",
+              "binary64_angle_hex": "-0x1.f6b59725a50c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-61906293349692757/360287970189639680",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "-0x1.f6b59725a50c3p-3",
+          "normalized_coefficient_source_exact": "-8843756192813251/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "-847667016952822235981357950307951866992561538914530409085711356519496438521255261302268983508992/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613",
+            "-3390668067811288943925431801231807467970246155656660134705514523159782069252304762189420001492992/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121"
+          ],
+          "coefficient_absolute_error_bound_exact": "2410921328490923356901698842947825482458599055521017168685389184401525642290442255152544684504393/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "-8843756192813251/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "3/360287970189639680",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-8843756192813251/72057594037927936",
+              "binary64_angle_hex": "-0x1.f6b59725a50c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "-61906293349692757/360287970189639680",
+              "binary64_angle_hex": "-0x1.5fe5836726bbcp-3",
+              "per_rotation_operator_conversion_bound_exact": "3/720575940379279360"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        },
+        {
+          "normalized_coefficient_binary64_hex": "0x1.3cafe1bc267c3p-3",
+          "normalized_coefficient_source_exact": "5571217293731779/36028797018963968",
+          "ideal_coefficient_enclosure": [
+            "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086936576/13813326476947497151359680552548975684775410797657847789054399120132156281687567828468325995827121",
+            "533996758980227520598755426542388028650676130589163192486760401955554931445160137505740521734144/3453331619236874287839920138137243921193852699412601057041092470486211360480825154143329318223613"
+          ],
+          "coefficient_absolute_error_bound_exact": "748196261730087877868381335856987426095213260066686509877215113212020617546012881043537645025865/124419383948655508951700319567777753998367589884753367114493126519869652701198928552518553747196117987815413776384",
+          "source_substep_time_exact": "5571217293731779/72057594037927936",
+          "one_occurrence_gate_angle_conversion_bound_exact": "1/180143985094819840",
+          "rotation_parameters": [
+            {
+              "layer": "ZZ half layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "5571217293731779/72057594037927936",
+              "binary64_angle_hex": "0x1.3cafe1bc267c3p-4",
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "Z half layers",
+              "occurrences_in_one_base_block": 0,
+              "angle_target_exact": null,
+              "binary64_angle_hex": null,
+              "per_rotation_operator_conversion_bound_exact": "0"
+            },
+            {
+              "layer": "X full layers",
+              "occurrences_in_one_base_block": 2,
+              "angle_target_exact": "38998521056122453/360287970189639680",
+              "binary64_angle_hex": "0x1.bb5ca26dcf7abp-4",
+              "per_rotation_operator_conversion_bound_exact": "1/360287970189639680"
+            }
+          ]
+        }
+      ]
+    },
+    "resource_kind": "Complete deterministic measured trial before synthesis/fault tolerance; negative substeps retain all gates",
+    "physical_resource_estimate": null,
+    "measurement": "All n wires inZ; bit0 scores +1/-1",
+    "input_access": "Explicit real Pauli coefficients and local gates; no opaque Hamiltonian access or external data-loading oracle",
+    "exclusions": [
+      "Physical reset/readout/controller/routing/idle/factory time and faults",
+      "Concrete rotation synthesis and its coherent error certificate",
+      "Unmeasured classical hardware input/control/postprocessing latency"
+    ],
+    "planned_sampling_contract": {
+      "fresh_repreparations": true,
+      "observable": "Z0",
+      "epsilon_stat": 0.05,
+      "eta_stat": 0.05,
+      "required_trials_hoeffding": 2952,
+      "status": "Analytic independent-readout proposal; budgeted trials are not executed and algorithm/synthesis/physical allocations are not supplied"
+    }
+  },
+  "validation": {
+    "qubits": 2,
+    "order": 6,
+    "repetitions": 2,
+    "time_exact": "1",
+    "source_to_independent_dense_product_operator_error": 2.4134986826078228e-15,
+    "source_to_qiskit_suzuki_operator_error": 6.137710831150523e-16,
+    "reset_prefix_density_error": 1.175070440114532e-15,
+    "operator_error_vs_exact_evolution": 3.1433960189203174e-06,
+    "state_vector_error_vs_exact_evolution": 2.22271664092915e-06,
+    "state_infidelity": 4.841460565785383e-12,
+    "circuit_z0": 0.40306010453461644,
+    "exact_z0": 0.40306246565132403,
+    "observable_bias": 2.361116707594313e-06,
+    "qiskit_reference_primitive_counts": {
+      "rzz": 100,
+      "rx": 100
+    },
+    "qiskit_reference_grouping": "Explicit nonempty commuting[A,B] groups; zero blocks omitted as a declared commuting-limit shortcut; source retains its S2 template.",
+    "verified_tolerance": 1e-10,
+    "formal_certificate": false,
+    "scope": "Bounded ideal numerical circuit/product/matrix-exponential comparisons; source parameter enclosures do not certify the large-system splitting error or a physical improvement"
+  },
+  "measured_qasm_sha256": "1fbc814cc9e953775baf603cadafc1a215c3074c2813230646518cf1394a0c7d",
+  "cpu_timings_seconds": {
+    "source_construction_scalar_accounting_export": 0.013408457998593803,
+    "independent_and_qiskit_numerical_checks": 0.024282417005451862
+  },
+  "measurement_execution": {
+    "physical_measurements": false,
+    "finite_shot_samples": false,
+    "scope": "Actual reset/preparation circuit prefix simulated; final expectation calculated from its ideal state. Budgeted repeated trials are not executed."
+  }
+}

@@ -21,6 +21,20 @@ from pathlib import Path
 import platform
 import subprocess
 import sys
+
+# Source layout is independent of optional Git checkout metadata.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from source_provenance import git_dirty, git_revision
+except ModuleNotFoundError as error:
+    if error.name != "source_provenance":
+        raise
+    # Individual source downloads can omit this optional metadata helper.
+    def git_revision(_root):
+        return None
+    def git_dirty(_root, _paths):
+        return None
+
 from time import perf_counter
 
 SCRIPT = Path(__file__).resolve()
@@ -70,13 +84,8 @@ def provenance() -> dict:
                   invocation="python scripts/generate_optimization_portability.py" if CHECKOUT
                   else "python generate_optimization_portability.py")
     if CHECKOUT:
-        record["source_commit"] = subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-        status = subprocess.check_output(
-            ["git", "status", "--porcelain", "--", "src/openquantum/optimization.py",
-             "scripts/generate_optimization_portability.py", "notebooks/optimization_portability.ipynb"],
-            cwd=ROOT, text=True).strip()
-        record["dirty_owned_source"] = bool(status)
+        record["source_commit"] = git_revision(ROOT)
+        record["dirty_owned_source"] = git_dirty(ROOT, ['src/openquantum/optimization.py', 'scripts/generate_optimization_portability.py', 'notebooks/optimization_portability.ipynb'])
     record["revision_note"] = ("source_commit identifies the checkout base at generation; content hashes "
                                "identify the implementation and generator actually executed")
     return record

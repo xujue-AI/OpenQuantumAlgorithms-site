@@ -1,0 +1,286 @@
+{
+  "algorithm_bias_bound": 0.0009770395701028205,
+  "capped_measurements": 4567045,
+  "capped_primitive_counts": {
+    "barrier": 652435,
+    "cx": 131791870,
+    "h": 5871915,
+    "measure": 4567045,
+    "rx": 3914610,
+    "ry": 29359575,
+    "rz": 88731160,
+    "t": 9134090,
+    "tdg": 7829220,
+    "x": 8481655
+  },
+  "case_id": "neumann-size-n4",
+  "compiled_global_phase_radians": 4.908738521234055,
+  "compiled_model_probability_lower_bound": 0.2629137437899235,
+  "compiled_model_probability_lower_bound_exact": "2368116477125763/9007199254740992",
+  "conditional_compiled_output_scope": "Hypothetically the 1e-6 per-attempt scalar bounds the entire coherent pre-readout unitary error, including angle/loading/compilation errors. QDK does not certify this assumption.",
+  "conditional_total_error_upper_bound": 0.030984840610010823,
+  "contract": {
+    "algorithm_bias_allowance": 0.01,
+    "certified_confidence_lower_bound": null,
+    "conditioning_assumption": "Hypothetically the 1e-6 per-attempt scalar bounds the entire coherent pre-readout unitary error, including angle/loading/compilation errors. QDK does not certify this assumption.",
+    "hardware_output_accuracy_certified": false,
+    "mean_fit_limitation": "A mean-fit rotation scalar is not an operator-norm bound or synthesis runtime-tail guarantee; conditional compiled-output fields are proposals.",
+    "neumann_uniform_polynomial_Pauli_bias_target": 0.001,
+    "no_acceptance_failure": 0.005,
+    "output": "one Z(q0) mean of the normalized A^-1 b solution at each fixed instance",
+    "per_attempt_synthesis_model_scalar": 1e-06,
+    "postselection_adjusted_synthesis_bias_allowance": 0.01,
+    "requested_absolute_error": 0.05,
+    "requested_failure_probability": 0.015,
+    "sampling_error": 0.03,
+    "scope": "each case is a separate requested task, not a simultaneous guarantee over the sweep",
+    "statistical_failure": 0.005,
+    "whole_workload_physical_failure": 0.005
+  },
+  "dependency_depth": 363,
+  "excluded": [
+    "fresh clean logical-zero initialization/reset timing and faults",
+    "classical coefficient/lookup construction, compilation, reference solving and readout communication/processing",
+    "hardware-specific routing and decoder realization",
+    "general matrix or arbitrary vector loading",
+    "concrete Clifford+T synthesis sequence, coherent-error certificate and synthesis runtime-tail guarantee"
+  ],
+  "final_measurements_per_attempt": 7,
+  "hardware_output_accuracy_certified": false,
+  "ideal_algorithm_plus_sampling_error_upper_bound": 0.030977039570102824,
+  "ideal_probability_lower_bound": 0.26291476929322743,
+  "ideal_probability_lower_bound_exact": "1000000000000000000/3803513977888040529",
+  "included": [
+    "actual b preparation (zero additional gates for HHL's known basis input)",
+    "all explicit controlled HHL evolution/QPE/reciprocal/inverse QPE, or Neumann PREPARE/SELECT/unprepare",
+    "one unamplified source call per attempt",
+    "all final label/clock/flag/data readouts",
+    "every rejected complete attempt and every required accepted sample"
+  ],
+  "independent_validation_performed": true,
+  "input_preparation_counts": {
+    "ry": 2,
+    "rz": 1
+  },
+  "instance": {
+    "amplification_rounds": 0,
+    "degree": 9,
+    "gap_promised_exact": "1/2",
+    "input": "RY(0.63) then RZ(0.41) on q0; RY(0.37) on q(n-1); other inputs zero",
+    "input_terms_exact": [
+      [
+        "3/4",
+        "IIII"
+      ],
+      [
+        "-1/10",
+        "IIIX"
+      ],
+      [
+        "-1/10",
+        "ZIII"
+      ],
+      [
+        "-1/20",
+        "XXXX"
+      ]
+    ],
+    "method": "neumann-lcu",
+    "observable": "normalized-solution Z(q0)",
+    "system_qubits": 4
+  },
+  "logical_qubits": 7,
+  "matrix_dimension": 16,
+  "method": "neumann-lcu",
+  "model": {
+    "algorithm": "Neumann-series inverse via classically aggregated explicit Pauli LCU",
+    "algorithm_precision": "uniform rational Neumann bound plus coefficient-to-float correction; angle arithmetic and synthesis remain uncertified",
+    "alpha": 1.0,
+    "alpha_exact": "1",
+    "amplification_rounds": 0,
+    "analytical_scope": "exact rational input/polynomial and ideal exact-angle Pauli LCU; uniform spectral bound, not a floating/synthesis certificate",
+    "classical_aggregation": "exact Fraction coefficients; Hermitian anticommutator products; capped256 terms anddegree64",
+    "coefficient_conversion_Pauli_bias_bound": 2.311665170395827e-16,
+    "coefficient_conversion_l1_error_bound_exact": "6506759/112589990684262400000000",
+    "coefficient_normalization_upper_bound": 0.9990234375,
+    "condition_number": null,
+    "conditional_Pauli_bias_bound": 0.0009770395701025893,
+    "conditional_state_trace_distance_bound": 0.0004885197850512947,
+    "degree": 9,
+    "delta": 0.5,
+    "delta_exact": "1/2",
+    "full_source_calls": 1,
+    "gamma": 0.5,
+    "gamma_exact": "1/2",
+    "input_preparation_counts": {
+      "ry": 2,
+      "rz": 1
+    },
+    "input_terms_exact": [
+      [
+        "3/4",
+        "IIII"
+      ],
+      [
+        "-1/10",
+        "IIIX"
+      ],
+      [
+        "-1/20",
+        "XXXX"
+      ],
+      [
+        "-1/10",
+        "ZIII"
+      ]
+    ],
+    "n_system": 4,
+    "normalization": 0.9751299885,
+    "normalization_exact": "1950259977/2000000000",
+    "polynomial": "T_K=delta*sum_(k=0..K)(I-A/alpha)^k",
+    "polynomial_Pauli_bias_bound": 0.0009770395701025893,
+    "polynomial_terms_exact": [
+      [
+        "556427543/800000000",
+        "IIII"
+      ],
+      [
+        "387773567/4000000000",
+        "IIIX"
+      ],
+      [
+        "10269207/800000000",
+        "XXXI"
+      ],
+      [
+        "192190189/4000000000",
+        "XXXX"
+      ],
+      [
+        "192190189/2000000000",
+        "ZIII"
+      ],
+      [
+        "10269207/400000000",
+        "ZIIX"
+      ]
+    ],
+    "promised_condition_upper": 2.0,
+    "promised_normalized_spectrum": [
+      0.5,
+      1.0
+    ],
+    "rational_precision_limits": {
+      "input_numerator_denominator_bits": 512,
+      "literal_characters": 192,
+      "normalized_common_denominator_bits": 128,
+      "scientific_exponent_magnitude": 128
+    },
+    "rotation_synthesis": "not generated or certified",
+    "scaled_inverse_operator_error_bound": 0.0009765625,
+    "scaled_inverse_operator_error_bound_exact": "1/1024",
+    "success_probability_lower_bound": 0.26291476929322743,
+    "term_count": 6,
+    "unscaled_B_inverse_error_bound": 0.001953125
+  },
+  "physical_estimation": {
+    "hardware_output_accuracy_certified": false,
+    "pareto_points": 7,
+    "query_performed": true,
+    "report": "surface-code.json",
+    "status": "computed_conditional_model"
+  },
+  "physical_estimation_status": "computed_conditional_model",
+  "postselection_adjusted_synthesis_bias_bound": 7.801039908000002e-06,
+  "primitive_counts": {
+    "barrier": 1,
+    "cx": 202,
+    "h": 9,
+    "measure": 7,
+    "rx": 6,
+    "ry": 45,
+    "rz": 136,
+    "t": 14,
+    "tdg": 12,
+    "x": 13
+  },
+  "primitive_operations": 444,
+  "provenance": {
+    "environment": {
+      "device": "CPU",
+      "packages": {
+        "matplotlib": "3.11.2",
+        "numpy": "2.5.4",
+        "qdk": "1.34.0",
+        "qiskit": "2.6.2",
+        "scipy": "1.18.1"
+      },
+      "python": "3.12.14",
+      "transpiler_seed": 7
+    },
+    "private_cache_path_recorded": false,
+    "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_commit_scope": "exact checkout at generation if available; per-file content hashes identify working implementation",
+    "source_dirty": false,
+    "source_sha256": {
+      "citations.bib": "a3c0f6d63edf26e396a05aaaba8776b099526d39bb2775a706f46452b0acdb2e",
+      "references/amplification.bib": "c8702291b92fe4a51ea6a44b12ee30507e80af725b3f6e725e6fdf7ac9fded0a",
+      "references/linear-systems.bib": "85941cdc7b82f15ae70f4acf621d0315820f9913d38d643ca928385be58199f7",
+      "references/resources.bib": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b",
+      "references/simulation.bib": "62e4361da71a54631b98da7cbbfbd313103f702fb2c6cfa680bd68dfc6b1fd13",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+      "scripts/generate_linear_systems_physical.py": "fe98ad3fa9f2a2980a321b94ebcf5430ff40f8fd929fc96154351d3c9af9b58b",
+      "scripts/source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+      "src/openquantum/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+      "src/openquantum/linear_systems.py": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+      "src/openquantum/linear_systems_physical.py": "246890cfdf47a56ec9d3b3cc441ad6461fad4d963c0ddd1b4d16b23bbd06d2dd",
+      "src/openquantum/linear_systems_qsvt.py": "c4735e188c9e80fb6fb60dc34c00558b17ab8f2c48c110a30b732aee9c105590",
+      "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+      "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f"
+    }
+  },
+  "qasm_scope": "complete measured trials; pinned exporter may omit an overall phase; not a coherently controlled oracle specification",
+  "qasm_sha256": "e5fe3dc823f30940ece40848b22aa51a098a225251c46da4970742b1ed38d5b8",
+  "reference_identity_sha256": "8e07f9f48388d57c08ff79d59883b43ffd8a2245fd8377e8fa362fb08f1edc72",
+  "reference_json_sha256": "e63afd8c3c43d37fc45eb1221b38d3c594b138753cfe1547bfce7f497d32bf8d",
+  "schema_version": 1,
+  "slices": [
+    "neumann-size"
+  ],
+  "source_counts": {
+    "barrier": 1,
+    "ccry": 6,
+    "cry": 2,
+    "h": 4,
+    "mcx": 11,
+    "measure": 7,
+    "ry": 4,
+    "rz": 1,
+    "x": 42
+  },
+  "system_qubits": 4,
+  "workload": {
+    "acceptance_failure": 0.005,
+    "accepted_samples": 13315,
+    "assumptions": [
+      "IID fresh preparations of the declared b state",
+      "the uniform exact-rational/promise acceptance lower bound holds for the ideal circuit",
+      "Hypothetically the 1e-6 per-attempt scalar bounds the entire coherent pre-readout unitary error, including angle/loading/compilation errors. QDK does not certify this assumption.",
+      "one fixed normalized-solution Pauli mean; rejected attempts pay the full schedule"
+    ],
+    "attempt_cap_per_accepted_slot": 49,
+    "certified_synthesis_or_physical_success_guarantee": false,
+    "coherent_eta_candidate": 1e-06,
+    "coherent_eta_certificate_available": false,
+    "conditional_expected_attempts_upper_bound_without_cap": 50643.98615326521,
+    "no_acceptance_union_bound": 0.004292778953355276,
+    "physical_attempts_executed": 0,
+    "probability_scope": "one lower bound used for every retry; never substituted by a small-case numerical acceptance",
+    "statistical_error": 0.03,
+    "statistical_failure": 0.005,
+    "status": "unexecuted capped compiled-output proposal, conditional on the coherent-eta and hardware assumptions",
+    "success_probability_used": 0.2629137437899235,
+    "total_capped_attempts": 652435
+  }
+}

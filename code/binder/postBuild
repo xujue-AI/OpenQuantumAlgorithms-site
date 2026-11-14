@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# The public source preview omits duplicate assets. Reconstruct and verify the
+# complete package before dependency installation or notebook setup.
+python binder/assemble_code.py
+python -m pip install -r requirements-lock.txt
+install -m 644 assets/generated/grover/grover.py notebooks/grover.py
+install -m 644 assets/generated/grover/LICENSE.txt notebooks/LICENSE-grover.txt
+python -m pip install --no-deps ./code

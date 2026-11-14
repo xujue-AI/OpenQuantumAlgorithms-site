@@ -1,0 +1,1477 @@
+{
+  "schema_version": 1,
+  "method_id": "local-spin-full-xx-reusable-bath-v1",
+  "status": "nine_sources_emitted",
+  "cases": [
+    {
+      "case_id": "n1-ground",
+      "n": 1,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "ground",
+      "seed": 2026111301,
+      "role": "small_validation",
+      "receipt": {
+        "case_id": "n1-ground",
+        "file": "n1-ground.qasm",
+        "bytes": 6104,
+        "sha256": "0962615de1ca22e80e47cdcc6bee263ce49a3deee6f4f18e926b262eabc7cc22",
+        "instruction_count": 359,
+        "primitive_counts": {
+          "rz": 160,
+          "h": 128,
+          "cx": 64,
+          "x": 0,
+          "reset": 6,
+          "measure": 1
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n1-ground",
+        "system_qubits": 1,
+        "bath_qubits": 1,
+        "logical_qubits": 2,
+        "output_bits_per_preparation": 1,
+        "rounds": 4,
+        "steps_per_round": 8,
+        "mode": "ground",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 160,
+          "h": 128,
+          "cx": 64,
+          "reset": 6,
+          "measure": 1,
+          "x": 0
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            160,
+            160
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            64,
+            64
+          ],
+          "reset": [
+            6,
+            6
+          ],
+          "measure": [
+            1,
+            1
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "instruction_count_per_preparation": 359,
+        "instruction_count_range_per_preparation": [
+          359,
+          359
+        ],
+        "unitary_instructions_per_step": 11,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            160,
+            160
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            64,
+            64
+          ],
+          "reset": [
+            6,
+            6
+          ],
+          "measure": [
+            1,
+            1
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "repeated_instruction_count_range": [
+          359,
+          359
+        ],
+        "total_system_readouts": 1,
+        "rotation_count_per_preparation": 160,
+        "repeated_rotation_count": 160,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 0,
+          "total": 8
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 0,
+          "total": 8
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n1-thermal",
+      "n": 1,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "thermal",
+      "seed": 2026111302,
+      "role": "small_validation",
+      "receipt": {
+        "case_id": "n1-thermal",
+        "file": "n1-thermal.qasm",
+        "bytes": 5872,
+        "sha256": "0a113dcf14d1e3ee22b10e7d72898f1b29767b1d0d95419742ff3257fc6b1b6b",
+        "instruction_count": 360,
+        "primitive_counts": {
+          "rz": 160,
+          "h": 128,
+          "cx": 64,
+          "x": 1,
+          "reset": 6,
+          "measure": 1
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n1-thermal",
+        "system_qubits": 1,
+        "bath_qubits": 1,
+        "logical_qubits": 2,
+        "output_bits_per_preparation": 1,
+        "rounds": 4,
+        "steps_per_round": 8,
+        "mode": "thermal",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 160,
+          "h": 128,
+          "cx": 64,
+          "reset": 6,
+          "measure": 1,
+          "x": 1
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            160,
+            160
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            64,
+            64
+          ],
+          "reset": [
+            6,
+            6
+          ],
+          "measure": [
+            1,
+            1
+          ],
+          "x": [
+            1,
+            1
+          ]
+        },
+        "instruction_count_per_preparation": 360,
+        "instruction_count_range_per_preparation": [
+          360,
+          360
+        ],
+        "unitary_instructions_per_step": 11,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            160,
+            160
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            64,
+            64
+          ],
+          "reset": [
+            6,
+            6
+          ],
+          "measure": [
+            1,
+            1
+          ],
+          "x": [
+            1,
+            1
+          ]
+        },
+        "repeated_instruction_count_range": [
+          360,
+          360
+        ],
+        "total_system_readouts": 1,
+        "rotation_count_per_preparation": 160,
+        "repeated_rotation_count": 160,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n2-ground",
+      "n": 2,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "ground",
+      "seed": 2026111303,
+      "role": "small_validation",
+      "receipt": {
+        "case_id": "n2-ground",
+        "file": "n2-ground.qasm",
+        "bytes": 10058,
+        "sha256": "6191f3555e5c23ac9f0d82afd29b7c2e45fe6baedaa0dfe21e2a0c80bc703eb2",
+        "instruction_count": 617,
+        "primitive_counts": {
+          "rz": 288,
+          "h": 128,
+          "cx": 192,
+          "x": 0,
+          "reset": 7,
+          "measure": 2
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n2-ground",
+        "system_qubits": 2,
+        "bath_qubits": 1,
+        "logical_qubits": 3,
+        "output_bits_per_preparation": 2,
+        "rounds": 4,
+        "steps_per_round": 8,
+        "mode": "ground",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 288,
+          "h": 128,
+          "cx": 192,
+          "reset": 7,
+          "measure": 2,
+          "x": 0
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            288,
+            288
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            192,
+            192
+          ],
+          "reset": [
+            7,
+            7
+          ],
+          "measure": [
+            2,
+            2
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "instruction_count_per_preparation": 617,
+        "instruction_count_range_per_preparation": [
+          617,
+          617
+        ],
+        "unitary_instructions_per_step": 19,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            288,
+            288
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            192,
+            192
+          ],
+          "reset": [
+            7,
+            7
+          ],
+          "measure": [
+            2,
+            2
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "repeated_instruction_count_range": [
+          617,
+          617
+        ],
+        "total_system_readouts": 2,
+        "rotation_count_per_preparation": 288,
+        "repeated_rotation_count": 288,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 0,
+          "total": 8
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 0,
+          "total": 8
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n2-thermal",
+      "n": 2,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "thermal",
+      "seed": 2026111304,
+      "role": "small_validation",
+      "receipt": {
+        "case_id": "n2-thermal",
+        "file": "n2-thermal.qasm",
+        "bytes": 9826,
+        "sha256": "5c593d4573cd54d6d80b69967f1ca2385ecc5b0d2950f34f1545550d82989f6d",
+        "instruction_count": 618,
+        "primitive_counts": {
+          "rz": 288,
+          "h": 128,
+          "cx": 192,
+          "x": 1,
+          "reset": 7,
+          "measure": 2
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n2-thermal",
+        "system_qubits": 2,
+        "bath_qubits": 1,
+        "logical_qubits": 3,
+        "output_bits_per_preparation": 2,
+        "rounds": 4,
+        "steps_per_round": 8,
+        "mode": "thermal",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 288,
+          "h": 128,
+          "cx": 192,
+          "reset": 7,
+          "measure": 2,
+          "x": 1
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            288,
+            288
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            192,
+            192
+          ],
+          "reset": [
+            7,
+            7
+          ],
+          "measure": [
+            2,
+            2
+          ],
+          "x": [
+            1,
+            1
+          ]
+        },
+        "instruction_count_per_preparation": 618,
+        "instruction_count_range_per_preparation": [
+          618,
+          618
+        ],
+        "unitary_instructions_per_step": 19,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            288,
+            288
+          ],
+          "h": [
+            128,
+            128
+          ],
+          "cx": [
+            192,
+            192
+          ],
+          "reset": [
+            7,
+            7
+          ],
+          "measure": [
+            2,
+            2
+          ],
+          "x": [
+            1,
+            1
+          ]
+        },
+        "repeated_instruction_count_range": [
+          618,
+          618
+        ],
+        "total_system_readouts": 2,
+        "rotation_count_per_preparation": 288,
+        "repeated_rotation_count": 288,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n4-thermal-generation",
+      "n": 4,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111404,
+      "role": "generation_only",
+      "receipt": {
+        "case_id": "n4-thermal-generation",
+        "file": "n4-thermal-generation.qasm",
+        "bytes": 36662,
+        "sha256": "2d6af467c9e91436a19b46349d5e603f623c1bd0b6af631342ee0c2128446578",
+        "instruction_count": 2253,
+        "primitive_counts": {
+          "rz": 1088,
+          "h": 256,
+          "cx": 896,
+          "x": 0,
+          "reset": 9,
+          "measure": 4
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n4-thermal-generation",
+        "system_qubits": 4,
+        "bath_qubits": 1,
+        "logical_qubits": 5,
+        "output_bits_per_preparation": 4,
+        "rounds": 4,
+        "steps_per_round": 16,
+        "mode": "thermal",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 1088,
+          "h": 256,
+          "cx": 896,
+          "reset": 9,
+          "measure": 4,
+          "x": 0
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            1088,
+            1088
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            896,
+            896
+          ],
+          "reset": [
+            9,
+            9
+          ],
+          "measure": [
+            4,
+            4
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "instruction_count_per_preparation": 2253,
+        "instruction_count_range_per_preparation": [
+          2253,
+          2253
+        ],
+        "unitary_instructions_per_step": 35,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            1088,
+            1088
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            896,
+            896
+          ],
+          "reset": [
+            9,
+            9
+          ],
+          "measure": [
+            4,
+            4
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "repeated_instruction_count_range": [
+          2253,
+          2253
+        ],
+        "total_system_readouts": 4,
+        "rotation_count_per_preparation": 1088,
+        "repeated_rotation_count": 1088,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n8-thermal-generation",
+      "n": 8,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111408,
+      "role": "generation_only",
+      "receipt": {
+        "case_id": "n8-thermal-generation",
+        "file": "n8-thermal-generation.qasm",
+        "bytes": 71006,
+        "sha256": "5c152f68c543b5b7927f3182ad0fbefda00d028f069ea8f2e0331f87eb2f2f7f",
+        "instruction_count": 4309,
+        "primitive_counts": {
+          "rz": 2112,
+          "h": 256,
+          "cx": 1920,
+          "x": 0,
+          "reset": 13,
+          "measure": 8
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n8-thermal-generation",
+        "system_qubits": 8,
+        "bath_qubits": 1,
+        "logical_qubits": 9,
+        "output_bits_per_preparation": 8,
+        "rounds": 4,
+        "steps_per_round": 16,
+        "mode": "thermal",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 2112,
+          "h": 256,
+          "cx": 1920,
+          "reset": 13,
+          "measure": 8,
+          "x": 0
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            2112,
+            2112
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            1920,
+            1920
+          ],
+          "reset": [
+            13,
+            13
+          ],
+          "measure": [
+            8,
+            8
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "instruction_count_per_preparation": 4309,
+        "instruction_count_range_per_preparation": [
+          4309,
+          4309
+        ],
+        "unitary_instructions_per_step": 67,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            2112,
+            2112
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            1920,
+            1920
+          ],
+          "reset": [
+            13,
+            13
+          ],
+          "measure": [
+            8,
+            8
+          ],
+          "x": [
+            0,
+            0
+          ]
+        },
+        "repeated_instruction_count_range": [
+          4309,
+          4309
+        ],
+        "total_system_readouts": 8,
+        "rotation_count_per_preparation": 2112,
+        "repeated_rotation_count": 2112,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n16-thermal-generation",
+      "n": 16,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111416,
+      "role": "generation_only",
+      "receipt": {
+        "case_id": "n16-thermal-generation",
+        "file": "n16-thermal-generation.qasm",
+        "bytes": 143385,
+        "sha256": "34e15e0f9117d8e724c354d3aab176c7f548e4e304249449f7588bddd35dc6e7",
+        "instruction_count": 8423,
+        "primitive_counts": {
+          "rz": 4160,
+          "h": 256,
+          "cx": 3968,
+          "x": 2,
+          "reset": 21,
+          "measure": 16
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n16-thermal-generation",
+        "system_qubits": 16,
+        "bath_qubits": 1,
+        "logical_qubits": 17,
+        "output_bits_per_preparation": 16,
+        "rounds": 4,
+        "steps_per_round": 16,
+        "mode": "thermal",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 4160,
+          "h": 256,
+          "cx": 3968,
+          "reset": 21,
+          "measure": 16,
+          "x": 2
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            4160,
+            4160
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            3968,
+            3968
+          ],
+          "reset": [
+            21,
+            21
+          ],
+          "measure": [
+            16,
+            16
+          ],
+          "x": [
+            2,
+            2
+          ]
+        },
+        "instruction_count_per_preparation": 8423,
+        "instruction_count_range_per_preparation": [
+          8423,
+          8423
+        ],
+        "unitary_instructions_per_step": 131,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            4160,
+            4160
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            3968,
+            3968
+          ],
+          "reset": [
+            21,
+            21
+          ],
+          "measure": [
+            16,
+            16
+          ],
+          "x": [
+            2,
+            2
+          ]
+        },
+        "repeated_instruction_count_range": [
+          8423,
+          8423
+        ],
+        "total_system_readouts": 16,
+        "rotation_count_per_preparation": 4160,
+        "repeated_rotation_count": 4160,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n32-thermal-generation",
+      "n": 32,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111432,
+      "role": "generation_only",
+      "receipt": {
+        "case_id": "n32-thermal-generation",
+        "file": "n32-thermal-generation.qasm",
+        "bytes": 290400,
+        "sha256": "a66f89066ae7fc9559d74f987fd7f8047ceac97c812cd3ed6d32378871b8482c",
+        "instruction_count": 16646,
+        "primitive_counts": {
+          "rz": 8256,
+          "h": 256,
+          "cx": 8064,
+          "x": 1,
+          "reset": 37,
+          "measure": 32
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n32-thermal-generation",
+        "system_qubits": 32,
+        "bath_qubits": 1,
+        "logical_qubits": 33,
+        "output_bits_per_preparation": 32,
+        "rounds": 4,
+        "steps_per_round": 16,
+        "mode": "thermal",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 8256,
+          "h": 256,
+          "cx": 8064,
+          "reset": 37,
+          "measure": 32,
+          "x": 1
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            8256,
+            8256
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            8064,
+            8064
+          ],
+          "reset": [
+            37,
+            37
+          ],
+          "measure": [
+            32,
+            32
+          ],
+          "x": [
+            1,
+            1
+          ]
+        },
+        "instruction_count_per_preparation": 16646,
+        "instruction_count_range_per_preparation": [
+          16646,
+          16646
+        ],
+        "unitary_instructions_per_step": 259,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            8256,
+            8256
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            8064,
+            8064
+          ],
+          "reset": [
+            37,
+            37
+          ],
+          "measure": [
+            32,
+            32
+          ],
+          "x": [
+            1,
+            1
+          ]
+        },
+        "repeated_instruction_count_range": [
+          16646,
+          16646
+        ],
+        "total_system_readouts": 32,
+        "rotation_count_per_preparation": 8256,
+        "repeated_rotation_count": 8256,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    },
+    {
+      "case_id": "n64-thermal-generation",
+      "n": 64,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111464,
+      "role": "generation_only",
+      "receipt": {
+        "case_id": "n64-thermal-generation",
+        "file": "n64-thermal-generation.qasm",
+        "bytes": 585577,
+        "sha256": "b4af8287a044b0b30fbfa8730a4362ea640fe7f5742ed3962a944ecf39666583",
+        "instruction_count": 33095,
+        "primitive_counts": {
+          "rz": 16448,
+          "h": 256,
+          "cx": 16256,
+          "x": 2,
+          "reset": 69,
+          "measure": 64
+        },
+        "source_preparations_materialized": 1,
+        "status": "source_emitted_no_quantum_simulation_or_accuracy_certificate"
+      },
+      "accounting": {
+        "method_id": "local-spin-full-xx-reusable-bath-v1",
+        "status": "formula_only_unexecuted_projection",
+        "case_id": "n64-thermal-generation",
+        "system_qubits": 64,
+        "bath_qubits": 1,
+        "logical_qubits": 65,
+        "output_bits_per_preparation": 64,
+        "rounds": 4,
+        "steps_per_round": 16,
+        "mode": "thermal",
+        "initial": "reset_prepared_all_zero_only",
+        "primitive_counts_per_preparation": {
+          "rz": 16448,
+          "h": 256,
+          "cx": 16256,
+          "reset": 69,
+          "measure": 64,
+          "x": 2
+        },
+        "primitive_count_ranges_per_preparation": {
+          "rz": [
+            16448,
+            16448
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            16256,
+            16256
+          ],
+          "reset": [
+            69,
+            69
+          ],
+          "measure": [
+            64,
+            64
+          ],
+          "x": [
+            2,
+            2
+          ]
+        },
+        "instruction_count_per_preparation": 33095,
+        "instruction_count_range_per_preparation": [
+          33095,
+          33095
+        ],
+        "unitary_instructions_per_step": 515,
+        "repetitions": 1,
+        "complete_preparations_projected": 1,
+        "repetition_scope": "projection_only_full_preparation_each_trial_emitter_P1_only",
+        "repeated_X_scope": "P1_example_or_unsupplied_range_ground_X_always_zero",
+        "repeated_primitive_count_ranges": {
+          "rz": [
+            16448,
+            16448
+          ],
+          "h": [
+            256,
+            256
+          ],
+          "cx": [
+            16256,
+            16256
+          ],
+          "reset": [
+            69,
+            69
+          ],
+          "measure": [
+            64,
+            64
+          ],
+          "x": [
+            2,
+            2
+          ]
+        },
+        "repeated_instruction_count_range": [
+          33095,
+          33095
+        ],
+        "total_system_readouts": 64,
+        "rotation_count_per_preparation": 16448,
+        "repeated_rotation_count": 16448,
+        "ideal_evolution_time_per_preparation": 8,
+        "ideal_evolution_time_repeated": 8,
+        "ideal_time_scope": "Hamiltonian_duration_only_excludes_gates_reset_readout_and_controller",
+        "logical_rng_calls_per_schedule": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_logical_rng_calls_projection": {
+          "site": 4,
+          "frequency": 4,
+          "bath_bit": 4,
+          "total": 12
+        },
+        "repeated_draw_scope": "fresh_classical_choices_per_projected_trial_no_trials_or_draws_executed",
+        "rng_count_scope": "logical_randrange_and_random_calls_not_MT19937_internal_words",
+        "classical_frequency_nodes": 3,
+        "frequency_law_scope": "nodes_do_not_multiply_a_sampled_rounds_gate_count",
+        "accuracy": {
+          "finite_circuit_reference": "unexecuted",
+          "trotter_error": "uncertified",
+          "quadrature_error": "uncertified",
+          "finite_pulse_bias": "uncertified",
+          "continuum_bridge": "unavailable",
+          "mixing_certificate": false,
+          "gibbs_accuracy_certificate": false,
+          "sampling_confidence": "uncomputed"
+        },
+        "excluded_costs": {
+          "nonzero_system_input_preparation": "unsupported",
+          "rotation_synthesis_T_count_and_depth": "uncomputed_unsynthesized_RZ",
+          "CX_routing_and_connectivity": "uncomputed_logical_all_to_all_access_assumed",
+          "gate_scheduling_depth_and_idle_exposure": "uncomputed",
+          "classical_schedule_generation_time": "unmeasured_logical_draw_calls_only",
+          "reset_controller_readout_noise_and_timing": "uncomputed",
+          "physical_error_factories_distance_qubits_runtime_and_success": "uncomputed"
+        },
+        "source_limits": {
+          "n_max": 64,
+          "rounds_max": 64,
+          "steps_max": 128,
+          "instructions_per_file_max": 100000,
+          "utf8_bytes_per_file_max": 8388608,
+          "intersection_enforced": true
+        },
+        "all_components_verified": false
+      }
+    }
+  ],
+  "total_source_instructions": 66680,
+  "n_above_two_scope": "generation_only",
+  "all_components_verified": false
+}

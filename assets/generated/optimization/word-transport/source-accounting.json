@@ -1,0 +1,2746 @@
+{
+  "evidence_scope": "recorded source-stage evidence before Native execution",
+  "original_encoding": "sorted-indented-json-newline",
+  "original_sha256": "19bd70a79f2103fd1cc141dc142ad954b3d0fad0934c5428f3cdf19a60f1f722",
+  "record": {
+    "actual_magic_states": 182646240,
+    "allocations_exact": {
+      "factory_availability": "1/400",
+      "fixed_script_realization_transfer": "1/200",
+      "physical_failure": "1/400",
+      "sampling_family_failure": "1/25"
+    },
+    "candidate_distinct_event_cost_signatures": 45,
+    "factory_availability_bound_exact": "1141539/6250000000",
+    "frozen_machine": {
+      "baseline_selection": "seventh_minimum_runtime",
+      "baseline_serial_model_time_ns": 797328306784000,
+      "data_code_distance": 15,
+      "data_workspace_physical_qubits": 6735,
+      "factory_physical_qubits": 236623,
+      "factory_retry_cap": 6,
+      "native_factory_isa_sha256": "2c94c77a1cb4779ac6b4d2f49d9312d70974b9ff82650b4f252ea52fe939c102",
+      "native_t_instruction_sha256": "ad99b8ce36f8b556c05d877305e97e5e654f31c0d3756f0630c5bb2b44b184cb",
+      "peak_physical_qubits": 243358,
+      "reserved_logical_patches": 15
+    },
+    "global_factory_retry_cap": 6,
+    "macro_events_shot_weighted": {
+      "baseline": {
+        "decisions": 22072802800,
+        "preparations": 9379512720,
+        "readouts": 4780464240
+      },
+      "candidate": {
+        "decisions": 13398240112,
+        "preparations": 4647933072,
+        "readouts": 2414674416
+      }
+    },
+    "parent_group_count": 49,
+    "parent_groups": [
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2244,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1240,
+          "t_q0": 188,
+          "t_q1": 1192,
+          "t_q2": 464,
+          "t_q3": 364,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2244,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1240,
+            "t_q0": 188,
+            "t_q1": 1192,
+            "t_q2": 464,
+            "t_q3": 364,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2244,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1240,
+          "t_q0": 2208,
+          "x": 8
+        },
+        "candidate_signature_sha256": "b9852079bb9139d3c27948c6cb3a7cba6baf74860ab3f2e5d47840a2959d0ccb",
+        "factory_availability_allocation_exact": "1679/47564125",
+        "factory_availability_budget": 3.529971380741262e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "159f0f6dc974565a6775724c7b19fb69d5f977daa69c6cedd7110818ca32cb0d",
+        "physical_failure_allocation_exact": "73/2050800",
+        "physical_failure_budget": 3.5595865028281644e-05,
+        "reserved_logical_patches": 15,
+        "shots": 1168,
+        "source_class_ids": [
+          "fb7c9e22b7c2d0cf3e22282f35f9ce9ca761c00bccbe9ec6771eec08d26257ed"
+        ],
+        "total_t_states": 2578944,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1236,
+          "t_q0": 188,
+          "t_q1": 1204,
+          "t_q2": 470,
+          "t_q3": 370,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1236,
+            "t_q0": 188,
+            "t_q1": 1204,
+            "t_q2": 470,
+            "t_q3": 370,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1236,
+          "t_q0": 2232,
+          "x": 4
+        },
+        "candidate_signature_sha256": "b9cf57d16ff8a1cec3b12bfdd70a2219e5ed5e39e7c8699008d50e2991a995f2",
+        "factory_availability_allocation_exact": "1209/152205200",
+        "factory_availability_budget": 7.943224015999452e-06,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "8ec8e18770b2e7967977782ba680a5b04f3894332779b0fa6ef5ff0ba64c62c9",
+        "physical_failure_allocation_exact": "13/1640640",
+        "physical_failure_budget": 7.923737078213379e-06,
+        "reserved_logical_patches": 15,
+        "shots": 260,
+        "source_class_ids": [
+          "550e032e8bdb453809fac762c567824c564b9ae3c9091cf9185725b48aa0507e"
+        ],
+        "total_t_states": 580320,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2260,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1156,
+          "t_q0": 188,
+          "t_q1": 1196,
+          "t_q2": 466,
+          "t_q3": 366,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2260,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1156,
+            "t_q0": 188,
+            "t_q1": 1196,
+            "t_q2": 466,
+            "t_q3": 366,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2260,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1156,
+          "t_q0": 2216,
+          "x": 4
+        },
+        "candidate_signature_sha256": "640a21c240d87e2e922180521110afa1d206da0d5b42096592e28835b10b64c4",
+        "factory_availability_allocation_exact": "3601/456615600",
+        "factory_availability_budget": 7.886283342049635e-06,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "1a3adf16d9b668fa280f49d0e4d34b149c3716cd90db7ad6180c0e32492d9bf6",
+        "physical_failure_allocation_exact": "13/1640640",
+        "physical_failure_budget": 7.923737078213379e-06,
+        "reserved_logical_patches": 15,
+        "shots": 260,
+        "source_class_ids": [
+          "4400b42c551aab4267c905a52463f77eb314d6ec7dc24af67588b4f8607b5a47"
+        ],
+        "total_t_states": 576160,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 1868,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1048,
+          "t_q0": 94,
+          "t_q1": 1004,
+          "t_q2": 370,
+          "t_q3": 364,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 1868,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1048,
+            "t_q0": 94,
+            "t_q1": 1004,
+            "t_q2": 370,
+            "t_q3": 364,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 139,
+          "h": 1868,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1048,
+          "t_q0": 1832,
+          "x": 8
+        },
+        "candidate_signature_sha256": "e9181bd806ef78d125048936b4299f147935a5714ec5def79d849459c4e00584",
+        "factory_availability_allocation_exact": "2977/456615600",
+        "factory_availability_budget": 6.519707167254031e-06,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "469ea6ff534842a7a99bda7f25cc91038d0268957214cadb36c57158b41b1474",
+        "physical_failure_allocation_exact": "13/1640640",
+        "physical_failure_budget": 7.923737078213379e-06,
+        "reserved_logical_patches": 15,
+        "shots": 260,
+        "source_class_ids": [
+          "901bc9d8ea8952aff5d725a0c63623ab5314f3e42105ee4261342b1006a2069a"
+        ],
+        "total_t_states": 476320,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2232,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1220,
+          "t_q0": 185,
+          "t_q1": 1186,
+          "t_q2": 461,
+          "t_q3": 364,
+          "x": 12
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2232,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1220,
+            "t_q0": 185,
+            "t_q1": 1186,
+            "t_q2": 461,
+            "t_q3": 364,
+            "x": 12
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2232,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1220,
+          "t_q0": 2196,
+          "x": 12
+        },
+        "candidate_signature_sha256": "294ea190049566c732c95398d74a9080a539d4a41a57de0d7e303da5b510fae6",
+        "factory_availability_allocation_exact": "2379/304410400",
+        "factory_availability_budget": 7.815107499612365e-06,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "cc8a0a61e91b7da5969955fdf9172cfc0e5c6a4d61d1230e29baef0f4792cdc3",
+        "physical_failure_allocation_exact": "13/1640640",
+        "physical_failure_budget": 7.923737078213379e-06,
+        "reserved_logical_patches": 15,
+        "shots": 260,
+        "source_class_ids": [
+          "e52e94b18e3baa061cd58154b81a831f5e1aa968e0f9a65425b2a6f567459946"
+        ],
+        "total_t_states": 570960,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1236,
+          "t_q0": 188,
+          "t_q1": 1210,
+          "t_q2": 464,
+          "t_q3": 370,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1236,
+            "t_q0": 188,
+            "t_q1": 1210,
+            "t_q2": 464,
+            "t_q3": 370,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1236,
+          "t_q0": 2232,
+          "x": 4
+        },
+        "candidate_signature_sha256": "b9cf57d16ff8a1cec3b12bfdd70a2219e5ed5e39e7c8699008d50e2991a995f2",
+        "factory_availability_allocation_exact": "1209/152205200",
+        "factory_availability_budget": 7.943224015999452e-06,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "362b13e77e6f86055296a6073403f4fa16c1c6271f85f0615dca1853080b8ad8",
+        "physical_failure_allocation_exact": "13/1640640",
+        "physical_failure_budget": 7.923737078213379e-06,
+        "reserved_logical_patches": 15,
+        "shots": 260,
+        "source_class_ids": [
+          "1db5e92725d8d9474198cce47cb104cb3991e6349b8620a86e8f5a1bcb93cc75"
+        ],
+        "total_t_states": 580320,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2260,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1220,
+          "t_q0": 188,
+          "t_q1": 1204,
+          "t_q2": 464,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2260,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1220,
+            "t_q0": 188,
+            "t_q1": 1204,
+            "t_q2": 464,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2260,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1220,
+          "t_q0": 2224,
+          "x": 4
+        },
+        "candidate_signature_sha256": "da9937a24f224051666b5dc5883d2939ab78bacb76e0564babe7126fc111d781",
+        "factory_availability_allocation_exact": "1807/28538475",
+        "factory_availability_budget": 6.331802943219635e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "9cb5073741bff6d864a054852c6f73b10b1d6456d1e4d76734ff08bdb341805c",
+        "physical_failure_allocation_exact": "13/205080",
+        "physical_failure_budget": 6.338989662570703e-05,
+        "reserved_logical_patches": 15,
+        "shots": 2080,
+        "source_class_ids": [
+          "774f19cf7fb51fb541fa59ed7234845281f4f359570cf8029631ec4596d1ed44",
+          "44eaf8c927344805b416c7431451cef2143579b0dab91788ddce3e7746fa8cc6"
+        ],
+        "total_t_states": 4625920,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 1868,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1048,
+          "t_q0": 94,
+          "t_q1": 1098,
+          "t_q2": 276,
+          "t_q3": 364,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 1868,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1048,
+            "t_q0": 94,
+            "t_q1": 1098,
+            "t_q2": 276,
+            "t_q3": 364,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 133,
+          "h": 1868,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1048,
+          "t_q0": 1832,
+          "x": 8
+        },
+        "candidate_signature_sha256": "dd48932f2da4c0cd94a4d804175498ca989f21160127681e9c61be134d829f70",
+        "factory_availability_allocation_exact": "2977/456615600",
+        "factory_availability_budget": 6.519707167254031e-06,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "61dcb5546148a137ccddb9ebb23ba2c978f8cbecb96aaac158079dac120a11ca",
+        "physical_failure_allocation_exact": "13/1640640",
+        "physical_failure_budget": 7.923737078213379e-06,
+        "reserved_logical_patches": 15,
+        "shots": 260,
+        "source_class_ids": [
+          "4ff5ef50478c6da2610cf206856efeafc2eac8b4bcec589d8658be5c7a941365"
+        ],
+        "total_t_states": 476320,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2232,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1220,
+          "t_q0": 185,
+          "t_q1": 1189,
+          "t_q2": 458,
+          "t_q3": 364,
+          "x": 12
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2232,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1220,
+            "t_q0": 185,
+            "t_q1": 1189,
+            "t_q2": 458,
+            "t_q3": 364,
+            "x": 12
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2232,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1220,
+          "t_q0": 2196,
+          "x": 12
+        },
+        "candidate_signature_sha256": "294ea190049566c732c95398d74a9080a539d4a41a57de0d7e303da5b510fae6",
+        "factory_availability_allocation_exact": "2379/304410400",
+        "factory_availability_budget": 7.815107499612365e-06,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "5ac23f141ad0b67a039a319d6ce1542aca5e3fc59a86d1d2352bb6dacfb6806c",
+        "physical_failure_allocation_exact": "13/1640640",
+        "physical_failure_budget": 7.923737078213379e-06,
+        "reserved_logical_patches": 15,
+        "shots": 260,
+        "source_class_ids": [
+          "bed3b72756d275b4811edc8a0e986645faaeae8e3b2195f2ddd6966684e2a05a"
+        ],
+        "total_t_states": 570960,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2292,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1272,
+          "t_q0": 188,
+          "t_q1": 1210,
+          "t_q2": 470,
+          "t_q3": 372
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2292,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1272,
+            "t_q0": 188,
+            "t_q1": 1210,
+            "t_q2": 470,
+            "t_q3": 372
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2292,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1272,
+          "t_q0": 2240
+        },
+        "candidate_signature_sha256": "334faef6c6d2b3c020d345ad1dcfe2c5983ce28aa6f7e61720e7cbf800d52c9b",
+        "factory_availability_allocation_exact": "13/543590",
+        "factory_availability_budget": 2.3915083058923082e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "9e7a011c733c5f6d449aecaf3b30a20f8a2195cc0d1f14d70848a5efe74ce562",
+        "physical_failure_allocation_exact": "13/546880",
+        "physical_failure_budget": 2.3771211234640138e-05,
+        "reserved_logical_patches": 15,
+        "shots": 780,
+        "source_class_ids": [
+          "ff0c16b82fb8e7ab06b758bd9898fab810e7a1f2a4b5686f8a74eb7b4b3c2ca1"
+        ],
+        "total_t_states": 1747200,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1192,
+          "t_q0": 188,
+          "t_q1": 1202,
+          "t_q2": 466,
+          "t_q3": 368
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1192,
+            "t_q0": 188,
+            "t_q1": 1202,
+            "t_q2": 466,
+            "t_q3": 368
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1192,
+          "t_q0": 2224
+        },
+        "candidate_signature_sha256": "98f79466bc4a231d46cac412ea8211d30a0fb730ad86f5fa4dbfd35a554cbf17",
+        "factory_availability_allocation_exact": "1807/76102600",
+        "factory_availability_budget": 2.374426103707363e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "429345e2e755d3ad2d87ec2488dc7267dbdcb233d9731a8c32f70504ae9e3c12",
+        "physical_failure_allocation_exact": "13/546880",
+        "physical_failure_budget": 2.3771211234640138e-05,
+        "reserved_logical_patches": 15,
+        "shots": 780,
+        "source_class_ids": [
+          "2049ffeb8aae6985917a7f889ac6f647615e4f967f6fcfa59f8ffef293389e0c"
+        ],
+        "total_t_states": 1734720,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 1884,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1028,
+          "t_q0": 94,
+          "t_q1": 1016,
+          "t_q2": 370,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 1884,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1028,
+            "t_q0": 94,
+            "t_q1": 1016,
+            "t_q2": 370,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 139,
+          "h": 1884,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1028,
+          "t_q0": 1848,
+          "x": 4
+        },
+        "candidate_signature_sha256": "b49f2bbfc679d282419eb5b93d72e672b70929726747f4b8a9975074af35096d",
+        "factory_availability_allocation_exact": "429/21743600",
+        "factory_availability_budget": 1.9729943523611543e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "0518181fc6503c86dda8abae232808d4903677efea5ecf03b0a7c766cae70834",
+        "physical_failure_allocation_exact": "13/546880",
+        "physical_failure_budget": 2.3771211234640138e-05,
+        "reserved_logical_patches": 15,
+        "shots": 780,
+        "source_class_ids": [
+          "91093d828e1796df46811716a41f8ddc2a973c2eb79fc6a77818a7bd8f91a34d"
+        ],
+        "total_t_states": 1441440,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2248,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1200,
+          "t_q0": 185,
+          "t_q1": 1198,
+          "t_q2": 461,
+          "t_q3": 368,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2248,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1200,
+            "t_q0": 185,
+            "t_q1": 1198,
+            "t_q2": 461,
+            "t_q3": 368,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2248,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1200,
+          "t_q0": 2212,
+          "x": 8
+        },
+        "candidate_signature_sha256": "01f0962c46144bafc8e62c240f87277e5bc1ced071d58b41d59c07d0129e4d6e",
+        "factory_availability_allocation_exact": "1027/26092320",
+        "factory_availability_budget": 3.936024086781091e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "42ea88e6fd79a7d7e0b1134e4288ff2e4865eaf4b359388cec5520bc91040f0c",
+        "physical_failure_allocation_exact": "13/328128",
+        "physical_failure_budget": 3.96186853910669e-05,
+        "reserved_logical_patches": 15,
+        "shots": 1300,
+        "source_class_ids": [
+          "1ecb125df99753b77404b64697a7d5271471fad450eeb32599d7b2e1346611b2"
+        ],
+        "total_t_states": 2875600,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2284,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1268,
+          "t_q0": 188,
+          "t_q1": 1216,
+          "t_q2": 464,
+          "t_q3": 372,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2284,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1268,
+            "t_q0": 188,
+            "t_q1": 1216,
+            "t_q2": 464,
+            "t_q3": 372,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2284,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1268,
+          "t_q0": 2240,
+          "x": 4
+        },
+        "candidate_signature_sha256": "e9b36655dc044877be283e456a03650be7e0e7e843cc42e3331e75cc2aa90776",
+        "factory_availability_allocation_exact": "13/543590",
+        "factory_availability_budget": 2.3915083058923082e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "1969d811fa11ced117a7e338e6f35fc8cd00a443c7d55788ce5438b7fd727fb4",
+        "physical_failure_allocation_exact": "13/546880",
+        "physical_failure_budget": 2.3771211234640138e-05,
+        "reserved_logical_patches": 15,
+        "shots": 780,
+        "source_class_ids": [
+          "13517cb73a0d157af136bcd7614928ecfb95416afda1975246c557a4fc9ce75a"
+        ],
+        "total_t_states": 1747200,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 1884,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1028,
+          "t_q0": 94,
+          "t_q1": 1110,
+          "t_q2": 276,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 1884,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1028,
+            "t_q0": 94,
+            "t_q1": 1110,
+            "t_q2": 276,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 133,
+          "h": 1884,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1028,
+          "t_q0": 1848,
+          "x": 4
+        },
+        "candidate_signature_sha256": "8728a66d3b67d12d7fe0ae87409ac92d190d2e4adf9c7ff487804c6a6b442147",
+        "factory_availability_allocation_exact": "429/21743600",
+        "factory_availability_budget": 1.9729943523611543e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "fb3408e3ac0b4ea4f437ddd3025276e8d37f2dad1735a8482eebb0ef40540346",
+        "physical_failure_allocation_exact": "13/546880",
+        "physical_failure_budget": 2.3771211234640138e-05,
+        "reserved_logical_patches": 15,
+        "shots": 780,
+        "source_class_ids": [
+          "439605dbdb9d5902c9b8e85d2f556eb3df5b0920925815fc23a7d9ab4639a986"
+        ],
+        "total_t_states": 1441440,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2248,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1200,
+          "t_q0": 185,
+          "t_q1": 1201,
+          "t_q2": 458,
+          "t_q3": 368,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2248,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1200,
+            "t_q0": 185,
+            "t_q1": 1201,
+            "t_q2": 458,
+            "t_q3": 368,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2248,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1200,
+          "t_q0": 2212,
+          "x": 8
+        },
+        "candidate_signature_sha256": "01f0962c46144bafc8e62c240f87277e5bc1ced071d58b41d59c07d0129e4d6e",
+        "factory_availability_allocation_exact": "1027/43487200",
+        "factory_availability_budget": 2.3616144520686544e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "b4bfffcb1ad7b2bfda2047dca4593b1a3ab2dfed3fe55c0bbe27b77ac60aface",
+        "physical_failure_allocation_exact": "13/546880",
+        "physical_failure_budget": 2.3771211234640138e-05,
+        "reserved_logical_patches": 15,
+        "shots": 780,
+        "source_class_ids": [
+          "80380412a7023080af405ecd115be27abf42f63f5acdb2183cc2481ad3639ebc"
+        ],
+        "total_t_states": 1725360,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1152,
+          "t_q0": 188,
+          "t_q1": 1206,
+          "t_q2": 468,
+          "t_q3": 370
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1152,
+            "t_q0": 188,
+            "t_q1": 1206,
+            "t_q2": 468,
+            "t_q3": 370
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1152,
+          "t_q0": 2232
+        },
+        "candidate_signature_sha256": "6c2676fd3ed1db3d19ae826ea7487dd105068437f5c847fbaf8b2df53d5241bd",
+        "factory_availability_allocation_exact": "1209/76102600",
+        "factory_availability_budget": 1.5886448031998905e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "c5e463f3f764d6c96cff5183c713df72f84b342734987bfce508b1a834c5686e",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "b8c61cc319f67f066ed734ff411f6b511dc181a18a7a0d48d35d3b5fae43d4cb"
+        ],
+        "total_t_states": 1160640,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1200,
+          "t_q0": 188,
+          "t_q1": 1212,
+          "t_q2": 468,
+          "t_q3": 372
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1200,
+            "t_q0": 188,
+            "t_q1": 1212,
+            "t_q2": 468,
+            "t_q3": 372
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1200,
+          "t_q0": 2240
+        },
+        "candidate_signature_sha256": "497fe48c62208e51283639d2b085220d56bd9b49fe63841600fb0eb707200d04",
+        "factory_availability_allocation_exact": "26/815385",
+        "factory_availability_budget": 3.188677741189744e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "3e8a02d3fee107c546f7c77825ebe5cd81baa3c116d19365a07c167735bda3bd",
+        "physical_failure_allocation_exact": "13/410160",
+        "physical_failure_budget": 3.1694948312853515e-05,
+        "reserved_logical_patches": 15,
+        "shots": 1040,
+        "source_class_ids": [
+          "f5373d39f0da20198e832cfc7933956b92abee49590a386ecc8d0643e4168b6b",
+          "ae6b115f895e84c79f6205b33bd1b3ca29921081178ce6dd535a2a73ccdabf25"
+        ],
+        "total_t_states": 2329600,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 187,
+          "t_q1": 1202,
+          "t_q2": 463,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2256,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1208,
+            "t_q0": 187,
+            "t_q1": 1202,
+            "t_q2": 463,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 2220,
+          "x": 4
+        },
+        "candidate_signature_sha256": "b0a68abed8dc69c98b340ce1cb421bff9002d878af622f5c22ef1c077d82094d",
+        "factory_availability_allocation_exact": "481/30441040",
+        "factory_availability_budget": 1.580103702107418e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "c060dbfec44bd3430d732654311b8b0654bcba3164defe023322c549ac3afdb8",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "b69e67ce0ca023f7a952396f6d2eff3e9bf171aa1c7b37e4d4732585fc2d2408"
+        ],
+        "total_t_states": 1154400,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1188,
+          "t_q0": 187,
+          "t_q1": 1202,
+          "t_q2": 463,
+          "t_q3": 368,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2256,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1188,
+            "t_q0": 187,
+            "t_q1": 1202,
+            "t_q2": 463,
+            "t_q3": 368,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1188,
+          "t_q0": 2220,
+          "x": 8
+        },
+        "candidate_signature_sha256": "574d8407ace50d3db4df6b19cde68854d1fe06d26cc8816830f0f610cb0bdc24",
+        "factory_availability_allocation_exact": "1443/30441040",
+        "factory_availability_budget": 4.740311106322254e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "01bf7324ca6f190ee4f4b5c3591fa6db887a6ee25b5e55c6dfd25a52c6cc83bc",
+        "physical_failure_allocation_exact": "13/273440",
+        "physical_failure_budget": 4.7542422469280276e-05,
+        "reserved_logical_patches": 15,
+        "shots": 1560,
+        "source_class_ids": [
+          "edbd80dcaf25795af29eee2d5dd59ef31d144648cff93267564b1419486d5251",
+          "1d11ccc11221636a165999a7629c3e9f613973d82fb70d276c4a7f5960a79c66"
+        ],
+        "total_t_states": 3463200,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2260,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1228,
+          "t_q0": 188,
+          "t_q1": 1204,
+          "t_q2": 464,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2260,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1228,
+            "t_q0": 188,
+            "t_q1": 1204,
+            "t_q2": 464,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2260,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1228,
+          "t_q0": 2224,
+          "x": 4
+        },
+        "candidate_signature_sha256": "483ed0fd154e79b8e05db33d76f041badfdbb83d90718b3c1a8638ddb3d414b5",
+        "factory_availability_allocation_exact": "1807/114153900",
+        "factory_availability_budget": 1.5829507358049088e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "5430f7b8bff1cb554ae029aeca9ca43d7409b474900e79c9636ba9b76d124ff6",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "9d464cd381e4b3ceee6dde197b3144852d1b96072a089d9ff3d8b85372c1719c"
+        ],
+        "total_t_states": 1156480,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2268,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1244,
+          "t_q0": 188,
+          "t_q1": 1210,
+          "t_q2": 464,
+          "t_q3": 370,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2268,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1244,
+            "t_q0": 188,
+            "t_q1": 1210,
+            "t_q2": 464,
+            "t_q3": 370,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2268,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1244,
+          "t_q0": 2232,
+          "x": 4
+        },
+        "candidate_signature_sha256": "a7dc22a3d2ef1e4fcdfade183e703119ac02f1a971d69b19947bf0146b4c9c4f",
+        "factory_availability_allocation_exact": "1209/76102600",
+        "factory_availability_budget": 1.5886448031998905e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "62d66dbdf7e0bc4e04a6505abf2add6adb20272128a6f62411fb9666a7ec350c",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "4c7779db4942f82ee77bf118a637a3875289aef4b3a69b66799c6c89aa42a380"
+        ],
+        "total_t_states": 1160640,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 187,
+          "t_q1": 1203,
+          "t_q2": 462,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2256,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1208,
+            "t_q0": 187,
+            "t_q1": 1203,
+            "t_q2": 462,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 2220,
+          "x": 4
+        },
+        "candidate_signature_sha256": "b0a68abed8dc69c98b340ce1cb421bff9002d878af622f5c22ef1c077d82094d",
+        "factory_availability_allocation_exact": "481/30441040",
+        "factory_availability_budget": 1.580103702107418e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "415afc06ea483027677afdc6d28e0c8d48f134d4ee27a197005e50002033517e",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "c09b6df6291b1b8401978e889f48d78d9478eff468091a01fe9603ecdda5637a"
+        ],
+        "total_t_states": 1154400,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1192,
+          "t_q0": 187,
+          "t_q1": 1203,
+          "t_q2": 462,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2256,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1192,
+            "t_q0": 187,
+            "t_q1": 1203,
+            "t_q2": 462,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1192,
+          "t_q0": 2220,
+          "x": 4
+        },
+        "candidate_signature_sha256": "d0f5d13adb560753f40672292aa4205c3c27541523532bd626a38692122646d0",
+        "factory_availability_allocation_exact": "481/30441040",
+        "factory_availability_budget": 1.580103702107418e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "ce699bba6caf1d22d2ff3c975b3cd4abdf0826737f86361dbbb35f4f4b48549a",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "e59cd31db0fea68aaecec71d4d4806e4dbca492c5b84e2c3bca6b6f7e6352fb8"
+        ],
+        "total_t_states": 1154400,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1184,
+          "t_q0": 187,
+          "t_q1": 1204,
+          "t_q2": 467,
+          "t_q3": 370
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2272,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1184,
+            "t_q0": 187,
+            "t_q1": 1204,
+            "t_q2": 467,
+            "t_q3": 370
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1184,
+          "t_q0": 2228
+        },
+        "candidate_signature_sha256": "6495304ab6ac4bcb922f464079c096d413f0c861783fca293cc2d5290d28addb",
+        "factory_availability_allocation_exact": "7241/456615600",
+        "factory_availability_budget": 1.5857977695023998e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "80c7fd2ad78d0660d83374ef463719353828d81619b0018c963412700a670d6c",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "0b49afcc07950445e3090a0d3385a37dcb6e81a64e5702522e8822ac6cc7000f"
+        ],
+        "total_t_states": 1158560,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1128,
+          "t_q0": 187,
+          "t_q1": 1210,
+          "t_q2": 467,
+          "t_q3": 372,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2272,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1128,
+            "t_q0": 187,
+            "t_q1": 1210,
+            "t_q2": 467,
+            "t_q3": 372,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1128,
+          "t_q0": 2236,
+          "x": 4
+        },
+        "candidate_signature_sha256": "ab11ab9bcaa14fe722f49e93425b9a6066b7506be70ecdaf2c42c5b5270fd3b9",
+        "factory_availability_allocation_exact": "7267/114153900",
+        "factory_availability_budget": 6.365967347589526e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "b02ef902bc270bba1128062c3916a185102205b503b5fd85119b16bd39199f64",
+        "physical_failure_allocation_exact": "13/205080",
+        "physical_failure_budget": 6.338989662570703e-05,
+        "reserved_logical_patches": 15,
+        "shots": 2080,
+        "source_class_ids": [
+          "51a245f482a4f3c7badd7720ae30b28c7a404ae7160714cdd55d515f22e9ee7f",
+          "6167ca4cc2931823c284778476fa83ae31df547d559a06b8ca4017c098506b06"
+        ],
+        "total_t_states": 4650880,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1148,
+          "t_q0": 187,
+          "t_q1": 1202,
+          "t_q2": 463,
+          "t_q3": 368,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2256,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1148,
+            "t_q0": 187,
+            "t_q1": 1202,
+            "t_q2": 463,
+            "t_q3": 368,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2256,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1148,
+          "t_q0": 2220,
+          "x": 8
+        },
+        "candidate_signature_sha256": "ad4321927020d1305c8bc08d5714797ec7adbe7a435dc33672990b421bd062da",
+        "factory_availability_allocation_exact": "481/30441040",
+        "factory_availability_budget": 1.580103702107418e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "014ff978d96e7eba9545dcd918344393fb45dfc68cd6f2461bdb46fe9f756b0f",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "df262b18ddac25476536fbcb4be9c6c50fce9152e1576904517568b6b8c44f84"
+        ],
+        "total_t_states": 1154400,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2264,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1172,
+          "t_q0": 187,
+          "t_q1": 1208,
+          "t_q2": 463,
+          "t_q3": 370,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2264,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1172,
+            "t_q0": 187,
+            "t_q1": 1208,
+            "t_q2": 463,
+            "t_q3": 370,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2264,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1172,
+          "t_q0": 2228,
+          "x": 8
+        },
+        "candidate_signature_sha256": "927adae45470641d12a65e2503ffc066e77d3fab1335193f276075d572cfb041",
+        "factory_availability_allocation_exact": "7241/228307800",
+        "factory_availability_budget": 3.1715955390047996e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "5f9926f9c84630fda240cf1755164f079dccf48b479651176cf02e9ec77c4b53",
+        "physical_failure_allocation_exact": "13/410160",
+        "physical_failure_budget": 3.1694948312853515e-05,
+        "reserved_logical_patches": 15,
+        "shots": 1040,
+        "source_class_ids": [
+          "a5d71b83ebf11631c344ca68c021a21846b8db682152c634634371af40e30de9",
+          "b3b088059765455b97b3c1e47a481f0515f4c22dd73951c6836827bab9ecbd83"
+        ],
+        "total_t_states": 2317120,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2252,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1144,
+          "t_q0": 186,
+          "t_q1": 1201,
+          "t_q2": 461,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2252,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1144,
+            "t_q0": 186,
+            "t_q1": 1201,
+            "t_q2": 461,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2252,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1144,
+          "t_q0": 2216,
+          "x": 4
+        },
+        "candidate_signature_sha256": "4e712c7ccc78603d110d7787ff6cad03489f2e71e072c596c1920f74afe83cbd",
+        "factory_availability_allocation_exact": "3601/228307800",
+        "factory_availability_budget": 1.577256668409927e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "60f41b63f0e5455325bcb6e25ba4fdea7d97effea21b3a660d7f5476623df2af",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "f423d9ec800c52460edba258050faa9f15d27ebd0eb99fd427237fd223e73a40"
+        ],
+        "total_t_states": 1152320,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2252,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1164,
+          "t_q0": 186,
+          "t_q1": 1201,
+          "t_q2": 461,
+          "t_q3": 368,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2252,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1164,
+            "t_q0": 186,
+            "t_q1": 1201,
+            "t_q2": 461,
+            "t_q3": 368,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2252,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1164,
+          "t_q0": 2216,
+          "x": 4
+        },
+        "candidate_signature_sha256": "bdea4db2ecb346da77844a997c65221175e9b309b4db26aa78192cd1ca32e5cf",
+        "factory_availability_allocation_exact": "3601/228307800",
+        "factory_availability_budget": 1.577256668409927e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "aa10ff027e0174cfc31700f4d78a1600bec1774598f139e798b951b78bc45888",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "742d6fcd3a7236e61a32b2cc7b1d37f16db1874e0569c5901c15c9d46f0380af"
+        ],
+        "total_t_states": 1152320,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1224,
+          "t_q0": 187,
+          "t_q1": 1200,
+          "t_q2": 465,
+          "t_q3": 368
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2272,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1224,
+            "t_q0": 187,
+            "t_q1": 1200,
+            "t_q2": 465,
+            "t_q3": 368
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1224,
+          "t_q0": 2220
+        },
+        "candidate_signature_sha256": "505c9cb4ee5379ec1e4241f6f67f72b810b66893fa3fab6d8af07c28d5ee3210",
+        "factory_availability_allocation_exact": "481/30441040",
+        "factory_availability_budget": 1.580103702107418e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "53adb53d6d80ed5c7054c191964c6760a60d1784c5c21b87cb59ab0d6a823416",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "5b138994f07d2fc3fd5a55c313e312ee9e293582d2361f8c52ceb23123ff315e"
+        ],
+        "total_t_states": 1154400,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2264,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1180,
+          "t_q0": 185,
+          "t_q1": 1206,
+          "t_q2": 465,
+          "t_q3": 372,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2264,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1180,
+            "t_q0": 185,
+            "t_q1": 1206,
+            "t_q2": 465,
+            "t_q3": 372,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2264,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1180,
+          "t_q0": 2228,
+          "x": 4
+        },
+        "candidate_signature_sha256": "e2d42d330e0317dbcd12bcfffa33f8a11bca026e3cc23248fefbf4a69baf1a5d",
+        "factory_availability_allocation_exact": "7241/456615600",
+        "factory_availability_budget": 1.5857977695023998e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "80c869ffae838ff9c9e6d048b66f1c690afc7ebead0e85470b94ccbb8d88bfd3",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "0e1b386c66fa83756c964e5cec7f213aa2209b1e811df74d021f85f21e921822"
+        ],
+        "total_t_states": 1158560,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1152,
+          "t_q0": 187,
+          "t_q1": 1216,
+          "t_q2": 467,
+          "t_q3": 374,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2280,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1152,
+            "t_q0": 187,
+            "t_q1": 1216,
+            "t_q2": 467,
+            "t_q3": 374,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1152,
+          "t_q0": 2244,
+          "x": 4
+        },
+        "candidate_signature_sha256": "d9b4a2148dd292ab76163b44d47a8c9a31a4217bb29f780e6b6af3bfca81597b",
+        "factory_availability_allocation_exact": "13277/20027000",
+        "factory_availability_budget": 0.000662955010735507,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "999dc7381d176a9afb01c2eb2c8df2127db0952062ec9fcec4d60e0dd5d4654c",
+        "physical_failure_allocation_exact": "1349/2050800",
+        "physical_failure_budget": 0.0006577920811390676,
+        "reserved_logical_patches": 15,
+        "shots": 21584,
+        "source_class_ids": [
+          "c9baae512c6dfdc94e19e7acfa9d8375a55695f24531e3f8771c1b4b8d2b0b71"
+        ],
+        "total_t_states": 48434496,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2268,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1160,
+          "t_q0": 186,
+          "t_q1": 1209,
+          "t_q2": 465,
+          "t_q3": 372
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2268,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1160,
+            "t_q0": 186,
+            "t_q1": 1209,
+            "t_q2": 465,
+            "t_q3": 372
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2268,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1160,
+          "t_q0": 2232
+        },
+        "candidate_signature_sha256": "f845df9d462401fdc9dbf9209151a537bfe0424d9b4e55848ee2d1ca1ede2a7d",
+        "factory_availability_allocation_exact": "1209/76102600",
+        "factory_availability_budget": 1.5886448031998905e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "903a18eafdf758a2391ba3f30e0c97ba805a8fec667b6108bdc63a97a5e8bb70",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "86e1e5f849ff221d026d404ab98826fc0852febaf194f83731bd4089f85cc3de"
+        ],
+        "total_t_states": 1160640,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2268,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1144,
+          "t_q0": 186,
+          "t_q1": 1209,
+          "t_q2": 465,
+          "t_q3": 372
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2268,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1144,
+            "t_q0": 186,
+            "t_q1": 1209,
+            "t_q2": 465,
+            "t_q3": 372
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2268,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1144,
+          "t_q0": 2232
+        },
+        "candidate_signature_sha256": "629ebd6cbe887232c1a14f740ed39f38c131aead3b30efc7a19f1d495e1a0682",
+        "factory_availability_allocation_exact": "1209/76102600",
+        "factory_availability_budget": 1.5886448031998905e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "95022611bbe2b90f431fc328bbb1907e78894697eca30e6c72aad4b7efb30097",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "2f8e806dda25fc7e8f5a4b4222493ed988b0ba60b5ea071e29f7493df1c25baf"
+        ],
+        "total_t_states": 1160640,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 187,
+          "t_q1": 1212,
+          "t_q2": 465,
+          "t_q3": 372,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2280,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1208,
+            "t_q0": 187,
+            "t_q1": 1212,
+            "t_q2": 465,
+            "t_q3": 372,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 2236,
+          "x": 4
+        },
+        "candidate_signature_sha256": "98dd4f8309c67059347d247e1d28a1a8a5f9256572bd23d8b1a3247023d4f8ea",
+        "factory_availability_allocation_exact": "7267/456615600",
+        "factory_availability_budget": 1.5914918368973815e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "ce105688ae382c91a29b24bde79e2ad740255da3ebc2b5d03c889d3c5506e0db",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "c479c9e8ef56c684cd656cf250e02765c5ad6b866e4e68ad1cf45026f14dcd50"
+        ],
+        "total_t_states": 1162720,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2284,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1224,
+          "t_q0": 188,
+          "t_q1": 1218,
+          "t_q2": 468,
+          "t_q3": 374
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2284,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1224,
+            "t_q0": 188,
+            "t_q1": 1218,
+            "t_q2": 468,
+            "t_q3": 374
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2284,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1224,
+          "t_q0": 2248
+        },
+        "candidate_signature_sha256": "01666d0bae3c62551b8a396875df1f8e3672aa0fbcdcfbe7d62b7056ed864327",
+        "factory_availability_allocation_exact": "3653/228307800",
+        "factory_availability_budget": 1.600032937989854e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "94bf347129319f78dfa484d0465b663d555481f78789585c83a2c6b7946baaec",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "183bee4820cc9db9160bd5d91d37e3c79e52495e47f3dacf7decec0df26538b7"
+        ],
+        "total_t_states": 1168960,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1204,
+          "t_q0": 185,
+          "t_q1": 1212,
+          "t_q2": 465,
+          "t_q3": 374,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2272,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1204,
+            "t_q0": 185,
+            "t_q1": 1212,
+            "t_q2": 465,
+            "t_q3": 374,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1204,
+          "t_q0": 2236,
+          "x": 8
+        },
+        "candidate_signature_sha256": "aa2f311b02ddd092fdaa499e971fee4cba85ffafdcd7a4e738acfbacaf0b3f85",
+        "factory_availability_allocation_exact": "7267/456615600",
+        "factory_availability_budget": 1.5914918368973815e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "d5edbd97bd9e95650b6cdb5c790da4fd00870be3da1e1990c3d326e95a72e915",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "d575f94c35ee5fdcd65ca2cccbffeb0801e4c11b95ba80bcf6af9cb7cd44bd14"
+        ],
+        "total_t_states": 1162720,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2296,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1168,
+          "t_q0": 187,
+          "t_q1": 1222,
+          "t_q2": 467,
+          "t_q3": 376,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2296,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1168,
+            "t_q0": 187,
+            "t_q1": 1222,
+            "t_q2": 467,
+            "t_q3": 376,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2296,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1168,
+          "t_q0": 2252,
+          "x": 4
+        },
+        "candidate_signature_sha256": "0703b9da079f6c1c563a6ba3e8ded8423ae0dd7fe09b9a6a969b2575bfb4e211",
+        "factory_availability_allocation_exact": "7319/456615600",
+        "factory_availability_budget": 1.6028799716873445e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "bcf583956b90540e361536f7754b11ee1976ef0447b35412a0ee6b2377f53da8",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "022bc4e612330e512612e741e8d37e71dae9beb51214b08e4d0d3d826b5e7716"
+        ],
+        "total_t_states": 1171040,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1184,
+          "t_q0": 186,
+          "t_q1": 1215,
+          "t_q2": 465,
+          "t_q3": 374
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1184,
+            "t_q0": 186,
+            "t_q1": 1215,
+            "t_q2": 465,
+            "t_q3": 374
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1184,
+          "t_q0": 2240
+        },
+        "candidate_signature_sha256": "899573e5b468179de1dee75a8d99a85c022e0705cbd11e72b62067345c95832e",
+        "factory_availability_allocation_exact": "13/815385",
+        "factory_availability_budget": 1.594338870594872e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "a02708aab3ea003e2d703313020aff4b9bb28d7a7e6ba8c74982004711960c8d",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "bc0bcf17fcb5a4861c2cee7f5e19a41b93266211acc30d7641dd8809d6f7f7bc"
+        ],
+        "total_t_states": 1164800,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1168,
+          "t_q0": 186,
+          "t_q1": 1215,
+          "t_q2": 465,
+          "t_q3": 374
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1168,
+            "t_q0": 186,
+            "t_q1": 1215,
+            "t_q2": 465,
+            "t_q3": 374
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1168,
+          "t_q0": 2240
+        },
+        "candidate_signature_sha256": "1d0f6771ce5a99b58ad22313eb2621c45ef4c7c0f300ff1ab3306ee30de1f97b",
+        "factory_availability_allocation_exact": "13/815385",
+        "factory_availability_budget": 1.594338870594872e-05,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "d657e2c048f4c86ccbcf48680f32f9a4d29408d71018af37ca12a87dda62109b",
+        "physical_failure_allocation_exact": "13/820320",
+        "physical_failure_budget": 1.5847474156426757e-05,
+        "reserved_logical_patches": 15,
+        "shots": 520,
+        "source_class_ids": [
+          "5623940e635764c58e29118e2d965f97d1e991db7f3e82756d5c4cde4ef68e2e"
+        ],
+        "total_t_states": 1164800,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2264,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1080,
+          "t_q0": 187,
+          "t_q1": 1204,
+          "t_q2": 461,
+          "t_q3": 368,
+          "x": 12
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2264,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1080,
+            "t_q0": 187,
+            "t_q1": 1204,
+            "t_q2": 461,
+            "t_q3": 368,
+            "x": 12
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2264,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1080,
+          "t_q0": 2220,
+          "x": 12
+        },
+        "candidate_signature_sha256": "60ca352d5227515319978cff2ba32de3f75c70e4cf87a5be43ead11ad2b0fb69",
+        "factory_availability_allocation_exact": "481/3805130",
+        "factory_availability_budget": 0.00012640829616859345,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "2d0fc9c8fa5a35c78466fd815bbfceae5910b1fcc10e65742f86a26837b5a3b7",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "e1c9f761f046559de2b7d595cf47d025f4ff7765ecc8ab0aa276d11b1610fab3"
+        ],
+        "total_t_states": 9235200,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2296,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1160,
+          "t_q0": 187,
+          "t_q1": 1220,
+          "t_q2": 469,
+          "t_q3": 376,
+          "x": 12
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2296,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1160,
+            "t_q0": 187,
+            "t_q1": 1220,
+            "t_q2": 469,
+            "t_q3": 376,
+            "x": 12
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2296,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1160,
+          "t_q0": 2252,
+          "x": 12
+        },
+        "candidate_signature_sha256": "dc0ff7dae53b1a2752f7621fe6fdb68ee6712e3ba4df955c3a5f40ec6e29ec7d",
+        "factory_availability_allocation_exact": "7319/57076950",
+        "factory_availability_budget": 0.00012823039773498756,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "166145e52fd98d38b925549db0b1cefcf1bcaea185e5ff2974192adf1df77fcc",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "c6f5c27e7fe1712b35dea11e55d5bb544123fea9aee970e040c686a3543034d9"
+        ],
+        "total_t_states": 9368320,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 187,
+          "t_q1": 1216,
+          "t_q2": 467,
+          "t_q3": 374,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2280,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1208,
+            "t_q0": 187,
+            "t_q1": 1216,
+            "t_q2": 467,
+            "t_q3": 374,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1208,
+          "t_q0": 2244,
+          "x": 4
+        },
+        "candidate_signature_sha256": "d4b4e12ed79fff4a1c8d1f6b028b681a1acda80ff7b5f4ffb9a11e8786132f5f",
+        "factory_availability_allocation_exact": "2431/19025650",
+        "factory_availability_budget": 0.00012777487234338905,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "4bbea97a31115863d9dd1b9c9df8745912d4c8cccb8b48f7a4e328431306d72f",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "cd867fceafe96b434398881b8bdfb397aa63f34c6d3570af57ea01ab39c26826"
+        ],
+        "total_t_states": 9335040,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2284,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1164,
+          "t_q0": 188,
+          "t_q1": 1218,
+          "t_q2": 468,
+          "t_q3": 374,
+          "x": 8
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2284,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1164,
+            "t_q0": 188,
+            "t_q1": 1218,
+            "t_q2": 468,
+            "t_q3": 374,
+            "x": 8
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2284,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1164,
+          "t_q0": 2248,
+          "x": 8
+        },
+        "candidate_signature_sha256": "5bf0b90d73af59307a0f982b969f4d8f27ae6188465c095671e13b1ebdaf0619",
+        "factory_availability_allocation_exact": "3653/28538475",
+        "factory_availability_budget": 0.0001280026350391883,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "789c8580879dd0d8197cbae727222d6338316dc0640b3116b0eae4afe8635b4e",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "66966a894ddedc83494653782892819c275b7834b1abf27d0bfe777d28e5341b"
+        ],
+        "total_t_states": 9351680,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1168,
+          "t_q0": 187,
+          "t_q1": 1210,
+          "t_q2": 467,
+          "t_q3": 372,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2280,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1168,
+            "t_q0": 187,
+            "t_q1": 1210,
+            "t_q2": 467,
+            "t_q3": 372,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1168,
+          "t_q0": 2236,
+          "x": 4
+        },
+        "candidate_signature_sha256": "cbe4519b6295b4aceda1f9d491beff79ecb5a9e9d0d662a88776ad551c905f70",
+        "factory_availability_allocation_exact": "7267/57076950",
+        "factory_availability_budget": 0.00012731934695179052,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "36f0d476884b5c38d7877a60b7ac2f3a541c4bac3566c2b2f12f0b766e20641b",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "bed7fcf00e412d5d511fac57e5adbd19ebfe1dddfa702f7ea62b09209d4ac435"
+        ],
+        "total_t_states": 9301760,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1112,
+          "t_q0": 187,
+          "t_q1": 1204,
+          "t_q2": 467,
+          "t_q3": 370,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2272,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1112,
+            "t_q0": 187,
+            "t_q1": 1204,
+            "t_q2": 467,
+            "t_q3": 370,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2272,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1112,
+          "t_q0": 2228,
+          "x": 4
+        },
+        "candidate_signature_sha256": "f588be85542231647e33b776c0290811629d69b5b4bc4060a34f21727e5b58cc",
+        "factory_availability_allocation_exact": "7241/57076950",
+        "factory_availability_budget": 0.00012686382156019198,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "a1813bbeffa453f9c18f9f731e48ec95cffeeec1cedc896a5641f9365f314099",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "e162c55393e6ac1be43b157f4fd0566a40cd1d19e939ae600c5fda8b4eed3847"
+        ],
+        "total_t_states": 9268480,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1160,
+          "t_q0": 187,
+          "t_q1": 1216,
+          "t_q2": 467,
+          "t_q3": 374,
+          "x": 4
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2280,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1160,
+            "t_q0": 187,
+            "t_q1": 1216,
+            "t_q2": 467,
+            "t_q3": 374,
+            "x": 4
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2280,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1160,
+          "t_q0": 2244,
+          "x": 4
+        },
+        "candidate_signature_sha256": "cf69b19167b7a3bc6c94912afb62fce3edaf7c4b288599c129977fc266eab239",
+        "factory_availability_allocation_exact": "2431/19025650",
+        "factory_availability_budget": 0.00012777487234338905,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "c4f381be7d55b9ee5b0d1cad86b619fabd95a0a0562bacc47cfa113a090fe1e6",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "d2be017f42415c07acef481014b1c47ee887743765360ad8a84aeb7234fd8342"
+        ],
+        "total_t_states": 9335040,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      },
+      {
+        "baseline_event_counts": {
+          "cx": 31,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1180,
+          "t_q0": 186,
+          "t_q1": 1215,
+          "t_q2": 465,
+          "t_q3": 374
+        },
+        "baseline_signature": {
+          "backend_sha256": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+          "event_counts": {
+            "cx": 31,
+            "h": 2276,
+            "initial_reset": 4,
+            "measure": 4,
+            "s": 1180,
+            "t_q0": 186,
+            "t_q1": 1215,
+            "t_q2": 465,
+            "t_q3": 374
+          },
+          "logical_qubits": 4
+        },
+        "candidate_event_counts": {
+          "cx": 163,
+          "h": 2276,
+          "initial_reset": 4,
+          "measure": 4,
+          "s": 1180,
+          "t_q0": 2240
+        },
+        "candidate_signature_sha256": "8f12133384979ff4d5f437bacfbe30034bf409148ae98e8b7ebceb1203834fe7",
+        "factory_availability_allocation_exact": "104/815385",
+        "factory_availability_budget": 0.00012754710964758977,
+        "global_factory_retry_cap": 6,
+        "parent_physical_class_id": "ea1c603e471624e62294002839a01416c4cf853e9d8704e633228f11ee2aa421",
+        "physical_failure_allocation_exact": "13/102540",
+        "physical_failure_budget": 0.00012677979325141406,
+        "reserved_logical_patches": 15,
+        "shots": 4160,
+        "source_class_ids": [
+          "0e38baa8f9556fc33364365edc104bcdceaaf1676a6d21b3afd93031c21fdf31"
+        ],
+        "total_t_states": 9318400,
+        "trial_control_events_per_preparation": 1,
+        "workspace_initializations_per_preparation": 11
+      }
+    ],
+    "physical_validation_limitations": [
+      "candidate integer-ceiled exposure must be computed for each complete preparation",
+      "no factory calibration/search or native trace executed",
+      "conditional macro geometry and encoder/factory internals remain unsupported"
+    ],
+    "profile": {
+      "code_cycle_time_ns": 1000,
+      "controller_failure_per_decision": 1e-15,
+      "factory_feedback_rounds_reserved": 3,
+      "factory_pipeline_failure_bound": 0.01,
+      "initialization_residual_prefactor": 0.1,
+      "maximum_code_distance": 49,
+      "memory_prefactor": 0.1,
+      "memory_threshold": 0.01,
+      "physical_error_rate": 0.0001,
+      "physical_gate_time_ns": 100,
+      "physical_initialization_time_ns": 100,
+      "physical_measurement_time_ns": 500,
+      "reaction_time_ns": 10000
+    },
+    "projected_candidate_serial_model_time_ns": 602466084947200,
+    "prospective_native_caps": {
+      "candidate_bundle_bytes": 16777216,
+      "decoded_record_bytes": 67108864,
+      "expected_parent_trace_estimates": 49,
+      "factory_frontier_queries": 0,
+      "physical_wall_seconds": 60,
+      "pipeline_candidates": 0,
+      "synthesis_calls": 0,
+      "trace_estimates": 54
+    },
+    "sampling_family_groups": 48,
+    "sampling_per_group_failure_exact": "1/1200",
+    "savings": {
+      "decisions": 8674562688,
+      "preparations": 4731579648,
+      "readouts": 2365789824,
+      "time_ns": 194862221836800
+    },
+    "schema_version": 1,
+    "source_events_shot_weighted": {
+      "baseline": {
+        "cx": 2542992,
+        "h": 185794912,
+        "initial_reset": 328128,
+        "measure": 328128,
+        "s": 95398208,
+        "t_q0": 15145632,
+        "t_q1": 99060920,
+        "t_q2": 37923760,
+        "t_q3": 30515928,
+        "x": 401440
+      },
+      "candidate": {
+        "cx": 13315056,
+        "h": 185794912,
+        "initial_reset": 328128,
+        "measure": 328128,
+        "s": 95398208,
+        "t_q0": 182646240,
+        "x": 401440
+      }
+    },
+    "statistical_experiment_scope": "unchanged archived selection-aware inference and separate prospective fixed script; no new samples",
+    "timing_scope": "difference in the frozen d15 serialized ledger at identical saved native supply; not a new native result or hardware guarantee",
+    "total_preparations": 82032,
+    "transform_counts_shot_weighted": {
+      "added_data_transport_cx": 10772064,
+      "net_removed_cx": 788596608,
+      "removed_magic_transport_cx": 799368672,
+      "selected_words": 1142208
+    },
+    "unchanged_components": [
+      "every factory state and complete retry",
+      "fresh F-to-W0 delivery per relocated T",
+      "injection readout/correction/port reset",
+      "separate factory-output handoff residence",
+      "15-patch startup and reservation",
+      "all 110 measured groups and source resets/readouts"
+    ]
+  },
+  "record_kind": "source_accounting",
+  "removed_fields": [
+    "status",
+    "physical_execution_enabled",
+    "physical_execution_requires"
+  ],
+  "schema": "openquantum-word-scientific-record-v1"
+}

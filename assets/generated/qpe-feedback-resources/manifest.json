@@ -1,0 +1,93 @@
+{
+  "status": "two new matched source/synthesis/common-schedule physical comparisons executed",
+  "source_commit": "920144731d47684c16a64e527422a4a165e2ad71",
+  "source_dirty": false,
+  "source_sha256": {
+    "src/openquantum/qpe_feedback_resources.py": "c69172f89397a5c9aec1f8da8ebf87c304457a5b29a7e6610418c76b154fd10f",
+    "src/openquantum/qft_qpe.py": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab",
+    "src/openquantum/instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "scripts/generate_qpe_feedback_resources.py": "fb3dababdda0dfc2e43ad02da49a2b5d57dbf932b1551f64a064bbd81f265391",
+    "scripts/verify_qpe_feedback_saved.py": "b32a7b431e76ba8850d3b1d9cd90cab3c604547e233eae8d291047e449209906",
+    "tests/test_qpe_feedback_resources.py": "0c52f284fc748be4edca681b124c1aae97641e3cbdf32ae8938af31da6dad3a7",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "runtime_environment": {
+    "python": "3.12.14",
+    "operating_system": "Darwin",
+    "architecture": "arm64",
+    "device": "CPU; no hardware/GPU job",
+    "packages": {
+      "qiskit": "2.6.2",
+      "qdk": "1.34.0",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1"
+    },
+    "routing_seed": 7,
+    "native_synthesis_seed": null
+  },
+  "compute_caps": {
+    "phase_bits": [
+      3,
+      4
+    ],
+    "target_qubits": 1,
+    "physical_error": 0.0001,
+    "odd_code_distances": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "estimator_invocation_count": 4,
+    "maximum_factory_distance_queries": 28,
+    "limits": {
+      "max_qubits": 5,
+      "source_operations": 10000,
+      "synthesized_operations": 100000,
+      "validation_operations": 100000,
+      "validation_branches": 256
+    },
+    "factory_retry_ceiling": 16
+  },
+  "protected_generated_artifact_count": 9496,
+  "protected_generated_artifacts_unchanged": true,
+  "comparison_selection": "minimum peak qubits per matched task/variant; all computed Pareto points retained",
+  "formal_confidence_certificate": false,
+  "hardware_execution": false,
+  "notebook": {
+    "path": "notebooks/qpe_feedback_resources.ipynb",
+    "sha256": "eda3672fd30e1dab6a5cd02bde3d36cda5e3c40c8e2a704dd398e1b95116b50c",
+    "presentation_metadata": "Canonical MyST label metadata added after execution; all cell sources, execution counts and outputs remain byte-value-identical"
+  },
+  "artifact_sha256": {
+    "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "README.md": "e3f06dcae947c4d91ad94ab44be304fb4e21ed2a63205cda895124a24d9c63b0",
+    "generate_qpe_feedback_resources.py": "fb3dababdda0dfc2e43ad02da49a2b5d57dbf932b1551f64a064bbd81f265391",
+    "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+    "logical-size-scaling.json": "7ac16a71697254d1ad60d53c3679d318fe036ae59980fc12be7bab4a63390af9",
+    "n1-m3/feedback-all-corrections-accounting-envelope.qasm": "52d04ecd6b5d6c19310ad7289b20949daec0b41388d6e7686384a7d14087782a",
+    "n1-m3/feedback-clifford-t.qasm": "81c2c0d845cbdd74cacda91dcd8ed2f7eda6ec15c731b9643ec929c4572e01a8",
+    "n1-m3/feedback-source.qasm": "235ab6af70023aa5fa77cb2fbe0c02e311e8ae394166eb925e68a1735f10a622",
+    "n1-m3/report.json": "1a503b772a186e7e9ce5164e3cf8e3eaea94b41cc4b0d88e8b2c9047bf74a496",
+    "n1-m3/textbook-clifford-t.qasm": "054e092e1b7a4a6b3681f8e69e098e3fd269fff115a790ba4d78e286a8811262",
+    "n1-m3/textbook-source.qasm": "85ad05b60caf1272e87421dc74ea236adee73bda10ee13a867efb7ca092a57ad",
+    "n1-m4/feedback-all-corrections-accounting-envelope.qasm": "567668a13185d2399b6346e2a2faeb7a6b03d87f627401fb1e0c3c1d86adc358",
+    "n1-m4/feedback-clifford-t.qasm": "ab7f481ba4e012f3e72fb69a8e427315727e5a7237d729d7bfa7aaa00c708747",
+    "n1-m4/feedback-source.qasm": "8929c29cf371b7e38bfbe8ef7215f6471ebae989eb723e064a1fac90e0d92fe2",
+    "n1-m4/report.json": "4f9bd4898fd63e063556ac68df821711eea57b7a5f0dd90f9d24d5f145dcfdbb",
+    "n1-m4/textbook-clifford-t.qasm": "a5bfe50ae10afa1350741802bd3fd1a0a95ee1c4e75855043a232bc529711f3f",
+    "n1-m4/textbook-source.qasm": "1bc476a18a00bbe80f73d50bb706950e844cd7a9ca0fde4ee6705ff1769a5d92",
+    "primitives.bib": "6c3b62f5a1af60393847f9bfb77092a535929af5cefd4b20fadeab8d15724d3e",
+    "qft_qpe.py": "6a991e019ef166c8b023fa4e4701749e912f921c96e845bee085040ea57a40ab",
+    "qpe_feedback_resources.py": "c69172f89397a5c9aec1f8da8ebf87c304457a5b29a7e6610418c76b154fd10f",
+    "references.bib": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b",
+    "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "summary.csv": "b9a7b69720ddf83ae2e1bc7de16caff06f9c8cba25fe5dac7c0f4cdccef4606c",
+    "summary.md": "079855b169b7dd2ae5e3feb7c28f4a0392090b6d6e052de12128e8345637045f",
+    "test_qpe_feedback_resources.py": "0c52f284fc748be4edca681b124c1aae97641e3cbdf32ae8938af31da6dad3a7",
+    "verify_qpe_feedback_saved.py": "b32a7b431e76ba8850d3b1d9cd90cab3c604547e233eae8d291047e449209906"
+  }
+}

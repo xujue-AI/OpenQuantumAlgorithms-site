@@ -1,0 +1,17 @@
+width,method,qubits,literal_t_or_tdg,primitive_all_zero,primitive_all_one,feedback_decisions,dependency_depth_all_one,numerical_execution_at_this_width,physical_estimate
+1,static,3,14,40,40,0,27,False,not computed
+1,measured,4,8,37,45,2,37,False,not computed
+2,static,5,28,78,78,0,51,False,not computed
+2,measured,6,16,71,87,4,71,False,not computed
+3,static,7,42,116,116,0,75,False,not computed
+3,measured,8,24,105,129,6,105,False,not computed
+4,static,9,56,154,154,0,99,False,not computed
+4,measured,10,32,139,171,8,139,False,not computed
+8,static,17,112,306,306,0,195,False,not computed
+8,measured,18,64,275,339,16,275,False,not computed
+16,static,33,224,610,610,0,387,False,not computed
+16,measured,34,128,547,675,32,547,False,not computed
+24,static,49,336,914,914,0,579,False,not computed
+24,measured,50,192,819,1011,48,819,False,not computed
+31,static,63,434,1180,1180,0,747,False,not computed
+31,measured,64,248,1057,1305,62,1057,False,not computed

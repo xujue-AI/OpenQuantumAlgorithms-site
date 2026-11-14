@@ -1,0 +1,124 @@
+{
+  "accepted_study_commit": "0758b8694b213eb0ee670df053233ba9f5fe36d6",
+  "accepted_study_not_reexecuted": true,
+  "classical_baseline": {
+    "assignments": [
+      {
+        "assignment": "00",
+        "n": 2,
+        "objective": 2,
+        "output_bit_writes": 2
+      },
+      {
+        "assignment": "000",
+        "n": 3,
+        "objective": 3,
+        "output_bit_writes": 3
+      }
+    ],
+    "benchmark_measured": false,
+    "kind": "analytic_all_zero_optimum",
+    "optimization_advantage_claim": false,
+    "search_calls": 0
+  },
+  "conditional_on": [
+    "numerical error estimates bounding realization discrepancy",
+    "frozen physical/controller/readiness scenario",
+    "faithful assignment-bit transfer",
+    "correct classical scoring and selection"
+  ],
+  "excluded_host_hardware_fields": [
+    "assignment transfer reliability/latency",
+    "host scoring/selection reliability/latency"
+  ],
+  "formal_interval_certificate": false,
+  "frozen_input_count": 14,
+  "frozen_inputs_verified": true,
+  "native_counts": {
+    "direct_native_trace_estimate_calls": 2,
+    "factory_frontier_candidates": 0,
+    "factory_frontier_queries": 0,
+    "factory_pipeline_candidates": 0,
+    "qdk_top_level_estimate_calls": 0,
+    "query_scope": "top-level native entries only; internal native iterations not counted",
+    "synthesis_native_calls": 8
+  },
+  "native_rerun_portability_certified": false,
+  "physical_configuration_optimized": false,
+  "physical_file": {
+    "bytes": 27361,
+    "path": "physical.json",
+    "sha256": "b811f202e648484ce5c6237e08f5846568903793030a307b0c4f1579120a1954"
+  },
+  "publication_complete": false,
+  "qpu_execution": false,
+  "sampled_outcomes": false,
+  "schema": "openquantum.dqi.structured_resource_results.v1",
+  "scope": "new compiled circuits and fixed complete-task ledgers only; not hardware, formal proof or publication",
+  "simultaneous_case_success_claim": false,
+  "source_commit": "90b34b88b7da2f3846305b9ddd790f3845f74240",
+  "source_pins": {
+    "compile": {
+      "bytes": 24087,
+      "path": "src/openquantum/optimization_dqi_resource_compile.py",
+      "sha256": "9f0ed4703c43ea1ac30f9a82c91ed70855bd8c03a94708af49a1f48e370717cf"
+    },
+    "contract": {
+      "bytes": 43674,
+      "path": "src/openquantum/optimization_dqi_resource_contract.py",
+      "sha256": "cedbd51687f0b9069b34eeebd6753a207df5d98b68cc70cc380b7087e0275971"
+    },
+    "physical": {
+      "bytes": 34161,
+      "path": "src/openquantum/optimization_dqi_resource_physical.py",
+      "sha256": "af164e369d92eedcdfe068382458e4f0b5b18851da10d45c5f5491d32e5ce45a"
+    },
+    "verify": {
+      "bytes": 24739,
+      "path": "src/openquantum/optimization_dqi_resource_verify.py",
+      "sha256": "80591a7cd8704124caa0ff5e479b57c2e5413f0d28c06692a81c97e0fe7d9780"
+    }
+  },
+  "status": "accepted_conditional_fixed_d15_model",
+  "verification_file": {
+    "bytes": 40156,
+    "path": "verification.json",
+    "sha256": "f9bad9e8f1f42d7455bac7d584e070d37f8e26b72438ff3e9d916a4762a9f0f9"
+  },
+  "whole_task_output_bounds": [
+    {
+      "availability_failure_fraction": "93/100000",
+      "case_id": "n2_optimum99",
+      "conditional_on_faithful_bit_transfer_and_correct_scoring": true,
+      "formal_interval_certificate": false,
+      "ideal_miss_fraction": "1/1024",
+      "miss_upper_bound": 0.002009624628038262,
+      "miss_upper_bound_fraction": "242948710056889961227121243/120892581961462917470617600000",
+      "n": 2,
+      "objective_condition": "f(x)=n",
+      "objective_target": 2,
+      "physical_failure_fraction": "32792963731928655/38685626227668133590597632",
+      "realization_failure_fraction": "30418321003360975/295147905179352825856",
+      "success_lower_bound": 0.9979903753719617,
+      "success_lower_bound_fraction": "120649633251406027509390478757/120892581961462917470617600000",
+      "success_target_fraction": "99/100"
+    },
+    {
+      "availability_failure_fraction": "1149/1000000",
+      "case_id": "n3_optimum99",
+      "conditional_on_faithful_bit_transfer_and_correct_scoring": true,
+      "formal_interval_certificate": false,
+      "ideal_miss_fraction": "1/1000",
+      "miss_upper_bound": 0.002238111062734667,
+      "miss_upper_bound_fraction": "169106890681567238121551389/75557863725914323419136000000",
+      "n": 3,
+      "objective_condition": "f(x)=n",
+      "objective_target": 3,
+      "physical_failure_fraction": "11022545058154869/4835703278458516698824704",
+      "realization_failure_fraction": "3287533841460363/36893488147419103232",
+      "success_lower_bound": 0.9977618889372653,
+      "success_lower_bound_fraction": "75388756835232756181014448611/75557863725914323419136000000",
+      "success_target_fraction": "99/100"
+    }
+  ]
+}

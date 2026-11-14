@@ -1,0 +1,711 @@
+{
+  "baseline_verification": {
+    "after": {
+      "file_sha256": {
+        "assets/generated/grover/LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+        "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+        "assets/generated/grover/circuit.svg": "be619245b58b46cbc9dd301e0f5cdc7f99b0ab51db0aa110a1ec662f003bee76",
+        "assets/generated/grover/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+        "assets/generated/grover/logical-resources.json": "1aad266d8358525e4416868d2bd27956a3e62f2af7528e3bcfaf0321eb10e4ef",
+        "assets/generated/grover/scaling.csv": "bc60233a96e7b9b0ae4fdbd05010ad9d13d98764b8e70a6c06baaa18279fec90",
+        "assets/generated/grover/success-probabilities.svg": "fc9bb3153a9d72e498366bf03779271879cf116643901b2eb0e1aad46f06fc0b",
+        "assets/generated/linear-systems/hhl/LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+        "assets/generated/linear-systems/hhl/circuit.svg": "229fc80a93bb2abf6fec56d23f7b18733a87b30c1b8e94a763e44ba64acf0ce2",
+        "assets/generated/linear-systems/hhl/linear_systems.py": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+        "assets/generated/linear-systems/hhl/logical-resources.json": "d4a7a903d4a9ff7552fa6d6ba877a14a337135d30030f3ceec28219bbd89aacd",
+        "assets/generated/linear-systems/hhl/measured-trial.qasm": "fee90077d8793c9de187535316035090220e69c6db0c9dc8d19d8f739c891406",
+        "assets/generated/linear-systems/hhl/scaling.csv": "8a7a16380ccfb28b386537a56e5b2cc98701967dd58a2fa6ab2e224b0baa68ca",
+        "assets/generated/linear-systems/hhl/scaling.svg": "c08ac780c97007076c587f37b5baca7576d25e7b001bf19a35eef9e63c913cda",
+        "assets/generated/linear-systems/hhl/surface-code.json": "d6da2f9ec532cafc79f6e940f3820496bd130f98e104661cd29a1ec1d406e861",
+        "assets/generated/linear-systems/neumann-lcu/LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+        "assets/generated/linear-systems/neumann-lcu/amplification.csv": "852dca601e3ca452c3eddf5e49e1888a76f7212e72d6355e0716bea0aed3e057",
+        "assets/generated/linear-systems/neumann-lcu/amplified-trial.qasm": "2a84bae44b8adf3314960e60fdc6e35650435b61050b34e11dc5e4c1ca34f6a5",
+        "assets/generated/linear-systems/neumann-lcu/circuit.svg": "5855dd908028ffe64e313122ade5622350a711a13d2a001dce0103a6344fdfec",
+        "assets/generated/linear-systems/neumann-lcu/condition-scaling.csv": "264ef89d94701d787f24ea45925094d54467c9e93555d98366d878a17c52407c",
+        "assets/generated/linear-systems/neumann-lcu/convergence-and-cost.svg": "e95f2c48079625f14d35d4ce638e922d5bfcaf0121d5b690d33b4a3f6a7a190a",
+        "assets/generated/linear-systems/neumann-lcu/degree-convergence.csv": "721a809933ad987695822935c1c525ea0ccd505ca94678bc892af5e47ece7ed0",
+        "assets/generated/linear-systems/neumann-lcu/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+        "assets/generated/linear-systems/neumann-lcu/logical-resources.json": "9d42d5560e3f74e4a31537d5728510c026119959e1d12e30233c7af1ddeb6255",
+        "assets/generated/linear-systems/neumann-lcu/measured-trial.qasm": "c41aed067c55f52dbe7cf17b35ce08f3c327f487b1b738b52f6bcc1242618966",
+        "assets/generated/linear-systems/neumann-lcu/reciprocal.svg": "8577c58102c38e8431972c0c995fd6d892dfad4521e09bfaa659fcceadce7e5d",
+        "assets/generated/linear-systems/neumann-lcu/surface-code.json": "0e89d1bdf9d3125a1a3fa73f036e69c9d8d518d5c8ad61563edac2b3cbcac20e",
+        "assets/generated/linear-systems/neumann-lcu/width-scaling.csv": "c60f5a3d2904f963f8d570c89c850bb4b9c3375ba5e462a19ae04a001594860b",
+        "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8",
+        "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+        "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+        "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+        "scripts/generate_grover.py": "f1e58e851facabcba12cb2f177060423b53eb9418aea7e4404431272ee744818",
+        "scripts/generate_linear_inverse_lcu.py": "ca5e679bcfbc686986b1c488f4a240c5825821db531cc7d1fa8e5cffeb7bdac4",
+        "scripts/generate_linear_systems.py": "39b89d546b7a06aacfec17fa0904efbc3320747f32bc2cabf60b9bb089697f7c",
+        "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+        "src/openquantum/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+        "src/openquantum/linear_systems.py": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+        "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b"
+      },
+      "omitted_origin_artifacts": [],
+      "scope": "Grover, HHL and Neumann inputs/default artifacts in this exact source directory"
+    },
+    "before": {
+      "file_sha256": {
+        "assets/generated/grover/LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+        "assets/generated/grover/circuit.qasm": "ad164e7b5de28f2e0b7d601817b25389d361f1276f48e25b0a2c0b42165623c0",
+        "assets/generated/grover/circuit.svg": "be619245b58b46cbc9dd301e0f5cdc7f99b0ab51db0aa110a1ec662f003bee76",
+        "assets/generated/grover/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+        "assets/generated/grover/logical-resources.json": "1aad266d8358525e4416868d2bd27956a3e62f2af7528e3bcfaf0321eb10e4ef",
+        "assets/generated/grover/scaling.csv": "bc60233a96e7b9b0ae4fdbd05010ad9d13d98764b8e70a6c06baaa18279fec90",
+        "assets/generated/grover/success-probabilities.svg": "fc9bb3153a9d72e498366bf03779271879cf116643901b2eb0e1aad46f06fc0b",
+        "assets/generated/linear-systems/hhl/LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+        "assets/generated/linear-systems/hhl/circuit.svg": "229fc80a93bb2abf6fec56d23f7b18733a87b30c1b8e94a763e44ba64acf0ce2",
+        "assets/generated/linear-systems/hhl/linear_systems.py": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+        "assets/generated/linear-systems/hhl/logical-resources.json": "d4a7a903d4a9ff7552fa6d6ba877a14a337135d30030f3ceec28219bbd89aacd",
+        "assets/generated/linear-systems/hhl/measured-trial.qasm": "fee90077d8793c9de187535316035090220e69c6db0c9dc8d19d8f739c891406",
+        "assets/generated/linear-systems/hhl/scaling.csv": "8a7a16380ccfb28b386537a56e5b2cc98701967dd58a2fa6ab2e224b0baa68ca",
+        "assets/generated/linear-systems/hhl/scaling.svg": "c08ac780c97007076c587f37b5baca7576d25e7b001bf19a35eef9e63c913cda",
+        "assets/generated/linear-systems/hhl/surface-code.json": "d6da2f9ec532cafc79f6e940f3820496bd130f98e104661cd29a1ec1d406e861",
+        "assets/generated/linear-systems/neumann-lcu/LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+        "assets/generated/linear-systems/neumann-lcu/amplification.csv": "852dca601e3ca452c3eddf5e49e1888a76f7212e72d6355e0716bea0aed3e057",
+        "assets/generated/linear-systems/neumann-lcu/amplified-trial.qasm": "2a84bae44b8adf3314960e60fdc6e35650435b61050b34e11dc5e4c1ca34f6a5",
+        "assets/generated/linear-systems/neumann-lcu/circuit.svg": "5855dd908028ffe64e313122ade5622350a711a13d2a001dce0103a6344fdfec",
+        "assets/generated/linear-systems/neumann-lcu/condition-scaling.csv": "264ef89d94701d787f24ea45925094d54467c9e93555d98366d878a17c52407c",
+        "assets/generated/linear-systems/neumann-lcu/convergence-and-cost.svg": "e95f2c48079625f14d35d4ce638e922d5bfcaf0121d5b690d33b4a3f6a7a190a",
+        "assets/generated/linear-systems/neumann-lcu/degree-convergence.csv": "721a809933ad987695822935c1c525ea0ccd505ca94678bc892af5e47ece7ed0",
+        "assets/generated/linear-systems/neumann-lcu/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+        "assets/generated/linear-systems/neumann-lcu/logical-resources.json": "9d42d5560e3f74e4a31537d5728510c026119959e1d12e30233c7af1ddeb6255",
+        "assets/generated/linear-systems/neumann-lcu/measured-trial.qasm": "c41aed067c55f52dbe7cf17b35ce08f3c327f487b1b738b52f6bcc1242618966",
+        "assets/generated/linear-systems/neumann-lcu/reciprocal.svg": "8577c58102c38e8431972c0c995fd6d892dfad4521e09bfaa659fcceadce7e5d",
+        "assets/generated/linear-systems/neumann-lcu/surface-code.json": "0e89d1bdf9d3125a1a3fa73f036e69c9d8d518d5c8ad61563edac2b3cbcac20e",
+        "assets/generated/linear-systems/neumann-lcu/width-scaling.csv": "c60f5a3d2904f963f8d570c89c850bb4b9c3375ba5e462a19ae04a001594860b",
+        "assets/generated/resources/grover-surface-code.csv": "feae27908e8d181c7e2996825b429eb5dce864b4b9aed3b17787d5fab76a23d8",
+        "assets/generated/resources/grover-surface-code.json": "86774a83c1bcdb4e158c9d3b373ec67e9a65baab9d43a5d682ed24218d368195",
+        "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+        "scripts/estimate_resources.py": "b627ae8a312399151dc546ec6142c77367e4c80b7e9af447aa2da34594270cf4",
+        "scripts/generate_grover.py": "f1e58e851facabcba12cb2f177060423b53eb9418aea7e4404431272ee744818",
+        "scripts/generate_linear_inverse_lcu.py": "ca5e679bcfbc686986b1c488f4a240c5825821db531cc7d1fa8e5cffeb7bdac4",
+        "scripts/generate_linear_systems.py": "39b89d546b7a06aacfec17fa0904efbc3320747f32bc2cabf60b9bb089697f7c",
+        "src/openquantum/grover.py": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21",
+        "src/openquantum/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+        "src/openquantum/linear_systems.py": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+        "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b"
+      },
+      "omitted_origin_artifacts": [],
+      "scope": "Grover, HHL and Neumann inputs/default artifacts in this exact source directory"
+    },
+    "unchanged": true
+  },
+  "bounds": {
+    "maximum_logical_wires": 8,
+    "maximum_primitive_operations_per_attempt": 4000,
+    "maximum_queries": 13
+  },
+  "cases": [
+    {
+      "case_id": "hhl-size-n1",
+      "files_sha256": {
+        "logical-resources.json": "0e5085ca30370bb8d8fbfcf823b68a9e0736abffce2a0d59f558318a9ec0e857",
+        "measured-trial.qasm": "fee90077d8793c9de187535316035090220e69c6db0c9dc8d19d8f739c891406",
+        "reference.json": "704e7af8bae7e65ce5eb5ffc699473e0681f785fc8c08f80138cc5f1ef14a5b7",
+        "surface-code.json": "955fb173f3b18b2fffd88a0ebb523fab5abebef26434bbf3111c5afbd7bc34d5"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "D": 4,
+        "input": "all-zero computational basis state; no additional b-preparation gates",
+        "matrix": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+        "method": "hhl",
+        "observable": "normalized-solution Z(q0)",
+        "offset": 1,
+        "phase_qubits": 2,
+        "system_qubits": 1,
+        "weights_little_endian": [
+          1
+        ]
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "d8761295e9ddca0da5854073b41fbb9f0f12cacc6ae7e7521663638b2bb5f5b8",
+      "slices": [
+        "hhl-size"
+      ]
+    },
+    {
+      "case_id": "hhl-size-n2",
+      "files_sha256": {
+        "logical-resources.json": "5db339002e118a6e2eb72649900366819c4346f641ba664b79fd11f28a6b6c75",
+        "measured-trial.qasm": "8b40a0124d781abed0f5ef02ed380cc2d04962446629ee6ae5e7ae9ee6ae9163",
+        "reference.json": "222cd0fb325fca8112f646650f3bbec960bfacc13ed8726cb96d4554f60fdf50",
+        "surface-code.json": "cb495241e82d4737859902ee9ccf1b82d07062566192e67cde7d38158c54e615"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "D": 4,
+        "input": "all-zero computational basis state; no additional b-preparation gates",
+        "matrix": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+        "method": "hhl",
+        "observable": "normalized-solution Z(q0)",
+        "offset": 1,
+        "phase_qubits": 2,
+        "system_qubits": 2,
+        "weights_little_endian": [
+          1,
+          1
+        ]
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "26472d5fbcd7b77214a8641017d1eef49f20c5ce2db5baefb4faf758edc242ff",
+      "slices": [
+        "hhl-size"
+      ]
+    },
+    {
+      "case_id": "hhl-size-n3",
+      "files_sha256": {
+        "logical-resources.json": "101078cc366ccf653e5103f6d27a7195fc7aaecf2453edefc09311949e388364",
+        "measured-trial.qasm": "e3133dca0532052ba5e001abb610f4a16bdbe8443909ec3a41570ba559aedddf",
+        "reference.json": "27b4ea10dda383b96caa7a4400b3e01d4fb13d65fdc0ecf5e7e42f71f678fd41",
+        "surface-code.json": "826badc4c59d6016a1c7a593bf840ce45f25c72d2cf76715a161f5c0c6e29323"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "D": 8,
+        "input": "all-zero computational basis state; no additional b-preparation gates",
+        "matrix": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+        "method": "hhl",
+        "observable": "normalized-solution Z(q0)",
+        "offset": 1,
+        "phase_qubits": 3,
+        "system_qubits": 3,
+        "weights_little_endian": [
+          1,
+          1,
+          1
+        ]
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "63814ab034ab89048b93115f83c4f305c2c55cdb760097c4a7945241053a0b52",
+      "slices": [
+        "hhl-size"
+      ]
+    },
+    {
+      "case_id": "hhl-size-n4",
+      "files_sha256": {
+        "logical-resources.json": "dbf6d116eeb2ca547eaf90ed316d3c1164a8336e3f6542a0d87762a03e1e7698",
+        "measured-trial.qasm": "90820aa50d20f3b1106067bb35860e2490f0ef81aaf080df43d5febc691d655f",
+        "reference.json": "9a9678b203071132d1dfec5ed8e3fafe732d87575e7e0ed26995f68906e39046",
+        "surface-code.json": "daf2f8e9a27c1d7298edad3628f9414b9227abe1ab4f610c70393eef476a4d1e"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "D": 8,
+        "input": "all-zero computational basis state; no additional b-preparation gates",
+        "matrix": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+        "method": "hhl",
+        "observable": "normalized-solution Z(q0)",
+        "offset": 1,
+        "phase_qubits": 3,
+        "system_qubits": 4,
+        "weights_little_endian": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "50a7c1bbbb13ab02782d515831d0c156043a2545b73fef2c4b5933dccd62830a",
+      "slices": [
+        "hhl-size"
+      ]
+    },
+    {
+      "case_id": "hhl-condition-k2",
+      "files_sha256": {
+        "logical-resources.json": "0131914d3ac4a847949aeceebdc270da3855ea6cf960e20d28bcee6aae2bcc06",
+        "measured-trial.qasm": "1fe1d9e43d547a6d55a57cb11a81c1c25caab0f79247cccbfae833e510c97e4a",
+        "reference.json": "9434e938464f8d1d33f79e9e9ce7d8cb99183281129a284d8e3b0d3c31bad2ca",
+        "surface-code.json": "0a76f89c02d18352a8340414725c80dc7db5a7313dfb34b1058107377cdb18cd"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "D": 8,
+        "input": "all-zero computational basis state; no additional b-preparation gates",
+        "matrix": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+        "method": "hhl",
+        "observable": "normalized-solution Z(q0)",
+        "offset": 2,
+        "phase_qubits": 3,
+        "system_qubits": 2,
+        "weights_little_endian": [
+          1,
+          1
+        ]
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "5e00969b9a82a0c68e36180bc47b7c3a55f4dd72f28e4a74e929614cf52b7e90",
+      "slices": [
+        "hhl-conditioning"
+      ]
+    },
+    {
+      "case_id": "hhl-condition-k4",
+      "files_sha256": {
+        "logical-resources.json": "f7c7d3aec1ad11d67a21ab547c73c778b315899a4c20257d438a6208971b82ec",
+        "measured-trial.qasm": "d88bcedafe7b4e7e4e8f2e869f9f7cfcf6dea0b1820ede4c279e57bdbb4144ec",
+        "reference.json": "1059f141ea62bff9a105aff8ee6a6b492d91b2cb446ae79d1011b701832fc278",
+        "surface-code.json": "f144551aa4a23952c1ae84afb393b713e51db8ddda0fd0d5d101969b51bb336f"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "D": 16,
+        "input": "all-zero computational basis state; no additional b-preparation gates",
+        "matrix": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+        "method": "hhl",
+        "observable": "normalized-solution Z(q0)",
+        "offset": 2,
+        "phase_qubits": 4,
+        "system_qubits": 2,
+        "weights_little_endian": [
+          3,
+          3
+        ]
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "43f6e70ff613f76a995590c8bddb2e14447809ac338d97d0e987cd76be32383c",
+      "slices": [
+        "hhl-conditioning"
+      ]
+    },
+    {
+      "case_id": "hhl-condition-k8",
+      "files_sha256": {
+        "logical-resources.json": "a0db7572dab5b735116877b45d05eb438c8ed356fcbf271149415372eb19a379",
+        "measured-trial.qasm": "bda2c9eb82146494c10e434569afbb23d6adcc507cbcfd780b25e42782b5a3e0",
+        "reference.json": "de15587e512aa7c5c1e1b70cd1100d0550371dbc34d319da866ca0bf1d505629",
+        "surface-code.json": "d3b0c8cfa12c8326a2e983a14c73d10d2f313457faab99a771a850a7f11363f3"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "D": 32,
+        "input": "all-zero computational basis state; no additional b-preparation gates",
+        "matrix": "A=offset/D I+sum_j weights[j]/D (I-X_j)/2",
+        "method": "hhl",
+        "observable": "normalized-solution Z(q0)",
+        "offset": 2,
+        "phase_qubits": 5,
+        "system_qubits": 2,
+        "weights_little_endian": [
+          7,
+          7
+        ]
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "9cf135fbfdde23445885d928ad2f12a7ede7252cd772af927a4c25b0c1d026e5",
+      "slices": [
+        "hhl-conditioning"
+      ]
+    },
+    {
+      "case_id": "neumann-size-n2",
+      "files_sha256": {
+        "logical-resources.json": "770d9046ad712095bdc82921aeaf364150f63a785f2d4dee491085cc12884828",
+        "measured-trial.qasm": "c23a572235fd8b902a832ed998cf29f81d5f70cdc80b3b985a865a0bca055e56",
+        "reference.json": "091c77ae0ea9dbdee5931b7832f9c64e37de6bde26248ec8a3deb42b678874a0",
+        "surface-code.json": "85bbcd780a7f37f53f4ff7baa0058ded43fed30ba37850875778097ab58dbb90"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "amplification_rounds": 0,
+        "degree": 9,
+        "gap_promised_exact": "1/2",
+        "input": "RY(0.63) then RZ(0.41) on q0; RY(0.37) on q(n-1); other inputs zero",
+        "input_terms_exact": [
+          [
+            "3/4",
+            "II"
+          ],
+          [
+            "-1/10",
+            "IX"
+          ],
+          [
+            "-1/10",
+            "ZI"
+          ],
+          [
+            "-1/20",
+            "XX"
+          ]
+        ],
+        "method": "neumann-lcu",
+        "observable": "normalized-solution Z(q0)",
+        "system_qubits": 2
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "dee79fa8dd4317067af4b3bc378e6c0c00c8e27b20790a50b217748f2268a2e6",
+      "slices": [
+        "neumann-size",
+        "neumann-conditioning"
+      ]
+    },
+    {
+      "case_id": "neumann-size-n3",
+      "files_sha256": {
+        "logical-resources.json": "d5790c53f897dd864f7228bee36a53c88d29da3b102ce4fa8971a732fdd93847",
+        "measured-trial.qasm": "6cd332748731e9bfceb3a13c9d814c595f8d9d904172ff917a472f70ac2b055f",
+        "reference.json": "2b7bd427dbdad53fa3c326d9580f657a1e1a6dcd1be742252e90e4f61ba7a624",
+        "surface-code.json": "c60c9cdd1f2e5b523d421c145be505ed5ec50c62cd1f4f5f7dee9f6d23ad792a"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "amplification_rounds": 0,
+        "degree": 9,
+        "gap_promised_exact": "1/2",
+        "input": "RY(0.63) then RZ(0.41) on q0; RY(0.37) on q(n-1); other inputs zero",
+        "input_terms_exact": [
+          [
+            "3/4",
+            "III"
+          ],
+          [
+            "-1/10",
+            "IIX"
+          ],
+          [
+            "-1/10",
+            "ZII"
+          ],
+          [
+            "-1/20",
+            "XXX"
+          ]
+        ],
+        "method": "neumann-lcu",
+        "observable": "normalized-solution Z(q0)",
+        "system_qubits": 3
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "e2655811b5d090b3431bf29662cf2b8f4e53663b33ef20e01fcffe346c3fdac8",
+      "slices": [
+        "neumann-size"
+      ]
+    },
+    {
+      "case_id": "neumann-size-n4",
+      "files_sha256": {
+        "logical-resources.json": "d5cb9f8d836df939e35ed2adf8d5642f08365e796068c516424e5ee357e37cc2",
+        "measured-trial.qasm": "e5fe3dc823f30940ece40848b22aa51a098a225251c46da4970742b1ed38d5b8",
+        "reference.json": "e63afd8c3c43d37fc45eb1221b38d3c594b138753cfe1547bfce7f497d32bf8d",
+        "surface-code.json": "9744d50a6d781172b25df02e7803e08c4ce127a69e7183381f37a18ffe00acff"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "amplification_rounds": 0,
+        "degree": 9,
+        "gap_promised_exact": "1/2",
+        "input": "RY(0.63) then RZ(0.41) on q0; RY(0.37) on q(n-1); other inputs zero",
+        "input_terms_exact": [
+          [
+            "3/4",
+            "IIII"
+          ],
+          [
+            "-1/10",
+            "IIIX"
+          ],
+          [
+            "-1/10",
+            "ZIII"
+          ],
+          [
+            "-1/20",
+            "XXXX"
+          ]
+        ],
+        "method": "neumann-lcu",
+        "observable": "normalized-solution Z(q0)",
+        "system_qubits": 4
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "8e07f9f48388d57c08ff79d59883b43ffd8a2245fd8377e8fa362fb08f1edc72",
+      "slices": [
+        "neumann-size"
+      ]
+    },
+    {
+      "case_id": "neumann-gap-3-4",
+      "files_sha256": {
+        "logical-resources.json": "730be30a1ef4ee4e099d5123ac9c6c755726a2e204811f03b157580dceb2b79e",
+        "measured-trial.qasm": "f4acc65f04cbacb279563c212a60a191dc0455831a403621353cb2243629daea",
+        "reference.json": "65630bc9a433feb90bdfdd3bc7f5d43fa99ab43bc58dd4f8777591875048b5b1",
+        "surface-code.json": "016e5bc3c8c90625fc991f4e01bd7b3d6af6358f3a389cbb34bcaf56bbd301da"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "amplification_rounds": 0,
+        "degree": 4,
+        "gap_promised_exact": "3/4",
+        "input": "RY(0.63) then RZ(0.41) on q0; RY(0.37) on q(n-1); other inputs zero",
+        "input_terms_exact": [
+          [
+            "7/8",
+            "II"
+          ],
+          [
+            "-1/20",
+            "IX"
+          ],
+          [
+            "-1/20",
+            "ZI"
+          ],
+          [
+            "-1/40",
+            "XX"
+          ]
+        ],
+        "method": "neumann-lcu",
+        "observable": "normalized-solution Z(q0)",
+        "system_qubits": 2
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "c9767adb100eb7a64c24b309698d3f2c0038cba77d00cf87cc8df24021a7103b",
+      "slices": [
+        "neumann-conditioning"
+      ]
+    },
+    {
+      "case_id": "neumann-gap-1-4",
+      "files_sha256": {
+        "logical-resources.json": "379c014405ac0b3832428c169e5a31c1772118b71a450df7e4986f1aad15684f",
+        "measured-trial.qasm": "9937817793c747794c5c96478c590fdc679d68207837a902c5550523b12c35e3",
+        "reference.json": "205c484cb84bb7581ff0369512904e115f9261aec05e40a1c6fa5122298257b8",
+        "surface-code.json": "2f54b98599ede8eb61639f81fcf3a06c3db4abd0e20dbfa23ffe01ae45c5de60"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "amplification_rounds": 0,
+        "degree": 24,
+        "gap_promised_exact": "1/4",
+        "input": "RY(0.63) then RZ(0.41) on q0; RY(0.37) on q(n-1); other inputs zero",
+        "input_terms_exact": [
+          [
+            "5/8",
+            "II"
+          ],
+          [
+            "-3/20",
+            "IX"
+          ],
+          [
+            "-3/20",
+            "ZI"
+          ],
+          [
+            "-3/40",
+            "XX"
+          ]
+        ],
+        "method": "neumann-lcu",
+        "observable": "normalized-solution Z(q0)",
+        "system_qubits": 2
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "2367f282b68af8e99352aa3ab0adc6853e264cc575857706bacd1b737c8f656f",
+      "slices": [
+        "neumann-conditioning"
+      ]
+    },
+    {
+      "case_id": "neumann-gap-1-8",
+      "files_sha256": {
+        "logical-resources.json": "221ab63a5aba528ecd4883c705c8f261748feab4051ff0ffd5e211e736a9d0f6",
+        "measured-trial.qasm": "df5c04c6a3cc09405ddad3479e989facf7c82a7a4fb711416e631beb0d1269d4",
+        "reference.json": "aed8f4ca3e47b0767f3b6ec6bf1269570129bec0988636bf7559b4013f3b04af",
+        "surface-code.json": "beaa69990d8c9ae45aa5c019744f37741b3688cde8abbabd0d4543243d1110f6"
+      },
+      "independent_validation_performed": true,
+      "instance": {
+        "amplification_rounds": 0,
+        "degree": 51,
+        "gap_promised_exact": "1/8",
+        "input": "RY(0.63) then RZ(0.41) on q0; RY(0.37) on q(n-1); other inputs zero",
+        "input_terms_exact": [
+          [
+            "9/16",
+            "II"
+          ],
+          [
+            "-7/40",
+            "IX"
+          ],
+          [
+            "-7/40",
+            "ZI"
+          ],
+          [
+            "-7/80",
+            "XX"
+          ]
+        ],
+        "method": "neumann-lcu",
+        "observable": "normalized-solution Z(q0)",
+        "system_qubits": 2
+      },
+      "physical_status": "computed_conditional_model",
+      "qdk_query_performed": true,
+      "reference_identity_sha256": "c86b10e95cebb8aa3bbb2b872c51b8f7ff359ec7d3492b6a81bd4f861ca8cd7b",
+      "slices": [
+        "neumann-conditioning"
+      ]
+    }
+  ],
+  "code_files_sha256": {
+    "code/LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+    "code/README.md": "34d939de51df4af207d1922f066861744aaba807ade0ee29986de5ddc03d7429",
+    "code/baseline-fingerprints.json": "4bad96f3ef057022edf851ca02bccd7a3ebf7058cce1be8fe87228c0216ccf18",
+    "code/citations.bib": "a3c0f6d63edf26e396a05aaaba8776b099526d39bb2775a706f46452b0acdb2e",
+    "code/generate_linear_systems_physical.py": "fe98ad3fa9f2a2980a321b94ebcf5430ff40f8fd929fc96154351d3c9af9b58b",
+    "code/openquantum/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code/openquantum/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+    "code/openquantum/linear_systems.py": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+    "code/openquantum/linear_systems_physical.py": "246890cfdf47a56ec9d3b3cc441ad6461fad4d963c0ddd1b4d16b23bbd06d2dd",
+    "code/openquantum/linear_systems_qsvt.py": "c4735e188c9e80fb6fb60dc34c00558b17ab8f2c48c110a30b732aee9c105590",
+    "code/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+    "code/openquantum/simulation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "code/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+    "code/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f",
+    "code/references/amplification.bib": "c8702291b92fe4a51ea6a44b12ee30507e80af725b3f6e725e6fdf7ac9fded0a",
+    "code/references/linear-systems.bib": "85941cdc7b82f15ae70f4acf621d0315820f9913d38d643ca928385be58199f7",
+    "code/references/resources.bib": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b",
+    "code/references/simulation.bib": "62e4361da71a54631b98da7cbbfbd313103f702fb2c6cfa680bd68dfc6b1fd13",
+    "code/requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+    "code/source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255"
+  },
+  "complete_declared_grid": true,
+  "contract": {
+    "algorithm_bias_allowance": 0.01,
+    "certified_confidence_lower_bound": null,
+    "conditioning_assumption": "Hypothetically the 1e-6 per-attempt scalar bounds the entire coherent pre-readout unitary error, including angle/loading/compilation errors. QDK does not certify this assumption.",
+    "hardware_output_accuracy_certified": false,
+    "mean_fit_limitation": "A mean-fit rotation scalar is not an operator-norm bound or synthesis runtime-tail guarantee; conditional compiled-output fields are proposals.",
+    "neumann_uniform_polynomial_Pauli_bias_target": 0.001,
+    "no_acceptance_failure": 0.005,
+    "output": "one Z(q0) mean of the normalized A^-1 b solution at each fixed instance",
+    "per_attempt_synthesis_model_scalar": 1e-06,
+    "postselection_adjusted_synthesis_bias_allowance": 0.01,
+    "requested_absolute_error": 0.05,
+    "requested_failure_probability": 0.015,
+    "sampling_error": 0.03,
+    "scope": "each case is a separate requested task, not a simultaneous guarantee over the sweep",
+    "statistical_failure": 0.005,
+    "whole_workload_physical_failure": 0.005
+  },
+  "declared_slices": {
+    "hhl-conditioning": [
+      "hhl-condition-k2",
+      "hhl-condition-k4",
+      "hhl-condition-k8"
+    ],
+    "hhl-size": [
+      "hhl-size-n1",
+      "hhl-size-n2",
+      "hhl-size-n3",
+      "hhl-size-n4"
+    ],
+    "neumann-conditioning": [
+      "neumann-gap-3-4",
+      "neumann-size-n2",
+      "neumann-gap-1-4",
+      "neumann-gap-1-8"
+    ],
+    "neumann-size": [
+      "neumann-size-n2",
+      "neumann-size-n3",
+      "neumann-size-n4"
+    ]
+  },
+  "generated_case_count": 13,
+  "hardware_output_accuracy_certified": false,
+  "independent_validation_count": 13,
+  "physical_attempts_executed": 0,
+  "physical_profile": {
+    "gate_time_ns": 100,
+    "measurement_time_ns": 500,
+    "name": "illustrative-p-1e-4",
+    "physical_error_rate": 0.0001
+  },
+  "plots": [
+    "physical-scaling.svg",
+    "physical-scaling.png"
+  ],
+  "qdk_query_count": 13,
+  "query_scope": "one actual compiled full trial and all capped serial attempts per case; cases are separate tasks",
+  "reproduction_arguments": {
+    "case": "all",
+    "no_estimate": false,
+    "no_sim": false
+  },
+  "schema_version": 1,
+  "selected_case_ids": [
+    "hhl-size-n1",
+    "hhl-size-n2",
+    "hhl-size-n3",
+    "hhl-size-n4",
+    "hhl-condition-k2",
+    "hhl-condition-k4",
+    "hhl-condition-k8",
+    "neumann-size-n2",
+    "neumann-size-n3",
+    "neumann-size-n4",
+    "neumann-gap-3-4",
+    "neumann-gap-1-4",
+    "neumann-gap-1-8"
+  ],
+  "simultaneous_cross_grid_guarantee": false,
+  "source_provenance": {
+    "environment": {
+      "device": "CPU",
+      "packages": {
+        "matplotlib": "3.11.2",
+        "numpy": "2.5.4",
+        "qdk": "1.34.0",
+        "qiskit": "2.6.2",
+        "scipy": "1.18.1"
+      },
+      "python": "3.12.14",
+      "transpiler_seed": 7
+    },
+    "private_cache_path_recorded": false,
+    "source_commit": "a3350e7f39cffd5a1ccc123d4b9b0a44c12f41e6",
+    "source_commit_scope": "exact checkout at generation if available; per-file content hashes identify working implementation",
+    "source_dirty": false,
+    "source_sha256": {
+      "citations.bib": "a3c0f6d63edf26e396a05aaaba8776b099526d39bb2775a706f46452b0acdb2e",
+      "references/amplification.bib": "c8702291b92fe4a51ea6a44b12ee30507e80af725b3f6e725e6fdf7ac9fded0a",
+      "references/linear-systems.bib": "85941cdc7b82f15ae70f4acf621d0315820f9913d38d643ca928385be58199f7",
+      "references/resources.bib": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b",
+      "references/simulation.bib": "62e4361da71a54631b98da7cbbfbd313103f702fb2c6cfa680bd68dfc6b1fd13",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+      "scripts/generate_linear_systems_physical.py": "fe98ad3fa9f2a2980a321b94ebcf5430ff40f8fd929fc96154351d3c9af9b58b",
+      "scripts/source_provenance.py": "03e45e308d49e1a43b065bc0eab7d0eebd8b78e39883453295840a0afe98c255",
+      "src/openquantum/linear_inverse_lcu.py": "1a201b4721bf6dd5a22405a324864366da528c92dccfb85eab18782ceb1592f0",
+      "src/openquantum/linear_systems.py": "cefa21ed9bf917626867992be5d103d3b3fec12a0e5230421c365638d47b3632",
+      "src/openquantum/linear_systems_physical.py": "246890cfdf47a56ec9d3b3cc441ad6461fad4d963c0ddd1b4d16b23bbd06d2dd",
+      "src/openquantum/linear_systems_qsvt.py": "c4735e188c9e80fb6fb60dc34c00558b17ab8f2c48c110a30b732aee9c105590",
+      "src/openquantum/resource_estimation.py": "1e5342f83432e4db1b1593e31fd793b462ec7a577ee5835c79bdaa5f74c37c8b",
+      "src/openquantum/simulation/lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
+      "src/openquantum/simulation/qsp.py": "bbcf502c58847c52b9d7e7c2ba8d66516609cbf0307046373cb1eb25c0aebb9f"
+    }
+  }
+}

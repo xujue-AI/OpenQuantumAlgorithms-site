@@ -1,0 +1,70 @@
+{
+  "accepted_study_commit": "0758b8694b213eb0ee670df053233ba9f5fe36d6",
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "README.md": {
+      "bytes": 3020,
+      "sha256": "f7893f7fa7683ef897ba9f8b695134b4751cf9ce307664f300a19386c4d3eeee"
+    },
+    "acceptance.json": {
+      "bytes": 6848,
+      "sha256": "c567e32b0abebacdc8b24b2088225b0e1b2042faf347ffb57c2a4dd774a411fa"
+    },
+    "n2-compiled.json": {
+      "bytes": 16212,
+      "sha256": "d94a222e18cfb2d30c06b11ee72600b336cc73f735c1a21fa52c059b9ed1dffc"
+    },
+    "n2-compiled.ndjson": {
+      "bytes": 15060,
+      "sha256": "d985170c707825115a9ea37c879f8f0b79514b45c39453012bcbe5065056f8a7"
+    },
+    "n3-compiled.json": {
+      "bytes": 56241,
+      "sha256": "ab18a954c3e7a18314fda9654eee81a2f42f20dcf865c1c157611363133cc89d"
+    },
+    "n3-compiled.ndjson": {
+      "bytes": 47095,
+      "sha256": "bdb4287e0d312f3b78b57db9b564161cd9dbd4650c0bef9f86736d56d04eaccc"
+    },
+    "native-words.json": {
+      "bytes": 22735,
+      "sha256": "546ba30d3dfa44d4ec7997f430dbe509b406db13b037cd0b96e0507936638142"
+    },
+    "physical.json": {
+      "bytes": 27361,
+      "sha256": "b811f202e648484ce5c6237e08f5846568903793030a307b0c4f1579120a1954"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "results.json": {
+      "bytes": 4729,
+      "sha256": "b727ef0f3e34a60872ee8359c6d293b1a5a07c6c5ba673466fad573887353e0d"
+    },
+    "software.json": {
+      "bytes": 6331,
+      "sha256": "068ae8bd6274f0237c7ff3b987014fc3cf8a8fde0b54ebac36a15df63f104ff6"
+    },
+    "verification.json": {
+      "bytes": 40156,
+      "sha256": "f9bad9e8f1f42d7455bac7d584e070d37f8e26b72438ff3e9d916a4762a9f0f9"
+    }
+  },
+  "independent_audit_sha256": "d52b18719ea340982d304de97374619fea2a0b5e6946e7c49a9e8379c41712b5",
+  "schema": "openquantum.dqi.structured_resource_public_manifest.v1",
+  "scientific_members": [
+    "n2-compiled.json",
+    "n2-compiled.ndjson",
+    "n3-compiled.json",
+    "n3-compiled.ndjson",
+    "native-words.json",
+    "verification.json",
+    "physical.json"
+  ],
+  "scope": "closed saved scientific evidence packet; native replay and publication are not certified",
+  "source_commit": "90b34b88b7da2f3846305b9ddd790f3845f74240"
+}

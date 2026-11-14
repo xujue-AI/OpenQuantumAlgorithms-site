@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "method_id": "local-spin-full-xx-reusable-bath-v1",
+  "status": "unexecuted_circuit_and_reference_cases",
+  "system": {
+    "family": "open_diagonal_ising_chain",
+    "field_base": 1.0,
+    "field_increment": 0.125,
+    "field_period": 3,
+    "zz_coefficient": 0.125
+  },
+  "bath": {
+    "frequency_law": "GL3_uniform_0_2",
+    "frequency_nodes": [
+      0.2254033307585166,
+      1.0,
+      1.7745966692414834
+    ],
+    "frequency_weights": [
+      0.2777777777777778,
+      0.4444444444444444,
+      0.2777777777777778
+    ],
+    "beta": 1.0,
+    "coupling_sampler": "uniform_site_x"
+  },
+  "pulse": {
+    "duration": 2.0,
+    "center": 1.0,
+    "sigma": 0.5,
+    "alpha": 0.08
+  },
+  "initial": "all_zero",
+  "readout": "all_system_z",
+  "cases": [
+    {
+      "case_id": "n1-ground",
+      "n": 1,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "ground",
+      "seed": 2026111301,
+      "role": "small_validation"
+    },
+    {
+      "case_id": "n1-thermal",
+      "n": 1,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "thermal",
+      "seed": 2026111302,
+      "role": "small_validation"
+    },
+    {
+      "case_id": "n2-ground",
+      "n": 2,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "ground",
+      "seed": 2026111303,
+      "role": "small_validation"
+    },
+    {
+      "case_id": "n2-thermal",
+      "n": 2,
+      "rounds": 4,
+      "steps": 8,
+      "mode": "thermal",
+      "seed": 2026111304,
+      "role": "small_validation"
+    },
+    {
+      "case_id": "n4-thermal-generation",
+      "n": 4,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111404,
+      "role": "generation_only"
+    },
+    {
+      "case_id": "n8-thermal-generation",
+      "n": 8,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111408,
+      "role": "generation_only"
+    },
+    {
+      "case_id": "n16-thermal-generation",
+      "n": 16,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111416,
+      "role": "generation_only"
+    },
+    {
+      "case_id": "n32-thermal-generation",
+      "n": 32,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111432,
+      "role": "generation_only"
+    },
+    {
+      "case_id": "n64-thermal-generation",
+      "n": 64,
+      "rounds": 4,
+      "steps": 16,
+      "mode": "thermal",
+      "seed": 2026111464,
+      "role": "generation_only"
+    }
+  ],
+  "generation_limits": {
+    "n_max": 64,
+    "rounds_max": 64,
+    "steps_max": 128,
+    "instructions_per_file_max": 100000,
+    "utf8_bytes_per_file_max": 8388608,
+    "input_bytes_max": 131072,
+    "cases_max": 9
+  },
+  "claim_limits": {
+    "all_components_verified": false,
+    "continuum_bridge": "unavailable",
+    "mixing_certificate": false,
+    "gibbs_accuracy_certificate": false,
+    "physical_budgets": "uncomputed"
+  }
+}

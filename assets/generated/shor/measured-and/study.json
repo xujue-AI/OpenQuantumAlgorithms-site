@@ -1,0 +1,1087 @@
+{
+  "method": "four-T measured CCX replacement in unoptimized ripple arithmetic",
+  "physical_estimation_status": "not computed",
+  "formal_proof_status": "not reproduced",
+  "gadget": {
+    "kraus_columns": 8,
+    "outcomes": 2,
+    "max_kraus_error": 2.2323195630838056e-16,
+    "trace_preservation_error": 7.771561172376096e-16,
+    "reference": "independent classical CCX permutation",
+    "guarantee_scope": "bounded numerical all-data channel check; symbolic derivation separate",
+    "physical_or_formal_certificate": false
+  },
+  "addition_cases": [
+    {
+      "width": 1,
+      "a": 1,
+      "b": 1,
+      "carry": 1,
+      "method": "static",
+      "counts": {
+        "logical_qubits": 3,
+        "classical_bits": 3,
+        "unconditional_primitive_counts": {
+          "cx": 16,
+          "h": 4,
+          "measure": 3,
+          "reset": 3,
+          "t": 8,
+          "tdg": 6,
+          "x": 3
+        },
+        "all_one_feedback_extra_counts": {},
+        "all_zero_feedback_primitive_count": 43,
+        "all_one_feedback_primitive_count": 43,
+        "literal_t_or_tdg": 14,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 0,
+        "dependency_depth_all_zero_feedback": 28,
+        "dependency_depth_all_one_feedback": 28,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validation": {
+        "width": 1,
+        "a": 1,
+        "b": 1,
+        "carry": 1,
+        "method": "static",
+        "expected_output_basis": 7,
+        "max_density_error": 1.3323005696518485e-15,
+        "density": {
+          "method": "actual primitive branch-density interpretation",
+          "qubits": 3,
+          "primitive_events": 40,
+          "maximum_classical_branches": 1,
+          "trace_real": 0.9999999999999987,
+          "trace_imag": -7.240515533239748e-18,
+          "terminal_readout_distribution": {},
+          "terminal_measurement_scope": "full final classical-register joint distribution, retaining feedback and overwriting written bits; commuting projectors of each prefix branch",
+          "floating_guard": 1e-10,
+          "formal_proof": false
+        },
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 2,
+          "gate_state_applications": 60,
+          "merged_uniform_feedback_pairs": 0,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "reference": "a retained; b=(a+b+carry)mod2**width; carry retained"
+      },
+      "formula": {
+        "width": 1,
+        "input_x": 3,
+        "static": {
+          "qubits": 3,
+          "literal_t_or_tdg": 14,
+          "complete_primitives": 43
+        },
+        "measured_feedback_x": {
+          "qubits": 4,
+          "feedback_bits": 1,
+          "literal_t_or_tdg": 8,
+          "feedback_decisions": 2,
+          "complete_primitives_all_zero": 40,
+          "complete_primitives_all_one": 48,
+          "ideal_expected_primitive_numerator": 44,
+          "expected_scope": "uniform ideal gadget outcomes; not physical runtime"
+        },
+        "materialization_performed": false,
+        "accuracy_inherited": false,
+        "physical_estimation_status": "not computed"
+      },
+      "ideal_output": "deterministic (a,b+a+carry modulo2**width,carry)",
+      "repetitions": 1,
+      "physical_failure_allowance": "not allocated"
+    },
+    {
+      "width": 1,
+      "a": 1,
+      "b": 1,
+      "carry": 1,
+      "method": "measured",
+      "counts": {
+        "logical_qubits": 4,
+        "classical_bits": 4,
+        "unconditional_primitive_counts": {
+          "cx": 12,
+          "h": 6,
+          "measure": 5,
+          "reset": 4,
+          "sdg": 2,
+          "t": 4,
+          "tdg": 4,
+          "x": 3
+        },
+        "all_one_feedback_extra_counts": {
+          "cx": 2,
+          "h": 4,
+          "x": 2
+        },
+        "all_zero_feedback_primitive_count": 40,
+        "all_one_feedback_primitive_count": 48,
+        "literal_t_or_tdg": 8,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 2,
+        "dependency_depth_all_zero_feedback": 29,
+        "dependency_depth_all_one_feedback": 38,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validation": {
+        "width": 1,
+        "a": 1,
+        "b": 1,
+        "carry": 1,
+        "method": "measured",
+        "expected_output_basis": 7,
+        "max_density_error": 1.887383813581278e-15,
+        "density": {
+          "method": "actual primitive branch-density interpretation",
+          "qubits": 4,
+          "primitive_events": 47,
+          "maximum_classical_branches": 2,
+          "trace_real": 0.9999999999999981,
+          "trace_imag": -1.1921619428215374e-17,
+          "terminal_readout_distribution": {},
+          "terminal_measurement_scope": "full final classical-register joint distribution, retaining feedback and overwriting written bits; commuting projectors of each prefix branch",
+          "floating_guard": 1e-10,
+          "formal_proof": false
+        },
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 3,
+          "gate_state_applications": 79,
+          "merged_uniform_feedback_pairs": 2,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "reference": "a retained; b=(a+b+carry)mod2**width; carry retained"
+      },
+      "formula": {
+        "width": 1,
+        "input_x": 3,
+        "static": {
+          "qubits": 3,
+          "literal_t_or_tdg": 14,
+          "complete_primitives": 43
+        },
+        "measured_feedback_x": {
+          "qubits": 4,
+          "feedback_bits": 1,
+          "literal_t_or_tdg": 8,
+          "feedback_decisions": 2,
+          "complete_primitives_all_zero": 40,
+          "complete_primitives_all_one": 48,
+          "ideal_expected_primitive_numerator": 44,
+          "expected_scope": "uniform ideal gadget outcomes; not physical runtime"
+        },
+        "materialization_performed": false,
+        "accuracy_inherited": false,
+        "physical_estimation_status": "not computed"
+      },
+      "ideal_output": "deterministic (a,b+a+carry modulo2**width,carry)",
+      "repetitions": 1,
+      "physical_failure_allowance": "not allocated"
+    },
+    {
+      "width": 2,
+      "a": 3,
+      "b": 1,
+      "carry": 0,
+      "method": "static",
+      "counts": {
+        "logical_qubits": 5,
+        "classical_bits": 5,
+        "unconditional_primitive_counts": {
+          "cx": 32,
+          "h": 8,
+          "measure": 5,
+          "reset": 5,
+          "t": 16,
+          "tdg": 12,
+          "x": 3
+        },
+        "all_one_feedback_extra_counts": {},
+        "all_zero_feedback_primitive_count": 81,
+        "all_one_feedback_primitive_count": 81,
+        "literal_t_or_tdg": 28,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 0,
+        "dependency_depth_all_zero_feedback": 52,
+        "dependency_depth_all_one_feedback": 52,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validation": {
+        "width": 2,
+        "a": 3,
+        "b": 1,
+        "carry": 0,
+        "method": "static",
+        "expected_output_basis": 3,
+        "max_density_error": 4.219529443613527e-15,
+        "density": {
+          "method": "actual primitive branch-density interpretation",
+          "qubits": 5,
+          "primitive_events": 76,
+          "maximum_classical_branches": 1,
+          "trace_real": 0.9999999999999958,
+          "trace_imag": -1.6826667394203904e-16,
+          "terminal_readout_distribution": {},
+          "terminal_measurement_scope": "full final classical-register joint distribution, retaining feedback and overwriting written bits; commuting projectors of each prefix branch",
+          "floating_guard": 1e-10,
+          "formal_proof": false
+        },
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 2,
+          "gate_state_applications": 116,
+          "merged_uniform_feedback_pairs": 0,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "reference": "a retained; b=(a+b+carry)mod2**width; carry retained"
+      },
+      "formula": {
+        "width": 2,
+        "input_x": 3,
+        "static": {
+          "qubits": 5,
+          "literal_t_or_tdg": 28,
+          "complete_primitives": 81
+        },
+        "measured_feedback_x": {
+          "qubits": 6,
+          "feedback_bits": 1,
+          "literal_t_or_tdg": 16,
+          "feedback_decisions": 4,
+          "complete_primitives_all_zero": 74,
+          "complete_primitives_all_one": 90,
+          "ideal_expected_primitive_numerator": 82,
+          "expected_scope": "uniform ideal gadget outcomes; not physical runtime"
+        },
+        "materialization_performed": false,
+        "accuracy_inherited": false,
+        "physical_estimation_status": "not computed"
+      },
+      "ideal_output": "deterministic (a,b+a+carry modulo2**width,carry)",
+      "repetitions": 1,
+      "physical_failure_allowance": "not allocated"
+    },
+    {
+      "width": 2,
+      "a": 3,
+      "b": 1,
+      "carry": 0,
+      "method": "measured",
+      "counts": {
+        "logical_qubits": 6,
+        "classical_bits": 6,
+        "unconditional_primitive_counts": {
+          "cx": 24,
+          "h": 12,
+          "measure": 9,
+          "reset": 6,
+          "sdg": 4,
+          "t": 8,
+          "tdg": 8,
+          "x": 3
+        },
+        "all_one_feedback_extra_counts": {
+          "cx": 4,
+          "h": 8,
+          "x": 4
+        },
+        "all_zero_feedback_primitive_count": 74,
+        "all_one_feedback_primitive_count": 90,
+        "literal_t_or_tdg": 16,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 4,
+        "dependency_depth_all_zero_feedback": 55,
+        "dependency_depth_all_one_feedback": 72,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validation": {
+        "width": 2,
+        "a": 3,
+        "b": 1,
+        "carry": 0,
+        "method": "measured",
+        "expected_output_basis": 3,
+        "max_density_error": 3.9968028886505635e-15,
+        "density": {
+          "method": "actual primitive branch-density interpretation",
+          "qubits": 6,
+          "primitive_events": 89,
+          "maximum_classical_branches": 2,
+          "trace_real": 0.999999999999996,
+          "trace_imag": -2.8138596369998556e-17,
+          "terminal_readout_distribution": {},
+          "terminal_measurement_scope": "full final classical-register joint distribution, retaining feedback and overwriting written bits; commuting projectors of each prefix branch",
+          "floating_guard": 1e-10,
+          "formal_proof": false
+        },
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 3,
+          "gate_state_applications": 153,
+          "merged_uniform_feedback_pairs": 4,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "reference": "a retained; b=(a+b+carry)mod2**width; carry retained"
+      },
+      "formula": {
+        "width": 2,
+        "input_x": 3,
+        "static": {
+          "qubits": 5,
+          "literal_t_or_tdg": 28,
+          "complete_primitives": 81
+        },
+        "measured_feedback_x": {
+          "qubits": 6,
+          "feedback_bits": 1,
+          "literal_t_or_tdg": 16,
+          "feedback_decisions": 4,
+          "complete_primitives_all_zero": 74,
+          "complete_primitives_all_one": 90,
+          "ideal_expected_primitive_numerator": 82,
+          "expected_scope": "uniform ideal gadget outcomes; not physical runtime"
+        },
+        "materialization_performed": false,
+        "accuracy_inherited": false,
+        "physical_estimation_status": "not computed"
+      },
+      "ideal_output": "deterministic (a,b+a+carry modulo2**width,carry)",
+      "repetitions": 1,
+      "physical_failure_allowance": "not allocated"
+    },
+    {
+      "width": 3,
+      "a": 5,
+      "b": 3,
+      "carry": 1,
+      "method": "static",
+      "counts": {
+        "logical_qubits": 7,
+        "classical_bits": 7,
+        "unconditional_primitive_counts": {
+          "cx": 48,
+          "h": 12,
+          "measure": 7,
+          "reset": 7,
+          "t": 24,
+          "tdg": 18,
+          "x": 5
+        },
+        "all_one_feedback_extra_counts": {},
+        "all_zero_feedback_primitive_count": 121,
+        "all_one_feedback_primitive_count": 121,
+        "literal_t_or_tdg": 42,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 0,
+        "dependency_depth_all_zero_feedback": 76,
+        "dependency_depth_all_one_feedback": 76,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validation": {
+        "width": 3,
+        "a": 5,
+        "b": 3,
+        "carry": 1,
+        "method": "static",
+        "expected_output_basis": 77,
+        "max_density_error": 5.329079641440674e-15,
+        "density": {
+          "method": "actual primitive branch-density interpretation",
+          "qubits": 7,
+          "primitive_events": 114,
+          "maximum_classical_branches": 1,
+          "trace_real": 0.9999999999999946,
+          "trace_imag": -3.74039774384048e-19,
+          "terminal_readout_distribution": {},
+          "terminal_measurement_scope": "full final classical-register joint distribution, retaining feedback and overwriting written bits; commuting projectors of each prefix branch",
+          "floating_guard": 1e-10,
+          "formal_proof": false
+        },
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 2,
+          "gate_state_applications": 174,
+          "merged_uniform_feedback_pairs": 0,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "reference": "a retained; b=(a+b+carry)mod2**width; carry retained"
+      },
+      "formula": {
+        "width": 3,
+        "input_x": 5,
+        "static": {
+          "qubits": 7,
+          "literal_t_or_tdg": 42,
+          "complete_primitives": 121
+        },
+        "measured_feedback_x": {
+          "qubits": 8,
+          "feedback_bits": 1,
+          "literal_t_or_tdg": 24,
+          "feedback_decisions": 6,
+          "complete_primitives_all_zero": 110,
+          "complete_primitives_all_one": 134,
+          "ideal_expected_primitive_numerator": 122,
+          "expected_scope": "uniform ideal gadget outcomes; not physical runtime"
+        },
+        "materialization_performed": false,
+        "accuracy_inherited": false,
+        "physical_estimation_status": "not computed"
+      },
+      "ideal_output": "deterministic (a,b+a+carry modulo2**width,carry)",
+      "repetitions": 1,
+      "physical_failure_allowance": "not allocated"
+    },
+    {
+      "width": 3,
+      "a": 5,
+      "b": 3,
+      "carry": 1,
+      "method": "measured",
+      "counts": {
+        "logical_qubits": 8,
+        "classical_bits": 8,
+        "unconditional_primitive_counts": {
+          "cx": 36,
+          "h": 18,
+          "measure": 13,
+          "reset": 8,
+          "sdg": 6,
+          "t": 12,
+          "tdg": 12,
+          "x": 5
+        },
+        "all_one_feedback_extra_counts": {
+          "cx": 6,
+          "h": 12,
+          "x": 6
+        },
+        "all_zero_feedback_primitive_count": 110,
+        "all_one_feedback_primitive_count": 134,
+        "literal_t_or_tdg": 24,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 6,
+        "dependency_depth_all_zero_feedback": 81,
+        "dependency_depth_all_one_feedback": 106,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validation": {
+        "width": 3,
+        "a": 5,
+        "b": 3,
+        "carry": 1,
+        "method": "measured",
+        "expected_output_basis": 77,
+        "max_density_error": 5.9952069744605915e-15,
+        "density": {
+          "method": "actual primitive branch-density interpretation",
+          "qubits": 8,
+          "primitive_events": 133,
+          "maximum_classical_branches": 2,
+          "trace_real": 0.999999999999994,
+          "trace_imag": -3.329943636996301e-18,
+          "terminal_readout_distribution": {},
+          "terminal_measurement_scope": "full final classical-register joint distribution, retaining feedback and overwriting written bits; commuting projectors of each prefix branch",
+          "floating_guard": 1e-10,
+          "formal_proof": false
+        },
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 3,
+          "gate_state_applications": 229,
+          "merged_uniform_feedback_pairs": 6,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "reference": "a retained; b=(a+b+carry)mod2**width; carry retained"
+      },
+      "formula": {
+        "width": 3,
+        "input_x": 5,
+        "static": {
+          "qubits": 7,
+          "literal_t_or_tdg": 42,
+          "complete_primitives": 121
+        },
+        "measured_feedback_x": {
+          "qubits": 8,
+          "feedback_bits": 1,
+          "literal_t_or_tdg": 24,
+          "feedback_decisions": 6,
+          "complete_primitives_all_zero": 110,
+          "complete_primitives_all_one": 134,
+          "ideal_expected_primitive_numerator": 122,
+          "expected_scope": "uniform ideal gadget outcomes; not physical runtime"
+        },
+        "materialization_performed": false,
+        "accuracy_inherited": false,
+        "physical_estimation_status": "not computed"
+      },
+      "ideal_output": "deterministic (a,b+a+carry modulo2**width,carry)",
+      "repetitions": 1,
+      "physical_failure_allowance": "not allocated"
+    }
+  ],
+  "order_cases": [
+    {
+      "modulus": 15,
+      "base": 2,
+      "phase_bits": 4,
+      "validation": {
+        "modulus": 15,
+        "base": 2,
+        "phase_bits": 4,
+        "probabilities": [
+          0.25,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.0,
+          0.0,
+          0.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_probabilities": [
+          0.25,
+          4.686749320818307e-34,
+          9.37349864163661e-34,
+          4.218074388736474e-33,
+          0.25,
+          4.686749320818307e-34,
+          9.37349864163661e-34,
+          4.218074388736474e-33,
+          0.25,
+          4.686749320818307e-34,
+          9.37349864163661e-34,
+          4.218074388736474e-33,
+          0.25,
+          4.686749320818307e-34,
+          9.37349864163661e-34,
+          4.218074388736474e-33
+        ],
+        "max_probability_error": 4.218074388736474e-33,
+        "dirty_work_probability": 0.0,
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 48,
+          "gate_state_applications": 565437,
+          "merged_uniform_feedback_pairs": 984,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "counts": {
+          "logical_qubits": 21,
+          "classical_bits": 1,
+          "unconditional_primitive_counts": {
+            "cp": 6,
+            "cx": 5718,
+            "h": 2960,
+            "measure": 984,
+            "reset": 1,
+            "sdg": 984,
+            "t": 1968,
+            "tdg": 1968,
+            "x": 97
+          },
+          "all_one_feedback_extra_counts": {
+            "cx": 984,
+            "h": 1968,
+            "x": 984
+          },
+          "all_zero_feedback_primitive_count": 14686,
+          "all_one_feedback_primitive_count": 18622,
+          "literal_t_or_tdg": 3936,
+          "unlowered_phase_operations": 6,
+          "classical_feedback_decisions": 984,
+          "dependency_depth_all_zero_feedback": 12810,
+          "dependency_depth_all_one_feedback": 16768,
+          "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+          "included": [
+            "literal gates",
+            "explicit preparation/reset",
+            "measured helper",
+            "conditional correction/clear",
+            "requested final readout"
+          ],
+          "excluded_physical": [
+            "code distance/factories",
+            "routing/decoder",
+            "calibrated measurement/reset/feedback faults and time",
+            "P/CP synthesis if present"
+          ],
+          "physical_estimation_status": "not computed"
+        },
+        "reference_scope": "independent classical order/Fourier distribution after circuit construction",
+        "physical_estimation_status": "not computed; QFT phase synthesis and feedback costs remain separate"
+      },
+      "physical_estimate": "not computed; P/CP synthesis and full controller schedule remain unpriced"
+    },
+    {
+      "modulus": 21,
+      "base": 2,
+      "phase_bits": 4,
+      "validation": {
+        "modulus": 21,
+        "base": 2,
+        "phase_bits": 4,
+        "probabilities": [
+          0.171875,
+          0.007257282719800976,
+          0.03125,
+          0.11774271728019904,
+          0.015625,
+          0.11774271728019904,
+          0.03125,
+          0.007257282719800974,
+          0.171875,
+          0.007257282719800976,
+          0.03125,
+          0.11774271728019904,
+          0.015625,
+          0.11774271728019904,
+          0.03125,
+          0.007257282719800974
+        ],
+        "reference_probabilities": [
+          0.171875,
+          0.007257282719800974,
+          0.031249999999999986,
+          0.117742717280199,
+          0.015625,
+          0.11774271728019894,
+          0.031250000000000014,
+          0.00725728271980098,
+          0.171875,
+          0.007257282719800974,
+          0.031249999999999986,
+          0.117742717280199,
+          0.015625,
+          0.11774271728019894,
+          0.031250000000000014,
+          0.00725728271980098
+        ],
+        "max_probability_error": 9.71445146547012e-17,
+        "dirty_work_probability": 0.0,
+        "exact_sparse": {
+          "method": "actual primitive exact Q(zeta16) sparse interpretation; both branches checked before merging",
+          "peak_amplitude_support": 92,
+          "gate_state_applications": 1701885,
+          "merged_uniform_feedback_pairs": 2964,
+          "norm_exactly_one": true,
+          "amplitude_truncation": false,
+          "terminal_measurements": 0,
+          "formal_proof": false,
+          "scope": "intended dyadic pi/8 logical-angle model recognized by exact Python spelling; not a binary-angle realization enclosure, general proof kernel or noise simulation"
+        },
+        "counts": {
+          "logical_qubits": 24,
+          "classical_bits": 1,
+          "unconditional_primitive_counts": {
+            "cp": 6,
+            "cx": 17022,
+            "h": 8900,
+            "measure": 2964,
+            "reset": 1,
+            "sdg": 2964,
+            "t": 5928,
+            "tdg": 5928,
+            "x": 401
+          },
+          "all_one_feedback_extra_counts": {
+            "cx": 2964,
+            "h": 5928,
+            "x": 2964
+          },
+          "all_zero_feedback_primitive_count": 44114,
+          "all_one_feedback_primitive_count": 55970,
+          "literal_t_or_tdg": 11856,
+          "unlowered_phase_operations": 6,
+          "classical_feedback_decisions": 2964,
+          "dependency_depth_all_zero_feedback": 38575,
+          "dependency_depth_all_one_feedback": 50477,
+          "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+          "included": [
+            "literal gates",
+            "explicit preparation/reset",
+            "measured helper",
+            "conditional correction/clear",
+            "requested final readout"
+          ],
+          "excluded_physical": [
+            "code distance/factories",
+            "routing/decoder",
+            "calibrated measurement/reset/feedback faults and time",
+            "P/CP synthesis if present"
+          ],
+          "physical_estimation_status": "not computed"
+        },
+        "reference_scope": "independent classical order/Fourier distribution after circuit construction",
+        "physical_estimation_status": "not computed; QFT phase synthesis and feedback costs remain separate"
+      },
+      "physical_estimate": "not computed; P/CP synthesis and full controller schedule remain unpriced"
+    }
+  ],
+  "generated_only": [
+    {
+      "task": "addition",
+      "width": 24,
+      "method": "static",
+      "counts": {
+        "logical_qubits": 49,
+        "classical_bits": 49,
+        "unconditional_primitive_counts": {
+          "cx": 384,
+          "h": 96,
+          "measure": 49,
+          "reset": 49,
+          "t": 192,
+          "tdg": 144,
+          "x": 6
+        },
+        "all_one_feedback_extra_counts": {},
+        "all_zero_feedback_primitive_count": 920,
+        "all_one_feedback_primitive_count": 920,
+        "literal_t_or_tdg": 336,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 0,
+        "dependency_depth_all_zero_feedback": 580,
+        "dependency_depth_all_one_feedback": 580,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validated_quantum_simulation": false
+    },
+    {
+      "task": "order",
+      "modulus": 4093,
+      "base": 2,
+      "phase_bits": 1,
+      "method": "static",
+      "counts": {
+        "logical_qubits": 41,
+        "classical_bits": 1,
+        "unconditional_primitive_counts": {
+          "cx": 28632,
+          "h": 7266,
+          "measure": 1,
+          "t": 14528,
+          "tdg": 10896,
+          "x": 193
+        },
+        "all_one_feedback_extra_counts": {},
+        "all_zero_feedback_primitive_count": 61516,
+        "all_one_feedback_primitive_count": 61516,
+        "literal_t_or_tdg": 25424,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 0,
+        "dependency_depth_all_zero_feedback": 37770,
+        "dependency_depth_all_one_feedback": 37770,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validated_quantum_simulation": false
+    },
+    {
+      "task": "addition",
+      "width": 24,
+      "method": "measured",
+      "counts": {
+        "logical_qubits": 50,
+        "classical_bits": 50,
+        "unconditional_primitive_counts": {
+          "cx": 288,
+          "h": 144,
+          "measure": 97,
+          "reset": 50,
+          "sdg": 48,
+          "t": 96,
+          "tdg": 96,
+          "x": 6
+        },
+        "all_one_feedback_extra_counts": {
+          "cx": 48,
+          "h": 96,
+          "x": 48
+        },
+        "all_zero_feedback_primitive_count": 825,
+        "all_one_feedback_primitive_count": 1017,
+        "literal_t_or_tdg": 192,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 48,
+        "dependency_depth_all_zero_feedback": 627,
+        "dependency_depth_all_one_feedback": 820,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validated_quantum_simulation": false
+    },
+    {
+      "task": "order",
+      "modulus": 4093,
+      "base": 2,
+      "phase_bits": 1,
+      "method": "measured",
+      "counts": {
+        "logical_qubits": 42,
+        "classical_bits": 2,
+        "unconditional_primitive_counts": {
+          "cx": 21368,
+          "h": 10898,
+          "measure": 3633,
+          "reset": 1,
+          "sdg": 3632,
+          "t": 7264,
+          "tdg": 7264,
+          "x": 193
+        },
+        "all_one_feedback_extra_counts": {
+          "cx": 3632,
+          "h": 7264,
+          "x": 3632
+        },
+        "all_zero_feedback_primitive_count": 54253,
+        "all_one_feedback_primitive_count": 68781,
+        "literal_t_or_tdg": 14528,
+        "unlowered_phase_operations": 0,
+        "classical_feedback_decisions": 3632,
+        "dependency_depth_all_zero_feedback": 47242,
+        "dependency_depth_all_one_feedback": 61794,
+        "depth_scope": "conservative serial source/decision dependency depth, not an optimized parallel DAG or physical cycles",
+        "included": [
+          "literal gates",
+          "explicit preparation/reset",
+          "measured helper",
+          "conditional correction/clear",
+          "requested final readout"
+        ],
+        "excluded_physical": [
+          "code distance/factories",
+          "routing/decoder",
+          "calibrated measurement/reset/feedback faults and time",
+          "P/CP synthesis if present"
+        ],
+        "physical_estimation_status": "not computed"
+      },
+      "validated_quantum_simulation": false
+    }
+  ],
+  "generation_and_checks_wall_seconds": 14.665868833006243,
+  "source_commit": "c26a06207a70c4eaff235cfeba15321c9889c7c5",
+  "source_commit_scope": "actual own Git root when present; exact source hashes are authoritative, no borrowed ancestor identity",
+  "source_sha256": {
+    "scripts/generate_shor_measured_and.py": {
+      "bytes": 18651,
+      "sha256": "391fb9e1ea2256f1e29906cc88b02f3c3f492cab5096610c3f1396ff23dd4a06"
+    },
+    "src/openquantum/shor_measured_and.py": {
+      "bytes": 42106,
+      "sha256": "9149bee02a0cdef1d3dde60e4aea21f1f909b257a0e2885266172b00ad9e05fd"
+    },
+    "src/openquantum/shor.py": {
+      "bytes": 13356,
+      "sha256": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3"
+    },
+    "src/openquantum/shor_ripple.py": {
+      "bytes": 15354,
+      "sha256": "fb3acf345459446d20109d698efefdabd8f906d5ebaf48c8febd1a7a3bfcb282"
+    },
+    "src/openquantum/__init__.py": {
+      "bytes": 401,
+      "sha256": "af9ea652a9f24962c7808f9155735420b5444f530a0431951b87922ffd9f9663"
+    },
+    "src/openquantum/grover.py": {
+      "bytes": 4377,
+      "sha256": "cd637cd2373c79bc2ad97566f83d70c2953034ff7ded2a37805818e7d942bf21"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "LICENSE": {
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "device": "CPU",
+    "seed": null,
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "sparse_angle_scope": "intended dyadic pi/8 logical angles; exact ring computation is not a binary-angle realization or proof-kernel certificate",
+  "circuit_materialization_and_simulation_separate": true,
+  "excluded": [
+    "physical code/factories/runtime/fault success",
+    "controller/reset/readout hardware calibration",
+    "generic factoring success and classical processing time",
+    "P/CP synthesis in order circuits",
+    "optimized 4w-4 Gidney adder",
+    "mechanized proof and uniform floating enclosure"
+  ]
+}

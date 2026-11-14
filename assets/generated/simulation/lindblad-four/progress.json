@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "phase": "completed_bounded_generation",
+  "execution": {
+    "run_caps": {
+      "physical_cases": 1,
+      "prepared_synthesis_stages": 1,
+      "native_rotation_synthesis_attempts_upper_bound": 23632,
+      "native_rotation_synthesis_attempts_scope": "actual new-compiler gridsynth_unitary calls including up to four attempts per unique bound rotation target; at most 5908 targets",
+      "physical_profiles": 2,
+      "source_instructions": 20000,
+      "routed_instructions": 100000,
+      "synthesized_instructions": 2000000,
+      "routed_and_synthesized_instructions": 2000000,
+      "density_validation_instructions": 2000000,
+      "density_wires": 8,
+      "density_matrix_entries": 65536,
+      "density_matrix_bytes": 1048576,
+      "density_storage_scope": "largest retained eight-wire complex128 density matrix; not a measured process peak-memory claim",
+      "unused_family_ensemble_branches": 256,
+      "family_diagnostic_seconds": 180,
+      "source_preflight_seconds": 180,
+      "diagnostic_aggregate_seconds": 180,
+      "prepare_seconds": 1800,
+      "physical_seconds_per_profile": 180,
+      "parent_seconds": 2400,
+      "factory_queries_per_profile": 24,
+      "surface_code_queries_per_profile": 24,
+      "factory_candidates_per_query": 1000,
+      "factory_candidates_per_profile": 24000,
+      "managed_json_qasm_bytes": 33554432,
+      "private_checkpoint_bytes": 268435456,
+      "nominal_state_trace_guard": 1e-08,
+      "nominal_density_comparison_guard": 1e-10,
+      "query_scope": "top-level instrument adapter loop over odd distances 3..49: one factory and one surface-code query per distance; internal native factory construction is timeout-bounded and not included in these top-level query counts; no candidate truncation"
+    },
+    "stage_status": {
+      "source_preflight": {
+        "status": "completed",
+        "wall_seconds": 39.484447708000516,
+        "runtime_source_validation": {
+          "import_mode": "package",
+          "actual_module_paths_verified": true,
+          "source_sha256": {
+            "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+            "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+            "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+            "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+            "bounded_density_instrument.py": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517",
+            "lindblad_four_density.py": "83c4245acc7a243fdd8a227b937fdbda2ccaf7e8e7498db3c9da4d73aa23fcf5",
+            "lindblad_four_compile.py": "8036bd1e5e9c1ba89050c025224da80883c4af0296f915e7a531d03193290249",
+            "lindblad_four_physical.py": "636c95a24eeb10d0d6ab01a46125adc9b4897cbaa7f555e664f57b05e15fa452"
+          },
+          "bytecode_writes_disabled": true,
+          "bytecode_prefix_configured": true,
+          "import_policy": "fresh private bytecode prefix; bytecode writes disabled; no environment mutation"
+        },
+        "source_identity": "fd35742ea443dbc9e418d087a601aa481f13f852278c08eec96b0698c9b5fedb",
+        "source_schema": "literal-n4-density-v1",
+        "source_record_sha256": "a70329ebb4f37ac3144ce73aee99c1249a8b653b2112a03ed1f5a582a152045d",
+        "invocation_id": "7f5071f7941ffb59a5f2c2fca97d6b13"
+      },
+      "family": {
+        "status": "completed",
+        "wall_seconds": 0.10637337500156718,
+        "runtime_source_validation": {
+          "import_mode": "package",
+          "actual_module_paths_verified": true,
+          "source_sha256": {
+            "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+            "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+            "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+            "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+            "bounded_density_instrument.py": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517",
+            "lindblad_four_density.py": "83c4245acc7a243fdd8a227b937fdbda2ccaf7e8e7498db3c9da4d73aa23fcf5",
+            "lindblad_four_compile.py": "8036bd1e5e9c1ba89050c025224da80883c4af0296f915e7a531d03193290249",
+            "lindblad_four_physical.py": "636c95a24eeb10d0d6ab01a46125adc9b4897cbaa7f555e664f57b05e15fa452"
+          },
+          "bytecode_writes_disabled": true,
+          "bytecode_prefix_configured": true,
+          "import_policy": "fresh private bytecode prefix; bytecode writes disabled; no environment mutation"
+        }
+      },
+      "prepare": {
+        "status": "completed",
+        "wall_seconds": 90.25293999999849,
+        "runtime_source_validation": {
+          "import_mode": "package",
+          "actual_module_paths_verified": true,
+          "source_sha256": {
+            "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+            "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+            "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+            "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+            "bounded_density_instrument.py": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517",
+            "lindblad_four_density.py": "83c4245acc7a243fdd8a227b937fdbda2ccaf7e8e7498db3c9da4d73aa23fcf5",
+            "lindblad_four_compile.py": "8036bd1e5e9c1ba89050c025224da80883c4af0296f915e7a531d03193290249",
+            "lindblad_four_physical.py": "636c95a24eeb10d0d6ab01a46125adc9b4897cbaa7f555e664f57b05e15fa452"
+          },
+          "bytecode_writes_disabled": true,
+          "bytecode_prefix_configured": true,
+          "import_policy": "fresh private bytecode prefix; bytecode writes disabled; no environment mutation"
+        },
+        "prepared_checkpoint_sha256": "b3bd68e51a41bb4043592db8e28590973ae0897e44e61b64de4bb44598419ef7",
+        "checkpoint_schema": "literal-n4-density-v1",
+        "checkpoint_identity": "fd35742ea443dbc9e418d087a601aa481f13f852278c08eec96b0698c9b5fedb",
+        "native_rotation_synthesis_attempts": 8,
+        "native_rotation_synthesis_attempts_upper_bound": 23632
+      },
+      "p1e-03": {
+        "status": "completed",
+        "wall_seconds": 5.477400582996779,
+        "runtime_source_validation": {
+          "import_mode": "package",
+          "actual_module_paths_verified": true,
+          "source_sha256": {
+            "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+            "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+            "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+            "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+            "bounded_density_instrument.py": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517",
+            "lindblad_four_density.py": "83c4245acc7a243fdd8a227b937fdbda2ccaf7e8e7498db3c9da4d73aa23fcf5",
+            "lindblad_four_compile.py": "8036bd1e5e9c1ba89050c025224da80883c4af0296f915e7a531d03193290249",
+            "lindblad_four_physical.py": "636c95a24eeb10d0d6ab01a46125adc9b4897cbaa7f555e664f57b05e15fa452"
+          },
+          "bytecode_writes_disabled": true,
+          "bytecode_prefix_configured": true,
+          "import_policy": "fresh private bytecode prefix; bytecode writes disabled; no environment mutation"
+        }
+      },
+      "p1e-04": {
+        "status": "completed",
+        "wall_seconds": 5.289767750000465,
+        "runtime_source_validation": {
+          "import_mode": "package",
+          "actual_module_paths_verified": true,
+          "source_sha256": {
+            "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+            "lindblad_workload.py": "f6edf708b463018b699fb37c11a2bd89f6d8d6bc214e738377004b45c745d577",
+            "two_spin_lindblad.py": "06e8da24dadefaccbb0d28f540995eaf7f681ee772962bae35a79dddea06ef34",
+            "open_systems.py": "30145a6206ba2616f9604dc15972a588821c44819408d6770193a63ccff41692",
+            "bounded_density_instrument.py": "396b1d392d151c5211dc3b46fd2202ad3a9543e57485e8d3635bef5f7bac7517",
+            "lindblad_four_density.py": "83c4245acc7a243fdd8a227b937fdbda2ccaf7e8e7498db3c9da4d73aa23fcf5",
+            "lindblad_four_compile.py": "8036bd1e5e9c1ba89050c025224da80883c4af0296f915e7a531d03193290249",
+            "lindblad_four_physical.py": "636c95a24eeb10d0d6ab01a46125adc9b4897cbaa7f555e664f57b05e15fa452"
+          },
+          "bytecode_writes_disabled": true,
+          "bytecode_prefix_configured": true,
+          "import_policy": "fresh private bytecode prefix; bytecode writes disabled; no environment mutation"
+        }
+      }
+    },
+    "repeated_trials_executed": false,
+    "whole_family_physical_completed": false,
+    "diagnostic_aggregate_wall_seconds": 45.154276042001584
+  },
+  "wall_seconds": 165.70573137500105
+}

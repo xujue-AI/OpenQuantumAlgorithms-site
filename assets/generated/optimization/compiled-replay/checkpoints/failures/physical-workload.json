@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "recipe_sha256": "6f421cfef08d7b552433a9360ce5091f5fb4c8dc21f4ba0b14143da4f6ddd343",
+    "selected_transcript_sha256": "4a988dcc5651c15d994a256f01982a536227ba92549bf1e08cad4c3549b529ef",
+    "source_sha256": {
+      "optimization_compiled.py": "5802330c76ea71ec46fcd207018b805a2c1da29a91f9b1ee6deb5defcd36f5fc",
+      "generate_optimization_compiled.py": "6dafe1aa49c656a732b2d534cefb7aee99a68b215dc3322c769a20bf358e0ecb",
+      "instrument_resources.py": "fb8893b8db2ebfe142168e893c630cf5c00aa51d1772fc2cf0b9e9024ce0d863",
+      "parent_optimization.py": "a617b5e8d43b648427e5ceaa5e35d3f50ea14c02464465084f23f457ffb5855d",
+      "parent_generate_optimization_diagnostics.py": "0c0f3ff0f177dca99a00cc611261c3b6c82ce39be251e8d3a54026b0f5346f3e",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+      "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
+      "references.bib": "ed3876e115a887fcc4022d42902b1522d25c2c5b0fe52b9a542d13eed6d39a8b"
+    }
+  },
+  "phase": "physical",
+  "key": "workload",
+  "status": "failed_bounded_phase_incomplete",
+  "error_type": "BoundedWorkerFailure",
+  "failure": {
+    "status": "failed_bounded_phase_incomplete",
+    "error_type": "DecodedByteCapOrSerializationFailure",
+    "error_message": "Worker result exceeds its frozen decoded-byte cap",
+    "decoded_byte_cap": 67108864,
+    "observed_query_counters": null,
+    "physical_query_audit": {
+      "status": "complete",
+      "caps": {
+        "top_level_calls": 64,
+        "factory_frontier_queries": 1536,
+        "factory_frontier_candidates": 52224,
+        "factory_pipeline_candidates": 52224,
+        "native_trace_queries": 52224,
+        "wall_seconds": 120.0
+      },
+      "counts": {
+        "top_level_calls": 49,
+        "factory_frontier_queries": 1176,
+        "factory_pipeline_candidates": 816,
+        "factory_frontier_candidates": 12348,
+        "native_trace_queries": 6174
+      },
+      "wall_seconds": 4.8014029580008355
+    },
+    "complete_query_records_omitted_due_to_serialization_limit": true,
+    "worker_wall_seconds": 7.368026625001221,
+    "worker_process_cpu_seconds": 5.607165,
+    "partial_native_work_unknown": false,
+    "automatic_retry": false
+  },
+  "raw_process_logs_public": false,
+  "automatic_retry": false,
+  "scope": "completed checkpoints retained; unknown partial native work cannot reset the frozen cap"
+}

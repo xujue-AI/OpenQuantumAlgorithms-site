@@ -1,0 +1,60 @@
+{
+  "schema": "openquantum-bayesian-qpe-study-v1",
+  "status": "generated_only_unvalidated_at_requested_size",
+  "source": {
+    "file": "source-only.qasm",
+    "logical_qubits": 33,
+    "classical_bits": 1,
+    "source_gate_counts": {
+      "p": 12289,
+      "cx": 8192,
+      "reset": 33,
+      "x": 32,
+      "h": 2,
+      "measure": 1
+    },
+    "source_dependency_depth": 16389,
+    "global_phase_radians": 0.0,
+    "qasm_scope": "complete fresh measured trial; omitted whole-circuit global phase is readout-irrelevant, not a controlled-oracle specification"
+  },
+  "lowered": {
+    "file": "source-only-lowered.qasm",
+    "logical_qubits": 33,
+    "classical_bits": 1,
+    "source_gate_counts": {
+      "rz": 12289,
+      "cx": 8192,
+      "reset": 33,
+      "x": 32,
+      "h": 2,
+      "measure": 1
+    },
+    "source_dependency_depth": 16389,
+    "global_phase_radians": 2.984513020910587,
+    "qasm_scope": "complete fresh measured trial; omitted whole-circuit global phase is readout-irrelevant, not a controlled-oracle specification"
+  },
+  "provenance": {
+    "source_commit_at_generation": null,
+    "source_sha256": {
+      "bayesian_qpe.py": "019345eac507bb2c6d3190fbfb622d11294f0aaffded03015399d9eb5297ce97",
+      "generate_bayesian_qpe.py": "7664935974c74ac848a025ed8d85d3f685dbdd2a69ffb88a24556ce215149ef7",
+      "requirements-lock.txt": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
+      "LICENSE.txt": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "python": "3.12.14",
+    "device": "CPU",
+    "packages": {
+      "qiskit": "2.6.2",
+      "numpy": "2.5.4",
+      "matplotlib": "3.11.2"
+    },
+    "hardware_execution": false,
+    "native_calls": 0,
+    "synthesis_calls": 0
+  },
+  "nominal_phase": 0.3,
+  "power": 128,
+  "inference_performed": false,
+  "simulation_performed": false,
+  "physical_estimate_performed": false
+}

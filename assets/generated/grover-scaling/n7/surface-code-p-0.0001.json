@@ -1,5 +1,5 @@
 {
-  "classical_estimator_wall_time_s": 0.23114217200003395,
+  "classical_estimator_wall_time_s": 0.2824824709996392,
   "estimate": {
     "audited_source_commit": "81de0d2e5347e1e9f10e05066320fffdb3b7058c",
     "budget": {
@@ -72,7 +72,7 @@
         "model_properties": {
           "ALGORITHM_COMPUTE_QUBITS": 7,
           "ALGORITHM_MEMORY_QUBITS": 0,
-          "EVALUATION_TIME": 16662580,
+          "EVALUATION_TIME": 21607869,
           "LOGICAL_COMPUTE_QUBITS": 23,
           "LOGICAL_MEMORY_QUBITS": 0,
           "NUM_TS_PER_ROTATION": 18,
@@ -118,7 +118,7 @@
         "model_properties": {
           "ALGORITHM_COMPUTE_QUBITS": 7,
           "ALGORITHM_MEMORY_QUBITS": 0,
-          "EVALUATION_TIME": 16662580,
+          "EVALUATION_TIME": 21607869,
           "LOGICAL_COMPUTE_QUBITS": 23,
           "LOGICAL_MEMORY_QUBITS": 0,
           "NUM_TS_PER_ROTATION": 18,
@@ -164,7 +164,7 @@
         "model_properties": {
           "ALGORITHM_COMPUTE_QUBITS": 7,
           "ALGORITHM_MEMORY_QUBITS": 0,
-          "EVALUATION_TIME": 16662580,
+          "EVALUATION_TIME": 21607869,
           "LOGICAL_COMPUTE_QUBITS": 23,
           "LOGICAL_MEMORY_QUBITS": 0,
           "NUM_TS_PER_ROTATION": 18,
@@ -210,7 +210,7 @@
         "model_properties": {
           "ALGORITHM_COMPUTE_QUBITS": 7,
           "ALGORITHM_MEMORY_QUBITS": 0,
-          "EVALUATION_TIME": 16662580,
+          "EVALUATION_TIME": 21607869,
           "LOGICAL_COMPUTE_QUBITS": 23,
           "LOGICAL_MEMORY_QUBITS": 0,
           "NUM_TS_PER_ROTATION": 18,
@@ -256,7 +256,7 @@
         "model_properties": {
           "ALGORITHM_COMPUTE_QUBITS": 7,
           "ALGORITHM_MEMORY_QUBITS": 0,
-          "EVALUATION_TIME": 16662580,
+          "EVALUATION_TIME": 21607869,
           "LOGICAL_COMPUTE_QUBITS": 23,
           "LOGICAL_MEMORY_QUBITS": 0,
           "NUM_TS_PER_ROTATION": 18,
@@ -317,7 +317,24 @@
       "model_error_per_rotation": 3.441343562207328e-08,
       "num_arbitrary_rotations": 1392
     },
-    "synthesized_application_trace": "@compute_qubits(23)\n@base_error(0.000047903502385926004)\n@resource_state(T, 25698)\n{\n  repeat 14983 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)\n  }\n}\n"
+    "synthesized_application_trace": "@compute_qubits(23)\n@base_error(0.000047903502385926004)\n@resource_state(T, 25698)\n{\n  repeat 14983 {\n    MULTI_PAULI_MEAS(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22)\n  }\n}\n",
+    "transpiler": {
+      "basis_gates": [
+        "h",
+        "x",
+        "z",
+        "s",
+        "sdg",
+        "t",
+        "tdg",
+        "rx",
+        "ry",
+        "rz",
+        "cx"
+      ],
+      "optimization_level": 1,
+      "seed_transpiler": 7
+    }
   },
   "profile": {
     "factory_model": "RoundBasedFactory",
