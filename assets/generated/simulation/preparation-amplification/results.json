@@ -14,7 +14,7 @@
     "signed_amplification_factor": 1.1256390450514322,
     "expected_global_sign": 1,
     "model_success_probability_from_actual_baseline_p": 0.593733475378643,
-    "actual_acceptance_probability": 0.593733475378641,
+    "actual_acceptance_probability": 0.5937334753786411,
     "raw_signed_accepted_vector_error": 1.2803144976877373e-15,
     "baseline_gibbs_trace_distance": 3.933637618545911e-07,
     "conditional_state_scope": "before final system readout; reference traced out without conditioning",
@@ -44,12 +44,12 @@
     ],
     "actual_density_imag": [
       [
-        0.0,
-        -3.797981606267656e-18
+        1.209386015857778e-34,
+        -3.797981606267655e-18
       ],
       [
-        3.797981606267656e-18,
-        0.0
+        3.797981606267658e-18,
+        2.2106156065382148e-33
       ]
     ],
     "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -113,12 +113,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
-            0.0
+            1.3594201973865794e-34,
+            1.2090589282493762e-33
           ],
           [
-            0.0,
-            0.0
+            1.548497198255229e-33,
+            2.0559353488669715e-34
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -165,7 +165,7 @@
         "signed_amplification_factor": 1.1256390450514322,
         "expected_global_sign": 1,
         "model_success_probability_from_actual_baseline_p": 0.593733475378643,
-        "actual_acceptance_probability": 0.593733475378641,
+        "actual_acceptance_probability": 0.5937334753786411,
         "raw_signed_accepted_vector_error": 1.2803144976877373e-15,
         "baseline_gibbs_trace_distance": 3.933637618545911e-07,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
@@ -195,12 +195,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
-            -3.797981606267656e-18
+            1.209386015857778e-34,
+            -3.797981606267655e-18
           ],
           [
-            3.797981606267656e-18,
-            0.0
+            3.797981606267658e-18,
+            2.2106156065382148e-33
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -247,7 +247,7 @@
         "signed_amplification_factor": -0.8585757853071321,
         "expected_global_sign": -1,
         "model_success_probability_from_actual_baseline_p": 0.34542240931550555,
-        "actual_acceptance_probability": 0.34542240931550505,
+        "actual_acceptance_probability": 0.3454224093155051,
         "raw_signed_accepted_vector_error": 4.655986795055661e-16,
         "baseline_gibbs_trace_distance": 3.933637618545911e-07,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
@@ -277,12 +277,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
-            -3.8240974739069665e-18
+            -5.51117776241392e-33,
+            -3.824097473906968e-18
           ],
           [
-            3.8240974739069665e-18,
-            0.0
+            3.824097473906966e-18,
+            -1.0348202964832531e-32
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -341,8 +341,8 @@
         "acceptance_certified": false,
         "phase_invariant_purification_error": 3.882843720692121e-16,
         "signed_normalized_purification_error": 4.110230160367447e-16,
-        "reduced_state_trace_distance_from_baseline": 2.516576488087631e-16,
-        "reduced_state_trace_distance_from_polynomial": 2.103921713242228e-16,
+        "reduced_state_trace_distance_from_baseline": 2.5165764880876305e-16,
+        "reduced_state_trace_distance_from_polynomial": 2.1039217132422275e-16,
         "gibbs_trace_distance": 3.9336376163134877e-07,
         "actual_energy": -0.5170159808300969,
         "exact_gibbs_energy": -0.517016548147382,
@@ -359,12 +359,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
-            1.2691336732330557e-17
+            -7.140027175058542e-35,
+            1.2691336732330552e-17
           ],
           [
-            -1.2691336732330557e-17,
-            0.0
+            -1.2691336732330559e-17,
+            4.8991540662404976e-33
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -411,7 +411,7 @@
         "signed_amplification_factor": 0.7035988061931622,
         "expected_global_sign": 1,
         "model_success_probability_from_actual_baseline_p": 0.23197619751814819,
-        "actual_acceptance_probability": 0.23197619751814802,
+        "actual_acceptance_probability": 0.231976197518148,
         "raw_signed_accepted_vector_error": 4.525810095035639e-16,
         "baseline_gibbs_trace_distance": 3.933637618545911e-07,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
@@ -423,7 +423,7 @@
         "acceptance_certified": false,
         "phase_invariant_purification_error": 7.6627577944239285e-16,
         "signed_normalized_purification_error": 8.328870815185305e-16,
-        "reduced_state_trace_distance_from_baseline": 5.460727147775402e-16,
+        "reduced_state_trace_distance_from_baseline": 5.460727147775401e-16,
         "reduced_state_trace_distance_from_polynomial": 6.019376022251872e-16,
         "gibbs_trace_distance": 3.933637623703579e-07,
         "actual_energy": -0.5170159808300959,
@@ -441,12 +441,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
+            1.679016466360553e-34,
             2.884140099099656e-17
           ],
           [
-            -2.884140099099656e-17,
-            0.0
+            -2.884140099099655e-17,
+            1.7399784409110259e-32
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -489,11 +489,11 @@
         "n_reference": 1,
         "n_index": 2,
         "total_qubits": 4,
-        "baseline_acceptance_probability": 0.40083329684249275,
+        "baseline_acceptance_probability": 0.4008332968424927,
         "signed_amplification_factor": 1.0,
         "expected_global_sign": 1,
-        "model_success_probability_from_actual_baseline_p": 0.40083329684249275,
-        "actual_acceptance_probability": 0.40083329684249275,
+        "model_success_probability_from_actual_baseline_p": 0.4008332968424927,
+        "actual_acceptance_probability": 0.4008332968424927,
         "raw_signed_accepted_vector_error": 0.0,
         "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
@@ -523,12 +523,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
-            3.0814879110195774e-33
+            2.761901838677801e-34,
+            -9.347503462756223e-34
           ],
           [
-            -3.0814879110195774e-33,
-            0.0
+            -3.082929985152395e-33,
+            2.771187021221411e-34
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -571,12 +571,12 @@
         "n_reference": 1,
         "n_index": 2,
         "total_qubits": 4,
-        "baseline_acceptance_probability": 0.40083329684249275,
-        "signed_amplification_factor": 1.3966668126300288,
+        "baseline_acceptance_probability": 0.4008332968424927,
+        "signed_amplification_factor": 1.3966668126300295,
         "expected_global_sign": 1,
-        "model_success_probability_from_actual_baseline_p": 0.781896768173548,
+        "model_success_probability_from_actual_baseline_p": 0.7818967681735486,
         "actual_acceptance_probability": 0.7818967681735449,
-        "raw_signed_accepted_vector_error": 1.6374551299050684e-15,
+        "raw_signed_accepted_vector_error": 2.1229792485400143e-15,
         "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
         "conditional_state_defined": true,
@@ -588,7 +588,7 @@
         "phase_invariant_purification_error": 2.5759871563256663e-16,
         "signed_normalized_purification_error": 3.0401402513068694e-16,
         "reduced_state_trace_distance_from_baseline": 2.566310627127044e-16,
-        "reduced_state_trace_distance_from_polynomial": 1.0288495004196849e-16,
+        "reduced_state_trace_distance_from_polynomial": 1.0288495004196848e-16,
         "gibbs_trace_distance": 4.878972625009815e-06,
         "actual_energy": -0.6447692556988338,
         "exact_gibbs_energy": -0.6447762922532222,
@@ -605,12 +605,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
+            5.923722854200144e-36,
             5.88164275598712e-17
           ],
           [
             -5.88164275598712e-17,
-            0.0
+            -6.9130843266982945e-34
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -653,12 +653,12 @@
         "n_reference": 1,
         "n_index": 2,
         "total_qubits": 4,
-        "baseline_acceptance_probability": 0.40083329684249275,
-        "signed_amplification_factor": -0.4459886271279045,
+        "baseline_acceptance_probability": 0.4008332968424927,
+        "signed_amplification_factor": -0.44598862712790394,
         "expected_global_sign": -1,
-        "model_success_probability_from_actual_baseline_p": 0.07972808983233755,
+        "model_success_probability_from_actual_baseline_p": 0.07972808983233733,
         "actual_acceptance_probability": 0.0797280898323377,
-        "raw_signed_accepted_vector_error": 3.4826032172277455e-16,
+        "raw_signed_accepted_vector_error": 6.805422961250717e-16,
         "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
         "conditional_state_defined": true,
@@ -687,12 +687,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
+            1.0975677492928047e-33,
             -1.25506758198817e-16
           ],
           [
-            1.25506758198817e-16,
-            0.0
+            1.2550675819881698e-16,
+            -4.4853767375679044e-33
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -735,12 +735,12 @@
         "n_reference": 1,
         "n_index": 2,
         "total_qubits": 4,
-        "baseline_acceptance_probability": 0.40083329684249275,
-        "signed_amplification_factor": -1.573575699822097,
+        "baseline_acceptance_probability": 0.4008332968424927,
+        "signed_amplification_factor": -1.5735756998220976,
         "expected_global_sign": -1,
-        "model_success_probability_from_actual_baseline_p": 0.9925195532743523,
+        "model_success_probability_from_actual_baseline_p": 0.9925195532743527,
         "actual_acceptance_probability": 0.9925195532743432,
-        "raw_signed_accepted_vector_error": 4.510425071923676e-15,
+        "raw_signed_accepted_vector_error": 4.767494727062302e-15,
         "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
         "conditional_state_defined": true,
@@ -752,7 +752,7 @@
         "phase_invariant_purification_error": 2.254490801103593e-16,
         "signed_normalized_purification_error": 2.723269239594986e-16,
         "reduced_state_trace_distance_from_baseline": 1.2842674356932937e-16,
-        "reduced_state_trace_distance_from_polynomial": 2.59124267488027e-16,
+        "reduced_state_trace_distance_from_polynomial": 2.5912426748802704e-16,
         "gibbs_trace_distance": 4.87897262514453e-06,
         "actual_energy": -0.6447692556988336,
         "exact_gibbs_energy": -0.6447762922532222,
@@ -769,12 +769,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
-            -6.304667973260173e-17
+            -2.9771550786612406e-34,
+            -6.304667973260172e-17
           ],
           [
-            6.304667973260173e-17,
-            0.0
+            6.304667973260172e-17,
+            4.1301165006494676e-33
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -817,12 +817,12 @@
         "n_reference": 1,
         "n_index": 2,
         "total_qubits": 4,
-        "baseline_acceptance_probability": 0.40083329684249275,
-        "signed_amplification_factor": -0.17819663015259385,
+        "baseline_acceptance_probability": 0.4008332968424927,
+        "signed_amplification_factor": -0.17819663015259526,
         "expected_global_sign": -1,
-        "model_success_probability_from_actual_baseline_p": 0.012728076139529336,
+        "model_success_probability_from_actual_baseline_p": 0.012728076139529537,
         "actual_acceptance_probability": 0.012728076139528683,
-        "raw_signed_accepted_vector_error": 2.9037531663958426e-15,
+        "raw_signed_accepted_vector_error": 3.798642126212306e-15,
         "baseline_gibbs_trace_distance": 4.8789726252176615e-06,
         "conditional_state_scope": "before final system readout; reference traced out without conditioning",
         "conditional_state_defined": true,
@@ -851,12 +851,12 @@
         ],
         "actual_density_imag": [
           [
-            0.0,
+            2.581512545693447e-33,
             -5.582660378508057e-16
           ],
           [
             5.582660378508057e-16,
-            0.0
+            -4.3961985840012775e-33
           ]
         ],
         "round_selection_scope": "chosen fixed integer rounds; baseline p acquired only by bounded classical check, no general probability-learning routine"
@@ -982,8 +982,8 @@
   "direction_scope": "signed raw branch checked before phase-invariant purification/reduced-state comparisons; negative accepted factors change only global sign",
   "round_selection_scope": "fixed integer rounds selected from tiny classical checks; no general probability-learning/adaptive protocol",
   "classical_preprocessing": {
-    "access_construction_wall_seconds": 0.00300073100015652,
-    "full_circuit_materialization_lowering_wall_seconds": 0.35806535000028816,
+    "access_construction_wall_seconds": 0.0022551630001999,
+    "full_circuit_materialization_lowering_wall_seconds": 0.26217452999981106,
     "aggregation": "bounded algebraic Pauli aggregation may be exponential; no eigenvector or matrix gate loading"
   },
   "sampling_performed": false,
@@ -996,7 +996,7 @@
       "lcu.py": "aceb7c03b49e9b65ed71313ad6b283f2d143ac1d2fceceea1ddfa94dc44fffe6",
       "generate_simulation_preparation_amplification.py": "7301dc43a875e994f68b34d16bd758a11ed4ad3e7172fde6cee60884e9ecbf5f"
     },
-    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
+    "source_revision_at_generation": "f271129d8bd268bee1dfcdc435f61075dcf2c008",
     "revision_note": "hashes identify working-tree source bytes if generation precedes commit",
     "python": "3.12.14",
     "packages": {

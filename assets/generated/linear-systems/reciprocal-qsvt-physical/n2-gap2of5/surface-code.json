@@ -23,7 +23,7 @@
       "cx"
     ]
   },
-  "qasm_sha256": "69cc88771866150d3c8331640ef1330ebf2161f030cdbcd19bbab22eb081ee23",
+  "qasm_sha256": "085636fc0dbce09b2de5e3d475a4144f2bb9540f6246f06fe7fb412b0bf91575",
   "source_gate_counts": {
     "cx": 2231,
     "rz": 2178,
@@ -122,7 +122,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 21067073,
+        "EVALUATION_TIME": 12897652,
         "NUM_TS_PER_ROTATION": 21,
         "ALGORITHM_COMPUTE_QUBITS": 5,
         "PHYSICAL_COMPUTE_QUBITS": 22482,
@@ -152,7 +152,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 21067073,
+        "EVALUATION_TIME": 12897652,
         "NUM_TS_PER_ROTATION": 21,
         "ALGORITHM_COMPUTE_QUBITS": 5,
         "PHYSICAL_COMPUTE_QUBITS": 19026,
@@ -182,7 +182,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 21067073,
+        "EVALUATION_TIME": 12897652,
         "NUM_TS_PER_ROTATION": 21,
         "ALGORITHM_COMPUTE_QUBITS": 5,
         "PHYSICAL_COMPUTE_QUBITS": 15858,
@@ -212,7 +212,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 21067073,
+        "EVALUATION_TIME": 12897652,
         "NUM_TS_PER_ROTATION": 21,
         "ALGORITHM_COMPUTE_QUBITS": 5,
         "PHYSICAL_COMPUTE_QUBITS": 12978,
@@ -242,7 +242,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 21067073,
+        "EVALUATION_TIME": 12897652,
         "NUM_TS_PER_ROTATION": 21,
         "ALGORITHM_COMPUTE_QUBITS": 5,
         "PHYSICAL_COMPUTE_QUBITS": 10386,
@@ -272,7 +272,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 21067073,
+        "EVALUATION_TIME": 12897652,
         "NUM_TS_PER_ROTATION": 21,
         "ALGORITHM_COMPUTE_QUBITS": 5,
         "PHYSICAL_COMPUTE_QUBITS": 8082,
@@ -302,7 +302,7 @@
       },
       "model_properties": {
         "LOGICAL_MEMORY_QUBITS": 0,
-        "EVALUATION_TIME": 21067073,
+        "EVALUATION_TIME": 12897652,
         "NUM_TS_PER_ROTATION": 21,
         "ALGORITHM_COMPUTE_QUBITS": 5,
         "PHYSICAL_COMPUTE_QUBITS": 6066,
@@ -315,8 +315,8 @@
     }
   ],
   "spacetime_metric_scope": "peak footprint times capped serial duration, a proxy; not integrated time-varying qubit occupancy",
-  "native_query_seconds_CPU": 0.645581065999977,
-  "complete_trial_qasm_sha256": "69cc88771866150d3c8331640ef1330ebf2161f030cdbcd19bbab22eb081ee23",
+  "native_query_seconds_CPU": 0.4883749089999583,
+  "complete_trial_qasm_sha256": "085636fc0dbce09b2de5e3d475a4144f2bb9540f6246f06fe7fb412b0bf91575",
   "output_contract": {
     "observable": "normalized inverse-state Z(q0)",
     "absolute_error_target": 0.05,

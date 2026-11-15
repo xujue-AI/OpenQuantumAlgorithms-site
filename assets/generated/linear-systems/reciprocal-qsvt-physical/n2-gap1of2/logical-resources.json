@@ -190,7 +190,7 @@
     "success_observed_ideal_numeric": 0.08517400499463097,
     "branch_error_vs_independent_spectral_polynomial": 3.1411646348588723e-15,
     "solve_residual": 1.2018516789897276e-16,
-    "solution_trace_distance": 0.0006804423718642802,
+    "solution_trace_distance": 0.0006804423718642804,
     "z_actual": 0.4053110477093784,
     "z_classical_solution": 0.40635836707612477,
     "z_bias": 0.0010473193667463465,
@@ -207,9 +207,9 @@
     "primitive_operations": 25000,
     "timeout_seconds": 60
   },
-  "classical_generation_validation_seconds_CPU": 0.5013478270002452,
+  "classical_generation_validation_seconds_CPU": 0.32131657599984464,
   "source_provenance": {
-    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
+    "source_revision_at_generation": "f271129d8bd268bee1dfcdc435f61075dcf2c008",
     "source_hashes_sha256": {
       "src/openquantum/reciprocal_physical_sweep.py": "f6cfe9c30fba956753b85496cc577030419cf25fd86ec812c11c6fc777fe0f3b",
       "scripts/generate_reciprocal_physical_sweep.py": "737b35d188730a5ab495e7f6945c8bdbb5d1ed609d39e6bb55ee2fd590010466",

@@ -495,6 +495,7 @@ def test_actual_export_loop_carries_the_closed_bath_and_zip_without_private_neig
     monkeypatch.setattr(exporter, "PUBLIC_BOOTSTRAP_FILES", ())
     monkeypatch.setattr(exporter, "PUBLIC_TAIL_RESOURCE_POLICY_FILES", ())
     monkeypatch.setattr(exporter, "PUBLIC_LOCAL_SPIN_SOURCE_FILES", ())
+    monkeypatch.setattr(exporter, "PUBLIC_QPE_APPLICATION_TINY_FIGURE_FILES", ())
     monkeypatch.setattr(exporter, "PUBLIC_ARTIFACT_TREES", ("simulation",))
     monkeypatch.setattr(exporter, "FORMAL_FILES", ())
     monkeypatch.setattr(exporter, "git_revision", lambda _: "a" * 40)

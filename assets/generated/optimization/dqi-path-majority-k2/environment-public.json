@@ -1,0 +1,131 @@
+{
+  "absolute_environment_inventory_included": false,
+  "actual_loaded_os_images_observed": false,
+  "lock_snapshot": {
+    "bytes": 1974,
+    "path": "code/requirements-lock.txt",
+    "scope": "Project version-lock context, not a replacement for the private admitted environment.",
+    "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+  },
+  "native_package_binaries_included": false,
+  "original_selected_environment_sha256": "ab43be7298758314f2064f715ae5e2ad05210a551050de0c4698ad3ddd7d2bf2",
+  "packages": {
+    "CPython": {
+      "license": "Python Software Foundation License Agreement and bundled notices",
+      "license_file": "licenses/CPython-LICENSE.txt",
+      "license_pin": {
+        "bytes": 13936,
+        "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+      },
+      "license_pin_scope": "New packaging hash; not asserted to be a pinned run-admission payload.",
+      "release_tag": "v3.12.14",
+      "repository": "https://github.com/python/cpython",
+      "role": "stdlib driver and verification orchestration; separate public saved-byte checker",
+      "version": "3.12.14"
+    },
+    "NumPy": {
+      "git_revision": "a3d0ef1df045b858e68115001fdabc930bb3b68c",
+      "installed_metadata_pin": {
+        "bytes": 6635,
+        "sha256": "e2b909d6a37d76c2bc130f528d7fed0c517322bce16dc7846b6a6df30e200403"
+      },
+      "license": "BSD-3-Clause and complete shipped wheel notices",
+      "license_files": {
+        "licenses/numpy/LICENSE.txt": {
+          "bytes": 46826,
+          "sha256": "649a589ab31076e79e9ce62ba24eae9959598124176640dbc95f87bd10f34fcf"
+        },
+        "licenses/numpy/numpy/_core/include/numpy/libdivide/LICENSE.txt": {
+          "bytes": 1018,
+          "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+        },
+        "licenses/numpy/numpy/_core/src/common/pythoncapi-compat/COPYING": {
+          "bytes": 690,
+          "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+        },
+        "licenses/numpy/numpy/_core/src/highway/LICENSE": {
+          "bytes": 20785,
+          "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af"
+        },
+        "licenses/numpy/numpy/_core/src/multiarray/dragon4_LICENSE.txt": {
+          "bytes": 1414,
+          "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+        },
+        "licenses/numpy/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md": {
+          "bytes": 1514,
+          "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910"
+        },
+        "licenses/numpy/numpy/_core/src/umath/svml/LICENSE": {
+          "bytes": 1543,
+          "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9"
+        },
+        "licenses/numpy/numpy/fft/pocketfft/LICENSE.md": {
+          "bytes": 1498,
+          "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056"
+        },
+        "licenses/numpy/numpy/linalg/lapack_lite/LICENSE.txt": {
+          "bytes": 2266,
+          "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55"
+        },
+        "licenses/numpy/numpy/ma/LICENSE": {
+          "bytes": 1593,
+          "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+        },
+        "licenses/numpy/numpy/random/LICENSE.md": {
+          "bytes": 3511,
+          "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+        },
+        "licenses/numpy/numpy/random/src/distributions/LICENSE.md": {
+          "bytes": 2745,
+          "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face"
+        },
+        "licenses/numpy/numpy/random/src/mt19937/LICENSE.md": {
+          "bytes": 2926,
+          "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156"
+        },
+        "licenses/numpy/numpy/random/src/pcg64/LICENSE.md": {
+          "bytes": 1154,
+          "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918"
+        },
+        "licenses/numpy/numpy/random/src/philox/LICENSE.md": {
+          "bytes": 1509,
+          "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800"
+        },
+        "licenses/numpy/numpy/random/src/sfc64/LICENSE.md": {
+          "bytes": 1226,
+          "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f"
+        },
+        "licenses/numpy/numpy/random/src/splitmix64/LICENSE.md": {
+          "bytes": 332,
+          "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9"
+        }
+      },
+      "repository": "https://github.com/numpy/numpy",
+      "role": "Local CPU complex128 primitive vector kernels in the accepted fixed run; not imported by this projection/checker",
+      "version": "2.5.4"
+    },
+    "psutil": {
+      "installed_metadata_pin": {
+        "bytes": 22187,
+        "sha256": "525f8ba78523cf7bc3759d62a105e7c57fd679ea702402b9449fb0746aa0217f"
+      },
+      "license": "BSD-3-Clause",
+      "license_file": "licenses/psutil-LICENSE.txt",
+      "license_pin": {
+        "bytes": 1548,
+        "sha256": "b89c063b3786e28e0c0a38f1931db61fed35e69dd2a2966fbecffee0f46c8d10"
+      },
+      "repository": "https://github.com/giampaolo/psutil",
+      "role": "Private process monitoring only",
+      "version": "7.2.2"
+    }
+  },
+  "portable_transitive_native_closure_validated": false,
+  "public_packet_is_an_execution_environment": false,
+  "quantum_sdk_used": false,
+  "resource_estimator_used": false,
+  "schema": "openquantum.dqi.path_majority_k2_public_environment.v1",
+  "selected_environment_scope": "Pinned selected local file bytes. NumPy import performs native sanity work inside process timing. OS images and unsampled allocations are not a portable native/ABI proof.",
+  "source_commit": "d80a2be51c5156283bc4912dc6ed9b48f8543d43",
+  "tests_or_notebooks_executed_for_this_projection": false
+}

@@ -1,0 +1,842 @@
+{
+  "array_allocation_bounds": {
+    "complex_entries_per_density_max": 4096,
+    "density_dimension_max": 64,
+    "explicit_controlled_operator_shape": [
+      8,
+      8
+    ],
+    "retained_density_entries_max": 65536,
+    "scope": "deterministic scientific state/reference shapes; SDK/import temporary memory uses supervisor postflight"
+  },
+  "case_count": 15,
+  "cases": [
+    {
+      "applications_by_kind": {
+        "ket_primitive_map": 312
+      },
+      "case": "full-controlled-k1",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 312,
+      "global_phase_fit_performed": false,
+      "maximum_complex_entries_per_density": 64,
+      "maximum_control_zero_identity_error": 6.68730837547302e-16,
+      "maximum_full_controlled_entry_error": 6.68730837547302e-16,
+      "maximum_odd_sector_entry_error": 4.453914900379617e-16,
+      "maximum_retained_density_entries": 64,
+      "maximum_retained_records": 1,
+      "maximum_state_dimension": 8,
+      "source": {
+        "classical_bits": 0,
+        "expanded_instructions": 39,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 1,
+        "qubits": 3,
+        "readouts": 0,
+        "resets": 0,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 18,
+          "h": 2,
+          "ry": 8,
+          "rz": 8,
+          "x": 2,
+          "z": 1
+        },
+        "unitary_instructions_upper_bound": 39
+      }
+    },
+    {
+      "applications_by_kind": {
+        "ket_primitive_map": 624
+      },
+      "case": "full-controlled-k2",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 624,
+      "global_phase_fit_performed": false,
+      "maximum_complex_entries_per_density": 64,
+      "maximum_control_zero_identity_error": 1.333568037502089e-15,
+      "maximum_full_controlled_entry_error": 1.333568037502089e-15,
+      "maximum_odd_sector_entry_error": 1.666292197262778e-16,
+      "maximum_retained_density_entries": 64,
+      "maximum_retained_records": 1,
+      "maximum_state_dimension": 8,
+      "source": {
+        "classical_bits": 0,
+        "expanded_instructions": 78,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 1,
+        "qubits": 3,
+        "readouts": 0,
+        "resets": 0,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 36,
+          "h": 4,
+          "ry": 16,
+          "rz": 16,
+          "x": 4,
+          "z": 2
+        },
+        "unitary_instructions_upper_bound": 78
+      }
+    },
+    {
+      "applications_by_kind": {
+        "ket_primitive_map": 1248
+      },
+      "case": "full-controlled-k4",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 1248,
+      "global_phase_fit_performed": false,
+      "maximum_complex_entries_per_density": 64,
+      "maximum_control_zero_identity_error": 2.443200210714177e-15,
+      "maximum_full_controlled_entry_error": 2.443200210714177e-15,
+      "maximum_odd_sector_entry_error": 5.5540068850903e-16,
+      "maximum_retained_density_entries": 64,
+      "maximum_retained_records": 1,
+      "maximum_state_dimension": 8,
+      "source": {
+        "classical_bits": 0,
+        "expanded_instructions": 156,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 1,
+        "qubits": 3,
+        "readouts": 0,
+        "resets": 0,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 72,
+          "h": 8,
+          "ry": 32,
+          "rz": 32,
+          "x": 8,
+          "z": 4
+        },
+        "unitary_instructions_upper_bound": 156
+      }
+    },
+    {
+      "applications_by_kind": {
+        "ket_primitive_map": 304
+      },
+      "case": "negative-missing-reference-z",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 304,
+      "maximum_complex_entries_per_density": 64,
+      "maximum_difference_from_true_U": 1.988648488888852,
+      "maximum_error_against_deliberately_omitted_reference": 6.68730837547302e-16,
+      "maximum_retained_density_entries": 64,
+      "maximum_retained_records": 1,
+      "maximum_state_dimension": 8,
+      "negative_control_detected": true,
+      "source": {
+        "classical_bits": 0,
+        "expanded_instructions": 38,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 1,
+        "qubits": 3,
+        "readouts": 0,
+        "resets": 0,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 18,
+          "h": 2,
+          "ry": 8,
+          "rz": 8,
+          "x": 2
+        },
+        "unitary_instructions_upper_bound": 38
+      }
+    },
+    {
+      "applications_by_kind": {
+        "ket_primitive_map": 248
+      },
+      "case": "negative-missing-odd-evolution",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 248,
+      "maximum_complex_entries_per_density": 64,
+      "maximum_even_sector_error": 4.0029660424867215e-16,
+      "maximum_odd_sector_difference": 0.25881904510252074,
+      "maximum_retained_density_entries": 64,
+      "maximum_retained_records": 1,
+      "maximum_state_dimension": 8,
+      "negative_control_detected": true,
+      "source": {
+        "classical_bits": 0,
+        "expanded_instructions": 31,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 1,
+        "qubits": 3,
+        "readouts": 0,
+        "resets": 0,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 14,
+          "h": 2,
+          "ry": 8,
+          "rz": 4,
+          "x": 2,
+          "z": 1
+        },
+        "unitary_instructions_upper_bound": 31
+      }
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 258,
+        "outcome_projection": 30,
+        "reset_kraus_map": 12
+      },
+      "case": "retained-deferred",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 300,
+      "independent_probabilities": [
+        0.040016154831778214,
+        0.010954835735832308,
+        0.012843656372730931,
+        0.13622573606213687,
+        0.010954835735832308,
+        0.004530880610070724,
+        0.0035160836017909527,
+        0.035761321235175315,
+        0.012843656372730933,
+        0.003516083601790953,
+        0.004122322839719519,
+        0.04372325503186477,
+        0.13622573606213687,
+        0.035761321235175315,
+        0.04372325503186476,
+        0.4652808656393693
+      ],
+      "maximum_complex_entries_per_density": 4096,
+      "maximum_joint_record_error": 1.8735013540549517e-16,
+      "maximum_retained_density_entries": 65536,
+      "maximum_retained_records": 16,
+      "maximum_state_dimension": 64,
+      "probabilities": [
+        0.040016154831778276,
+        0.01095483573583238,
+        0.012843656372730937,
+        0.13622573606213684,
+        0.010954835735832365,
+        0.004530880610070818,
+        0.0035160836017909558,
+        0.03576132123517528,
+        0.01284365637273095,
+        0.003516083601790971,
+        0.004122322839719514,
+        0.04372325503186479,
+        0.136225736062137,
+        0.0357613212351755,
+        0.0437232550318648,
+        0.4652808656393693
+      ],
+      "record_index": "y0+4*y1; y0=c0+2*c1, y1=c2+2*c3",
+      "source": {
+        "classical_bits": 4,
+        "expanded_instructions": 268,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 16,
+        "qubits": 6,
+        "readouts": 4,
+        "resets": 6,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 118,
+          "h": 20,
+          "p": 6,
+          "ry": 48,
+          "rz": 48,
+          "x": 12,
+          "z": 6
+        },
+        "unitary_instructions_upper_bound": 258
+      },
+      "zero_probability_records_retained": true
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 645,
+        "outcome_projection": 30,
+        "reset_kraus_map": 24
+      },
+      "case": "retained-reused",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 699,
+      "independent_probabilities": [
+        0.040016154831778214,
+        0.010954835735832308,
+        0.012843656372730931,
+        0.13622573606213687,
+        0.010954835735832308,
+        0.004530880610070724,
+        0.0035160836017909527,
+        0.035761321235175315,
+        0.012843656372730933,
+        0.003516083601790953,
+        0.004122322839719519,
+        0.04372325503186477,
+        0.13622573606213687,
+        0.035761321235175315,
+        0.04372325503186476,
+        0.4652808656393693
+      ],
+      "maximum_complex_entries_per_density": 256,
+      "maximum_joint_record_error": 1.8735013540549517e-16,
+      "maximum_retained_density_entries": 4096,
+      "maximum_retained_records": 16,
+      "maximum_state_dimension": 16,
+      "probabilities": [
+        0.040016154831778276,
+        0.01095483573583238,
+        0.012843656372730937,
+        0.13622573606213684,
+        0.010954835735832365,
+        0.004530880610070818,
+        0.0035160836017909558,
+        0.03576132123517528,
+        0.01284365637273095,
+        0.003516083601790971,
+        0.004122322839719514,
+        0.04372325503186479,
+        0.136225736062137,
+        0.0357613212351755,
+        0.0437232550318648,
+        0.4652808656393693
+      ],
+      "record_index": "y0+4*y1; y0=c0+2*c1, y1=c2+2*c3",
+      "source": {
+        "classical_bits": 4,
+        "expanded_instructions": 268,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 16,
+        "qubits": 4,
+        "readouts": 4,
+        "resets": 6,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 118,
+          "h": 20,
+          "p": 6,
+          "ry": 48,
+          "rz": 48,
+          "x": 12,
+          "z": 6
+        },
+        "unitary_instructions_upper_bound": 258
+      },
+      "zero_probability_records_retained": true
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 815,
+        "feedback_predicate": 10,
+        "outcome_projection": 30,
+        "reset_kraus_map": 34
+      },
+      "case": "feedback",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 889,
+      "independent_probabilities": [
+        0.040016154831778214,
+        0.010954835735832308,
+        0.012843656372730931,
+        0.13622573606213687,
+        0.010954835735832308,
+        0.004530880610070724,
+        0.0035160836017909527,
+        0.035761321235175315,
+        0.012843656372730933,
+        0.003516083601790953,
+        0.004122322839719519,
+        0.04372325503186477,
+        0.13622573606213687,
+        0.035761321235175315,
+        0.04372325503186476,
+        0.4652808656393693
+      ],
+      "maximum_complex_entries_per_density": 64,
+      "maximum_joint_record_error": 1.6653345369377348e-16,
+      "maximum_retained_density_entries": 1024,
+      "maximum_retained_records": 16,
+      "maximum_state_dimension": 8,
+      "probabilities": [
+        0.04001615483177816,
+        0.010954835735832343,
+        0.012843656372730937,
+        0.1362257360621367,
+        0.010954835735832348,
+        0.004530880610070734,
+        0.0035160836017909766,
+        0.03576132123517524,
+        0.01284365637273092,
+        0.0035160836017909644,
+        0.004122322839719521,
+        0.043723255031864715,
+        0.13622573606213687,
+        0.03576132123517536,
+        0.04372325503186481,
+        0.46528086563936927
+      ],
+      "record_index": "y0+4*y1; y0=c0+2*c1, y1=c2+2*c3",
+      "source": {
+        "classical_bits": 4,
+        "expanded_instructions": 256,
+        "feedback_decisions": 2,
+        "maximum_retained_records": 16,
+        "qubits": 3,
+        "readouts": 4,
+        "resets": 6,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 108,
+          "h": 20,
+          "ry": 48,
+          "rz": 48,
+          "sdg": 2,
+          "x": 12,
+          "z": 6
+        },
+        "unitary_instructions_upper_bound": 244
+      },
+      "zero_probability_records_retained": true
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 645,
+        "outcome_projection": 30,
+        "reset_kraus_map": 40
+      },
+      "case": "retained-reprepared",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 715,
+      "independent_probabilities": [
+        0.040016154831778214,
+        0.010954835735832308,
+        0.012843656372730933,
+        0.13622573606213687,
+        0.010954835735832308,
+        0.0029989994416896285,
+        0.003516083601790953,
+        0.037293202403556415,
+        0.012843656372730933,
+        0.003516083601790953,
+        0.004122322839719519,
+        0.04372325503186476,
+        0.13622573606213687,
+        0.037293202403556415,
+        0.04372325503186476,
+        0.4637489844709882
+      ],
+      "maximum_complex_entries_per_density": 256,
+      "maximum_joint_record_error": 3.3306690738754696e-16,
+      "maximum_retained_density_entries": 4096,
+      "maximum_retained_records": 16,
+      "maximum_state_dimension": 16,
+      "probabilities": [
+        0.04001615483177829,
+        0.010954835735832363,
+        0.012843656372730975,
+        0.13622573606213687,
+        0.010954835735832363,
+        0.002998999441689638,
+        0.0035160836017909796,
+        0.037293202403556436,
+        0.01284365637273092,
+        0.0035160836017909696,
+        0.0041223228397195225,
+        0.043723255031864756,
+        0.136225736062137,
+        0.03729320240355658,
+        0.04372325503186484,
+        0.46374898447098856
+      ],
+      "record_index": "y0+4*y1; y0=c0+2*c1, y1=c2+2*c3",
+      "source": {
+        "classical_bits": 4,
+        "expanded_instructions": 270,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 16,
+        "qubits": 4,
+        "readouts": 4,
+        "resets": 8,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 118,
+          "h": 20,
+          "p": 6,
+          "ry": 48,
+          "rz": 48,
+          "x": 12,
+          "z": 6
+        },
+        "unitary_instructions_upper_bound": 258
+      },
+      "zero_probability_records_retained": true
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 41,
+        "outcome_projection": 2,
+        "reset_kraus_map": 6
+      },
+      "case": "fringe-k1-cos",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 49,
+      "independent_reference": {
+        "absolute_ground_fringe_bias": 0.0,
+        "basis": "cos",
+        "contamination_bound_expression": "(1-8/sqrt(65))/2 < 1/256",
+        "excited_input_weight": 0.0038610616431661304,
+        "excited_zero_probability": 0.757024172427704,
+        "ground_zero_probability": 0.757024172427704,
+        "input_zero_probability": 0.757024172427704,
+        "power": 1,
+        "spectral_mixture_zero_probability": 0.757024172427704
+      },
+      "maximum_complex_entries_per_density": 64,
+      "maximum_retained_density_entries": 128,
+      "maximum_retained_records": 2,
+      "maximum_state_dimension": 8,
+      "maximum_zero_probability_error": 2.220446049250313e-16,
+      "numerical_ground_fringe_bias": 2.220446049250313e-16,
+      "probabilities": [
+        0.7570241724277038,
+        0.242975827572296
+      ],
+      "source": {
+        "classical_bits": 1,
+        "expanded_instructions": 45,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 2,
+        "qubits": 3,
+        "readouts": 1,
+        "resets": 3,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 18,
+          "h": 4,
+          "ry": 8,
+          "rz": 8,
+          "x": 2,
+          "z": 1
+        },
+        "unitary_instructions_upper_bound": 41
+      },
+      "spectral_mixture_residual": 0.0
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 42,
+        "outcome_projection": 2,
+        "reset_kraus_map": 6
+      },
+      "case": "fringe-k1-sin",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 50,
+      "independent_reference": {
+        "absolute_ground_fringe_bias": 0.0033118689199148066,
+        "basis": "sin",
+        "contamination_bound_expression": "(1-8/sqrt(65))/2 < 1/256",
+        "excited_input_weight": 0.0038610616431661304,
+        "excited_zero_probability": 0.9288806066819225,
+        "ground_zero_probability": 0.07111939331807748,
+        "input_zero_probability": 0.07443126223799229,
+        "power": 1,
+        "spectral_mixture_zero_probability": 0.07443126223799226
+      },
+      "maximum_complex_entries_per_density": 64,
+      "maximum_retained_density_entries": 128,
+      "maximum_retained_records": 2,
+      "maximum_state_dimension": 8,
+      "maximum_zero_probability_error": 1.3877787807814457e-17,
+      "numerical_ground_fringe_bias": 0.0033118689199148205,
+      "probabilities": [
+        0.0744312622379923,
+        0.9255687377620075
+      ],
+      "source": {
+        "classical_bits": 1,
+        "expanded_instructions": 46,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 2,
+        "qubits": 3,
+        "readouts": 1,
+        "resets": 3,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 18,
+          "h": 4,
+          "ry": 8,
+          "rz": 8,
+          "sdg": 1,
+          "x": 2,
+          "z": 1
+        },
+        "unitary_instructions_upper_bound": 42
+      },
+      "spectral_mixture_residual": 2.7755575615628914e-17
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 80,
+        "outcome_projection": 2,
+        "reset_kraus_map": 6
+      },
+      "case": "fringe-k2-cos",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 88,
+      "independent_reference": {
+        "absolute_ground_fringe_bias": 0.0,
+        "basis": "cos",
+        "contamination_bound_expression": "(1-8/sqrt(65))/2 < 1/256",
+        "excited_input_weight": 0.0038610616431661304,
+        "excited_zero_probability": 0.2642457008485844,
+        "ground_zero_probability": 0.2642457008485844,
+        "input_zero_probability": 0.2642457008485844,
+        "power": 2,
+        "spectral_mixture_zero_probability": 0.2642457008485844
+      },
+      "maximum_complex_entries_per_density": 64,
+      "maximum_retained_density_entries": 128,
+      "maximum_retained_records": 2,
+      "maximum_state_dimension": 8,
+      "maximum_zero_probability_error": 1.1102230246251565e-16,
+      "numerical_ground_fringe_bias": 1.1102230246251565e-16,
+      "probabilities": [
+        0.2642457008485845,
+        0.7357542991514154
+      ],
+      "source": {
+        "classical_bits": 1,
+        "expanded_instructions": 84,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 2,
+        "qubits": 3,
+        "readouts": 1,
+        "resets": 3,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 36,
+          "h": 6,
+          "ry": 16,
+          "rz": 16,
+          "x": 4,
+          "z": 2
+        },
+        "unitary_instructions_upper_bound": 80
+      },
+      "spectral_mixture_residual": 0.0
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 81,
+        "outcome_projection": 2,
+        "reset_kraus_map": 6
+      },
+      "case": "fringe-k2-sin",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 89,
+      "independent_reference": {
+        "absolute_ground_fringe_bias": 0.003404921473320499,
+        "basis": "sin",
+        "contamination_bound_expression": "(1-8/sqrt(65))/2 < 1/256",
+        "excited_input_weight": 0.0038610616431661304,
+        "excited_zero_probability": 0.9409307320108509,
+        "ground_zero_probability": 0.05906926798914908,
+        "input_zero_probability": 0.062474189462469576,
+        "power": 2,
+        "spectral_mixture_zero_probability": 0.062474189462469604
+      },
+      "maximum_complex_entries_per_density": 64,
+      "maximum_retained_density_entries": 128,
+      "maximum_retained_records": 2,
+      "maximum_state_dimension": 8,
+      "maximum_zero_probability_error": 5.551115123125783e-17,
+      "numerical_ground_fringe_bias": 0.0034049214733204436,
+      "probabilities": [
+        0.06247418946246952,
+        0.9375258105375305
+      ],
+      "source": {
+        "classical_bits": 1,
+        "expanded_instructions": 85,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 2,
+        "qubits": 3,
+        "readouts": 1,
+        "resets": 3,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 36,
+          "h": 6,
+          "ry": 16,
+          "rz": 16,
+          "sdg": 1,
+          "x": 4,
+          "z": 2
+        },
+        "unitary_instructions_upper_bound": 81
+      },
+      "spectral_mixture_residual": 2.7755575615628914e-17
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 158,
+        "outcome_projection": 2,
+        "reset_kraus_map": 6
+      },
+      "case": "fringe-k4-cos",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 166,
+      "independent_reference": {
+        "absolute_ground_fringe_bias": 0.0,
+        "basis": "cos",
+        "contamination_bound_expression": "(1-8/sqrt(65))/2 < 1/256",
+        "excited_input_weight": 0.0038610616431661304,
+        "excited_zero_probability": 0.22232035827350066,
+        "ground_zero_probability": 0.22232035827350066,
+        "input_zero_probability": 0.22232035827350066,
+        "power": 4,
+        "spectral_mixture_zero_probability": 0.22232035827350066
+      },
+      "maximum_complex_entries_per_density": 64,
+      "maximum_retained_density_entries": 128,
+      "maximum_retained_records": 2,
+      "maximum_state_dimension": 8,
+      "maximum_zero_probability_error": 8.326672684688674e-17,
+      "numerical_ground_fringe_bias": 8.326672684688674e-17,
+      "probabilities": [
+        0.22232035827350058,
+        0.7776796417264998
+      ],
+      "source": {
+        "classical_bits": 1,
+        "expanded_instructions": 162,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 2,
+        "qubits": 3,
+        "readouts": 1,
+        "resets": 3,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 72,
+          "h": 10,
+          "ry": 32,
+          "rz": 32,
+          "x": 8,
+          "z": 4
+        },
+        "unitary_instructions_upper_bound": 158
+      },
+      "spectral_mixture_residual": 0.0
+    },
+    {
+      "applications_by_kind": {
+        "density_primitive_map": 159,
+        "outcome_projection": 2,
+        "reset_kraus_map": 6
+      },
+      "case": "fringe-k4-sin",
+      "count_semantics": "one primitive whole-state map per actual record; explicit ket columns charged separately",
+      "expanded_validation_instructions": 167,
+      "independent_reference": {
+        "absolute_ground_fringe_bias": 0.00321089950243314,
+        "basis": "sin",
+        "contamination_bound_expression": "(1-8/sqrt(65))/2 < 1/256",
+        "excited_input_weight": 0.0038610616431661304,
+        "excited_zero_probability": 0.08419473720184473,
+        "ground_zero_probability": 0.9158052627981552,
+        "input_zero_probability": 0.9125943632957221,
+        "power": 4,
+        "spectral_mixture_zero_probability": 0.9125943632957221
+      },
+      "maximum_complex_entries_per_density": 64,
+      "maximum_retained_density_entries": 128,
+      "maximum_retained_records": 2,
+      "maximum_state_dimension": 8,
+      "maximum_zero_probability_error": 1.1102230246251565e-16,
+      "numerical_ground_fringe_bias": 0.003210899502433029,
+      "probabilities": [
+        0.9125943632957222,
+        0.08740563670427816
+      ],
+      "source": {
+        "classical_bits": 1,
+        "expanded_instructions": 163,
+        "feedback_decisions": 0,
+        "maximum_retained_records": 2,
+        "qubits": 3,
+        "readouts": 1,
+        "resets": 3,
+        "scope": "unexecuted bounded source; conditional corrections counted in common upper envelope",
+        "unitary_by_name": {
+          "cx": 72,
+          "h": 10,
+          "ry": 32,
+          "rz": 32,
+          "sdg": 1,
+          "x": 8,
+          "z": 4
+        },
+        "unitary_instructions_upper_bound": 159
+      },
+      "spectral_mixture_residual": 0.0
+    }
+  ],
+  "classical_inference_performed": false,
+  "contract_sha256": "2d5d9a7f60503c65ab09a433679da9449fb805d59110808e778be7cba59164b3",
+  "evidence_note": "bounded numerical circuit/instrument checks; no compiled/hardware confidence claim",
+  "formal_proof_reproduced": false,
+  "frozen_task": {
+    "Eref": "3",
+    "Hamiltonian": "-Z0-Z1+X0*X1/4",
+    "U": "-exp(-i H pi/3)",
+    "W": "6",
+    "input": "reset |00>",
+    "tau0": "pi/3"
+  },
+  "full_application_confidence_validated": false,
+  "full_application_output_simulated": false,
+  "interval_synthesis_certificate": false,
+  "limits": {
+    "controlled_power_max": 4,
+    "expanded_validation_instructions_per_case_max": 10000,
+    "quantum_wires_max": 6,
+    "retained_records_max": 16
+  },
+  "numerical_entry_tolerance": 2e-12,
+  "observed_retention_joint_difference": 0.0015318811683811798,
+  "physical_estimation_performed": false,
+  "scope": "tiny-ideal-circuit-instrument",
+  "shot_sampling_performed": false,
+  "spectral_diagnostics": [
+    {
+      "energy": -2.0155644370746373,
+      "input_weight": 0.9961389383568339,
+      "label": "ground-even",
+      "phase": 0.8359274061791062
+    },
+    {
+      "energy": -0.25,
+      "input_weight": 0.0,
+      "label": "lower-odd",
+      "phase": 0.5416666666666666
+    },
+    {
+      "energy": 0.25,
+      "input_weight": 0.0,
+      "label": "upper-odd",
+      "phase": 0.4583333333333333
+    },
+    {
+      "energy": 2.0155644370746373,
+      "input_weight": 0.0038610616431661304,
+      "label": "excited-even",
+      "phase": 0.1640725938208938
+    }
+  ],
+  "status": "passed"
+}

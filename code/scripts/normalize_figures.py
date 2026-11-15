@@ -22,7 +22,9 @@ IMMUTABLE_SVGS = frozenset({
     "assets/generated/robust-qpe/circuit.svg",
     "assets/generated/robust-qpe/recovery.svg",
     "assets/generated/simulation/detailed-balance-two-round/two-round-circuit.svg",
+    "assets/generated/simulation/finite-gibbs-z-output/finite-gibbs-z-circuit.svg",
     "assets/generated/optimization/dqi-path-majority/component-circuit.svg",
+    "assets/generated/optimization/dqi-path-majority-k2/circuit.svg",
 })
 IMMUTABLE_CSVS = frozenset({
     "assets/generated/shor/measured-and/scaling.csv",

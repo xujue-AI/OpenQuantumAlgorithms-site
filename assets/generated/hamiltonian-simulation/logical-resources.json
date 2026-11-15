@@ -99,7 +99,7 @@
     "coherent rotation synthesis gates and errors"
   ],
   "provenance": {
-    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
+    "source_revision_at_generation": "f271129d8bd268bee1dfcdc435f61075dcf2c008",
     "implementation_sha256": "279065b2200bae7b8d29a00323a78b56684810b77c00ab833531d96b405426db",
     "qasm_sha256": "315d0b409850e5af83b1d9cd12311b583134ac693d9982eeabc5034d2a1f9cfd",
     "source_note": "revision plus implementation hash identifies working-tree code; generation may precede commit",
@@ -119,13 +119,13 @@
     "performed": true,
     "order": 2,
     "steps": 32,
-    "operator_error": 0.0005026074427307742,
-    "state_vector_error": 0.0004054485449831326,
+    "operator_error": 0.0005026074427307787,
+    "state_vector_error": 0.0004054485449831451,
     "state_infidelity": 1.3776271690080222e-07,
     "observable": "Z(q0)",
-    "exact_observable": 0.40425585728735475,
+    "exact_observable": 0.4042558572873547,
     "circuit_observable": 0.404096737236539,
-    "observable_error": 0.0001591200508157531,
+    "observable_error": 0.00015912005081569758,
     "hamiltonian_operator_allowance_met": true
   },
   "illustrative_sampling": {

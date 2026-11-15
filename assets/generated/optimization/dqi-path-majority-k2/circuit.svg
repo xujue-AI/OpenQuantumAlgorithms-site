@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" role="img" aria-labelledby="title desc">
+<title id="title">Fixed k=2 path-majority DQI: all 22 wires, grouped stages</title>
+<desc id="desc">Original explanatory circuit schematic. Clause wires zero to nine; terminal syndrome ten; path internal syndromes eleven to fourteen and fifteen to eighteen; reused scratch nineteen to twenty-one. Twenty-two known-zero resets, preparation 955 primitives, sign three Z, incidence eighteen CX, two path decoders of 525 primitives, nine Hadamards and nine source readout mappings. Readout denotes unconditional probabilities, no actual shots. Detailed primitive gates remain in the saved QASM and NDJSON.</desc>
+<style>
+text{font-family:ui-sans-serif,system-ui,sans-serif;fill:#153047}
+.title{font-size:25px;font-weight:650}.sub{font-size:17px;fill:#4d6575}
+.wire{stroke:#8396a4;stroke-width:1.5}.index{font-size:13px;fill:#556c7d}
+.group{font-size:17px;font-weight:600}.gate{fill:#fff;stroke:#284f65;stroke-width:1.5;rx:5}
+.stage{fill:#edf5f7;stroke:#284f65;stroke-width:1.5;rx:8}.decoder{fill:#e7f2ed;stroke:#226451;stroke-width:1.5;rx:8}
+.label{font-size:18px;font-weight:600;text-anchor:middle}.tiny{font-size:14px;text-anchor:middle;fill:#4d6575}
+.terminal{stroke:#b98d46;stroke-width:2}.groupbar{fill:none;stroke:#284f65;stroke-width:2}
+.footer{font-size:17px;fill:#314f61}.read{stroke:#496781;stroke-width:1.5;fill:#fff;rx:4}
+</style>
+<rect x="1" y="1" width="1498" height="998" rx="18" fill="#fafcfd" stroke="#c4d2da"/>
+<text x="32" y="43" class="title">Fixed two-path DQI · one ideal pass</text>
+<text x="32" y="76" class="sub">Q22 / N10 / m10 / n9 · every primitive is retained in the linked stream</text>
+
+<line x1="180" y1="145" x2="1448" y2="145" class="wire"/>
+<text x="154" y="149" class="index">q0</text>
+<rect x="201" y="135" width="38" height="20" class="gate"/>
+<text x="220" y="150" class="tiny">0</text>
+<line x1="180" y1="173" x2="1448" y2="173" class="wire"/>
+<text x="154" y="177" class="index">q1</text>
+<rect x="201" y="163" width="38" height="20" class="gate"/>
+<text x="220" y="178" class="tiny">0</text>
+<line x1="180" y1="201" x2="1448" y2="201" class="wire"/>
+<text x="154" y="205" class="index">q2</text>
+<rect x="201" y="191" width="38" height="20" class="gate"/>
+<text x="220" y="206" class="tiny">0</text>
+<line x1="180" y1="229" x2="1448" y2="229" class="wire"/>
+<text x="154" y="233" class="index">q3</text>
+<rect x="201" y="219" width="38" height="20" class="gate"/>
+<text x="220" y="234" class="tiny">0</text>
+<line x1="180" y1="257" x2="1448" y2="257" class="wire"/>
+<text x="154" y="261" class="index">q4</text>
+<rect x="201" y="247" width="38" height="20" class="gate"/>
+<text x="220" y="262" class="tiny">0</text>
+<line x1="180" y1="285" x2="1448" y2="285" class="wire"/>
+<text x="154" y="289" class="index">q5</text>
+<rect x="201" y="275" width="38" height="20" class="gate"/>
+<text x="220" y="290" class="tiny">0</text>
+<line x1="180" y1="313" x2="1448" y2="313" class="wire"/>
+<text x="154" y="317" class="index">q6</text>
+<rect x="201" y="303" width="38" height="20" class="gate"/>
+<text x="220" y="318" class="tiny">0</text>
+<line x1="180" y1="341" x2="1448" y2="341" class="wire"/>
+<text x="154" y="345" class="index">q7</text>
+<rect x="201" y="331" width="38" height="20" class="gate"/>
+<text x="220" y="346" class="tiny">0</text>
+<line x1="180" y1="369" x2="1448" y2="369" class="wire"/>
+<text x="154" y="373" class="index">q8</text>
+<rect x="201" y="359" width="38" height="20" class="gate"/>
+<text x="220" y="374" class="tiny">0</text>
+<line x1="180" y1="397" x2="1448" y2="397" class="wire"/>
+<text x="154" y="401" class="index">q9</text>
+<rect x="201" y="387" width="38" height="20" class="gate"/>
+<text x="220" y="402" class="tiny">0</text>
+<line x1="180" y1="425" x2="1448" y2="425" class="terminal"/>
+<text x="154" y="429" class="index">q10</text>
+<rect x="201" y="415" width="38" height="20" class="gate"/>
+<text x="220" y="430" class="tiny">0</text>
+<line x1="180" y1="453" x2="1448" y2="453" class="wire"/>
+<text x="154" y="457" class="index">q11</text>
+<rect x="201" y="443" width="38" height="20" class="gate"/>
+<text x="220" y="458" class="tiny">0</text>
+<line x1="180" y1="481" x2="1448" y2="481" class="wire"/>
+<text x="154" y="485" class="index">q12</text>
+<rect x="201" y="471" width="38" height="20" class="gate"/>
+<text x="220" y="486" class="tiny">0</text>
+<line x1="180" y1="509" x2="1448" y2="509" class="wire"/>
+<text x="154" y="513" class="index">q13</text>
+<rect x="201" y="499" width="38" height="20" class="gate"/>
+<text x="220" y="514" class="tiny">0</text>
+<line x1="180" y1="537" x2="1448" y2="537" class="wire"/>
+<text x="154" y="541" class="index">q14</text>
+<rect x="201" y="527" width="38" height="20" class="gate"/>
+<text x="220" y="542" class="tiny">0</text>
+<line x1="180" y1="565" x2="1448" y2="565" class="wire"/>
+<text x="154" y="569" class="index">q15</text>
+<rect x="201" y="555" width="38" height="20" class="gate"/>
+<text x="220" y="570" class="tiny">0</text>
+<line x1="180" y1="593" x2="1448" y2="593" class="wire"/>
+<text x="154" y="597" class="index">q16</text>
+<rect x="201" y="583" width="38" height="20" class="gate"/>
+<text x="220" y="598" class="tiny">0</text>
+<line x1="180" y1="621" x2="1448" y2="621" class="wire"/>
+<text x="154" y="625" class="index">q17</text>
+<rect x="201" y="611" width="38" height="20" class="gate"/>
+<text x="220" y="626" class="tiny">0</text>
+<line x1="180" y1="649" x2="1448" y2="649" class="wire"/>
+<text x="154" y="653" class="index">q18</text>
+<rect x="201" y="639" width="38" height="20" class="gate"/>
+<text x="220" y="654" class="tiny">0</text>
+<line x1="180" y1="677" x2="1448" y2="677" class="wire"/>
+<text x="154" y="681" class="index">q19</text>
+<rect x="201" y="667" width="38" height="20" class="gate"/>
+<text x="220" y="682" class="tiny">0</text>
+<line x1="180" y1="705" x2="1448" y2="705" class="wire"/>
+<text x="154" y="709" class="index">q20</text>
+<rect x="201" y="695" width="38" height="20" class="gate"/>
+<text x="220" y="710" class="tiny">0</text>
+<line x1="180" y1="733" x2="1448" y2="733" class="wire"/>
+<text x="154" y="737" class="index">q21</text>
+<rect x="201" y="723" width="38" height="20" class="gate"/>
+<text x="220" y="738" class="tiny">0</text>
+<path d="M132 135h-8v272h8" class="groupbar"/>
+<text x="24" y="276.0" class="group">Clause y</text>
+<path d="M132 415h-8v20h8" class="groupbar"/>
+<text x="24" y="430.0" class="group">Terminal s</text>
+<path d="M132 443h-8v104h8" class="groupbar"/>
+<text x="24" y="500.0" class="group">Path 0 s</text>
+<path d="M132 555h-8v104h8" class="groupbar"/>
+<text x="24" y="612.0" class="group">Path 1 s</text>
+<path d="M132 667h-8v76h8" class="groupbar"/>
+<text x="24" y="710.0" class="group">Scratch w</text>
+<text x="220" y="110" class="label">Reset</text>
+<text x="220" y="798" class="tiny">Known zero</text>
+<rect x="273" y="131" width="210" height="280" class="stage"/>
+<text x="378" y="251" class="label">PREPARE D₂</text>
+<text x="378" y="282" class="tiny">955 primitives</text>
+<text x="378" y="310" class="tiny">(10, 10, 2)</text>
+<text x="378" y="338" class="tiny">37 ideal RY</text>
+<rect x="273" y="663" width="210" height="84" class="stage"/>
+<text x="378" y="710" class="tiny">Counter → clean</text>
+<line x1="292" y1="411" x2="292" y2="663" class="groupbar"/>
+<line x1="464" y1="411" x2="464" y2="663" class="groupbar"/>
+<text x="378" y="110" class="label">Preparation</text>
+<rect x="521" y="133" width="38" height="24" class="gate"/>
+<text x="540" y="151" class="label">Z</text>
+<rect x="521" y="161" width="38" height="24" class="gate"/>
+<text x="540" y="179" class="label">Z</text>
+<rect x="521" y="273" width="38" height="24" class="gate"/>
+<text x="540" y="291" class="label">Z</text>
+<text x="540" y="110" class="label">Sign</text>
+<text x="540" y="798" class="tiny">3 Z</text>
+<rect x="597" y="131" width="128" height="532" class="stage"/>
+<text x="661" y="361" class="label">Bᵀy</text>
+<text x="661" y="391" class="tiny">18 CX</text>
+<text x="661" y="798" class="tiny">Explicit access</text>
+<text x="661" y="110" class="label">Syndrome</text>
+<rect x="761" y="131" width="164" height="140" class="decoder"/>
+<text x="843" y="206.0" class="label">Path 0</text>
+<text x="843" y="232.0" class="tiny">erase y</text>
+<rect x="761" y="439" width="164" height="112" class="decoder"/>
+<text x="843" y="500.0" class="tiny">Read internal s</text>
+<rect x="761" y="663" width="164" height="84" class="decoder"/>
+<text x="843" y="710" class="tiny">w returns to 000</text>
+<line x1="770" y1="271" x2="770" y2="439" class="groupbar"/>
+<line x1="916" y1="551" x2="916" y2="663" class="groupbar"/>
+<text x="843" y="798" class="tiny">525 primitives</text>
+<rect x="962" y="271" width="164" height="140" class="decoder"/>
+<text x="1044" y="346.0" class="label">Path 1</text>
+<text x="1044" y="372.0" class="tiny">erase y</text>
+<rect x="962" y="551" width="164" height="112" class="decoder"/>
+<text x="1044" y="612.0" class="tiny">Read internal s</text>
+<rect x="962" y="663" width="164" height="84" class="decoder"/>
+<text x="1044" y="710" class="tiny">w returns to 000</text>
+<line x1="971" y1="411" x2="971" y2="551" class="groupbar"/>
+<line x1="1117" y1="663" x2="1117" y2="663" class="groupbar"/>
+<text x="1044" y="798" class="tiny">525 primitives</text>
+<text x="940" y="110" class="label">Clean majority decoders</text>
+<text x="940" y="417" class="tiny">q10 preserved</text>
+<rect x="1170" y="413" width="38" height="24" class="gate"/>
+<text x="1189" y="431" class="label">H</text>
+<rect x="1318" y="413" width="48" height="24" class="read"/>
+<text x="1342" y="431" class="tiny">c0</text>
+<rect x="1170" y="441" width="38" height="24" class="gate"/>
+<text x="1189" y="459" class="label">H</text>
+<rect x="1318" y="441" width="48" height="24" class="read"/>
+<text x="1342" y="459" class="tiny">c1</text>
+<rect x="1170" y="469" width="38" height="24" class="gate"/>
+<text x="1189" y="487" class="label">H</text>
+<rect x="1318" y="469" width="48" height="24" class="read"/>
+<text x="1342" y="487" class="tiny">c2</text>
+<rect x="1170" y="497" width="38" height="24" class="gate"/>
+<text x="1189" y="515" class="label">H</text>
+<rect x="1318" y="497" width="48" height="24" class="read"/>
+<text x="1342" y="515" class="tiny">c3</text>
+<rect x="1170" y="525" width="38" height="24" class="gate"/>
+<text x="1189" y="543" class="label">H</text>
+<rect x="1318" y="525" width="48" height="24" class="read"/>
+<text x="1342" y="543" class="tiny">c4</text>
+<rect x="1170" y="553" width="38" height="24" class="gate"/>
+<text x="1189" y="571" class="label">H</text>
+<rect x="1318" y="553" width="48" height="24" class="read"/>
+<text x="1342" y="571" class="tiny">c5</text>
+<rect x="1170" y="581" width="38" height="24" class="gate"/>
+<text x="1189" y="599" class="label">H</text>
+<rect x="1318" y="581" width="48" height="24" class="read"/>
+<text x="1342" y="599" class="tiny">c6</text>
+<rect x="1170" y="609" width="38" height="24" class="gate"/>
+<text x="1189" y="627" class="label">H</text>
+<rect x="1318" y="609" width="48" height="24" class="read"/>
+<text x="1342" y="627" class="tiny">c7</text>
+<rect x="1170" y="637" width="38" height="24" class="gate"/>
+<text x="1189" y="655" class="label">H</text>
+<rect x="1318" y="637" width="48" height="24" class="read"/>
+<text x="1342" y="655" class="tiny">c8</text>
+<text x="1189" y="110" class="label">Fourier</text>
+<text x="1342" y="110" class="label">Readout</text>
+<text x="1189" y="798" class="tiny">9 H</text>
+<text x="1342" y="798" class="tiny">9 mappings</text>
+<line x1="28" y1="829" x2="1472" y2="829" class="wire"/>
+<text x="32" y="864" class="footer">2,035 unitary primitives · 22 initial resets · 9 readout mappings · 7 barriers</text>
+<text x="32" y="900" class="footer">Grouped schematic: individual lowering and barrier positions are in the saved QASM / NDJSON.</text>
+<text x="32" y="936" class="footer">No sampled shots or reset-noise channel. All 37 RY occurrences remain unsynthesized.</text>
+<text x="32" y="969" class="footer">Original project circuit figure · no physical cost, hardware, formal proof or advantage claim</text>
+</svg>

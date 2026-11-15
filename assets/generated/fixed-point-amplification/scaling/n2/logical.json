@@ -105,13 +105,13 @@
   "simulation": {
     "performed": true,
     "method": "bounded ideal Qiskit statevector",
-    "success_probability": 0.9979791728712184,
-    "lowered_state_max_abs_error": 7.310841799453369e-15,
-    "full_operator_max_abs_error": 1.9057088172464887e-15
+    "success_probability": 0.9979791728712182,
+    "lowered_state_max_abs_error": 7.141763640950045e-15,
+    "full_operator_max_abs_error": 1.64976489155517e-15
   },
   "qasm_sha256": "9dffba3f6b2806fd50599566bd6175b9ee27beb95dc68f6143ac9ad7997de8b2",
   "qasm_scope": "complete measured trial; QASM global phase is irrelevant for this output and is not a controlled-oracle specification",
-  "generation_lowering_reference_wall_time_s": 0.06746253200003594,
+  "generation_lowering_reference_wall_time_s": 0.03631923199986886,
   "included_quantum_work": [
     "initial A",
     "every good phase",

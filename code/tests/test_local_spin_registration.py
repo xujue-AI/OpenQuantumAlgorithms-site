@@ -249,6 +249,7 @@ def test_nested_case_and_isolated_checks_are_collected_in_a_small_package(regist
     monkeypatch.setattr(export, "PUBLIC_SCRIPTS", ("render_reusable_bath_local_spin.py", "verify_reusable_bath_local_spin_saved.py"))
     monkeypatch.setattr(export, "PUBLIC_BOOTSTRAP_FILES", ())
     monkeypatch.setattr(export, "PUBLIC_TAIL_RESOURCE_POLICY_FILES", ())
+    monkeypatch.setattr(export, "PUBLIC_QPE_APPLICATION_TINY_FIGURE_FILES", ())
     monkeypatch.setattr(export, "PUBLIC_ARTIFACT_TREES", ("simulation",))
     monkeypatch.setattr(export, "FORMAL_FILES", ())
     required = ["citations.bib", "binder/assemble_code.py", "binder/postBuild", "binder/environment.yml", "binder/README.md",

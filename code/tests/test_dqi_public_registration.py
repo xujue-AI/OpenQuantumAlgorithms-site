@@ -229,6 +229,9 @@ def test_export_uses_closed_ten_files_three_dependencies_and_two_scripts(exporte
         "verify_dqi_degree_two_saved.py", "verify_dqi_degree_two_public_saved.py",
     )
     selected_scripts = tuple(name for name in exporter.PUBLIC_SCRIPTS if "dqi" in name and "structured" not in name and name != "generate_optimization_dqi_resources.py")
+    k2_script = "verify_dqi_path_majority_k2_saved.py"
+    assert exporter.PUBLIC_SCRIPTS.count(k2_script) == 1
+    selected_scripts = tuple(name for name in selected_scripts if name != k2_script)
     path_majority_scripts = (
         "generate_optimization_dqi_path_majority.py", "validate_optimization_dqi_path_majority.py",
         "plot_dqi_path_majority_component_svg.py", "display_dqi_path_majority_saved.py",
@@ -702,6 +705,41 @@ def test_ci_has_one_saved_dqi_insertion_and_exact_prior_projection():
     if not workflow.is_file(): pytest.skip("Publication workflow is outside the public examples package")
     commands = [line.strip().removeprefix("run ") for line in workflow.read_text().splitlines()
                 if line.startswith("          run python ")]
+    thermal_command = (
+        "python scripts/verify_finite_gibbs_z_output_saved.py --bundle assets/generated/simulation/finite-gibbs-z-output "
+        "--manifest-sha256 a490a8c5c1c941ce7a1b284de40879047bc21a8d3491aeceee0f5b05a878faa6 --max-seconds 30"
+    )
+    assert len(commands) == 93 and commands.count(thermal_command) == 1
+    assert commands.index(thermal_command) == commands.index(
+        "python scripts/verify_thermal_two_round_public.py --bundle assets/generated/simulation/detailed-balance-two-round"
+    ) + 1
+    commands = [command for command in commands if command != thermal_command]
+    assert len(commands) == 92
+    assert sha(("\n".join(commands) + "\n").encode()) == (
+        "e1b4d0daa8f446888db525b96d3ca14f10bb05f02937e6a660320216abdc0fa8")
+    qpe_command = (
+        "python scripts/verify_qpe_application_tiny_saved.py --bundle assets/generated/qpe-application-tiny "
+        "--manifest-sha256 62fafef64e565b3549dfc505ab975611f43730b11d8ab040406bee631eb7e4e3 "
+        "--projection-sha256 9b2af033a7d68ae0c06e28bea70b9a5ed8380aa6310fe1d2c7938caf0c9e2e65 "
+        "--figure assets/figures/qpe-application-tiny-kernel.svg "
+        "--figure-sha256 2a482b68c0dcb68a5ff4ec84a373af5800163cd3ba171689a1fd4d1e34270a81 --max-seconds 30"
+    )
+    assert len(commands) == 92 and commands.count(qpe_command) == 1
+    assert commands.index(qpe_command) == commands.index(
+        "python scripts/verify_robust_qpe_resource_source_saved.py --bundle assets/generated/robust-qpe-resource-source "
+        "--expected-manifest-sha256 aaa9eebc661db8e2c8a41764eb8497fa66d810934d9dd1f4bc3b414805378e33 "
+        "--source-root . --max-seconds 30"
+    ) + 1
+    commands = [command for command in commands if command != qpe_command]
+    assert len(commands) == 91
+    assert sha(("\n".join(commands) + "\n").encode()) == (
+        "4e8cb70a81b9ec393afbd34d4eb9fefc63f42104de0819d61695c4af9a637a8a")
+    k2_command = (
+        "python scripts/verify_dqi_path_majority_k2_saved.py --bundle-root assets/generated/optimization/dqi-path-majority-k2 "
+        "--manifest-sha256 1294ccd3db9c4761cca476f6385ef15c29c0c2a3d18d18d83d71125c4a693ae7"
+    )
+    assert commands.count(k2_command) == 1
+    commands = [command for command in commands if command != k2_command]
     added_commands = (
         'python scripts/verify_robust_qpe_resource_source_saved.py --bundle assets/generated/robust-qpe-resource-source --expected-manifest-sha256 aaa9eebc661db8e2c8a41764eb8497fa66d810934d9dd1f4bc3b414805378e33 --source-root . --max-seconds 30',
         'python scripts/verify_shor_finite_adder_reference.py --bundle assets/generated/shor/finite-adder-reference',

@@ -589,7 +589,7 @@
             "gate": "rz",
             "angle_hex": "0x1.2d97c7f3321d2p+1",
             "epsilon_requested": 2.3118118162246766e-05,
-            "guarded_frobenius_error": 1.2896791179905565e-05,
+            "guarded_frobenius_error": 1.2896791179905563e-05,
             "gate_counts": {
               "h": 104,
               "t": 100,
@@ -614,7 +614,7 @@
         "compiled_global_phase": 1.5707963267948957,
         "qasm_export_scope": "complete measured trials; exporter omits the overall phase, so not a phase-preserving controlled-oracle specification"
       },
-      "synthesis_cpu_seconds": 0.965256190999753,
+      "synthesis_cpu_seconds": 0.6617294339998807,
       "logical_clifford_t_gate_counts": {
         "h": 1152,
         "t": 1114,
@@ -705,8 +705,8 @@
             "2": 2
           }
         },
-        "source_routed_semantic_operator_residual": 3.5101813464903806e-15,
-        "full_coherent_synthesis_operator_residual": 8.273713482990378e-05,
+        "source_routed_semantic_operator_residual": 3.5101813464903787e-15,
+        "full_coherent_synthesis_operator_residual": 8.273713482990377e-05,
         "source_accepted_block_residual_vs_ideal": 1.2949339969947004e-16,
         "routed_accepted_block_residual_vs_ideal": 1.9681052232999452e-15,
         "full_joint_law_total_variation_after_synthesis": 1.0544720676042632e-05,
@@ -964,7 +964,7 @@
                 "gate": "rz",
                 "angle_hex": "0x1.2d97c7f3321d2p+1",
                 "epsilon_requested": 2.3118118162246766e-05,
-                "guarded_frobenius_error": 1.2896791179905565e-05,
+                "guarded_frobenius_error": 1.2896791179905563e-05,
                 "gate_counts": {
                   "h": 104,
                   "t": 100,
@@ -1507,7 +1507,7 @@
             "resource_rsgridsynth_022",
             "resource_qdk_134"
           ],
-          "bounded_search_cpu_seconds": 1.5332337760000883
+          "bounded_search_cpu_seconds": 1.2443742069999644
         },
         {
           "schema_version": 1,
@@ -1749,7 +1749,7 @@
                 "gate": "rz",
                 "angle_hex": "0x1.2d97c7f3321d2p+1",
                 "epsilon_requested": 2.3118118162246766e-05,
-                "guarded_frobenius_error": 1.2896791179905565e-05,
+                "guarded_frobenius_error": 1.2896791179905563e-05,
                 "gate_counts": {
                   "h": 104,
                   "t": 100,
@@ -2292,7 +2292,7 @@
             "resource_rsgridsynth_022",
             "resource_qdk_134"
           ],
-          "bounded_search_cpu_seconds": 1.6385532509998484
+          "bounded_search_cpu_seconds": 1.1903190220000397
         }
       ],
       "physical_estimation_performed": true,
@@ -2961,7 +2961,7 @@
         "compiled_global_phase": 1.5707963267948832,
         "qasm_export_scope": "complete measured trials; exporter omits the overall phase, so not a phase-preserving controlled-oracle specification"
       },
-      "synthesis_cpu_seconds": 1.352290653000182,
+      "synthesis_cpu_seconds": 0.9266854319998856,
       "logical_clifford_t_gate_counts": {
         "h": 36932,
         "t": 35736,
@@ -3131,7 +3131,7 @@
           }
         },
         "source_routed_semantic_operator_residual": 1.3725454971773992e-14,
-        "full_coherent_synthesis_operator_residual": 0.00016256350013050185,
+        "full_coherent_synthesis_operator_residual": 0.00016256350013050183,
         "source_accepted_block_residual_vs_ideal": 6.14690250145286e-15,
         "routed_accepted_block_residual_vs_ideal": 1.674629738011154e-14,
         "full_joint_law_total_variation_after_synthesis": 7.4611563427351815e-06,
@@ -4070,7 +4070,7 @@
             "resource_rsgridsynth_022",
             "resource_qdk_134"
           ],
-          "bounded_search_cpu_seconds": 2.0401432590001605
+          "bounded_search_cpu_seconds": 1.5227182880000782
         },
         {
           "schema_version": 1,
@@ -4993,7 +4993,7 @@
             "resource_rsgridsynth_022",
             "resource_qdk_134"
           ],
-          "bounded_search_cpu_seconds": 2.0508980989998236
+          "bounded_search_cpu_seconds": 1.4539608099998986
         }
       ],
       "physical_estimation_performed": true,
@@ -5020,7 +5020,7 @@
   },
   "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
   "license_sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
-  "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
+  "source_revision_at_generation": "f271129d8bd268bee1dfcdc435f61075dcf2c008",
   "source_dirty_at_generation": false,
   "environment": {
     "python": "3.12.14",
@@ -5053,5 +5053,5 @@
   "physical_estimation_performed": true,
   "source_or_hardware_advantage_claimed": false,
   "larger_width_Taylor_physical_status": "pending; unchanged instrument model supports at most five logical wires",
-  "cpu_generation_seconds": 27.346135844999935
+  "cpu_generation_seconds": 16.141035816999874
 }

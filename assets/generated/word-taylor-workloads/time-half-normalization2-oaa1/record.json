@@ -274,15 +274,15 @@
   },
   "numerical_validation": {
     "performed": true,
-    "source_block_residual_vs_independent_polynomial": 3.6441499282643784e-14,
+    "source_block_residual_vs_independent_polynomial": 3.6790177405901096e-14,
     "complete_measured_branch_probability_residual": 7.416289804496046e-13,
-    "coherent_lowering_random_full_register_residual": 1.6361025305899947e-13,
-    "independent_expm_eigh_residual": 7.872681470920296e-16,
+    "coherent_lowering_random_full_register_residual": 1.6363176108737457e-13,
+    "independent_expm_eigh_residual": 7.803857063274987e-16,
     "actual_known_input_acceptance": 0.9999999586528099,
-    "actual_known_input_Z_mean": 0.9411552997876818,
+    "actual_known_input_Z_mean": 0.9411552997876816,
     "independent_target_Z_mean": 0.9411661317607167,
-    "actual_known_input_Z_bias": 1.0831973034974851e-05,
-    "actual_full_map_minimum_acceptance": 0.9999999199355654,
+    "actual_known_input_Z_bias": 1.0831973035085873e-05,
+    "actual_full_map_minimum_acceptance": 0.9999999199355643,
     "numerical_probability_guard": 5e-10,
     "seed": 20261112,
     "uniform_hardware_certificate": false,
@@ -432,5 +432,5 @@
       "executed sampling"
     ]
   },
-  "cpu_generation_and_check_seconds": 3.4765272539998477
+  "cpu_generation_and_check_seconds": 1.9197632969999177
 }

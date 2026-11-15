@@ -1,0 +1,310 @@
+{
+  "schema": "openquantum.finite_gibbs.public_summary.v1",
+  "packaging_status": "private_source_proposal_unexecuted",
+  "source_commit": "47ffd10368a738f9576053491a56c6d80a10e602",
+  "source_freeze_sha256": "08a18e7c6b6cf4a8c0e836ed09e7725dfaaadae4cfb1a6c5d11197ed8d2208f9",
+  "original_result_sha256": "f5e0b772fa2005f415af19d3cb4ba94395753a9172a308dd868b8058acbb5129",
+  "public_results_sha256": "8329d568e2df8f317f97610165385123f52dc0f5d47c6aa190838405966ca33f",
+  "fixed_conditional_Z_mean_contract_accepted": true,
+  "scope": "Fixed ideal conditional Z-mean contract for H=Z, beta=1, known-plus input, M=16, delta=1/8 and R=64; future fresh iid ideal Born measurements only.",
+  "parameters": {
+    "M": 16,
+    "beta": 1,
+    "clock_bits": 4,
+    "delta": 0.125,
+    "initial": "plus",
+    "measurement_samples_projected": 16384,
+    "product_steps": 1,
+    "proposal_labels": [
+      "X",
+      "Z"
+    ],
+    "rounds": 64,
+    "terms": [
+      [
+        1,
+        "Z"
+      ]
+    ]
+  },
+  "target": "mu_beta = -tanh(1)",
+  "source_counts": {
+    "access": 140,
+    "dilation": 1493,
+    "preparation_R2": 3013,
+    "preparation_R64": 96323,
+    "reset_round": 1505
+  },
+  "density_source": {
+    "primitives": 3012,
+    "resets": 25,
+    "terminal_measures_removed": 1
+  },
+  "scientific_inventory": {
+    "external_density_evolutions": 1,
+    "fixed_interval_certificate_evaluations": 1,
+    "independent_full_U_Kraus_constructions": 1,
+    "matrix_power_calls": 2,
+    "statevector_evolutions": 2
+  },
+  "measurement_projection": {
+    "iid_ideal_Born_assumption": true,
+    "samples": 16384,
+    "sampling_performed": false,
+    "total_work_formula": "16384*(64*1505+3)",
+    "whole_preparation_primitives_each": 96323
+  },
+  "raw_population_diagnostics": {
+    "actual_R64_Z": -0.75228628041434,
+    "reference_R64_Z": -0.75228628041819,
+    "reference_d": 0.485647125842772,
+    "reference_u": 0.06618515602740337
+  },
+  "raw_residuals": {
+    "R2_joint_entry_error": 1.3527794573621077e-15,
+    "R2_joint_trace_error": 1.6253679897802156e-13,
+    "R2_reduced_entry_error": 1.3527794573621077e-15,
+    "R64_actual_hermiticity_error": 1.0842021725662837e-18,
+    "R64_actual_trace_error": 5.114353385238246e-12,
+    "R64_reference_trace_error": 1.1102230248849537e-15,
+    "actual_kraus_completeness_entry_error": 8.004708007547379e-14,
+    "actual_reference_R64_state_entry_error": 4.4827475065289946e-12,
+    "actual_reference_channel_entry_error": 7.938094626069869e-14,
+    "all64_kraus_entry_error": 3.930213482014788e-14,
+    "reference_R64_Z_vs_exact_interval_diagnostic": 1.5543122344752192e-15,
+    "reference_X_jump_diagonal_error": 0,
+    "reference_Z_jump_offdiagonal_error": 0,
+    "reference_d_vs_exact_interval_diagnostic": 1.1102230246251565e-16,
+    "reference_full_U_unitarity_entry_error": 1.4432899320127035e-15,
+    "reference_kraus_completeness_entry_error": 4.440892098500626e-16,
+    "reference_nonjump_offdiagonal_error": 0,
+    "reference_u_vs_exact_interval_diagnostic": 2.7755575615628914e-17
+  },
+  "implementation_checks": {
+    "R2_joint_entry_error": true,
+    "R2_joint_trace_error": true,
+    "R2_reduced_entry_error": true,
+    "R64_actual_hermiticity_error": true,
+    "R64_actual_trace_error": true,
+    "R64_reference_trace_error": true,
+    "actual_kraus_completeness_entry_error": true,
+    "actual_reference_R64_state_entry_error": true,
+    "actual_reference_channel_entry_error": true,
+    "all64_kraus_entry_error": true,
+    "reference_R64_Z_vs_exact_interval_diagnostic": true,
+    "reference_X_jump_diagonal_error": true,
+    "reference_Z_jump_offdiagonal_error": true,
+    "reference_d_vs_exact_interval_diagnostic": true,
+    "reference_full_U_unitarity_entry_error": true,
+    "reference_kraus_completeness_entry_error": true,
+    "reference_nonjump_offdiagonal_error": true,
+    "reference_u_vs_exact_interval_diagnostic": true
+  },
+  "domain_checks": {
+    "d_positive_lower": true,
+    "population_step_at_most_one": true,
+    "population_step_nonnegative": true,
+    "rate_sum_positive_lower": true,
+    "u_positive_lower": true
+  },
+  "budget_checks": {
+    "angle_realization_at_most_0.002": true,
+    "digital_transient_at_most_0.002": true,
+    "finite_time_transient_at_most_0.012": true,
+    "measurement_failure_at_most_0.050": true,
+    "mesh_stationary_at_most_0.004": true,
+    "preparation_total_at_most_0.020": true,
+    "total_error_at_most_0.050": true
+  },
+  "saved_budget_terms": [
+    {
+      "term": "complete_angle_bridge",
+      "original_interval_key": "angle_bias",
+      "saved_interval": {
+        "hi": "9.4087761533880018858664655240741897836771496089335424E-13",
+        "lo": "0"
+      },
+      "frozen_allowance": "0.002"
+    },
+    {
+      "term": "finite_stationary_Z_bias",
+      "original_interval_key": "mesh_bias",
+      "saved_interval": {
+        "hi": "0.0014683286051066203802520333745940144948744645315458916676021440",
+        "lo": "0.0014683286051066203802520333745940144948744645315458916675009981"
+      },
+      "frozen_allowance": "0.004"
+    },
+    {
+      "term": "weak_digital_transient",
+      "original_interval_key": "digital_bias",
+      "saved_interval": {
+        "hi": "0.0013569783582174397401590540394473260966849715681311283598236479",
+        "lo": "0.0013569783582174397401590540394473260966849715681311283596148406"
+      },
+      "frozen_allowance": "0.002"
+    },
+    {
+      "term": "finite_time_transient",
+      "original_interval_key": "mixing_bias",
+      "saved_interval": {
+        "hi": "0.0091965252906841104873712605069079390281772204141448330587664252",
+        "lo": "0.0091965252906841104873712605069079390281772204141448330585607941"
+      },
+      "frozen_allowance": "0.012"
+    },
+    {
+      "term": "preparation_total",
+      "original_interval_key": "preparation_total",
+      "saved_interval": {
+        "hi": "0.01202183225494904822312114810953592617214407549218956804708557134",
+        "lo": "0.0120218322540081706077823479209492796197366565138218530856766328"
+      },
+      "frozen_allowance": "0.020"
+    },
+    {
+      "term": "preparation_plus_projected_measurement_error",
+      "original_interval_key": "total_error_allowance",
+      "saved_interval": {
+        "hi": "0.04202183225494904822312114810953592617214407549218956804708557134",
+        "lo": "0.0420218322540081706077823479209492796197366565138218530856766328"
+      },
+      "frozen_allowance": "0.050"
+    },
+    {
+      "term": "projected_Hoeffding_failure",
+      "original_interval_key": "hoeffding_failure_bound",
+      "saved_interval": {
+        "hi": "0.001256214029952994852944623685032630438006708286416031253854232183",
+        "lo": "0.001256214029952994852944623685032630438006708286416031253854231783"
+      },
+      "frozen_allowance": "0.050"
+    }
+  ],
+  "saved_angle_error_sum": {
+    "hi": "7.35060636983437647333317619068296076849777313197933E-15",
+    "lo": "0"
+  },
+  "saved_mu_beta_interval": {
+    "hi": "-0.7615941559557648881194582826047935904127685972579365515968104530",
+    "lo": "-0.7615941559557648881194582826047935904127685972579365515968105602"
+  },
+  "raw_final_flags": {
+    "status": "observed_fixed_finite_Gibbs_Z_components",
+    "finite_gibbs_Z_output_bound_observed": true,
+    "finite_gibbs_Z_output_bound_passed": false,
+    "whole_invocation_validated": false
+  },
+  "excluded": [
+    "full-state accuracy",
+    "general thermal sampler or mixing theorem",
+    "uniform continuum/KMS bridge",
+    "rotation synthesis",
+    "physical faults/timing/independence",
+    "FT resource advantage",
+    "floating backend rounding certificate",
+    "mechanized proof"
+  ],
+  "data_projection": {
+    "top_level_scientific_whitelist": [
+      "accuracy_scope",
+      "actual_basis_columns",
+      "all_components_verified",
+      "angle_provenance",
+      "backend_internal_Operator_SuperOp_constructors",
+      "channel_implemented",
+      "coherent_correction_evolution_implemented",
+      "coherent_correction_implemented",
+      "counters",
+      "density_source",
+      "exact_finite_kms",
+      "excluded",
+      "expected_internal_reset_dispatches",
+      "finite_gibbs_Z_output_bound_observed",
+      "finite_gibbs_Z_output_bound_passed",
+      "finite_mesh_exact_kms",
+      "floating_point_error_certified",
+      "formal_proof_reproduced",
+      "general_channel_implemented",
+      "general_coherent_correction_implemented",
+      "hardware_error_certified",
+      "implementation_checks",
+      "implementation_checks_passed",
+      "internal_reset_dispatches_measured",
+      "interval_certificate",
+      "matrices",
+      "measurement_projection",
+      "mesh_record",
+      "mixing_certificate",
+      "new_algorithm_result",
+      "parameters",
+      "physical_resources_computed",
+      "preprocessing_counters",
+      "random_sampling_performed",
+      "raw_population_diagnostics",
+      "raw_residuals",
+      "rotations_synthesized",
+      "runtime_versions",
+      "sampler_implemented",
+      "source_commit",
+      "source_counts",
+      "source_freeze_sha256",
+      "source_realization",
+      "source_summaries",
+      "status",
+      "tolerances",
+      "whole_invocation_validated",
+      "zero_Operator_SuperOp_requests_scope"
+    ],
+    "scoped_acceptance_whitelist": [
+      "actual_shots",
+      "all_18_implementation_5_domain_7_budget_predicates_passed",
+      "date",
+      "fixed_conditional_Z_mean_contract_accepted",
+      "floating_backend_error_certified",
+      "formal_proof_reproduced",
+      "full_R64_primitive_simulation_performed",
+      "full_state_Gibbs_accuracy_certified",
+      "general_sampler_or_mixing_theorem",
+      "parameters",
+      "physical_resources_computed",
+      "raw_final_flags_unchanged",
+      "rotations_synthesized",
+      "source_commit",
+      "source_freeze_sha256",
+      "whole_invocation_validated"
+    ],
+    "selected_matrix_keys": [
+      "R2_expected_joint_state",
+      "R2_joint_state",
+      "R2_reduced_state",
+      "actual_R64_state",
+      "actual_all64_kraus",
+      "actual_channel",
+      "reference_R64_state",
+      "reference_all64_kraus",
+      "reference_channel",
+      "reference_full_U"
+    ],
+    "selected_actual_basis_columns": [
+      "0",
+      "1"
+    ],
+    "all_whitelisted_scientific_subtrees_copied_without_value_changes": true,
+    "original_top_level_fields_omitted": [
+      "caps",
+      "cpu_seconds_at_report",
+      "decimal_backend",
+      "loaded_module_origins",
+      "resource_observation_scope",
+      "schema",
+      "startup_policy_after_import",
+      "startup_policy_entry",
+      "startup_policy_final",
+      "terminal_acceptance_record",
+      "terminal_acceptance_required",
+      "wall_seconds_at_report"
+    ],
+    "omission_scope": "Operational resource caps/timing, backend host/native origins, startup-policy records and delivery bookkeeping are omitted. Scientific scope flags are retained. Generic native identity requirements and numeric binary64 evidence are scientific authenticity fields."
+  }
+}

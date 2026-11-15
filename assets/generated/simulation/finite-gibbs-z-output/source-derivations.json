@@ -1,0 +1,106 @@
+{
+  "schema": "openquantum.finite_gibbs.public_source_derivations.v1",
+  "source_commit": "47ffd10368a738f9576053491a56c6d80a10e602",
+  "source_freeze_sha256": "08a18e7c6b6cf4a8c0e836ed09e7725dfaaadae4cfb1a6c5d11197ed8d2208f9",
+  "packaging_executed": false,
+  "derivations": [
+    {
+      "public_path": "sources/finite_gibbs_interval.py",
+      "original_source_commit": "47ffd10368a738f9576053491a56c6d80a10e602",
+      "original_source_sha256": "e106c921722bb53f6d724709e79ad6c21e239b8d01a5141ac807a28f48a12745",
+      "original_source_bytes": 28145,
+      "public_source_sha256": "8f035148771d8659057cd7f013d0378ec5d9995f4e2fe255bc453b348d776362",
+      "public_source_bytes": 28159,
+      "change_scope": "Module docstring only. Historical authorization/status prose replaced by accepted-science and unexecuted-public-packaging scope; generic authentication obligations retained.",
+      "unchanged_suffix_start": "from __future__ import annotations",
+      "unchanged_suffix_sha256": "fc77338ac7ab020a1e9f8e1d9ac7757e09bba48a5ce564f75697c806688b06cf",
+      "all_executable_function_and_class_bodies_byte_identical": true,
+      "public_module_docstring": "# SPDX-License-Identifier: MIT\n\"\"\"Outward intervals for the fixed one-spin Gibbs-Z source contract.\n\nThis scientific helper was used in the accepted fixed calculation. The public\npackaging is a source-only derivation that has not been executed as a downloaded\npackage. Import defines classes and constants only; arithmetic starts when an\nEvaluator is constructed and invoked. No scientific package, native job, file,\nenvironment, signal, random draw or subprocess is used here.\n\nEvery basic Decimal operation uses an explicit precision-64 directed context.\nTranscendentals use bounded real series/brackets with analytic remainder\nbounds, never Decimal.exp/sqrt or ordinary floating transcendental functions.\nThe fixed output check is conditional on an authenticated complete angle\nledger and the stated ideal circuit/iid measurement assumptions. It supplies\nno full-state, generic mixing, floating-backend, hardware or formal proof claim.\n\"\"\"\n"
+    },
+    {
+      "public_path": "sources/finite_gibbs_angle_provenance.py",
+      "original_source_commit": "47ffd10368a738f9576053491a56c6d80a10e602",
+      "original_source_sha256": "2166bcfd39144ed1fcc8c417646b298c0b4712aef4bcad4f32734dc9d63b7b16",
+      "original_source_bytes": 27493,
+      "public_source_sha256": "175de0ead4e4e32ee679c42831662682e58c1467688d4bfe08ffaec6265801c1",
+      "public_source_bytes": 27630,
+      "change_scope": "Module docstring only. Historical authorization/status prose replaced by accepted-science and unexecuted-public-packaging scope; generic authentication obligations retained.",
+      "unchanged_suffix_start": "from __future__ import annotations",
+      "unchanged_suffix_sha256": "40973ec3b4f1bf43d0b3befefab83dd0f84e35737fb5c468731c032072034e2b",
+      "all_executable_function_and_class_bodies_byte_identical": true,
+      "public_module_docstring": "# SPDX-License-Identifier: MIT\n\"\"\"Independent fixed primitive targets and complete numeric-angle provenance.\n\nThis scientific helper was used in the accepted fixed calculation. The public\npackaging is a source-only derivation that has not been executed as a downloaded\npackage. The module constructs no Qiskit circuit, imports no scientific package\nand performs no work at import. The supplied interval evaluator owns outward\narithmetic; native-class identity and live-circuit rechecks are separate\nauthentication obligations. Names alone do not attest that identity. Every\noperation and serialized token is checked, while repeated preparations are\nrecorded by exhaustive template/range mappings.\n\"\"\"\n"
+    },
+    {
+      "public_path": "sources/finite_gibbs_reference.py",
+      "original_source_commit": "47ffd10368a738f9576053491a56c6d80a10e602",
+      "original_source_file": "scripts/check_finite_gibbs_output.py",
+      "original_source_sha256": "dc4666c8f17caf85bc00b0e15df9ea6c90671ac7b39cd1d5c9a10f288083c816",
+      "public_source_sha256": "1f82517c1992f93ec3fa7af49982286e64c7cf011b69a07bdc20ac1dbb956ac4",
+      "public_source_bytes": 4693,
+      "change_scope": "Four pure scientific definitions extracted byte-identically; portable module docstring and math import newly authored. Final extra blank separator at module EOF removed; definition bytes unchanged.",
+      "definition_hash_boundary": "def start through newline after final body line; blank separator before next definition excluded",
+      "definitions": [
+        {
+          "name": "_matrix_record",
+          "bytes": 327,
+          "sha256": "20b3be3567c4905682669ac5be3c467a66402a55062c8afe51ae103b2562cc44",
+          "original_line_start": 1256,
+          "original_line_end": 1261,
+          "original_byte_range_half_open": [
+            65960,
+            66287
+          ]
+        },
+        {
+          "name": "_max_entry",
+          "bytes": 172,
+          "sha256": "c2a4f40e9a251b902a951bf71c2d49b075cf4ab6f9d6ff13b93d331dbb63a93b",
+          "original_line_start": 1263,
+          "original_line_end": 1268,
+          "original_byte_range_half_open": [
+            66289,
+            66461
+          ]
+        },
+        {
+          "name": "_full_reference",
+          "bytes": 3167,
+          "sha256": "8eeaaa3f16f6a8b22377b46a45186f44836d60a83b57fa20dbe02fad0363823b",
+          "original_line_start": 1270,
+          "original_line_end": 1323,
+          "original_byte_range_half_open": [
+            66463,
+            69630
+          ]
+        },
+        {
+          "name": "_superoperator",
+          "bytes": 268,
+          "sha256": "15f93280907c4d22e2ace2d127038dae247ee55a754c9cf81de3d4034630883c",
+          "original_line_start": 1325,
+          "original_line_end": 1329,
+          "original_byte_range_half_open": [
+            69632,
+            69900
+          ]
+        }
+      ],
+      "definition_bodies_byte_identical": true,
+      "portable_packaging_executed": false
+    },
+    {
+      "public_path": "sources/reproduce.py",
+      "public_source_sha256": "a368f179c797f25246cb1ef89055b582d7d26164f041a584c09ab22a57cb597f",
+      "public_source_bytes": 29996,
+      "change_scope": "New portable source-only wrapper for exact accepted QASM with bounded native direct calls. Numerical orchestration adapts original _run excerpt using two backend-dispatch substitutions; parser, import/setup, guard adapter, result schema/writer and recipe are new.",
+      "original_numerical_excerpt_bytes": 5342,
+      "original_numerical_excerpt_sha256": "751669ceee277223bc8d9845ac86212a21ecb37940f5f770b445c6521a4f1d4d",
+      "adapted_numerical_excerpt_sha256": "535104af532d97b87f5a3efe29624bf12a03812fb85bbfa463574e709fbe744b",
+      "default_input": "five exact accepted primitive QASM files",
+      "scientific_source_helpers_executed_in_accepted_calculation": true,
+      "portable_wrapper_executed": false,
+      "portable_wrapper_runtime_validated": false,
+      "extends_original_acceptance": false
+    }
+  ]
+}

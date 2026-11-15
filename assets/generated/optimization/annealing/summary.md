@@ -32,4 +32,4 @@ All time/step studies and dense ODE calculations are classical simulations with 
 
 Per main circuit: H 4, RX 2048, RZ 1024, CX 2048, measurement 4. The modeled protocol totals **12,288 fresh main-circuit preparations** and **49,152 qubit readouts**. The ledger repeats every preparation, driver rotation, explicit edge interaction, and final measurement for all shots. Physical reset/measurement time, routing, rotation synthesis, fault correction and hardware runtime are excluded. Arbitrary rotations remain unsynthesized in this logical ledger. Any conditional physical projection is a separate report.
 
-The recorded bounded CPU workflow took 2.552584 s for circuit simulation, dense references, gap diagnostics and ideal sampling. Artifact drawing, export and logical-ledger compilation are outside that timer; it is not quantum hardware time.
+The recorded bounded CPU workflow took 1.371021 s for circuit simulation, dense references, gap diagnostics and ideal sampling. Artifact drawing, export and logical-ledger compilation are outside that timer; it is not quantum hardware time.

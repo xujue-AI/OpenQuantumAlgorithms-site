@@ -30,7 +30,7 @@
       "primitive_operations_per_trial": 8797,
       "dependency_depth": 5021,
       "readouts_per_trial": 8,
-      "construction_and_lowering_ns": 165544922,
+      "construction_and_lowering_ns": 116936603,
       "circuit_source_sha256": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3",
       "simulation": {
         "probabilities": [
@@ -554,7 +554,7 @@
         "classical_reference_order": 4,
         "total_qubits": 18,
         "performed": true,
-        "simulation_and_independent_check_ns": 12619793736,
+        "simulation_and_independent_check_ns": 7792711005,
         "probability_normalization_for_classical_draws": 0.9999999999999091
       },
       "physical_estimation": {
@@ -595,7 +595,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 39003,
+            "wall_ns": 48047,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -673,7 +673,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 105717
+            "wall_ns": 101315
           }
         },
         {
@@ -694,7 +694,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13094,
+            "wall_ns": 8733,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -772,7 +772,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 64240
+            "wall_ns": 42728
           }
         },
         {
@@ -793,7 +793,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 238876,
+            "wall_ns": 249330,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -871,7 +871,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 59351
+            "wall_ns": 36992
           }
         },
         {
@@ -892,7 +892,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11301,
+            "wall_ns": 6292,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -970,7 +970,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 48430
+            "wall_ns": 28689
           }
         },
         {
@@ -991,7 +991,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9949,
+            "wall_ns": 6146,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1069,7 +1069,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46858
+            "wall_ns": 27051
           }
         },
         {
@@ -1090,7 +1090,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9928,
+            "wall_ns": 5897,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1168,7 +1168,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 57017
+            "wall_ns": 29294
           }
         },
         {
@@ -1189,7 +1189,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10068,
+            "wall_ns": 5666,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1267,7 +1267,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46848
+            "wall_ns": 24540
           }
         },
         {
@@ -1288,7 +1288,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12363,
+            "wall_ns": 5409,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1366,7 +1366,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 50044
+            "wall_ns": 23529
           }
         },
         {
@@ -1387,7 +1387,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 8837,
+            "wall_ns": 4561,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1465,7 +1465,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46387
+            "wall_ns": 23371
           }
         },
         {
@@ -1486,7 +1486,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9989,
+            "wall_ns": 5203,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1564,7 +1564,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44192
+            "wall_ns": 23425
           }
         },
         {
@@ -1585,7 +1585,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10019,
+            "wall_ns": 5469,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1663,7 +1663,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45385
+            "wall_ns": 23775
           }
         },
         {
@@ -1684,7 +1684,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10620,
+            "wall_ns": 5747,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1762,7 +1762,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46737
+            "wall_ns": 25312
           }
         },
         {
@@ -1783,7 +1783,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9248,
+            "wall_ns": 5208,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1861,7 +1861,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46558
+            "wall_ns": 24506
           }
         },
         {
@@ -1882,7 +1882,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10559,
+            "wall_ns": 6088,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -1960,7 +1960,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45455
+            "wall_ns": 42408
           }
         },
         {
@@ -1981,7 +1981,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10089,
+            "wall_ns": 5689,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2059,7 +2059,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45374
+            "wall_ns": 27972
           }
         },
         {
@@ -2080,7 +2080,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 22241,
+            "wall_ns": 6216,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2158,7 +2158,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45805
+            "wall_ns": 25435
           }
         },
         {
@@ -2179,7 +2179,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 8687,
+            "wall_ns": 4728,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2257,7 +2257,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46978
+            "wall_ns": 23676
           }
         },
         {
@@ -2278,7 +2278,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9237,
+            "wall_ns": 4972,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2356,7 +2356,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43041
+            "wall_ns": 25521
           }
         },
         {
@@ -2379,7 +2379,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11852,
+            "wall_ns": 6755,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2457,7 +2457,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43332
+            "wall_ns": 24751
           }
         },
         {
@@ -2480,7 +2480,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14928,
+            "wall_ns": 7339,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2558,7 +2558,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 47198
+            "wall_ns": 24612
           }
         },
         {
@@ -2585,7 +2585,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18385,
+            "wall_ns": 9729,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2663,7 +2663,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44112
+            "wall_ns": 23634
           }
         },
         {
@@ -2689,7 +2689,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14718,
+            "wall_ns": 9615,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2767,7 +2767,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44975
+            "wall_ns": 25676
           }
         },
         {
@@ -2794,7 +2794,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 23995,
+            "wall_ns": 9143,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2872,7 +2872,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 55373
+            "wall_ns": 25293
           }
         },
         {
@@ -2895,7 +2895,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 15298,
+            "wall_ns": 7555,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -2973,7 +2973,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45706
+            "wall_ns": 24866
           }
         },
         {
@@ -2997,7 +2997,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12143,
+            "wall_ns": 6427,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3075,7 +3075,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44874
+            "wall_ns": 25223
           }
         },
         {
@@ -3098,7 +3098,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14347,
+            "wall_ns": 6833,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3176,7 +3176,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 50454
+            "wall_ns": 25040
           }
         },
         {
@@ -3200,7 +3200,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12915,
+            "wall_ns": 6970,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3278,7 +3278,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46086
+            "wall_ns": 25622
           }
         },
         {
@@ -3301,7 +3301,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14267,
+            "wall_ns": 6359,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3379,7 +3379,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44463
+            "wall_ns": 25148
           }
         },
         {
@@ -3402,7 +3402,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10179,
+            "wall_ns": 5631,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3480,7 +3480,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43701
+            "wall_ns": 24302
           }
         },
         {
@@ -3504,7 +3504,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16030,
+            "wall_ns": 9150,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3582,7 +3582,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46878
+            "wall_ns": 25925
           }
         },
         {
@@ -3606,7 +3606,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15319,
+            "wall_ns": 8282,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3684,7 +3684,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42910
+            "wall_ns": 24040
           }
         },
         {
@@ -3707,7 +3707,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18214,
+            "wall_ns": 7804,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3785,7 +3785,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 99606
+            "wall_ns": 60855
           }
         },
         {
@@ -3808,7 +3808,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14276,
+            "wall_ns": 7559,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3886,7 +3886,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 48741
+            "wall_ns": 24363
           }
         },
         {
@@ -3910,7 +3910,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15860,
+            "wall_ns": 8353,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -3988,7 +3988,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42920
+            "wall_ns": 23861
           }
         },
         {
@@ -4012,7 +4012,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15549,
+            "wall_ns": 8541,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4090,7 +4090,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43401
+            "wall_ns": 23482
           }
         },
         {
@@ -4113,7 +4113,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 42089,
+            "wall_ns": 7500,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4191,7 +4191,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 50565
+            "wall_ns": 23293
           }
         },
         {
@@ -4214,7 +4214,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10359,
+            "wall_ns": 5393,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4292,7 +4292,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43641
+            "wall_ns": 22884
           }
         },
         {
@@ -4316,7 +4316,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11872,
+            "wall_ns": 6469,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4394,7 +4394,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43392
+            "wall_ns": 24260
           }
         },
         {
@@ -4418,7 +4418,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12624,
+            "wall_ns": 6793,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4496,7 +4496,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 47639
+            "wall_ns": 23995
           }
         },
         {
@@ -4521,7 +4521,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 17232,
+            "wall_ns": 7899,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4599,7 +4599,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 48160
+            "wall_ns": 24849
           }
         },
         {
@@ -4623,7 +4623,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12323,
+            "wall_ns": 18643,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4701,7 +4701,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44172
+            "wall_ns": 27475
           }
         },
         {
@@ -4724,7 +4724,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11000,
+            "wall_ns": 6363,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4802,7 +4802,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44714
+            "wall_ns": 24840
           }
         },
         {
@@ -4825,7 +4825,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10640,
+            "wall_ns": 5800,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -4903,7 +4903,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45495
+            "wall_ns": 24232
           }
         },
         {
@@ -4927,7 +4927,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12483,
+            "wall_ns": 6799,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5005,7 +5005,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44283
+            "wall_ns": 23696
           }
         },
         {
@@ -5029,7 +5029,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12734,
+            "wall_ns": 6563,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5107,7 +5107,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 61194
+            "wall_ns": 24544
           }
         },
         {
@@ -5131,7 +5131,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13295,
+            "wall_ns": 6645,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5209,7 +5209,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45365
+            "wall_ns": 23384
           }
         },
         {
@@ -5234,7 +5234,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13426,
+            "wall_ns": 7163,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5312,7 +5312,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43762
+            "wall_ns": 22686
           }
         },
         {
@@ -5336,7 +5336,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12202,
+            "wall_ns": 6266,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5414,7 +5414,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44243
+            "wall_ns": 23475
           }
         },
         {
@@ -5437,7 +5437,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10299,
+            "wall_ns": 5366,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5515,7 +5515,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43001
+            "wall_ns": 22563
           }
         },
         {
@@ -5538,7 +5538,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11051,
+            "wall_ns": 5723,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5616,7 +5616,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 71965
+            "wall_ns": 22296
           }
         },
         {
@@ -5639,7 +5639,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11773,
+            "wall_ns": 5550,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5717,7 +5717,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46807
+            "wall_ns": 21913
           }
         },
         {
@@ -5740,7 +5740,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10580,
+            "wall_ns": 5257,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5818,7 +5818,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44093
+            "wall_ns": 21938
           }
         },
         {
@@ -5845,7 +5845,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14828,
+            "wall_ns": 7446,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -5923,7 +5923,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43070
+            "wall_ns": 22252
           }
         },
         {
@@ -5950,7 +5950,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15559,
+            "wall_ns": 8548,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6028,7 +6028,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43130
+            "wall_ns": 23265
           }
         },
         {
@@ -6056,7 +6056,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15359,
+            "wall_ns": 8258,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6134,7 +6134,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43962
+            "wall_ns": 22951
           }
         },
         {
@@ -6163,7 +6163,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15709,
+            "wall_ns": 8321,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6241,7 +6241,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 83065
+            "wall_ns": 48524
           }
         },
         {
@@ -6269,7 +6269,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15910,
+            "wall_ns": 8212,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6347,7 +6347,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45115
+            "wall_ns": 24290
           }
         },
         {
@@ -6374,7 +6374,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15138,
+            "wall_ns": 9127,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6452,7 +6452,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 47128
+            "wall_ns": 25055
           }
         },
         {
@@ -6479,7 +6479,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15428,
+            "wall_ns": 8352,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6557,7 +6557,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43602
+            "wall_ns": 23549
           }
         },
         {
@@ -6585,7 +6585,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15128,
+            "wall_ns": 8426,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6663,7 +6663,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43020
+            "wall_ns": 24386
           }
         },
         {
@@ -6690,7 +6690,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15268,
+            "wall_ns": 8043,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6768,7 +6768,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44924
+            "wall_ns": 24116
           }
         },
         {
@@ -6794,7 +6794,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14658,
+            "wall_ns": 7730,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6872,7 +6872,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43842
+            "wall_ns": 26074
           }
         },
         {
@@ -6898,7 +6898,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15179,
+            "wall_ns": 7665,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -6976,7 +6976,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43632
+            "wall_ns": 22497
           }
         },
         {
@@ -7002,7 +7002,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14928,
+            "wall_ns": 7777,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7080,7 +7080,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 65002
+            "wall_ns": 22200
           }
         },
         {
@@ -7106,7 +7106,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14648,
+            "wall_ns": 7048,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7184,7 +7184,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45645
+            "wall_ns": 21867
           }
         },
         {
@@ -7211,7 +7211,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16220,
+            "wall_ns": 8263,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7289,7 +7289,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43863
+            "wall_ns": 22381
           }
         },
         {
@@ -7316,7 +7316,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16250,
+            "wall_ns": 8344,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7394,7 +7394,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42860
+            "wall_ns": 23276
           }
         },
         {
@@ -7421,7 +7421,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16731,
+            "wall_ns": 8976,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7499,7 +7499,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43622
+            "wall_ns": 33688
           }
         },
         {
@@ -7526,7 +7526,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16101,
+            "wall_ns": 9892,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7604,7 +7604,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43181
+            "wall_ns": 25314
           }
         },
         {
@@ -7632,7 +7632,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16641,
+            "wall_ns": 8895,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7710,7 +7710,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43151
+            "wall_ns": 23545
           }
         },
         {
@@ -7739,7 +7739,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16260,
+            "wall_ns": 8444,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7817,7 +7817,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43220
+            "wall_ns": 22824
           }
         },
         {
@@ -7846,7 +7846,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17012,
+            "wall_ns": 9050,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -7924,7 +7924,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42699
+            "wall_ns": 22517
           }
         },
         {
@@ -7952,7 +7952,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15800,
+            "wall_ns": 8550,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8030,7 +8030,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43281
+            "wall_ns": 22962
           }
         },
         {
@@ -8058,7 +8058,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16150,
+            "wall_ns": 9596,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8136,7 +8136,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42930
+            "wall_ns": 22476
           }
         },
         {
@@ -8160,7 +8160,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12523,
+            "wall_ns": 6810,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8238,7 +8238,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43251
+            "wall_ns": 22700
           }
         },
         {
@@ -8262,7 +8262,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13686,
+            "wall_ns": 7038,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8340,7 +8340,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43751
+            "wall_ns": 22147
           }
         },
         {
@@ -8365,7 +8365,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13315,
+            "wall_ns": 7266,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8443,7 +8443,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43170
+            "wall_ns": 22062
           }
         },
         {
@@ -8467,7 +8467,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12183,
+            "wall_ns": 6248,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8545,7 +8545,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42119
+            "wall_ns": 22644
           }
         },
         {
@@ -8570,7 +8570,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13626,
+            "wall_ns": 7114,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8648,7 +8648,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 156112
+            "wall_ns": 23061
           }
         },
         {
@@ -8672,7 +8672,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13214,
+            "wall_ns": 6498,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8750,7 +8750,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 87624
+            "wall_ns": 45377
           }
         },
         {
@@ -8773,7 +8773,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11201,
+            "wall_ns": 5580,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8851,7 +8851,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45926
+            "wall_ns": 24154
           }
         },
         {
@@ -8874,7 +8874,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11301,
+            "wall_ns": 6193,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -8952,7 +8952,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43250
+            "wall_ns": 23360
           }
         },
         {
@@ -8975,7 +8975,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10599,
+            "wall_ns": 5523,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9053,7 +9053,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43512
+            "wall_ns": 23255
           }
         },
         {
@@ -9076,7 +9076,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11081,
+            "wall_ns": 6144,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9154,7 +9154,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43301
+            "wall_ns": 23701
           }
         },
         {
@@ -9177,7 +9177,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10450,
+            "wall_ns": 5303,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9255,7 +9255,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42910
+            "wall_ns": 22163
           }
         },
         {
@@ -9278,7 +9278,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10239,
+            "wall_ns": 5172,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9356,7 +9356,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42289
+            "wall_ns": 22933
           }
         },
         {
@@ -9380,7 +9380,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11571,
+            "wall_ns": 6036,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9458,7 +9458,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43581
+            "wall_ns": 22352
           }
         },
         {
@@ -9482,7 +9482,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12614,
+            "wall_ns": 6725,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9560,7 +9560,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43782
+            "wall_ns": 22788
           }
         },
         {
@@ -9584,7 +9584,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11733,
+            "wall_ns": 5880,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9662,7 +9662,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43672
+            "wall_ns": 22237
           }
         },
         {
@@ -9686,7 +9686,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12003,
+            "wall_ns": 6437,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9764,7 +9764,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43081
+            "wall_ns": 22404
           }
         },
         {
@@ -9788,7 +9788,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12132,
+            "wall_ns": 10112,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9866,7 +9866,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45054
+            "wall_ns": 22685
           }
         },
         {
@@ -9891,7 +9891,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14187,
+            "wall_ns": 7132,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -9969,7 +9969,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43741
+            "wall_ns": 21871
           }
         },
         {
@@ -9995,7 +9995,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 36799,
+            "wall_ns": 7944,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10073,7 +10073,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46567
+            "wall_ns": 22391
           }
         },
         {
@@ -10098,7 +10098,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13365,
+            "wall_ns": 6894,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10176,7 +10176,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45395
+            "wall_ns": 22512
           }
         },
         {
@@ -10202,7 +10202,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18385,
+            "wall_ns": 19195,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10280,7 +10280,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43612
+            "wall_ns": 25541
           }
         },
         {
@@ -10305,7 +10305,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17954,
+            "wall_ns": 10090,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10383,7 +10383,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43381
+            "wall_ns": 36518
           }
         },
         {
@@ -10408,7 +10408,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16041,
+            "wall_ns": 9060,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10486,7 +10486,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42850
+            "wall_ns": 25753
           }
         },
         {
@@ -10512,7 +10512,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18675,
+            "wall_ns": 10097,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10590,7 +10590,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43391
+            "wall_ns": 23830
           }
         },
         {
@@ -10617,7 +10617,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18775,
+            "wall_ns": 10217,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10695,7 +10695,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43261
+            "wall_ns": 23344
           }
         },
         {
@@ -10721,7 +10721,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14627,
+            "wall_ns": 8143,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10799,7 +10799,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43170
+            "wall_ns": 22821
           }
         },
         {
@@ -10824,7 +10824,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13536,
+            "wall_ns": 7424,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -10902,7 +10902,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43501
+            "wall_ns": 22904
           }
         },
         {
@@ -10927,7 +10927,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14187,
+            "wall_ns": 7362,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11005,7 +11005,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42580
+            "wall_ns": 22570
           }
         },
         {
@@ -11030,7 +11030,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12935,
+            "wall_ns": 7007,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11108,7 +11108,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43171
+            "wall_ns": 22071
           }
         },
         {
@@ -11132,7 +11132,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12733,
+            "wall_ns": 6443,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11210,7 +11210,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43251
+            "wall_ns": 22289
           }
         },
         {
@@ -11234,7 +11234,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 439491,
+            "wall_ns": 283572,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11312,7 +11312,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 50925
+            "wall_ns": 28227
           }
         },
         {
@@ -11336,7 +11336,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13455,
+            "wall_ns": 7491,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11414,7 +11414,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44483
+            "wall_ns": 25545
           }
         },
         {
@@ -11442,7 +11442,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17713,
+            "wall_ns": 9672,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11520,7 +11520,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44753
+            "wall_ns": 24393
           }
         },
         {
@@ -11549,7 +11549,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18986,
+            "wall_ns": 10244,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11627,7 +11627,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45124
+            "wall_ns": 23831
           }
         },
         {
@@ -11652,7 +11652,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13625,
+            "wall_ns": 7559,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11730,7 +11730,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43301
+            "wall_ns": 23363
           }
         },
         {
@@ -11755,7 +11755,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13656,
+            "wall_ns": 7658,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11833,7 +11833,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43231
+            "wall_ns": 22520
           }
         },
         {
@@ -11857,7 +11857,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11551,
+            "wall_ns": 6232,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -11935,7 +11935,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42910
+            "wall_ns": 22653
           }
         },
         {
@@ -11959,7 +11959,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12964,
+            "wall_ns": 7044,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12037,7 +12037,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42750
+            "wall_ns": 23697
           }
         },
         {
@@ -12061,7 +12061,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11562,
+            "wall_ns": 6673,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12139,7 +12139,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42309
+            "wall_ns": 23418
           }
         },
         {
@@ -12164,7 +12164,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13886,
+            "wall_ns": 7314,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12242,7 +12242,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42559
+            "wall_ns": 23384
           }
         },
         {
@@ -12266,7 +12266,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11782,
+            "wall_ns": 6059,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12344,7 +12344,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43261
+            "wall_ns": 22901
           }
         },
         {
@@ -12368,7 +12368,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12644,
+            "wall_ns": 6674,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12446,7 +12446,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 64661
+            "wall_ns": 35843
           }
         },
         {
@@ -12471,7 +12471,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13144,
+            "wall_ns": 7624,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12549,7 +12549,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44073
+            "wall_ns": 25670
           }
         },
         {
@@ -12573,7 +12573,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11902,
+            "wall_ns": 6414,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12651,7 +12651,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43261
+            "wall_ns": 23497
           }
         },
         {
@@ -12676,7 +12676,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12984,
+            "wall_ns": 6948,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12754,7 +12754,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43381
+            "wall_ns": 22607
           }
         },
         {
@@ -12778,7 +12778,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13195,
+            "wall_ns": 6894,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12856,7 +12856,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42489
+            "wall_ns": 22434
           }
         },
         {
@@ -12879,7 +12879,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10870,
+            "wall_ns": 6201,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -12957,7 +12957,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44183
+            "wall_ns": 24910
           }
         },
         {
@@ -12980,7 +12980,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12123,
+            "wall_ns": 6628,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13058,7 +13058,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43601
+            "wall_ns": 23147
           }
         },
         {
@@ -13081,7 +13081,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11041,
+            "wall_ns": 5693,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13159,7 +13159,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43301
+            "wall_ns": 23358
           }
         },
         {
@@ -13182,7 +13182,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11171,
+            "wall_ns": 5837,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13260,7 +13260,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43361
+            "wall_ns": 22379
           }
         },
         {
@@ -13283,7 +13283,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10820,
+            "wall_ns": 5387,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13361,7 +13361,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43481
+            "wall_ns": 22038
           }
         },
         {
@@ -13384,7 +13384,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11191,
+            "wall_ns": 5704,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13462,7 +13462,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42630
+            "wall_ns": 22481
           }
         },
         {
@@ -13485,7 +13485,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10419,
+            "wall_ns": 5340,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13563,7 +13563,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42490
+            "wall_ns": 22136
           }
         },
         {
@@ -13586,7 +13586,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10640,
+            "wall_ns": 5424,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13664,7 +13664,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42609
+            "wall_ns": 21637
           }
         },
         {
@@ -13687,7 +13687,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9798,
+            "wall_ns": 4994,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13765,7 +13765,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42990
+            "wall_ns": 21581
           }
         },
         {
@@ -13788,7 +13788,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10991,
+            "wall_ns": 5632,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13866,7 +13866,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42339
+            "wall_ns": 20978
           }
         },
         {
@@ -13889,7 +13889,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10780,
+            "wall_ns": 5656,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -13967,7 +13967,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 41978
+            "wall_ns": 21041
           }
         },
         {
@@ -13990,7 +13990,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11321,
+            "wall_ns": 5775,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14068,7 +14068,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 129332
+            "wall_ns": 50521
           }
         },
         {
@@ -14091,7 +14091,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11712,
+            "wall_ns": 6368,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14169,7 +14169,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43662
+            "wall_ns": 22901
           }
         },
         {
@@ -14192,7 +14192,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11612,
+            "wall_ns": 6014,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14270,7 +14270,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42610
+            "wall_ns": 21600
           }
         },
         {
@@ -14293,7 +14293,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11321,
+            "wall_ns": 5666,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14371,7 +14371,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43211
+            "wall_ns": 22668
           }
         },
         {
@@ -14394,7 +14394,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12013,
+            "wall_ns": 6343,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14472,7 +14472,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42921
+            "wall_ns": 22241
           }
         },
         {
@@ -14495,7 +14495,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11331,
+            "wall_ns": 5523,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14573,7 +14573,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42430
+            "wall_ns": 21568
           }
         },
         {
@@ -14597,7 +14597,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13495,
+            "wall_ns": 7203,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14675,7 +14675,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42519
+            "wall_ns": 22006
           }
         },
         {
@@ -14700,7 +14700,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13536,
+            "wall_ns": 7089,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14778,7 +14778,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43371
+            "wall_ns": 22547
           }
         },
         {
@@ -14802,7 +14802,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12393,
+            "wall_ns": 6554,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14880,7 +14880,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43250
+            "wall_ns": 21394
           }
         },
         {
@@ -14905,7 +14905,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13115,
+            "wall_ns": 7431,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -14983,7 +14983,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43482
+            "wall_ns": 22163
           }
         },
         {
@@ -15007,7 +15007,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12894,
+            "wall_ns": 7032,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15085,7 +15085,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42981
+            "wall_ns": 21900
           }
         },
         {
@@ -15109,7 +15109,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12223,
+            "wall_ns": 6270,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15187,7 +15187,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44023
+            "wall_ns": 22092
           }
         },
         {
@@ -15212,7 +15212,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14357,
+            "wall_ns": 7322,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15290,7 +15290,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43020
+            "wall_ns": 22228
           }
         },
         {
@@ -15314,7 +15314,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11962,
+            "wall_ns": 6222,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15392,7 +15392,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42269
+            "wall_ns": 21565
           }
         },
         {
@@ -15416,7 +15416,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13015,
+            "wall_ns": 6922,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15494,7 +15494,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42829
+            "wall_ns": 38716
           }
         },
         {
@@ -15518,7 +15518,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13685,
+            "wall_ns": 7508,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15596,7 +15596,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45976
+            "wall_ns": 24725
           }
         },
         {
@@ -15621,7 +15621,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14297,
+            "wall_ns": 8086,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15699,7 +15699,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43311
+            "wall_ns": 23784
           }
         },
         {
@@ -15724,7 +15724,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13736,
+            "wall_ns": 7412,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15802,7 +15802,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43902
+            "wall_ns": 23578
           }
         },
         {
@@ -15831,7 +15831,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 19386,
+            "wall_ns": 11020,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -15909,7 +15909,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43391
+            "wall_ns": 23060
           }
         },
         {
@@ -15937,7 +15937,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17443,
+            "wall_ns": 9521,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16015,7 +16015,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42500
+            "wall_ns": 23678
           }
         },
         {
@@ -16039,7 +16039,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13496,
+            "wall_ns": 7001,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16117,7 +16117,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43021
+            "wall_ns": 23059
           }
         },
         {
@@ -16141,7 +16141,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12033,
+            "wall_ns": 6420,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16219,7 +16219,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42439
+            "wall_ns": 22696
           }
         },
         {
@@ -16243,7 +16243,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12624,
+            "wall_ns": 6901,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16321,7 +16321,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42419
+            "wall_ns": 22730
           }
         },
         {
@@ -16346,7 +16346,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13385,
+            "wall_ns": 7094,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16424,7 +16424,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43552
+            "wall_ns": 23134
           }
         },
         {
@@ -16449,7 +16449,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14156,
+            "wall_ns": 7669,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16527,7 +16527,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 80500
+            "wall_ns": 47541
           }
         },
         {
@@ -16552,7 +16552,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14096,
+            "wall_ns": 8217,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16630,7 +16630,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43892
+            "wall_ns": 24006
           }
         },
         {
@@ -16656,7 +16656,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 15369,
+            "wall_ns": 8323,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16734,7 +16734,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42730
+            "wall_ns": 22736
           }
         },
         {
@@ -16761,7 +16761,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 19476,
+            "wall_ns": 10717,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16839,7 +16839,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44773
+            "wall_ns": 22518
           }
         },
         {
@@ -16865,7 +16865,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 19506,
+            "wall_ns": 10270,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -16943,7 +16943,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43311
+            "wall_ns": 22710
           }
         },
         {
@@ -16968,7 +16968,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 45885,
+            "wall_ns": 8777,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17046,7 +17046,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46827
+            "wall_ns": 22529
           }
         },
         {
@@ -17071,7 +17071,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18354,
+            "wall_ns": 9718,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17149,7 +17149,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44333
+            "wall_ns": 25161
           }
         },
         {
@@ -17175,7 +17175,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18565,
+            "wall_ns": 10017,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17253,7 +17253,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43552
+            "wall_ns": 23655
           }
         },
         {
@@ -17278,7 +17278,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13756,
+            "wall_ns": 7025,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17356,7 +17356,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43050
+            "wall_ns": 22805
           }
         },
         {
@@ -17382,7 +17382,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14698,
+            "wall_ns": 8153,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17460,7 +17460,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42470
+            "wall_ns": 22335
           }
         },
         {
@@ -17485,7 +17485,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13635,
+            "wall_ns": 7303,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17563,7 +17563,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42629
+            "wall_ns": 21950
           }
         },
         {
@@ -17587,7 +17587,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12813,
+            "wall_ns": 6592,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17665,7 +17665,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42380
+            "wall_ns": 22255
           }
         },
         {
@@ -17689,7 +17689,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12383,
+            "wall_ns": 6303,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17767,7 +17767,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43080
+            "wall_ns": 22547
           }
         },
         {
@@ -17791,7 +17791,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11853,
+            "wall_ns": 6146,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17869,7 +17869,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42950
+            "wall_ns": 22043
           }
         },
         {
@@ -17893,7 +17893,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12694,
+            "wall_ns": 6589,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -17971,7 +17971,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43121
+            "wall_ns": 22096
           }
         },
         {
@@ -17995,7 +17995,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12203,
+            "wall_ns": 6384,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18073,7 +18073,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42500
+            "wall_ns": 21756
           }
         },
         {
@@ -18096,7 +18096,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11000,
+            "wall_ns": 5553,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18174,7 +18174,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42850
+            "wall_ns": 22196
           }
         },
         {
@@ -18197,7 +18197,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10530,
+            "wall_ns": 5430,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18275,7 +18275,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42850
+            "wall_ns": 30214
           }
         },
         {
@@ -18298,7 +18298,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11451,
+            "wall_ns": 7460,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18376,7 +18376,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42540
+            "wall_ns": 25782
           }
         },
         {
@@ -18399,7 +18399,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11150,
+            "wall_ns": 5838,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18477,7 +18477,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42820
+            "wall_ns": 23052
           }
         },
         {
@@ -18500,7 +18500,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11451,
+            "wall_ns": 6072,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18578,7 +18578,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 65383
+            "wall_ns": 22819
           }
         },
         {
@@ -18601,7 +18601,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11302,
+            "wall_ns": 5471,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18679,7 +18679,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43923
+            "wall_ns": 22432
           }
         },
         {
@@ -18703,7 +18703,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12653,
+            "wall_ns": 6684,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18781,7 +18781,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43161
+            "wall_ns": 22109
           }
         },
         {
@@ -18806,7 +18806,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13766,
+            "wall_ns": 7431,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18884,7 +18884,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42670
+            "wall_ns": 21604
           }
         },
         {
@@ -18908,7 +18908,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12484,
+            "wall_ns": 6609,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -18986,7 +18986,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 79800
+            "wall_ns": 45778
           }
         },
         {
@@ -19011,7 +19011,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13996,
+            "wall_ns": 7737,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19089,7 +19089,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44082
+            "wall_ns": 23324
           }
         },
         {
@@ -19113,7 +19113,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13656,
+            "wall_ns": 7457,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19191,7 +19191,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42690
+            "wall_ns": 22386
           }
         },
         {
@@ -19215,7 +19215,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12994,
+            "wall_ns": 6798,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19293,7 +19293,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 41988
+            "wall_ns": 22463
           }
         },
         {
@@ -19321,7 +19321,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16171,
+            "wall_ns": 8695,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19399,7 +19399,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42359
+            "wall_ns": 23015
           }
         },
         {
@@ -19427,7 +19427,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16190,
+            "wall_ns": 8433,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19505,7 +19505,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42019
+            "wall_ns": 22291
           }
         },
         {
@@ -19534,7 +19534,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17232,
+            "wall_ns": 8998,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19612,7 +19612,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42299
+            "wall_ns": 21951
           }
         },
         {
@@ -19641,7 +19641,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16771,
+            "wall_ns": 8694,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19719,7 +19719,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43852
+            "wall_ns": 21719
           }
         },
         {
@@ -19747,7 +19747,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16842,
+            "wall_ns": 8835,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19825,7 +19825,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42910
+            "wall_ns": 21294
           }
         },
         {
@@ -19852,7 +19852,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15980,
+            "wall_ns": 8334,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -19930,7 +19930,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44012
+            "wall_ns": 23384
           }
         },
         {
@@ -19957,7 +19957,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17122,
+            "wall_ns": 9112,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20035,7 +20035,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 70451
+            "wall_ns": 23276
           }
         },
         {
@@ -20062,7 +20062,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17102,
+            "wall_ns": 8528,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20140,7 +20140,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46126
+            "wall_ns": 22823
           }
         },
         {
@@ -20167,7 +20167,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16400,
+            "wall_ns": 8312,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20245,7 +20245,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43662
+            "wall_ns": 22551
           }
         },
         {
@@ -20271,7 +20271,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 13976,
+            "wall_ns": 7337,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20349,7 +20349,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43883
+            "wall_ns": 22483
           }
         },
         {
@@ -20375,7 +20375,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15178,
+            "wall_ns": 7719,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20453,7 +20453,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43281
+            "wall_ns": 21782
           }
         },
         {
@@ -20479,7 +20479,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15228,
+            "wall_ns": 7643,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20557,7 +20557,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43261
+            "wall_ns": 23636
           }
         },
         {
@@ -20583,7 +20583,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14387,
+            "wall_ns": 7991,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20661,7 +20661,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42159
+            "wall_ns": 22196
           }
         },
         {
@@ -20688,7 +20688,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14798,
+            "wall_ns": 7916,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20766,7 +20766,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42410
+            "wall_ns": 22418
           }
         },
         {
@@ -20794,7 +20794,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14948,
+            "wall_ns": 7845,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20872,7 +20872,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42118
+            "wall_ns": 22038
           }
         },
         {
@@ -20899,7 +20899,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15579,
+            "wall_ns": 7947,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -20977,7 +20977,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42239
+            "wall_ns": 21983
           }
         },
         {
@@ -21004,7 +21004,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14827,
+            "wall_ns": 16997,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21082,7 +21082,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43030
+            "wall_ns": 25421
           }
         },
         {
@@ -21110,7 +21110,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15179,
+            "wall_ns": 7998,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21188,7 +21188,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42971
+            "wall_ns": 34952
           }
         },
         {
@@ -21217,7 +21217,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16111,
+            "wall_ns": 9407,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21295,7 +21295,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43492
+            "wall_ns": 26010
           }
         },
         {
@@ -21323,7 +21323,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15299,
+            "wall_ns": 8772,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21401,7 +21401,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42328
+            "wall_ns": 23792
           }
         },
         {
@@ -21428,7 +21428,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15549,
+            "wall_ns": 8085,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21506,7 +21506,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 81202
+            "wall_ns": 47289
           }
         },
         {
@@ -21533,7 +21533,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18134,
+            "wall_ns": 8097,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21611,7 +21611,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 46537
+            "wall_ns": 24276
           }
         },
         {
@@ -21634,7 +21634,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11091,
+            "wall_ns": 5932,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21712,7 +21712,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43592
+            "wall_ns": 23974
           }
         },
         {
@@ -21735,7 +21735,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11371,
+            "wall_ns": 6058,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21813,7 +21813,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42319
+            "wall_ns": 22667
           }
         },
         {
@@ -21836,7 +21836,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11812,
+            "wall_ns": 5993,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -21914,7 +21914,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43371
+            "wall_ns": 21769
           }
         },
         {
@@ -21937,7 +21937,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10860,
+            "wall_ns": 5722,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22015,7 +22015,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42830
+            "wall_ns": 22004
           }
         },
         {
@@ -22039,7 +22039,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12423,
+            "wall_ns": 6727,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22117,7 +22117,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42349
+            "wall_ns": 22138
           }
         },
         {
@@ -22142,7 +22142,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13556,
+            "wall_ns": 7400,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22220,7 +22220,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42400
+            "wall_ns": 23452
           }
         },
         {
@@ -22244,7 +22244,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13255,
+            "wall_ns": 7197,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22322,7 +22322,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42570
+            "wall_ns": 23001
           }
         },
         {
@@ -22346,7 +22346,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12232,
+            "wall_ns": 6467,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22424,7 +22424,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42860
+            "wall_ns": 22667
           }
         },
         {
@@ -22448,7 +22448,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12333,
+            "wall_ns": 6600,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22526,7 +22526,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42580
+            "wall_ns": 22597
           }
         },
         {
@@ -22549,7 +22549,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10971,
+            "wall_ns": 5938,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22627,7 +22627,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42820
+            "wall_ns": 22645
           }
         },
         {
@@ -22650,7 +22650,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10790,
+            "wall_ns": 5803,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22728,7 +22728,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42810
+            "wall_ns": 22156
           }
         },
         {
@@ -22752,7 +22752,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11802,
+            "wall_ns": 6548,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22830,7 +22830,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42800
+            "wall_ns": 22049
           }
         },
         {
@@ -22855,7 +22855,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14086,
+            "wall_ns": 7583,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -22933,7 +22933,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42800
+            "wall_ns": 22060
           }
         },
         {
@@ -22957,7 +22957,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12474,
+            "wall_ns": 6835,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23035,7 +23035,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44423
+            "wall_ns": 21970
           }
         },
         {
@@ -23059,7 +23059,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12383,
+            "wall_ns": 6669,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23137,7 +23137,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 72465
+            "wall_ns": 21944
           }
         },
         {
@@ -23160,7 +23160,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11201,
+            "wall_ns": 5617,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23238,7 +23238,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 45205
+            "wall_ns": 22574
           }
         },
         {
@@ -23261,7 +23261,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11571,
+            "wall_ns": 5992,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23339,7 +23339,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43632
+            "wall_ns": 23902
           }
         },
         {
@@ -23363,7 +23363,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16180,
+            "wall_ns": 8643,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23441,7 +23441,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42700
+            "wall_ns": 21909
           }
         },
         {
@@ -23465,7 +23465,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15709,
+            "wall_ns": 8444,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23543,7 +23543,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42710
+            "wall_ns": 21652
           }
         },
         {
@@ -23566,7 +23566,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 13675,
+            "wall_ns": 7057,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23644,7 +23644,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42630
+            "wall_ns": 22102
           }
         },
         {
@@ -23667,7 +23667,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14858,
+            "wall_ns": 7860,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23745,7 +23745,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42559
+            "wall_ns": 21531
           }
         },
         {
@@ -23769,7 +23769,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14918,
+            "wall_ns": 7489,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23847,7 +23847,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42950
+            "wall_ns": 21948
           }
         },
         {
@@ -23871,7 +23871,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15179,
+            "wall_ns": 7889,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -23949,7 +23949,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 79017
+            "wall_ns": 45425
           }
         },
         {
@@ -23972,7 +23972,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11161,
+            "wall_ns": 6062,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24050,7 +24050,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43331
+            "wall_ns": 33508
           }
         },
         {
@@ -24073,7 +24073,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11252,
+            "wall_ns": 6480,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24151,7 +24151,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42981
+            "wall_ns": 25469
           }
         },
         {
@@ -24175,7 +24175,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12534,
+            "wall_ns": 6986,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24253,7 +24253,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42579
+            "wall_ns": 23422
           }
         },
         {
@@ -24276,7 +24276,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11000,
+            "wall_ns": 5863,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24354,7 +24354,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42780
+            "wall_ns": 22769
           }
         },
         {
@@ -24378,7 +24378,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11953,
+            "wall_ns": 6438,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24456,7 +24456,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42610
+            "wall_ns": 22077
           }
         },
         {
@@ -24479,7 +24479,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12152,
+            "wall_ns": 6150,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24557,7 +24557,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42520
+            "wall_ns": 22618
           }
         },
         {
@@ -24584,7 +24584,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16501,
+            "wall_ns": 9156,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24662,7 +24662,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 64731
+            "wall_ns": 22806
           }
         },
         {
@@ -24688,7 +24688,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15089,
+            "wall_ns": 7766,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24766,7 +24766,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43762
+            "wall_ns": 22694
           }
         },
         {
@@ -24793,7 +24793,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 14587,
+            "wall_ns": 7778,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24871,7 +24871,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42790
+            "wall_ns": 22262
           }
         },
         {
@@ -24894,7 +24894,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11191,
+            "wall_ns": 5941,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -24972,7 +24972,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42951
+            "wall_ns": 21989
           }
         },
         {
@@ -24995,7 +24995,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10740,
+            "wall_ns": 5967,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25073,7 +25073,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42609
+            "wall_ns": 22162
           }
         },
         {
@@ -25094,7 +25094,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9328,
+            "wall_ns": 4823,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25172,7 +25172,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43381
+            "wall_ns": 23572
           }
         },
         {
@@ -25193,7 +25193,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 8736,
+            "wall_ns": 4818,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25271,7 +25271,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43031
+            "wall_ns": 22402
           }
         },
         {
@@ -25292,7 +25292,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9208,
+            "wall_ns": 4961,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25370,7 +25370,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42921
+            "wall_ns": 21901
           }
         },
         {
@@ -25391,7 +25391,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9839,
+            "wall_ns": 5123,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25469,7 +25469,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43040
+            "wall_ns": 22898
           }
         },
         {
@@ -25490,7 +25490,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9708,
+            "wall_ns": 5493,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25568,7 +25568,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 41437
+            "wall_ns": 22253
           }
         },
         {
@@ -25589,7 +25589,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9337,
+            "wall_ns": 4836,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25667,7 +25667,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42229
+            "wall_ns": 22269
           }
         },
         {
@@ -25688,7 +25688,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10049,
+            "wall_ns": 5141,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25766,7 +25766,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42780
+            "wall_ns": 21397
           }
         },
         {
@@ -25787,7 +25787,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10369,
+            "wall_ns": 5227,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25865,7 +25865,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42971
+            "wall_ns": 20999
           }
         },
         {
@@ -25886,7 +25886,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9849,
+            "wall_ns": 5175,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -25964,7 +25964,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43962
+            "wall_ns": 23406
           }
         },
         {
@@ -25985,7 +25985,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 8736,
+            "wall_ns": 4728,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26063,7 +26063,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42619
+            "wall_ns": 21964
           }
         },
         {
@@ -26084,7 +26084,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10169,
+            "wall_ns": 5202,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26162,7 +26162,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43261
+            "wall_ns": 22275
           }
         },
         {
@@ -26183,7 +26183,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9487,
+            "wall_ns": 5062,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26261,7 +26261,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 69761
+            "wall_ns": 21223
           }
         },
         {
@@ -26282,7 +26282,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10189,
+            "wall_ns": 5091,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26360,7 +26360,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 80510
+            "wall_ns": 43927
           }
         },
         {
@@ -26381,7 +26381,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9878,
+            "wall_ns": 5102,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26459,7 +26459,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 44624
+            "wall_ns": 24786
           }
         },
         {
@@ -26480,7 +26480,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9548,
+            "wall_ns": 5278,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26558,7 +26558,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43792
+            "wall_ns": 23574
           }
         },
         {
@@ -26579,7 +26579,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 8966,
+            "wall_ns": 4510,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26657,7 +26657,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 42910
+            "wall_ns": 21859
           }
         },
         {
@@ -26678,7 +26678,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 8807,
+            "wall_ns": 4581,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -26756,7 +26756,7 @@
               "certificate_trial_divisions": 3,
               "gcd_calls": 3
             },
-            "wall_ns": 43471
+            "wall_ns": 21582
           }
         }
       ],
@@ -27046,7 +27046,7 @@
       "primitive_operations_per_trial": 45276,
       "dependency_depth": 23665,
       "readouts_per_trial": 6,
-      "construction_and_lowering_ns": 612825506,
+      "construction_and_lowering_ns": 398810613,
       "circuit_source_sha256": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3",
       "simulation": {
         "probabilities": [
@@ -27186,7 +27186,7 @@
         "classical_reference_order": 6,
         "total_qubits": 18,
         "performed": true,
-        "simulation_and_independent_check_ns": 60874147423,
+        "simulation_and_independent_check_ns": 37308162470,
         "probability_normalization_for_classical_draws": 0.9999999999995809
       },
       "physical_estimation": {
@@ -27227,7 +27227,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 30607,
+            "wall_ns": 36828,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -27315,7 +27315,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 93083
+            "wall_ns": 88298
           }
         },
         {
@@ -27336,7 +27336,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10811,
+            "wall_ns": 6733,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -27424,7 +27424,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 60593
+            "wall_ns": 38001
           }
         },
         {
@@ -27445,7 +27445,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9548,
+            "wall_ns": 5704,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -27533,7 +27533,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 54743
+            "wall_ns": 32917
           }
         },
         {
@@ -27554,7 +27554,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10069,
+            "wall_ns": 5616,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -27642,7 +27642,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 86852
+            "wall_ns": 30665
           }
         },
         {
@@ -27665,7 +27665,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11692,
+            "wall_ns": 5822,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -27753,7 +27753,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 55203
+            "wall_ns": 29427
           }
         },
         {
@@ -27777,7 +27777,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 22923,
+            "wall_ns": 9066,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -27865,7 +27865,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 54392
+            "wall_ns": 29683
           }
         },
         {
@@ -27889,7 +27889,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12814,
+            "wall_ns": 6866,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -27977,7 +27977,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 279242
+            "wall_ns": 245742
           }
         },
         {
@@ -28000,7 +28000,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12222,
+            "wall_ns": 7189,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28088,7 +28088,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 56155
+            "wall_ns": 34567
           }
         },
         {
@@ -28111,7 +28111,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10951,
+            "wall_ns": 5887,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28199,7 +28199,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50815
+            "wall_ns": 30364
           }
         },
         {
@@ -28222,7 +28222,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11060,
+            "wall_ns": 6042,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28310,7 +28310,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 49903
+            "wall_ns": 28129
           }
         },
         {
@@ -28337,7 +28337,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15239,
+            "wall_ns": 8409,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28425,7 +28425,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 53470
+            "wall_ns": 29909
           }
         },
         {
@@ -28452,7 +28452,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 17172,
+            "wall_ns": 8990,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28540,7 +28540,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51787
+            "wall_ns": 28044
           }
         },
         {
@@ -28564,7 +28564,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12012,
+            "wall_ns": 6335,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28652,7 +28652,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50775
+            "wall_ns": 27503
           }
         },
         {
@@ -28676,7 +28676,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12554,
+            "wall_ns": 6465,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28764,7 +28764,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 84678
+            "wall_ns": 27535
           }
         },
         {
@@ -28789,7 +28789,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14728,
+            "wall_ns": 7155,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28877,7 +28877,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 54552
+            "wall_ns": 28042
           }
         },
         {
@@ -28902,7 +28902,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14006,
+            "wall_ns": 7567,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -28990,7 +28990,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52909
+            "wall_ns": 45003
           }
         },
         {
@@ -29013,7 +29013,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10670,
+            "wall_ns": 6264,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29101,7 +29101,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50996
+            "wall_ns": 32620
           }
         },
         {
@@ -29126,7 +29126,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13736,
+            "wall_ns": 8167,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29214,7 +29214,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52338
+            "wall_ns": 31306
           }
         },
         {
@@ -29239,7 +29239,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13265,
+            "wall_ns": 7417,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29327,7 +29327,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51666
+            "wall_ns": 30014
           }
         },
         {
@@ -29352,7 +29352,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13766,
+            "wall_ns": 8341,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29440,7 +29440,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50535
+            "wall_ns": 29095
           }
         },
         {
@@ -29464,7 +29464,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11822,
+            "wall_ns": 6243,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29552,7 +29552,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52168
+            "wall_ns": 31035
           }
         },
         {
@@ -29575,7 +29575,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10309,
+            "wall_ns": 6271,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29663,7 +29663,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50024
+            "wall_ns": 30591
           }
         },
         {
@@ -29687,7 +29687,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11892,
+            "wall_ns": 6623,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29775,7 +29775,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 49994
+            "wall_ns": 28508
           }
         },
         {
@@ -29801,7 +29801,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14738,
+            "wall_ns": 8449,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -29889,7 +29889,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 49974
+            "wall_ns": 27289
           }
         },
         {
@@ -29914,7 +29914,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12734,
+            "wall_ns": 7073,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30002,7 +30002,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51386
+            "wall_ns": 29142
           }
         },
         {
@@ -30031,7 +30031,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18845,
+            "wall_ns": 11162,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30119,7 +30119,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50875
+            "wall_ns": 28957
           }
         },
         {
@@ -30143,7 +30143,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12022,
+            "wall_ns": 6474,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30231,7 +30231,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 71925
+            "wall_ns": 29425
           }
         },
         {
@@ -30257,7 +30257,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 16602,
+            "wall_ns": 8022,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30345,7 +30345,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 55674
+            "wall_ns": 28754
           }
         },
         {
@@ -30370,7 +30370,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13014,
+            "wall_ns": 7273,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30458,7 +30458,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51737
+            "wall_ns": 27770
           }
         },
         {
@@ -30483,7 +30483,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13245,
+            "wall_ns": 7575,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30571,7 +30571,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51877
+            "wall_ns": 27601
           }
         },
         {
@@ -30595,7 +30595,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12253,
+            "wall_ns": 6794,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30683,7 +30683,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51696
+            "wall_ns": 27996
           }
         },
         {
@@ -30706,7 +30706,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11231,
+            "wall_ns": 6169,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30794,7 +30794,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51106
+            "wall_ns": 29306
           }
         },
         {
@@ -30817,7 +30817,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10429,
+            "wall_ns": 5491,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -30905,7 +30905,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50865
+            "wall_ns": 27336
           }
         },
         {
@@ -30928,7 +30928,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11451,
+            "wall_ns": 6395,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31016,7 +31016,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 107902
+            "wall_ns": 59025
           }
         },
         {
@@ -31040,7 +31040,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12744,
+            "wall_ns": 7274,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31128,7 +31128,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52467
+            "wall_ns": 30270
           }
         },
         {
@@ -31153,7 +31153,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13796,
+            "wall_ns": 7781,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31241,7 +31241,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50475
+            "wall_ns": 28556
           }
         },
         {
@@ -31266,7 +31266,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13084,
+            "wall_ns": 7378,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31354,7 +31354,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51075
+            "wall_ns": 27626
           }
         },
         {
@@ -31380,7 +31380,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14417,
+            "wall_ns": 8239,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31468,7 +31468,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50404
+            "wall_ns": 28290
           }
         },
         {
@@ -31492,7 +31492,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12533,
+            "wall_ns": 6781,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31580,7 +31580,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50665
+            "wall_ns": 29247
           }
         },
         {
@@ -31609,7 +31609,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 18866,
+            "wall_ns": 24046,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31697,7 +31697,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 77054
+            "wall_ns": 31205
           }
         },
         {
@@ -31722,7 +31722,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14096,
+            "wall_ns": 7303,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31810,7 +31810,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52138
+            "wall_ns": 28074
           }
         },
         {
@@ -31836,7 +31836,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 15189,
+            "wall_ns": 8067,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -31924,7 +31924,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 49523
+            "wall_ns": 26833
           }
         },
         {
@@ -31948,7 +31948,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12052,
+            "wall_ns": 6259,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32036,7 +32036,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50013
+            "wall_ns": 26733
           }
         },
         {
@@ -32059,7 +32059,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10679,
+            "wall_ns": 5753,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32147,7 +32147,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51447
+            "wall_ns": 27788
           }
         },
         {
@@ -32171,7 +32171,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11963,
+            "wall_ns": 6443,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32259,7 +32259,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 49543
+            "wall_ns": 26852
           }
         },
         {
@@ -32284,7 +32284,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13675,
+            "wall_ns": 7658,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32372,7 +32372,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50014
+            "wall_ns": 26943
           }
         },
         {
@@ -32397,7 +32397,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13485,
+            "wall_ns": 7135,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32485,7 +32485,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 49383
+            "wall_ns": 25877
           }
         },
         {
@@ -32510,7 +32510,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13425,
+            "wall_ns": 6919,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32598,7 +32598,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 53040
+            "wall_ns": 27746
           }
         },
         {
@@ -32621,7 +32621,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10870,
+            "wall_ns": 5812,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32709,7 +32709,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51647
+            "wall_ns": 28856
           }
         },
         {
@@ -32734,7 +32734,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13636,
+            "wall_ns": 7133,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32822,7 +32822,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52759
+            "wall_ns": 30806
           }
         },
         {
@@ -32847,7 +32847,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13606,
+            "wall_ns": 7277,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -32935,7 +32935,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51586
+            "wall_ns": 27532
           }
         },
         {
@@ -32959,7 +32959,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12474,
+            "wall_ns": 6286,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33047,7 +33047,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51055
+            "wall_ns": 25947
           }
         },
         {
@@ -33071,7 +33071,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11892,
+            "wall_ns": 6108,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33159,7 +33159,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50706
+            "wall_ns": 26073
           }
         },
         {
@@ -33186,7 +33186,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 16932,
+            "wall_ns": 8717,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33274,7 +33274,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 74389
+            "wall_ns": 27196
           }
         },
         {
@@ -33301,7 +33301,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15990,
+            "wall_ns": 8235,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33389,7 +33389,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51877
+            "wall_ns": 27138
           }
         },
         {
@@ -33412,7 +33412,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11111,
+            "wall_ns": 6022,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33500,7 +33500,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51697
+            "wall_ns": 27200
           }
         },
         {
@@ -33523,7 +33523,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11141,
+            "wall_ns": 5714,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33611,7 +33611,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 92323
+            "wall_ns": 52236
           }
         },
         {
@@ -33634,7 +33634,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11492,
+            "wall_ns": 6439,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33722,7 +33722,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 53089
+            "wall_ns": 29243
           }
         },
         {
@@ -33746,7 +33746,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12743,
+            "wall_ns": 7247,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33834,7 +33834,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51897
+            "wall_ns": 29525
           }
         },
         {
@@ -33858,7 +33858,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 3
             },
-            "wall_ns": 15709,
+            "wall_ns": 8852,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -33946,7 +33946,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52057
+            "wall_ns": 29666
           }
         },
         {
@@ -33969,7 +33969,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10709,
+            "wall_ns": 5832,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -34057,7 +34057,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50565
+            "wall_ns": 27341
           }
         },
         {
@@ -34078,7 +34078,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9568,
+            "wall_ns": 5174,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -34166,7 +34166,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52848
+            "wall_ns": 28379
           }
         },
         {
@@ -34187,7 +34187,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9097,
+            "wall_ns": 4907,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -34275,7 +34275,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 52799
+            "wall_ns": 27446
           }
         },
         {
@@ -34296,7 +34296,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 9337,
+            "wall_ns": 4962,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -34384,7 +34384,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51366
+            "wall_ns": 27605
           }
         }
       ],
@@ -34671,7 +34671,7 @@
       "primitive_operations_per_trial": 47315,
       "dependency_depth": 22884,
       "readouts_per_trial": 4,
-      "construction_and_lowering_ns": 744849561,
+      "construction_and_lowering_ns": 469422114,
       "circuit_source_sha256": "e4b80e2e9ef62e1c62ac80a4bb0f9bbde694cb659579c58b7563656aaadb4ce3",
       "simulation": {
         "probabilities": [
@@ -34715,7 +34715,7 @@
         "classical_reference_order": 10,
         "total_qubits": 18,
         "performed": true,
-        "simulation_and_independent_check_ns": 63856574248,
+        "simulation_and_independent_check_ns": 38176705561,
         "probability_normalization_for_classical_draws": 0.9999999999996303
       },
       "physical_estimation": {
@@ -34756,7 +34756,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 32692,
+            "wall_ns": 36454,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -34841,7 +34841,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 97052
+            "wall_ns": 89342
           }
         },
         {
@@ -34864,7 +34864,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13024,
+            "wall_ns": 7808,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -34949,7 +34949,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 61775
+            "wall_ns": 37993
           }
         },
         {
@@ -34972,7 +34972,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11461,
+            "wall_ns": 6325,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35057,7 +35057,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 57908
+            "wall_ns": 36256
           }
         },
         {
@@ -35081,7 +35081,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13024,
+            "wall_ns": 7120,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35166,7 +35166,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 57297
+            "wall_ns": 33071
           }
         },
         {
@@ -35189,7 +35189,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11011,
+            "wall_ns": 5980,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35274,7 +35274,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 55884
+            "wall_ns": 32963
           }
         },
         {
@@ -35298,7 +35298,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12273,
+            "wall_ns": 6825,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35383,7 +35383,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 54191
+            "wall_ns": 32007
           }
         },
         {
@@ -35408,7 +35408,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14257,
+            "wall_ns": 7284,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35493,7 +35493,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 95578
+            "wall_ns": 32166
           }
         },
         {
@@ -35518,7 +35518,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14537,
+            "wall_ns": 20053,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35603,7 +35603,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 58309
+            "wall_ns": 35671
           }
         },
         {
@@ -35626,7 +35626,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11211,
+            "wall_ns": 6663,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35711,7 +35711,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 54592
+            "wall_ns": 55179
           }
         },
         {
@@ -35736,7 +35736,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 13736,
+            "wall_ns": 7672,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35821,7 +35821,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 54171
+            "wall_ns": 30542
           }
         },
         {
@@ -35846,7 +35846,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 14046,
+            "wall_ns": 7874,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -35931,7 +35931,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 53751
+            "wall_ns": 32066
           }
         },
         {
@@ -35955,7 +35955,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12333,
+            "wall_ns": 6986,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -36040,7 +36040,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 53179
+            "wall_ns": 29409
           }
         },
         {
@@ -36063,7 +36063,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 11192,
+            "wall_ns": 6058,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -36148,7 +36148,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51667
+            "wall_ns": 32318
           }
         },
         {
@@ -36172,7 +36172,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 12183,
+            "wall_ns": 6762,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -36257,7 +36257,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51656
+            "wall_ns": 28918
           }
         },
         {
@@ -36280,7 +36280,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10750,
+            "wall_ns": 5569,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -36365,7 +36365,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 51917
+            "wall_ns": 28227
           }
         },
         {
@@ -36388,7 +36388,7 @@
               "certificate_trial_divisions": 0,
               "gcd_calls": 1
             },
-            "wall_ns": 10950,
+            "wall_ns": 5609,
             "order_reference_used": false,
             "input_modulus_factorization_used": false
           },
@@ -36473,7 +36473,7 @@
               "certificate_trial_divisions": 2,
               "gcd_calls": 3
             },
-            "wall_ns": 50795
+            "wall_ns": 27099
           }
         }
       ],
@@ -36670,7 +36670,7 @@
       }
     }
   ],
-  "source_commit": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
+  "source_commit": "f271129d8bd268bee1dfcdc435f61075dcf2c008",
   "source_commit_scope": "checkout at execution; source hashes identify actual working bytes",
   "source_sha256": {
     "src/openquantum/shor_recovery.py": "af674c975ecec82fbecf79b80fc9ad3b6b8fc6e8d6b1ea693eabccf7451df7d0",
@@ -36715,5 +36715,5 @@
   "classical_only_smooth_case_warning": "All default orders are cm-smooth: the retained trivial pretest can recover them without using the measured frequency. This is an educational algorithm/control-flow comparison, not quantum advantage.",
   "original_negative_case_preserved": "N33/base2 has recovered order10 and half-power32=-1mod33; no nontrivial factor is obtained",
   "formalization_status": "no reproduced proof or Python/circuit correspondence theorem",
-  "execution_wall_ns_before_record_serialization": 141670189562
+  "execution_wall_ns_before_record_serialization": 86018854063
 }

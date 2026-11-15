@@ -304,6 +304,10 @@ def test_linked_helper_archive_or_bundle_member_is_rejected(packet, package_gate
 def test_export_contract_is_closed_without_private_registration_documents():
     export = load_script("export_code")
     assert export.PUBLIC_CORRECTION_FILES == PUBLIC_FILES
+    k2_archive = "assets/generated/optimization/dqi-path-majority-k2/saved-full-vectors.zip"
+    assert k2_archive in export.PUBLIC_ARCHIVES and k2_archive in export.PUBLIC_DQI_PATH_MAJORITY_K2_FILES
+    assert len(export.PUBLIC_ARCHIVES) == 11
+    export = SimpleNamespace(**{**vars(export), "PUBLIC_ARCHIVES": export.PUBLIC_ARCHIVES - {k2_archive}})
     rpe_archive = "assets/generated/robust-qpe-resource-source/source-export-download.zip"
     assert rpe_archive in export.PUBLIC_ARCHIVES and rpe_archive in export.PUBLIC_RPE_RESOURCE_SOURCE_FILES
     assert len(export.PUBLIC_ARCHIVES) == 10

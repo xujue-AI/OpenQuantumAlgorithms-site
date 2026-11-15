@@ -76,15 +76,37 @@ def test_orphan_same_group_is_killed_after_leader_clean_exit(tmp_path):
     assert result["physical_execution_performed"] is False
 
 
-def _wait_record(path, deadline):
+def _wait_record(path, deadline, *, terminal_statuses=None):
     while time.monotonic() < deadline:
         if path.is_file():
             try:
-                return json.loads(path.read_text())
+                record = json.loads(path.read_text())
+                if terminal_statuses is None or record.get("status") in terminal_statuses:
+                    return record
             except json.JSONDecodeError:
                 pass
         time.sleep(.01)
     raise AssertionError(f"Expected finite dummy receipt: {path.name}")
+
+
+def _wait_worker_started(path, identity, worker_pid, deadline):
+    while time.monotonic() < deadline:
+        if path.is_file():
+            try:
+                raw = path.read_text()
+                if raw.endswith("\n"):
+                    records = [json.loads(line) for line in raw.splitlines()]
+                    started = next((row for row in records if row.get("event") == "worker_started"), None)
+                    if started is not None:
+                        # The guardian sends worker_started after completing
+                        # bootstrap; this journal event proves parent observation.
+                        assert started["identity"] == identity
+                        assert started["worker_pid"] == worker_pid
+                        return started
+            except json.JSONDecodeError:
+                pass
+        time.sleep(.01)
+    raise AssertionError("Expected parent-observed worker_started event")
 
 
 def _stop_owned_group(pgid):
@@ -105,11 +127,19 @@ def test_hard_parent_death_keeps_guardian_alive_to_stop_worker(runner, tmp_path)
     )
     owned = None
     try:
-        owned = _wait_record(output / "worker-pid.json", time.monotonic() + 2)
+        bootstrap_deadline = time.monotonic() + 2
+        owned = _wait_record(output / "worker-pid.json", bootstrap_deadline)
         assert owned["worker_pid"] > 1 and owned["guardian_pid"] > 1
+        _wait_worker_started(output / "attempt-journal.jsonl", owned["identity"],
+                             owned["worker_pid"], bootstrap_deadline)
         process.kill()
         process.wait(timeout=2)
-        guardian = _wait_record(output / "guardian-receipt.json", time.monotonic() + 3)
+        assert process.returncode == -signal.SIGKILL
+        guardian = _wait_record(output / "guardian-receipt.json", time.monotonic() + 3,
+                                terminal_statuses={"parent_lost", "parent_deadline_exhausted",
+                                                   "parent_finished", "guardian_cancelled", "guardian_failed"})
+        assert guardian["status"] != "guardian_failed", guardian
+        assert guardian["status"] == "parent_lost", guardian
         assert guardian["parent_finished"] is False
         assert guardian["cleanup"]["complete"] is True
         assert guardian["cleanup"]["live_members"] == []

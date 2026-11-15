@@ -197,7 +197,7 @@
     "target_polynomial_success_probability": 0.08225369095830562,
     "accepted_branch_error_vs_target_polynomial": 2.344825151380683e-15,
     "scaled_inverse_operator_error": 0.0011093320882312185,
-    "solution_trace_distance": 0.001493848920880282,
+    "solution_trace_distance": 0.0014938489208802823,
     "z_actual": 0.2321022900553606,
     "z_classical_solution": 0.23294917703882834,
     "z_absolute_bias": 0.0008468869834677428,
@@ -241,7 +241,7 @@
     "s": 1,
     "cx": 1
   },
-  "generation_and_lowering_seconds_CPU": 0.20016318599982696,
+  "generation_and_lowering_seconds_CPU": 0.1495145640001283,
   "included_in_attempt": [
     "gate-built complex input preparation",
     "every explicit coefficient PREPARE",
@@ -314,7 +314,7 @@
     "pareto_points": 7
   },
   "provenance": {
-    "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
+    "source_revision_at_generation": "f271129d8bd268bee1dfcdc435f61075dcf2c008",
     "source_hashes_sha256": {
       "src/openquantum/linear_systems_qsvt_reciprocal.py": "f0e2485132a1a3541a18a0e103e169abcc2e5b87ab5c7a3a3bda336a3f5882ee",
       "src/openquantum/reciprocal_phase_certificate.py": "1ecb5a104628ef468ae94d40a8e9df1b1529e6625f7f16fa7498bb4a45e2aacc",

@@ -96,7 +96,11 @@ def checker(monkeypatch, checked):
                         "PUBLIC_SHOR_FINITE_ADDER_FILES": frozenset(),
                         "PUBLIC_DQI_PATH_MAJORITY_FILES": frozenset(),
                         "PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS": frozenset(),
-                        "PUBLIC_RPE_RESOURCE_SOURCE_FILES": frozenset()},
+                        "PUBLIC_RPE_RESOURCE_SOURCE_FILES": frozenset(),
+                        "PUBLIC_DQI_PATH_MAJORITY_K2_FILES": frozenset(),
+                        "PUBLIC_QPE_APPLICATION_TINY_FILES": frozenset(),
+                        "PUBLIC_QPE_APPLICATION_TINY_FIGURE_FILES": frozenset(),
+                        "PUBLIC_FINITE_GIBBS_Z_OUTPUT_FILES": frozenset()},
         "energy_record_release": {
             "CORE_FILES": frozenset(), "MANIFEST_NAME": "unused.json", "RECORD_DIRECTORY": "unused",
             "SOURCE_FILES": (), "VERIFIER_FILES": (), "checked_directory": checked.checked_directory,

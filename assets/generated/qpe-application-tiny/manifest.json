@@ -1,0 +1,173 @@
+{
+  "claims": {
+    "broader_protocol_validated": false,
+    "classical_inference_performed": false,
+    "complete_end_to_end_resource_analysis": false,
+    "formal_proof_reproduced": false,
+    "full_application_confidence_validated": false,
+    "full_application_output_simulated": false,
+    "hardware_execution_performed": false,
+    "interval_synthesis_certificate": false,
+    "physical_estimation_performed": false,
+    "rotation_synthesis_performed": false,
+    "shot_sampling_performed": false,
+    "system_size_scaling_validated": false,
+    "universal_algorithm_correctness": false,
+    "zero_final_record_behavior_exercised": false
+  },
+  "exact_source_paths": [
+    "src/openquantum/application_qpe_tiny.py",
+    "src/openquantum/application_qpe_tiny_reference.py",
+    "scripts/check_qpe_application_tiny.py"
+  ],
+  "files": {
+    "LICENSE.txt": {
+      "bytes": 1093,
+      "role": "MIT-license",
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    "README.md": {
+      "bytes": 7658,
+      "role": "public-scope-disclosure",
+      "sha256": "02e6095eb26162c4a5b55dd638f7be53c36d03524ea254f02f099a456e27e908"
+    },
+    "checks.json": {
+      "bytes": 27989,
+      "role": "raw-tiny-payload",
+      "sha256": "584640ed31039646b0764d5f325129f31371d7877b40915b73ff686bfbcca0b3"
+    },
+    "feedback.qasm": {
+      "bytes": 4760,
+      "role": "raw-tiny-payload",
+      "sha256": "2d820f4fb27ae5288db267ae4534d3f9dae708f49616355cb7d6ecdbf83d9d01"
+    },
+    "fringe-k1-cos.qasm": {
+      "bytes": 871,
+      "role": "raw-tiny-payload",
+      "sha256": "8c418a5b5db8e5463f57806447cbbc6c81e2db33ff1f444c2d1af1a235e5bb68"
+    },
+    "fringe-k1-sin.qasm": {
+      "bytes": 881,
+      "role": "raw-tiny-payload",
+      "sha256": "b37e5e2dbaacf65a2a71b6f0831f964a21649009a7076ed996f7d09498c028b1"
+    },
+    "fringe-k2-cos.qasm": {
+      "bytes": 1609,
+      "role": "raw-tiny-payload",
+      "sha256": "9b7808d059eff3f41cf4bb312c17c6ed884afbb97ace46860073314bd1b030a4"
+    },
+    "fringe-k2-sin.qasm": {
+      "bytes": 1619,
+      "role": "raw-tiny-payload",
+      "sha256": "d2e3d519f0c72fb11592f10f89391d31bd446c3e6601ed4fbf06d3afacb55cfe"
+    },
+    "fringe-k4-cos.qasm": {
+      "bytes": 3085,
+      "role": "raw-tiny-payload",
+      "sha256": "0c4d1e7ce7af98e061fe587fe0d964cbb3c15d7f3c31aba04567b24b7ea50faf"
+    },
+    "fringe-k4-sin.qasm": {
+      "bytes": 3095,
+      "role": "raw-tiny-payload",
+      "sha256": "3c6de4d174a7046172f9a64a1d709e26000f1e5a787ffb4e1b3cb1b79ab8dd26"
+    },
+    "kernel-without-odd-evolution.qasm": {
+      "bytes": 662,
+      "role": "raw-tiny-payload",
+      "sha256": "2f04e8c060f8422c308a67535610ff27bdb39d8179a9790d98c5032bd7004612"
+    },
+    "kernel-without-reference-z.qasm": {
+      "bytes": 780,
+      "role": "raw-tiny-payload",
+      "sha256": "8d49984a3d47a242dfdc36dbdc37e2754b1fdfbcc40722a1388a9f065f4c74aa"
+    },
+    "kernel.qasm": {
+      "bytes": 788,
+      "role": "raw-tiny-payload",
+      "sha256": "31cf10567e8d88b519a0ac2616effe23ec1bf964817380e841a3758b08feff6a"
+    },
+    "requirements-lock.txt": {
+      "bytes": 1974,
+      "role": "locked-dependencies",
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    "retained-deferred.qasm": {
+      "bytes": 4946,
+      "role": "raw-tiny-payload",
+      "sha256": "c11a8e30e270f2e9ab6bf654cb9bceb6a16314ae8f31b417ca670f62215b6fb9"
+    },
+    "retained-reprepared.qasm": {
+      "bytes": 4970,
+      "role": "raw-tiny-payload",
+      "sha256": "170f2345f03807fb6eed530a77a9d4e0e8ebc64ff085248fe34f1eac89209da9"
+    },
+    "retained-reused.qasm": {
+      "bytes": 4946,
+      "role": "raw-tiny-payload",
+      "sha256": "c6ca0b1c23fd11a23b38723ea7b10bd50bee9bf7cc980f8b5a14f64b0d45131c"
+    },
+    "scripts/check_qpe_application_tiny.py": {
+      "bytes": 22455,
+      "role": "exact-used-scientific-source",
+      "sha256": "483426110ad29c780d7f9b0ee6e6457503cbd1fab68d0b4a83291501f072e8f8"
+    },
+    "src/openquantum/application_qpe_tiny.py": {
+      "bytes": 11717,
+      "role": "exact-used-scientific-source",
+      "sha256": "ad5c3dff8fbaf58d0f9e8cad06f809920bbcc66e94a01d18bd09aec5881311b6"
+    },
+    "src/openquantum/application_qpe_tiny_reference.py": {
+      "bytes": 11023,
+      "role": "exact-used-scientific-source",
+      "sha256": "f52648f90d5b8c030eb35424472381852ae118a9fb2993ee0257886919d9b50e"
+    }
+  },
+  "new_scientific_work_during_projection": false,
+  "raw_payload_names": [
+    "kernel.qasm",
+    "kernel-without-reference-z.qasm",
+    "kernel-without-odd-evolution.qasm",
+    "retained-deferred.qasm",
+    "retained-reused.qasm",
+    "retained-reprepared.qasm",
+    "feedback.qasm",
+    "fringe-k1-cos.qasm",
+    "fringe-k1-sin.qasm",
+    "fringe-k2-cos.qasm",
+    "fringe-k2-sin.qasm",
+    "fringe-k4-cos.qasm",
+    "fringe-k4-sin.qasm",
+    "checks.json"
+  ],
+  "schema": "openquantum.qpe_application_tiny.public_manifest.v1",
+  "scope": {
+    "admitted_controlled_powers": [
+      1,
+      2,
+      4
+    ],
+    "base_kernel_primitive_instructions": 39,
+    "expanded_validation_instructions_per_case_maximum": 10000,
+    "fixed_task": {
+      "Eref": "3",
+      "Hamiltonian": "-Z0-Z1+X0*X1/4",
+      "U": "-exp(-i H pi/3)",
+      "W": "6",
+      "input": "reset |00>",
+      "tau0": "pi/3"
+    },
+    "maximum_classical_bits": 4,
+    "maximum_quantum_wires": 6,
+    "maximum_retained_records": 16,
+    "phase_word_bits": 2,
+    "retained_rounds": 2,
+    "saved_check_case_count": 15,
+    "saved_check_record_scope": "tiny-ideal-circuit-instrument",
+    "saved_check_record_status": "passed",
+    "saved_numerical_entry_tolerance": 2e-12
+  },
+  "source_authoring_labels_preserved": true,
+  "status": "static-public-projection-proposal",
+  "manual_reproduction_recipe_documented": true,
+  "reproduction_recipe_executed_during_projection": false
+}

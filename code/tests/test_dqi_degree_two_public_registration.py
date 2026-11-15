@@ -373,7 +373,7 @@ def tiny_export_root(tmp_path, payload):
 
 def configure_tiny_export(export, monkeypatch):
     for name in ("PUBLIC_SCRIPTS", "PUBLIC_BOOTSTRAP_FILES", "PUBLIC_TAIL_RESOURCE_POLICY_FILES",
-                 "PUBLIC_LOCAL_SPIN_SOURCE_FILES", "FORMAL_FILES"):
+                 "PUBLIC_LOCAL_SPIN_SOURCE_FILES", "PUBLIC_QPE_APPLICATION_TINY_FIGURE_FILES", "FORMAL_FILES"):
         monkeypatch.setattr(export, name, ())
     monkeypatch.setattr(export, "PUBLIC_ARTIFACT_TREES", ("optimization",))
     monkeypatch.setattr(export, "git_revision", lambda root: "a" * 40)

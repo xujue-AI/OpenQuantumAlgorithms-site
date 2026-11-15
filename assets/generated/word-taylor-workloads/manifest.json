@@ -179,7 +179,7 @@
   },
   "environment_lock_sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088",
   "license_sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c",
-  "source_revision_at_generation": "953262e3d810a90ff3c7e32c4dd3000e9e6ecad5",
+  "source_revision_at_generation": "f271129d8bd268bee1dfcdc435f61075dcf2c008",
   "source_dirty_at_generation": false,
   "bound_source": {
     "method": "Simulating Hamiltonian Dynamics with a Truncated Taylor Series",
@@ -193,7 +193,7 @@
   "sampling_performed": false,
   "physical_estimation_performed": false,
   "formal_proof_integrated": false,
-  "cpu_generation_and_check_seconds": 25.764796000000388,
+  "cpu_generation_and_check_seconds": 15.989330794999887,
   "records": [
     {
       "case_id": "size-n1-native",
@@ -569,7 +569,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 0.051181805999931385
+      "cpu_generation_and_check_seconds": 0.03444406699986757
     },
     {
       "case_id": "size-n1-normalization2-oaa1",
@@ -968,7 +968,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 0.29804699499982235
+      "cpu_generation_and_check_seconds": 0.1707141760000468
     },
     {
       "case_id": "size-n2-native",
@@ -1358,7 +1358,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 0.29938376500012964
+      "cpu_generation_and_check_seconds": 0.19254116000001886
     },
     {
       "case_id": "size-n2-normalization2-oaa1",
@@ -1773,7 +1773,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 1.2527764470000875
+      "cpu_generation_and_check_seconds": 0.8079786210000748
     },
     {
       "case_id": "size-n3-native",
@@ -2195,7 +2195,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 1.0881343480000396
+      "cpu_generation_and_check_seconds": 0.7216075129999808
     },
     {
       "case_id": "size-n3-normalization2-oaa1",
@@ -2642,7 +2642,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 4.208093631999873
+      "cpu_generation_and_check_seconds": 2.7991245229998185
     },
     {
       "case_id": "size-n4-native",
@@ -3096,7 +3096,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 2.1654592410000078
+      "cpu_generation_and_check_seconds": 1.4306138179999834
     },
     {
       "case_id": "size-n4-normalization2-oaa1",
@@ -3427,7 +3427,7 @@
       "sampling": {
         "performed": false
       },
-      "cpu_generation_and_check_seconds": 1.4744237949998933
+      "cpu_generation_and_check_seconds": 1.044975938000107
     },
     {
       "case_id": "time-half-native",
@@ -3705,15 +3705,15 @@
       },
       "numerical_validation": {
         "performed": true,
-        "source_block_residual_vs_independent_polynomial": 5.404053245779174e-14,
+        "source_block_residual_vs_independent_polynomial": 5.4082007994542976e-14,
         "complete_measured_branch_probability_residual": 3.7969627442180354e-14,
-        "coherent_lowering_random_full_register_residual": 3.469846808711831e-14,
-        "independent_expm_eigh_residual": 7.872681470920296e-16,
-        "actual_known_input_acceptance": 0.27284896890933913,
-        "actual_known_input_Z_mean": 0.9411552829463726,
+        "coherent_lowering_random_full_register_residual": 3.476010257403811e-14,
+        "independent_expm_eigh_residual": 7.803857063274987e-16,
+        "actual_known_input_acceptance": 0.27284896890933935,
+        "actual_known_input_Z_mean": 0.9411552829463732,
         "independent_target_Z_mean": 0.9411661317607167,
-        "actual_known_input_Z_bias": 1.08488143440999e-05,
-        "actual_full_map_minimum_acceptance": 0.27279735169121644,
+        "actual_known_input_Z_bias": 1.0848814343544788e-05,
+        "actual_full_map_minimum_acceptance": 0.2727973516912161,
         "numerical_probability_guard": 5e-10,
         "seed": 20261112,
         "uniform_hardware_certificate": false,
@@ -3836,7 +3836,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 0.81032242900028
+      "cpu_generation_and_check_seconds": 0.41475242000001344
     },
     {
       "case_id": "time-half-normalization2-oaa1",
@@ -4114,15 +4114,15 @@
       },
       "numerical_validation": {
         "performed": true,
-        "source_block_residual_vs_independent_polynomial": 3.6441499282643784e-14,
+        "source_block_residual_vs_independent_polynomial": 3.6790177405901096e-14,
         "complete_measured_branch_probability_residual": 7.416289804496046e-13,
-        "coherent_lowering_random_full_register_residual": 1.6361025305899947e-13,
-        "independent_expm_eigh_residual": 7.872681470920296e-16,
+        "coherent_lowering_random_full_register_residual": 1.6363176108737457e-13,
+        "independent_expm_eigh_residual": 7.803857063274987e-16,
         "actual_known_input_acceptance": 0.9999999586528099,
-        "actual_known_input_Z_mean": 0.9411552997876818,
+        "actual_known_input_Z_mean": 0.9411552997876816,
         "independent_target_Z_mean": 0.9411661317607167,
-        "actual_known_input_Z_bias": 1.0831973034974851e-05,
-        "actual_full_map_minimum_acceptance": 0.9999999199355654,
+        "actual_known_input_Z_bias": 1.0831973035085873e-05,
+        "actual_full_map_minimum_acceptance": 0.9999999199355643,
         "numerical_probability_guard": 5e-10,
         "seed": 20261112,
         "uniform_hardware_certificate": false,
@@ -4272,7 +4272,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 3.4765272539998477
+      "cpu_generation_and_check_seconds": 1.9197632969999177
     },
     {
       "case_id": "time-two-native",
@@ -4662,7 +4662,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 0.617113320000044
+      "cpu_generation_and_check_seconds": 0.40616258299996844
     },
     {
       "case_id": "time-two-normalization2-oaa1",
@@ -5077,7 +5077,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 2.4240793930002837
+      "cpu_generation_and_check_seconds": 1.5956261359999644
     },
     {
       "case_id": "accuracy-025-native",
@@ -5467,7 +5467,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 0.3083960389999447
+      "cpu_generation_and_check_seconds": 0.19469067900013215
     },
     {
       "case_id": "accuracy-025-normalization2-oaa1",
@@ -5882,7 +5882,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 1.2725785850002467
+      "cpu_generation_and_check_seconds": 0.8365899790001095
     },
     {
       "case_id": "accuracy-100-native",
@@ -6160,15 +6160,15 @@
       },
       "numerical_validation": {
         "performed": true,
-        "source_block_residual_vs_independent_polynomial": 4.8577145710166536e-14,
+        "source_block_residual_vs_independent_polynomial": 4.857954351603493e-14,
         "complete_measured_branch_probability_residual": 1.2836953722228372e-14,
-        "coherent_lowering_random_full_register_residual": 3.489712292228875e-14,
-        "independent_expm_eigh_residual": 7.930878485573286e-16,
-        "actual_known_input_acceptance": 0.07464398844253947,
-        "actual_known_input_Z_mean": 0.7913948099458656,
+        "coherent_lowering_random_full_register_residual": 3.494448222810181e-14,
+        "independent_expm_eigh_residual": 7.986586999940588e-16,
+        "actual_known_input_acceptance": 0.07464398844253939,
+        "actual_known_input_Z_mean": 0.7913948099458651,
         "independent_target_Z_mean": 0.7915104805838215,
-        "actual_known_input_Z_bias": 0.00011567063795581145,
-        "actual_full_map_minimum_acceptance": 0.07457808447366514,
+        "actual_known_input_Z_bias": 0.00011567063795636656,
+        "actual_full_map_minimum_acceptance": 0.0745780844736652,
         "numerical_probability_guard": 5e-10,
         "seed": 20261112,
         "uniform_hardware_certificate": false,
@@ -6291,7 +6291,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 0.8835131490000094
+      "cpu_generation_and_check_seconds": 0.4745132299999568
     },
     {
       "case_id": "accuracy-100-normalization2-oaa1",
@@ -6569,15 +6569,15 @@
       },
       "numerical_validation": {
         "performed": true,
-        "source_block_residual_vs_independent_polynomial": 3.591529680420191e-14,
+        "source_block_residual_vs_independent_polynomial": 3.6374416801707316e-14,
         "complete_measured_branch_probability_residual": 9.4002583495012e-13,
-        "coherent_lowering_random_full_register_residual": 1.6288313248694927e-13,
-        "independent_expm_eigh_residual": 7.930878485573286e-16,
-        "actual_known_input_acceptance": 0.9999993973313119,
-        "actual_known_input_Z_mean": 0.7913951184043666,
+        "coherent_lowering_random_full_register_residual": 1.626380709068975e-13,
+        "independent_expm_eigh_residual": 7.986586999940588e-16,
+        "actual_known_input_acceptance": 0.9999993973313126,
+        "actual_known_input_Z_mean": 0.7913951184043664,
         "independent_target_Z_mean": 0.7915104805838215,
-        "actual_known_input_Z_bias": 0.00011536217945484761,
-        "actual_full_map_minimum_acceptance": 0.9999988336049632,
+        "actual_known_input_Z_bias": 0.00011536217945506966,
+        "actual_full_map_minimum_acceptance": 0.9999988336049601,
         "numerical_probability_guard": 5e-10,
         "seed": 20261112,
         "uniform_hardware_certificate": false,
@@ -6727,7 +6727,7 @@
           "executed sampling"
         ]
       },
-      "cpu_generation_and_check_seconds": 4.054998232999878
+      "cpu_generation_and_check_seconds": 2.2705558319999
     }
   ]
 }

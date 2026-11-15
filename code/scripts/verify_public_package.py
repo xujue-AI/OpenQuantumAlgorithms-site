@@ -11,6 +11,7 @@ import hashlib
 import importlib.util
 import io
 import json
+import math
 import os
 from pathlib import Path, PurePosixPath
 import stat
@@ -1557,7 +1558,191 @@ NEXT_SAVED_PACKETS = {'thermal-two-round': {'helper': 'scripts/verify_thermal_tw
                                            'src/openquantum/robust_qpe_resources.py': 'dc6081367516ef33d2ad31ffdd3531439808ef664bed3febf53266b60651e545',
                                            'tests/test_robust_qpe_resources.py': 'a77daf938d716bae17f4fe30dfc85e5b82e8f8971dcdc80ae09e2a84f3adcf77',
                                            'tests/test_robust_qpe_resources_producer.py': '384cd1ae4c837e893ac5d4f58558a58237008372640bf2682103309086cee1e8'},
-                         'source_config_snapshot_only': 'assets/generated/robust-qpe-resource-source/code/pyproject.toml'}}
+                         'source_config_snapshot_only': 'assets/generated/robust-qpe-resource-source/code/pyproject.toml'},
+ 'dqi-path-majority-k2': {'helper': 'scripts/verify_dqi_path_majority_k2_saved.py',
+ 'helper_sha256': '581e44734cd9f5fb08e8f84c1461e1d208269666db8297444cbe28b53d3cc398',
+ 'prefix': 'assets/generated/optimization/dqi-path-majority-k2',
+ 'manifest': 'assets/generated/optimization/dqi-path-majority-k2/public-manifest.json',
+ 'manifest_sha256': '1294ccd3db9c4761cca476f6385ef15c29c0c2a3d18d18d83d71125c4a693ae7',
+ 'asset_hashes': {'assets/generated/optimization/dqi-path-majority-k2/CREDITS.md': {'bytes': 4018,
+                                                                                    'sha256': '18d82ceabf5b4aa2bdaa89e54c02b24fc5d9ce58229858b0b83edf222ec7c8e1'},
+                  'assets/generated/optimization/dqi-path-majority-k2/LICENSE.txt': {'bytes': 1093,
+                                                                                     'sha256': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c'},
+                  'assets/generated/optimization/dqi-path-majority-k2/README.md': {'bytes': 4601,
+                                                                                   'sha256': 'b6884b0f10deecd70ba398cb5ad21401a84562c74a28deb8a3645a134916103f'},
+                  'assets/generated/optimization/dqi-path-majority-k2/accepted-fixed-run.json': {'bytes': 11258,
+                                                                                                 'sha256': '0f072bd665523d7a7f1f51227ebfd9019f70f934ce877d375217e1304ed8f221'},
+                  'assets/generated/optimization/dqi-path-majority-k2/circuit.svg': {'bytes': 12222,
+                                                                                     'sha256': '1d2c49ae872a70b38630b7cb501fdc7248459b5e5fd558dd9866ed6dcaeca9e9'},
+                  'assets/generated/optimization/dqi-path-majority-k2/code/requirements-lock.txt': {'bytes': 1974,
+                                                                                                    'sha256': '6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088'},
+                  'assets/generated/optimization/dqi-path-majority-k2/code/scripts/run_optimization_dqi_path_majority_k2.py': {'bytes': 44738,
+                                                                                                                               'sha256': '3599a419ea418fb8f49f69bbb998e5fd089ef1b7d24212a6123f1d91152d09a8'},
+                  'assets/generated/optimization/dqi-path-majority-k2/code/scripts/verify_dqi_path_majority_k2_saved.py': {'bytes': 31961,
+                                                                                                                           'sha256': '581e44734cd9f5fb08e8f84c1461e1d208269666db8297444cbe28b53d3cc398'},
+                  'assets/generated/optimization/dqi-path-majority-k2/code/src/openquantum/optimization_dqi_path_majority_k2.py': {'bytes': 26863,
+                                                                                                                                   'sha256': '5fe7a85cf7046e50b072d46cbb865a39dbe3890567d09cd86f524aa9873dcd06'},
+                  'assets/generated/optimization/dqi-path-majority-k2/code/src/openquantum/optimization_dqi_path_majority_k2_verify.py': {'bytes': 45182,
+                                                                                                                                          'sha256': '57b207fb570321c6e44b6ed14fed4de915087f4017a83bb060c5e9017bb2c2f3'},
+                  'assets/generated/optimization/dqi-path-majority-k2/environment-public.json': {'bytes': 5991,
+                                                                                                 'sha256': '4f9349f73884a805be668a7a5013757dbbab9c3314345e1fc3e119e12df04f53'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/CPython-LICENSE.txt': {'bytes': 13936,
+                                                                                                      'sha256': '3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/LICENSE.txt': {'bytes': 46826,
+                                                                                                    'sha256': '649a589ab31076e79e9ce62ba24eae9959598124176640dbc95f87bd10f34fcf'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/_core/include/numpy/libdivide/LICENSE.txt': {'bytes': 1018,
+                                                                                                                                        'sha256': 'fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/_core/src/common/pythoncapi-compat/COPYING': {'bytes': 690,
+                                                                                                                                         'sha256': '3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/_core/src/highway/LICENSE': {'bytes': 20785,
+                                                                                                                        'sha256': 'e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/_core/src/multiarray/dragon4_LICENSE.txt': {'bytes': 1414,
+                                                                                                                                       'sha256': 'f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md': {'bytes': 1514,
+                                                                                                                                         'sha256': '211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/_core/src/umath/svml/LICENSE': {'bytes': 1543,
+                                                                                                                           'sha256': 'c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/fft/pocketfft/LICENSE.md': {'bytes': 1498,
+                                                                                                                       'sha256': 'a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/linalg/lapack_lite/LICENSE.txt': {'bytes': 2266,
+                                                                                                                             'sha256': 'a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/ma/LICENSE': {'bytes': 1593,
+                                                                                                         'sha256': '05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/random/LICENSE.md': {'bytes': 3511,
+                                                                                                                'sha256': '103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/random/src/distributions/LICENSE.md': {'bytes': 2745,
+                                                                                                                                  'sha256': '469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/random/src/mt19937/LICENSE.md': {'bytes': 2926,
+                                                                                                                            'sha256': '0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/random/src/pcg64/LICENSE.md': {'bytes': 1154,
+                                                                                                                          'sha256': 'e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/random/src/philox/LICENSE.md': {'bytes': 1509,
+                                                                                                                           'sha256': '6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/random/src/sfc64/LICENSE.md': {'bytes': 1226,
+                                                                                                                          'sha256': '9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/numpy/numpy/random/src/splitmix64/LICENSE.md': {'bytes': 332,
+                                                                                                                               'sha256': '268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9'},
+                  'assets/generated/optimization/dqi-path-majority-k2/licenses/psutil-LICENSE.txt': {'bytes': 1548,
+                                                                                                     'sha256': 'b89c063b3786e28e0c0a38f1931db61fed35e69dd2a2966fbecffee0f46c8d10'},
+                  'assets/generated/optimization/dqi-path-majority-k2/saved-full-vectors.zip': {'bytes': 1832953,
+                                                                                                'sha256': '845f562d2adfd6b686c94a44b55a093171f78332a74d3ab9740bf929da153d91'},
+                  'assets/generated/optimization/dqi-path-majority-k2/scientific/source/input-k2.json': {'bytes': 56,
+                                                                                                         'sha256': '9c4c61f83b3e0aa4de78831b943d0638a63a92b269a96ef9b76bf223e57401a2'},
+                  'assets/generated/optimization/dqi-path-majority-k2/scientific/source/program-ledger.json': {'bytes': 5253,
+                                                                                                               'sha256': '95461d02d482973c88b50c386573ae4038adfca95275d497481ed7aec33f16b7'},
+                  'assets/generated/optimization/dqi-path-majority-k2/scientific/source/program.ndjson': {'bytes': 62117,
+                                                                                                          'sha256': '0a2dbf3c7f18e302ab0b47a820c2ec97d5feea7351d24ab2483c61c3f6d644e4'},
+                  'assets/generated/optimization/dqi-path-majority-k2/scientific/source/program.qasm': {'bytes': 29377,
+                                                                                                        'sha256': '067601cd2172f3b80e8c0617018027e133d1bc954a9945d94100d1de6f0c7918'},
+                  'assets/generated/optimization/dqi-path-majority-k2/scientific/verification/diagnostics.json': {'bytes': 6648,
+                                                                                                                  'sha256': '37d27ff87830abdfbb8ea827925bf00ffbf6bde2d67da2bbcee6d01860e00df5'},
+                  'assets/generated/optimization/dqi-path-majority-k2/scientific/verification/output-table.json': {'bytes': 129536,
+                                                                                                                   'sha256': '754201439c91683b6840d1a94c8d123459671f387c97e2cf11716c44eaafda9f'},
+                  'assets/generated/optimization/dqi-path-majority-k2/public-manifest.json': {'bytes': 8710,
+                                                                                              'sha256': '1294ccd3db9c4761cca476f6385ef15c29c0c2a3d18d18d83d71125c4a693ae7'}},
+ 'source_hashes': {'scripts/verify_dqi_path_majority_k2_saved.py': '581e44734cd9f5fb08e8f84c1461e1d208269666db8297444cbe28b53d3cc398'}},
+ 'qpe-application-tiny': {'helper': 'scripts/verify_qpe_application_tiny_saved.py',
+                          'helper_sha256': '4e5625c590ebf40d8f04bc5ffa0e577c5240bf13e150965212329184cd50d301',
+                          'prefix': 'assets/generated/qpe-application-tiny',
+                          'manifest': 'assets/generated/qpe-application-tiny/manifest.json',
+                          'manifest_sha256': '62fafef64e565b3549dfc505ab975611f43730b11d8ab040406bee631eb7e4e3',
+                          'asset_hashes': {'assets/generated/qpe-application-tiny/LICENSE.txt': {'bytes': 1093,
+                                                                                                 'sha256': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c'},
+                                           'assets/generated/qpe-application-tiny/README.md': {'bytes': 7658,
+                                                                                               'sha256': '02e6095eb26162c4a5b55dd638f7be53c36d03524ea254f02f099a456e27e908'},
+                                           'assets/generated/qpe-application-tiny/checks.json': {'bytes': 27989,
+                                                                                                 'sha256': '584640ed31039646b0764d5f325129f31371d7877b40915b73ff686bfbcca0b3'},
+                                           'assets/generated/qpe-application-tiny/feedback.qasm': {'bytes': 4760,
+                                                                                                   'sha256': '2d820f4fb27ae5288db267ae4534d3f9dae708f49616355cb7d6ecdbf83d9d01'},
+                                           'assets/generated/qpe-application-tiny/fringe-k1-cos.qasm': {'bytes': 871,
+                                                                                                        'sha256': '8c418a5b5db8e5463f57806447cbbc6c81e2db33ff1f444c2d1af1a235e5bb68'},
+                                           'assets/generated/qpe-application-tiny/fringe-k1-sin.qasm': {'bytes': 881,
+                                                                                                        'sha256': 'b37e5e2dbaacf65a2a71b6f0831f964a21649009a7076ed996f7d09498c028b1'},
+                                           'assets/generated/qpe-application-tiny/fringe-k2-cos.qasm': {'bytes': 1609,
+                                                                                                        'sha256': '9b7808d059eff3f41cf4bb312c17c6ed884afbb97ace46860073314bd1b030a4'},
+                                           'assets/generated/qpe-application-tiny/fringe-k2-sin.qasm': {'bytes': 1619,
+                                                                                                        'sha256': 'd2e3d519f0c72fb11592f10f89391d31bd446c3e6601ed4fbf06d3afacb55cfe'},
+                                           'assets/generated/qpe-application-tiny/fringe-k4-cos.qasm': {'bytes': 3085,
+                                                                                                        'sha256': '0c4d1e7ce7af98e061fe587fe0d964cbb3c15d7f3c31aba04567b24b7ea50faf'},
+                                           'assets/generated/qpe-application-tiny/fringe-k4-sin.qasm': {'bytes': 3095,
+                                                                                                        'sha256': '3c6de4d174a7046172f9a64a1d709e26000f1e5a787ffb4e1b3cb1b79ab8dd26'},
+                                           'assets/generated/qpe-application-tiny/kernel-without-odd-evolution.qasm': {'bytes': 662,
+                                                                                                                       'sha256': '2f04e8c060f8422c308a67535610ff27bdb39d8179a9790d98c5032bd7004612'},
+                                           'assets/generated/qpe-application-tiny/kernel-without-reference-z.qasm': {'bytes': 780,
+                                                                                                                     'sha256': '8d49984a3d47a242dfdc36dbdc37e2754b1fdfbcc40722a1388a9f065f4c74aa'},
+                                           'assets/generated/qpe-application-tiny/kernel.qasm': {'bytes': 788,
+                                                                                                 'sha256': '31cf10567e8d88b519a0ac2616effe23ec1bf964817380e841a3758b08feff6a'},
+                                           'assets/generated/qpe-application-tiny/requirements-lock.txt': {'bytes': 1974,
+                                                                                                           'sha256': '6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088'},
+                                           'assets/generated/qpe-application-tiny/retained-deferred.qasm': {'bytes': 4946,
+                                                                                                            'sha256': 'c11a8e30e270f2e9ab6bf654cb9bceb6a16314ae8f31b417ca670f62215b6fb9'},
+                                           'assets/generated/qpe-application-tiny/retained-reprepared.qasm': {'bytes': 4970,
+                                                                                                              'sha256': '170f2345f03807fb6eed530a77a9d4e0e8ebc64ff085248fe34f1eac89209da9'},
+                                           'assets/generated/qpe-application-tiny/retained-reused.qasm': {'bytes': 4946,
+                                                                                                          'sha256': 'c6ca0b1c23fd11a23b38723ea7b10bd50bee9bf7cc980f8b5a14f64b0d45131c'},
+                                           'assets/generated/qpe-application-tiny/scripts/check_qpe_application_tiny.py': {'bytes': 22455,
+                                                                                                                           'sha256': '483426110ad29c780d7f9b0ee6e6457503cbd1fab68d0b4a83291501f072e8f8'},
+                                           'assets/generated/qpe-application-tiny/src/openquantum/application_qpe_tiny.py': {'bytes': 11717,
+                                                                                                                             'sha256': 'ad5c3dff8fbaf58d0f9e8cad06f809920bbcc66e94a01d18bd09aec5881311b6'},
+                                           'assets/generated/qpe-application-tiny/src/openquantum/application_qpe_tiny_reference.py': {'bytes': 11023,
+                                                                                                                                       'sha256': 'f52648f90d5b8c030eb35424472381852ae118a9fb2993ee0257886919d9b50e'},
+                                           'assets/generated/qpe-application-tiny/manifest.json': {'bytes': 5876,
+                                                                                                   'sha256': '62fafef64e565b3549dfc505ab975611f43730b11d8ab040406bee631eb7e4e3'},
+                                           'assets/generated/qpe-application-tiny/public-projection.json': {'bytes': 7154,
+                                                                                                            'sha256': '9b2af033a7d68ae0c06e28bea70b9a5ed8380aa6310fe1d2c7938caf0c9e2e65'},
+                                           'assets/figures/qpe-application-tiny-kernel.svg': {'bytes': 29299,
+                                                                                              'sha256': '2a482b68c0dcb68a5ff4ec84a373af5800163cd3ba171689a1fd4d1e34270a81'}},
+                          'source_hashes': {'scripts/verify_qpe_application_tiny_saved.py': '4e5625c590ebf40d8f04bc5ffa0e577c5240bf13e150965212329184cd50d301'}},
+ 'finite-gibbs-z-output': {'helper': 'scripts/verify_finite_gibbs_z_output_saved.py',
+                           'helper_sha256': '26fb1c527c4b27455b4b0d0b876203abd74ac28ac5bbff76982e63b4d73b4870',
+                           'prefix': 'assets/generated/simulation/finite-gibbs-z-output',
+                           'manifest': 'assets/generated/simulation/finite-gibbs-z-output/manifest.json',
+                           'manifest_sha256': 'a490a8c5c1c941ce7a1b284de40879047bc21a8d3491aeceee0f5b05a878faa6',
+                           'asset_hashes': {'assets/generated/simulation/finite-gibbs-z-output/LICENSE.txt': {'bytes': 1093,
+                                                                                                              'sha256': '5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/README.md': {'bytes': 6886,
+                                                                                                            'sha256': 'bec600aeae6f29a94473e82edd2a02bd69004456e8bcb3ff9aa828c5c4ac95c4'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/REPRODUCTION.md': {'bytes': 9577,
+                                                                                                                  'sha256': '769e714b5972c1315633a224cf45c61290344c704f6dfe88979c462d966860f3'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/UPSTREAM-LICENSES.md': {'bytes': 2699,
+                                                                                                                       'sha256': '3350b7fe3dcf0be4f4036ea10290c30cb60c3bbaf34ef9d031e0df466ca88eb9'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/circuits/access-U.qasm': {'bytes': 3065,
+                                                                                                                         'sha256': '93ab81b8d5008d886a2096f97e69b590985980546a4b60fd68128db0b0d19a65'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/circuits/preparation-R2.qasm': {'bytes': 44741,
+                                                                                                                               'sha256': '83cefa8e3fef9920a72f4e58f1312b29a8f93f0b18c63dfb4ce7424ba713bedc'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/circuits/preparation-R64.qasm': {'bytes': 1428581,
+                                                                                                                                'sha256': 'e584fa94fffe1618f2029c8f311e5b0eb7a188f514ca019a4e34feee461076b8'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/circuits/reset-round.qasm': {'bytes': 22370,
+                                                                                                                            'sha256': 'ee2404c83e2f075dba35dbf02555432b385b9c25dee26bfb4f0d0ee576f0268d'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/circuits/weak-dilation.qasm': {'bytes': 22226,
+                                                                                                                              'sha256': 'e11625b24787d2513ce3bb4af95742c31b90734209183b797cc92d3297f0ffc3'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/finite-gibbs-z-circuit.svg': {'bytes': 7173,
+                                                                                                                             'sha256': '20b8a3a4c7f929cfdb667bd3f909f76ea431b2d65bbc433c8c5a3bded726f764'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/references.bib': {'bytes': 1277,
+                                                                                                                 'sha256': '45237554b2e3b5e77575f7cb2d31f36a3ca6e3ace8c74419c0e494dccf141a94'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/requirements-lock.txt': {'bytes': 1974,
+                                                                                                                        'sha256': '6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/results.json': {'bytes': 1715997,
+                                                                                                               'sha256': '8329d568e2df8f317f97610165385123f52dc0f5d47c6aa190838405966ca33f'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/source-derivations.json': {'bytes': 7075,
+                                                                                                                          'sha256': '40c86eea4d560df0012d102970fa735857181a423b9498129ad2604d534865e3'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/sources/detailed_balance_access.py': {'bytes': 25361,
+                                                                                                                                     'sha256': '7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/sources/detailed_balance_channel.py': {'bytes': 24362,
+                                                                                                                                      'sha256': '99ac8dbfacf6ee484caeb6ad328fe145f150871e4272538dd279f67cc2573a8b'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/sources/finite_gibbs_angle_provenance.py': {'bytes': 27630,
+                                                                                                                                           'sha256': '175de0ead4e4e32ee679c42831662682e58c1467688d4bfe08ffaec6265801c1'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/sources/finite_gibbs_interval.py': {'bytes': 28159,
+                                                                                                                                   'sha256': '8f035148771d8659057cd7f013d0378ec5d9995f4e2fe255bc453b348d776362'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/sources/finite_gibbs_reference.py': {'bytes': 4693,
+                                                                                                                                    'sha256': '1f82517c1992f93ec3fa7af49982286e64c7cf011b69a07bdc20ac1dbb956ac4'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/sources/reproduce.py': {'bytes': 29996,
+                                                                                                                       'sha256': 'a368f179c797f25246cb1ef89055b582d7d26164f041a584c09ab22a57cb597f'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/summary.json': {'bytes': 11003,
+                                                                                                               'sha256': '1f974ae6eb52952fa8439b1526c359c47195d843488632372dfe2c694285a8cf'},
+                                            'assets/generated/simulation/finite-gibbs-z-output/manifest.json': {'bytes': 6004,
+                                                                                                                'sha256': 'a490a8c5c1c941ce7a1b284de40879047bc21a8d3491aeceee0f5b05a878faa6'}},
+                           'source_hashes': {'scripts/verify_finite_gibbs_z_output_saved.py': '26fb1c527c4b27455b4b0d0b876203abd74ac28ac5bbff76982e63b4d73b4870'}}}
 
 
 def _load_next_saved_gate(package, provenance, kind):
@@ -1644,6 +1829,196 @@ def _verify_next_saved_identity(gate, artifact_root, *, source_root, provenance,
                 or any(type(result.get(name)) is not int or result[name] != expected
                        for name, expected in expected_counts.items())):
             raise ValueError("RPE source-only outcome scope changed")
+    elif kind == "dqi-path-majority-k2":
+        prefix = packet["prefix"] + "/"
+        if any(not name.startswith(prefix) for name in packet["asset_hashes"]):
+            raise ValueError("Fixed k2 DQI asset prefix changed")
+        expected_files = {name[len(prefix):]: pin for name, pin in packet["asset_hashes"].items()}
+        result = gate.verify_saved(Path(artifact_root) / packet["prefix"], packet["manifest_sha256"])
+        def same_metadata(observed, expected):
+            if type(observed) is not type(expected):
+                return False
+            if type(expected) is dict:
+                return (observed.keys() == expected.keys()
+                        and all(same_metadata(observed[name], value) for name, value in expected.items()))
+            return observed == expected
+        expected = {'status': 'authenticated_saved_fixed_k2_projection_bytes_without_replay',
+         'source_commit': 'd80a2be51c5156283bc4912dc6ed9b48f8543d43',
+         'parent_acceptance_sha256': 'c8f5933fc6a4ddedc4802652ca2833f1b75a0ed429f925d1abf08c3bf466427d',
+         'accepted_fixed_ideal_run': True,
+         'raw_flags': {'diagnostics': {'full_program_ideal_diagnostics_passed': True,
+                                       'full_program_validated': False,
+                                       'parent_acceptance_recorded': False},
+                       'ledger': {'status': 'source_only_unexecuted_fixed_k2_profile',
+                                  'full_program_validated': False,
+                                  'optimization_output_validated': False,
+                                  'source_materialized': False,
+                                  'source_validation_executed': False,
+                                  'source_generated_in_this_record': False}},
+         'files_authenticated': 38,
+         'scientific_files_authenticated': 9,
+         'scientific_source_snapshots_authenticated': 3,
+         'vector_members_authenticated': 5,
+         'vector_uncompressed_bytes_authenticated': 335544320,
+         'vector_members': {'verification/final-actual.bin': {'bytes': 67108864,
+                                                              'sha256': '0033d2f1be3d53bcca1617aff9ef6b9857745e7bf232eb9410d3b64c543d38d3'},
+                            'verification/final-reference.bin': {'bytes': 67108864,
+                                                                 'sha256': '74849bc46f31c6a3524a2bf2face69536e44eaad0aaf3d8815e0fd670277284a'},
+                            'verification/initial-state.bin': {'bytes': 67108864,
+                                                               'sha256': 'c279a5b16c71b79cf32c8478b16301897ac8234acd4f4990102a8b3f1f9ae1d2'},
+                            'verification/preparation-actual.bin': {'bytes': 67108864,
+                                                                    'sha256': '29dcfdbd4bf118b45aae2c201fd338bc771bd1fbf542623431a23cf99688a4e7'},
+                            'verification/preparation-reference.bin': {'bytes': 67108864,
+                                                                       'sha256': '8b5887679893fe7150dd15293520cd7ea707854c2a020ca52559facd15f7233c'}},
+         'saved_metadata_contracts_checked': True,
+         'scientific_replay_performed': False,
+         'scientific_target_imports_performed': False,
+         'numpy_import_performed': False,
+         'vector_values_decoded': False,
+         'diagnostics_recomputed': False,
+         'zip_members_extracted': False,
+         'general_algorithm_validated': False,
+         'physical_resources_or_synthesis_validated': False,
+         'formal_or_hardware_claim': False}
+        expected.update({
+            "manifest_sha256": packet["manifest_sha256"],
+            "compressed_bundle_bytes_authenticated": sum(pin["bytes"] for pin in packet["asset_hashes"].values()),
+            "files": expected_files,
+        })
+        elapsed = result.get("elapsed_seconds") if type(result) is dict else None
+        if (type(result) is not dict or set(result) != set(expected) | {"elapsed_seconds"}
+                or any(not same_metadata(result[name], value) for name, value in expected.items())
+                or type(elapsed) is not float or not math.isfinite(elapsed) or not 0 <= elapsed <= 55.0):
+            raise ValueError("Fixed k2 DQI saved-byte acceptance scope changed")
+    elif kind == "qpe-application-tiny":
+        prefix = packet["prefix"] + "/"
+        projection_name = prefix + "public-projection.json"
+        figure_name = "assets/figures/qpe-application-tiny-kernel.svg"
+        manifest_pin = packet["asset_hashes"].get(packet["manifest"])
+        if (packet["manifest"] != prefix + "manifest.json"
+                or type(manifest_pin) is not dict or manifest_pin.get("sha256") != packet["manifest_sha256"]
+                or {name for name in packet["asset_hashes"] if not name.startswith(prefix)} != {figure_name}):
+            raise ValueError("Tiny Hamiltonian QPE asset layout changed")
+        result = gate.verify_saved_packet(Path(artifact_root) / packet["prefix"],
+            manifest_sha256=packet["manifest_sha256"],
+            projection_sha256=packet["asset_hashes"][projection_name]["sha256"],
+            figure=Path(artifact_root) / figure_name,
+            figure_sha256=packet["asset_hashes"][figure_name]["sha256"], max_seconds=30)
+
+        def same_qpe_metadata(observed, expected):
+            if type(observed) is not type(expected):
+                return False
+            if type(expected) is dict:
+                return (observed.keys() == expected.keys()
+                        and all(same_qpe_metadata(observed[name], value) for name, value in expected.items()))
+            return observed == expected
+
+        expected = {
+            "schema": "openquantum.qpe_application_tiny.saved_byte_gate.v1", "status": "saved-bytes-verified",
+            "packet_files": 22, "manifest_payloads": 20, "raw_payloads": 14, "scientific_sources": 3,
+            "packet_bytes": sum(pin["bytes"] for name, pin in packet["asset_hashes"].items()
+                                if name.startswith(prefix)),
+            "figure_bytes": packet["asset_hashes"][figure_name]["bytes"], "figure_gate_groups": 39,
+            "manifest_sha256": packet["manifest_sha256"],
+            "projection_sha256": packet["asset_hashes"][projection_name]["sha256"],
+            "checks_sha256": packet["asset_hashes"][prefix + "checks.json"]["sha256"],
+            "figure_sha256": packet["asset_hashes"][figure_name]["sha256"],
+            "saved_check_status": "passed", "saved_check_scope": "tiny-ideal-circuit-instrument",
+            "saved_check_case_count": 15, "source_authoring_labels_preserved": True,
+            "zero_final_record_behavior_exercised": False, "recipe_executed_during_projection": False,
+            "gate_imported_scientific_source": False, "gate_replayed_numerical_checks": False,
+            "gate_executed_recipe": False,
+            "claims": {
+                "broader_protocol_validated": False, "classical_inference_performed": False,
+                "complete_end_to_end_resource_analysis": False, "formal_proof_reproduced": False,
+                "full_application_confidence_validated": False, "full_application_output_simulated": False,
+                "hardware_execution_performed": False, "interval_synthesis_certificate": False,
+                "physical_estimation_performed": False, "rotation_synthesis_performed": False,
+                "shot_sampling_performed": False, "system_size_scaling_validated": False,
+                "universal_algorithm_correctness": False, "zero_final_record_behavior_exercised": False,
+            },
+        }
+        if not same_qpe_metadata(result, expected):
+            raise ValueError("Tiny Hamiltonian QPE saved-byte acceptance scope changed")
+    elif kind == "finite-gibbs-z-output":
+        prefix = packet["prefix"] + "/"
+        manifest_pin = packet["asset_hashes"].get(packet["manifest"])
+        if (packet["manifest"] != prefix + "manifest.json"
+                or type(manifest_pin) is not dict or manifest_pin.get("sha256") != packet["manifest_sha256"]
+                or any(not name.startswith(prefix) for name in packet["asset_hashes"])):
+            raise ValueError("Fixed finite Gibbs Z-mean asset layout changed")
+        expected_files = {name[len(prefix):]: pin for name, pin in packet["asset_hashes"].items()}
+        result = gate.verify_saved_bundle(Path(artifact_root) / packet["prefix"],
+                                         packet["manifest_sha256"], max_seconds=30)
+
+        def same_finite_gibbs_metadata(observed, expected):
+            if type(observed) is not type(expected):
+                return False
+            if type(expected) is dict:
+                return (observed.keys() == expected.keys()
+                        and all(same_finite_gibbs_metadata(observed[name], value)
+                                for name, value in expected.items()))
+            return observed == expected
+
+        expected = {
+            "status": "authenticated_saved_fixed_finite_gibbs_z_projection_bytes_without_replay",
+            "manifest_sha256": packet["manifest_sha256"],
+            "scientific_source_commit": "47ffd10368a738f9576053491a56c6d80a10e602",
+            "source_freeze_sha256": "08a18e7c6b6cf4a8c0e836ed09e7725dfaaadae4cfb1a6c5d11197ed8d2208f9",
+            "original_saved_result_sha256": "f5e0b772fa2005f415af19d3cb4ba94395753a9172a308dd868b8058acbb5129",
+            "original_root_acceptance_sha256": "6d2c086b6e175e394b86b92fc9e28d2dc8008af9004f5d6c003314bad9a86f75",
+            "fixed_conditional_Z_mean_contract_accepted": True,
+            "packaging_status": "private_source_proposal_unexecuted",
+            "raw_flags": {
+                "finite_gibbs_Z_output_bound_observed": True,
+                "finite_gibbs_Z_output_bound_passed": False,
+                "status": "observed_fixed_finite_Gibbs_Z_components",
+                "whole_invocation_validated": False,
+            },
+            "raw_scope_flags": {
+                "all_components_verified": False, "channel_implemented": False,
+                "coherent_correction_evolution_implemented": False, "coherent_correction_implemented": False,
+                "exact_finite_kms": False, "finite_gibbs_Z_output_bound_passed": False,
+                "finite_mesh_exact_kms": False, "floating_point_error_certified": False,
+                "formal_proof_reproduced": False, "general_channel_implemented": False,
+                "general_coherent_correction_implemented": False, "hardware_error_certified": False,
+                "internal_reset_dispatches_measured": False, "mixing_certificate": False,
+                "new_algorithm_result": False, "physical_resources_computed": False,
+                "random_sampling_performed": False, "rotations_synthesized": False,
+                "sampler_implemented": False, "whole_invocation_validated": False,
+            },
+            "files_authenticated": 22, "payloads_authenticated": 21, "source_snapshots_authenticated": 6,
+            "bundle_bytes_authenticated": sum(pin["bytes"] for pin in packet["asset_hashes"].values()),
+            "files": expected_files,
+            "source_operation_counts": {
+                "access": 140, "dilation": 1493, "preparation_R2": 3013,
+                "preparation_R64": 96323, "reset_round": 1505,
+            },
+            "scientific_inventory": {
+                "external_density_evolutions": 1, "fixed_interval_certificate_evaluations": 1,
+                "independent_full_U_Kraus_constructions": 1, "matrix_power_calls": 2,
+                "statevector_evolutions": 2,
+            },
+            "measurement_projection": {
+                "iid_ideal_Born_assumption": True, "samples": 16384, "sampling_performed": False,
+                "total_work_formula": "16384*(64*1505+3)", "whole_preparation_primitives_each": 96323,
+            },
+            "saved_metadata_contracts_checked": True, "saved_json_parsed": True,
+            "scientific_target_imports_performed": False, "scientific_replay_performed": False,
+            "qasm_parsed": False, "matrix_arithmetic_performed": False,
+            "source_derivation_equivalence_reproduced": False, "interval_arithmetic_recomputed": False,
+            "sampling_performed": False, "portable_wrapper_executed": False,
+            "portable_wrapper_runtime_validated": False, "full_R64_primitive_simulation_performed": False,
+            "full_state_Gibbs_accuracy_certified": False, "general_sampler_or_mixing_theorem": False,
+            "floating_backend_error_certified": False, "rotations_synthesized": False,
+            "physical_resources_computed": False, "formal_proof_reproduced": False,
+            "publication_performed": False, "whole_invocation_validated": False,
+        }
+        elapsed = result.get("elapsed_seconds") if type(result) is dict else None
+        if (type(result) is not dict or set(result) != set(expected) | {"elapsed_seconds"}
+                or any(not same_finite_gibbs_metadata(result[name], value) for name, value in expected.items())
+                or type(elapsed) is not float or not math.isfinite(elapsed) or not 0 <= elapsed <= 30.0):
+            raise ValueError("Fixed finite Gibbs Z-mean saved-byte acceptance scope changed")
     else:
         raise ValueError("Unknown next saved evidence kind")
     return result

@@ -28,6 +28,80 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = ("thermal-two-round", "shor-finite-adder", "dqi-path-majority", "rpe-resource-source")
+K2_KIND = "dqi-path-majority-k2"
+K2_BASE = "assets/generated/optimization/dqi-path-majority-k2"
+K2_HELPER = "scripts/verify_dqi_path_majority_k2_saved.py"
+K2_HELPER_PIN = "581e44734cd9f5fb08e8f84c1461e1d208269666db8297444cbe28b53d3cc398"
+K2_MANIFEST_PIN = "1294ccd3db9c4761cca476f6385ef15c29c0c2a3d18d18d83d71125c4a693ae7"
+K2_CI_COMMAND = (
+    "python scripts/verify_dqi_path_majority_k2_saved.py --bundle-root " + K2_BASE
+    + " --manifest-sha256 " + K2_MANIFEST_PIN
+)
+QPE_KIND = "qpe-application-tiny"
+QPE_SOURCE_NAMES = frozenset({"scripts/verify_qpe_application_tiny_saved.py",
+                              "tests/test_qpe_application_tiny_registration.py"})
+QPE_CI_COMMAND = (
+    "python scripts/verify_qpe_application_tiny_saved.py --bundle assets/generated/qpe-application-tiny "
+    "--manifest-sha256 62fafef64e565b3549dfc505ab975611f43730b11d8ab040406bee631eb7e4e3 "
+    "--projection-sha256 9b2af033a7d68ae0c06e28bea70b9a5ed8380aa6310fe1d2c7938caf0c9e2e65 "
+    "--figure assets/figures/qpe-application-tiny-kernel.svg "
+    "--figure-sha256 2a482b68c0dcb68a5ff4ec84a373af5800163cd3ba171689a1fd4d1e34270a81 --max-seconds 30"
+)
+FINITE_KIND = "finite-gibbs-z-output"
+FINITE_SOURCE_NAMES = frozenset({"scripts/verify_finite_gibbs_z_output_saved.py",
+                                 "tests/test_finite_gibbs_z_output_registration.py"})
+FINITE_CI_COMMAND = (
+    "python scripts/verify_finite_gibbs_z_output_saved.py --bundle assets/generated/simulation/finite-gibbs-z-output "
+    "--manifest-sha256 a490a8c5c1c941ce7a1b284de40879047bc21a8d3491aeceee0f5b05a878faa6 --max-seconds 30"
+)
+K2_ASSET_NAMES = frozenset({
+    "CREDITS.md", "LICENSE.txt", "README.md", "accepted-fixed-run.json", "circuit.svg",
+    "code/requirements-lock.txt", "code/scripts/run_optimization_dqi_path_majority_k2.py",
+    "code/scripts/verify_dqi_path_majority_k2_saved.py",
+    "code/src/openquantum/optimization_dqi_path_majority_k2.py",
+    "code/src/openquantum/optimization_dqi_path_majority_k2_verify.py",
+    "environment-public.json", "licenses/CPython-LICENSE.txt", "licenses/numpy/LICENSE.txt",
+    "licenses/numpy/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+    "licenses/numpy/numpy/_core/src/common/pythoncapi-compat/COPYING",
+    "licenses/numpy/numpy/_core/src/highway/LICENSE",
+    "licenses/numpy/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+    "licenses/numpy/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+    "licenses/numpy/numpy/_core/src/umath/svml/LICENSE",
+    "licenses/numpy/numpy/fft/pocketfft/LICENSE.md",
+    "licenses/numpy/numpy/linalg/lapack_lite/LICENSE.txt", "licenses/numpy/numpy/ma/LICENSE",
+    "licenses/numpy/numpy/random/LICENSE.md",
+    "licenses/numpy/numpy/random/src/distributions/LICENSE.md",
+    "licenses/numpy/numpy/random/src/mt19937/LICENSE.md",
+    "licenses/numpy/numpy/random/src/pcg64/LICENSE.md",
+    "licenses/numpy/numpy/random/src/philox/LICENSE.md",
+    "licenses/numpy/numpy/random/src/sfc64/LICENSE.md",
+    "licenses/numpy/numpy/random/src/splitmix64/LICENSE.md", "licenses/psutil-LICENSE.txt",
+    "public-manifest.json", "saved-full-vectors.zip", "scientific/source/input-k2.json",
+    "scientific/source/program-ledger.json", "scientific/source/program.ndjson",
+    "scientific/source/program.qasm", "scientific/verification/diagnostics.json",
+    "scientific/verification/output-table.json",
+})
+K2_PUBLIC_FILES = frozenset(K2_BASE + "/" + name for name in K2_ASSET_NAMES)
+K2_VECTOR_PINS = {
+    "verification/initial-state.bin": {"bytes": 67108864, "sha256": "c279a5b16c71b79cf32c8478b16301897ac8234acd4f4990102a8b3f1f9ae1d2"},
+    "verification/preparation-reference.bin": {"bytes": 67108864, "sha256": "8b5887679893fe7150dd15293520cd7ea707854c2a020ca52559facd15f7233c"},
+    "verification/preparation-actual.bin": {"bytes": 67108864, "sha256": "29dcfdbd4bf118b45aae2c201fd338bc771bd1fbf542623431a23cf99688a4e7"},
+    "verification/final-reference.bin": {"bytes": 67108864, "sha256": "74849bc46f31c6a3524a2bf2face69536e44eaad0aaf3d8815e0fd670277284a"},
+    "verification/final-actual.bin": {"bytes": 67108864, "sha256": "0033d2f1be3d53bcca1617aff9ef6b9857745e7bf232eb9410d3b64c543d38d3"},
+}
+K2_RAW_FLAGS = {
+    "diagnostics": {"full_program_ideal_diagnostics_passed": True,
+                    "full_program_validated": False, "parent_acceptance_recorded": False},
+    "ledger": {"status": "source_only_unexecuted_fixed_k2_profile",
+               "full_program_validated": False, "optimization_output_validated": False,
+               "source_materialized": False, "source_validation_executed": False,
+               "source_generated_in_this_record": False},
+}
+K2_FALSE_FLAGS = (
+    "scientific_replay_performed", "scientific_target_imports_performed", "numpy_import_performed",
+    "vector_values_decoded", "diagnostics_recomputed", "zip_members_extracted",
+    "general_algorithm_validated", "physical_resources_or_synthesis_validated", "formal_or_hardware_claim",
+)
 BASES = {
     "thermal-two-round": "assets/generated/simulation/detailed-balance-two-round",
     "shor-finite-adder": "assets/generated/shor/finite-adder-reference",
@@ -168,6 +242,12 @@ FORBIDDEN_IMPORTS = frozenset({
     "subprocess", "display_thermal_two_round_saved", "verify_thermal_two_round_public",
     "verify_shor_finite_adder_reference", "display_dqi_path_majority_saved",
     "verify_robust_qpe_resource_source_saved", "generate_robust_qpe_resources",
+    "verify_dqi_path_majority_k2_saved", "run_optimization_dqi_path_majority_k2",
+    "optimization_dqi_path_majority_k2", "optimization_dqi_path_majority_k2_verify",
+    "verify_qpe_application_tiny_saved", "check_qpe_application_tiny",
+    "application_qpe_tiny", "application_qpe_tiny_reference",
+    "verify_finite_gibbs_z_output_saved", "finite_gibbs_reference",
+    "finite_gibbs_interval", "finite_gibbs_angle_provenance",
 })
 
 
@@ -311,6 +391,33 @@ def synthetic_helper():
             "    return " + repr(SYNTHETIC_RESULTS["rpe-resource-source"]) + "\n").encode()
 
 
+def synthetic_k2_result(packet):
+    """A tiny saved-only return contract; no vector file is opened or created."""
+    return {
+        "status": "authenticated_saved_fixed_k2_projection_bytes_without_replay",
+        "manifest_sha256": packet["manifest_sha256"],
+        "source_commit": "d80a2be51c5156283bc4912dc6ed9b48f8543d43",
+        "parent_acceptance_sha256": "c8f5933fc6a4ddedc4802652ca2833f1b75a0ed429f925d1abf08c3bf466427d",
+        "accepted_fixed_ideal_run": True, "raw_flags": copy.deepcopy(K2_RAW_FLAGS),
+        "files_authenticated": 38, "scientific_files_authenticated": 9,
+        "scientific_source_snapshots_authenticated": 3, "vector_members_authenticated": 5,
+        "vector_uncompressed_bytes_authenticated": 335544320,
+        "compressed_bundle_bytes_authenticated": sum(pin["bytes"] for pin in packet["asset_hashes"].values()),
+        "files": {name.removeprefix(K2_BASE + "/"): copy.deepcopy(pin)
+                  for name, pin in packet["asset_hashes"].items()},
+        "vector_members": copy.deepcopy(K2_VECTOR_PINS), "saved_metadata_contracts_checked": True,
+        **dict.fromkeys(K2_FALSE_FLAGS, False), "elapsed_seconds": 0.0,
+    }
+
+
+def synthetic_k2_helper(packet):
+    """Inert substitute for the accepted k2 helper with its exact two-argument API."""
+    return ("TOKEN='synthetic next saved evidence'\nCALLS=[]\n"
+            "def verify_saved(bundle_root, manifest_sha256):\n"
+            "    CALLS.append(('dqi-path-majority-k2', str(bundle_root), {'manifest_sha256': manifest_sha256}))\n"
+            "    return " + repr(synthetic_k2_result(packet)) + "\n").encode()
+
+
 def write_files(root, files):
     for name, raw in files.items():
         path = root / name
@@ -325,10 +432,13 @@ def synthetic_case(tmp_path, checked, monkeypatch, kind, *, split=True):
     source = root / "code" if split else root
     source.mkdir(exist_ok=True)
     packet = copy.deepcopy(checked.NEXT_SAVED_PACKETS[kind])
-    assets = {name: ("inert asset " + name + "\n").encode() for name in PUBLIC_FILES[kind]}
-    sources = {name: ("# inert retained source " + name + "\n").encode() for name in SOURCE_NAMES[kind]}
-    sources[packet["helper"]] = synthetic_helper()
+    public_files = K2_PUBLIC_FILES if kind == K2_KIND else PUBLIC_FILES[kind]
+    source_names = {K2_HELPER} if kind == K2_KIND else SOURCE_NAMES[kind]
+    assets = {name: ("inert asset " + name + "\n").encode() for name in public_files}
+    sources = {name: ("# inert retained source " + name + "\n").encode() for name in source_names}
     packet["asset_hashes"] = {name: {"bytes": len(raw), "sha256": sha(raw)} for name, raw in assets.items()}
+    packet["manifest_sha256"] = packet["asset_hashes"][packet["manifest"]]["sha256"]
+    sources[packet["helper"]] = synthetic_k2_helper(packet) if kind == K2_KIND else synthetic_helper()
     packet["source_hashes"] = {name: sha(raw) for name, raw in sources.items()}
     packet["helper_sha256"] = sha(sources[packet["helper"]])
     packet["manifest_sha256"] = packet["asset_hashes"][packet["manifest"]]["sha256"]
@@ -395,7 +505,19 @@ def test_frozen_thermal_display_stays_separate_from_full_byte_gate(exporter, che
 
 
 @pytest.mark.parametrize("kind", KINDS)
-def test_registered_paths_and_source_pins_are_closed(checked, kind):
+def test_registered_paths_and_source_pins_are_closed(checked, monkeypatch, kind):
+    registered = checked.NEXT_SAVED_PACKETS
+    assert tuple(registered) == (*KINDS, K2_KIND, QPE_KIND, FINITE_KIND)
+    monkeypatch.setattr(checked, "NEXT_SAVED_PACKETS", {
+        name: packet for name, packet in registered.items() if name != FINITE_KIND})
+    registered = checked.NEXT_SAVED_PACKETS
+    assert tuple(registered) == (*KINDS, K2_KIND, QPE_KIND)
+    monkeypatch.setattr(checked, "NEXT_SAVED_PACKETS", {
+        name: packet for name, packet in registered.items() if name != QPE_KIND})
+    registered = checked.NEXT_SAVED_PACKETS
+    assert tuple(registered) == (*KINDS, K2_KIND)
+    monkeypatch.setattr(checked, "NEXT_SAVED_PACKETS", {
+        name: packet for name, packet in registered.items() if name != K2_KIND})
     assert tuple(checked.NEXT_SAVED_PACKETS) == KINDS
     packet = checked.NEXT_SAVED_PACKETS[kind]
     expected_fields = {"helper", "helper_sha256", "prefix", "manifest", "manifest_sha256",
@@ -769,16 +891,38 @@ def test_site_dispatch_is_inside_successful_preview_branch_after_prior_packets(s
     assert [ast.unparse(arg) for arg in calls[0].args] == ["root", "preview_identity"]
 
 
-def test_download_requirements_and_new_article_labels_retain_previous_labels(checker, site_snapshot, exporter):
+def test_download_requirements_and_new_article_labels_retain_previous_labels(checker, site_snapshot, exporter, monkeypatch):
     required = set(checker.required_artifacts())
     assert set().union(*PUBLIC_FILES.values()) <= required
     expected_sources = set().union(*SOURCE_NAMES.values()) | {
         "tests/test_shor_finite_adder_reference.py", "tests/test_thermal_two_round_public_static.py",
         "tests/test_robust_qpe_resource_source_saved.py"}
+    assert exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS == expected_sources | {K2_HELPER} | QPE_SOURCE_NAMES | FINITE_SOURCE_NAMES
+    monkeypatch.setattr(exporter, "PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS",
+                        exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS - FINITE_SOURCE_NAMES)
+    assert exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS == expected_sources | {K2_HELPER} | QPE_SOURCE_NAMES
+    monkeypatch.setattr(exporter, "PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS",
+                        exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS - QPE_SOURCE_NAMES)
+    assert exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS == expected_sources | {K2_HELPER}
+    monkeypatch.setattr(exporter, "PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS",
+                        exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS - {K2_HELPER})
     assert exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS == expected_sources
     assert {"code/" + name for name in expected_sources} <= required
     used = names_loaded(site_snapshot.function("required_artifacts"))
     assert set(PUBLIC_SYMBOLS.values()) | {"PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS"} <= used
+    dqi_route = "algorithms/optimization/dqi-degree-two/index.html"
+    gibbs_route = "algorithms/simulation/detailed-balance-gibbs/index.html"
+    finite_labels = frozenset({"gibbs-fixed-z-output", "gibbs-fixed-z-circuit"})
+    all_registered_labels = checker.NEXT_EVIDENCE_ARTICLE_LABELS
+    assert all_registered_labels[gibbs_route] == ARTICLE_LABELS[gibbs_route] | finite_labels
+    monkeypatch.setattr(checker, "NEXT_EVIDENCE_ARTICLE_LABELS", {
+        route: labels - finite_labels if route == gibbs_route else labels
+        for route, labels in all_registered_labels.items()})
+    registered_labels = checker.NEXT_EVIDENCE_ARTICLE_LABELS
+    assert registered_labels[dqi_route] == ARTICLE_LABELS[dqi_route] | {"path-local-majority-decoder-component"}
+    monkeypatch.setattr(checker, "NEXT_EVIDENCE_ARTICLE_LABELS", {
+        route: labels - {"path-local-majority-decoder-component"} if route == dqi_route else labels
+        for route, labels in registered_labels.items()})
     for route, labels in ARTICLE_LABELS.items():
         assert checker.NEXT_EVIDENCE_ARTICLE_LABELS[route] == labels
     old_registered = (checker.GIBBS_CHANNEL_ARTICLE_LABELS | checker.DECAY_ARTICLE_LABELS
@@ -787,6 +931,7 @@ def test_download_requirements_and_new_article_labels_retain_previous_labels(che
     source = (ROOT / "algorithms/simulation/detailed-balance-gibbs.md").read_text()
     labels = {line[1:-2] for line in source.splitlines() if line.startswith("(") and line.endswith(")=")}
     labels |= {line.removeprefix(":name: ") for line in source.splitlines() if line.startswith(":name: ")}
+    assert finite_labels <= labels
     assert OLD_GIBBS_LABELS | ARTICLE_LABELS["algorithms/simulation/detailed-balance-gibbs/index.html"] <= labels
     assert "(shor-finite-adder-formal-reference)=" in (ROOT / "algorithms/shor.md").read_text()
     dqi = (ROOT / "algorithms/optimization/dqi-degree-two.md").read_text()
@@ -808,6 +953,24 @@ def test_exact_named_ci_projection_preserves_the_original_eighty_six_commands():
         pytest.skip("Publication workflow is outside the complete public example package")
     commands = [line.strip().removeprefix("run ") for line in workflow.read_text().splitlines()
                 if line.startswith("          run python ")]
+    assert len(commands) == 93
+    assert commands.count(FINITE_CI_COMMAND) == 1
+    assert commands.index(FINITE_CI_COMMAND) == commands.index(NEXT_CI_COMMANDS[1]) + 1
+    commands = [command for command in commands if command != FINITE_CI_COMMAND]
+    assert len(commands) == 92
+    assert sha(("\n".join(commands) + "\n").encode()) == "e1b4d0daa8f446888db525b96d3ca14f10bb05f02937e6a660320216abdc0fa8"
+    assert len(commands) == 92
+    assert commands.count(QPE_CI_COMMAND) == 1
+    assert commands.index(QPE_CI_COMMAND) == commands.index(RPE_CI_COMMANDS[0]) + 1
+    commands = [command for command in commands if command != QPE_CI_COMMAND]
+    assert len(commands) == 91
+    assert sha(("\n".join(commands) + "\n").encode()) == "4e8cb70a81b9ec393afbd34d4eb9fefc63f42104de0819d61695c4af9a637a8a"
+    assert len(commands) == 91
+    assert commands.count(K2_CI_COMMAND) == 1
+    assert commands.index(K2_CI_COMMAND) == commands.index(NEXT_CI_COMMANDS[-1]) + 1
+    commands = [command for command in commands if command != K2_CI_COMMAND]
+    assert len(commands) == 90
+    assert sha(("\n".join(commands) + "\n").encode()) == "b53dcaad962b3720d8b6e4735485e433c980a53677d26899e388f3892878f4f9"
     new_commands = NEXT_CI_COMMANDS + RPE_CI_COMMANDS
     assert len(commands) == ORIGINAL_CI_COUNT + len(new_commands)
     assert all(commands.count(command) == 1 for command in new_commands)
@@ -826,3 +989,192 @@ def test_exact_named_ci_projection_preserves_the_original_eighty_six_commands():
     for command, previous in zip(NEXT_CI_COMMANDS, predecessors, strict=True):
         assert commands.index(command) == commands.index(previous) + 1
     assert commands.index(RPE_CI_COMMANDS[0]) == commands.index("python scripts/verify_robust_qpe_saved.py") + 1
+
+
+def test_k2_registration_has_only_exact_saved_packet_and_one_retained_reader(exporter, checked, snapshots, monkeypatch):
+    assert any(isinstance(node, ast.Import) and any(alias.name == "math" for alias in node.names)
+               for node in snapshots["checked"].tree.body)
+    packet = checked.NEXT_SAVED_PACKETS[K2_KIND]
+    assert tuple(checked.NEXT_SAVED_PACKETS) == (*KINDS, K2_KIND, QPE_KIND, FINITE_KIND)
+    monkeypatch.setattr(checked, "NEXT_SAVED_PACKETS", {
+        name: registered for name, registered in checked.NEXT_SAVED_PACKETS.items() if name != FINITE_KIND})
+    assert tuple(checked.NEXT_SAVED_PACKETS) == (*KINDS, K2_KIND, QPE_KIND)
+    monkeypatch.setattr(checked, "NEXT_SAVED_PACKETS", {
+        name: registered for name, registered in checked.NEXT_SAVED_PACKETS.items() if name != QPE_KIND})
+    assert tuple(checked.NEXT_SAVED_PACKETS) == (*KINDS, K2_KIND)
+    assert set(packet) == {"helper", "helper_sha256", "prefix", "manifest", "manifest_sha256",
+                           "asset_hashes", "source_hashes"}
+    assert packet["prefix"] == K2_BASE and packet["helper"] == K2_HELPER
+    assert packet["manifest"] == K2_BASE + "/public-manifest.json"
+    assert packet["manifest_sha256"] == K2_MANIFEST_PIN
+    assert packet["helper_sha256"] == K2_HELPER_PIN
+    assert packet["source_hashes"] == {K2_HELPER: K2_HELPER_PIN}
+    assert exporter.PUBLIC_DQI_PATH_MAJORITY_K2_FILES == K2_PUBLIC_FILES
+    assert set(packet["asset_hashes"]) == K2_PUBLIC_FILES and len(K2_PUBLIC_FILES) == 38
+    assert exporter.PUBLIC_SCRIPTS.count(K2_HELPER.removeprefix("scripts/")) == 1
+    assert K2_HELPER in exporter.PUBLIC_NEXT_EVIDENCE_SOURCE_PATHS
+    assert sha((ROOT / K2_HELPER).read_bytes()) == K2_HELPER_PIN
+    for name, pin in packet["asset_hashes"].items():
+        raw = (ROOT / name).read_bytes()
+        assert pin == {"bytes": len(raw), "sha256": sha(raw)}
+        assert exporter.include_generated_file(name)
+    assert sum(pin["bytes"] for pin in packet["asset_hashes"].values()) == 2372585
+    assert packet["asset_hashes"][K2_BASE + "/public-manifest.json"] == {
+        "bytes": 8710, "sha256": K2_MANIFEST_PIN}
+    assert packet["asset_hashes"][K2_BASE + "/saved-full-vectors.zip"] == {
+        "bytes": 1832953, "sha256": "845f562d2adfd6b686c94a44b55a093171f78332a74d3ab9740bf929da153d91"}
+    assert packet["asset_hashes"][K2_BASE + "/circuit.svg"] == {
+        "bytes": 12222, "sha256": "1d2c49ae872a70b38630b7cb501fdc7248459b5e5fd558dd9866ed6dcaeca9e9"}
+    assert K2_BASE + "/saved-full-vectors.zip" in exporter.PUBLIC_ARCHIVES
+    for name in ("extra.json", "extra.py", "extra.qasm", "extra.svg", "extra.zip",
+                 "private/receipt.json", "scientific/private.json", "code/private.py"):
+        assert not exporter.include_generated_file(K2_BASE + "/" + name)
+    for name in ("src/openquantum/optimization_dqi_path_majority_k2.py",
+                 "src/openquantum/optimization_dqi_path_majority_k2_verify.py",
+                 "scripts/run_optimization_dqi_path_majority_k2.py"):
+        assert name not in packet["source_hashes"]
+        assert not (ROOT / name).exists()
+
+
+@pytest.mark.parametrize("split", (False, True), ids=("package", "served-preview"))
+def test_k2_synthetic_saved_dispatch_uses_only_canonical_bundle_and_manifest(
+        checked, tmp_path, monkeypatch, split):
+    case = synthetic_case(tmp_path, checked, monkeypatch, K2_KIND, split=split)
+    gate = checked._load_next_saved_gate(case.source, case.provenance, K2_KIND)
+    assert gate.TOKEN == "synthetic next saved evidence" and gate.CALLS == []
+    assert gate.__name__ not in sys.modules
+    reads = []
+    actual_read = checked._read_bounded_public_member
+    def tracked(root, name, maximum):
+        reads.append((Path(root), name))
+        return actual_read(root, name, maximum)
+    monkeypatch.setattr(checked, "_read_bounded_public_member", tracked)
+    result = checked._verify_next_saved_identity(gate, case.root, source_root=case.source,
+        provenance=case.provenance, kind=K2_KIND, omitted_assets=case.omitted if split else None)
+    assert result == synthetic_k2_result(case.packet)
+    assert reads == [(case.root, name) for name in case.packet["asset_hashes"]] + [
+        (case.source, name) for name in case.packet["source_hashes"]]
+    assert gate.CALLS == [(K2_KIND, str(case.root / K2_BASE),
+                           {"manifest_sha256": case.packet["manifest_sha256"]})]
+    if split:
+        assert not (case.source / K2_BASE).exists()
+
+
+@pytest.mark.parametrize("mutation", ("refreshed-helper", "helper-pin", "schema", "missing-source-join"))
+def test_k2_forged_provenance_is_rejected_before_synthetic_helper_compile(
+        checked, tmp_path, monkeypatch, mutation):
+    test_forged_provenance_fails_before_helper_compile(checked, tmp_path, monkeypatch, K2_KIND, mutation)
+
+
+@pytest.mark.parametrize("mutation", ("asset", "refreshed-asset-provenance", "retained-source"))
+def test_k2_changed_bytes_are_rejected_before_synthetic_saved_dispatch(
+        checked, tmp_path, monkeypatch, mutation):
+    test_identity_changes_are_rejected_before_saved_dispatch(checked, tmp_path, monkeypatch, K2_KIND, mutation)
+
+
+@pytest.mark.parametrize("mutation", ("absent", "missing-member", "wrong-canonical-path", "refreshed-digest"))
+def test_k2_split_preview_requires_every_exact_asset_join(checked, tmp_path, monkeypatch, mutation):
+    test_split_roots_require_exact_omitted_preview_joins(checked, tmp_path, monkeypatch, K2_KIND, mutation)
+
+
+@pytest.mark.parametrize("mutation", K2_FALSE_FLAGS + (
+    "raw-parent", "raw-ledger", "file-map", "vector-map", "manifest", "source-commit",
+    "count-type", "elapsed-type", "elapsed-nonfinite", "elapsed-over-limit", "extra-field",
+))
+def test_k2_synthetic_saved_result_cannot_expand_claims_or_change_identity(
+        checked, tmp_path, monkeypatch, mutation):
+    case = synthetic_case(tmp_path, checked, monkeypatch, K2_KIND)
+    gate = checked._load_next_saved_gate(case.source, case.provenance, K2_KIND)
+    actual = gate.verify_saved
+    def forged(*args):
+        result = actual(*args)
+        if mutation in K2_FALSE_FLAGS:
+            result[mutation] = True
+        elif mutation == "raw-parent":
+            result["raw_flags"]["diagnostics"]["parent_acceptance_recorded"] = True
+        elif mutation == "raw-ledger":
+            result["raw_flags"]["ledger"]["full_program_validated"] = True
+        elif mutation == "file-map":
+            result["files"]["saved-full-vectors.zip"]["sha256"] = "0" * 64
+        elif mutation == "vector-map":
+            del result["vector_members"]["verification/initial-state.bin"]
+        elif mutation == "manifest":
+            result["manifest_sha256"] = "0" * 64
+        elif mutation == "source-commit":
+            result["source_commit"] = "0" * 40
+        elif mutation == "count-type":
+            result["scientific_source_snapshots_authenticated"] = 3.0
+        elif mutation == "elapsed-type":
+            result["elapsed_seconds"] = False
+        elif mutation == "elapsed-nonfinite":
+            result["elapsed_seconds"] = float("nan")
+        elif mutation == "elapsed-over-limit":
+            result["elapsed_seconds"] = 55.1
+        else:
+            result["generic_quality_validated"] = True
+        return result
+    monkeypatch.setattr(gate, "verify_saved", forged)
+    with pytest.raises(ValueError):
+        checked._verify_next_saved_identity(gate, case.root, source_root=case.source,
+            provenance=case.provenance, kind=K2_KIND, omitted_assets=case.omitted)
+    assert len(gate.CALLS) == 1
+
+
+def test_k2_site_joins_retained_reader_and_served_snapshot_assets(checker, checked, tmp_path, monkeypatch):
+    test_site_joins_provenance_retained_code_and_served_assets(checker, checked, tmp_path, monkeypatch, K2_KIND)
+
+
+@pytest.mark.parametrize("mutation", (
+    "schema", "provenance-digest", "retained-source", "missing-omitted",
+    "omitted-canonical-path", "omitted-digest",
+))
+def test_k2_site_rejects_unjoined_preview_before_dispatch(checker, checked, tmp_path, monkeypatch, mutation):
+    test_site_rejects_unjoined_preview_before_loading_helpers(checker, checked, tmp_path, monkeypatch, K2_KIND, mutation)
+
+
+def test_k2_downloads_article_and_frozen_original_text_are_registered(checker, exporter):
+    required = set(checker.required_artifacts())
+    assert K2_PUBLIC_FILES | {"code/" + K2_HELPER,
+                             "algorithms/optimization/dqi-path-majority-k2/index.html"} <= required
+    assert checker.NEXT_EVIDENCE_ARTICLE_LABELS[
+        "algorithms/optimization/dqi-path-majority-k2/index.html"] == frozenset({"dqi-path-majority-k2"})
+    assert "path-local-majority-decoder-component" in checker.NEXT_EVIDENCE_ARTICLE_LABELS[
+        "algorithms/optimization/dqi-degree-two/index.html"]
+    article = ROOT / "algorithms/optimization/dqi-path-majority-k2.md"
+    current_raw = article.read_bytes()
+    assert {"bytes": len(current_raw), "sha256": sha(current_raw)} == {
+        "bytes": 11840, "sha256": "ea2a34139e7d75c3083ad9b098121607449c8f852c01bc03e15ae4c3acaa5d3d"}
+    current_link = b"dqi-degree-two.md#dqi-path-majority-component"
+    original_link = b"dqi-degree-two.md#path-local-majority-decoder-component"
+    assert current_raw.count(current_link) == 1
+    assert original_link not in current_raw
+    assert "(dqi-path-majority-component)=" in (
+        ROOT / "algorithms/optimization/dqi-degree-two.md").read_text()
+    # Only the reviewed internal-link repair may differ from the frozen text.
+    raw = current_raw.replace(current_link, original_link)
+    assert {"bytes": len(raw), "sha256": sha(raw)} == {
+        "bytes": 11850, "sha256": "0b889ae4ae3da0c8406863e306abff5b31305debe144a91d4eaea18046f2cddf"}
+    assert "(dqi-path-majority-k2)=" in raw.decode()
+    assert "(path-local-majority-decoder-component)=" in (
+        ROOT / "algorithms/optimization/dqi-degree-two.md").read_text()
+
+
+def test_path_majority_labels_use_separate_blocks_without_scientific_text_edits(site_snapshot):
+    current = (ROOT / "algorithms/optimization/dqi-degree-two.md").read_bytes()
+    adjacent = (
+        b"(dqi-path-majority-component)=\n(path-local-majority-decoder-component)=\n\n"
+        b"## Path-local majority decoder component\n\n"
+    )
+    separate = (
+        b"(dqi-path-majority-component)=\n\n## Path-local majority decoder component\n\n"
+        b"(path-local-majority-decoder-component)=\n\n"
+    )
+    assert {"bytes": len(current), "sha256": sha(current)} == {
+        "bytes": 32625, "sha256": "8a2ae3272bd475d064d855954bf971ded76f8bb8b1efcd596b75ecff32b73e4b"}
+    assert current.count(separate) == 1
+    assert adjacent not in current
+    # Reverse exactly this metadata relocation; no scientific text is removed.
+    normalized = current.replace(separate, adjacent)
+    assert normalized.count(adjacent) == 1
+    assert {"bytes": len(normalized), "sha256": sha(normalized)} == {
+        "bytes": 32624, "sha256": "33a11ad820d21c1d4221087946bb96435a7e75c24ad1e9a4828d31dda296fb3a"}

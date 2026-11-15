@@ -1,0 +1,402 @@
+{
+  "N": 10,
+  "assignment_wires": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "clause_wires": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "code_distance": 10,
+  "cycle_dimension": 1,
+  "decoder_ccx_blocks": 68,
+  "edges": [
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      1
+    ]
+  ],
+  "formal_proof_reproduced": false,
+  "full_program_validated": false,
+  "gauge_bit_vertex_offset": 1,
+  "gauge_fixed_vertex": 0,
+  "global_weight_promise": 2,
+  "incidence_masks": [
+    2,
+    6,
+    12,
+    24,
+    17,
+    32,
+    96,
+    192,
+    384,
+    257
+  ],
+  "input": {
+    "k": 2,
+    "signs": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "k": 2,
+  "least_significant_wire": 0,
+  "limits": {
+    "api_wall_seconds": 30.0,
+    "max_export_bytes": 1048576,
+    "max_operations": 2073,
+    "max_qubits": 22
+  },
+  "m": 10,
+  "n": 9,
+  "new_execution_authorized": false,
+  "normalization_squared": 1280,
+  "optimization_output_validated": false,
+  "paths": [
+    [
+      0,
+      2,
+      3,
+      4,
+      5,
+      1
+    ],
+    [
+      0,
+      6,
+      7,
+      8,
+      9,
+      1
+    ]
+  ],
+  "per_pattern_coefficients": [
+    10,
+    10,
+    2
+  ],
+  "phase_exact_ccx_blocks": 122,
+  "physical_resources_estimated": false,
+  "preparation_ccx_blocks": 54,
+  "preparation_validated": false,
+  "primitive_ry_occurrences": 37,
+  "promised_error_words": 56,
+  "prospective_full_job_limits": {
+    "buffer_bytes": 268435456,
+    "cpu_seconds": 300,
+    "primitive_applications": 2035,
+    "reduction_scan_counts": "record actual scans separately from five checkpoint stages",
+    "sampled_rss_bytes": 1073741824,
+    "wall_seconds": 360
+  },
+  "readout_map": [
+    {
+      "classical": 0,
+      "wire": 10
+    },
+    {
+      "classical": 1,
+      "wire": 11
+    },
+    {
+      "classical": 2,
+      "wire": 12
+    },
+    {
+      "classical": 3,
+      "wire": 13
+    },
+    {
+      "classical": 4,
+      "wire": 14
+    },
+    {
+      "classical": 5,
+      "wire": 15
+    },
+    {
+      "classical": 6,
+      "wire": 16
+    },
+    {
+      "classical": 7,
+      "wire": 17
+    },
+    {
+      "classical": 8,
+      "wire": 18
+    }
+  ],
+  "rotation_ratios": [
+    [
+      0,
+      0,
+      17,
+      160
+    ],
+    [
+      1,
+      0,
+      3,
+      26
+    ],
+    [
+      1,
+      1,
+      1,
+      34
+    ],
+    [
+      2,
+      0,
+      32,
+      253
+    ],
+    [
+      2,
+      1,
+      1,
+      33
+    ],
+    [
+      3,
+      0,
+      31,
+      221
+    ],
+    [
+      3,
+      1,
+      1,
+      32
+    ],
+    [
+      4,
+      0,
+      3,
+      19
+    ],
+    [
+      4,
+      1,
+      1,
+      31
+    ],
+    [
+      5,
+      0,
+      29,
+      160
+    ],
+    [
+      5,
+      1,
+      1,
+      30
+    ],
+    [
+      6,
+      0,
+      28,
+      131
+    ],
+    [
+      6,
+      1,
+      1,
+      29
+    ],
+    [
+      7,
+      0,
+      27,
+      103
+    ],
+    [
+      7,
+      1,
+      1,
+      28
+    ],
+    [
+      8,
+      0,
+      13,
+      38
+    ],
+    [
+      8,
+      1,
+      1,
+      27
+    ],
+    [
+      9,
+      0,
+      1,
+      2
+    ],
+    [
+      9,
+      1,
+      1,
+      26
+    ]
+  ],
+  "rotation_synthesis_validated": false,
+  "runtime_readiness_confirmed": false,
+  "sampling_performed": false,
+  "schema": "openquantum.dqi.path_majority_k2_source_plan.v1",
+  "signs": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_counts": {
+    "barrier": 7,
+    "cx": 834,
+    "h": 253,
+    "measure": 9,
+    "reset": 22,
+    "ry": 37,
+    "t": 488,
+    "tdg": 366,
+    "x": 54,
+    "z": 3
+  },
+  "source_generated_in_this_record": false,
+  "source_materialized": false,
+  "source_materialized_operations": 2073,
+  "source_operational_events": 2066,
+  "source_unitary_primitives": 2035,
+  "source_validation_executed": false,
+  "source_wires": 22,
+  "stage_ranges_including_final_barriers": [
+    {
+      "barrier_index": 22,
+      "stage": "reset",
+      "start": 0,
+      "stop": 23
+    },
+    {
+      "barrier_index": 978,
+      "stage": "preparation",
+      "start": 23,
+      "stop": 979
+    },
+    {
+      "barrier_index": 982,
+      "stage": "sign",
+      "start": 979,
+      "stop": 983
+    },
+    {
+      "barrier_index": 1001,
+      "stage": "syndrome",
+      "start": 983,
+      "stop": 1002
+    },
+    {
+      "barrier_index": 2052,
+      "stage": "decoder",
+      "start": 1002,
+      "stop": 2053
+    },
+    {
+      "barrier_index": 2062,
+      "stage": "hadamard",
+      "start": 2053,
+      "stop": 2063
+    },
+    {
+      "barrier_index": 2072,
+      "stage": "readout",
+      "start": 2063,
+      "stop": 2073
+    }
+  ],
+  "stage_unitary_counts": {
+    "decoder": 1050,
+    "hadamard": 9,
+    "preparation": 955,
+    "readout": 0,
+    "reset": 0,
+    "sign": 3,
+    "syndrome": 18
+  },
+  "statevector_evolutions": 0,
+  "status": "source_only_unexecuted_fixed_k2_profile",
+  "workspace_wires": [
+    19,
+    20,
+    21
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schema": "openquantum.finite_gibbs.public_projection_manifest.v1",
+  "date": "2026-11-15",
+  "packaging_status": "private_source_proposal_unexecuted",
+  "scientific_source_commit": "47ffd10368a738f9576053491a56c6d80a10e602",
+  "source_freeze_sha256": "08a18e7c6b6cf4a8c0e836ed09e7725dfaaadae4cfb1a6c5d11197ed8d2208f9",
+  "original_saved_result_sha256": "f5e0b772fa2005f415af19d3cb4ba94395753a9172a308dd868b8058acbb5129",
+  "original_root_acceptance_sha256": "6d2c086b6e175e394b86b92fc9e28d2dc8008af9004f5d6c003314bad9a86f75",
+  "scope": "Separately accepted fixed ideal conditional Z-mean contract for H=Z, beta=1, known-plus input, M=16, delta=1/8, R=64 and 16384 hypothetical independent ideal Born measurements.",
+  "fixed_conditional_Z_mean_contract_accepted": true,
+  "original_raw_flags_preserved": {
+    "status": "observed_fixed_finite_Gibbs_Z_components",
+    "finite_gibbs_Z_output_bound_observed": true,
+    "finite_gibbs_Z_output_bound_passed": false,
+    "whole_invocation_validated": false
+  },
+  "publication_performed": false,
+  "portable_wrapper_executed": false,
+  "portable_wrapper_runtime_validated": false,
+  "computation_replayed_for_projection": false,
+  "shots_drawn": 0,
+  "full_R64_primitive_simulation_performed": false,
+  "full_state_Gibbs_accuracy_certified": false,
+  "general_sampler_or_mixing_theorem": false,
+  "floating_backend_error_certified": false,
+  "rotations_synthesized": false,
+  "physical_resources_computed": false,
+  "formal_proof_reproduced": false,
+  "payload_scope": "Only listed regular public files; manifest.json itself is excluded from its own payload hashes.",
+  "payload_count": 21,
+  "payload_bytes": 3425938,
+  "payloads": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "5040a62bb2735a171968f6ed4f10ebdb1f066a05d5549e3b3181129cda4ef67c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6886,
+      "sha256": "bec600aeae6f29a94473e82edd2a02bd69004456e8bcb3ff9aa828c5c4ac95c4"
+    },
+    {
+      "path": "REPRODUCTION.md",
+      "bytes": 9577,
+      "sha256": "769e714b5972c1315633a224cf45c61290344c704f6dfe88979c462d966860f3"
+    },
+    {
+      "path": "UPSTREAM-LICENSES.md",
+      "bytes": 2699,
+      "sha256": "3350b7fe3dcf0be4f4036ea10290c30cb60c3bbaf34ef9d031e0df466ca88eb9"
+    },
+    {
+      "path": "circuits/access-U.qasm",
+      "bytes": 3065,
+      "sha256": "93ab81b8d5008d886a2096f97e69b590985980546a4b60fd68128db0b0d19a65"
+    },
+    {
+      "path": "circuits/preparation-R2.qasm",
+      "bytes": 44741,
+      "sha256": "83cefa8e3fef9920a72f4e58f1312b29a8f93f0b18c63dfb4ce7424ba713bedc"
+    },
+    {
+      "path": "circuits/preparation-R64.qasm",
+      "bytes": 1428581,
+      "sha256": "e584fa94fffe1618f2029c8f311e5b0eb7a188f514ca019a4e34feee461076b8"
+    },
+    {
+      "path": "circuits/reset-round.qasm",
+      "bytes": 22370,
+      "sha256": "ee2404c83e2f075dba35dbf02555432b385b9c25dee26bfb4f0d0ee576f0268d"
+    },
+    {
+      "path": "circuits/weak-dilation.qasm",
+      "bytes": 22226,
+      "sha256": "e11625b24787d2513ce3bb4af95742c31b90734209183b797cc92d3297f0ffc3"
+    },
+    {
+      "path": "finite-gibbs-z-circuit.svg",
+      "bytes": 7173,
+      "sha256": "20b8a3a4c7f929cfdb667bd3f909f76ea431b2d65bbc433c8c5a3bded726f764"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 1277,
+      "sha256": "45237554b2e3b5e77575f7cb2d31f36a3ca6e3ace8c74419c0e494dccf141a94"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 1974,
+      "sha256": "6a74e5959e5b64c95e820aad7032b4240747cb92541878ea72c9cc55b86a3088"
+    },
+    {
+      "path": "results.json",
+      "bytes": 1715997,
+      "sha256": "8329d568e2df8f317f97610165385123f52dc0f5d47c6aa190838405966ca33f"
+    },
+    {
+      "path": "source-derivations.json",
+      "bytes": 7075,
+      "sha256": "40c86eea4d560df0012d102970fa735857181a423b9498129ad2604d534865e3"
+    },
+    {
+      "path": "sources/detailed_balance_access.py",
+      "bytes": 25361,
+      "sha256": "7c0869fddc758d58d256ee44025ead0bd04331dce8c2925f5f105639b65cef77"
+    },
+    {
+      "path": "sources/detailed_balance_channel.py",
+      "bytes": 24362,
+      "sha256": "99ac8dbfacf6ee484caeb6ad328fe145f150871e4272538dd279f67cc2573a8b"
+    },
+    {
+      "path": "sources/finite_gibbs_angle_provenance.py",
+      "bytes": 27630,
+      "sha256": "175de0ead4e4e32ee679c42831662682e58c1467688d4bfe08ffaec6265801c1"
+    },
+    {
+      "path": "sources/finite_gibbs_interval.py",
+      "bytes": 28159,
+      "sha256": "8f035148771d8659057cd7f013d0378ec5d9995f4e2fe255bc453b348d776362"
+    },
+    {
+      "path": "sources/finite_gibbs_reference.py",
+      "bytes": 4693,
+      "sha256": "1f82517c1992f93ec3fa7af49982286e64c7cf011b69a07bdc20ac1dbb956ac4"
+    },
+    {
+      "path": "sources/reproduce.py",
+      "bytes": 29996,
+      "sha256": "a368f179c797f25246cb1ef89055b582d7d26164f041a584c09ab22a57cb597f"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 11003,
+      "sha256": "1f974ae6eb52952fa8439b1526c359c47195d843488632372dfe2c694285a8cf"
+    }
+  ],
+  "derivation_record": "source-derivations.json",
+  "data_whitelist_record": "summary.json#data_projection",
+  "scientific_inventory": {
+    "statevector_evolutions": 2,
+    "external_density_evolutions": 1,
+    "matrix_power_calls": 2,
+    "independent_full_U_Kraus_constructions": 1,
+    "fixed_interval_certificate_evaluations": 1
+  },
+  "exclusions": [
+    "full-state accuracy",
+    "general thermal sampler or mixing theorem",
+    "uniform continuum/KMS bridge",
+    "rotation synthesis",
+    "physical faults/timing/independence",
+    "FT resource advantage",
+    "floating backend rounding certificate",
+    "mechanized proof"
+  ],
+  "source_operation_counts": {
+    "access": 140,
+    "dilation": 1493,
+    "reset_round": 1505,
+    "preparation_R64": 96323,
+    "preparation_R2": 3013
+  },
+  "measurement_projection": {
+    "samples": 16384,
+    "sampling_performed": false,
+    "total_work_formula": "16384*(64*1505+3)",
+    "iid_ideal_Born_assumption": true
+  }
+}
